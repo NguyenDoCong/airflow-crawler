@@ -1,0 +1,80 @@
+[2025-05-08T02:33:04.516+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-08T02:33:04.529+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.ins_videos_scraper manual__2025-05-08T02:32:57.309403+00:00 [queued]>
+[2025-05-08T02:33:04.534+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.ins_videos_scraper manual__2025-05-08T02:32:57.309403+00:00 [queued]>
+[2025-05-08T02:33:04.535+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-08T02:33:04.543+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): ins_videos_scraper> on 2025-05-08 02:32:57.309403+00:00
+[2025-05-08T02:33:04.546+0000] {standard_task_runner.py:72} INFO - Started process 901 to run task
+[2025-05-08T02:33:04.548+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'instagram_videos_scraper_dag', 'ins_videos_scraper', 'manual__2025-05-08T02:32:57.309403+00:00', '--job-id', '4919', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpydki1uit']
+[2025-05-08T02:33:04.550+0000] {standard_task_runner.py:105} INFO - Job 4919: Subtask ins_videos_scraper
+[2025-05-08T02:33:04.584+0000] {task_command.py:467} INFO - Running <TaskInstance: instagram_videos_scraper_dag.ins_videos_scraper manual__2025-05-08T02:32:57.309403+00:00 [running]> on host 83f5c4ce7f9b
+[2025-05-08T02:33:12.365+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='instagram_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='ins_videos_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-05-08T02:32:57.309403+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-08T02:32:57.309403+00:00'
+[2025-05-08T02:33:12.366+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-08T02:33:12.418+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.92); currently, chromedriver 136.0.7103.92 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-08T02:33:07.546+0000] {logging_mixin.py:190} INFO - Step 1 of 2 - Loading profile page
+[2025-05-08T02:33:07.546+0000] {logging_mixin.py:190} INFO - Extracting videos...
+[2025-05-08T02:33:10.256+0000] {logging_mixin.py:190} INFO - Found 50 video tags
+[2025-05-08T02:33:10.383+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/DH0KpCARMKo/
+[2025-05-08T02:33:10.420+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/DGsv_X4y5sv/
+[2025-05-08T02:33:27.551+0000] {logging_mixin.py:190} INFO - Extracted 2 video URLs
+[2025-05-08T02:33:27.552+0000] {logging_mixin.py:190} INFO - Step 2 of 2 - Downloading and saving videos
+[2025-05-08T02:33:27.553+0000] {logging_mixin.py:190} INFO - Don't close the app! Saving scraped data to database, it can take a while!
+[2025-05-08T02:33:27.671+0000] {connectionpool.py:870} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb14c1c7070>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/30e3d587977dcd76ebaa7643a298505e
+[2025-05-08T02:33:27.672+0000] {connectionpool.py:870} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb14c02d0c0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/30e3d587977dcd76ebaa7643a298505e
+[2025-05-08T02:33:27.672+0000] {connectionpool.py:870} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fb14c02c130>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/30e3d587977dcd76ebaa7643a298505e
+[2025-05-08T02:33:27.673+0000] {logging_mixin.py:190} INFO - Reading URLs from scraped_data/instagram.txt...
+[2025-05-08T02:33:27.883+0000] {logging_mixin.py:190} INFO - Starting batch download...
+[2025-05-08T02:33:27.892+0000] {logging_mixin.py:190} WARNING - Facebook/Youtube/Tiktok/Instagram Batch:   0%|          | 0/2 [00:00<?, ?it/s]
+[2025-05-08T02:33:28.019+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T02:33:28.023+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T02:33:28.185+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/DGsv_X4y5sv/
+[2025-05-08T02:33:28.185+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/DH0KpCARMKo/
+[2025-05-08T02:33:28.186+0000] {logging_mixin.py:190} INFO - [Instagram] DGsv_X4y5sv: Setting up session
+[2025-05-08T02:33:28.186+0000] {logging_mixin.py:190} INFO - [Instagram] DH0KpCARMKo: Setting up session
+[2025-05-08T02:33:28.528+0000] {logging_mixin.py:190} INFO - [Instagram] DGsv_X4y5sv: Downloading JSON metadata
+[2025-05-08T02:33:28.613+0000] {logging_mixin.py:190} INFO - [Instagram] DH0KpCARMKo: Downloading JSON metadata
+[2025-05-08T02:33:29.109+0000] {logging_mixin.py:190} INFO - [info] DH0KpCARMKo: Downloading 1 format(s): dash-1196945285421725ad
+[2025-05-08T02:33:29.121+0000] {logging_mixin.py:190} INFO - [info] DGsv_X4y5sv: Downloading 1 format(s): dash-631881513030292ad
+[2025-05-08T02:33:29.169+0000] {logging_mixin.py:190} INFO - [download] Destination: media/DH0KpCARMKo.m4a
+[2025-05-08T02:33:29.169+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  425.02KiB at  116.46KiB/s ETA 00:03
+[2025-05-08T02:33:29.169+0000] {logging_mixin.py:190} INFO - [download] Destination: media/DGsv_X4y5sv.m4a
+[2025-05-08T02:33:29.170+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  425.02KiB at  318.70KiB/s ETA 00:01
+[2025-05-08T02:33:29.170+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  697.32KiB at  130.44KiB/s ETA 00:05
+[2025-05-08T02:33:29.171+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  697.32KiB at  358.07KiB/s ETA 00:01
+[2025-05-08T02:33:29.171+0000] {logging_mixin.py:190} INFO - [download]   1.6% of  425.02KiB at  645.45KiB/s ETA 00:00
+[2025-05-08T02:33:29.172+0000] {logging_mixin.py:190} INFO - [download]   1.0% of  697.32KiB at  753.15KiB/s ETA 00:00
+[2025-05-08T02:33:29.172+0000] {logging_mixin.py:190} INFO - [download]   3.5% of  425.02KiB at    1.24MiB/s ETA 00:00
+[2025-05-08T02:33:29.173+0000] {logging_mixin.py:190} INFO - [download]   2.2% of  697.32KiB at    1.40MiB/s ETA 00:00
+[2025-05-08T02:33:29.173+0000] {logging_mixin.py:190} INFO - [download]   7.3% of  425.02KiB at    2.37MiB/s ETA 00:00
+[2025-05-08T02:33:29.174+0000] {logging_mixin.py:190} INFO - [download]   4.4% of  697.32KiB at    2.62MiB/s ETA 00:00
+[2025-05-08T02:33:29.179+0000] {logging_mixin.py:190} INFO - [download]  14.8% of  425.02KiB at    3.33MiB/s ETA 00:00
+[2025-05-08T02:33:29.182+0000] {logging_mixin.py:190} INFO - [download]   9.0% of  697.32KiB at    3.21MiB/s ETA 00:00
+[2025-05-08T02:33:29.191+0000] {logging_mixin.py:190} INFO - [download]  29.9% of  425.02KiB at    3.99MiB/s ETA 00:00
+[2025-05-08T02:33:29.192+0000] {logging_mixin.py:190} INFO - [download]  18.2% of  697.32KiB at    4.14MiB/s ETA 00:00
+[2025-05-08T02:33:29.212+0000] {logging_mixin.py:190} INFO - [download]  60.0% of  425.02KiB at    4.79MiB/s ETA 00:00
+[2025-05-08T02:33:29.225+0000] {logging_mixin.py:190} INFO - [download]  36.6% of  697.32KiB at    4.00MiB/s ETA 00:00
+[2025-05-08T02:33:29.245+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  425.02KiB at    4.95MiB/s ETA 00:00
+[2025-05-08T02:33:29.246+0000] {logging_mixin.py:190} INFO - [download] 100% of  425.02KiB in 00:00:00 at 3.15MiB/s   
+[2025-05-08T02:33:29.270+0000] {logging_mixin.py:190} INFO - [download]  73.3% of  697.32KiB at    4.64MiB/s ETA 00:00
+[2025-05-08T02:33:29.294+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  697.32KiB at    5.19MiB/s ETA 00:00
+[2025-05-08T02:33:29.294+0000] {logging_mixin.py:190} INFO - [download] 100% of  697.32KiB in 00:00:00 at 4.00MiB/s   
+[2025-05-08T02:33:29.468+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/DH0KpCARMKo.m4a"
+[2025-05-08T02:33:29.470+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/DGsv_X4y5sv.m4a"
+[2025-05-08T02:33:37.322+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/DH0KpCARMKo.mp3
+[2025-05-08T02:33:37.324+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/DGsv_X4y5sv.mp3
+[2025-05-08T02:33:29.828+0000] {logging_mixin.py:190} INFO - Deleting original file media/DH0KpCARMKo.m4a (pass -k to keep)
+[2025-05-08T02:33:29.832+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/DH0KpCARMKo/: Success
+[2025-05-08T02:33:29.832+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T02:33:30.159+0000] {logging_mixin.py:190} INFO - Deleting original file media/DGsv_X4y5sv.m4a (pass -k to keep)
+[2025-05-08T02:33:30.162+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/DGsv_X4y5sv/: Success
+[2025-05-08T02:33:30.162+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T02:33:30.163+0000] {logging_mixin.py:190} WARNING - Facebook/Youtube/Tiktok/Instagram Batch:  50%|#####     | 1/2 [00:02<00:02,  2.27s/it]
+[2025-05-08T02:33:30.164+0000] {logging_mixin.py:190} WARNING - Facebook/Youtube/Tiktok/Instagram Batch: 100%|##########| 2/2 [00:02<00:00,  1.14s/it]
+[2025-05-08T02:33:30.164+0000] {logging_mixin.py:190} INFO - Download complete.
+[2025-05-08T02:33:30.164+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-05-08T02:33:30.172+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-08T02:33:30.172+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instagram_videos_scraper_dag, task_id=ins_videos_scraper, run_id=manual__2025-05-08T02:32:57.309403+00:00, execution_date=20250508T023257, start_date=20250508T023304, end_date=20250508T023330
+[2025-05-08T02:33:30.210+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-08T02:33:30.220+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-08T02:33:30.236+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

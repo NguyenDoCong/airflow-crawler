@@ -1,0 +1,154 @@
+[2025-05-07T02:22:52.639+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-07T02:22:52.649+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper manual__2025-05-07T02:22:51.726601+00:00 [queued]>
+[2025-05-07T02:22:52.654+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper manual__2025-05-07T02:22:51.726601+00:00 [queued]>
+[2025-05-07T02:22:52.654+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-07T02:22:52.662+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): tiktok_videos_scraper> on 2025-05-07 02:22:51.726601+00:00
+[2025-05-07T02:22:52.665+0000] {standard_task_runner.py:72} INFO - Started process 105 to run task
+[2025-05-07T02:22:52.668+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'tiktok_videos_scraper', 'manual__2025-05-07T02:22:51.726601+00:00', '--job-id', '4744', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpr8hyh4j8']
+[2025-05-07T02:22:52.670+0000] {standard_task_runner.py:105} INFO - Job 4744: Subtask tiktok_videos_scraper
+[2025-05-07T02:22:52.709+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper manual__2025-05-07T02:22:51.726601+00:00 [running]> on host 29867ba70740
+[2025-05-07T02:22:52.766+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='tiktok_videos_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-05-07T02:22:51.726601+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-07T02:22:51.726601+00:00'
+[2025-05-07T02:22:52.767+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-07T02:22:53.703+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/airflow/dags/tasks/tiktok_videos_scraper.py", line 25, in user_example
+    await api.create_sessions(ms_tokens=['azquqBjM67uB1DOXOvXJuaQxP1vQD8Ez_a8kDxBXNDBbLFFRE4KWUDuX-l0OjQvpgbE_dYsreYMw739sg14g8lycqGHMkEzwuWRN-L0ldYWWGwWoYs4Gw8MDxAWhEscDMqFxCSFgB3ayJ_KUoLceFA=='],
+  File "/home/airflow/.local/lib/python3.10/site-packages/TikTokApi/tiktok.py", line 279, in create_sessions
+    self.browser = await self.playwright.chromium.launch(
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 14451, in launch
+    await self._impl_obj.launch(
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_browser_type.py", line 97, in launch
+    Browser, from_channel(await self._channel.send("launch", params))
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at /home/airflow/.cache/ms-playwright/chromium-1169/chrome-linux/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/tasks/tiktok_videos_scraper.py", line 41, in tiktok_videos_scraper
+    asyncio.run(user_example())
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/opt/airflow/dags/tasks/tiktok_videos_scraper.py", line 23, in user_example
+    async with TikTokApi() as api:
+  File "/home/airflow/.local/lib/python3.10/site-packages/TikTokApi/tiktok.py", line 545, in __aexit__
+    await self.stop_playwright()
+  File "/home/airflow/.local/lib/python3.10/site-packages/TikTokApi/tiktok.py", line 532, in stop_playwright
+    await self.browser.close()
+AttributeError: 'TikTokApi' object has no attribute 'browser'
+[2025-05-07T02:22:53.711+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=tiktok_videos_scraper_dag, task_id=tiktok_videos_scraper, run_id=manual__2025-05-07T02:22:51.726601+00:00, execution_date=20250507T022251, start_date=20250507T022252, end_date=20250507T022253
+[2025-05-07T02:22:53.719+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-07T02:22:53.720+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 4744 for task tiktok_videos_scraper ('TikTokApi' object has no attribute 'browser'; 105)
+Traceback (most recent call last):
+  File "/opt/airflow/dags/tasks/tiktok_videos_scraper.py", line 25, in user_example
+    await api.create_sessions(ms_tokens=['azquqBjM67uB1DOXOvXJuaQxP1vQD8Ez_a8kDxBXNDBbLFFRE4KWUDuX-l0OjQvpgbE_dYsreYMw739sg14g8lycqGHMkEzwuWRN-L0ldYWWGwWoYs4Gw8MDxAWhEscDMqFxCSFgB3ayJ_KUoLceFA=='],
+  File "/home/airflow/.local/lib/python3.10/site-packages/TikTokApi/tiktok.py", line 279, in create_sessions
+    self.browser = await self.playwright.chromium.launch(
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 14451, in launch
+    await self._impl_obj.launch(
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_browser_type.py", line 97, in launch
+    Browser, from_channel(await self._channel.send("launch", params))
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at /home/airflow/.cache/ms-playwright/chromium-1169/chrome-linux/chrome
+╔════════════════════════════════════════════════════════════╗
+║ Looks like Playwright was just installed or updated.       ║
+║ Please run the following command to download new browsers: ║
+║                                                            ║
+║     playwright install                                     ║
+║                                                            ║
+║ <3 Playwright Team                                         ║
+╚════════════════════════════════════════════════════════════╝
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/tasks/tiktok_videos_scraper.py", line 41, in tiktok_videos_scraper
+    asyncio.run(user_example())
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/opt/airflow/dags/tasks/tiktok_videos_scraper.py", line 23, in user_example
+    async with TikTokApi() as api:
+  File "/home/airflow/.local/lib/python3.10/site-packages/TikTokApi/tiktok.py", line 545, in __aexit__
+    await self.stop_playwright()
+  File "/home/airflow/.local/lib/python3.10/site-packages/TikTokApi/tiktok.py", line 532, in stop_playwright
+    await self.browser.close()
+AttributeError: 'TikTokApi' object has no attribute 'browser'
+[2025-05-07T02:22:53.755+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 1
+[2025-05-07T02:22:53.769+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-07T02:22:53.771+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

@@ -1,0 +1,25 @@
+[2025-05-07T10:23:24.155+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-07T10:23:24.167+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.ins_videos_scraper manual__2025-05-07T10:23:16.271658+00:00 [queued]>
+[2025-05-07T10:23:24.172+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.ins_videos_scraper manual__2025-05-07T10:23:16.271658+00:00 [queued]>
+[2025-05-07T10:23:24.173+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-07T10:23:24.184+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): ins_videos_scraper> on 2025-05-07 10:23:16.271658+00:00
+[2025-05-07T10:23:24.187+0000] {standard_task_runner.py:72} INFO - Started process 2212 to run task
+[2025-05-07T10:23:24.190+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'instagram_videos_scraper_dag', 'ins_videos_scraper', 'manual__2025-05-07T10:23:16.271658+00:00', '--job-id', '4909', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpfg03oq_p']
+[2025-05-07T10:23:24.192+0000] {standard_task_runner.py:105} INFO - Job 4909: Subtask ins_videos_scraper
+[2025-05-07T10:23:24.226+0000] {task_command.py:467} INFO - Running <TaskInstance: instagram_videos_scraper_dag.ins_videos_scraper manual__2025-05-07T10:23:16.271658+00:00 [running]> on host 83f5c4ce7f9b
+[2025-05-07T10:23:24.284+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='instagram_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='ins_videos_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-05-07T10:23:16.271658+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-07T10:23:16.271658+00:00'
+[2025-05-07T10:23:24.284+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-07T10:23:47.194+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.92); currently, chromedriver 136.0.7103.92 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-07T10:23:55.894+0000] {logging_mixin.py:190} INFO - Step 1 of 2 - Loading profile page
+[2025-05-07T10:23:55.894+0000] {logging_mixin.py:190} INFO - Extracting videos...
+[2025-05-07T10:24:09.072+0000] {logging_mixin.py:190} INFO - Extracted 0 video URLs
+[2025-05-07T10:24:09.072+0000] {logging_mixin.py:190} INFO -  No data found
+[2025-05-07T10:24:09.280+0000] {connectionpool.py:870} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0fb1752e30>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/be0159efb18c6dbf99259f01fe0da118
+[2025-05-07T10:24:09.281+0000] {connectionpool.py:870} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0fb1752800>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/be0159efb18c6dbf99259f01fe0da118
+[2025-05-07T10:24:09.282+0000] {connectionpool.py:870} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f0fb1753940>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/be0159efb18c6dbf99259f01fe0da118
+[2025-05-07T10:24:09.283+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-05-07T10:24:09.293+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-07T10:24:09.293+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instagram_videos_scraper_dag, task_id=ins_videos_scraper, run_id=manual__2025-05-07T10:23:16.271658+00:00, execution_date=20250507T102316, start_date=20250507T102324, end_date=20250507T102409
+[2025-05-07T10:24:09.322+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-07T10:24:09.335+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-07T10:24:09.337+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

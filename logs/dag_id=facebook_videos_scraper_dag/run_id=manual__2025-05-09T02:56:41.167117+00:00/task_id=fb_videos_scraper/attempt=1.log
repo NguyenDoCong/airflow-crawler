@@ -1,0 +1,275 @@
+[2025-05-09T02:56:42.316+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-09T02:56:42.327+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-09T02:56:41.167117+00:00 [queued]>
+[2025-05-09T02:56:42.332+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-09T02:56:41.167117+00:00 [queued]>
+[2025-05-09T02:56:42.332+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-09T02:56:42.341+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): fb_videos_scraper> on 2025-05-09 02:56:41.167117+00:00
+[2025-05-09T02:56:42.344+0000] {standard_task_runner.py:72} INFO - Started process 2461 to run task
+[2025-05-09T02:56:42.347+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'fb_videos_scraper', 'manual__2025-05-09T02:56:41.167117+00:00', '--job-id', '5172', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmp0hrrmze9']
+[2025-05-09T02:56:42.348+0000] {standard_task_runner.py:105} INFO - Job 5172: Subtask fb_videos_scraper
+[2025-05-09T02:56:42.382+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-09T02:56:41.167117+00:00 [running]> on host dad0a4962726
+[2025-05-09T02:56:42.437+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='fb_videos_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-05-09T02:56:41.167117+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-09T02:56:41.167117+00:00'
+[2025-05-09T02:56:42.438+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-09T02:56:42.476+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.92); currently, chromedriver 136.0.7103.92 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-09T02:56:45.001+0000] {logging_mixin.py:190} INFO - Step 1 of 3 - Load cookies
+[2025-05-09T02:56:45.043+0000] {logging_mixin.py:190} INFO - An Error occurred while loading cookies [Errno 2] No such file or directory: 
+'cookies/fb_cookies.json'
+[2025-05-09T02:56:45.340+0000] {logging_mixin.py:190} INFO - Step 2 of 3 - Scrolling page
+[2025-05-09T02:56:45.340+0000] {logging_mixin.py:190} INFO - Scrolling...
+[2025-05-09T02:56:48.912+0000] {logging_mixin.py:190} INFO - Error occurred while scrolling: local variable 'count' referenced before assignment
+[2025-05-09T02:56:48.913+0000] {logging_mixin.py:190} INFO - Step 3 of 3 - Extract videos urls
+[2025-05-09T02:56:48.924+0000] {logging_mixin.py:190} INFO - Found 32 a tags
+[2025-05-09T02:56:48.995+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/100087341155257/videos/300258409024726
+[2025-05-09T02:56:49.000+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/612326127913584/
+[2025-05-09T02:56:49.011+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/focus-on-the-park-hang-seo-international-junior-festivali-cant-wait-to-go-on-the/1019921852555282/
+[2025-05-09T02:56:49.021+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/trao-g%E1%BB%ADi-y%C3%AAu-th%C6%B0%C6%A1ng-nu%C3%B4i-d%C6%B0%E1%BB%A1ng-t%C6%B0%C6%A1ng-lai-l%C3%A0-tinh-th%E1%BA%A7n-h%E1%BB%8Dc-vi%E1%BB%87n-b%C3%B3ng-%C4%91%C3%A1-qu%E1%BB%91c-t%E1%BA%BF-p/1496815271117860/
+[2025-05-09T02:56:49.031+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/my-little-tani-since-tani-came-to-our-family-the-whole-family-has-been-able-to-t/7206305039381158/
+[2025-05-09T02:56:49.041+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/300258409024726/
+[2025-05-09T02:56:49.050+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/yesterday-i-was-honored-to-attend-many-events-attended-by-the-president-and-poli/736392504839613/
+[2025-05-09T02:56:49.060+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/199672223024300/
+[2025-05-09T02:56:49.069+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/796377181594223/
+[2025-05-09T02:56:49.079+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/some-throwback-thursday-will-always-cherrish-the-memories-with-my-players-do-you/963843274971699/
+[2025-05-09T02:56:49.090+0000] {logging_mixin.py:190} INFO - Found 10 href elements
+[2025-05-09T02:56:49.091+0000] {logging_mixin.py:190} INFO -  Scraped data:
+[2025-05-09T02:56:49.091+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/100087341155257/videos/300258409024726
+[2025-05-09T02:56:49.092+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/612326127913584/
+[2025-05-09T02:56:49.092+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/official.parkhangseo/videos/focus-on-the-park-hang-seo-
+international-junior-festivali-cant-wait-to-go-on-the/1019921852555282/
+[2025-05-09T02:56:49.093+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/official.parkhangseo/videos/trao-g%E1%BB%ADi-y%C3%AAu-t
+h%C6%B0%C6%A1ng-nu%C3%B4i-d%C6%B0%E1%BB%A1ng-t%C6%B0%C6%A1ng-lai-l%C3%A0-tinh-th
+%E1%BA%A7n-h%E1%BB%8Dc-vi%E1%BB%87n-b%C3%B3ng-%C4%91%C3%A1-qu%E1%BB%91c-t%E1%BA%
+BF-p/1496815271117860/
+[2025-05-09T02:56:49.093+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/official.parkhangseo/videos/my-little-tani-since-tani-c
+ame-to-our-family-the-whole-family-has-been-able-to-t/7206305039381158/
+[2025-05-09T02:56:49.093+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/300258409024726/
+[2025-05-09T02:56:49.094+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/official.parkhangseo/videos/yesterday-i-was-honored-to-
+attend-many-events-attended-by-the-president-and-poli/736392504839613/
+[2025-05-09T02:56:49.094+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/199672223024300/
+[2025-05-09T02:56:49.094+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/796377181594223/
+[2025-05-09T02:56:49.094+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/official.parkhangseo/videos/some-throwback-thursday-wil
+l-always-cherrish-the-memories-with-my-players-do-you/963843274971699/
+[2025-05-09T02:56:49.095+0000] {logging_mixin.py:190} INFO - Don't close the app! Saving scraped data to database, it can take a while!
+[2025-05-09T02:56:49.095+0000] {logging_mixin.py:190} INFO - New videos: 10
+[2025-05-09T02:56:49.215+0000] {logging_mixin.py:190} INFO - Reading URLs from scraped_data/facebook.txt...
+[2025-05-09T02:56:49.278+0000] {logging_mixin.py:190} INFO - Starting batch download...
+[2025-05-09T02:56:49.431+0000] {logging_mixin.py:190} WARNING - Facebook/Youtube/Tiktok/Instagram Batch:   0%|          | 0/10 [00:00<?, ?it/s]
+[2025-05-09T02:56:49.528+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-09T02:56:49.530+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-09T02:56:49.531+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-09T02:56:49.532+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-09T02:56:49.533+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-09T02:56:49.535+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-09T02:56:49.536+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-09T02:56:49.537+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-09T02:56:49.543+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-09T02:56:49.544+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-09T02:56:49.897+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/yesterday-i-was-honored-to-attend-many-event...oli/736392504839613/
+[2025-05-09T02:56:49.897+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/199672223024300/
+[2025-05-09T02:56:49.897+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/trao-g%E1%BB%ADi-y%C3%AAu-th%C6%B0%C6%A1ng-n...-p/1496815271117860/
+[2025-05-09T02:56:49.898+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/796377181594223/
+[2025-05-09T02:56:49.898+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/300258409024726/
+[2025-05-09T02:56:49.898+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/612326127913584/
+[2025-05-09T02:56:49.898+0000] {logging_mixin.py:190} INFO - [facebook] 736392504839613: Downloading webpage
+[2025-05-09T02:56:49.898+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/some-throwback-thursday-will-always-cherrish...you/963843274971699/
+[2025-05-09T02:56:49.898+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/100087341155257/videos/300258409024726
+[2025-05-09T02:56:49.899+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/focus-on-the-park-hang-seo-international-jun...he/1019921852555282/
+[2025-05-09T02:56:49.899+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/my-little-tani-since-tani-came-to-our-family...-t/7206305039381158/
+[2025-05-09T02:56:49.899+0000] {logging_mixin.py:190} INFO - [facebook] 199672223024300: Downloading webpage
+[2025-05-09T02:56:49.900+0000] {logging_mixin.py:190} INFO - [facebook] 1496815271117860: Downloading webpage
+[2025-05-09T02:56:49.900+0000] {logging_mixin.py:190} INFO - [facebook] 796377181594223: Downloading webpage
+[2025-05-09T02:56:49.900+0000] {logging_mixin.py:190} INFO - [facebook] 300258409024726: Downloading webpage
+[2025-05-09T02:56:49.900+0000] {logging_mixin.py:190} INFO - [facebook] 612326127913584: Downloading webpage
+[2025-05-09T02:56:49.902+0000] {logging_mixin.py:190} INFO - [facebook] 963843274971699: Downloading webpage
+[2025-05-09T02:56:49.902+0000] {logging_mixin.py:190} INFO - [facebook] 300258409024726: Downloading webpage
+[2025-05-09T02:56:49.902+0000] {logging_mixin.py:190} INFO - [facebook] 1019921852555282: Downloading webpage
+[2025-05-09T02:56:49.903+0000] {logging_mixin.py:190} INFO - [facebook] 7206305039381158: Downloading webpage
+[2025-05-09T02:56:50.831+0000] {logging_mixin.py:190} INFO - [info] 612326127913584: Downloading 1 format(s): 612076641509076a
+[2025-05-09T02:56:50.938+0000] {logging_mixin.py:190} INFO - [info] 736392504839613: Downloading 1 format(s): 1305999593664255a
+[2025-05-09T02:56:50.939+0000] {logging_mixin.py:190} INFO - [info] 1496815271117860: Downloading 1 format(s): 7113149612037720a
+[2025-05-09T02:56:51.185+0000] {logging_mixin.py:190} INFO - [info] 1019921852555282: Downloading 1 format(s): 203100809504502a
+[2025-05-09T02:56:51.216+0000] {logging_mixin.py:190} INFO - [info] 300258409024726: Downloading 1 format(s): 163720786705959a
+[2025-05-09T02:56:51.256+0000] {logging_mixin.py:190} INFO - [info] 300258409024726: Downloading 1 format(s): 163720786705959a
+[2025-05-09T02:56:51.259+0000] {logging_mixin.py:190} INFO - [info] 199672223024300: Downloading 1 format(s): sd
+[2025-05-09T02:56:51.260+0000] {logging_mixin.py:190} INFO - [info] 796377181594223: Downloading 1 format(s): 6147421238667501a
+[2025-05-09T02:56:51.265+0000] {logging_mixin.py:190} INFO - [info] 7206305039381158: Downloading 1 format(s): 1036734707527654a
+[2025-05-09T02:56:51.267+0000] {logging_mixin.py:190} INFO - [download] Destination: media/612326127913584.m4a
+[2025-05-09T02:56:51.267+0000] {logging_mixin.py:190} INFO - [download] Destination: media/736392504839613.m4a
+[2025-05-09T02:56:51.332+0000] {logging_mixin.py:190} INFO - [info] 963843274971699: Downloading 1 format(s): 773530004151374a
+[2025-05-09T02:56:51.344+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  371.23KiB at    3.55KiB/s ETA 01:44
+[2025-05-09T02:56:51.345+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  353.37KiB at    3.21KiB/s ETA 01:49
+[2025-05-09T02:56:51.345+0000] {logging_mixin.py:190} INFO - [download] Destination: media/1496815271117860.m4a
+[2025-05-09T02:56:51.352+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  371.23KiB at   10.35KiB/s ETA 00:35
+[2025-05-09T02:56:51.353+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  332.25KiB at   86.37KiB/s ETA 00:03
+[2025-05-09T02:56:51.354+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  353.37KiB at    9.37KiB/s ETA 00:37
+[2025-05-09T02:56:51.354+0000] {logging_mixin.py:190} INFO - [download]   1.9% of  371.23KiB at   23.95KiB/s ETA 00:15
+[2025-05-09T02:56:51.355+0000] {logging_mixin.py:190} INFO - [download]   0.9% of  332.25KiB at  228.58KiB/s ETA 00:01
+[2025-05-09T02:56:51.355+0000] {logging_mixin.py:190} INFO - [download]   2.0% of  353.37KiB at   21.73KiB/s ETA 00:15
+[2025-05-09T02:56:51.357+0000] {logging_mixin.py:190} INFO - [download]   4.0% of  371.23KiB at   50.93KiB/s ETA 00:06
+[2025-05-09T02:56:51.358+0000] {logging_mixin.py:190} INFO - [download]   2.1% of  332.25KiB at  438.48KiB/s ETA 00:00
+[2025-05-09T02:56:51.358+0000] {logging_mixin.py:190} INFO - [download]   4.2% of  353.37KiB at   46.15KiB/s ETA 00:07
+[2025-05-09T02:56:51.359+0000] {logging_mixin.py:190} INFO - [download]   8.4% of  371.23KiB at  104.29KiB/s ETA 00:03
+[2025-05-09T02:56:51.360+0000] {logging_mixin.py:190} INFO - [download] Destination: media/300258409024726.m4a
+[2025-05-09T02:56:51.360+0000] {logging_mixin.py:190} INFO - [download]   4.5% of  332.25KiB at  802.21KiB/s ETA 00:00
+[2025-05-09T02:56:51.361+0000] {logging_mixin.py:190} INFO - [download]   8.8% of  353.37KiB at   94.72KiB/s ETA 00:03
+[2025-05-09T02:56:51.362+0000] {logging_mixin.py:190} INFO - [download]  17.0% of  371.23KiB at  210.02KiB/s ETA 00:01
+[2025-05-09T02:56:51.362+0000] {logging_mixin.py:190} INFO - [download]   1.1% of   93.14KiB at  207.33KiB/s ETA 00:00
+[2025-05-09T02:56:51.363+0000] {logging_mixin.py:190} INFO - [download] Destination: media/300258409024726.m4a
+[2025-05-09T02:56:51.363+0000] {logging_mixin.py:190} INFO - [download]   9.3% of  332.25KiB at    1.39MiB/s ETA 00:00
+[2025-05-09T02:56:51.364+0000] {logging_mixin.py:190} INFO - [download]  17.8% of  353.37KiB at  190.30KiB/s ETA 00:01
+[2025-05-09T02:56:51.365+0000] {logging_mixin.py:190} INFO - [download]   1.1% of   93.14KiB at  277.33KiB/s ETA 00:00
+[2025-05-09T02:56:51.366+0000] {logging_mixin.py:190} INFO - [download]  19.0% of  332.25KiB at    2.50MiB/s ETA 00:00
+[2025-05-09T02:56:51.367+0000] {logging_mixin.py:190} INFO - [download]  34.2% of  371.23KiB at  416.32KiB/s ETA 00:00
+[2025-05-09T02:56:51.369+0000] {logging_mixin.py:190} INFO - [download]   3.2% of   93.14KiB at  257.11KiB/s ETA 00:00
+[2025-05-09T02:56:51.370+0000] {logging_mixin.py:190} INFO - [download]   7.5% of   93.14KiB at  570.31KiB/s ETA 00:00
+[2025-05-09T02:56:51.370+0000] {logging_mixin.py:190} INFO - [download]  16.1% of   93.14KiB at    1.13MiB/s ETA 00:00
+[2025-05-09T02:56:51.380+0000] {logging_mixin.py:190} INFO - [download]  35.9% of  353.37KiB at  366.92KiB/s ETA 00:00
+[2025-05-09T02:56:51.383+0000] {logging_mixin.py:190} INFO - [download]  33.3% of   93.14KiB at    1.20MiB/s ETA 00:00
+[2025-05-09T02:56:51.384+0000] {logging_mixin.py:190} INFO - [download] Destination: media/199672223024300.mp4
+[2025-05-09T02:56:51.385+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.72MiB at   92.60KiB/s ETA 00:18
+[2025-05-09T02:56:51.389+0000] {logging_mixin.py:190} INFO - [download]   3.2% of   93.14KiB at  110.94KiB/s ETA 00:00
+[2025-05-09T02:56:51.389+0000] {logging_mixin.py:190} INFO - [download]   7.5% of   93.14KiB at  254.63KiB/s ETA 00:00
+[2025-05-09T02:56:51.389+0000] {logging_mixin.py:190} INFO - [download]  16.1% of   93.14KiB at  537.60KiB/s ETA 00:00
+[2025-05-09T02:56:51.390+0000] {logging_mixin.py:190} INFO - [download]  38.2% of  332.25KiB at    2.56MiB/s ETA 00:00
+[2025-05-09T02:56:51.394+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.72MiB at  152.47KiB/s ETA 00:11
+[2025-05-09T02:56:51.394+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    1.72MiB at  346.41KiB/s ETA 00:05
+[2025-05-09T02:56:51.394+0000] {logging_mixin.py:190} INFO - [download]   0.9% of    1.72MiB at  726.40KiB/s ETA 00:02
+[2025-05-09T02:56:51.397+0000] {logging_mixin.py:190} INFO - [download] Destination: media/796377181594223.m4a
+[2025-05-09T02:56:51.398+0000] {logging_mixin.py:190} INFO - [download]  33.3% of   93.14KiB at  857.16KiB/s ETA 00:00
+[2025-05-09T02:56:51.398+0000] {logging_mixin.py:190} INFO - [download]   1.0% of  100.10KiB at  Unknown B/s ETA Unknown
+[2025-05-09T02:56:51.400+0000] {logging_mixin.py:190} INFO - [download]  68.7% of  371.23KiB at  755.37KiB/s ETA 00:00
+[2025-05-09T02:56:51.401+0000] {logging_mixin.py:190} INFO - [download]  67.6% of   93.14KiB at    1.41MiB/s ETA 00:00
+[2025-05-09T02:56:51.413+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   93.14KiB at    1.63MiB/s ETA 00:00
+[2025-05-09T02:56:51.414+0000] {logging_mixin.py:190} INFO - [download] 100% of   93.14KiB in 00:00:00 at 657.45KiB/s 
+[2025-05-09T02:56:51.419+0000] {logging_mixin.py:190} INFO - [download]   1.8% of    1.72MiB at  681.68KiB/s ETA 00:02
+[2025-05-09T02:56:51.425+0000] {logging_mixin.py:190} INFO - [download]   3.0% of  100.10KiB at  109.29KiB/s ETA 00:00  
+[2025-05-09T02:56:51.426+0000] {logging_mixin.py:190} INFO - [download]   7.0% of  100.10KiB at  246.51KiB/s ETA 00:00
+[2025-05-09T02:56:51.426+0000] {logging_mixin.py:190} INFO - [download]  15.0% of  100.10KiB at  518.01KiB/s ETA 00:00
+[2025-05-09T02:56:51.427+0000] {logging_mixin.py:190} INFO - [download]  67.6% of   93.14KiB at  963.37KiB/s ETA 00:00
+[2025-05-09T02:56:51.446+0000] {logging_mixin.py:190} INFO - [download]   3.6% of    1.72MiB at  877.83KiB/s ETA 00:01
+[2025-05-09T02:56:51.447+0000] {logging_mixin.py:190} INFO - [download] Destination: media/963843274971699.m4a
+[2025-05-09T02:56:51.447+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  539.30KiB at  498.85KiB/s ETA 00:01
+[2025-05-09T02:56:51.451+0000] {logging_mixin.py:190} INFO - [download]  31.0% of  100.10KiB at  583.02KiB/s ETA 00:00
+[2025-05-09T02:56:51.454+0000] {logging_mixin.py:190} INFO - [download]  76.7% of  332.25KiB at    2.22MiB/s ETA 00:00
+[2025-05-09T02:56:51.456+0000] {logging_mixin.py:190} INFO - [download]  62.9% of  100.10KiB at    1.06MiB/s ETA 00:00
+[2025-05-09T02:56:51.457+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  371.23KiB at  940.60KiB/s ETA 00:00
+[2025-05-09T02:56:51.458+0000] {logging_mixin.py:190} INFO - [download]  72.2% of  353.37KiB at  601.13KiB/s ETA 00:00
+[2025-05-09T02:56:51.458+0000] {logging_mixin.py:190} INFO - [download] 100% of  371.23KiB in 00:00:00 at 681.48KiB/s 
+[2025-05-09T02:56:51.465+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/300258409024726.m4a"
+[2025-05-09T02:56:51.466+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  539.30KiB at  145.87KiB/s ETA 00:03
+[2025-05-09T02:56:51.468+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/612326127913584.m4a"
+[2025-05-09T02:56:51.469+0000] {logging_mixin.py:190} INFO - [download]   1.3% of  539.30KiB at  292.97KiB/s ETA 00:01
+[2025-05-09T02:56:51.470+0000] {logging_mixin.py:190} INFO - [download]   2.8% of  539.30KiB at  595.09KiB/s ETA 00:00
+[2025-05-09T02:56:51.472+0000] {logging_mixin.py:190} INFO - [download]   5.7% of  539.30KiB at    1.10MiB/s ETA 00:00
+[2025-05-09T02:56:51.476+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  100.10KiB at    1.24MiB/s ETA 00:00
+[2025-05-09T02:56:51.477+0000] {logging_mixin.py:190} INFO - [download] 100% of  100.10KiB in 00:00:00 at 713.60KiB/s 
+[2025-05-09T02:56:51.479+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/796377181594223.m4a"
+[2025-05-09T02:56:51.480+0000] {logging_mixin.py:190} INFO - [download]   7.2% of    1.72MiB at    1.17MiB/s ETA 00:01
+[2025-05-09T02:56:51.482+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  332.25KiB at    2.31MiB/s ETA 00:00
+[2025-05-09T02:56:51.483+0000] {logging_mixin.py:190} INFO - [download] 100% of  332.25KiB in 00:00:00 at 623.02KiB/s 
+[2025-05-09T02:56:51.484+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/1496815271117860.m4a"
+[2025-05-09T02:56:51.485+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  353.37KiB at  781.81KiB/s ETA 00:00
+[2025-05-09T02:56:51.487+0000] {logging_mixin.py:190} INFO - [download] 100% of  353.37KiB in 00:00:00 at 650.69KiB/s 
+[2025-05-09T02:56:51.489+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/736392504839613.m4a"
+[2025-05-09T02:56:51.490+0000] {logging_mixin.py:190} INFO - [download]  11.7% of  539.30KiB at    1.38MiB/s ETA 00:00
+[2025-05-09T02:56:51.504+0000] {logging_mixin.py:190} INFO - [download]  14.5% of    1.72MiB at    1.92MiB/s ETA 00:00
+[2025-05-09T02:56:51.505+0000] {logging_mixin.py:190} INFO - [download]  23.5% of  539.30KiB at    2.06MiB/s ETA 00:00
+[2025-05-09T02:56:51.537+0000] {logging_mixin.py:190} INFO - [download]  47.3% of  539.30KiB at    2.71MiB/s ETA 00:00
+[2025-05-09T02:56:51.594+0000] {logging_mixin.py:190} INFO - [download]  94.8% of  539.30KiB at    3.34MiB/s ETA 00:00
+[2025-05-09T02:56:51.597+0000] {logging_mixin.py:190} INFO - [download]  29.1% of    1.72MiB at    2.24MiB/s ETA 00:00
+[2025-05-09T02:56:51.598+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  539.30KiB at    3.44MiB/s ETA 00:00
+[2025-05-09T02:56:51.602+0000] {logging_mixin.py:190} INFO - [download] 100% of  539.30KiB in 00:00:00 at 2.09MiB/s   
+[2025-05-09T02:56:51.604+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/963843274971699.m4a"
+[2025-05-09T02:56:51.632+0000] {logging_mixin.py:190} INFO - [download] Destination: media/1019921852555282.m4a
+[2025-05-09T02:56:51.633+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  372.70KiB at  Unknown B/s ETA Unknown
+[2025-05-09T02:56:51.633+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  372.70KiB at    1.72MiB/s ETA 00:00  
+[2025-05-09T02:56:51.634+0000] {logging_mixin.py:190} INFO - [download]   1.9% of  372.70KiB at    3.02MiB/s ETA 00:00
+[2025-05-09T02:56:51.636+0000] {logging_mixin.py:190} INFO - [download]   4.0% of  372.70KiB at    3.31MiB/s ETA 00:00
+[2025-05-09T02:56:51.647+0000] {logging_mixin.py:190} INFO - [download]   8.3% of  372.70KiB at    2.04MiB/s ETA 00:00
+[2025-05-09T02:56:51.663+0000] {logging_mixin.py:190} INFO - [download]  16.9% of  372.70KiB at    1.99MiB/s ETA 00:00
+[2025-05-09T02:56:51.681+0000] {logging_mixin.py:190} INFO - [download]  58.2% of    1.72MiB at    3.25MiB/s ETA 00:00
+[2025-05-09T02:56:51.685+0000] {logging_mixin.py:190} INFO - [download]  34.1% of  372.70KiB at    2.32MiB/s ETA 00:00
+[2025-05-09T02:56:51.705+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/1496815271117860.mp3
+[2025-05-09T02:56:51.706+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   93.14KiB at  270.20KiB/s ETA 00:00
+[2025-05-09T02:56:51.709+0000] {logging_mixin.py:190} WARNING - ERROR: Unable to rename file: [Errno 2] No such file or directory: 'media/300258409024726.m4a.part' -> 'media/300258409024726.m4a'
+[2025-05-09T02:56:51.713+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/612326127913584.mp3
+[2025-05-09T02:56:51.714+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/796377181594223.mp3
+[2025-05-09T02:56:51.714+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/736392504839613.mp3
+[2025-05-09T02:56:51.716+0000] {downloader.py:91} INFO - Download status for https://www.facebook.com/100087341155257/videos/300258409024726: Failed: ERROR: Unable to rename file: [Errno 2] No such file or directory: 'media/300258409024726.m4a.part' -> 'media/300258409024726.m4a'
+[2025-05-09T02:56:51.716+0000] {downloader.py:198} ERROR - Error downloading video from https://www.facebook.com/100087341155257/videos/300258409024726: ERROR: Unable to rename file: [Errno 2] No such file or directory: 'media/300258409024726.m4a.part' -> 'media/300258409024726.m4a'
+[2025-05-09T02:56:51.722+0000] {logging_mixin.py:190} INFO - Error downloading video: ERROR: Unable to rename file: [Errno 2] No such file or directory: 'media/300258409024726.m4a.part' -> 'media/300258409024726.m4a'
+[2025-05-09T02:56:51.723+0000] {downloader.py:91} INFO - Download status for https://www.facebook.com/100087341155257/videos/300258409024726: Download Error: ERROR: Unable to rename file: [Errno 2] No such file or directory: 'media/300258409024726.m4a.part' -> 'media/300258409024726.m4a'
+[2025-05-09T02:56:51.724+0000] {logging_mixin.py:190} INFO - Download Error: ERROR: Unable to rename file: [Errno 2] No such file or directory: 'media/300258409024726.m4a.part' -> 'media/300258409024726.m4a'
+[2025-05-09T02:56:51.728+0000] {logging_mixin.py:190} INFO - [download]  68.4% of  372.70KiB at    2.58MiB/s ETA 00:00
+[2025-05-09T02:56:51.738+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/300258409024726.mp3
+[2025-05-09T02:56:51.745+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/963843274971699.mp3
+[2025-05-09T02:56:51.766+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  372.70KiB at    2.72MiB/s ETA 00:00
+[2025-05-09T02:56:51.767+0000] {logging_mixin.py:190} INFO - [download] 100% of  372.70KiB in 00:00:00 at 745.13KiB/s 
+[2025-05-09T02:56:51.770+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/1019921852555282.m4a"
+[2025-05-09T02:56:51.781+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.72MiB at    4.22MiB/s ETA 00:00
+[2025-05-09T02:56:51.782+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.72MiB in 00:00:00 at 3.76MiB/s   
+[2025-05-09T02:56:51.818+0000] {logging_mixin.py:190} INFO - [download] Destination: media/7206305039381158.m4a
+[2025-05-09T02:56:51.819+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  146.16KiB at  Unknown B/s ETA Unknown
+[2025-05-09T02:56:51.820+0000] {logging_mixin.py:190} INFO - [download]   2.1% of  146.16KiB at    1.80MiB/s ETA 00:00  
+[2025-05-09T02:56:51.821+0000] {logging_mixin.py:190} INFO - [download]   4.8% of  146.16KiB at    2.72MiB/s ETA 00:00
+[2025-05-09T02:56:51.822+0000] {logging_mixin.py:190} INFO - [download]  10.3% of  146.16KiB at    4.17MiB/s ETA 00:00
+[2025-05-09T02:56:51.823+0000] {logging_mixin.py:190} INFO - [download]  21.2% of  146.16KiB at    6.41MiB/s ETA 00:00
+[2025-05-09T02:56:51.824+0000] {logging_mixin.py:190} INFO - [download]  43.1% of  146.16KiB at   10.14MiB/s ETA 00:00
+[2025-05-09T02:56:51.832+0000] {logging_mixin.py:190} INFO - [download]  86.9% of  146.16KiB at    9.50MiB/s ETA 00:00
+[2025-05-09T02:56:51.833+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  146.16KiB at    9.77MiB/s ETA 00:00
+[2025-05-09T02:56:51.835+0000] {logging_mixin.py:190} INFO - [download] 100% of  146.16KiB in 00:00:00 at 296.60KiB/s 
+[2025-05-09T02:56:51.839+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/7206305039381158.m4a"
+[2025-05-09T02:56:51.857+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/199672223024300.mp3
+[2025-05-09T02:56:51.900+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/1019921852555282.mp3
+[2025-05-09T02:56:51.966+0000] {logging_mixin.py:190} INFO - Deleting original file media/300258409024726.m4a (pass -k to keep)
+[2025-05-09T02:56:51.974+0000] {downloader.py:91} INFO - Download status for https://www.facebook.com/official.parkhangseo/videos/300258409024726/: Success
+[2025-05-09T02:56:51.974+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-09T02:56:51.980+0000] {logging_mixin.py:190} INFO - Deleting original file media/796377181594223.m4a (pass -k to keep)
+[2025-05-09T02:56:51.986+0000] {downloader.py:91} INFO - Download status for https://www.facebook.com/official.parkhangseo/videos/796377181594223/: Success
+[2025-05-09T02:56:51.986+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/7206305039381158.mp3
+[2025-05-09T02:56:51.987+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-09T02:56:51.990+0000] {logging_mixin.py:190} WARNING - Facebook/Youtube/Tiktok/Instagram Batch:  10%|#         | 1/10 [00:02<00:23,  2.56s/it]
+[2025-05-09T02:56:52.083+0000] {logging_mixin.py:190} INFO - Deleting original file media/199672223024300.mp4 (pass -k to keep)
+[2025-05-09T02:56:52.086+0000] {downloader.py:91} INFO - Download status for https://www.facebook.com/official.parkhangseo/videos/199672223024300/: Success
+[2025-05-09T02:56:52.086+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-09T02:56:52.481+0000] {logging_mixin.py:190} INFO - Deleting original file media/7206305039381158.m4a (pass -k to keep)
+[2025-05-09T02:56:52.487+0000] {downloader.py:91} INFO - Download status for https://www.facebook.com/official.parkhangseo/videos/my-little-tani-since-tani-came-to-our-family-the-whole-family-has-been-able-to-t/7206305039381158/: Success
+[2025-05-09T02:56:52.487+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-09T02:56:52.525+0000] {logging_mixin.py:190} INFO - Deleting original file media/612326127913584.m4a (pass -k to keep)
+[2025-05-09T02:56:52.530+0000] {downloader.py:91} INFO - Download status for https://www.facebook.com/official.parkhangseo/videos/612326127913584/: Success
+[2025-05-09T02:56:52.530+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-09T02:56:52.635+0000] {logging_mixin.py:190} INFO - Deleting original file media/1496815271117860.m4a (pass -k to keep)
+[2025-05-09T02:56:52.639+0000] {downloader.py:91} INFO - Download status for https://www.facebook.com/official.parkhangseo/videos/trao-g%E1%BB%ADi-y%C3%AAu-th%C6%B0%C6%A1ng-nu%C3%B4i-d%C6%B0%E1%BB%A1ng-t%C6%B0%C6%A1ng-lai-l%C3%A0-tinh-th%E1%BA%A7n-h%E1%BB%8Dc-vi%E1%BB%87n-b%C3%B3ng-%C4%91%C3%A1-qu%E1%BB%91c-t%E1%BA%BF-p/1496815271117860/: Success
+[2025-05-09T02:56:52.639+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-09T02:56:52.641+0000] {logging_mixin.py:190} WARNING - Facebook/Youtube/Tiktok/Instagram Batch:  20%|##        | 2/10 [00:03<00:11,  1.44s/it]
+[2025-05-09T02:56:52.698+0000] {logging_mixin.py:190} INFO - Deleting original file media/736392504839613.m4a (pass -k to keep)
+[2025-05-09T02:56:52.701+0000] {downloader.py:91} INFO - Download status for https://www.facebook.com/official.parkhangseo/videos/yesterday-i-was-honored-to-attend-many-events-attended-by-the-president-and-poli/736392504839613/: Success
+[2025-05-09T02:56:52.702+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-09T02:56:52.917+0000] {logging_mixin.py:190} INFO - Deleting original file media/1019921852555282.m4a (pass -k to keep)
+[2025-05-09T02:56:52.920+0000] {downloader.py:91} INFO - Download status for https://www.facebook.com/official.parkhangseo/videos/focus-on-the-park-hang-seo-international-junior-festivali-cant-wait-to-go-on-the/1019921852555282/: Success
+[2025-05-09T02:56:52.920+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-09T02:56:52.921+0000] {logging_mixin.py:190} WARNING - Facebook/Youtube/Tiktok/Instagram Batch:  60%|######    | 6/10 [00:03<00:01,  2.61it/s]
+[2025-05-09T02:56:52.981+0000] {logging_mixin.py:190} INFO - Deleting original file media/963843274971699.m4a (pass -k to keep)
+[2025-05-09T02:56:52.984+0000] {downloader.py:91} INFO - Download status for https://www.facebook.com/official.parkhangseo/videos/some-throwback-thursday-will-always-cherrish-the-memories-with-my-players-do-you/963843274971699/: Success
+[2025-05-09T02:56:52.984+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-09T02:56:53.935+0000] {logging_mixin.py:190} WARNING - Facebook/Youtube/Tiktok/Instagram Batch: 100%|##########| 10/10 [00:04<00:00,  3.17it/s]
+[2025-05-09T02:56:53.935+0000] {logging_mixin.py:190} WARNING - Facebook/Youtube/Tiktok/Instagram Batch: 100%|##########| 10/10 [00:04<00:00,  2.22it/s]
+[2025-05-09T02:56:53.936+0000] {logging_mixin.py:190} INFO - Download complete.
+[2025-05-09T02:56:53.937+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-05-09T02:56:53.944+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-09T02:56:53.945+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=facebook_videos_scraper_dag, task_id=fb_videos_scraper, run_id=manual__2025-05-09T02:56:41.167117+00:00, execution_date=20250509T025641, start_date=20250509T025642, end_date=20250509T025653
+[2025-05-09T02:56:53.996+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-09T02:56:54.007+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-09T02:56:54.009+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

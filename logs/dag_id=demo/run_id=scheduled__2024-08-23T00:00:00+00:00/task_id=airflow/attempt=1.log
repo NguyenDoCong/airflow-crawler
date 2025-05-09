@@ -1,0 +1,17 @@
+[2025-04-29T02:56:19.502+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-29T02:56:19.513+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: demo.airflow scheduled__2024-08-23T00:00:00+00:00 [queued]>
+[2025-04-29T02:56:19.518+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: demo.airflow scheduled__2024-08-23T00:00:00+00:00 [queued]>
+[2025-04-29T02:56:19.519+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-04-29T02:56:19.528+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): airflow> on 2024-08-23 00:00:00+00:00
+[2025-04-29T02:56:19.531+0000] {standard_task_runner.py:72} INFO - Started process 7033 to run task
+[2025-04-29T02:56:19.533+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'demo', 'airflow', 'scheduled__2024-08-23T00:00:00+00:00', '--job-id', '1949', '--raw', '--subdir', 'DAGS_FOLDER/simple-dag.py', '--cfg-path', '/tmp/tmpphrs9761']
+[2025-04-29T02:56:19.534+0000] {standard_task_runner.py:105} INFO - Job 1949: Subtask airflow
+[2025-04-29T02:56:19.571+0000] {task_command.py:467} INFO - Running <TaskInstance: demo.airflow scheduled__2024-08-23T00:00:00+00:00 [running]> on host 2c7afa36055b
+[2025-04-29T02:56:19.635+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='demo' AIRFLOW_CTX_TASK_ID='airflow' AIRFLOW_CTX_EXECUTION_DATE='2024-08-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-23T00:00:00+00:00'
+[2025-04-29T02:56:19.636+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-04-29T02:56:19.638+0000] {logging_mixin.py:190} INFO - airflow
+[2025-04-29T02:56:19.638+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-29T02:56:19.647+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-04-29T02:56:19.647+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=demo, task_id=airflow, run_id=scheduled__2024-08-23T00:00:00+00:00, execution_date=20240823T000000, start_date=20250429T025619, end_date=20250429T025619
+[2025-04-29T02:56:19.668+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-04-29T02:56:19.676+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

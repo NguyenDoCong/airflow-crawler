@@ -1,0 +1,30 @@
+[2025-05-09T09:42:21.512+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-09T09:42:21.522+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.ins_videos_scraper manual__2025-05-09T09:42:20.486535+00:00 [queued]>
+[2025-05-09T09:42:21.527+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.ins_videos_scraper manual__2025-05-09T09:42:20.486535+00:00 [queued]>
+[2025-05-09T09:42:21.528+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-09T09:42:21.536+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): ins_videos_scraper> on 2025-05-09 09:42:20.486535+00:00
+[2025-05-09T09:42:21.539+0000] {standard_task_runner.py:72} INFO - Started process 1329 to run task
+[2025-05-09T09:42:21.542+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'instagram_videos_scraper_dag', 'ins_videos_scraper', 'manual__2025-05-09T09:42:20.486535+00:00', '--job-id', '5185', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmp3md5gil6']
+[2025-05-09T09:42:21.544+0000] {standard_task_runner.py:105} INFO - Job 5185: Subtask ins_videos_scraper
+[2025-05-09T09:42:21.579+0000] {task_command.py:467} INFO - Running <TaskInstance: instagram_videos_scraper_dag.ins_videos_scraper manual__2025-05-09T09:42:20.486535+00:00 [running]> on host 14fa56807961
+[2025-05-09T09:42:21.638+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='instagram_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='ins_videos_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-05-09T09:42:20.486535+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-09T09:42:20.486535+00:00'
+[2025-05-09T09:42:21.639+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-09T09:42:21.641+0000] {logging_mixin.py:190} INFO - Scraping Instagram profile: baukrysie
+[2025-05-09T09:42:21.678+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.92); currently, chromedriver 136.0.7103.92 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-09T09:42:22.472+0000] {logging_mixin.py:190} INFO - url: https://www.instagram.com/baukrysie/
+[2025-05-09T09:42:22.320+0000] {logging_mixin.py:190} INFO - Step 1 of 2 - Loading profile page
+[2025-05-09T09:42:22.320+0000] {logging_mixin.py:190} INFO - Extracting videos...
+[2025-05-09T09:42:25.345+0000] {logging_mixin.py:190} INFO - Count: 1, Limit: 5
+[2025-05-09T09:42:25.345+0000] {logging_mixin.py:190} INFO - Scrolling... 1 iterations
+[2025-05-09T09:42:25.467+0000] {logging_mixin.py:190} INFO - Found 50 video tags
+[2025-05-09T09:42:25.853+0000] {logging_mixin.py:190} INFO - Extracted 0 video URLs
+[2025-05-09T09:42:25.854+0000] {logging_mixin.py:190} INFO -  No data found
+[2025-05-09T09:42:26.948+0000] {connectionpool.py:870} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff7d3a93400>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/270c0f3ba863a5443d8d8f959c92fe46
+[2025-05-09T09:42:26.949+0000] {connectionpool.py:870} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff7d3a93b20>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/270c0f3ba863a5443d8d8f959c92fe46
+[2025-05-09T09:42:26.950+0000] {connectionpool.py:870} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7ff7d3908070>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/270c0f3ba863a5443d8d8f959c92fe46
+[2025-05-09T09:42:26.950+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-05-09T09:42:26.963+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-09T09:42:26.963+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instagram_videos_scraper_dag, task_id=ins_videos_scraper, run_id=manual__2025-05-09T09:42:20.486535+00:00, execution_date=20250509T094220, start_date=20250509T094221, end_date=20250509T094226
+[2025-05-09T09:42:27.010+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-09T09:42:27.022+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-09T09:42:27.041+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

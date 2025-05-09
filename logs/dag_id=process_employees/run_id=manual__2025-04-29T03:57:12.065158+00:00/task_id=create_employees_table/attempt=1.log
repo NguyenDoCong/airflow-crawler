@@ -1,0 +1,33 @@
+[2025-04-29T03:57:13.016+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-29T03:57:13.027+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_employees.create_employees_table manual__2025-04-29T03:57:12.065158+00:00 [queued]>
+[2025-04-29T03:57:13.032+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_employees.create_employees_table manual__2025-04-29T03:57:12.065158+00:00 [queued]>
+[2025-04-29T03:57:13.032+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-04-29T03:57:13.041+0000] {taskinstance.py:2879} INFO - Executing <Task(SQLExecuteQueryOperator): create_employees_table> on 2025-04-29 03:57:12.065158+00:00
+[2025-04-29T03:57:13.044+0000] {standard_task_runner.py:72} INFO - Started process 9853 to run task
+[2025-04-29T03:57:13.047+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'process_employees', 'create_employees_table', 'manual__2025-04-29T03:57:12.065158+00:00', '--job-id', '2458', '--raw', '--subdir', 'DAGS_FOLDER/tuts/simple_data_pipeline.py', '--cfg-path', '/tmp/tmpdmcy8uv7']
+[2025-04-29T03:57:13.048+0000] {standard_task_runner.py:105} INFO - Job 2458: Subtask create_employees_table
+[2025-04-29T03:57:13.084+0000] {task_command.py:467} INFO - Running <TaskInstance: process_employees.create_employees_table manual__2025-04-29T03:57:12.065158+00:00 [running]> on host 2c7afa36055b
+[2025-04-29T03:57:13.134+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='process_employees' AIRFLOW_CTX_TASK_ID='create_employees_table' AIRFLOW_CTX_EXECUTION_DATE='2025-04-29T03:57:12.065158+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-29T03:57:12.065158+00:00'
+[2025-04-29T03:57:13.135+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-04-29T03:57:13.137+0000] {sql.py:282} INFO - Executing: 
+            CREATE TABLE IF NOT EXISTS employees (
+                "Serial Number" NUMERIC PRIMARY KEY,
+                "Company Name" TEXT,
+                "Employee Markme" TEXT,
+                "Description" TEXT,
+                "Leave" INTEGER
+            );
+[2025-04-29T03:57:13.143+0000] {base.py:84} INFO - Retrieving connection 'tutorial_pg_conn'
+[2025-04-29T03:57:13.151+0000] {base.py:84} INFO - Retrieving connection 'tutorial_pg_conn'
+[2025-04-29T03:57:13.154+0000] {sql.py:509} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS employees (
+                "Serial Number" NUMERIC PRIMARY KEY,
+                "Company Name" TEXT,
+                "Employee Markme" TEXT,
+                "Description" TEXT,
+                "Leave" INTEGER
+            );, parameters: None
+[2025-04-29T03:57:13.181+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-04-29T03:57:13.182+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=process_employees, task_id=create_employees_table, run_id=manual__2025-04-29T03:57:12.065158+00:00, execution_date=20250429T035712, start_date=20250429T035713, end_date=20250429T035713
+[2025-04-29T03:57:13.228+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-04-29T03:57:13.236+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

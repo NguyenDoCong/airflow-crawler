@@ -1,0 +1,774 @@
+[2025-05-08T07:19:52.360+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-08T07:19:52.371+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.ins_videos_scraper manual__2025-05-08T07:19:51.191435+00:00 [queued]>
+[2025-05-08T07:19:52.376+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.ins_videos_scraper manual__2025-05-08T07:19:51.191435+00:00 [queued]>
+[2025-05-08T07:19:52.376+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-08T07:19:52.400+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): ins_videos_scraper> on 2025-05-08 07:19:51.191435+00:00
+[2025-05-08T07:19:52.403+0000] {standard_task_runner.py:72} INFO - Started process 83 to run task
+[2025-05-08T07:19:52.406+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'instagram_videos_scraper_dag', 'ins_videos_scraper', 'manual__2025-05-08T07:19:51.191435+00:00', '--job-id', '5120', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmp68o1hfls']
+[2025-05-08T07:19:52.407+0000] {standard_task_runner.py:105} INFO - Job 5120: Subtask ins_videos_scraper
+[2025-05-08T07:19:52.441+0000] {task_command.py:467} INFO - Running <TaskInstance: instagram_videos_scraper_dag.ins_videos_scraper manual__2025-05-08T07:19:51.191435+00:00 [running]> on host 4e1cfb881694
+[2025-05-08T07:19:52.494+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='instagram_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='ins_videos_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-05-08T07:19:51.191435+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-08T07:19:51.191435+00:00'
+[2025-05-08T07:19:52.495+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-08T07:19:52.497+0000] {logging_mixin.py:190} INFO - Scraping Instagram profile: baukrysie
+[2025-05-08T07:20:16.875+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.92); currently, chromedriver 136.0.7103.92 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-08T07:20:17.708+0000] {logging_mixin.py:190} INFO - url: https://www.instagram.com/baukrysie/
+[2025-05-08T07:20:19.285+0000] {logging_mixin.py:190} INFO - Step 1 of 2 - Loading profile page
+[2025-05-08T07:20:19.285+0000] {logging_mixin.py:190} INFO - Extracting videos...
+[2025-05-08T07:20:22.482+0000] {logging_mixin.py:190} INFO - Found 50 video tags
+[2025-05-08T07:20:22.624+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/DH0KpCARMKo/
+[2025-05-08T07:20:22.642+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/DGsv_X4y5sv/
+[2025-05-08T07:20:25.449+0000] {logging_mixin.py:190} INFO - Found 50 video tags
+[2025-05-08T07:20:25.533+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CuOXoAArPXC/
+[2025-05-08T07:20:25.546+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/DHVTWLmRWeC/
+[2025-05-08T07:20:25.557+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/DD1nu1WyK2P/
+[2025-05-08T07:20:25.564+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/DDWD9fTyh4A/
+[2025-05-08T07:20:25.571+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/C9ARIS4SLH4/
+[2025-05-08T07:20:25.577+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/C8ozeuUvucg/
+[2025-05-08T07:20:25.583+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/C78m2CaP1dp/
+[2025-05-08T07:20:25.589+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/C6dYezvvnt5/
+[2025-05-08T07:20:25.594+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/C3_6T7txC9G/
+[2025-05-08T07:20:25.601+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/C3Ftd_LxKth/
+[2025-05-08T07:20:37.386+0000] {logging_mixin.py:190} INFO - Found 62 video tags
+[2025-05-08T07:20:37.530+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CxzFtriv_xJ/
+[2025-05-08T07:20:37.550+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CxAjai1x7MO/
+[2025-05-08T07:20:37.557+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CvUBhcfPPDN/
+[2025-05-08T07:20:37.563+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CurT9KiLdx9/
+[2025-05-08T07:20:37.569+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/Ct1S7C_vF-p/
+[2025-05-08T07:20:37.576+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/Cti6MifL3WA/
+[2025-05-08T07:20:37.582+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CtREVfUOD5G/
+[2025-05-08T07:20:37.588+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CtEs5eKMi8h/
+[2025-05-08T07:20:37.595+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CpiD0D9rC7L/
+[2025-05-08T07:20:37.602+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CmbeEeCp2ho/
+[2025-05-08T07:20:37.608+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/Clsej5VNAQL/
+[2025-05-08T07:20:28.613+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/ClllGjDr_sA/
+[2025-05-08T07:20:31.926+0000] {logging_mixin.py:190} INFO - Found 70 video tags
+[2025-05-08T07:20:32.163+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/ClX3j-JOeCw/
+[2025-05-08T07:20:32.169+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/ClRR0j6OFJa/
+[2025-05-08T07:20:32.176+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/ClJY7JeBj9Y/
+[2025-05-08T07:20:32.182+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CjKKsU_jH2o/
+[2025-05-08T07:20:32.188+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CeXxS_YFYCK/
+[2025-05-08T07:20:32.194+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CdQEpDIF0Fv/
+[2025-05-08T07:20:32.200+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CSlNKKipqG-/
+[2025-05-08T07:20:32.207+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CR_aT1DJrvy/
+[2025-05-08T07:20:34.940+0000] {logging_mixin.py:190} INFO - Found 70 video tags
+[2025-05-08T07:20:35.349+0000] {logging_mixin.py:190} INFO - Extracted 32 video URLs
+[2025-05-08T07:20:35.349+0000] {logging_mixin.py:190} INFO - Step 2 of 2 - Downloading and saving videos
+[2025-05-08T07:20:35.350+0000] {logging_mixin.py:190} INFO - Don't close the app! Saving scraped data to database, it can take a while!
+[2025-05-08T07:20:35.555+0000] {connectionpool.py:870} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1c84f48880>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/496594b33976d59a3e53c9f41cf22df7
+[2025-05-08T07:20:35.556+0000] {connectionpool.py:870} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1c84f4a470>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/496594b33976d59a3e53c9f41cf22df7
+[2025-05-08T07:20:35.557+0000] {connectionpool.py:870} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f1c84f4b7f0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/496594b33976d59a3e53c9f41cf22df7
+[2025-05-08T07:20:35.557+0000] {logging_mixin.py:190} INFO - Reading URLs from scraped_data/instagram.txt...
+[2025-05-08T07:20:35.699+0000] {logging_mixin.py:190} INFO - Starting batch download...
+[2025-05-08T07:20:35.913+0000] {logging_mixin.py:190} WARNING - Facebook/Youtube/Tiktok/Instagram Batch:   0%|          | 0/32 [00:00<?, ?it/s]
+[2025-05-08T07:20:36.210+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.213+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.214+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.215+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.218+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.218+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.219+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.220+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.221+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.221+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.221+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.222+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.222+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.224+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.225+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.226+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.226+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.227+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.225+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.228+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.230+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.231+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.616+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/CtREVfUOD5G/
+[2025-05-08T07:20:36.636+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.642+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/CSlNKKipqG-/
+[2025-05-08T07:20:36.643+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/CpiD0D9rC7L/
+[2025-05-08T07:20:36.644+0000] {logging_mixin.py:190} INFO - [Instagram] CtREVfUOD5G: Setting up session
+[2025-05-08T07:20:36.644+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/C78m2CaP1dp/
+[2025-05-08T07:20:36.651+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:36.668+0000] {logging_mixin.py:190} INFO - [Instagram] CSlNKKipqG-: Setting up session
+[2025-05-08T07:20:36.683+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/CurT9KiLdx9/
+[2025-05-08T07:20:36.683+0000] {logging_mixin.py:190} INFO - [Instagram] CpiD0D9rC7L: Setting up session
+[2025-05-08T07:20:36.689+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/CR_aT1DJrvy/
+[2025-05-08T07:20:36.689+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/Ct1S7C_vF-p/
+[2025-05-08T07:20:36.696+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/Clsej5VNAQL/
+[2025-05-08T07:20:36.709+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/ClllGjDr_sA/
+[2025-05-08T07:20:36.710+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/C9ARIS4SLH4/
+[2025-05-08T07:20:36.710+0000] {logging_mixin.py:190} INFO - [Instagram] C78m2CaP1dp: Setting up session
+[2025-05-08T07:20:36.711+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/ClRR0j6OFJa/
+[2025-05-08T07:20:36.711+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/ClJY7JeBj9Y/
+[2025-05-08T07:20:36.745+0000] {logging_mixin.py:190} INFO - [Instagram] CurT9KiLdx9: Setting up session
+[2025-05-08T07:20:36.748+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/ClX3j-JOeCw/
+[2025-05-08T07:20:36.784+0000] {logging_mixin.py:190} INFO - [Instagram] CR_aT1DJrvy: Setting up session
+[2025-05-08T07:20:36.786+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/CmbeEeCp2ho/
+[2025-05-08T07:20:36.789+0000] {logging_mixin.py:190} INFO - [Instagram] Ct1S7C_vF-p: Setting up session
+[2025-05-08T07:20:36.790+0000] {logging_mixin.py:190} INFO - [Instagram] Clsej5VNAQL: Setting up session
+[2025-05-08T07:20:36.791+0000] {logging_mixin.py:190} INFO - [Instagram] ClllGjDr_sA: Setting up session
+[2025-05-08T07:20:36.792+0000] {logging_mixin.py:190} INFO - [Instagram] C9ARIS4SLH4: Setting up session
+[2025-05-08T07:20:36.826+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/C3Ftd_LxKth/
+[2025-05-08T07:20:36.827+0000] {logging_mixin.py:190} INFO - [Instagram] ClRR0j6OFJa: Setting up session
+[2025-05-08T07:20:36.834+0000] {logging_mixin.py:190} INFO - [Instagram] ClJY7JeBj9Y: Setting up session
+[2025-05-08T07:20:36.861+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/CtEs5eKMi8h/
+[2025-05-08T07:20:36.900+0000] {logging_mixin.py:190} INFO - [Instagram] ClX3j-JOeCw: Setting up session
+[2025-05-08T07:20:36.907+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/CdQEpDIF0Fv/
+[2025-05-08T07:20:36.929+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/C3_6T7txC9G/
+[2025-05-08T07:20:36.932+0000] {logging_mixin.py:190} INFO - [Instagram] CmbeEeCp2ho: Setting up session
+[2025-05-08T07:20:37.002+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/CjKKsU_jH2o/
+[2025-05-08T07:20:37.012+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/CuOXoAArPXC/
+[2025-05-08T07:20:37.058+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/Cti6MifL3WA/
+[2025-05-08T07:20:37.141+0000] {logging_mixin.py:190} INFO - [Instagram] Cti6MifL3WA: Setting up session
+[2025-05-08T07:20:37.088+0000] {logging_mixin.py:190} INFO - [Instagram] C3Ftd_LxKth: Setting up session
+[2025-05-08T07:20:37.129+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/CeXxS_YFYCK/
+[2025-05-08T07:20:37.134+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/C6dYezvvnt5/
+[2025-05-08T07:20:37.143+0000] {logging_mixin.py:190} INFO - [Instagram] C6dYezvvnt5: Setting up session
+[2025-05-08T07:20:37.138+0000] {logging_mixin.py:190} INFO - [Instagram] CdQEpDIF0Fv: Setting up session
+[2025-05-08T07:20:37.139+0000] {logging_mixin.py:190} INFO - [Instagram] C3_6T7txC9G: Setting up session
+[2025-05-08T07:20:37.140+0000] {logging_mixin.py:190} INFO - [Instagram] CjKKsU_jH2o: Setting up session
+[2025-05-08T07:20:37.140+0000] {logging_mixin.py:190} INFO - [Instagram] CuOXoAArPXC: Setting up session
+[2025-05-08T07:20:37.068+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/C8ozeuUvucg/
+[2025-05-08T07:20:37.142+0000] {logging_mixin.py:190} INFO - [Instagram] CeXxS_YFYCK: Setting up session
+[2025-05-08T07:20:37.137+0000] {logging_mixin.py:190} INFO - [Instagram] CtEs5eKMi8h: Setting up session
+[2025-05-08T07:20:37.154+0000] {logging_mixin.py:190} INFO - [Instagram] C8ozeuUvucg: Setting up session
+[2025-05-08T07:20:37.182+0000] {logging_mixin.py:190} INFO - [Instagram] CtREVfUOD5G: Downloading JSON metadata
+[2025-05-08T07:20:37.200+0000] {logging_mixin.py:190} INFO - [Instagram] CpiD0D9rC7L: Downloading JSON metadata
+[2025-05-08T07:20:37.235+0000] {logging_mixin.py:190} INFO - [Instagram] CSlNKKipqG-: Downloading JSON metadata
+[2025-05-08T07:20:37.296+0000] {logging_mixin.py:190} INFO - [Instagram] C78m2CaP1dp: Downloading JSON metadata
+[2025-05-08T07:20:37.309+0000] {logging_mixin.py:190} INFO - [Instagram] CurT9KiLdx9: Downloading JSON metadata
+[2025-05-08T07:20:37.364+0000] {logging_mixin.py:190} INFO - [Instagram] CR_aT1DJrvy: Downloading JSON metadata
+[2025-05-08T07:20:37.380+0000] {logging_mixin.py:190} INFO - [Instagram] Ct1S7C_vF-p: Downloading JSON metadata
+[2025-05-08T07:20:37.399+0000] {logging_mixin.py:190} INFO - [Instagram] Clsej5VNAQL: Downloading JSON metadata
+[2025-05-08T07:20:37.435+0000] {logging_mixin.py:190} INFO - [Instagram] ClllGjDr_sA: Downloading JSON metadata
+[2025-05-08T07:20:37.439+0000] {logging_mixin.py:190} INFO - [Instagram] C9ARIS4SLH4: Downloading JSON metadata
+[2025-05-08T07:20:37.704+0000] {logging_mixin.py:190} INFO - [Instagram] ClX3j-JOeCw: Downloading JSON metadata
+[2025-05-08T07:20:37.728+0000] {logging_mixin.py:190} INFO - [Instagram] CmbeEeCp2ho: Downloading JSON metadata
+[2025-05-08T07:20:37.740+0000] {logging_mixin.py:190} INFO - [Instagram] CjKKsU_jH2o: Downloading JSON metadata
+[2025-05-08T07:20:37.741+0000] {logging_mixin.py:190} INFO - [Instagram] C8ozeuUvucg: Downloading JSON metadata
+[2025-05-08T07:20:37.747+0000] {logging_mixin.py:190} INFO - [info] CpiD0D9rC7L: Downloading 1 format(s): dash-973849863602222ad
+[2025-05-08T07:20:37.757+0000] {logging_mixin.py:190} INFO - [info] CtREVfUOD5G: Downloading 1 format(s): dash-1477644486394139ad
+[2025-05-08T07:20:37.759+0000] {logging_mixin.py:190} INFO - [Instagram] ClJY7JeBj9Y: Downloading JSON metadata
+[2025-05-08T07:20:37.764+0000] {logging_mixin.py:190} INFO - [Instagram] CeXxS_YFYCK: Downloading JSON metadata
+[2025-05-08T07:20:37.765+0000] {logging_mixin.py:190} INFO - [Instagram] Cti6MifL3WA: Downloading JSON metadata
+[2025-05-08T07:20:37.767+0000] {logging_mixin.py:190} INFO - [Instagram] C3Ftd_LxKth: Downloading JSON metadata
+[2025-05-08T07:20:37.770+0000] {logging_mixin.py:190} INFO - [Instagram] ClRR0j6OFJa: Downloading JSON metadata
+[2025-05-08T07:20:37.772+0000] {logging_mixin.py:190} INFO - [Instagram] CtEs5eKMi8h: Downloading JSON metadata
+[2025-05-08T07:20:37.773+0000] {logging_mixin.py:190} INFO - [Instagram] C3_6T7txC9G: Downloading JSON metadata
+[2025-05-08T07:20:37.775+0000] {logging_mixin.py:190} INFO - [Instagram] C6dYezvvnt5: Downloading JSON metadata
+[2025-05-08T07:20:37.777+0000] {logging_mixin.py:190} INFO - [Instagram] CdQEpDIF0Fv: Downloading JSON metadata
+[2025-05-08T07:20:37.779+0000] {logging_mixin.py:190} INFO - [Instagram] CuOXoAArPXC: Downloading JSON metadata
+[2025-05-08T07:20:37.783+0000] {logging_mixin.py:190} INFO - [info] CSlNKKipqG-: Downloading 1 format(s): dash-590429315285030ad
+[2025-05-08T07:20:37.789+0000] {logging_mixin.py:190} INFO - [info] CurT9KiLdx9: Downloading 1 format(s): dash-841503107313979ad
+[2025-05-08T07:20:37.828+0000] {logging_mixin.py:190} INFO - [download] Destination: media/CpiD0D9rC7L.m4a
+[2025-05-08T07:20:37.829+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  517.84KiB at  533.08KiB/s ETA 00:00
+[2025-05-08T07:20:37.831+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  517.84KiB at  729.36KiB/s ETA 00:00
+[2025-05-08T07:20:37.832+0000] {logging_mixin.py:190} INFO - [download]   1.4% of  517.84KiB at    1.26MiB/s ETA 00:00
+[2025-05-08T07:20:37.842+0000] {logging_mixin.py:190} INFO - [download]   2.9% of  517.84KiB at  963.19KiB/s ETA 00:00
+[2025-05-08T07:20:37.850+0000] {logging_mixin.py:190} INFO - [download]   6.0% of  517.84KiB at    1.31MiB/s ETA 00:00
+[2025-05-08T07:20:37.864+0000] {logging_mixin.py:190} INFO - [download]  12.2% of  517.84KiB at    1.64MiB/s ETA 00:00
+[2025-05-08T07:20:37.884+0000] {logging_mixin.py:190} INFO - [download]  24.5% of  517.84KiB at    2.17MiB/s ETA 00:00
+[2025-05-08T07:20:37.896+0000] {logging_mixin.py:190} INFO - [info] Clsej5VNAQL: Downloading 1 format(s): dash-1280352272813444ad
+[2025-05-08T07:20:37.904+0000] {logging_mixin.py:190} INFO - [info] Ct1S7C_vF-p: Downloading 1 format(s): dash-1939291933093102ad
+[2025-05-08T07:20:37.913+0000] {logging_mixin.py:190} INFO - [download] Destination: media/CSlNKKipqG-.m4a
+[2025-05-08T07:20:37.913+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  184.64KiB at  875.09KiB/s ETA 00:00
+[2025-05-08T07:20:37.915+0000] {logging_mixin.py:190} INFO - [download]   1.6% of  184.64KiB at    1.14MiB/s ETA 00:00
+[2025-05-08T07:20:37.916+0000] {logging_mixin.py:190} INFO - [download]  49.2% of  517.84KiB at    2.80MiB/s ETA 00:00
+[2025-05-08T07:20:37.916+0000] {logging_mixin.py:190} INFO - [download]   3.8% of  184.64KiB at    1.71MiB/s ETA 00:00
+[2025-05-08T07:20:37.926+0000] {logging_mixin.py:190} INFO - [info] C78m2CaP1dp: Downloading 1 format(s): dash-821536356165081ad
+[2025-05-08T07:20:37.978+0000] {logging_mixin.py:190} INFO - [download]   8.1% of  184.64KiB at  227.92KiB/s ETA 00:00
+[2025-05-08T07:20:37.980+0000] {logging_mixin.py:190} INFO - [download]  16.8% of  184.64KiB at  459.06KiB/s ETA 00:00
+[2025-05-08T07:20:37.980+0000] {logging_mixin.py:190} INFO - [download]  34.1% of  184.64KiB at  922.83KiB/s ETA 00:00
+[2025-05-08T07:20:37.984+0000] {logging_mixin.py:190} INFO - [download]  98.7% of  517.84KiB at    3.18MiB/s ETA 00:00
+[2025-05-08T07:20:37.985+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  517.84KiB at    3.20MiB/s ETA 00:00
+[2025-05-08T07:20:37.985+0000] {logging_mixin.py:190} INFO - [download] 100% of  517.84KiB in 00:00:00 at 2.16MiB/s   
+[2025-05-08T07:20:38.000+0000] {logging_mixin.py:190} INFO - [info] C9ARIS4SLH4: Downloading 1 format(s): dash-2168822596810343ad
+[2025-05-08T07:20:38.013+0000] {logging_mixin.py:190} INFO - [download]  68.8% of  184.64KiB at    1.24MiB/s ETA 00:00
+[2025-05-08T07:20:38.020+0000] {logging_mixin.py:190} INFO - [download] Destination: media/Clsej5VNAQL.m4a
+[2025-05-08T07:20:38.020+0000] {logging_mixin.py:190} INFO - [download]   0.1% of 1021.58KiB at  672.06KiB/s ETA 00:01
+[2025-05-08T07:20:38.022+0000] {logging_mixin.py:190} INFO - [download]   0.3% of 1021.58KiB at  793.92KiB/s ETA 00:01
+[2025-05-08T07:20:38.023+0000] {logging_mixin.py:190} INFO - [download] Destination: media/Ct1S7C_vF-p.m4a
+[2025-05-08T07:20:38.023+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  672.88KiB at  504.30KiB/s ETA 00:01
+[2025-05-08T07:20:38.025+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  672.88KiB at  878.63KiB/s ETA 00:00
+[2025-05-08T07:20:38.026+0000] {logging_mixin.py:190} INFO - [download]   0.7% of 1021.58KiB at  926.74KiB/s ETA 00:01
+[2025-05-08T07:20:38.028+0000] {logging_mixin.py:190} INFO - [download]   1.0% of  672.88KiB at    1.08MiB/s ETA 00:00
+[2025-05-08T07:20:38.032+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  184.64KiB at    1.50MiB/s ETA 00:00
+[2025-05-08T07:20:38.034+0000] {logging_mixin.py:190} INFO - [download] 100% of  184.64KiB in 00:00:00 at 789.26KiB/s 
+[2025-05-08T07:20:38.034+0000] {logging_mixin.py:190} INFO - [download] Destination: media/C78m2CaP1dp.m4a
+[2025-05-08T07:20:38.034+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  406.69KiB at  921.22KiB/s ETA 00:00
+[2025-05-08T07:20:38.035+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  406.69KiB at    1.96MiB/s ETA 00:00
+[2025-05-08T07:20:38.036+0000] {logging_mixin.py:190} INFO - [download]   1.7% of  406.69KiB at    2.97MiB/s ETA 00:00
+[2025-05-08T07:20:38.038+0000] {logging_mixin.py:190} INFO - [download]   1.5% of 1021.58KiB at  779.49KiB/s ETA 00:01
+[2025-05-08T07:20:38.040+0000] {logging_mixin.py:190} INFO - [download]   2.2% of  672.88KiB at  802.01KiB/s ETA 00:00
+[2025-05-08T07:20:38.048+0000] {logging_mixin.py:190} INFO - [download]   3.0% of 1021.58KiB at    1.02MiB/s ETA 00:00
+[2025-05-08T07:20:38.050+0000] {logging_mixin.py:190} INFO - [download]   4.6% of  672.88KiB at    1.06MiB/s ETA 00:00
+[2025-05-08T07:20:38.051+0000] {logging_mixin.py:190} INFO - [download]   3.7% of  406.69KiB at  828.16KiB/s ETA 00:00
+[2025-05-08T07:20:38.060+0000] {logging_mixin.py:190} INFO - [download]   7.6% of  406.69KiB at    1.14MiB/s ETA 00:00
+[2025-05-08T07:20:38.071+0000] {logging_mixin.py:190} INFO - [info] ClllGjDr_sA: Downloading 1 format(s): dash-532182325464625ad
+[2025-05-08T07:20:38.072+0000] {logging_mixin.py:190} INFO - [download]   6.2% of 1021.58KiB at    1.16MiB/s ETA 00:00
+[2025-05-08T07:20:38.077+0000] {logging_mixin.py:190} INFO - [download]   9.4% of  672.88KiB at    1.12MiB/s ETA 00:00
+[2025-05-08T07:20:38.081+0000] {logging_mixin.py:190} INFO - [download]  15.5% of  406.69KiB at    1.31MiB/s ETA 00:00
+[2025-05-08T07:20:38.096+0000] {logging_mixin.py:190} INFO - [download]  12.4% of 1021.58KiB at    1.60MiB/s ETA 00:00
+[2025-05-08T07:20:38.099+0000] {logging_mixin.py:190} INFO - [download]  18.9% of  672.88KiB at    1.59MiB/s ETA 00:00
+[2025-05-08T07:20:38.111+0000] {logging_mixin.py:190} INFO - [info] CR_aT1DJrvy: Downloading 1 format(s): dash-953514039914844ad
+[2025-05-08T07:20:38.118+0000] {logging_mixin.py:190} INFO - [download] Destination: media/C9ARIS4SLH4.m4a
+[2025-05-08T07:20:38.119+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  439.54KiB at  Unknown B/s ETA Unknown
+[2025-05-08T07:20:38.120+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  439.54KiB at    1.67MiB/s ETA 00:00  
+[2025-05-08T07:20:38.152+0000] {logging_mixin.py:190} INFO - [download]  31.2% of  406.69KiB at    1.05MiB/s ETA 00:00
+[2025-05-08T07:20:38.164+0000] {logging_mixin.py:190} INFO - [download]   1.6% of  439.54KiB at  152.08KiB/s ETA 00:02
+[2025-05-08T07:20:38.166+0000] {logging_mixin.py:190} INFO - [download]  37.9% of  672.88KiB at    1.72MiB/s ETA 00:00
+[2025-05-08T07:20:38.206+0000] {logging_mixin.py:190} INFO - [download]  25.0% of 1021.58KiB at    1.33MiB/s ETA 00:00
+[2025-05-08T07:20:38.221+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/CpiD0D9rC7L.m4a"
+[2025-05-08T07:20:38.222+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/CSlNKKipqG-.m4a"
+[2025-05-08T07:20:38.224+0000] {logging_mixin.py:190} INFO - [download]   3.4% of  439.54KiB at  142.10KiB/s ETA 00:02
+[2025-05-08T07:20:38.224+0000] {logging_mixin.py:190} INFO - [download]  62.7% of  406.69KiB at    1.30MiB/s ETA 00:00
+[2025-05-08T07:20:38.228+0000] {logging_mixin.py:190} INFO - [download]   7.1% of  439.54KiB at  281.35KiB/s ETA 00:01
+[2025-05-08T07:20:38.251+0000] {logging_mixin.py:190} INFO - [info] ClJY7JeBj9Y: Downloading 1 format(s): dash-2336474803186058ad
+[2025-05-08T07:20:38.256+0000] {logging_mixin.py:190} INFO - [download]  14.3% of  439.54KiB at  457.53KiB/s ETA 00:00
+[2025-05-08T07:20:38.260+0000] {logging_mixin.py:190} INFO - [download] Destination: media/CR_aT1DJrvy.m4a
+[2025-05-08T07:20:38.260+0000] {logging_mixin.py:190} INFO - [download]   1.0% of  100.99KiB at  Unknown B/s ETA Unknown
+[2025-05-08T07:20:38.261+0000] {logging_mixin.py:190} INFO - [download]   3.0% of  100.99KiB at    1.97MiB/s ETA 00:00  
+[2025-05-08T07:20:38.262+0000] {logging_mixin.py:190} INFO - [download]   6.9% of  100.99KiB at    2.36MiB/s ETA 00:00
+[2025-05-08T07:20:38.268+0000] {logging_mixin.py:190} INFO - [download]  75.9% of  672.88KiB at    2.02MiB/s ETA 00:00
+[2025-05-08T07:20:38.275+0000] {logging_mixin.py:190} INFO - [download]  50.0% of 1021.58KiB at    1.95MiB/s ETA 00:00
+[2025-05-08T07:20:38.276+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  406.69KiB at    1.64MiB/s ETA 00:00
+[2025-05-08T07:20:38.277+0000] {logging_mixin.py:190} INFO - [download] 100% of  406.69KiB in 00:00:00 at 1.14MiB/s   
+[2025-05-08T07:20:38.278+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/C78m2CaP1dp.m4a"
+[2025-05-08T07:20:38.280+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  672.88KiB at    2.54MiB/s ETA 00:00
+[2025-05-08T07:20:38.281+0000] {logging_mixin.py:190} INFO - [download] 100% of  672.88KiB in 00:00:00 at 1.77MiB/s   
+[2025-05-08T07:20:38.284+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/Ct1S7C_vF-p.m4a"
+[2025-05-08T07:20:38.284+0000] {logging_mixin.py:190} INFO - [download]  28.9% of  439.54KiB at  763.37KiB/s ETA 00:00
+[2025-05-08T07:20:38.285+0000] {logging_mixin.py:190} INFO - [download]  14.9% of  100.99KiB at  595.87KiB/s ETA 00:00
+[2025-05-08T07:20:38.292+0000] {logging_mixin.py:190} INFO - [download]  30.7% of  100.99KiB at  952.43KiB/s ETA 00:00
+[2025-05-08T07:20:38.312+0000] {logging_mixin.py:190} INFO - [download]  62.4% of  100.99KiB at    1.18MiB/s ETA 00:00
+[2025-05-08T07:20:38.318+0000] {logging_mixin.py:190} INFO - [download]  58.0% of  439.54KiB at    1.25MiB/s ETA 00:00
+[2025-05-08T07:20:38.329+0000] {logging_mixin.py:190} INFO - [info] ClRR0j6OFJa: Downloading 1 format(s): dash-701210334821482ad
+[2025-05-08T07:20:38.362+0000] {logging_mixin.py:190} INFO - [info] CmbeEeCp2ho: Downloading 1 format(s): dash-3350767065208181ad
+[2025-05-08T07:20:38.372+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  100.99KiB at  905.21KiB/s ETA 00:00
+[2025-05-08T07:20:38.373+0000] {logging_mixin.py:190} INFO - [download] 100% of  100.99KiB in 00:00:00 at 390.75KiB/s 
+[2025-05-08T07:20:38.374+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/CR_aT1DJrvy.m4a"
+[2025-05-08T07:20:38.377+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  439.54KiB at    1.66MiB/s ETA 00:00
+[2025-05-08T07:20:38.379+0000] {logging_mixin.py:190} INFO - [download] 100% of  439.54KiB in 00:00:00 at 1.15MiB/s   
+[2025-05-08T07:20:38.381+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/C9ARIS4SLH4.m4a"
+[2025-05-08T07:20:38.394+0000] {logging_mixin.py:190} INFO - [download] Destination: media/ClJY7JeBj9Y.m4a
+[2025-05-08T07:20:38.395+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/CSlNKKipqG-.mp3
+[2025-05-08T07:20:38.396+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  454.24KiB at  108.46KiB/s ETA 00:04
+[2025-05-08T07:20:38.396+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/Ct1S7C_vF-p.mp3
+[2025-05-08T07:20:38.397+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  454.24KiB at  274.41KiB/s ETA 00:01
+[2025-05-08T07:20:38.404+0000] {logging_mixin.py:190} INFO - [info] C8ozeuUvucg: Downloading 1 format(s): dash-1529709984595686ad
+[2025-05-08T07:20:38.406+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/C78m2CaP1dp.mp3
+[2025-05-08T07:20:38.409+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/CpiD0D9rC7L.mp3
+[2025-05-08T07:20:38.410+0000] {logging_mixin.py:190} INFO - [download]   1.5% of  454.24KiB at  289.87KiB/s ETA 00:01
+[2025-05-08T07:20:38.416+0000] {logging_mixin.py:190} INFO - [info] CtEs5eKMi8h: Downloading 1 format(s): dash-792186179173577ad
+[2025-05-08T07:20:38.428+0000] {logging_mixin.py:190} INFO - [info] Cti6MifL3WA: Downloading 1 format(s): dash-1391176041730729ad
+[2025-05-08T07:20:38.436+0000] {logging_mixin.py:190} INFO - [download]   3.3% of  454.24KiB at  303.17KiB/s ETA 00:01
+[2025-05-08T07:20:38.452+0000] {logging_mixin.py:190} INFO - [download]   6.8% of  454.24KiB at  474.60KiB/s ETA 00:00
+[2025-05-08T07:20:38.452+0000] {logging_mixin.py:190} INFO - [download] Destination: media/CmbeEeCp2ho.m4a
+[2025-05-08T07:20:38.460+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  327.55KiB at   81.17KiB/s ETA 00:04
+[2025-05-08T07:20:38.462+0000] {logging_mixin.py:190} INFO - [download]   0.9% of  327.55KiB at  221.83KiB/s ETA 00:01
+[2025-05-08T07:20:38.463+0000] {logging_mixin.py:190} INFO - [download] 100.0% of 1021.58KiB at    2.25MiB/s ETA 00:00
+[2025-05-08T07:20:38.465+0000] {logging_mixin.py:190} INFO - [download]   2.1% of  327.55KiB at  416.96KiB/s ETA 00:00
+[2025-05-08T07:20:38.466+0000] {logging_mixin.py:190} INFO - [download]  13.9% of  454.24KiB at  788.18KiB/s ETA 00:00
+[2025-05-08T07:20:38.468+0000] {logging_mixin.py:190} INFO - [download] Destination: media/ClRR0j6OFJa.m4a
+[2025-05-08T07:20:38.471+0000] {logging_mixin.py:190} INFO - [download] 100% of 1021.58KiB in 00:00:00 at 1.76MiB/s   
+[2025-05-08T07:20:38.473+0000] {logging_mixin.py:190} INFO - [download]   4.6% of  327.55KiB at  597.39KiB/s ETA 00:00
+[2025-05-08T07:20:38.474+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  522.96KiB at   40.54KiB/s ETA 00:12
+[2025-05-08T07:20:38.478+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/Clsej5VNAQL.m4a"
+[2025-05-08T07:20:38.480+0000] {logging_mixin.py:190} INFO - [download]   9.5% of  327.55KiB at  971.59KiB/s ETA 00:00
+[2025-05-08T07:20:38.481+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  522.96KiB at   95.32KiB/s ETA 00:05
+[2025-05-08T07:20:38.486+0000] {logging_mixin.py:190} INFO - [download]   1.3% of  522.96KiB at  190.47KiB/s ETA 00:02
+[2025-05-08T07:20:38.488+0000] {logging_mixin.py:190} INFO - [download]  28.0% of  454.24KiB at    1.28MiB/s ETA 00:00
+[2025-05-08T07:20:38.490+0000] {logging_mixin.py:190} INFO - [download]   2.9% of  522.96KiB at  371.01KiB/s ETA 00:01
+[2025-05-08T07:20:38.492+0000] {logging_mixin.py:190} INFO - [download]  19.2% of  327.55KiB at    1.41MiB/s ETA 00:00
+[2025-05-08T07:20:38.495+0000] {logging_mixin.py:190} INFO - [download]   5.9% of  522.96KiB at  673.38KiB/s ETA 00:00
+[2025-05-08T07:20:38.497+0000] {logging_mixin.py:190} INFO - [download] Destination: media/C8ozeuUvucg.m4a
+[2025-05-08T07:20:38.499+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  208.31KiB at  268.62KiB/s ETA 00:00
+[2025-05-08T07:20:38.500+0000] {logging_mixin.py:190} INFO - [download]   1.4% of  208.31KiB at  569.39KiB/s ETA 00:00
+[2025-05-08T07:20:38.502+0000] {logging_mixin.py:190} INFO - [download]   3.4% of  208.31KiB at  985.47KiB/s ETA 00:00
+[2025-05-08T07:20:38.507+0000] {logging_mixin.py:190} INFO - [download]  12.0% of  522.96KiB at    1.06MiB/s ETA 00:00
+[2025-05-08T07:20:38.513+0000] {logging_mixin.py:190} INFO - [download]  56.1% of  454.24KiB at    1.97MiB/s ETA 00:00
+[2025-05-08T07:20:38.515+0000] {logging_mixin.py:190} INFO - [download]   7.2% of  208.31KiB at  748.48KiB/s ETA 00:00
+[2025-05-08T07:20:38.517+0000] {logging_mixin.py:190} INFO - [download]  38.8% of  327.55KiB at    1.81MiB/s ETA 00:00
+[2025-05-08T07:20:38.519+0000] {logging_mixin.py:190} INFO - [download]  14.9% of  208.31KiB at    1.23MiB/s ETA 00:00
+[2025-05-08T07:20:38.528+0000] {logging_mixin.py:190} INFO - [download] Destination: media/Cti6MifL3WA.m4a
+[2025-05-08T07:20:38.529+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  581.20KiB at  Unknown B/s ETA Unknown
+[2025-05-08T07:20:38.530+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  581.20KiB at    1.50MiB/s ETA 00:00  
+[2025-05-08T07:20:38.531+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/CR_aT1DJrvy.mp3
+[2025-05-08T07:20:38.533+0000] {logging_mixin.py:190} INFO - [download]   1.2% of  581.20KiB at    1.45MiB/s ETA 00:00
+[2025-05-08T07:20:38.545+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/C9ARIS4SLH4.mp3
+[2025-05-08T07:20:38.554+0000] {logging_mixin.py:190} INFO - [download]  30.2% of  208.31KiB at    1.04MiB/s ETA 00:00
+[2025-05-08T07:20:38.560+0000] {logging_mixin.py:190} INFO - [download]   2.6% of  581.20KiB at  462.95KiB/s ETA 00:01
+[2025-05-08T07:20:38.565+0000] {logging_mixin.py:190} INFO - [download] Destination: media/CtEs5eKMi8h.m4a
+[2025-05-08T07:20:38.566+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  746.45KiB at  340.25KiB/s ETA 00:02
+[2025-05-08T07:20:38.569+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  746.45KiB at  526.35KiB/s ETA 00:01
+[2025-05-08T07:20:38.571+0000] {logging_mixin.py:190} INFO - [download]   0.9% of  746.45KiB at  963.26KiB/s ETA 00:00
+[2025-05-08T07:20:38.593+0000] {logging_mixin.py:190} INFO - [info] ClX3j-JOeCw: Downloading 1 format(s): dash-642371871012429ad
+[2025-05-08T07:20:38.602+0000] {logging_mixin.py:190} INFO - [download]   5.3% of  581.20KiB at  416.29KiB/s ETA 00:01
+[2025-05-08T07:20:38.609+0000] {logging_mixin.py:190} INFO - [download]   2.0% of  746.45KiB at  328.59KiB/s ETA 00:02
+[2025-05-08T07:20:38.612+0000] {logging_mixin.py:190} INFO - [info] C3Ftd_LxKth: Downloading 1 format(s): dash-1126734301577571ad
+[2025-05-08T07:20:38.615+0000] {logging_mixin.py:190} INFO - [download]  24.3% of  522.96KiB at  767.12KiB/s ETA 00:00
+[2025-05-08T07:20:38.616+0000] {logging_mixin.py:190} INFO - [download]  61.0% of  208.31KiB at    1.03MiB/s ETA 00:00
+[2025-05-08T07:20:38.620+0000] {logging_mixin.py:190} INFO - [download] Destination: media/ClllGjDr_sA.m4a
+[2025-05-08T07:20:38.620+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  454.24KiB at    1.90MiB/s ETA 00:00
+[2025-05-08T07:20:38.621+0000] {logging_mixin.py:190} INFO - [download]  10.8% of  581.20KiB at  674.08KiB/s ETA 00:00
+[2025-05-08T07:20:38.621+0000] {logging_mixin.py:190} INFO - [download]  77.9% of  327.55KiB at    1.44MiB/s ETA 00:00
+[2025-05-08T07:20:38.624+0000] {logging_mixin.py:190} INFO - [download]   4.2% of  746.45KiB at  511.32KiB/s ETA 00:01
+[2025-05-08T07:20:38.633+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  517.52KiB at   51.43KiB/s ETA 00:10
+[2025-05-08T07:20:38.636+0000] {logging_mixin.py:190} INFO - [download] 100% of  454.24KiB in 00:00:00 at 1.16MiB/s   
+[2025-05-08T07:20:38.638+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/Clsej5VNAQL.mp3
+[2025-05-08T07:20:38.644+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/ClJY7JeBj9Y.m4a"
+[2025-05-08T07:20:38.645+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  517.52KiB at   96.16KiB/s ETA 00:05
+[2025-05-08T07:20:38.650+0000] {logging_mixin.py:190} INFO - [download]   8.4% of  746.45KiB at  730.33KiB/s ETA 00:00
+[2025-05-08T07:20:38.650+0000] {logging_mixin.py:190} INFO - [download]  21.9% of  581.20KiB at    1.03MiB/s ETA 00:00
+[2025-05-08T07:20:38.655+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  327.55KiB at    1.55MiB/s ETA 00:00
+[2025-05-08T07:20:38.657+0000] {logging_mixin.py:190} INFO - [download]   1.4% of  517.52KiB at  160.61KiB/s ETA 00:03
+[2025-05-08T07:20:38.663+0000] {logging_mixin.py:190} INFO - [download] 100% of  327.55KiB in 00:00:00 at 1.08MiB/s   
+[2025-05-08T07:20:38.663+0000] {logging_mixin.py:190} INFO - [download]   2.9% of  517.52KiB at  299.68KiB/s ETA 00:01
+[2025-05-08T07:20:38.667+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/CmbeEeCp2ho.m4a"
+[2025-05-08T07:20:38.669+0000] {logging_mixin.py:190} INFO - [download]  17.0% of  746.45KiB at    1.17MiB/s ETA 00:00
+[2025-05-08T07:20:38.672+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  208.31KiB at    1.15MiB/s ETA 00:00
+[2025-05-08T07:20:38.675+0000] {logging_mixin.py:190} INFO - [download]   6.0% of  517.52KiB at  502.43KiB/s ETA 00:00
+[2025-05-08T07:20:38.682+0000] {logging_mixin.py:190} INFO - [download] 100% of  208.31KiB in 00:00:00 at 799.48KiB/s 
+[2025-05-08T07:20:38.686+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/C8ozeuUvucg.m4a"
+[2025-05-08T07:20:38.689+0000] {logging_mixin.py:190} INFO - [download]  12.2% of  517.52KiB at  831.77KiB/s ETA 00:00
+[2025-05-08T07:20:38.695+0000] {logging_mixin.py:190} INFO - [download]  43.9% of  581.20KiB at    1.49MiB/s ETA 00:00
+[2025-05-08T07:20:38.698+0000] {logging_mixin.py:190} INFO - [download]  34.2% of  746.45KiB at    1.85MiB/s ETA 00:00
+[2025-05-08T07:20:38.703+0000] {logging_mixin.py:190} INFO - [download] Destination: media/ClX3j-JOeCw.m4a
+[2025-05-08T07:20:38.704+0000] {logging_mixin.py:190} INFO - [download]   1.3% of   75.52KiB at  743.54KiB/s ETA 00:00
+[2025-05-08T07:20:38.706+0000] {logging_mixin.py:190} INFO - [download]   4.0% of   75.52KiB at    1.02MiB/s ETA 00:00
+[2025-05-08T07:20:38.709+0000] {logging_mixin.py:190} INFO - [download]   9.3% of   75.52KiB at    1.28MiB/s ETA 00:00
+[2025-05-08T07:20:38.724+0000] {logging_mixin.py:190} INFO - [download]  48.8% of  522.96KiB at  930.62KiB/s ETA 00:00
+[2025-05-08T07:20:38.737+0000] {logging_mixin.py:190} INFO - [download]  19.9% of   75.52KiB at  441.62KiB/s ETA 00:00
+[2025-05-08T07:20:38.743+0000] {logging_mixin.py:190} INFO - [download]  41.1% of   75.52KiB at  777.22KiB/s ETA 00:00
+[2025-05-08T07:20:38.757+0000] {logging_mixin.py:190} INFO - [download] Destination: media/C3Ftd_LxKth.m4a
+[2025-05-08T07:20:38.758+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  211.99KiB at  494.67KiB/s ETA 00:00
+[2025-05-08T07:20:38.760+0000] {logging_mixin.py:190} INFO - [download]   1.4% of  211.99KiB at  768.89KiB/s ETA 00:00
+[2025-05-08T07:20:38.762+0000] {logging_mixin.py:190} INFO - [download]   3.3% of  211.99KiB at    1.20MiB/s ETA 00:00
+[2025-05-08T07:20:38.776+0000] {logging_mixin.py:190} INFO - [download]  68.5% of  746.45KiB at    2.35MiB/s ETA 00:00
+[2025-05-08T07:20:38.778+0000] {logging_mixin.py:190} INFO - [download]  24.5% of  517.52KiB at  772.41KiB/s ETA 00:00
+[2025-05-08T07:20:38.788+0000] {logging_mixin.py:190} INFO - Deleting original file media/CSlNKKipqG-.m4a (pass -k to keep)
+[2025-05-08T07:20:38.802+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/CSlNKKipqG-/: Success
+[2025-05-08T07:20:38.803+0000] {logging_mixin.py:190} INFO - [download]   7.1% of  211.99KiB at  320.68KiB/s ETA 00:00
+[2025-05-08T07:20:38.804+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:38.809+0000] {logging_mixin.py:190} INFO - [download]  87.9% of  581.20KiB at    1.78MiB/s ETA 00:00
+[2025-05-08T07:20:38.806+0000] {logging_mixin.py:190} INFO - [download]  83.4% of   75.52KiB at  622.97KiB/s ETA 00:00
+[2025-05-08T07:20:38.815+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   75.52KiB at  677.30KiB/s ETA 00:00
+[2025-05-08T07:20:38.817+0000] {logging_mixin.py:190} INFO - [download] 100% of   75.52KiB in 00:00:00 at 347.31KiB/s 
+[2025-05-08T07:20:38.822+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/ClX3j-JOeCw.m4a"
+[2025-05-08T07:20:38.830+0000] {logging_mixin.py:190} INFO - [download]  14.6% of  211.99KiB at  423.75KiB/s ETA 00:00
+[2025-05-08T07:20:38.833+0000] {logging_mixin.py:190} INFO - Deleting original file media/CR_aT1DJrvy.m4a (pass -k to keep)
+[2025-05-08T07:20:38.835+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  581.20KiB at    1.85MiB/s ETA 00:00
+[2025-05-08T07:20:38.842+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/CR_aT1DJrvy/: Success
+[2025-05-08T07:20:38.843+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/ClJY7JeBj9Y.mp3
+[2025-05-08T07:20:38.845+0000] {logging_mixin.py:190} INFO - [download] 100% of  581.20KiB in 00:00:00 at 1.42MiB/s   
+[2025-05-08T07:20:38.846+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:38.846+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  746.45KiB at    2.58MiB/s ETA 00:00
+[2025-05-08T07:20:38.849+0000] {logging_mixin.py:190} INFO - [download]  29.7% of  211.99KiB at  681.84KiB/s ETA 00:00
+[2025-05-08T07:20:38.854+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/Cti6MifL3WA.m4a"
+[2025-05-08T07:20:47.358+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/CmbeEeCp2ho.mp3
+[2025-05-08T07:20:47.360+0000] {logging_mixin.py:190} INFO - [download] 100% of  746.45KiB in 00:00:08 at 83.78KiB/s  
+[2025-05-08T07:20:47.362+0000] {logging_mixin.py:190} INFO - [download]  49.3% of  517.52KiB at   29.15KiB/s ETA 00:09
+[2025-05-08T07:20:47.372+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/CtEs5eKMi8h.m4a"
+[2025-05-08T07:20:47.377+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/C8ozeuUvucg.mp3
+[2025-05-08T07:20:47.380+0000] {logging_mixin.py:190} INFO - [download]  59.9% of  211.99KiB at   14.73KiB/s ETA 00:05
+[2025-05-08T07:20:47.388+0000] {logging_mixin.py:190} INFO - [download]  61.6% of  517.52KiB at   36.36KiB/s ETA 00:05
+[2025-05-08T07:20:47.390+0000] {logging_mixin.py:190} INFO - [download]  75.0% of  211.99KiB at   18.42KiB/s ETA 00:02
+[2025-05-08T07:20:47.393+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  211.99KiB at   24.54KiB/s ETA 00:00
+[2025-05-08T07:20:47.395+0000] {logging_mixin.py:190} INFO - [download] 100% of  211.99KiB in 00:00:08 at 24.18KiB/s  
+[2025-05-08T07:20:47.399+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/C3Ftd_LxKth.m4a"
+[2025-05-08T07:20:47.406+0000] {logging_mixin.py:190} INFO - [download]  97.7% of  522.96KiB at   57.05KiB/s ETA 00:00
+[2025-05-08T07:20:47.410+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  522.96KiB at   58.36KiB/s ETA 00:00
+[2025-05-08T07:20:47.412+0000] {logging_mixin.py:190} INFO - [download] 100% of  522.96KiB in 00:00:09 at 57.60KiB/s  
+[2025-05-08T07:20:47.420+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/ClRR0j6OFJa.m4a"
+[2025-05-08T07:20:47.429+0000] {logging_mixin.py:190} INFO - [download] Destination: media/CurT9KiLdx9.m4a
+[2025-05-08T07:20:47.430+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  153.76KiB at  170.74KiB/s ETA 00:00
+[2025-05-08T07:20:47.432+0000] {logging_mixin.py:190} INFO - [download]   2.0% of  153.76KiB at  420.10KiB/s ETA 00:00
+[2025-05-08T07:20:47.433+0000] {logging_mixin.py:190} INFO - [download]   4.6% of  153.76KiB at  835.54KiB/s ETA 00:00
+[2025-05-08T07:20:47.434+0000] {logging_mixin.py:190} INFO - [download]   9.8% of  153.76KiB at    1.54MiB/s ETA 00:00
+[2025-05-08T07:20:47.436+0000] {logging_mixin.py:190} INFO - [download]  20.2% of  153.76KiB at    2.73MiB/s ETA 00:00
+[2025-05-08T07:20:47.439+0000] {logging_mixin.py:190} INFO - [download] Destination: media/CtREVfUOD5G.m4a
+[2025-05-08T07:20:47.443+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  220.14KiB at   51.37KiB/s ETA 00:04
+[2025-05-08T07:20:47.453+0000] {logging_mixin.py:190} INFO - [download]   1.4% of  220.14KiB at  102.61KiB/s ETA 00:02
+[2025-05-08T07:20:47.465+0000] {logging_mixin.py:190} INFO - [info] CdQEpDIF0Fv: Downloading 1 format(s): dash-689897682258910ad
+[2025-05-08T07:20:47.470+0000] {logging_mixin.py:190} INFO - [download]   3.2% of  220.14KiB at  152.05KiB/s ETA 00:01
+[2025-05-08T07:20:47.482+0000] {logging_mixin.py:190} INFO - [download]   6.8% of  220.14KiB at  258.43KiB/s ETA 00:00
+[2025-05-08T07:20:47.483+0000] {logging_mixin.py:190} INFO - [download]  41.0% of  153.76KiB at    1.05MiB/s ETA 00:00
+[2025-05-08T07:20:47.491+0000] {logging_mixin.py:190} INFO - [download]  82.6% of  153.76KiB at    1.87MiB/s ETA 00:00
+[2025-05-08T07:20:47.487+0000] {logging_mixin.py:190} INFO - [download]  14.1% of  220.14KiB at  488.60KiB/s ETA 00:00
+[2025-05-08T07:20:47.486+0000] {logging_mixin.py:190} INFO - [download]  86.4% of  517.52KiB at   50.38KiB/s ETA 00:01
+[2025-05-08T07:20:47.495+0000] {logging_mixin.py:190} INFO - [download]  28.6% of  220.14KiB at  884.67KiB/s ETA 00:00
+[2025-05-08T07:20:47.499+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  517.52KiB at   58.24KiB/s ETA 00:00
+[2025-05-08T07:20:47.502+0000] {logging_mixin.py:190} INFO - [download] 100% of  517.52KiB in 00:00:09 at 54.90KiB/s  
+[2025-05-08T07:20:47.507+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/ClllGjDr_sA.m4a"
+[2025-05-08T07:20:47.508+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  153.76KiB at    1.94MiB/s ETA 00:00
+[2025-05-08T07:20:47.512+0000] {logging_mixin.py:190} INFO - [download] 100% of  153.76KiB in 00:00:09 at 15.84KiB/s  
+[2025-05-08T07:20:47.516+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/CurT9KiLdx9.m4a"
+[2025-05-08T07:20:47.519+0000] {logging_mixin.py:190} INFO - [download]  57.7% of  220.14KiB at    1.32MiB/s ETA 00:00
+[2025-05-08T07:20:47.524+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/ClX3j-JOeCw.mp3
+[2025-05-08T07:20:47.543+0000] {logging_mixin.py:190} INFO - [download] Destination: media/CdQEpDIF0Fv.m4a
+[2025-05-08T07:20:47.544+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  160.98KiB at  620.09KiB/s ETA 00:00
+[2025-05-08T07:20:47.546+0000] {logging_mixin.py:190} INFO - [download]   1.9% of  160.98KiB at  999.04KiB/s ETA 00:00
+[2025-05-08T07:20:47.547+0000] {logging_mixin.py:190} INFO - [download]   4.3% of  160.98KiB at    1.42MiB/s ETA 00:00
+[2025-05-08T07:20:47.553+0000] {logging_mixin.py:190} INFO - [download]   9.3% of  160.98KiB at    1.42MiB/s ETA 00:00
+[2025-05-08T07:20:47.555+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  220.14KiB at    1.63MiB/s ETA 00:00
+[2025-05-08T07:20:47.556+0000] {logging_mixin.py:190} INFO - [download]  19.3% of  160.98KiB at    2.32MiB/s ETA 00:00
+[2025-05-08T07:20:47.557+0000] {logging_mixin.py:190} INFO - [download] 100% of  220.14KiB in 00:00:09 at 22.48KiB/s  
+[2025-05-08T07:20:47.560+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/CtREVfUOD5G.m4a"
+[2025-05-08T07:20:47.564+0000] {logging_mixin.py:190} INFO - [download]  39.1% of  160.98KiB at    2.90MiB/s ETA 00:00
+[2025-05-08T07:20:47.576+0000] {logging_mixin.py:190} INFO - [download]  78.9% of  160.98KiB at    3.83MiB/s ETA 00:00
+[2025-05-08T07:20:47.580+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  160.98KiB at    4.20MiB/s ETA 00:00
+[2025-05-08T07:20:47.582+0000] {logging_mixin.py:190} INFO - [download] 100% of  160.98KiB in 00:00:00 at 1.49MiB/s   
+[2025-05-08T07:20:47.586+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/CdQEpDIF0Fv.m4a"
+[2025-05-08T07:20:47.588+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/Cti6MifL3WA.mp3
+[2025-05-08T07:20:47.590+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:47.597+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/CtEs5eKMi8h.mp3
+[2025-05-08T07:20:47.636+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/C3Ftd_LxKth.mp3
+[2025-05-08T07:20:38.670+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/ClRR0j6OFJa.mp3
+[2025-05-08T07:20:38.678+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:38.714+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/CvUBhcfPPDN/
+[2025-05-08T07:20:38.727+0000] {logging_mixin.py:190} INFO - [Instagram] CvUBhcfPPDN: Setting up session
+[2025-05-08T07:20:38.760+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/ClllGjDr_sA.mp3
+[2025-05-08T07:20:38.791+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/CurT9KiLdx9.mp3
+[2025-05-08T07:20:38.824+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/CtREVfUOD5G.mp3
+[2025-05-08T07:20:38.836+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/CxAjai1x7MO/
+[2025-05-08T07:20:38.837+0000] {logging_mixin.py:190} INFO - [Instagram] CxAjai1x7MO: Setting up session
+[2025-05-08T07:20:38.841+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/CdQEpDIF0Fv.mp3
+[2025-05-08T07:20:38.849+0000] {logging_mixin.py:190} INFO - Deleting original file media/ClX3j-JOeCw.m4a (pass -k to keep)
+[2025-05-08T07:20:38.856+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/ClX3j-JOeCw/: Success
+[2025-05-08T07:20:38.857+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:38.885+0000] {logging_mixin.py:190} INFO - [info] CuOXoAArPXC: Downloading 1 format(s): dash-1418774608961749ad
+[2025-05-08T07:20:38.892+0000] {logging_mixin.py:190} INFO - [info] CjKKsU_jH2o: Downloading 1 format(s): dash-399449448873845ad
+[2025-05-08T07:20:38.902+0000] {logging_mixin.py:190} INFO - Deleting original file media/CpiD0D9rC7L.m4a (pass -k to keep)
+[2025-05-08T07:20:38.918+0000] {logging_mixin.py:190} INFO - Deleting original file media/C78m2CaP1dp.m4a (pass -k to keep)
+[2025-05-08T07:20:38.937+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/CpiD0D9rC7L/: Success
+[2025-05-08T07:20:38.938+0000] {logging_mixin.py:190} INFO - [info] C3_6T7txC9G: Downloading 1 format(s): dash-950181976458031ad
+[2025-05-08T07:20:38.939+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/C78m2CaP1dp/: Success
+[2025-05-08T07:20:38.940+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:38.952+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:38.977+0000] {logging_mixin.py:190} INFO - [info] C6dYezvvnt5: Downloading 1 format(s): dash-899889468610248ad
+[2025-05-08T07:20:39.019+0000] {logging_mixin.py:190} INFO - [info] CeXxS_YFYCK: Downloading 1 format(s): dash-426813545641211ad
+[2025-05-08T07:20:39.022+0000] {logging_mixin.py:190} INFO - [download] Destination: media/CuOXoAArPXC.m4a
+[2025-05-08T07:20:39.036+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  310.78KiB at   63.47KiB/s ETA 00:04
+[2025-05-08T07:20:39.041+0000] {logging_mixin.py:190} INFO - [download]   1.0% of  310.78KiB at  142.87KiB/s ETA 00:02
+[2025-05-08T07:20:39.041+0000] {logging_mixin.py:190} INFO - [download] Destination: media/CjKKsU_jH2o.m4a
+[2025-05-08T07:20:39.043+0000] {logging_mixin.py:190} INFO - [download]   2.3% of  310.78KiB at  299.98KiB/s ETA 00:01
+[2025-05-08T07:20:39.044+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  497.03KiB at   37.87KiB/s ETA 00:13
+[2025-05-08T07:20:39.046+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  497.03KiB at  107.08KiB/s ETA 00:04
+[2025-05-08T07:20:39.047+0000] {logging_mixin.py:190} INFO - [download]   1.4% of  497.03KiB at  240.92KiB/s ETA 00:02
+[2025-05-08T07:20:39.048+0000] {logging_mixin.py:190} INFO - [download]   4.8% of  310.78KiB at  543.52KiB/s ETA 00:00
+[2025-05-08T07:20:39.048+0000] {logging_mixin.py:190} INFO - [download]   3.0% of  497.03KiB at  487.86KiB/s ETA 00:00
+[2025-05-08T07:20:39.051+0000] {logging_mixin.py:190} INFO - [download]  10.0% of  310.78KiB at 1014.00KiB/s ETA 00:00
+[2025-05-08T07:20:39.051+0000] {logging_mixin.py:190} INFO - [download]   6.2% of  497.03KiB at  921.71KiB/s ETA 00:00
+[2025-05-08T07:20:39.055+0000] {logging_mixin.py:190} INFO - [download]  20.3% of  310.78KiB at    1.76MiB/s ETA 00:00
+[2025-05-08T07:20:39.059+0000] {logging_mixin.py:190} INFO - [download] Destination: media/C3_6T7txC9G.m4a
+[2025-05-08T07:20:39.061+0000] {logging_mixin.py:190} INFO - [download]   1.0% of   96.82KiB at  388.43KiB/s ETA 00:00
+[2025-05-08T07:20:39.061+0000] {logging_mixin.py:190} INFO - Deleting original file media/C8ozeuUvucg.m4a (pass -k to keep)
+[2025-05-08T07:20:39.063+0000] {logging_mixin.py:190} INFO - [download]   3.1% of   96.82KiB at  550.65KiB/s ETA 00:00
+[2025-05-08T07:20:39.065+0000] {logging_mixin.py:190} INFO - [download]  12.7% of  497.03KiB at    1.30MiB/s ETA 00:00
+[2025-05-08T07:20:39.066+0000] {logging_mixin.py:190} INFO - [download] Destination: media/C6dYezvvnt5.m4a
+[2025-05-08T07:20:39.075+0000] {logging_mixin.py:190} INFO - [download]   7.2% of   96.82KiB at  415.34KiB/s ETA 00:00
+[2025-05-08T07:20:39.076+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/C8ozeuUvucg/: Success
+[2025-05-08T07:20:39.078+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.05MiB at   53.15KiB/s ETA 00:20
+[2025-05-08T07:20:39.080+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:39.081+0000] {logging_mixin.py:190} INFO - [download]  15.5% of   96.82KiB at  648.77KiB/s ETA 00:00
+[2025-05-08T07:20:39.083+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    1.05MiB at  122.88KiB/s ETA 00:08
+[2025-05-08T07:20:39.084+0000] {logging_mixin.py:190} INFO - [download]  40.9% of  310.78KiB at    1.94MiB/s ETA 00:00
+[2025-05-08T07:20:39.092+0000] {logging_mixin.py:190} INFO - [download]  32.0% of   96.82KiB at  910.82KiB/s ETA 00:00
+[2025-05-08T07:20:39.095+0000] {logging_mixin.py:190} INFO - [download]   0.6% of    1.05MiB at  191.17KiB/s ETA 00:05
+[2025-05-08T07:20:39.098+0000] {logging_mixin.py:190} INFO - [download]   1.4% of    1.05MiB at  384.22KiB/s ETA 00:02
+[2025-05-08T07:20:39.100+0000] {logging_mixin.py:190} INFO - [download]   2.9% of    1.05MiB at  758.46KiB/s ETA 00:01
+[2025-05-08T07:20:39.105+0000] {logging_mixin.py:190} INFO - [download]  25.6% of  497.03KiB at    1.42MiB/s ETA 00:00
+[2025-05-08T07:20:39.112+0000] {logging_mixin.py:190} INFO - [download]  65.1% of   96.82KiB at    1.15MiB/s ETA 00:00
+[2025-05-08T07:20:39.115+0000] {logging_mixin.py:190} INFO - [download]   5.8% of    1.05MiB at    1.10MiB/s ETA 00:00
+[2025-05-08T07:20:39.119+0000] {logging_mixin.py:190} INFO - [download]  82.1% of  310.78KiB at    2.51MiB/s ETA 00:00
+[2025-05-08T07:20:39.132+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  310.78KiB at    2.72MiB/s ETA 00:00
+[2025-05-08T07:20:39.134+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   96.82KiB at    1.24MiB/s ETA 00:00
+[2025-05-08T07:20:39.135+0000] {logging_mixin.py:190} INFO - [download] 100% of  310.78KiB in 00:00:00 at 1.31MiB/s   
+[2025-05-08T07:20:39.141+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/CuOXoAArPXC.m4a"
+[2025-05-08T07:20:39.142+0000] {logging_mixin.py:190} INFO - [download] 100% of   96.82KiB in 00:00:00 at 498.24KiB/s 
+[2025-05-08T07:20:39.148+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/C3_6T7txC9G.m4a"
+[2025-05-08T07:20:39.156+0000] {logging_mixin.py:190} INFO - [download]  11.8% of    1.05MiB at    1.28MiB/s ETA 00:00
+[2025-05-08T07:20:39.156+0000] {logging_mixin.py:190} INFO - [download] Destination: media/CeXxS_YFYCK.m4a
+[2025-05-08T07:20:39.161+0000] {logging_mixin.py:190} INFO - [download]   1.1% of   94.46KiB at  134.91KiB/s ETA 00:00
+[2025-05-08T07:20:39.162+0000] {logging_mixin.py:190} INFO - [download]   3.2% of   94.46KiB at  321.55KiB/s ETA 00:00
+[2025-05-08T07:20:39.164+0000] {logging_mixin.py:190} INFO - [download]   7.4% of   94.46KiB at  663.07KiB/s ETA 00:00
+[2025-05-08T07:20:39.171+0000] {logging_mixin.py:190} INFO - [download]  51.3% of  497.03KiB at    1.63MiB/s ETA 00:00
+[2025-05-08T07:20:39.172+0000] {logging_mixin.py:190} INFO - [download]  15.9% of   94.46KiB at  800.44KiB/s ETA 00:00
+[2025-05-08T07:20:39.180+0000] {logging_mixin.py:190} INFO - [download]  32.8% of   94.46KiB at    1.15MiB/s ETA 00:00
+[2025-05-08T07:20:39.193+0000] {logging_mixin.py:190} INFO - [download]  23.6% of    1.05MiB at    1.86MiB/s ETA 00:00
+[2025-05-08T07:20:39.195+0000] {logging_mixin.py:190} INFO - Deleting original file media/C9ARIS4SLH4.m4a (pass -k to keep)
+[2025-05-08T07:20:39.203+0000] {logging_mixin.py:190} INFO - [download]  66.7% of   94.46KiB at    1.23MiB/s ETA 00:00
+[2025-05-08T07:20:39.205+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/C9ARIS4SLH4/: Success
+[2025-05-08T07:20:39.207+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:39.214+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   94.46KiB at    1.53MiB/s ETA 00:00
+[2025-05-08T07:20:39.216+0000] {logging_mixin.py:190} INFO - [download] 100% of   94.46KiB in 00:00:00 at 513.78KiB/s 
+[2025-05-08T07:20:39.223+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/CeXxS_YFYCK.m4a"
+[2025-05-08T07:20:39.226+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:39.233+0000] {logging_mixin.py:190} INFO - Deleting original file media/CmbeEeCp2ho.m4a (pass -k to keep)
+[2025-05-08T07:20:39.243+0000] {logging_mixin.py:190} INFO - [Instagram] CvUBhcfPPDN: Downloading JSON metadata
+[2025-05-08T07:20:39.306+0000] {logging_mixin.py:190} INFO - [Instagram] CxAjai1x7MO: Downloading JSON metadata
+[2025-05-08T07:20:39.316+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:39.341+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/CmbeEeCp2ho/: Success
+[2025-05-08T07:20:39.343+0000] {logging_mixin.py:190} INFO - Deleting original file media/C3Ftd_LxKth.m4a (pass -k to keep)
+[2025-05-08T07:20:39.342+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:39.361+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/CxzFtriv_xJ/
+[2025-05-08T07:20:39.368+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:39.375+0000] {logging_mixin.py:190} INFO - Deleting original file media/CurT9KiLdx9.m4a (pass -k to keep)
+[2025-05-08T07:20:39.383+0000] {logging_mixin.py:190} INFO - Deleting original file media/CdQEpDIF0Fv.m4a (pass -k to keep)
+[2025-05-08T07:20:39.396+0000] {logging_mixin.py:190} INFO - Deleting original file media/CtREVfUOD5G.m4a (pass -k to keep)
+[2025-05-08T07:20:39.433+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/DD1nu1WyK2P/
+[2025-05-08T07:20:39.434+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/C3Ftd_LxKth/: Success
+[2025-05-08T07:20:39.455+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/CuOXoAArPXC.mp3
+[2025-05-08T07:20:39.463+0000] {logging_mixin.py:190} INFO - [Instagram] CxzFtriv_xJ: Setting up session
+[2025-05-08T07:20:39.469+0000] {logging_mixin.py:190} INFO - Deleting original file media/Ct1S7C_vF-p.m4a (pass -k to keep)
+[2025-05-08T07:20:39.496+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/C3_6T7txC9G.mp3
+[2025-05-08T07:20:39.515+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/DDWD9fTyh4A/
+[2025-05-08T07:20:39.517+0000] {logging_mixin.py:190} INFO - [Instagram] DD1nu1WyK2P: Setting up session
+[2025-05-08T07:20:39.524+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/CdQEpDIF0Fv/: Success
+[2025-05-08T07:20:39.525+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:39.527+0000] {logging_mixin.py:190} INFO - [download]  47.3% of    1.05MiB at    1.07MiB/s ETA 00:00
+[2025-05-08T07:20:39.527+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/CurT9KiLdx9/: Success
+[2025-05-08T07:20:39.528+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/CeXxS_YFYCK.mp3
+[2025-05-08T07:20:39.529+0000] {logging_mixin.py:190} INFO - Deleting original file media/ClJY7JeBj9Y.m4a (pass -k to keep)
+[2025-05-08T07:20:39.532+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/CtREVfUOD5G/: Success
+[2025-05-08T07:20:39.534+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  497.03KiB at  963.14KiB/s ETA 00:00
+[2025-05-08T07:20:39.536+0000] {logging_mixin.py:190} INFO - [Instagram] DDWD9fTyh4A: Setting up session
+[2025-05-08T07:20:39.545+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:39.546+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/Ct1S7C_vF-p/: Success
+[2025-05-08T07:20:39.551+0000] {logging_mixin.py:190} WARNING - Facebook/Youtube/Tiktok/Instagram Batch:   3%|3         | 1/32 [00:03<01:52,  3.64s/it]
+[2025-05-08T07:20:39.553+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:39.564+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:39.568+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/ClJY7JeBj9Y/: Success
+[2025-05-08T07:20:39.569+0000] {logging_mixin.py:190} INFO - [download] 100% of  497.03KiB in 00:00:00 at 758.75KiB/s 
+[2025-05-08T07:20:39.573+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:39.579+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:39.583+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/CjKKsU_jH2o.m4a"
+[2025-05-08T07:20:39.595+0000] {logging_mixin.py:190} INFO - [download]  94.7% of    1.05MiB at    1.86MiB/s ETA 00:00
+[2025-05-08T07:20:39.600+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.05MiB at    1.95MiB/s ETA 00:00
+[2025-05-08T07:20:39.604+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:39.617+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.05MiB in 00:00:00 at 1.67MiB/s   
+[2025-05-08T07:20:39.635+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/C6dYezvvnt5.m4a"
+[2025-05-08T07:20:39.689+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/DH0KpCARMKo/
+[2025-05-08T07:20:39.689+0000] {logging_mixin.py:190} INFO - [Instagram] DH0KpCARMKo: Setting up session
+[2025-05-08T07:20:39.771+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/CjKKsU_jH2o.mp3
+[2025-05-08T07:20:39.775+0000] {logging_mixin.py:190} INFO - Deleting original file media/ClRR0j6OFJa.m4a (pass -k to keep)
+[2025-05-08T07:20:39.784+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/ClRR0j6OFJa/: Success
+[2025-05-08T07:20:39.784+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:39.797+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:39.859+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-08T07:20:39.860+0000] {logging_mixin.py:190} INFO - Deleting original file media/C3_6T7txC9G.m4a (pass -k to keep)
+[2025-05-08T07:20:39.867+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/C6dYezvvnt5.mp3
+[2025-05-08T07:20:39.902+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/DHVTWLmRWeC/
+[2025-05-08T07:20:39.910+0000] {logging_mixin.py:190} INFO - [info] CvUBhcfPPDN: Downloading 1 format(s): dash-193906176779056ad
+[2025-05-08T07:20:39.924+0000] {logging_mixin.py:190} INFO - Deleting original file media/CeXxS_YFYCK.m4a (pass -k to keep)
+[2025-05-08T07:20:39.937+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/C3_6T7txC9G/: Success
+[2025-05-08T07:20:39.940+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/baukrysie/reel/DGsv_X4y5sv/
+[2025-05-08T07:20:39.942+0000] {logging_mixin.py:190} INFO - Deleting original file media/Cti6MifL3WA.m4a (pass -k to keep)
+[2025-05-08T07:20:39.944+0000] {logging_mixin.py:190} INFO - [Instagram] DD1nu1WyK2P: Downloading JSON metadata
+[2025-05-08T07:20:39.945+0000] {logging_mixin.py:190} INFO - [Instagram] DHVTWLmRWeC: Setting up session
+[2025-05-08T07:20:39.946+0000] {logging_mixin.py:190} INFO - Deleting original file media/ClllGjDr_sA.m4a (pass -k to keep)
+[2025-05-08T07:20:39.941+0000] {logging_mixin.py:190} INFO - [Instagram] CxzFtriv_xJ: Downloading JSON metadata
+[2025-05-08T07:20:39.961+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/CeXxS_YFYCK/: Success
+[2025-05-08T07:20:39.961+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:39.962+0000] {logging_mixin.py:190} INFO - [Instagram] DGsv_X4y5sv: Setting up session
+[2025-05-08T07:20:39.965+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/Cti6MifL3WA/: Success
+[2025-05-08T07:20:39.976+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/ClllGjDr_sA/: Success
+[2025-05-08T07:20:39.977+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:39.980+0000] {logging_mixin.py:190} WARNING - Facebook/Youtube/Tiktok/Instagram Batch:   6%|6         | 2/32 [00:04<00:52,  1.75s/it]
+[2025-05-08T07:20:39.981+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:39.981+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:39.985+0000] {logging_mixin.py:190} INFO - [Instagram] DDWD9fTyh4A: Downloading JSON metadata
+[2025-05-08T07:20:40.001+0000] {logging_mixin.py:190} INFO - [info] CxAjai1x7MO: Downloading 1 format(s): dash-171865852609821ad
+[2025-05-08T07:20:40.044+0000] {logging_mixin.py:190} INFO - [download] Destination: media/CvUBhcfPPDN.m4a
+[2025-05-08T07:20:40.045+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  291.51KiB at  878.20KiB/s ETA 00:00
+[2025-05-08T07:20:40.047+0000] {logging_mixin.py:190} INFO - [download]   1.0% of  291.51KiB at  985.12KiB/s ETA 00:00
+[2025-05-08T07:20:40.048+0000] {logging_mixin.py:190} INFO - [download]   2.4% of  291.51KiB at    1.47MiB/s ETA 00:00
+[2025-05-08T07:20:40.056+0000] {logging_mixin.py:190} INFO - [download]   5.1% of  291.51KiB at    1.15MiB/s ETA 00:00
+[2025-05-08T07:20:40.062+0000] {logging_mixin.py:190} INFO - [download]  10.6% of  291.51KiB at    1.66MiB/s ETA 00:00
+[2025-05-08T07:20:40.074+0000] {logging_mixin.py:190} INFO - [download]  21.6% of  291.51KiB at    2.04MiB/s ETA 00:00
+[2025-05-08T07:20:40.091+0000] {logging_mixin.py:190} INFO - [download]  43.6% of  291.51KiB at    2.61MiB/s ETA 00:00
+[2025-05-08T07:20:40.095+0000] {logging_mixin.py:190} INFO - [download] Destination: media/CxAjai1x7MO.m4a
+[2025-05-08T07:20:40.096+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  137.98KiB at  576.06KiB/s ETA 00:00
+[2025-05-08T07:20:40.097+0000] {logging_mixin.py:190} INFO - [download]   2.2% of  137.98KiB at  940.71KiB/s ETA 00:00
+[2025-05-08T07:20:40.098+0000] {logging_mixin.py:190} INFO - [download]   5.1% of  137.98KiB at    1.42MiB/s ETA 00:00
+[2025-05-08T07:20:40.116+0000] {logging_mixin.py:190} INFO - [download]  87.5% of  291.51KiB at    3.42MiB/s ETA 00:00
+[2025-05-08T07:20:40.123+0000] {logging_mixin.py:190} INFO - [download]  10.9% of  137.98KiB at  501.21KiB/s ETA 00:00
+[2025-05-08T07:20:40.123+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  291.51KiB at    3.59MiB/s ETA 00:00
+[2025-05-08T07:20:40.125+0000] {logging_mixin.py:190} INFO - [download] 100% of  291.51KiB in 00:00:00 at 1.66MiB/s   
+[2025-05-08T07:20:40.127+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/CvUBhcfPPDN.m4a"
+[2025-05-08T07:20:40.130+0000] {logging_mixin.py:190} INFO - [download]  22.5% of  137.98KiB at  870.03KiB/s ETA 00:00
+[2025-05-08T07:20:40.143+0000] {logging_mixin.py:190} INFO - [download]  45.7% of  137.98KiB at    1.24MiB/s ETA 00:00
+[2025-05-08T07:20:40.155+0000] {logging_mixin.py:190} INFO - Deleting original file media/CtEs5eKMi8h.m4a (pass -k to keep)
+[2025-05-08T07:20:40.158+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/CtEs5eKMi8h/: Success
+[2025-05-08T07:20:40.159+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:40.165+0000] {logging_mixin.py:190} INFO - [download]  92.0% of  137.98KiB at    1.74MiB/s ETA 00:00
+[2025-05-08T07:20:40.168+0000] {logging_mixin.py:190} INFO - [Instagram] DH0KpCARMKo: Downloading JSON metadata
+[2025-05-08T07:20:40.170+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  137.98KiB at    1.77MiB/s ETA 00:00
+[2025-05-08T07:20:40.171+0000] {logging_mixin.py:190} INFO - [download] 100% of  137.98KiB in 00:00:00 at 855.17KiB/s 
+[2025-05-08T07:20:40.175+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/CxAjai1x7MO.m4a"
+[2025-05-08T07:20:40.195+0000] {logging_mixin.py:190} INFO - Deleting original file media/CuOXoAArPXC.m4a (pass -k to keep)
+[2025-05-08T07:20:40.199+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/CuOXoAArPXC/: Success
+[2025-05-08T07:20:40.199+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:40.235+0000] {logging_mixin.py:190} INFO - Deleting original file media/Clsej5VNAQL.m4a (pass -k to keep)
+[2025-05-08T07:20:40.241+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/Clsej5VNAQL/: Success
+[2025-05-08T07:20:40.241+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:40.262+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/CvUBhcfPPDN.mp3
+[2025-05-08T07:20:40.291+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/CxAjai1x7MO.mp3
+[2025-05-08T07:20:40.336+0000] {logging_mixin.py:190} INFO - [Instagram] DGsv_X4y5sv: Downloading JSON metadata
+[2025-05-08T07:20:40.440+0000] {logging_mixin.py:190} INFO - [Instagram] DHVTWLmRWeC: Downloading JSON metadata
+[2025-05-08T07:20:40.453+0000] {logging_mixin.py:190} INFO - [info] DD1nu1WyK2P: Downloading 1 format(s): dash-8821069867948781ad
+[2025-05-08T07:20:40.473+0000] {logging_mixin.py:190} INFO - [info] CxzFtriv_xJ: Downloading 1 format(s): dash-1994503697594116ad
+[2025-05-08T07:20:40.538+0000] {logging_mixin.py:190} INFO - [download] Destination: media/DD1nu1WyK2P.m4a
+[2025-05-08T07:20:40.539+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  194.31KiB at  795.13KiB/s ETA 00:00
+[2025-05-08T07:20:40.541+0000] {logging_mixin.py:190} INFO - [download]   1.5% of  194.31KiB at  930.21KiB/s ETA 00:00
+[2025-05-08T07:20:40.543+0000] {logging_mixin.py:190} INFO - [download] Destination: media/CxzFtriv_xJ.m4a
+[2025-05-08T07:20:40.544+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  169.46KiB at  315.27KiB/s ETA 00:00
+[2025-05-08T07:20:40.545+0000] {logging_mixin.py:190} INFO - [download]   3.6% of  194.31KiB at  977.99KiB/s ETA 00:00
+[2025-05-08T07:20:40.546+0000] {logging_mixin.py:190} INFO - [download]   1.8% of  169.46KiB at  615.03KiB/s ETA 00:00
+[2025-05-08T07:20:40.547+0000] {logging_mixin.py:190} INFO - [download]   4.1% of  169.46KiB at    1.09MiB/s ETA 00:00
+[2025-05-08T07:20:40.553+0000] {logging_mixin.py:190} INFO - [download]   7.7% of  194.31KiB at  955.55KiB/s ETA 00:00
+[2025-05-08T07:20:40.561+0000] {logging_mixin.py:190} INFO - [download]   8.9% of  169.46KiB at  747.43KiB/s ETA 00:00
+[2025-05-08T07:20:40.562+0000] {logging_mixin.py:190} INFO - [download]  16.0% of  194.31KiB at    1.25MiB/s ETA 00:00
+[2025-05-08T07:20:40.566+0000] {logging_mixin.py:190} INFO - [download]  18.3% of  169.46KiB at    1.19MiB/s ETA 00:00
+[2025-05-08T07:20:40.579+0000] {logging_mixin.py:190} INFO - Deleting original file media/CjKKsU_jH2o.m4a (pass -k to keep)
+[2025-05-08T07:20:40.583+0000] {logging_mixin.py:190} INFO - [download]  32.4% of  194.31KiB at    1.35MiB/s ETA 00:00
+[2025-05-08T07:20:40.584+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/CjKKsU_jH2o/: Success
+[2025-05-08T07:20:40.584+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:40.587+0000] {logging_mixin.py:190} INFO - [download]  37.2% of  169.46KiB at    1.32MiB/s ETA 00:00
+[2025-05-08T07:20:40.588+0000] {logging_mixin.py:190} INFO - Deleting original file media/CxAjai1x7MO.m4a (pass -k to keep)
+[2025-05-08T07:20:40.594+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/CxAjai1x7MO/: Success
+[2025-05-08T07:20:40.594+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:40.608+0000] {logging_mixin.py:190} INFO - [download]  65.4% of  194.31KiB at    1.77MiB/s ETA 00:00
+[2025-05-08T07:20:40.617+0000] {logging_mixin.py:190} INFO - [download]  74.9% of  169.46KiB at    1.62MiB/s ETA 00:00
+[2025-05-08T07:20:40.628+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  169.46KiB at    1.91MiB/s ETA 00:00
+[2025-05-08T07:20:40.629+0000] {logging_mixin.py:190} INFO - [download] 100% of  169.46KiB in 00:00:00 at 1.10MiB/s   
+[2025-05-08T07:20:40.631+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/CxzFtriv_xJ.m4a"
+[2025-05-08T07:20:40.633+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  194.31KiB at    1.99MiB/s ETA 00:00
+[2025-05-08T07:20:40.634+0000] {logging_mixin.py:190} INFO - [download] 100% of  194.31KiB in 00:00:00 at 1.18MiB/s   
+[2025-05-08T07:20:40.636+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/DD1nu1WyK2P.m4a"
+[2025-05-08T07:20:40.701+0000] {logging_mixin.py:190} INFO - Deleting original file media/CvUBhcfPPDN.m4a (pass -k to keep)
+[2025-05-08T07:20:40.705+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/CvUBhcfPPDN/: Success
+[2025-05-08T07:20:40.706+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:40.713+0000] {logging_mixin.py:190} INFO - [info] DH0KpCARMKo: Downloading 1 format(s): dash-1196945285421725ad
+[2025-05-08T07:20:40.742+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/CxzFtriv_xJ.mp3
+[2025-05-08T07:20:40.759+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/DD1nu1WyK2P.mp3
+[2025-05-08T07:20:40.809+0000] {logging_mixin.py:190} INFO - [info] DGsv_X4y5sv: Downloading 1 format(s): dash-631881513030292ad
+[2025-05-08T07:20:40.816+0000] {logging_mixin.py:190} INFO - [download] Destination: media/DH0KpCARMKo.m4a
+[2025-05-08T07:20:40.817+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  425.02KiB at   69.01KiB/s ETA 00:06
+[2025-05-08T07:20:40.817+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  425.02KiB at  197.28KiB/s ETA 00:02
+[2025-05-08T07:20:40.818+0000] {logging_mixin.py:190} INFO - [download]   1.6% of  425.02KiB at  444.95KiB/s ETA 00:00
+[2025-05-08T07:20:40.819+0000] {logging_mixin.py:190} INFO - [download]   3.5% of  425.02KiB at  889.11KiB/s ETA 00:00
+[2025-05-08T07:20:40.826+0000] {logging_mixin.py:190} INFO - [download]   7.3% of  425.02KiB at    1.27MiB/s ETA 00:00
+[2025-05-08T07:20:40.843+0000] {logging_mixin.py:190} INFO - [download]  14.8% of  425.02KiB at    1.52MiB/s ETA 00:00
+[2025-05-08T07:20:40.867+0000] {logging_mixin.py:190} INFO - [download]  29.9% of  425.02KiB at    1.91MiB/s ETA 00:00
+[2025-05-08T07:20:40.901+0000] {logging_mixin.py:190} INFO - [download]  60.0% of  425.02KiB at    2.53MiB/s ETA 00:00
+[2025-05-08T07:20:40.936+0000] {logging_mixin.py:190} INFO - [download] Destination: media/DGsv_X4y5sv.m4a
+[2025-05-08T07:20:40.936+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  697.32KiB at  Unknown B/s ETA Unknown
+[2025-05-08T07:20:40.937+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  697.32KiB at    2.25MiB/s ETA 00:00  
+[2025-05-08T07:20:40.938+0000] {logging_mixin.py:190} INFO - [download]   1.0% of  697.32KiB at    2.75MiB/s ETA 00:00
+[2025-05-08T07:20:40.943+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  425.02KiB at    2.95MiB/s ETA 00:00
+[2025-05-08T07:20:40.944+0000] {logging_mixin.py:190} INFO - [download] 100% of  425.02KiB in 00:00:00 at 1.86MiB/s   
+[2025-05-08T07:20:40.945+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/DH0KpCARMKo.m4a"
+[2025-05-08T07:20:40.950+0000] {logging_mixin.py:190} INFO - [download]   2.2% of  697.32KiB at 1015.32KiB/s ETA 00:00
+[2025-05-08T07:20:40.958+0000] {logging_mixin.py:190} INFO - [download]   4.4% of  697.32KiB at    1.36MiB/s ETA 00:00
+[2025-05-08T07:20:40.980+0000] {logging_mixin.py:190} INFO - [download]   9.0% of  697.32KiB at    1.40MiB/s ETA 00:00
+[2025-05-08T07:20:40.999+0000] {logging_mixin.py:190} INFO - [download]  18.2% of  697.32KiB at    1.96MiB/s ETA 00:00
+[2025-05-08T07:20:41.010+0000] {logging_mixin.py:190} INFO - Deleting original file media/CxzFtriv_xJ.m4a (pass -k to keep)
+[2025-05-08T07:20:41.012+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/CxzFtriv_xJ/: Success
+[2025-05-08T07:20:41.013+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:41.024+0000] {logging_mixin.py:190} INFO - [download]  36.6% of  697.32KiB at    2.83MiB/s ETA 00:00
+[2025-05-08T07:20:41.053+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/DH0KpCARMKo.mp3
+[2025-05-08T07:20:41.060+0000] {logging_mixin.py:190} INFO - [download]  73.3% of  697.32KiB at    4.00MiB/s ETA 00:00
+[2025-05-08T07:20:41.081+0000] {logging_mixin.py:190} INFO - Deleting original file media/DD1nu1WyK2P.m4a (pass -k to keep)
+[2025-05-08T07:20:41.085+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/DD1nu1WyK2P/: Success
+[2025-05-08T07:20:41.085+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:41.095+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  697.32KiB at    4.27MiB/s ETA 00:00
+[2025-05-08T07:20:41.096+0000] {logging_mixin.py:190} INFO - [download] 100% of  697.32KiB in 00:00:00 at 2.42MiB/s   
+[2025-05-08T07:20:41.098+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/DGsv_X4y5sv.m4a"
+[2025-05-08T07:20:41.109+0000] {logging_mixin.py:190} INFO - [info] DHVTWLmRWeC: Downloading 1 format(s): dash-1159783168778733ad
+[2025-05-08T07:20:41.194+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/DGsv_X4y5sv.mp3
+[2025-05-08T07:20:41.199+0000] {logging_mixin.py:190} INFO - [download] Destination: media/DHVTWLmRWeC.m4a
+[2025-05-08T07:20:41.199+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  716.63KiB at  618.99KiB/s ETA 00:01
+[2025-05-08T07:20:41.203+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  716.63KiB at  542.34KiB/s ETA 00:01
+[2025-05-08T07:20:41.205+0000] {logging_mixin.py:190} INFO - [download]   1.0% of  716.63KiB at  983.65KiB/s ETA 00:00
+[2025-05-08T07:20:41.222+0000] {logging_mixin.py:190} INFO - [download]   2.1% of  716.63KiB at  607.54KiB/s ETA 00:01
+[2025-05-08T07:20:41.225+0000] {logging_mixin.py:190} INFO - [download]   4.3% of  716.63KiB at    1.09MiB/s ETA 00:00
+[2025-05-08T07:20:41.248+0000] {logging_mixin.py:190} INFO - [download]   8.8% of  716.63KiB at    1.21MiB/s ETA 00:00
+[2025-05-08T07:20:41.273+0000] {logging_mixin.py:190} INFO - [download]  17.7% of  716.63KiB at    1.65MiB/s ETA 00:00
+[2025-05-08T07:20:41.306+0000] {logging_mixin.py:190} INFO - [download]  35.6% of  716.63KiB at    2.29MiB/s ETA 00:00
+[2025-05-08T07:20:41.319+0000] {logging_mixin.py:190} INFO - Deleting original file media/C6dYezvvnt5.m4a (pass -k to keep)
+[2025-05-08T07:20:41.322+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/C6dYezvvnt5/: Success
+[2025-05-08T07:20:41.322+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:41.323+0000] {logging_mixin.py:190} WARNING - Facebook/Youtube/Tiktok/Instagram Batch:   9%|9         | 3/32 [00:05<00:45,  1.56s/it]
+[2025-05-08T07:20:41.394+0000] {logging_mixin.py:190} INFO - [download]  71.3% of  716.63KiB at    2.54MiB/s ETA 00:00
+[2025-05-08T07:20:41.399+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  716.63KiB at    3.47MiB/s ETA 00:00
+[2025-05-08T07:20:41.400+0000] {logging_mixin.py:190} INFO - [download] 100% of  716.63KiB in 00:00:00 at 2.44MiB/s   
+[2025-05-08T07:20:41.402+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/DHVTWLmRWeC.m4a"
+[2025-05-08T07:20:41.497+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/DHVTWLmRWeC.mp3
+[2025-05-08T07:20:41.686+0000] {logging_mixin.py:190} INFO - Deleting original file media/DH0KpCARMKo.m4a (pass -k to keep)
+[2025-05-08T07:20:41.689+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/DH0KpCARMKo/: Success
+[2025-05-08T07:20:41.689+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:42.110+0000] {logging_mixin.py:190} INFO - [info] DDWD9fTyh4A: Downloading 1 format(s): dash-566792859328368ad
+[2025-05-08T07:20:42.125+0000] {logging_mixin.py:190} INFO - Deleting original file media/DGsv_X4y5sv.m4a (pass -k to keep)
+[2025-05-08T07:20:42.128+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/DGsv_X4y5sv/: Success
+[2025-05-08T07:20:42.129+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:42.143+0000] {logging_mixin.py:190} INFO - [download] Destination: media/DDWD9fTyh4A.m4a
+[2025-05-08T07:20:42.143+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  279.80KiB at  Unknown B/s ETA Unknown
+[2025-05-08T07:20:42.144+0000] {logging_mixin.py:190} INFO - [download]   1.1% of  279.80KiB at    2.42MiB/s ETA 00:00  
+[2025-05-08T07:20:42.144+0000] {logging_mixin.py:190} INFO - [download]   2.5% of  279.80KiB at    4.22MiB/s ETA 00:00
+[2025-05-08T07:20:42.145+0000] {logging_mixin.py:190} INFO - [download]   5.4% of  279.80KiB at    6.59MiB/s ETA 00:00
+[2025-05-08T07:20:42.147+0000] {logging_mixin.py:190} INFO - [download]  11.1% of  279.80KiB at    6.68MiB/s ETA 00:00
+[2025-05-08T07:20:42.150+0000] {logging_mixin.py:190} INFO - [download]  22.5% of  279.80KiB at    8.23MiB/s ETA 00:00
+[2025-05-08T07:20:42.158+0000] {logging_mixin.py:190} INFO - [download]  45.4% of  279.80KiB at    7.98MiB/s ETA 00:00
+[2025-05-08T07:20:42.175+0000] {logging_mixin.py:190} INFO - [download]  91.1% of  279.80KiB at    7.78MiB/s ETA 00:00
+[2025-05-08T07:20:42.177+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  279.80KiB at    8.01MiB/s ETA 00:00
+[2025-05-08T07:20:42.177+0000] {logging_mixin.py:190} INFO - [download] 100% of  279.80KiB in 00:00:00 at 4.39MiB/s   
+[2025-05-08T07:20:42.180+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "media/DDWD9fTyh4A.m4a"
+[2025-05-08T07:20:42.272+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: media/DDWD9fTyh4A.mp3
+[2025-05-08T07:20:42.351+0000] {logging_mixin.py:190} INFO - Deleting original file media/DHVTWLmRWeC.m4a (pass -k to keep)
+[2025-05-08T07:20:42.355+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/DHVTWLmRWeC/: Success
+[2025-05-08T07:20:42.355+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:42.622+0000] {logging_mixin.py:190} INFO - Deleting original file media/DDWD9fTyh4A.m4a (pass -k to keep)
+[2025-05-08T07:20:42.626+0000] {downloader.py:91} INFO - Download status for https://www.instagram.com/baukrysie/reel/DDWD9fTyh4A/: Success
+[2025-05-08T07:20:42.626+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 
+[2025-05-08T07:20:42.628+0000] {logging_mixin.py:190} WARNING - Facebook/Youtube/Tiktok/Instagram Batch:  91%|######### | 29/32 [00:06<00:00,  7.44it/s]
+[2025-05-08T07:20:42.628+0000] {logging_mixin.py:190} WARNING - Facebook/Youtube/Tiktok/Instagram Batch: 100%|##########| 32/32 [00:06<00:00,  4.77it/s]
+[2025-05-08T07:20:42.630+0000] {logging_mixin.py:190} INFO - Download complete.
+[2025-05-08T07:20:42.631+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-05-08T07:20:42.638+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-08T07:20:42.639+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instagram_videos_scraper_dag, task_id=ins_videos_scraper, run_id=manual__2025-05-08T07:19:51.191435+00:00, execution_date=20250508T071951, start_date=20250508T071952, end_date=20250508T072042
+[2025-05-08T07:20:42.677+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-08T07:20:42.689+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-08T07:20:42.691+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

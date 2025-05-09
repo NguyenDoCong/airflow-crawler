@@ -1,0 +1,14 @@
+selenium==4.11.2
+
+tqdm==4.66.1
+TikTokApi==7.1.0
+
+yt-dlp>=2023.7.6
+
+requests>=2.31.0,<3.0
+# playwright>=1.36.0,<2.0
+httpx>=0.27.0,<1.0
+ffmpeg
+
+asyncpg
+# sqlalchemy>=2.0.0,<3.0

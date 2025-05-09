@@ -1,0 +1,249 @@
+[2025-04-28T11:30:57.514+0000] {processor.py:186} INFO - Started process (PID=190) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:30:57.515+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:30:57.518+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:30:57.517+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:30:57.521+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:30:57.520+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 6, in <module>
+    from airflow.providers.standard.operators.bash import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2025-04-28T11:30:57.521+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:30:57.536+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.026 seconds
+[2025-04-28T11:31:27.771+0000] {processor.py:186} INFO - Started process (PID=200) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:31:27.815+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:31:27.816+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:31:27.816+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:31:27.819+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:31:27.818+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 6, in <module>
+    from airflow.providers.standard.operators.bash import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2025-04-28T11:31:27.819+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:31:27.946+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.181 seconds
+[2025-04-28T11:31:58.696+0000] {processor.py:186} INFO - Started process (PID=207) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:31:58.697+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:31:58.698+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:31:58.698+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:31:58.701+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:31:58.700+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 6, in <module>
+    from airflow.providers.standard.operators.bash import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2025-04-28T11:31:58.701+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:31:58.715+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.024 seconds
+[2025-04-28T11:32:16.987+0000] {processor.py:186} INFO - Started process (PID=215) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:32:16.988+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:32:16.989+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:32:16.989+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:32:16.992+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:32:16.991+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 6, in <module>
+    from airflow.providers.standard.operators.bash import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2025-04-28T11:32:16.992+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:32:17.007+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.025 seconds
+[2025-04-28T11:32:18.006+0000] {processor.py:186} INFO - Started process (PID=216) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:32:18.007+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:32:18.008+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:32:18.007+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:32:18.011+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:32:18.010+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 6, in <module>
+    from airflow.providers.standard.operators.bash import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2025-04-28T11:32:18.011+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:32:18.026+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.025 seconds
+[2025-04-28T11:33:02.289+0000] {processor.py:186} INFO - Started process (PID=54) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:33:02.290+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:33:02.294+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:33:02.294+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:33:02.300+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:33:02.298+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 6, in <module>
+    from airflow.providers.standard.operators.bash import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2025-04-28T11:33:02.300+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:33:02.322+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.045 seconds
+[2025-04-28T11:33:32.539+0000] {processor.py:186} INFO - Started process (PID=61) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:33:32.540+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:33:32.543+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:33:32.543+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:33:32.547+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:33:32.546+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 6, in <module>
+    from airflow.providers.standard.operators.bash import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2025-04-28T11:33:32.548+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:33:32.566+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.033 seconds
+[2025-04-28T11:34:03.110+0000] {processor.py:186} INFO - Started process (PID=75) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:34:03.121+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:34:03.122+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:34:03.122+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:34:03.124+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:34:03.124+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 6, in <module>
+    from airflow.providers.standard.operators.bash import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2025-04-28T11:34:03.125+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:34:03.137+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.032 seconds
+[2025-04-28T11:34:33.377+0000] {processor.py:186} INFO - Started process (PID=82) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:34:33.378+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:34:33.380+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:34:33.380+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:34:33.382+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:34:33.382+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 6, in <module>
+    from airflow.providers.standard.operators.bash import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2025-04-28T11:34:33.382+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:34:33.400+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.027 seconds
+[2025-04-28T11:35:03.540+0000] {processor.py:186} INFO - Started process (PID=89) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:35:03.542+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:35:03.544+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:35:03.544+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:35:03.547+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:35:03.546+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 6, in <module>
+    from airflow.providers.standard.operators.bash import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2025-04-28T11:35:03.547+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:35:03.563+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.029 seconds
+[2025-04-28T11:35:33.645+0000] {processor.py:186} INFO - Started process (PID=96) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:35:33.649+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:35:33.650+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:35:33.650+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:35:33.652+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:35:33.652+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 6, in <module>
+    from airflow.providers.standard.operators.bash import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2025-04-28T11:35:33.653+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:35:33.667+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.027 seconds
+[2025-04-28T11:36:04.549+0000] {processor.py:186} INFO - Started process (PID=103) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:36:04.550+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:36:04.552+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:36:04.552+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:36:04.554+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:36:04.554+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/tutorial.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/tutorial.py", line 6, in <module>
+    from airflow.providers.standard.operators.bash import BashOperator
+ModuleNotFoundError: No module named 'airflow.providers.standard'
+[2025-04-28T11:36:04.554+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:36:04.570+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.025 seconds
+[2025-04-28T11:36:10.639+0000] {processor.py:186} INFO - Started process (PID=104) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:36:10.750+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:36:10.755+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:36:10.754+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:36:10.772+0000] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:36:11.080+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:36:11.079+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:tutorial
+[2025-04-28T11:36:11.087+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:36:11.087+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:tutorial
+[2025-04-28T11:36:11.092+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:36:11.092+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:tutorial
+[2025-04-28T11:36:11.092+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:36:11.092+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-28T11:36:11.102+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:36:11.102+0000] {dag.py:3234} INFO - Creating ORM DAG for tutorial
+[2025-04-28T11:36:11.110+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:36:11.110+0000] {dag.py:4138} INFO - Setting next_dagrun for tutorial to 2025-04-28 11:36:10.757554+00:00, run_after=2025-04-29 11:36:10.757554+00:00
+[2025-04-28T11:36:11.124+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.490 seconds
+[2025-04-28T11:36:41.689+0000] {processor.py:186} INFO - Started process (PID=115) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:36:41.692+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:36:41.694+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:36:41.694+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:36:41.711+0000] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:36:41.786+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:36:41.786+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-28T11:36:41.802+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:36:41.802+0000] {dag.py:4138} INFO - Setting next_dagrun for tutorial to 2025-04-28 11:36:41.701004+00:00, run_after=2025-04-29 11:36:41.701004+00:00
+[2025-04-28T11:36:41.817+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.144 seconds
+[2025-04-28T11:37:12.550+0000] {processor.py:186} INFO - Started process (PID=122) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:37:12.554+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:37:12.557+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:37:12.556+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:37:12.568+0000] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:37:12.639+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:37:12.639+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-28T11:37:12.652+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:37:12.652+0000] {dag.py:4138} INFO - Setting next_dagrun for tutorial to 2025-04-28 11:37:12.558824+00:00, run_after=2025-04-29 11:37:12.558824+00:00
+[2025-04-28T11:37:12.668+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.122 seconds
+[2025-04-28T11:37:43.473+0000] {processor.py:186} INFO - Started process (PID=134) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:37:43.474+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:37:43.476+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:37:43.476+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:37:43.486+0000] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:37:43.552+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:37:43.552+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-28T11:37:43.566+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:37:43.566+0000] {dag.py:4138} INFO - Setting next_dagrun for tutorial to 2025-04-28 11:37:43.478911+00:00, run_after=2025-04-29 11:37:43.478911+00:00
+[2025-04-28T11:37:43.579+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.110 seconds
+[2025-04-28T11:38:13.741+0000] {processor.py:186} INFO - Started process (PID=141) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:38:13.742+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:38:13.743+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:38:13.743+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:38:13.753+0000] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:38:13.816+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:38:13.816+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-28T11:38:13.830+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:38:13.830+0000] {dag.py:4138} INFO - Setting next_dagrun for tutorial to 2025-04-28 11:38:13.745359+00:00, run_after=2025-04-29 11:38:13.745359+00:00
+[2025-04-28T11:38:13.842+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.105 seconds
+[2025-04-28T11:38:44.647+0000] {processor.py:186} INFO - Started process (PID=147) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:38:44.648+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:38:44.649+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:38:44.649+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:38:44.658+0000] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:38:44.727+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:38:44.727+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-28T11:38:44.741+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:38:44.740+0000] {dag.py:4138} INFO - Setting next_dagrun for tutorial to 2025-04-28 11:38:44.651216+00:00, run_after=2025-04-29 11:38:44.651216+00:00
+[2025-04-28T11:38:44.754+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.111 seconds
+[2025-04-28T11:39:15.716+0000] {processor.py:186} INFO - Started process (PID=154) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:39:15.717+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:39:15.719+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:39:15.719+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:39:15.730+0000] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:39:15.794+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:39:15.793+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-28T11:39:15.807+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:39:15.807+0000] {dag.py:4138} INFO - Setting next_dagrun for tutorial to 2025-04-28 11:39:15.721730+00:00, run_after=2025-04-29 11:39:15.721730+00:00
+[2025-04-28T11:39:15.819+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.107 seconds
+[2025-04-28T11:39:46.073+0000] {processor.py:186} INFO - Started process (PID=161) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:39:46.074+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:39:46.076+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:39:46.076+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:39:46.088+0000] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:39:46.160+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:39:46.160+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-28T11:39:46.175+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:39:46.175+0000] {dag.py:4138} INFO - Setting next_dagrun for tutorial to 2025-04-28 11:39:46.078520+00:00, run_after=2025-04-29 11:39:46.078520+00:00
+[2025-04-28T11:39:46.191+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.124 seconds
+[2025-04-28T11:40:16.341+0000] {processor.py:186} INFO - Started process (PID=168) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:40:16.342+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:40:16.344+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:40:16.343+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:40:16.352+0000] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:40:16.421+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:40:16.421+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-28T11:40:16.437+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:40:16.436+0000] {dag.py:4138} INFO - Setting next_dagrun for tutorial to 2025-04-28 11:40:16.345707+00:00, run_after=2025-04-29 11:40:16.345707+00:00
+[2025-04-28T11:40:16.450+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.113 seconds
+[2025-04-28T11:40:47.290+0000] {processor.py:186} INFO - Started process (PID=175) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:40:47.294+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:40:47.296+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:40:47.295+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:40:47.304+0000] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:40:47.369+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:40:47.369+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-28T11:40:47.385+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:40:47.384+0000] {dag.py:4138} INFO - Setting next_dagrun for tutorial to 2025-04-28 11:40:47.299792+00:00, run_after=2025-04-29 11:40:47.299792+00:00
+[2025-04-28T11:40:47.398+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.113 seconds
+[2025-04-28T11:41:17.478+0000] {processor.py:186} INFO - Started process (PID=182) to work on /opt/airflow/dags/tutorial.py
+[2025-04-28T11:41:17.479+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tutorial.py for tasks to queue
+[2025-04-28T11:41:17.480+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:41:17.480+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:41:17.489+0000] {processor.py:925} INFO - DAG(s) 'tutorial' retrieved from /opt/airflow/dags/tutorial.py
+[2025-04-28T11:41:17.563+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:41:17.563+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-04-28T11:41:17.578+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:41:17.577+0000] {dag.py:4138} INFO - Setting next_dagrun for tutorial to 2025-04-28 11:41:17.482299+00:00, run_after=2025-04-29 11:41:17.482299+00:00
+[2025-04-28T11:41:17.592+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tutorial.py took 0.119 seconds

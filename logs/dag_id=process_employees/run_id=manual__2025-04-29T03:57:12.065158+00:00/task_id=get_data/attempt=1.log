@@ -1,0 +1,18 @@
+[2025-04-29T03:57:14.164+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-29T03:57:14.175+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: process_employees.get_data manual__2025-04-29T03:57:12.065158+00:00 [queued]>
+[2025-04-29T03:57:14.181+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: process_employees.get_data manual__2025-04-29T03:57:12.065158+00:00 [queued]>
+[2025-04-29T03:57:14.181+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-04-29T03:57:14.189+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): get_data> on 2025-04-29 03:57:12.065158+00:00
+[2025-04-29T03:57:14.191+0000] {standard_task_runner.py:72} INFO - Started process 9857 to run task
+[2025-04-29T03:57:14.194+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'process_employees', 'get_data', 'manual__2025-04-29T03:57:12.065158+00:00', '--job-id', '2459', '--raw', '--subdir', 'DAGS_FOLDER/tuts/simple_data_pipeline.py', '--cfg-path', '/tmp/tmpwepuuckp']
+[2025-04-29T03:57:14.195+0000] {standard_task_runner.py:105} INFO - Job 2459: Subtask get_data
+[2025-04-29T03:57:14.229+0000] {task_command.py:467} INFO - Running <TaskInstance: process_employees.get_data manual__2025-04-29T03:57:12.065158+00:00 [running]> on host 2c7afa36055b
+[2025-04-29T03:57:14.274+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='process_employees' AIRFLOW_CTX_TASK_ID='get_data' AIRFLOW_CTX_EXECUTION_DATE='2025-04-29T03:57:12.065158+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-29T03:57:12.065158+00:00'
+[2025-04-29T03:57:14.275+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-04-29T03:57:13.486+0000] {base.py:84} INFO - Retrieving connection 'tutorial_pg_conn'
+[2025-04-29T03:57:13.494+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-29T03:57:13.500+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-04-29T03:57:13.501+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=process_employees, task_id=get_data, run_id=manual__2025-04-29T03:57:12.065158+00:00, execution_date=20250429T035712, start_date=20250429T035714, end_date=20250429T035713
+[2025-04-29T03:57:13.527+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-04-29T03:57:13.543+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-29T03:57:13.545+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

@@ -1,0 +1,21 @@
+[2025-05-05T10:36:01.354+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-05T10:36:01.371+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag1.group1.task2 scheduled__2021-02-10T00:00:00+00:00 [queued]>
+[2025-05-05T10:36:01.378+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag1.group1.task2 scheduled__2021-02-10T00:00:00+00:00 [queued]>
+[2025-05-05T10:36:01.378+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 3
+[2025-05-05T10:36:01.414+0000] {taskinstance.py:2879} INFO - Executing <Task(BashOperator): group1.task2> on 2021-02-10 00:00:00+00:00
+[2025-05-05T10:36:01.418+0000] {standard_task_runner.py:72} INFO - Started process 12266 to run task
+[2025-05-05T10:36:01.421+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'dag1', 'group1.task2', 'scheduled__2021-02-10T00:00:00+00:00', '--job-id', '4069', '--raw', '--subdir', 'DAGS_FOLDER/tuts/taskgroup_basic.py', '--cfg-path', '/tmp/tmpqnw07nf3']
+[2025-05-05T10:36:01.422+0000] {standard_task_runner.py:105} INFO - Job 4069: Subtask group1.task2
+[2025-05-05T10:36:01.465+0000] {task_command.py:467} INFO - Running <TaskInstance: dag1.group1.task2 scheduled__2021-02-10T00:00:00+00:00 [running]> on host 2c7afa36055b
+[2025-05-05T10:36:01.533+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='dag1' AIRFLOW_CTX_TASK_ID='group1.task2' AIRFLOW_CTX_EXECUTION_DATE='2021-02-10T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2021-02-10T00:00:00+00:00'
+[2025-05-05T10:36:01.533+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-05T10:36:01.535+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-05-05T10:36:01.536+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'echo Hello World!']
+[2025-05-05T10:36:01.542+0000] {subprocess.py:86} INFO - Output:
+[2025-05-05T10:36:01.543+0000] {subprocess.py:93} INFO - Hello World!
+[2025-05-05T10:36:01.543+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-05-05T10:36:01.566+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-05T10:36:01.566+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=dag1, task_id=group1.task2, run_id=scheduled__2021-02-10T00:00:00+00:00, execution_date=20210210T000000, start_date=20250505T103601, end_date=20250505T103601
+[2025-05-05T10:36:01.594+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-05T10:36:01.607+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-05T10:36:01.609+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

@@ -1,0 +1,533 @@
+[2025-04-29T02:37:09.308+0000] {processor.py:186} INFO - Started process (PID=206) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:37:09.308+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:37:09.311+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:37:09.310+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:37:09.315+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:37:09.312+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 1, in <module>
+    from airflow.sdk import dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-04-29T02:37:09.315+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:37:09.339+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.036 seconds
+[2025-04-29T02:37:35.916+0000] {processor.py:186} INFO - Started process (PID=49) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:37:35.917+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:37:35.919+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:37:35.919+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:37:35.922+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:37:35.921+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 1, in <module>
+    from airflow.sdk import dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-04-29T02:37:35.923+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:37:35.942+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.030 seconds
+[2025-04-29T02:38:06.784+0000] {processor.py:186} INFO - Started process (PID=65) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:38:06.785+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:38:06.788+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:38:06.788+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:38:06.791+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:38:06.790+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 1, in <module>
+    from airflow.sdk import dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-04-29T02:38:06.791+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:38:06.807+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.028 seconds
+[2025-04-29T02:38:37.014+0000] {processor.py:186} INFO - Started process (PID=75) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:38:37.015+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:38:37.017+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:38:37.017+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:38:37.020+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:38:37.019+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 1, in <module>
+    from airflow.sdk import dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-04-29T02:38:37.020+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:38:37.039+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.032 seconds
+[2025-04-29T02:39:07.138+0000] {processor.py:186} INFO - Started process (PID=84) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:39:07.140+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:39:07.142+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:39:07.142+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:39:07.144+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:39:07.144+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 1, in <module>
+    from airflow.sdk import dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-04-29T02:39:07.144+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:39:07.162+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.028 seconds
+[2025-04-29T02:39:37.234+0000] {processor.py:186} INFO - Started process (PID=94) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:39:37.248+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:39:37.250+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:39:37.250+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:39:37.252+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:39:37.251+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 1, in <module>
+    from airflow.sdk import dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-04-29T02:39:37.252+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:39:37.268+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.039 seconds
+[2025-04-29T02:40:07.309+0000] {processor.py:186} INFO - Started process (PID=104) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:40:07.310+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:40:07.312+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:40:07.311+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:40:07.314+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:40:07.313+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 1, in <module>
+    from airflow.sdk import dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-04-29T02:40:07.314+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:40:07.329+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.024 seconds
+[2025-04-29T02:40:37.942+0000] {processor.py:186} INFO - Started process (PID=114) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:40:37.958+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:40:37.960+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:40:37.960+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:40:37.962+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:40:37.961+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 1, in <module>
+    from airflow.sdk import dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-04-29T02:40:37.962+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:40:37.979+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.041 seconds
+[2025-04-29T02:41:08.296+0000] {processor.py:186} INFO - Started process (PID=124) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:41:08.297+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:41:08.299+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:41:08.298+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:41:08.301+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:41:08.300+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 1, in <module>
+    from airflow.sdk import dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-04-29T02:41:08.301+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:41:08.318+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.028 seconds
+[2025-04-29T02:41:38.340+0000] {processor.py:186} INFO - Started process (PID=134) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:41:38.341+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:41:38.343+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:41:38.343+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:41:38.346+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:41:38.345+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 1, in <module>
+    from airflow.sdk import dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-04-29T02:41:38.346+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:41:38.362+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.027 seconds
+[2025-04-29T02:42:09.378+0000] {processor.py:186} INFO - Started process (PID=144) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:42:09.379+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:42:09.381+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:42:09.381+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:42:09.383+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:42:09.382+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 1, in <module>
+    from airflow.sdk import dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-04-29T02:42:09.383+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:42:09.397+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.023 seconds
+[2025-04-29T02:42:39.431+0000] {processor.py:186} INFO - Started process (PID=155) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:42:39.432+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:42:39.434+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:42:39.434+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:42:39.436+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:42:39.435+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 1, in <module>
+    from airflow.sdk import dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-04-29T02:42:39.436+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:42:39.450+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.024 seconds
+[2025-04-29T02:42:55.746+0000] {processor.py:186} INFO - Started process (PID=50) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:42:55.747+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:42:55.749+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:42:55.749+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:42:55.752+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:42:55.751+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 1, in <module>
+    from airflow.sdk import dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-04-29T02:42:55.752+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:42:55.771+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.029 seconds
+[2025-04-29T02:43:26.114+0000] {processor.py:186} INFO - Started process (PID=60) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:43:26.115+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:43:26.117+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:43:26.117+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:43:26.119+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:43:26.119+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 1, in <module>
+    from airflow.sdk import dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-04-29T02:43:26.119+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:43:26.137+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.027 seconds
+[2025-04-29T02:43:57.138+0000] {processor.py:186} INFO - Started process (PID=76) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:43:57.139+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:43:57.140+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:43:57.140+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:43:57.143+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:43:57.142+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 1, in <module>
+    from airflow.sdk import dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-04-29T02:43:57.143+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:43:57.159+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.025 seconds
+[2025-04-29T02:44:27.546+0000] {processor.py:186} INFO - Started process (PID=86) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:44:27.547+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:44:27.548+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:44:27.548+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:44:27.550+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:44:27.550+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 1, in <module>
+    from airflow.sdk import dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-04-29T02:44:27.551+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:44:27.567+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.025 seconds
+[2025-04-29T02:44:58.565+0000] {processor.py:186} INFO - Started process (PID=97) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:44:58.566+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:44:58.568+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:44:58.568+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:44:58.570+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:44:58.569+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 1, in <module>
+    from airflow.sdk import dag, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-04-29T02:44:58.570+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:44:58.585+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.023 seconds
+[2025-04-29T02:45:10.756+0000] {processor.py:186} INFO - Started process (PID=99) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:45:10.757+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:45:10.759+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:45:10.759+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:45:10.764+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:45:10.762+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 29, in <module>
+    @task.external_python(task_id="external_python", python=PATH_TO_PYTHON_BINARY)
+NameError: name 'PATH_TO_PYTHON_BINARY' is not defined
+[2025-04-29T02:45:10.766+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:45:10.781+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.029 seconds
+[2025-04-29T02:45:41.727+0000] {processor.py:186} INFO - Started process (PID=109) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:45:41.728+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:45:41.730+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:45:41.730+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:45:41.737+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:45:41.735+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 29, in <module>
+    @task.external_python(task_id="external_python", python=PATH_TO_PYTHON_BINARY)
+NameError: name 'PATH_TO_PYTHON_BINARY' is not defined
+[2025-04-29T02:45:41.739+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:45:41.754+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.031 seconds
+[2025-04-29T02:46:11.770+0000] {processor.py:186} INFO - Started process (PID=119) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:46:11.771+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:46:11.773+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:46:11.773+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:46:11.778+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:46:11.776+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 29, in <module>
+    @task.external_python(task_id="external_python", python=PATH_TO_PYTHON_BINARY)
+NameError: name 'PATH_TO_PYTHON_BINARY' is not defined
+[2025-04-29T02:46:11.780+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:46:11.795+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.029 seconds
+[2025-04-29T02:46:42.139+0000] {processor.py:186} INFO - Started process (PID=135) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:46:42.141+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:46:42.142+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:46:42.142+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:46:42.147+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:46:42.145+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 29, in <module>
+    @task.external_python(task_id="external_python", python=PATH_TO_PYTHON_BINARY)
+NameError: name 'PATH_TO_PYTHON_BINARY' is not defined
+[2025-04-29T02:46:42.149+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:46:42.162+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.027 seconds
+[2025-04-29T02:47:12.229+0000] {processor.py:186} INFO - Started process (PID=145) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:47:12.230+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:47:12.232+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:47:12.231+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:47:12.236+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:47:12.234+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/example_python_decorator.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/example_python_decorator.py", line 29, in <module>
+    @task.external_python(task_id="external_python", python=PATH_TO_PYTHON_BINARY)
+NameError: name 'PATH_TO_PYTHON_BINARY' is not defined
+[2025-04-29T02:47:12.238+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:47:12.251+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.027 seconds
+[2025-04-29T02:47:32.300+0000] {processor.py:186} INFO - Started process (PID=148) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:47:32.301+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:47:32.303+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:47:32.303+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:47:32.306+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:47:32.318+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.023 seconds
+[2025-04-29T02:48:02.660+0000] {processor.py:186} INFO - Started process (PID=221) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:48:02.661+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:48:02.663+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:48:02.663+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:48:02.666+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:48:02.676+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.020 seconds
+[2025-04-29T02:48:32.757+0000] {processor.py:186} INFO - Started process (PID=373) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:48:32.759+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:48:32.761+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:48:32.761+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:48:32.765+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:48:32.780+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.030 seconds
+[2025-04-29T02:49:03.625+0000] {processor.py:186} INFO - Started process (PID=461) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:49:03.626+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:49:03.628+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:49:03.627+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:49:03.631+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:49:03.641+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.021 seconds
+[2025-04-29T02:49:34.503+0000] {processor.py:186} INFO - Started process (PID=621) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:49:34.504+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:49:34.506+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:49:34.506+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:49:34.510+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:49:34.526+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.029 seconds
+[2025-04-29T02:50:05.409+0000] {processor.py:186} INFO - Started process (PID=745) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:50:05.427+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:50:05.428+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:50:05.428+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:50:05.431+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:50:05.441+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.037 seconds
+[2025-04-29T02:50:36.254+0000] {processor.py:186} INFO - Started process (PID=850) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:50:36.255+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:50:36.256+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:50:36.256+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:50:36.259+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:50:36.270+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.020 seconds
+[2025-04-29T02:51:07.133+0000] {processor.py:186} INFO - Started process (PID=970) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:51:07.135+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:51:07.136+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:51:07.136+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:51:07.140+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:51:07.151+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.022 seconds
+[2025-04-29T02:51:38.128+0000] {processor.py:186} INFO - Started process (PID=1079) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:51:38.129+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:51:38.131+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:51:38.131+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:51:38.135+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:51:38.146+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.022 seconds
+[2025-04-29T02:52:08.163+0000] {processor.py:186} INFO - Started process (PID=1194) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:52:08.164+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:52:08.165+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:52:08.165+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:52:08.168+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:52:08.179+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.021 seconds
+[2025-04-29T02:52:39.106+0000] {processor.py:186} INFO - Started process (PID=1340) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:52:39.107+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:52:39.108+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:52:39.108+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:52:39.112+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:52:39.122+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.021 seconds
+[2025-04-29T02:53:10.039+0000] {processor.py:186} INFO - Started process (PID=1412) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:53:10.040+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:53:10.041+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:53:10.041+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:53:10.045+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:53:10.056+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.022 seconds
+[2025-04-29T02:53:40.868+0000] {processor.py:186} INFO - Started process (PID=1516) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:53:40.869+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:53:40.871+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:53:40.871+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:53:40.876+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:53:40.891+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.028 seconds
+[2025-04-29T02:54:11.726+0000] {processor.py:186} INFO - Started process (PID=1611) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:54:11.727+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:54:11.729+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:54:11.728+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:54:11.732+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:54:11.742+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.021 seconds
+[2025-04-29T02:54:42.696+0000] {processor.py:186} INFO - Started process (PID=1679) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:54:42.697+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:54:42.699+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:54:42.699+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:54:42.702+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:54:42.713+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.022 seconds
+[2025-04-29T02:55:13.705+0000] {processor.py:186} INFO - Started process (PID=1825) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:55:13.709+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:55:13.710+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:55:13.710+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:55:13.713+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:55:13.724+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.024 seconds
+[2025-04-29T02:55:44.599+0000] {processor.py:186} INFO - Started process (PID=1905) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:55:44.600+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:55:44.602+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:55:44.601+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:55:44.605+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:55:44.617+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.023 seconds
+[2025-04-29T02:56:14.912+0000] {processor.py:186} INFO - Started process (PID=2024) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:56:14.927+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:56:14.928+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:56:14.928+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:56:14.931+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:56:14.942+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.035 seconds
+[2025-04-29T02:56:45.830+0000] {processor.py:186} INFO - Started process (PID=2066) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:56:45.831+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:56:45.833+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:56:45.833+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:56:45.836+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:56:45.847+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.021 seconds
+[2025-04-29T02:57:16.785+0000] {processor.py:186} INFO - Started process (PID=2196) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:57:16.786+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:57:16.788+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:57:16.788+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:57:16.792+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:57:16.804+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.024 seconds
+[2025-04-29T02:57:47.648+0000] {processor.py:186} INFO - Started process (PID=2298) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:57:47.649+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:57:47.651+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:57:47.650+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:57:47.654+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:57:47.665+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.021 seconds
+[2025-04-29T02:58:18.539+0000] {processor.py:186} INFO - Started process (PID=2433) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:58:18.540+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:58:18.541+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:58:18.541+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:58:18.544+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:58:18.555+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.021 seconds
+[2025-04-29T02:58:48.573+0000] {processor.py:186} INFO - Started process (PID=2459) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:58:48.574+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:58:48.576+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:58:48.576+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:58:48.579+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:58:48.591+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.023 seconds
+[2025-04-29T02:59:19.596+0000] {processor.py:186} INFO - Started process (PID=2469) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:59:19.597+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:59:19.599+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:59:19.598+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:59:19.601+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:59:19.610+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.018 seconds
+[2025-04-29T02:59:50.593+0000] {processor.py:186} INFO - Started process (PID=2479) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:59:50.594+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T02:59:50.596+0000] {logging_mixin.py:190} INFO - [2025-04-29T02:59:50.596+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:59:50.598+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T02:59:50.609+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.020 seconds
+[2025-04-29T03:00:21.468+0000] {processor.py:186} INFO - Started process (PID=2489) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:00:21.469+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T03:00:21.470+0000] {logging_mixin.py:190} INFO - [2025-04-29T03:00:21.470+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:00:21.474+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:00:21.484+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.022 seconds
+[2025-04-29T03:00:52.436+0000] {processor.py:186} INFO - Started process (PID=2499) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:00:52.438+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T03:00:52.439+0000] {logging_mixin.py:190} INFO - [2025-04-29T03:00:52.439+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:00:52.442+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:00:52.452+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.019 seconds
+[2025-04-29T03:01:23.340+0000] {processor.py:186} INFO - Started process (PID=2509) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:01:23.341+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T03:01:23.343+0000] {logging_mixin.py:190} INFO - [2025-04-29T03:01:23.343+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:01:23.346+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:01:23.357+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.021 seconds
+[2025-04-29T03:01:54.303+0000] {processor.py:186} INFO - Started process (PID=2519) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:01:54.310+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T03:01:54.312+0000] {logging_mixin.py:190} INFO - [2025-04-29T03:01:54.312+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:01:54.315+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:01:54.326+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.028 seconds
+[2025-04-29T03:02:25.309+0000] {processor.py:186} INFO - Started process (PID=2535) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:02:25.322+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T03:02:25.324+0000] {logging_mixin.py:190} INFO - [2025-04-29T03:02:25.323+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:02:25.326+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:02:25.335+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.030 seconds
+[2025-04-29T03:02:55.809+0000] {processor.py:186} INFO - Started process (PID=2545) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:02:55.813+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T03:02:55.814+0000] {logging_mixin.py:190} INFO - [2025-04-29T03:02:55.814+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:02:55.817+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:02:55.827+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.023 seconds
+[2025-04-29T03:03:25.844+0000] {processor.py:186} INFO - Started process (PID=2555) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:03:25.848+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T03:03:25.849+0000] {logging_mixin.py:190} INFO - [2025-04-29T03:03:25.849+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:03:25.853+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:03:25.863+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.023 seconds
+[2025-04-29T03:03:55.950+0000] {processor.py:186} INFO - Started process (PID=2565) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:03:55.954+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T03:03:55.955+0000] {logging_mixin.py:190} INFO - [2025-04-29T03:03:55.955+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:03:55.958+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:03:55.967+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.022 seconds
+[2025-04-29T03:04:26.067+0000] {processor.py:186} INFO - Started process (PID=2575) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:04:26.071+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T03:04:26.073+0000] {logging_mixin.py:190} INFO - [2025-04-29T03:04:26.073+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:04:26.076+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:04:26.087+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.025 seconds
+[2025-04-29T03:04:56.437+0000] {processor.py:186} INFO - Started process (PID=2585) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:04:56.441+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T03:04:56.442+0000] {logging_mixin.py:190} INFO - [2025-04-29T03:04:56.442+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:04:56.445+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:04:56.454+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.022 seconds
+[2025-04-29T03:05:27.478+0000] {processor.py:186} INFO - Started process (PID=2595) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:05:27.479+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T03:05:27.481+0000] {logging_mixin.py:190} INFO - [2025-04-29T03:05:27.481+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:05:27.484+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:05:27.493+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.020 seconds
+[2025-04-29T03:05:57.656+0000] {processor.py:186} INFO - Started process (PID=2606) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:05:57.657+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T03:05:57.659+0000] {logging_mixin.py:190} INFO - [2025-04-29T03:05:57.659+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:05:57.662+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:05:57.673+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.023 seconds
+[2025-04-29T03:06:27.770+0000] {processor.py:186} INFO - Started process (PID=2616) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:06:27.771+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T03:06:27.773+0000] {logging_mixin.py:190} INFO - [2025-04-29T03:06:27.773+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:06:27.776+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:06:27.786+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.020 seconds
+[2025-04-29T03:06:58.164+0000] {processor.py:186} INFO - Started process (PID=2626) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:06:58.165+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T03:06:58.167+0000] {logging_mixin.py:190} INFO - [2025-04-29T03:06:58.167+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:06:58.170+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:06:58.180+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.020 seconds
+[2025-04-29T03:07:28.334+0000] {processor.py:186} INFO - Started process (PID=2642) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:07:28.336+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T03:07:28.337+0000] {logging_mixin.py:190} INFO - [2025-04-29T03:07:28.337+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:07:28.340+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:07:28.351+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.021 seconds
+[2025-04-29T03:07:58.905+0000] {processor.py:186} INFO - Started process (PID=2652) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:07:58.908+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T03:07:58.910+0000] {logging_mixin.py:190} INFO - [2025-04-29T03:07:58.910+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:07:58.914+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:07:58.924+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.024 seconds
+[2025-04-29T03:08:28.978+0000] {processor.py:186} INFO - Started process (PID=2662) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:08:28.980+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T03:08:28.981+0000] {logging_mixin.py:190} INFO - [2025-04-29T03:08:28.981+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:08:28.984+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:08:28.995+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.021 seconds
+[2025-04-29T03:08:59.287+0000] {processor.py:186} INFO - Started process (PID=2672) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:08:59.291+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T03:08:59.293+0000] {logging_mixin.py:190} INFO - [2025-04-29T03:08:59.292+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:08:59.295+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:08:59.306+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.023 seconds
+[2025-04-29T03:09:29.662+0000] {processor.py:186} INFO - Started process (PID=2682) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:09:29.663+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T03:09:29.665+0000] {logging_mixin.py:190} INFO - [2025-04-29T03:09:29.664+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:09:29.667+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:09:29.677+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.019 seconds
+[2025-04-29T03:09:59.892+0000] {processor.py:186} INFO - Started process (PID=2691) to work on /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:09:59.893+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/example_python_decorator.py for tasks to queue
+[2025-04-29T03:09:59.895+0000] {logging_mixin.py:190} INFO - [2025-04-29T03:09:59.894+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:09:59.898+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/example_python_decorator.py
+[2025-04-29T03:09:59.907+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/example_python_decorator.py took 0.020 seconds

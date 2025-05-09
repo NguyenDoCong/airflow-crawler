@@ -1,0 +1,63 @@
+[2025-05-08T07:22:25.255+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-08T07:22:25.267+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-08T07:22:24.816626+00:00 [queued]>
+[2025-05-08T07:22:25.273+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-08T07:22:24.816626+00:00 [queued]>
+[2025-05-08T07:22:25.274+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-08T07:22:25.283+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): fb_videos_scraper> on 2025-05-08 07:22:24.816626+00:00
+[2025-05-08T07:22:25.286+0000] {standard_task_runner.py:72} INFO - Started process 1216 to run task
+[2025-05-08T07:22:25.289+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'fb_videos_scraper', 'manual__2025-05-08T07:22:24.816626+00:00', '--job-id', '5121', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpf7nqekq3']
+[2025-05-08T07:22:25.291+0000] {standard_task_runner.py:105} INFO - Job 5121: Subtask fb_videos_scraper
+[2025-05-08T07:22:25.331+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-08T07:22:24.816626+00:00 [running]> on host 4e1cfb881694
+[2025-05-08T07:22:25.398+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='fb_videos_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-05-08T07:22:24.816626+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-08T07:22:24.816626+00:00'
+[2025-05-08T07:22:25.399+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-08T07:22:25.439+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.92); currently, chromedriver 136.0.7103.92 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-08T07:22:27.582+0000] {logging_mixin.py:190} INFO - Step 1 of 3 - Load cookies
+[2025-05-08T07:22:27.620+0000] {logging_mixin.py:190} INFO - An Error occurred while loading cookies [Errno 2] No such file or directory: 
+'cookies/fb_cookies.json'
+[2025-05-08T07:22:28.693+0000] {logging_mixin.py:190} INFO - Step 2 of 3 - Scrolling page
+[2025-05-08T07:22:28.693+0000] {logging_mixin.py:190} INFO - Scrolling...
+[2025-05-08T07:22:34.757+0000] {logging_mixin.py:190} INFO - Step 3 of 3 - Extract videos urls
+[2025-05-08T07:22:34.768+0000] {logging_mixin.py:190} INFO - Found 32 a tags
+[2025-05-08T07:22:34.880+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/100087341155257/videos/300258409024726
+[2025-05-08T07:22:34.888+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/612326127913584/
+[2025-05-08T07:22:34.900+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/focus-on-the-park-hang-seo-international-junior-festivali-cant-wait-to-go-on-the/1019921852555282/
+[2025-05-08T07:22:34.912+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/trao-g%E1%BB%ADi-y%C3%AAu-th%C6%B0%C6%A1ng-nu%C3%B4i-d%C6%B0%E1%BB%A1ng-t%C6%B0%C6%A1ng-lai-l%C3%A0-tinh-th%E1%BA%A7n-h%E1%BB%8Dc-vi%E1%BB%87n-b%C3%B3ng-%C4%91%C3%A1-qu%E1%BB%91c-t%E1%BA%BF-p/1496815271117860/
+[2025-05-08T07:22:34.924+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/my-little-tani-since-tani-came-to-our-family-the-whole-family-has-been-able-to-t/7206305039381158/
+[2025-05-08T07:22:34.935+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/300258409024726/
+[2025-05-08T07:22:34.947+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/yesterday-i-was-honored-to-attend-many-events-attended-by-the-president-and-poli/736392504839613/
+[2025-05-08T07:22:34.960+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/199672223024300/
+[2025-05-08T07:22:34.971+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/796377181594223/
+[2025-05-08T07:22:34.984+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/some-throwback-thursday-will-always-cherrish-the-memories-with-my-players-do-you/963843274971699/
+[2025-05-08T07:22:34.997+0000] {logging_mixin.py:190} INFO - Found 10 href elements
+[2025-05-08T07:22:34.998+0000] {logging_mixin.py:190} INFO -  Scraped data:
+[2025-05-08T07:22:34.998+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/100087341155257/videos/300258409024726
+[2025-05-08T07:22:34.999+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/612326127913584/
+[2025-05-08T07:22:34.999+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/official.parkhangseo/videos/focus-on-the-park-hang-seo-
+international-junior-festivali-cant-wait-to-go-on-the/1019921852555282/
+[2025-05-08T07:22:35.000+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/official.parkhangseo/videos/trao-g%E1%BB%ADi-y%C3%AAu-t
+h%C6%B0%C6%A1ng-nu%C3%B4i-d%C6%B0%E1%BB%A1ng-t%C6%B0%C6%A1ng-lai-l%C3%A0-tinh-th
+%E1%BA%A7n-h%E1%BB%8Dc-vi%E1%BB%87n-b%C3%B3ng-%C4%91%C3%A1-qu%E1%BB%91c-t%E1%BA%
+BF-p/1496815271117860/
+[2025-05-08T07:22:35.000+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/official.parkhangseo/videos/my-little-tani-since-tani-c
+ame-to-our-family-the-whole-family-has-been-able-to-t/7206305039381158/
+[2025-05-08T07:22:35.000+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/300258409024726/
+[2025-05-08T07:22:35.001+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/official.parkhangseo/videos/yesterday-i-was-honored-to-
+attend-many-events-attended-by-the-president-and-poli/736392504839613/
+[2025-05-08T07:22:35.001+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/199672223024300/
+[2025-05-08T07:22:35.001+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/796377181594223/
+[2025-05-08T07:22:35.002+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/official.parkhangseo/videos/some-throwback-thursday-wil
+l-always-cherrish-the-memories-with-my-players-do-you/963843274971699/
+[2025-05-08T07:22:35.002+0000] {logging_mixin.py:190} INFO - Don't close the app! Saving scraped data to database, it can take a while!
+[2025-05-08T07:22:35.002+0000] {logging_mixin.py:190} INFO - An error occurred [Errno 13] Permission denied: 'scraped_data/facebook.txt'
+[2025-05-08T07:22:35.003+0000] {logging_mixin.py:190} INFO - Reading URLs from scraped_data/facebook.txt...
+[2025-05-08T07:22:35.068+0000] {logging_mixin.py:190} INFO - No URLs found in the file.
+[2025-05-08T07:22:35.188+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-05-08T07:22:35.196+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-08T07:22:35.197+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=facebook_videos_scraper_dag, task_id=fb_videos_scraper, run_id=manual__2025-05-08T07:22:24.816626+00:00, execution_date=20250508T072224, start_date=20250508T072225, end_date=20250508T072235
+[2025-05-08T07:22:35.242+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-08T07:22:35.253+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-08T07:22:35.255+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

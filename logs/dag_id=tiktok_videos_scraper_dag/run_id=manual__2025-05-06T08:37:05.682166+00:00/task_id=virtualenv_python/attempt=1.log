@@ -1,0 +1,209 @@
+[2025-05-06T08:37:07.269+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-06T08:37:07.281+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.virtualenv_python manual__2025-05-06T08:37:05.682166+00:00 [queued]>
+[2025-05-06T08:37:07.287+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.virtualenv_python manual__2025-05-06T08:37:05.682166+00:00 [queued]>
+[2025-05-06T08:37:07.287+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-06T08:37:07.296+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonVirtualenvDecoratedOperator): virtualenv_python> on 2025-05-06 08:37:05.682166+00:00
+[2025-05-06T08:37:07.298+0000] {standard_task_runner.py:72} INFO - Started process 77 to run task
+[2025-05-06T08:37:07.301+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'virtualenv_python', 'manual__2025-05-06T08:37:05.682166+00:00', '--job-id', '4570', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmppw6ak5sr']
+[2025-05-06T08:37:07.303+0000] {standard_task_runner.py:105} INFO - Job 4570: Subtask virtualenv_python
+[2025-05-06T08:37:07.339+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.virtualenv_python manual__2025-05-06T08:37:05.682166+00:00 [running]> on host 3074a3e84ed5
+[2025-05-06T08:37:07.400+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='virtualenv_python' AIRFLOW_CTX_EXECUTION_DATE='2025-05-06T08:37:05.682166+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-06T08:37:05.682166+00:00'
+[2025-05-06T08:37:07.401+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-06T08:37:07.404+0000] {process_utils.py:186} INFO - Executing cmd: /home/airflow/.local/bin/python -m virtualenv /tmp/venvisjwt60u --python=python
+[2025-05-06T08:37:07.404+0000] {process_utils.py:190} INFO - Output:
+[2025-05-06T08:37:08.489+0000] {process_utils.py:194} INFO - created virtual environment CPython3.10.14.final.0-64 in 563ms
+[2025-05-06T08:37:08.490+0000] {process_utils.py:194} INFO -   creator CPython3Posix(dest=/tmp/venvisjwt60u, clear=False, no_vcs_ignore=False, global=False)
+[2025-05-06T08:37:08.490+0000] {process_utils.py:194} INFO -   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/tmp/tmp83ujiz45)
+[2025-05-06T08:37:08.490+0000] {process_utils.py:194} INFO -     added seed packages: pip==24.1, setuptools==70.1.0, wheel==0.43.0
+[2025-05-06T08:37:08.490+0000] {process_utils.py:194} INFO -   activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+[2025-05-06T08:37:08.522+0000] {process_utils.py:186} INFO - Executing cmd: /tmp/venvisjwt60u/bin/pip install -r /tmp/venvisjwt60u/requirements.txt
+[2025-05-06T08:37:08.523+0000] {process_utils.py:190} INFO - Output:
+[2025-05-06T08:37:09.317+0000] {process_utils.py:194} INFO - Collecting TikTokApi==7.1.0 (from -r /tmp/venvisjwt60u/requirements.txt (line 1))
+[2025-05-06T08:37:09.540+0000] {process_utils.py:194} INFO -   Downloading tiktokapi-7.1.0-py3-none-any.whl.metadata (9.7 kB)
+[2025-05-06T08:37:09.670+0000] {process_utils.py:194} INFO - Collecting requests (from TikTokApi==7.1.0->-r /tmp/venvisjwt60u/requirements.txt (line 1))
+[2025-05-06T08:37:09.737+0000] {process_utils.py:194} INFO -   Downloading requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+[2025-05-06T08:37:09.889+0000] {process_utils.py:194} INFO - Collecting playwright (from TikTokApi==7.1.0->-r /tmp/venvisjwt60u/requirements.txt (line 1))
+[2025-05-06T08:37:09.954+0000] {process_utils.py:194} INFO -   Downloading playwright-1.52.0-py3-none-manylinux1_x86_64.whl.metadata (3.5 kB)
+[2025-05-06T08:37:10.060+0000] {process_utils.py:194} INFO - Collecting httpx (from TikTokApi==7.1.0->-r /tmp/venvisjwt60u/requirements.txt (line 1))
+[2025-05-06T08:37:10.125+0000] {process_utils.py:194} INFO -   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+[2025-05-06T08:37:10.228+0000] {process_utils.py:194} INFO - Collecting anyio (from httpx->TikTokApi==7.1.0->-r /tmp/venvisjwt60u/requirements.txt (line 1))
+[2025-05-06T08:37:10.293+0000] {process_utils.py:194} INFO -   Downloading anyio-4.9.0-py3-none-any.whl.metadata (4.7 kB)
+[2025-05-06T08:37:10.392+0000] {process_utils.py:194} INFO - Collecting certifi (from httpx->TikTokApi==7.1.0->-r /tmp/venvisjwt60u/requirements.txt (line 1))
+[2025-05-06T08:37:10.457+0000] {process_utils.py:194} INFO -   Downloading certifi-2025.4.26-py3-none-any.whl.metadata (2.5 kB)
+[2025-05-06T08:37:10.585+0000] {process_utils.py:194} INFO - Collecting httpcore==1.* (from httpx->TikTokApi==7.1.0->-r /tmp/venvisjwt60u/requirements.txt (line 1))
+[2025-05-06T08:37:10.649+0000] {process_utils.py:194} INFO -   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+[2025-05-06T08:37:10.760+0000] {process_utils.py:194} INFO - Collecting idna (from httpx->TikTokApi==7.1.0->-r /tmp/venvisjwt60u/requirements.txt (line 1))
+[2025-05-06T08:37:10.825+0000] {process_utils.py:194} INFO -   Downloading idna-3.10-py3-none-any.whl.metadata (10 kB)
+[2025-05-06T08:37:10.933+0000] {process_utils.py:194} INFO - Collecting h11>=0.16 (from httpcore==1.*->httpx->TikTokApi==7.1.0->-r /tmp/venvisjwt60u/requirements.txt (line 1))
+[2025-05-06T08:37:10.998+0000] {process_utils.py:194} INFO -   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+[2025-05-06T08:37:11.112+0000] {process_utils.py:194} INFO - Collecting pyee<14,>=13 (from playwright->TikTokApi==7.1.0->-r /tmp/venvisjwt60u/requirements.txt (line 1))
+[2025-05-06T08:37:11.176+0000] {process_utils.py:194} INFO -   Downloading pyee-13.0.0-py3-none-any.whl.metadata (2.9 kB)
+[2025-05-06T08:37:11.442+0000] {process_utils.py:194} INFO - Collecting greenlet<4.0.0,>=3.1.1 (from playwright->TikTokApi==7.1.0->-r /tmp/venvisjwt60u/requirements.txt (line 1))
+[2025-05-06T08:37:11.509+0000] {process_utils.py:194} INFO -   Downloading greenlet-3.2.1-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (4.1 kB)
+[2025-05-06T08:37:11.670+0000] {process_utils.py:194} INFO - Collecting charset-normalizer<4,>=2 (from requests->TikTokApi==7.1.0->-r /tmp/venvisjwt60u/requirements.txt (line 1))
+[2025-05-06T08:37:11.735+0000] {process_utils.py:194} INFO -   Downloading charset_normalizer-3.4.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (35 kB)
+[2025-05-06T08:37:11.893+0000] {process_utils.py:194} INFO - Collecting urllib3<3,>=1.21.1 (from requests->TikTokApi==7.1.0->-r /tmp/venvisjwt60u/requirements.txt (line 1))
+[2025-05-06T08:37:11.959+0000] {process_utils.py:194} INFO -   Downloading urllib3-2.4.0-py3-none-any.whl.metadata (6.5 kB)
+[2025-05-06T08:37:12.073+0000] {process_utils.py:194} INFO - Collecting typing-extensions (from pyee<14,>=13->playwright->TikTokApi==7.1.0->-r /tmp/venvisjwt60u/requirements.txt (line 1))
+[2025-05-06T08:37:12.144+0000] {process_utils.py:194} INFO -   Downloading typing_extensions-4.13.2-py3-none-any.whl.metadata (3.0 kB)
+[2025-05-06T08:37:12.249+0000] {process_utils.py:194} INFO - Collecting exceptiongroup>=1.0.2 (from anyio->httpx->TikTokApi==7.1.0->-r /tmp/venvisjwt60u/requirements.txt (line 1))
+[2025-05-06T08:37:12.314+0000] {process_utils.py:194} INFO -   Downloading exceptiongroup-1.2.2-py3-none-any.whl.metadata (6.6 kB)
+[2025-05-06T08:37:12.410+0000] {process_utils.py:194} INFO - Collecting sniffio>=1.1 (from anyio->httpx->TikTokApi==7.1.0->-r /tmp/venvisjwt60u/requirements.txt (line 1))
+[2025-05-06T08:37:12.490+0000] {process_utils.py:194} INFO -   Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+[2025-05-06T08:37:12.578+0000] {process_utils.py:194} INFO - Downloading tiktokapi-7.1.0-py3-none-any.whl (55 kB)
+[2025-05-06T08:37:12.621+0000] {process_utils.py:194} INFO -    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 55.8/55.8 kB 1.2 MB/s eta 0:00:00
+[2025-05-06T08:37:12.686+0000] {process_utils.py:194} INFO - Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+[2025-05-06T08:37:12.722+0000] {process_utils.py:194} INFO -    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 73.5/73.5 kB 2.0 MB/s eta 0:00:00
+[2025-05-06T08:37:12.787+0000] {process_utils.py:194} INFO - Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+[2025-05-06T08:37:12.826+0000] {process_utils.py:194} INFO -    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.8/78.8 kB 1.9 MB/s eta 0:00:00
+[2025-05-06T08:37:12.892+0000] {process_utils.py:194} INFO - Downloading playwright-1.52.0-py3-none-manylinux1_x86_64.whl (45.1 MB)
+[2025-05-06T08:37:18.454+0000] {process_utils.py:194} INFO -    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.1/45.1 MB 7.3 MB/s eta 0:00:00
+[2025-05-06T08:37:18.535+0000] {process_utils.py:194} INFO - Downloading requests-2.32.3-py3-none-any.whl (64 kB)
+[2025-05-06T08:37:18.542+0000] {process_utils.py:194} INFO -    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.9/64.9 kB 9.4 MB/s eta 0:00:00
+[2025-05-06T08:37:18.615+0000] {process_utils.py:194} INFO - Downloading certifi-2025.4.26-py3-none-any.whl (159 kB)
+[2025-05-06T08:37:18.645+0000] {process_utils.py:194} INFO -    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 159.6/159.6 kB 5.5 MB/s eta 0:00:00
+[2025-05-06T08:37:18.714+0000] {process_utils.py:194} INFO - Downloading charset_normalizer-3.4.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (149 kB)
+[2025-05-06T08:37:18.730+0000] {process_utils.py:194} INFO -    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 149.5/149.5 kB 10.3 MB/s eta 0:00:00
+[2025-05-06T08:37:18.795+0000] {process_utils.py:194} INFO - Downloading greenlet-3.2.1-cp310-cp310-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (580 kB)
+[2025-05-06T08:37:18.872+0000] {process_utils.py:194} INFO -    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 580.6/580.6 kB 7.6 MB/s eta 0:00:00
+[2025-05-06T08:37:18.938+0000] {process_utils.py:194} INFO - Downloading idna-3.10-py3-none-any.whl (70 kB)
+[2025-05-06T08:37:18.966+0000] {process_utils.py:194} INFO -    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 70.4/70.4 kB 2.3 MB/s eta 0:00:00
+[2025-05-06T08:37:19.033+0000] {process_utils.py:194} INFO - Downloading pyee-13.0.0-py3-none-any.whl (15 kB)
+[2025-05-06T08:37:19.106+0000] {process_utils.py:194} INFO - Downloading urllib3-2.4.0-py3-none-any.whl (128 kB)
+[2025-05-06T08:37:19.125+0000] {process_utils.py:194} INFO -    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 128.7/128.7 kB 6.8 MB/s eta 0:00:00
+[2025-05-06T08:37:19.191+0000] {process_utils.py:194} INFO - Downloading anyio-4.9.0-py3-none-any.whl (100 kB)
+[2025-05-06T08:37:19.207+0000] {process_utils.py:194} INFO -    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.9/100.9 kB 6.2 MB/s eta 0:00:00
+[2025-05-06T08:37:19.277+0000] {process_utils.py:194} INFO - Downloading exceptiongroup-1.2.2-py3-none-any.whl (16 kB)
+[2025-05-06T08:37:19.349+0000] {process_utils.py:194} INFO - Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+[2025-05-06T08:37:19.423+0000] {process_utils.py:194} INFO - Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+[2025-05-06T08:37:19.497+0000] {process_utils.py:194} INFO - Downloading typing_extensions-4.13.2-py3-none-any.whl (45 kB)
+[2025-05-06T08:37:19.508+0000] {process_utils.py:194} INFO -    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.8/45.8 kB 4.3 MB/s eta 0:00:00
+[2025-05-06T08:37:19.583+0000] {process_utils.py:194} INFO - Installing collected packages: urllib3, typing-extensions, sniffio, idna, h11, greenlet, exceptiongroup, charset-normalizer, certifi, requests, pyee, httpcore, anyio, playwright, httpx, TikTokApi
+[2025-05-06T08:37:20.735+0000] {process_utils.py:194} INFO - Successfully installed TikTokApi-7.1.0 anyio-4.9.0 certifi-2025.4.26 charset-normalizer-3.4.2 exceptiongroup-1.2.2 greenlet-3.2.1 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 idna-3.10 playwright-1.52.0 pyee-13.0.0 requests-2.32.3 sniffio-1.3.1 typing-extensions-4.13.2 urllib3-2.4.0
+[2025-05-06T08:37:21.041+0000] {process_utils.py:194} INFO - 
+[2025-05-06T08:37:21.041+0000] {process_utils.py:194} INFO - [notice] A new release of pip is available: 24.1 -> 25.1.1
+[2025-05-06T08:37:21.041+0000] {process_utils.py:194} INFO - [notice] To update, run: python -m pip install --upgrade pip
+[2025-05-06T08:37:21.123+0000] {python.py:513} INFO - Use 'pickle' as serializer.
+[2025-05-06T08:37:21.141+0000] {process_utils.py:186} INFO - Executing cmd: /tmp/venvisjwt60u/bin/python /tmp/venv-callo4fz0yys/script.py /tmp/venv-callo4fz0yys/script.in /tmp/venv-callo4fz0yys/script.out /tmp/venv-callo4fz0yys/string_args.txt /tmp/venv-callo4fz0yys/termination.log
+[2025-05-06T08:37:21.142+0000] {process_utils.py:190} INFO - Output:
+[2025-05-06T08:37:21.530+0000] {process_utils.py:194} INFO - Traceback (most recent call last):
+[2025-05-06T08:37:21.530+0000] {process_utils.py:194} INFO -   File "/tmp/venv-callo4fz0yys/script.py", line 32, in user_example
+[2025-05-06T08:37:21.530+0000] {process_utils.py:194} INFO -     await api.create_sessions(ms_tokens=ms_tokens, num_sessions=1, sleep_after=3, browser=os.getenv("TIKTOK_BROWSER", "chromium"))
+[2025-05-06T08:37:21.531+0000] {process_utils.py:194} INFO -   File "/tmp/venvisjwt60u/lib/python3.10/site-packages/TikTokApi/tiktok.py", line 279, in create_sessions
+[2025-05-06T08:37:21.531+0000] {process_utils.py:194} INFO -     self.browser = await self.playwright.chromium.launch(
+[2025-05-06T08:37:21.531+0000] {process_utils.py:194} INFO -   File "/tmp/venvisjwt60u/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 14451, in launch
+[2025-05-06T08:37:21.531+0000] {process_utils.py:194} INFO -     await self._impl_obj.launch(
+[2025-05-06T08:37:21.531+0000] {process_utils.py:194} INFO -   File "/tmp/venvisjwt60u/lib/python3.10/site-packages/playwright/_impl/_browser_type.py", line 97, in launch
+[2025-05-06T08:37:21.532+0000] {process_utils.py:194} INFO -     Browser, from_channel(await self._channel.send("launch", params))
+[2025-05-06T08:37:21.532+0000] {process_utils.py:194} INFO -   File "/tmp/venvisjwt60u/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 61, in send
+[2025-05-06T08:37:21.532+0000] {process_utils.py:194} INFO -     return await self._connection.wrap_api_call(
+[2025-05-06T08:37:21.532+0000] {process_utils.py:194} INFO -   File "/tmp/venvisjwt60u/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 528, in wrap_api_call
+[2025-05-06T08:37:21.532+0000] {process_utils.py:194} INFO -     raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+[2025-05-06T08:37:21.532+0000] {process_utils.py:194} INFO - playwright._impl._errors.Error: BrowserType.launch: Executable doesn't exist at /home/airflow/.cache/ms-playwright/chromium-1169/chrome-linux/chrome
+[2025-05-06T08:37:21.532+0000] {process_utils.py:194} INFO - ╔════════════════════════════════════════════════════════════╗
+[2025-05-06T08:37:21.532+0000] {process_utils.py:194} INFO - ║ Looks like Playwright was just installed or updated.       ║
+[2025-05-06T08:37:21.532+0000] {process_utils.py:194} INFO - ║ Please run the following command to download new browsers: ║
+[2025-05-06T08:37:21.532+0000] {process_utils.py:194} INFO - ║                                                            ║
+[2025-05-06T08:37:21.532+0000] {process_utils.py:194} INFO - ║     playwright install                                     ║
+[2025-05-06T08:37:21.532+0000] {process_utils.py:194} INFO - ║                                                            ║
+[2025-05-06T08:37:21.532+0000] {process_utils.py:194} INFO - ║ <3 Playwright Team                                         ║
+[2025-05-06T08:37:21.533+0000] {process_utils.py:194} INFO - ╚════════════════════════════════════════════════════════════╝
+[2025-05-06T08:37:21.533+0000] {process_utils.py:194} INFO - 
+[2025-05-06T08:37:21.533+0000] {process_utils.py:194} INFO - During handling of the above exception, another exception occurred:
+[2025-05-06T08:37:21.533+0000] {process_utils.py:194} INFO - 
+[2025-05-06T08:37:21.533+0000] {process_utils.py:194} INFO - Traceback (most recent call last):
+[2025-05-06T08:37:21.533+0000] {process_utils.py:194} INFO -   File "/tmp/venv-callo4fz0yys/script.py", line 65, in <module>
+[2025-05-06T08:37:21.533+0000] {process_utils.py:194} INFO -     res = tiktok_videos_scraper(*arg_dict["args"], **arg_dict["kwargs"])
+[2025-05-06T08:37:21.533+0000] {process_utils.py:194} INFO -   File "/tmp/venv-callo4fz0yys/script.py", line 47, in tiktok_videos_scraper
+[2025-05-06T08:37:21.533+0000] {process_utils.py:194} INFO -     asyncio.run(user_example())
+[2025-05-06T08:37:21.533+0000] {process_utils.py:194} INFO -   File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+[2025-05-06T08:37:21.533+0000] {process_utils.py:194} INFO -     return loop.run_until_complete(main)
+[2025-05-06T08:37:21.533+0000] {process_utils.py:194} INFO -   File "/usr/local/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+[2025-05-06T08:37:21.533+0000] {process_utils.py:194} INFO -     return future.result()
+[2025-05-06T08:37:21.533+0000] {process_utils.py:194} INFO -   File "/tmp/venv-callo4fz0yys/script.py", line 30, in user_example
+[2025-05-06T08:37:21.534+0000] {process_utils.py:194} INFO -     async with TikTokApi() as api:
+[2025-05-06T08:37:21.534+0000] {process_utils.py:194} INFO -   File "/tmp/venvisjwt60u/lib/python3.10/site-packages/TikTokApi/tiktok.py", line 545, in __aexit__
+[2025-05-06T08:37:21.534+0000] {process_utils.py:194} INFO -     await self.stop_playwright()
+[2025-05-06T08:37:21.534+0000] {process_utils.py:194} INFO -   File "/tmp/venvisjwt60u/lib/python3.10/site-packages/TikTokApi/tiktok.py", line 532, in stop_playwright
+[2025-05-06T08:37:21.534+0000] {process_utils.py:194} INFO -     await self.browser.close()
+[2025-05-06T08:37:21.534+0000] {process_utils.py:194} INFO - AttributeError: 'TikTokApi' object has no attribute 'browser'
+[2025-05-06T08:37:21.611+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 505, in execute
+    return super().execute(context=serializable_context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 870, in execute_callable
+    result = self._execute_python_callable_in_subprocess(python_path)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 588, in _execute_python_callable_in_subprocess
+    raise AirflowException(error_msg) from None
+airflow.exceptions.AirflowException: Process returned non-zero exit status 1.
+'TikTokApi' object has no attribute 'browser'
+[2025-05-06T08:37:21.618+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=tiktok_videos_scraper_dag, task_id=virtualenv_python, run_id=manual__2025-05-06T08:37:05.682166+00:00, execution_date=20250506T083705, start_date=20250506T083707, end_date=20250506T083721
+[2025-05-06T08:37:21.628+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-06T08:37:21.629+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 4570 for task virtualenv_python (Process returned non-zero exit status 1.
+'TikTokApi' object has no attribute 'browser'; 77)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 505, in execute
+    return super().execute(context=serializable_context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 870, in execute_callable
+    result = self._execute_python_callable_in_subprocess(python_path)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 588, in _execute_python_callable_in_subprocess
+    raise AirflowException(error_msg) from None
+airflow.exceptions.AirflowException: Process returned non-zero exit status 1.
+'TikTokApi' object has no attribute 'browser'
+[2025-05-06T08:37:21.668+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 1
+[2025-05-06T08:37:21.682+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-06T08:37:21.683+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

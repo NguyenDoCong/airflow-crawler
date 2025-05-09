@@ -1,0 +1,28 @@
+[2025-04-28T11:30:57.479+0000] {processor.py:186} INFO - Started process (PID=189) to work on /opt/airflow/dags/simple-dag.py
+[2025-04-28T11:30:57.479+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/simple-dag.py for tasks to queue
+[2025-04-28T11:30:57.481+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:30:57.481+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/simple-dag.py
+[2025-04-28T11:30:57.484+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:30:57.483+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/simple-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/simple-dag.py", line 3, in <module>
+    from airflow.sdk import DAG, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-04-28T11:30:57.484+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/simple-dag.py
+[2025-04-28T11:30:57.499+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/simple-dag.py took 0.025 seconds
+[2025-04-28T11:31:27.629+0000] {processor.py:186} INFO - Started process (PID=199) to work on /opt/airflow/dags/simple-dag.py
+[2025-04-28T11:31:27.679+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/simple-dag.py for tasks to queue
+[2025-04-28T11:31:27.681+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:31:27.681+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/simple-dag.py
+[2025-04-28T11:31:27.684+0000] {logging_mixin.py:190} INFO - [2025-04-28T11:31:27.683+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/simple-dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/simple-dag.py", line 3, in <module>
+    from airflow.sdk import DAG, task
+ModuleNotFoundError: No module named 'airflow.sdk'
+[2025-04-28T11:31:27.684+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/simple-dag.py
+[2025-04-28T11:31:27.749+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/simple-dag.py took 0.125 seconds
