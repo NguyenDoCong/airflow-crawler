@@ -98,7 +98,9 @@ class AccountVideo(BaseFacebookScraper):
                     task_id = create_pending_video(video_id, link)
                     result = download_video(link, Config.DOWNLOAD_DIRECTORY)
                     if result:
-                        update_video_status(video_id, TaskStatus.DOWNLOADED.value, platform="facebook")
+                        update_video_status(video_id, TaskStatus.PROCESSING.value, platform="facebook")
+                    else:
+                        update_video_status(video_id, TaskStatus.FAILURE.value, platform="facebook")
 
                 # with open(Config.downloaded_videos_file, "a") as f:
                 #     for link in new_links:

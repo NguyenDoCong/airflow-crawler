@@ -72,7 +72,7 @@ services:
       - ./logs:/opt/airflow/logs
       - ./config:/opt/airflow/config
       - ./plugins:/opt/airflow/plugins
-      - ./data:/opt/airflow/media
+      - ./data:/opt/airflow/data
       - ./data/scraped_data:/opt/airflow/scraped_data
 
     ports:
@@ -97,7 +97,7 @@ services:
       - ./logs:/opt/airflow/logs
       - ./config:/opt/airflow/config
       - ./plugins:/opt/airflow/plugins
-      - ./data:/opt/airflow/media
+      - ./data:/opt/airflow/data
       - ./data/scraped_data:/opt/airflow/scraped_data
 
     healthcheck:
@@ -120,7 +120,7 @@ services:
       - ./logs:/opt/airflow/logs
       - ./config:/opt/airflow/config
       - ./plugins:/opt/airflow/plugins
-      - ./data:/opt/airflow/media
+      - ./data:/opt/airflow/data
       - ./data/scraped_data:/opt/airflow/scraped_data
 
     healthcheck:
@@ -150,7 +150,7 @@ services:
       - ./logs:/opt/airflow/logs    
       - ./config:/opt/airflow/config
       - ./plugins:/opt/airflow/plugins
-      - ./data:/opt/airflow/media
+      - ./data:/opt/airflow/data
       - ./data/scraped_data:/opt/airflow/scraped_data
     healthcheck:
       test: ["CMD-SHELL", 'airflow jobs check --job-type TriggererJob --hostname "$${HOSTNAME}"']

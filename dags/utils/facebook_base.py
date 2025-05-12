@@ -9,6 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from .scraper import Scraper
 
 from config import Config
+import os
 # from ...logs import Logs
 
 # logs = Logs()
@@ -32,15 +33,17 @@ class BaseFacebookScraper(Scraper):
     def _load_cookies(self) -> None:
         try:
             self._driver.delete_all_cookies()
-            
-            with open("dags/utils/fb_cookies.json", "rb") as file:
-                cookies = pickle.load(file)
-                for cookie in cookies:
-                    try:
-                        self._driver.add_cookie(cookie)
-                    except Exception as e:
-                        # logs.log_error(f"An Error occurred adding cookies {e}")
-                        rprint(f"An Error occurred while adding cookies {e}")
+            if not os.path.exists("dags/utils/fb_cookies.json"):
+                print("No cookies file found. Please login to Facebook and save cookies.")
+            else:
+                with open("dags/utils/fb_cookies.json", "rb") as file:
+                    cookies = pickle.load(file)
+                    for cookie in cookies:
+                        try:
+                            self._driver.add_cookie(cookie)
+                        except Exception as e:
+                            # logs.log_error(f"An Error occurred adding cookies {e}")
+                            rprint(f"An Error occurred while adding cookies {e}")
 
         except Exception as e:
             # logs.log_error(f"An Error occurred while loading cookies: {e}")

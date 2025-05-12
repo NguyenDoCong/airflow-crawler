@@ -1,0 +1,76 @@
+[2025-05-12T10:58:36.685+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-12T10:58:36.696+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.ins_videos_scraper manual__2025-05-12T10:58:36.116753+00:00 [queued]>
+[2025-05-12T10:58:36.701+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.ins_videos_scraper manual__2025-05-12T10:58:36.116753+00:00 [queued]>
+[2025-05-12T10:58:36.701+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-12T10:58:36.710+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): ins_videos_scraper> on 2025-05-12 10:58:36.116753+00:00
+[2025-05-12T10:58:36.712+0000] {standard_task_runner.py:72} INFO - Started process 5196 to run task
+[2025-05-12T10:58:36.715+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'instagram_videos_scraper_dag', 'ins_videos_scraper', 'manual__2025-05-12T10:58:36.116753+00:00', '--job-id', '5281', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpcmprga_8']
+[2025-05-12T10:58:36.716+0000] {standard_task_runner.py:105} INFO - Job 5281: Subtask ins_videos_scraper
+[2025-05-12T10:58:36.751+0000] {task_command.py:467} INFO - Running <TaskInstance: instagram_videos_scraper_dag.ins_videos_scraper manual__2025-05-12T10:58:36.116753+00:00 [running]> on host 79b7354865cb
+[2025-05-12T10:58:36.809+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='instagram_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='ins_videos_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-05-12T10:58:36.116753+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-12T10:58:36.116753+00:00'
+[2025-05-12T10:58:36.810+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-12T10:58:36.812+0000] {logging_mixin.py:190} INFO - Scraping Instagram profile: baukrysie
+[2025-05-12T10:58:59.364+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.92); currently, chromedriver 136.0.7103.92 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-12T10:59:00.169+0000] {logging_mixin.py:190} INFO - url: https://www.instagram.com/baukrysie/
+[2025-05-12T10:59:02.630+0000] {logging_mixin.py:190} INFO - Step 1 of 2 - Loading profile page
+[2025-05-12T10:59:02.631+0000] {logging_mixin.py:190} INFO - Extracting videos...
+[2025-05-12T10:59:05.982+0000] {logging_mixin.py:190} INFO - Count: 1, Limit: 10
+[2025-05-12T10:59:05.982+0000] {logging_mixin.py:190} INFO - Scrolling... 1 iterations
+[2025-05-12T10:59:06.089+0000] {logging_mixin.py:190} INFO - Found 49 video tags
+[2025-05-12T10:59:06.253+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/DH0KpCARMKo/
+[2025-05-12T10:59:06.270+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/DGsv_X4y5sv/
+[2025-05-12T10:59:09.440+0000] {logging_mixin.py:190} INFO - Count: 2, Limit: 10
+[2025-05-12T10:59:09.441+0000] {logging_mixin.py:190} INFO - Scrolling... 2 iterations
+[2025-05-12T10:59:09.522+0000] {logging_mixin.py:190} INFO - Found 49 video tags
+[2025-05-12T10:59:09.582+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CuOXoAArPXC/
+[2025-05-12T10:59:09.591+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/DHVTWLmRWeC/
+[2025-05-12T10:59:09.602+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/DD1nu1WyK2P/
+[2025-05-12T10:59:09.609+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/DDWD9fTyh4A/
+[2025-05-12T10:59:09.615+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/C9ARIS4SLH4/
+[2025-05-12T10:59:09.619+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/C8ozeuUvucg/
+[2025-05-12T10:59:09.624+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/C78m2CaP1dp/
+[2025-05-12T10:59:09.629+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/C6dYezvvnt5/
+[2025-05-12T10:59:09.634+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/C3_6T7txC9G/
+[2025-05-12T10:59:09.639+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/C3Ftd_LxKth/
+[2025-05-12T10:59:12.769+0000] {logging_mixin.py:190} INFO - Count: 3, Limit: 10
+[2025-05-12T10:59:12.769+0000] {logging_mixin.py:190} INFO - Scrolling... 3 iterations
+[2025-05-12T10:59:12.846+0000] {logging_mixin.py:190} INFO - Found 61 video tags
+[2025-05-12T10:59:12.964+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CxzFtriv_xJ/
+[2025-05-12T10:59:12.970+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CxAjai1x7MO/
+[2025-05-12T10:59:12.976+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CvUBhcfPPDN/
+[2025-05-12T10:59:12.982+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CurT9KiLdx9/
+[2025-05-12T10:59:12.987+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/Ct1S7C_vF-p/
+[2025-05-12T10:59:12.994+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/Cti6MifL3WA/
+[2025-05-12T10:59:13.003+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CtREVfUOD5G/
+[2025-05-12T10:59:13.011+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CtEs5eKMi8h/
+[2025-05-12T10:59:13.017+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CpiD0D9rC7L/
+[2025-05-12T10:59:13.023+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CmbeEeCp2ho/
+[2025-05-12T10:59:13.029+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/Clsej5VNAQL/
+[2025-05-12T10:59:13.036+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/ClllGjDr_sA/
+[2025-05-12T10:59:16.172+0000] {logging_mixin.py:190} INFO - Count: 4, Limit: 10
+[2025-05-12T10:59:16.172+0000] {logging_mixin.py:190} INFO - Scrolling... 4 iterations
+[2025-05-12T10:59:16.249+0000] {logging_mixin.py:190} INFO - Found 69 video tags
+[2025-05-12T10:59:16.458+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/ClX3j-JOeCw/
+[2025-05-12T10:59:16.463+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/ClRR0j6OFJa/
+[2025-05-12T10:59:16.468+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/ClJY7JeBj9Y/
+[2025-05-12T10:59:16.473+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CjKKsU_jH2o/
+[2025-05-12T10:59:16.479+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CeXxS_YFYCK/
+[2025-05-12T10:59:16.483+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CdQEpDIF0Fv/
+[2025-05-12T10:59:16.489+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CSlNKKipqG-/
+[2025-05-12T10:59:16.494+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/CR_aT1DJrvy/
+[2025-05-12T10:59:19.622+0000] {logging_mixin.py:190} INFO - Count: 5, Limit: 10
+[2025-05-12T10:59:19.623+0000] {logging_mixin.py:190} INFO - Scrolling... 5 iterations
+[2025-05-12T10:59:19.696+0000] {logging_mixin.py:190} INFO - Found 69 video tags
+[2025-05-12T10:59:20.015+0000] {logging_mixin.py:190} INFO - Extracted 32 video URLs
+[2025-05-12T10:59:20.015+0000] {logging_mixin.py:190} INFO - Step 2 of 2 - Downloading and saving videos
+[2025-05-12T10:59:20.016+0000] {logging_mixin.py:190} INFO - Don't close the app! Saving scraped data to database, it can take a while!
+[2025-05-12T10:59:20.035+0000] {logging_mixin.py:190} INFO - Remaining new videos: 32
+[2025-05-12T10:59:20.035+0000] {logging_mixin.py:190} INFO - New videos: 32
+[2025-05-12T10:59:20.188+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T10:59:20.189+0000] {logging_mixin.py:190} INFO - An error occurred local variable 'match' referenced before assignment
+[2025-05-12T10:59:20.356+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-05-12T10:59:20.363+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-12T10:59:20.363+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instagram_videos_scraper_dag, task_id=ins_videos_scraper, run_id=manual__2025-05-12T10:58:36.116753+00:00, execution_date=20250512T105836, start_date=20250512T105836, end_date=20250512T105920
+[2025-05-12T10:59:20.406+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-12T10:59:20.422+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-12T10:59:20.432+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

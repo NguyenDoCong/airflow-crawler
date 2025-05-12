@@ -73,13 +73,29 @@ def x_videos_scraper(id = "elonmusk", scrolls = 5):
 
         print(f"New videos: {len(new_links)}")
 
+        results = []
+
         for link in new_links:
             video_id = extract_id(link)
             task_id = create_pending_video(video_id, link, platform="x")
-            result = download_video(link, Config.DOWNLOAD_DIRECTORY)
-            if result:
-                update_video_status(video_id, TaskStatus.DOWNLOADED.value, platform="x")
+            file_path = download_video(link, Config.DOWNLOAD_DIRECTORY)
+            if file_path:
+                update_video_status(video_id, TaskStatus.PROCESSING.value, platform="x")
+                result = {
+                    "video_id": video_id,
+                    "file_path": file_path,
+                }
+                print(f"Downloaded video {result['video_id']} to {result['file_path']}")
+                results.append(result)                    
+                
+            else:
+                update_video_status(video_id, TaskStatus.FAILURE.value, platform="x")
+            
+        print(f"Downloaded {len(results)} new videos.")
 
         context.close()
         browser.close()
+
+        return results
+
     # batch_download_from_file(Config.X_FILE_PATH, Config.DOWNLOAD_DIRECTORY, platform="x")

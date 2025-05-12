@@ -1,0 +1,125 @@
+[2025-05-12T09:05:35.596+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-12T09:05:35.608+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper manual__2025-05-12T09:05:35.074909+00:00 [queued]>
+[2025-05-12T09:05:35.613+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper manual__2025-05-12T09:05:35.074909+00:00 [queued]>
+[2025-05-12T09:05:35.613+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-12T09:05:35.621+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): tiktok_videos_scraper> on 2025-05-12 09:05:35.074909+00:00
+[2025-05-12T09:05:35.624+0000] {standard_task_runner.py:72} INFO - Started process 1731 to run task
+[2025-05-12T09:05:35.627+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'tiktok_videos_scraper', 'manual__2025-05-12T09:05:35.074909+00:00', '--job-id', '5234', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmp1ugxxhgx']
+[2025-05-12T09:05:35.628+0000] {standard_task_runner.py:105} INFO - Job 5234: Subtask tiktok_videos_scraper
+[2025-05-12T09:05:35.664+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper manual__2025-05-12T09:05:35.074909+00:00 [running]> on host c8bc4aa1f737
+[2025-05-12T09:05:35.723+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='tiktok_videos_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-05-12T09:05:35.074909+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-12T09:05:35.074909+00:00'
+[2025-05-12T09:05:35.723+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-12T09:05:46.665+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7498828992825396526
+[2025-05-12T09:05:46.666+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7498176682105294123
+[2025-05-12T09:05:46.666+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7495761605502848298
+[2025-05-12T09:05:46.666+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7494644438497529130
+[2025-05-12T09:05:46.666+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7494316440749755694
+[2025-05-12T09:05:46.666+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7493217492802882858
+[2025-05-12T09:05:46.666+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7492481998187990318
+[2025-05-12T09:05:46.666+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7490673656641637675
+[2025-05-12T09:05:46.666+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7487701629119171886
+[2025-05-12T09:05:46.666+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7486515871624596782
+[2025-05-12T09:05:46.666+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7482814601717910826
+[2025-05-12T09:05:46.666+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7480993221586292014
+[2025-05-12T09:05:46.667+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7478382826568568110
+[2025-05-12T09:05:46.667+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7475105018052480302
+[2025-05-12T09:05:46.667+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7474681315955150126
+[2025-05-12T09:05:46.667+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7473147398718573866
+[2025-05-12T09:05:46.667+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7473137749025967406
+[2025-05-12T09:05:46.667+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7472396683477830955
+[2025-05-12T09:05:46.667+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7461443489067240747
+[2025-05-12T09:05:46.667+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7460513088354258219
+[2025-05-12T09:05:46.667+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7460511600202648878
+[2025-05-12T09:05:46.667+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7457228860275395882
+[2025-05-12T09:05:46.667+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7456475589663362350
+[2025-05-12T09:05:46.667+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7455784020379716910
+[2025-05-12T09:05:46.667+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7455388311826287914
+[2025-05-12T09:05:46.667+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7454241121665944874
+[2025-05-12T09:05:46.667+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7452740726187642155
+[2025-05-12T09:05:46.668+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7452738096988294446
+[2025-05-12T09:05:46.668+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7451804943654276398
+[2025-05-12T09:05:46.668+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7451345731819965742
+[2025-05-12T09:05:46.668+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7451022184526482730
+[2025-05-12T09:05:46.668+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7450249740471749934
+[2025-05-12T09:05:46.668+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7448020055507422507
+[2025-05-12T09:05:46.668+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7447975660741610795
+[2025-05-12T09:05:46.668+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7447285805044993326
+[2025-05-12T09:05:46.678+0000] {logging_mixin.py:190} INFO - Remaining new videos: 35
+[2025-05-12T09:05:46.678+0000] {logging_mixin.py:190} INFO - New videos: 35
+[2025-05-12T09:05:46.825+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:05:50.640+0000] {logging_mixin.py:190} INFO - Downloaded video 7475105018052480302 to media/7475105018052480302.mp3
+[2025-05-12T09:05:50.794+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:05:51.590+0000] {logging_mixin.py:190} INFO - Downloaded video 7447975660741610795 to media/7447975660741610795.mp3
+[2025-05-12T09:05:51.714+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:05:55.178+0000] {logging_mixin.py:190} INFO - Downloaded video 7456475589663362350 to media/7456475589663362350.mp3
+[2025-05-12T09:05:55.308+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:05:58.115+0000] {logging_mixin.py:190} INFO - Downloaded video 7455784020379716910 to media/7455784020379716910.mp3
+[2025-05-12T09:05:58.239+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:01.494+0000] {logging_mixin.py:190} INFO - Downloaded video 7494644438497529130 to media/7494644438497529130.mp3
+[2025-05-12T09:06:01.630+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:02.959+0000] {logging_mixin.py:190} INFO - Downloaded video 7498828992825396526 to media/7498828992825396526.mp3
+[2025-05-12T09:06:03.095+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:05.709+0000] {logging_mixin.py:190} INFO - Downloaded video 7454241121665944874 to media/7454241121665944874.mp3
+[2025-05-12T09:06:05.836+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:04.441+0000] {logging_mixin.py:190} INFO - Downloaded video 7494316440749755694 to media/7494316440749755694.mp3
+[2025-05-12T09:06:04.560+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:06.097+0000] {logging_mixin.py:190} INFO - Downloaded video 7482814601717910826 to media/7482814601717910826.mp3
+[2025-05-12T09:06:06.240+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:07.698+0000] {logging_mixin.py:190} INFO - Downloaded video 7480993221586292014 to media/7480993221586292014.mp3
+[2025-05-12T09:06:07.829+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:09.242+0000] {logging_mixin.py:190} INFO - Downloaded video 7478382826568568110 to media/7478382826568568110.mp3
+[2025-05-12T09:06:09.368+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:13.164+0000] {logging_mixin.py:190} INFO - Downloaded video 7460511600202648878 to media/7460511600202648878.mp3
+[2025-05-12T09:06:13.284+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:14.997+0000] {logging_mixin.py:190} INFO - Downloaded video 7448020055507422507 to media/7448020055507422507.mp3
+[2025-05-12T09:06:15.135+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:18.311+0000] {logging_mixin.py:190} INFO - Downloaded video 7452740726187642155 to media/7452740726187642155.mp3
+[2025-05-12T09:06:18.430+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:19.712+0000] {logging_mixin.py:190} INFO - Downloaded video 7450249740471749934 to media/7450249740471749934.mp3
+[2025-05-12T09:06:19.837+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:20.895+0000] {logging_mixin.py:190} INFO - Downloaded video 7460513088354258219 to media/7460513088354258219.mp3
+[2025-05-12T09:06:21.024+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:24.109+0000] {logging_mixin.py:190} INFO - Downloaded video 7498176682105294123 to media/7498176682105294123.mp3
+[2025-05-12T09:06:24.250+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:25.341+0000] {logging_mixin.py:190} INFO - Downloaded video 7495761605502848298 to media/7495761605502848298.mp3
+[2025-05-12T09:06:25.472+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:26.584+0000] {logging_mixin.py:190} INFO - Downloaded video 7486515871624596782 to media/7486515871624596782.mp3
+[2025-05-12T09:06:26.713+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:28.223+0000] {logging_mixin.py:190} INFO - Downloaded video 7451804943654276398 to media/7451804943654276398.mp3
+[2025-05-12T09:06:28.339+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:29.701+0000] {logging_mixin.py:190} INFO - Downloaded video 7455388311826287914 to media/7455388311826287914.mp3
+[2025-05-12T09:06:29.825+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:30.463+0000] {logging_mixin.py:190} INFO - Downloaded video 7492481998187990318 to media/7492481998187990318.mp3
+[2025-05-12T09:06:30.597+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:31.785+0000] {logging_mixin.py:190} INFO - Downloaded video 7452738096988294446 to media/7452738096988294446.mp3
+[2025-05-12T09:06:31.907+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:32.971+0000] {logging_mixin.py:190} INFO - Downloaded video 7487701629119171886 to media/7487701629119171886.mp3
+[2025-05-12T09:06:33.101+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:34.607+0000] {logging_mixin.py:190} INFO - Downloaded video 7493217492802882858 to media/7493217492802882858.mp3
+[2025-05-12T09:06:34.753+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:34.218+0000] {logging_mixin.py:190} INFO - Downloaded video 7461443489067240747 to media/7461443489067240747.mp3
+[2025-05-12T09:06:34.352+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:38.754+0000] {logging_mixin.py:190} INFO - Downloaded video 7457228860275395882 to media/7457228860275395882.mp3
+[2025-05-12T09:06:38.877+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:39.919+0000] {logging_mixin.py:190} INFO - Downloaded video 7474681315955150126 to media/7474681315955150126.mp3
+[2025-05-12T09:06:40.041+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:40.721+0000] {logging_mixin.py:190} INFO - Downloaded video 7490673656641637675 to media/7490673656641637675.mp3
+[2025-05-12T09:06:40.853+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:43.784+0000] {logging_mixin.py:190} INFO - Downloaded video 7447285805044993326 to media/7447285805044993326.mp3
+[2025-05-12T09:06:43.926+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:44.554+0000] {logging_mixin.py:190} INFO - Downloaded video 7473147398718573866 to media/7473147398718573866.mp3
+[2025-05-12T09:06:44.674+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:45.955+0000] {logging_mixin.py:190} INFO - Downloaded video 7451345731819965742 to media/7451345731819965742.mp3
+[2025-05-12T09:06:46.091+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:47.150+0000] {logging_mixin.py:190} INFO - Downloaded video 7472396683477830955 to media/7472396683477830955.mp3
+[2025-05-12T09:06:47.266+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:48.157+0000] {logging_mixin.py:190} INFO - Downloaded video 7473137749025967406 to media/7473137749025967406.mp3
+[2025-05-12T09:06:48.289+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T09:06:49.635+0000] {logging_mixin.py:190} INFO - Downloaded video 7451022184526482730 to media/7451022184526482730.mp3
+[2025-05-12T09:06:49.636+0000] {logging_mixin.py:190} INFO - Downloaded 35 new videos.
+[2025-05-12T09:06:49.767+0000] {python.py:240} INFO - Done. Returned value was: [{'video_id': '7475105018052480302', 'file_path': 'media/7475105018052480302.mp3'}, {'video_id': '7447975660741610795', 'file_path': 'media/7447975660741610795.mp3'}, {'video_id': '7456475589663362350', 'file_path': 'media/7456475589663362350.mp3'}, {'video_id': '7455784020379716910', 'file_path': 'media/7455784020379716910.mp3'}, {'video_id': '7494644438497529130', 'file_path': 'media/7494644438497529130.mp3'}, {'video_id': '7498828992825396526', 'file_path': 'media/7498828992825396526.mp3'}, {'video_id': '7454241121665944874', 'file_path': 'media/7454241121665944874.mp3'}, {'video_id': '7494316440749755694', 'file_path': 'media/7494316440749755694.mp3'}, {'video_id': '7482814601717910826', 'file_path': 'media/7482814601717910826.mp3'}, {'video_id': '7480993221586292014', 'file_path': 'media/7480993221586292014.mp3'}, {'video_id': '7478382826568568110', 'file_path': 'media/7478382826568568110.mp3'}, {'video_id': '7460511600202648878', 'file_path': 'media/7460511600202648878.mp3'}, {'video_id': '7448020055507422507', 'file_path': 'media/7448020055507422507.mp3'}, {'video_id': '7452740726187642155', 'file_path': 'media/7452740726187642155.mp3'}, {'video_id': '7450249740471749934', 'file_path': 'media/7450249740471749934.mp3'}, {'video_id': '7460513088354258219', 'file_path': 'media/7460513088354258219.mp3'}, {'video_id': '7498176682105294123', 'file_path': 'media/7498176682105294123.mp3'}, {'video_id': '7495761605502848298', 'file_path': 'media/7495761605502848298.mp3'}, {'video_id': '7486515871624596782', 'file_path': 'media/7486515871624596782.mp3'}, {'video_id': '7451804943654276398', 'file_path': 'media/7451804943654276398.mp3'}, {'video_id': '7455388311826287914', 'file_path': 'media/7455388311826287914.mp3'}, {'video_id': '7492481998187990318', 'file_path': 'media/7492481998187990318.mp3'}, {'video_id': '7452738096988294446', 'file_path': 'media/7452738096988294446.mp3'}, {'video_id': '7487701629119171886', 'file_path': 'media/7487701629119171886.mp3'}, {'video_id': '7493217492802882858', 'file_path': 'media/7493217492802882858.mp3'}, {'video_id': '7461443489067240747', 'file_path': 'media/7461443489067240747.mp3'}, {'video_id': '7457228860275395882', 'file_path': 'media/7457228860275395882.mp3'}, {'video_id': '7474681315955150126', 'file_path': 'media/7474681315955150126.mp3'}, {'video_id': '7490673656641637675', 'file_path': 'media/7490673656641637675.mp3'}, {'video_id': '7447285805044993326', 'file_path': 'media/7447285805044993326.mp3'}, {'video_id': '7473147398718573866', 'file_path': 'media/7473147398718573866.mp3'}, {'video_id': '7451345731819965742', 'file_path': 'media/7451345731819965742.mp3'}, {'video_id': '7472396683477830955', 'file_path': 'media/7472396683477830955.mp3'}, {'video_id': '7473137749025967406', 'file_path': 'media/7473137749025967406.mp3'}, {'video_id': '7451022184526482730', 'file_path': 'media/7451022184526482730.mp3'}]
+[2025-05-12T09:06:49.785+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-12T09:06:49.786+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tiktok_videos_scraper_dag, task_id=tiktok_videos_scraper, run_id=manual__2025-05-12T09:05:35.074909+00:00, execution_date=20250512T090535, start_date=20250512T090535, end_date=20250512T090649
+[2025-05-12T09:06:49.815+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-12T09:06:49.827+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-12T09:06:49.828+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

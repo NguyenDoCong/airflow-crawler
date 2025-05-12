@@ -14,6 +14,7 @@ from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
 from config import Config
 from functools import partial
+import re
 
 import sys
 sys.path.insert(1, 'src/utils')
@@ -140,11 +141,33 @@ def batch_download_from_file(file_path, download_directory, platform=None):
 
     print("Download complete.")
 
+def extract_id(url):
+    
+    if "x.com" in url or "twitter.com" in url:
+        match = re.search(r"status/(\d+)", url)
+        if match:
+            id= match.group(1)
+    
+    elif "facebook.com" in url:
+        match = re.search(r"videos/(\d+)", url)
+        if match:
+            id= match.group(1)
+    
+    elif "tiktok.com" in url:
+        match = re.search(r"video/(\d+)", url)
+        if match:
+            id= match.group(1)
+    
+    else:
+        id= match.group(1)
+    
+    return id 
+
 def download_video(url, download_directory):
     """Download a YouTube or TikTok video with user-selected format (ensuring video has audio)."""
     ensure_internet_connection()
     
-    id = url.split("/")[-1]
+    id = extract_id(url)
     try:        
         ydl_opts = {"listformats": True}
         ydl_opts = {
@@ -158,10 +181,11 @@ def download_video(url, download_directory):
             # 'compat_opts': ['client=youtube-web:Chrome'],  # chính là tương đương `--impersonate firefox`
         }
 
+        file_path = os.path.join(download_directory, f"{id}")
         ydl_opts = {
 
             "format": "bestaudio/best",
-            'outtmpl': f'{download_directory}/%(id)s.%(ext)s',
+            'outtmpl': file_path,
             "postprocessors": [
                 {
                     "key": "FFmpegExtractAudio",
@@ -176,9 +200,9 @@ def download_video(url, download_directory):
             # print("-------------------------------------------------")
             ydl.download([url])
             log_download(url, "Success")
-            print(f"\n\033[1;32mDownloaded successfully:\033[0m {id}")
+            print(f"\n\033[1;32mDownloaded successfully:\033[0m {id}")       
 
-        return True
+        return file_path + ".mp3"
 
     except Exception as e:
         log_download(url, f"Failed: {str(e)}")
@@ -190,9 +214,11 @@ def download_video(url, download_directory):
         
         url = f"https://www.tikwm.com/video/music/{id}.mp3"
         file = requests.get(url)
-        with open(f"{id}.mp3", "wb") as f:
+        file_path = os.path.join(download_directory, f"{id}.mp3")
+        with open(file_path, "wb") as f:
             f.write(file.content)
 
-        return False
+        return file_path
+
 if __name__ == "__main__":
     download_video("https://www.tiktok.com/@theanh28entertainment/video/7496340302253362439")

@@ -1,0 +1,229 @@
+[2025-05-12T04:37:47.121+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-12T04:37:47.133+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper manual__2025-05-12T04:37:45.786965+00:00 [queued]>
+[2025-05-12T04:37:47.139+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper manual__2025-05-12T04:37:45.786965+00:00 [queued]>
+[2025-05-12T04:37:47.139+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-12T04:37:47.148+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): tiktok_videos_scraper> on 2025-05-12 04:37:45.786965+00:00
+[2025-05-12T04:37:47.151+0000] {standard_task_runner.py:72} INFO - Started process 3497 to run task
+[2025-05-12T04:37:47.154+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'tiktok_videos_scraper', 'manual__2025-05-12T04:37:45.786965+00:00', '--job-id', '5202', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmplnxlltfb']
+[2025-05-12T04:37:47.155+0000] {standard_task_runner.py:105} INFO - Job 5202: Subtask tiktok_videos_scraper
+[2025-05-12T04:37:47.190+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper manual__2025-05-12T04:37:45.786965+00:00 [running]> on host 14fa56807961
+[2025-05-12T04:37:47.251+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='tiktok_videos_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-05-12T04:37:45.786965+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-12T04:37:45.786965+00:00'
+[2025-05-12T04:37:47.252+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-12T04:37:56.718+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7498828992825396526
+[2025-05-12T04:37:56.719+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7498176682105294123
+[2025-05-12T04:37:56.719+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7495761605502848298
+[2025-05-12T04:37:56.719+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7494644438497529130
+[2025-05-12T04:37:56.719+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7494316440749755694
+[2025-05-12T04:37:56.719+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7493217492802882858
+[2025-05-12T04:37:56.720+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7492481998187990318
+[2025-05-12T04:37:56.720+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7490673656641637675
+[2025-05-12T04:37:56.720+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7487701629119171886
+[2025-05-12T04:37:56.720+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7486515871624596782
+[2025-05-12T04:37:56.720+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7482814601717910826
+[2025-05-12T04:37:56.720+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7480993221586292014
+[2025-05-12T04:37:56.720+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7478382826568568110
+[2025-05-12T04:37:56.720+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7475105018052480302
+[2025-05-12T04:37:56.720+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7474681315955150126
+[2025-05-12T04:37:56.720+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7473147398718573866
+[2025-05-12T04:37:56.720+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7473137749025967406
+[2025-05-12T04:37:56.720+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7472396683477830955
+[2025-05-12T04:37:56.720+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7461443489067240747
+[2025-05-12T04:37:56.720+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7460513088354258219
+[2025-05-12T04:37:56.721+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7460511600202648878
+[2025-05-12T04:37:56.721+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7457228860275395882
+[2025-05-12T04:37:56.721+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7456475589663362350
+[2025-05-12T04:37:56.721+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7455784020379716910
+[2025-05-12T04:37:56.721+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7455388311826287914
+[2025-05-12T04:37:56.721+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7454241121665944874
+[2025-05-12T04:37:56.721+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7452740726187642155
+[2025-05-12T04:37:56.721+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7452738096988294446
+[2025-05-12T04:37:56.721+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7451804943654276398
+[2025-05-12T04:37:56.721+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7451345731819965742
+[2025-05-12T04:37:56.721+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7451022184526482730
+[2025-05-12T04:37:56.721+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7450249740471749934
+[2025-05-12T04:37:56.721+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7448020055507422507
+[2025-05-12T04:37:56.721+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7447975660741610795
+[2025-05-12T04:37:56.721+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@therock/video/7447285805044993326
+[2025-05-12T04:37:56.731+0000] {logging_mixin.py:190} INFO - Remaining new videos: 35
+[2025-05-12T04:37:56.732+0000] {logging_mixin.py:190} INFO - New videos: 35
+[2025-05-12T04:37:57.014+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:37:59.664+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('5ab19799-2ebb-46d1-a336-7fe99dc26040')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:37:59.920+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:03.012+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('184f8392-c288-4806-ba5d-adb58099b119')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:03.277+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:04.230+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('38f874f3-43fc-4b33-b49c-61e242df91b5')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:04.499+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:08.161+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('48dcd1f9-585a-4248-b90a-a2126b8c2570')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:08.423+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:09.686+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('83f6a121-753d-43c8-bf38-cd2140577a18')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:09.938+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:11.516+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('fb8976b0-9c6e-4d25-99c7-25a8f118d57f')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:11.775+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:14.958+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('f1eb0ab5-eef4-40fa-9d25-f8f8050a42fa')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:15.213+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:18.576+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('781ca3d2-6dc3-4d3a-903d-dc0519c3a9f5')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:18.844+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:21.917+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('278892f1-a3c4-4db3-84b7-11b731d15048')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:22.176+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:25.604+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('9acca1fa-6a1f-4d90-8a78-8994394a1056')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:25.853+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:28.961+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('ff02d59f-bfde-49c8-94c9-ca8473639f03')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:29.221+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:32.142+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('f857958a-f78e-48e6-94a4-7d8fabdd7d33')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:33.399+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:34.382+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('0da942fc-9e21-4906-ae26-cace450ac597')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:34.718+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:35.843+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('d481f921-76d6-4221-899a-e33452ad208a')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:36.099+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:39.682+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('b4e480d8-28dd-4cd0-ac45-f33867beae75')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:39.940+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:40.413+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('d87c31dd-9b9d-4f87-9eb8-02a92927edaf')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:40.694+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:44.581+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('74d1c6c4-4223-46f7-ad18-16905ad81439')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:44.722+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:45.674+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('eb5f3aba-dff0-47c2-a325-8c719d3d4bb5')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:45.798+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:48.368+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('4e0de037-566e-4da4-9f6f-a7e165026370')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:48.487+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:51.590+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('a39c7883-3bf4-4a15-8776-27edf3e07dfc')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:51.716+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:53.215+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('5e0d06e0-6c5d-486b-b33d-2f43c0eb5918')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:53.329+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:55.155+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('b43d80db-f1d9-4e98-8bc3-d873a3008e58')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:55.276+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:38:58.108+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('780627c5-e8fa-4b51-b00c-561cb837372c')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:38:58.239+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:39:00.869+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('42f398d3-f8b5-4b13-90f4-b71ef162c232')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:39:01.006+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:39:04.281+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('a03695ea-3bbd-45e4-8521-ed0e915b56d7')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:39:04.424+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:39:05.657+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('fc9ec0c8-b4ec-4a71-8470-a926c0016431')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:39:05.780+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:39:09.576+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('eae47883-da2f-4465-a156-93b5098fdf69')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:39:09.701+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:39:09.726+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('ffc9a684-c550-4678-b9ad-a2e1b4b75c44')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:39:09.850+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:39:12.730+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('655ebbd8-8c3c-4f44-8798-bb8d1c1e9dd3')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:39:12.871+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:39:16.474+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('66253ad6-3cf3-4e02-88d3-c64cbae94495')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:39:16.590+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:39:19.336+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('83003b2f-99b9-4f5f-a6c8-8551db02f0ec')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:39:19.468+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:39:23.024+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('6c3390bf-b719-4676-989d-c11768fe0f02')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:39:23.150+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:39:24.143+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('51dfedc1-5c3c-49c9-b390-2b90bb899f55')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:39:24.265+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:39:25.312+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('86e16083-0867-454d-9492-22ee10642ef0')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:39:25.460+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T04:39:26.474+0000] {database_utils.py:160} ERROR - Error when update status in video: (psycopg2.ProgrammingError) can't adapt type 'PlainXComArg'
+[SQL: UPDATE tiktok SET transcript=%(transcript)s, status=%(status)s, updated_at=now() WHERE tiktok.id = %(tiktok_id)s]
+[parameters: {'transcript': XComArg(<Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript>), 'status': 'SUCCESS', 'tiktok_id': UUID('c3924928-2ee2-4bf2-80cb-1f511dc2b0d5')}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-05-12T04:39:26.602+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-05-12T04:39:26.610+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-12T04:39:26.610+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tiktok_videos_scraper_dag, task_id=tiktok_videos_scraper, run_id=manual__2025-05-12T04:37:45.786965+00:00, execution_date=20250512T043745, start_date=20250512T043747, end_date=20250512T043926
+[2025-05-12T04:39:26.634+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-12T04:39:26.646+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-12T04:39:26.648+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

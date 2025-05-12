@@ -1,0 +1,961 @@
+[2025-05-12T10:27:05.541+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-12T10:27:05.555+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: x_videos_scraper_dag.x_videos_scraper manual__2025-05-12T10:27:04.898280+00:00 [queued]>
+[2025-05-12T10:27:05.560+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: x_videos_scraper_dag.x_videos_scraper manual__2025-05-12T10:27:04.898280+00:00 [queued]>
+[2025-05-12T10:27:05.561+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-12T10:27:05.570+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): x_videos_scraper> on 2025-05-12 10:27:04.898280+00:00
+[2025-05-12T10:27:05.573+0000] {standard_task_runner.py:72} INFO - Started process 1628 to run task
+[2025-05-12T10:27:05.576+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'x_videos_scraper_dag', 'x_videos_scraper', 'manual__2025-05-12T10:27:04.898280+00:00', '--job-id', '5270', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmp4kciay7s']
+[2025-05-12T10:27:05.578+0000] {standard_task_runner.py:105} INFO - Job 5270: Subtask x_videos_scraper
+[2025-05-12T10:27:05.619+0000] {task_command.py:467} INFO - Running <TaskInstance: x_videos_scraper_dag.x_videos_scraper manual__2025-05-12T10:27:04.898280+00:00 [running]> on host 79b7354865cb
+[2025-05-12T10:27:05.676+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='x_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='x_videos_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-05-12T10:27:04.898280+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-12T10:27:04.898280+00:00'
+[2025-05-12T10:27:05.677+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-12T10:27:12.682+0000] {logging_mixin.py:190} INFO - Scrolling down... 0
+[2025-05-12T10:27:17.789+0000] {logging_mixin.py:190} INFO - https://x.com/elonmusk/status/1921611528467341607/video/1
+[2025-05-12T10:27:17.795+0000] {logging_mixin.py:190} INFO - https://x.com/elonmusk/status/1921015655584985240/video/1
+[2025-05-12T10:27:17.834+0000] {logging_mixin.py:190} INFO - https://x.com/elonmusk/status/1916999224664953190/video/1
+[2025-05-12T10:27:17.846+0000] {logging_mixin.py:190} INFO - https://x.com/elonmusk/status/1916035259990479114/video/1
+[2025-05-12T10:27:17.892+0000] {logging_mixin.py:190} INFO - https://x.com/elonmusk/status/1907317741763084507/video/1
+[2025-05-12T10:27:17.960+0000] {logging_mixin.py:190} INFO - Scrolling down... 1
+[2025-05-12T10:27:23.201+0000] {logging_mixin.py:190} INFO - Remaining new videos: 5
+[2025-05-12T10:27:23.201+0000] {logging_mixin.py:190} INFO - New videos: 5
+[2025-05-12T10:27:23.325+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T10:27:23.964+0000] {logging_mixin.py:190} INFO - [twitter] Extracting URL: https://x.com/elonmusk/status/1916035259990479114/video/1
+[2025-05-12T10:27:23.965+0000] {logging_mixin.py:190} INFO - [twitter] 1916035259990479114: Downloading guest token
+[2025-05-12T10:27:24.251+0000] {logging_mixin.py:190} INFO - [twitter] 1916035259990479114: Downloading GraphQL JSON
+[2025-05-12T10:27:24.584+0000] {logging_mixin.py:190} INFO - [twitter] Downloading playlist 1916035259990479114 - add --no-playlist to download just the URL-specified video number 1
+[2025-05-12T10:27:24.584+0000] {logging_mixin.py:190} INFO - [twitter] 1916035259990479114: Downloading m3u8 information
+[2025-05-12T10:27:24.782+0000] {logging_mixin.py:190} INFO - [info] 1916035162779095045: Downloading 1 format(s): hls-audio-128000-Audio
+[2025-05-12T10:27:24.786+0000] {logging_mixin.py:190} INFO - [hlsnative] Downloading m3u8 manifest
+[2025-05-12T10:27:24.886+0000] {logging_mixin.py:190} INFO - [hlsnative] Total fragments: 61
+[2025-05-12T10:27:24.886+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1916035259990479114
+[2025-05-12T10:27:24.945+0000] {logging_mixin.py:190} INFO - [download]  59.0% of ~   2.68MiB at    3.94KiB/s ETA Unknown (frag 35/61)
+[2025-05-12T10:27:24.946+0000] {logging_mixin.py:190} INFO - [download]  59.0% of ~   2.68MiB at    3.94KiB/s ETA Unknown (frag 36/61)
+[2025-05-12T10:27:25.004+0000] {logging_mixin.py:190} INFO - [download]  59.0% of ~   2.68MiB at    7.30KiB/s ETA Unknown (frag 36/61)
+[2025-05-12T10:27:25.004+0000] {logging_mixin.py:190} INFO - [download]  59.0% of ~   2.68MiB at    7.30KiB/s ETA Unknown (frag 36/61)
+[2025-05-12T10:27:25.005+0000] {logging_mixin.py:190} INFO - [download]  59.1% of ~   2.68MiB at    7.30KiB/s ETA Unknown (frag 36/61)
+[2025-05-12T10:27:25.007+0000] {logging_mixin.py:190} INFO - [download]  59.2% of ~   2.69MiB at    7.30KiB/s ETA Unknown (frag 36/61)
+[2025-05-12T10:27:25.012+0000] {logging_mixin.py:190} INFO - [download]  59.5% of ~   2.70MiB at    7.30KiB/s ETA Unknown (frag 36/61)
+[2025-05-12T10:27:25.014+0000] {logging_mixin.py:190} INFO - [download]  59.5% of ~   2.73MiB at    7.30KiB/s ETA Unknown (frag 36/61)
+[2025-05-12T10:27:25.015+0000] {logging_mixin.py:190} INFO - [download]  59.0% of ~   2.76MiB at    7.30KiB/s ETA Unknown (frag 37/61)
+[2025-05-12T10:27:25.077+0000] {logging_mixin.py:190} INFO - [download]  60.6% of ~   2.68MiB at   82.54KiB/s ETA Unknown (frag 37/61)
+[2025-05-12T10:27:25.078+0000] {logging_mixin.py:190} INFO - [download]  60.6% of ~   2.69MiB at   82.54KiB/s ETA Unknown (frag 37/61)
+[2025-05-12T10:27:25.078+0000] {logging_mixin.py:190} INFO - [download]  60.7% of ~   2.69MiB at   82.54KiB/s ETA Unknown (frag 37/61)
+[2025-05-12T10:27:25.079+0000] {logging_mixin.py:190} INFO - [download]  60.9% of ~   2.69MiB at   82.54KiB/s ETA Unknown (frag 37/61)
+[2025-05-12T10:27:25.081+0000] {logging_mixin.py:190} INFO - [download]  61.2% of ~   2.71MiB at   82.54KiB/s ETA Unknown (frag 37/61)
+[2025-05-12T10:27:25.085+0000] {logging_mixin.py:190} INFO - [download]  61.2% of ~   2.73MiB at   82.54KiB/s ETA Unknown (frag 37/61)
+[2025-05-12T10:27:25.086+0000] {logging_mixin.py:190} INFO - [download]  60.6% of ~   2.76MiB at   82.54KiB/s ETA Unknown (frag 38/61)
+[2025-05-12T10:27:25.148+0000] {logging_mixin.py:190} INFO - [download]  62.2% of ~   2.69MiB at  168.64KiB/s ETA Unknown (frag 38/61)
+[2025-05-12T10:27:25.149+0000] {logging_mixin.py:190} INFO - [download]  62.3% of ~   2.69MiB at  168.64KiB/s ETA Unknown (frag 38/61)
+[2025-05-12T10:27:25.149+0000] {logging_mixin.py:190} INFO - [download]  62.4% of ~   2.69MiB at  168.64KiB/s ETA Unknown (frag 38/61)
+[2025-05-12T10:27:25.150+0000] {logging_mixin.py:190} INFO - [download]  62.5% of ~   2.70MiB at  168.64KiB/s ETA Unknown (frag 38/61)
+[2025-05-12T10:27:25.152+0000] {logging_mixin.py:190} INFO - [download]  62.8% of ~   2.71MiB at  168.64KiB/s ETA Unknown (frag 38/61)
+[2025-05-12T10:27:25.156+0000] {logging_mixin.py:190} INFO - [download]  62.8% of ~   2.73MiB at  168.64KiB/s ETA Unknown (frag 38/61)
+[2025-05-12T10:27:25.157+0000] {logging_mixin.py:190} INFO - [download]  62.3% of ~   2.76MiB at  168.64KiB/s ETA Unknown (frag 39/61)
+[2025-05-12T10:27:25.217+0000] {logging_mixin.py:190} INFO - [download]  63.9% of ~   2.69MiB at  248.99KiB/s ETA Unknown (frag 39/61)
+[2025-05-12T10:27:25.218+0000] {logging_mixin.py:190} INFO - [download]  63.9% of ~   2.69MiB at  248.99KiB/s ETA Unknown (frag 39/61)
+[2025-05-12T10:27:25.218+0000] {logging_mixin.py:190} INFO - [download]  64.0% of ~   2.70MiB at  248.99KiB/s ETA Unknown (frag 39/61)
+[2025-05-12T10:27:25.219+0000] {logging_mixin.py:190} INFO - [download]  64.1% of ~   2.70MiB at  248.99KiB/s ETA Unknown (frag 39/61)
+[2025-05-12T10:27:25.221+0000] {logging_mixin.py:190} INFO - [download]  64.4% of ~   2.71MiB at  248.99KiB/s ETA Unknown (frag 39/61)
+[2025-05-12T10:27:25.225+0000] {logging_mixin.py:190} INFO - [download]  64.5% of ~   2.74MiB at  248.99KiB/s ETA Unknown (frag 39/61)
+[2025-05-12T10:27:25.225+0000] {logging_mixin.py:190} INFO - [download]  63.9% of ~   2.76MiB at  248.99KiB/s ETA Unknown (frag 40/61)
+[2025-05-12T10:27:25.296+0000] {logging_mixin.py:190} INFO - [download]  65.5% of ~   2.69MiB at  315.08KiB/s ETA Unknown (frag 40/61)
+[2025-05-12T10:27:25.296+0000] {logging_mixin.py:190} INFO - [download]  65.6% of ~   2.70MiB at  315.08KiB/s ETA Unknown (frag 40/61)
+[2025-05-12T10:27:25.297+0000] {logging_mixin.py:190} INFO - [download]  65.6% of ~   2.70MiB at  315.08KiB/s ETA Unknown (frag 40/61)
+[2025-05-12T10:27:25.297+0000] {logging_mixin.py:190} INFO - [download]  65.8% of ~   2.70MiB at  315.08KiB/s ETA Unknown (frag 40/61)
+[2025-05-12T10:27:25.298+0000] {logging_mixin.py:190} INFO - [download]  66.1% of ~   2.72MiB at  315.08KiB/s ETA Unknown (frag 40/61)
+[2025-05-12T10:27:25.298+0000] {logging_mixin.py:190} INFO - [download]  66.1% of ~   2.74MiB at  315.08KiB/s ETA Unknown (frag 40/61)
+[2025-05-12T10:27:25.299+0000] {logging_mixin.py:190} INFO - [download]  65.5% of ~   2.76MiB at  315.08KiB/s ETA Unknown (frag 41/61)
+[2025-05-12T10:27:25.359+0000] {logging_mixin.py:190} INFO - [download]  67.2% of ~   2.70MiB at  372.70KiB/s ETA Unknown (frag 41/61)
+[2025-05-12T10:27:25.359+0000] {logging_mixin.py:190} INFO - [download]  67.2% of ~   2.70MiB at  372.70KiB/s ETA Unknown (frag 41/61)
+[2025-05-12T10:27:25.360+0000] {logging_mixin.py:190} INFO - [download]  67.3% of ~   2.70MiB at  372.70KiB/s ETA Unknown (frag 41/61)
+[2025-05-12T10:27:25.360+0000] {logging_mixin.py:190} INFO - [download]  67.4% of ~   2.71MiB at  372.70KiB/s ETA Unknown (frag 41/61)
+[2025-05-12T10:27:25.363+0000] {logging_mixin.py:190} INFO - [download]  67.7% of ~   2.72MiB at  372.70KiB/s ETA Unknown (frag 41/61)
+[2025-05-12T10:27:25.366+0000] {logging_mixin.py:190} INFO - [download]  67.7% of ~   2.74MiB at  372.70KiB/s ETA Unknown (frag 41/61)
+[2025-05-12T10:27:25.367+0000] {logging_mixin.py:190} INFO - [download]  67.2% of ~   2.76MiB at  372.70KiB/s ETA Unknown (frag 42/61)
+[2025-05-12T10:27:25.428+0000] {logging_mixin.py:190} INFO - [download]  68.8% of ~   2.70MiB at  419.71KiB/s ETA Unknown (frag 42/61)
+[2025-05-12T10:27:25.429+0000] {logging_mixin.py:190} INFO - [download]  68.8% of ~   2.70MiB at  419.71KiB/s ETA Unknown (frag 42/61)
+[2025-05-12T10:27:25.429+0000] {logging_mixin.py:190} INFO - [download]  68.9% of ~   2.70MiB at  419.71KiB/s ETA Unknown (frag 42/61)
+[2025-05-12T10:27:25.430+0000] {logging_mixin.py:190} INFO - [download]  69.1% of ~   2.71MiB at  419.71KiB/s ETA Unknown (frag 42/61)
+[2025-05-12T10:27:25.432+0000] {logging_mixin.py:190} INFO - [download]  69.4% of ~   2.72MiB at  419.71KiB/s ETA Unknown (frag 42/61)
+[2025-05-12T10:27:25.436+0000] {logging_mixin.py:190} INFO - [download]  69.4% of ~   2.74MiB at  419.71KiB/s ETA Unknown (frag 42/61)
+[2025-05-12T10:27:25.437+0000] {logging_mixin.py:190} INFO - [download]  68.8% of ~   2.77MiB at  419.71KiB/s ETA Unknown (frag 43/61)
+[2025-05-12T10:27:25.498+0000] {logging_mixin.py:190} INFO - [download]  70.5% of ~   2.70MiB at  457.72KiB/s ETA Unknown (frag 43/61)
+[2025-05-12T10:27:25.499+0000] {logging_mixin.py:190} INFO - [download]  70.5% of ~   2.70MiB at  457.72KiB/s ETA Unknown (frag 43/61)
+[2025-05-12T10:27:25.500+0000] {logging_mixin.py:190} INFO - [download]  70.6% of ~   2.71MiB at  457.72KiB/s ETA Unknown (frag 43/61)
+[2025-05-12T10:27:25.500+0000] {logging_mixin.py:190} INFO - [download]  70.7% of ~   2.71MiB at  457.72KiB/s ETA Unknown (frag 43/61)
+[2025-05-12T10:27:25.502+0000] {logging_mixin.py:190} INFO - [download]  71.0% of ~   2.72MiB at  457.72KiB/s ETA Unknown (frag 43/61)
+[2025-05-12T10:27:25.511+0000] {logging_mixin.py:190} INFO - [download]  71.0% of ~   2.75MiB at  457.72KiB/s ETA Unknown (frag 43/61)
+[2025-05-12T10:27:25.512+0000] {logging_mixin.py:190} INFO - [download]  70.5% of ~   2.77MiB at  457.72KiB/s ETA Unknown (frag 44/61)
+[2025-05-12T10:27:25.572+0000] {logging_mixin.py:190} INFO - [download]  72.1% of ~   2.71MiB at  487.46KiB/s ETA Unknown (frag 44/61)
+[2025-05-12T10:27:25.573+0000] {logging_mixin.py:190} INFO - [download]  72.1% of ~   2.71MiB at  487.46KiB/s ETA Unknown (frag 44/61)
+[2025-05-12T10:27:25.574+0000] {logging_mixin.py:190} INFO - [download]  72.2% of ~   2.71MiB at  487.46KiB/s ETA Unknown (frag 44/61)
+[2025-05-12T10:27:25.574+0000] {logging_mixin.py:190} INFO - [download]  72.3% of ~   2.72MiB at  487.46KiB/s ETA Unknown (frag 44/61)
+[2025-05-12T10:27:25.580+0000] {logging_mixin.py:190} INFO - [download]  72.6% of ~   2.73MiB at  487.46KiB/s ETA Unknown (frag 44/61)
+[2025-05-12T10:27:25.593+0000] {logging_mixin.py:190} INFO - [download]  72.7% of ~   2.75MiB at  487.46KiB/s ETA Unknown (frag 44/61)
+[2025-05-12T10:27:25.594+0000] {logging_mixin.py:190} INFO - [download]  72.1% of ~   2.77MiB at  487.46KiB/s ETA Unknown (frag 45/61)
+[2025-05-12T10:27:25.656+0000] {logging_mixin.py:190} INFO - [download]  73.7% of ~   2.71MiB at  508.65KiB/s ETA Unknown (frag 45/61)
+[2025-05-12T10:27:25.657+0000] {logging_mixin.py:190} INFO - [download]  73.8% of ~   2.71MiB at  508.65KiB/s ETA Unknown (frag 45/61)
+[2025-05-12T10:27:25.657+0000] {logging_mixin.py:190} INFO - [download]  73.8% of ~   2.71MiB at  508.65KiB/s ETA Unknown (frag 45/61)
+[2025-05-12T10:27:25.658+0000] {logging_mixin.py:190} INFO - [download]  74.0% of ~   2.72MiB at  508.65KiB/s ETA Unknown (frag 45/61)
+[2025-05-12T10:27:25.659+0000] {logging_mixin.py:190} INFO - [download]  74.3% of ~   2.73MiB at  508.65KiB/s ETA Unknown (frag 45/61)
+[2025-05-12T10:27:25.663+0000] {logging_mixin.py:190} INFO - [download]  74.3% of ~   2.75MiB at  508.65KiB/s ETA Unknown (frag 45/61)
+[2025-05-12T10:27:25.664+0000] {logging_mixin.py:190} INFO - [download]  73.7% of ~   2.77MiB at  508.65KiB/s ETA Unknown (frag 46/61)
+[2025-05-12T10:27:25.724+0000] {logging_mixin.py:190} INFO - [download]  75.4% of ~   2.71MiB at  526.98KiB/s ETA Unknown (frag 46/61)
+[2025-05-12T10:27:25.724+0000] {logging_mixin.py:190} INFO - [download]  75.4% of ~   2.71MiB at  526.98KiB/s ETA Unknown (frag 46/61)
+[2025-05-12T10:27:25.725+0000] {logging_mixin.py:190} INFO - [download]  75.5% of ~   2.72MiB at  526.98KiB/s ETA Unknown (frag 46/61)
+[2025-05-12T10:27:25.725+0000] {logging_mixin.py:190} INFO - [download]  75.6% of ~   2.72MiB at  526.98KiB/s ETA Unknown (frag 46/61)
+[2025-05-12T10:27:25.727+0000] {logging_mixin.py:190} INFO - [download]  75.9% of ~   2.73MiB at  526.98KiB/s ETA Unknown (frag 46/61)
+[2025-05-12T10:27:25.731+0000] {logging_mixin.py:190} INFO - [download]  75.9% of ~   2.75MiB at  526.98KiB/s ETA Unknown (frag 46/61)
+[2025-05-12T10:27:25.732+0000] {logging_mixin.py:190} INFO - [download]  75.4% of ~   2.77MiB at  526.98KiB/s ETA Unknown (frag 47/61)
+[2025-05-12T10:27:25.793+0000] {logging_mixin.py:190} INFO - [download]  77.0% of ~   2.71MiB at  542.55KiB/s ETA Unknown (frag 47/61)
+[2025-05-12T10:27:25.793+0000] {logging_mixin.py:190} INFO - [download]  77.1% of ~   2.72MiB at  542.55KiB/s ETA Unknown (frag 47/61)
+[2025-05-12T10:27:25.794+0000] {logging_mixin.py:190} INFO - [download]  77.1% of ~   2.72MiB at  542.55KiB/s ETA Unknown (frag 47/61)
+[2025-05-12T10:27:25.794+0000] {logging_mixin.py:190} INFO - [download]  77.3% of ~   2.72MiB at  542.55KiB/s ETA Unknown (frag 47/61)
+[2025-05-12T10:27:25.796+0000] {logging_mixin.py:190} INFO - [download]  77.6% of ~   2.73MiB at  542.55KiB/s ETA Unknown (frag 47/61)
+[2025-05-12T10:27:25.800+0000] {logging_mixin.py:190} INFO - [download]  77.6% of ~   2.75MiB at  542.55KiB/s ETA Unknown (frag 47/61)
+[2025-05-12T10:27:25.800+0000] {logging_mixin.py:190} INFO - [download]  77.0% of ~   2.77MiB at  542.55KiB/s ETA Unknown (frag 48/61)
+[2025-05-12T10:27:25.860+0000] {logging_mixin.py:190} INFO - [download]  78.7% of ~   2.72MiB at  555.95KiB/s ETA Unknown (frag 48/61)
+[2025-05-12T10:27:25.861+0000] {logging_mixin.py:190} INFO - [download]  78.7% of ~   2.72MiB at  555.95KiB/s ETA Unknown (frag 48/61)
+[2025-05-12T10:27:25.862+0000] {logging_mixin.py:190} INFO - [download]  78.8% of ~   2.72MiB at  555.95KiB/s ETA Unknown (frag 48/61)
+[2025-05-12T10:27:25.862+0000] {logging_mixin.py:190} INFO - [download]  78.9% of ~   2.72MiB at  555.95KiB/s ETA Unknown (frag 48/61)
+[2025-05-12T10:27:25.864+0000] {logging_mixin.py:190} INFO - [download]  79.2% of ~   2.73MiB at  555.95KiB/s ETA Unknown (frag 48/61)
+[2025-05-12T10:27:25.868+0000] {logging_mixin.py:190} INFO - [download]  79.2% of ~   2.75MiB at  555.95KiB/s ETA Unknown (frag 48/61)
+[2025-05-12T10:27:25.869+0000] {logging_mixin.py:190} INFO - [download]  78.7% of ~   2.77MiB at  555.95KiB/s ETA Unknown (frag 49/61)
+[2025-05-12T10:27:25.929+0000] {logging_mixin.py:190} INFO - [download]  80.3% of ~   2.72MiB at  567.32KiB/s ETA 00:00 (frag 49/61)  
+[2025-05-12T10:27:25.930+0000] {logging_mixin.py:190} INFO - [download]  80.3% of ~   2.72MiB at  567.32KiB/s ETA 00:00 (frag 49/61)
+[2025-05-12T10:27:25.930+0000] {logging_mixin.py:190} INFO - [download]  80.4% of ~   2.72MiB at  567.32KiB/s ETA 00:00 (frag 49/61)
+[2025-05-12T10:27:25.931+0000] {logging_mixin.py:190} INFO - [download]  80.5% of ~   2.73MiB at  567.32KiB/s ETA 00:00 (frag 49/61)
+[2025-05-12T10:27:25.933+0000] {logging_mixin.py:190} INFO - [download]  80.8% of ~   2.74MiB at  567.32KiB/s ETA 00:00 (frag 49/61)
+[2025-05-12T10:27:25.936+0000] {logging_mixin.py:190} INFO - [download]  80.9% of ~   2.76MiB at  567.32KiB/s ETA 00:00 (frag 49/61)
+[2025-05-12T10:27:25.937+0000] {logging_mixin.py:190} INFO - [download]  80.3% of ~   2.78MiB at  567.32KiB/s ETA 00:00 (frag 50/61)
+[2025-05-12T10:27:25.997+0000] {logging_mixin.py:190} INFO - [download]  82.0% of ~   2.72MiB at  577.42KiB/s ETA 00:00 (frag 50/61)
+[2025-05-12T10:27:25.998+0000] {logging_mixin.py:190} INFO - [download]  82.0% of ~   2.72MiB at  577.42KiB/s ETA 00:00 (frag 50/61)
+[2025-05-12T10:27:25.998+0000] {logging_mixin.py:190} INFO - [download]  82.1% of ~   2.72MiB at  577.42KiB/s ETA 00:00 (frag 50/61)
+[2025-05-12T10:27:25.999+0000] {logging_mixin.py:190} INFO - [download]  82.2% of ~   2.73MiB at  577.42KiB/s ETA 00:00 (frag 50/61)
+[2025-05-12T10:27:26.001+0000] {logging_mixin.py:190} INFO - [download]  82.5% of ~   2.74MiB at  577.42KiB/s ETA 00:00 (frag 50/61)
+[2025-05-12T10:27:26.005+0000] {logging_mixin.py:190} INFO - [download]  82.5% of ~   2.76MiB at  577.42KiB/s ETA 00:00 (frag 50/61)
+[2025-05-12T10:27:26.005+0000] {logging_mixin.py:190} INFO - [download]  81.9% of ~   2.78MiB at  577.42KiB/s ETA 00:00 (frag 51/61)
+[2025-05-12T10:27:26.065+0000] {logging_mixin.py:190} INFO - [download]  83.6% of ~   2.72MiB at  586.14KiB/s ETA 00:00 (frag 51/61)
+[2025-05-12T10:27:26.065+0000] {logging_mixin.py:190} INFO - [download]  83.6% of ~   2.72MiB at  586.14KiB/s ETA 00:00 (frag 51/61)
+[2025-05-12T10:27:26.066+0000] {logging_mixin.py:190} INFO - [download]  83.7% of ~   2.73MiB at  586.14KiB/s ETA 00:00 (frag 51/61)
+[2025-05-12T10:27:26.066+0000] {logging_mixin.py:190} INFO - [download]  83.8% of ~   2.73MiB at  586.14KiB/s ETA 00:00 (frag 51/61)
+[2025-05-12T10:27:26.068+0000] {logging_mixin.py:190} INFO - [download]  84.1% of ~   2.74MiB at  586.14KiB/s ETA 00:00 (frag 51/61)
+[2025-05-12T10:27:26.072+0000] {logging_mixin.py:190} INFO - [download]  84.1% of ~   2.76MiB at  586.14KiB/s ETA 00:00 (frag 51/61)
+[2025-05-12T10:27:26.073+0000] {logging_mixin.py:190} INFO - [download]  83.6% of ~   2.78MiB at  586.14KiB/s ETA 00:00 (frag 52/61)
+[2025-05-12T10:27:26.133+0000] {logging_mixin.py:190} INFO - [download]  85.2% of ~   2.73MiB at  593.67KiB/s ETA 00:00 (frag 52/61)
+[2025-05-12T10:27:26.134+0000] {logging_mixin.py:190} INFO - [download]  85.3% of ~   2.73MiB at  593.67KiB/s ETA 00:00 (frag 52/61)
+[2025-05-12T10:27:26.134+0000] {logging_mixin.py:190} INFO - [download]  85.3% of ~   2.73MiB at  593.67KiB/s ETA 00:00 (frag 52/61)
+[2025-05-12T10:27:26.135+0000] {logging_mixin.py:190} INFO - [download]  85.5% of ~   2.73MiB at  593.67KiB/s ETA 00:00 (frag 52/61)
+[2025-05-12T10:27:26.137+0000] {logging_mixin.py:190} INFO - [download]  85.8% of ~   2.74MiB at  593.67KiB/s ETA 00:00 (frag 52/61)
+[2025-05-12T10:27:26.140+0000] {logging_mixin.py:190} INFO - [download]  85.8% of ~   2.76MiB at  593.67KiB/s ETA 00:00 (frag 52/61)
+[2025-05-12T10:27:26.141+0000] {logging_mixin.py:190} INFO - [download]  85.2% of ~   2.78MiB at  593.67KiB/s ETA 00:00 (frag 53/61)
+[2025-05-12T10:27:26.202+0000] {logging_mixin.py:190} INFO - [download]  86.9% of ~   2.73MiB at  600.20KiB/s ETA 00:00 (frag 53/61)
+[2025-05-12T10:27:26.203+0000] {logging_mixin.py:190} INFO - [download]  86.9% of ~   2.73MiB at  600.20KiB/s ETA 00:00 (frag 53/61)
+[2025-05-12T10:27:26.203+0000] {logging_mixin.py:190} INFO - [download]  87.0% of ~   2.73MiB at  600.20KiB/s ETA 00:00 (frag 53/61)
+[2025-05-12T10:27:26.204+0000] {logging_mixin.py:190} INFO - [download]  87.1% of ~   2.74MiB at  600.20KiB/s ETA 00:00 (frag 53/61)
+[2025-05-12T10:27:26.206+0000] {logging_mixin.py:190} INFO - [download]  87.4% of ~   2.74MiB at  600.20KiB/s ETA 00:00 (frag 53/61)
+[2025-05-12T10:27:26.209+0000] {logging_mixin.py:190} INFO - [download]  87.4% of ~   2.76MiB at  600.20KiB/s ETA 00:00 (frag 53/61)
+[2025-05-12T10:27:26.210+0000] {logging_mixin.py:190} INFO - [download]  86.9% of ~   2.78MiB at  600.20KiB/s ETA 00:00 (frag 54/61)
+[2025-05-12T10:27:26.283+0000] {logging_mixin.py:190} INFO - [download]  88.5% of ~   2.73MiB at  604.34KiB/s ETA 00:00 (frag 54/61)
+[2025-05-12T10:27:26.283+0000] {logging_mixin.py:190} INFO - [download]  88.5% of ~   2.73MiB at  604.34KiB/s ETA 00:00 (frag 54/61)
+[2025-05-12T10:27:26.284+0000] {logging_mixin.py:190} INFO - [download]  88.6% of ~   2.73MiB at  604.34KiB/s ETA 00:00 (frag 54/61)
+[2025-05-12T10:27:26.284+0000] {logging_mixin.py:190} INFO - [download]  88.8% of ~   2.74MiB at  604.34KiB/s ETA 00:00 (frag 54/61)
+[2025-05-12T10:27:26.285+0000] {logging_mixin.py:190} INFO - [download]  89.0% of ~   2.75MiB at  604.34KiB/s ETA 00:00 (frag 54/61)
+[2025-05-12T10:27:26.286+0000] {logging_mixin.py:190} INFO - [download]  89.1% of ~   2.76MiB at  604.34KiB/s ETA 00:00 (frag 54/61)
+[2025-05-12T10:27:26.286+0000] {logging_mixin.py:190} INFO - [download]  88.5% of ~   2.78MiB at  604.34KiB/s ETA 00:00 (frag 55/61)
+[2025-05-12T10:27:26.348+0000] {logging_mixin.py:190} INFO - [download]  90.2% of ~   2.73MiB at  608.78KiB/s ETA 00:00 (frag 55/61)
+[2025-05-12T10:27:26.348+0000] {logging_mixin.py:190} INFO - [download]  90.2% of ~   2.73MiB at  608.78KiB/s ETA 00:00 (frag 55/61)
+[2025-05-12T10:27:26.349+0000] {logging_mixin.py:190} INFO - [download]  90.3% of ~   2.73MiB at  608.78KiB/s ETA 00:00 (frag 55/61)
+[2025-05-12T10:27:26.349+0000] {logging_mixin.py:190} INFO - [download]  90.4% of ~   2.74MiB at  608.78KiB/s ETA 00:00 (frag 55/61)
+[2025-05-12T10:27:26.352+0000] {logging_mixin.py:190} INFO - [download]  90.7% of ~   2.75MiB at  608.78KiB/s ETA 00:00 (frag 55/61)
+[2025-05-12T10:27:26.355+0000] {logging_mixin.py:190} INFO - [download]  90.7% of ~   2.76MiB at  608.78KiB/s ETA 00:00 (frag 55/61)
+[2025-05-12T10:27:26.356+0000] {logging_mixin.py:190} INFO - [download]  90.1% of ~   2.78MiB at  608.78KiB/s ETA 00:00 (frag 56/61)
+[2025-05-12T10:27:26.418+0000] {logging_mixin.py:190} INFO - [download]  91.8% of ~   2.73MiB at  612.66KiB/s ETA 00:00 (frag 56/61)
+[2025-05-12T10:27:26.418+0000] {logging_mixin.py:190} INFO - [download]  91.8% of ~   2.73MiB at  612.66KiB/s ETA 00:00 (frag 56/61)
+[2025-05-12T10:27:26.419+0000] {logging_mixin.py:190} INFO - [download]  91.9% of ~   2.74MiB at  612.66KiB/s ETA 00:00 (frag 56/61)
+[2025-05-12T10:27:26.419+0000] {logging_mixin.py:190} INFO - [download]  92.0% of ~   2.74MiB at  612.66KiB/s ETA 00:00 (frag 56/61)
+[2025-05-12T10:27:26.421+0000] {logging_mixin.py:190} INFO - [download]  92.3% of ~   2.75MiB at  612.66KiB/s ETA 00:00 (frag 56/61)
+[2025-05-12T10:27:26.425+0000] {logging_mixin.py:190} INFO - [download]  92.3% of ~   2.77MiB at  612.66KiB/s ETA 00:00 (frag 56/61)
+[2025-05-12T10:27:26.426+0000] {logging_mixin.py:190} INFO - [download]  91.8% of ~   2.78MiB at  612.66KiB/s ETA 00:00 (frag 57/61)
+[2025-05-12T10:27:26.486+0000] {logging_mixin.py:190} INFO - [download]  93.4% of ~   2.73MiB at  616.32KiB/s ETA 00:00 (frag 57/61)
+[2025-05-12T10:27:26.487+0000] {logging_mixin.py:190} INFO - [download]  93.5% of ~   2.74MiB at  616.32KiB/s ETA 00:00 (frag 57/61)
+[2025-05-12T10:27:26.488+0000] {logging_mixin.py:190} INFO - [download]  93.5% of ~   2.74MiB at  616.32KiB/s ETA 00:00 (frag 57/61)
+[2025-05-12T10:27:26.488+0000] {logging_mixin.py:190} INFO - [download]  93.7% of ~   2.74MiB at  616.32KiB/s ETA 00:00 (frag 57/61)
+[2025-05-12T10:27:26.489+0000] {logging_mixin.py:190} INFO - [download]  94.0% of ~   2.75MiB at  616.32KiB/s ETA 00:00 (frag 57/61)
+[2025-05-12T10:27:26.493+0000] {logging_mixin.py:190} INFO - [download]  94.0% of ~   2.77MiB at  616.32KiB/s ETA 00:00 (frag 57/61)
+[2025-05-12T10:27:26.494+0000] {logging_mixin.py:190} INFO - [download]  93.4% of ~   2.78MiB at  616.32KiB/s ETA 00:00 (frag 58/61)
+[2025-05-12T10:27:26.554+0000] {logging_mixin.py:190} INFO - [download]  95.1% of ~   2.74MiB at  619.75KiB/s ETA 00:00 (frag 58/61)
+[2025-05-12T10:27:26.555+0000] {logging_mixin.py:190} INFO - [download]  95.1% of ~   2.74MiB at  619.75KiB/s ETA 00:00 (frag 58/61)
+[2025-05-12T10:27:26.556+0000] {logging_mixin.py:190} INFO - [download]  95.2% of ~   2.74MiB at  619.75KiB/s ETA 00:00 (frag 58/61)
+[2025-05-12T10:27:26.558+0000] {logging_mixin.py:190} INFO - [download]  95.3% of ~   2.74MiB at  619.75KiB/s ETA 00:00 (frag 58/61)
+[2025-05-12T10:27:26.562+0000] {logging_mixin.py:190} INFO - [download]  95.6% of ~   2.75MiB at  619.75KiB/s ETA 00:00 (frag 58/61)
+[2025-05-12T10:27:26.563+0000] {logging_mixin.py:190} INFO - [download]  95.6% of ~   2.77MiB at  619.75KiB/s ETA 00:00 (frag 58/61)
+[2025-05-12T10:27:26.564+0000] {logging_mixin.py:190} INFO - [download]  95.1% of ~   2.78MiB at  619.75KiB/s ETA 00:00 (frag 59/61)
+[2025-05-12T10:27:26.624+0000] {logging_mixin.py:190} INFO - [download]  96.7% of ~   2.74MiB at  622.76KiB/s ETA 00:00 (frag 59/61)
+[2025-05-12T10:27:26.625+0000] {logging_mixin.py:190} INFO - [download]  96.7% of ~   2.74MiB at  622.76KiB/s ETA 00:00 (frag 59/61)
+[2025-05-12T10:27:26.625+0000] {logging_mixin.py:190} INFO - [download]  96.8% of ~   2.74MiB at  622.76KiB/s ETA 00:00 (frag 59/61)
+[2025-05-12T10:27:26.626+0000] {logging_mixin.py:190} INFO - [download]  96.9% of ~   2.74MiB at  622.76KiB/s ETA 00:00 (frag 59/61)
+[2025-05-12T10:27:26.628+0000] {logging_mixin.py:190} INFO - [download]  97.2% of ~   2.75MiB at  622.76KiB/s ETA 00:00 (frag 59/61)
+[2025-05-12T10:27:26.632+0000] {logging_mixin.py:190} INFO - [download]  97.3% of ~   2.77MiB at  622.76KiB/s ETA 00:00 (frag 59/61)
+[2025-05-12T10:27:26.633+0000] {logging_mixin.py:190} INFO - [download]  96.7% of ~   2.79MiB at  622.76KiB/s ETA 00:00 (frag 60/61)
+[2025-05-12T10:27:26.693+0000] {logging_mixin.py:190} INFO - [download]  98.3% of ~   2.74MiB at  625.58KiB/s ETA 00:00 (frag 60/61)
+[2025-05-12T10:27:26.694+0000] {logging_mixin.py:190} INFO - [download]  98.4% of ~   2.74MiB at  625.58KiB/s ETA 00:00 (frag 60/61)
+[2025-05-12T10:27:26.695+0000] {logging_mixin.py:190} INFO - [download]  98.4% of ~   2.74MiB at  625.58KiB/s ETA 00:00 (frag 60/61)
+[2025-05-12T10:27:26.695+0000] {logging_mixin.py:190} INFO - [download]  98.6% of ~   2.75MiB at  625.58KiB/s ETA 00:00 (frag 60/61)
+[2025-05-12T10:27:26.697+0000] {logging_mixin.py:190} INFO - [download]  98.9% of ~   2.75MiB at  625.58KiB/s ETA 00:00 (frag 60/61)
+[2025-05-12T10:27:26.701+0000] {logging_mixin.py:190} INFO - [download]  98.9% of ~   2.77MiB at  625.58KiB/s ETA 00:00 (frag 60/61)
+[2025-05-12T10:27:26.702+0000] {logging_mixin.py:190} INFO - [download]  98.3% of ~   2.79MiB at  625.58KiB/s ETA 00:00 (frag 61/61)
+[2025-05-12T10:27:26.763+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~   2.74MiB at  628.15KiB/s ETA 00:00 (frag 61/61)
+[2025-05-12T10:27:26.763+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~   2.74MiB at  628.15KiB/s ETA 00:00 (frag 61/61)
+[2025-05-12T10:27:26.764+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~   2.75MiB at  628.15KiB/s ETA 00:00 (frag 61/61)
+[2025-05-12T10:27:26.765+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~   2.75MiB at  628.15KiB/s ETA 00:00 (frag 61/61)
+[2025-05-12T10:27:26.766+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~   2.77MiB at  628.15KiB/s ETA 00:00 (frag 61/61)
+[2025-05-12T10:27:26.770+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~   2.79MiB at  628.15KiB/s ETA 00:00 (frag 61/61)
+[2025-05-12T10:27:26.771+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~   2.79MiB at  628.15KiB/s ETA 00:00 (frag 62/61)
+[2025-05-12T10:27:26.834+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~   2.79MiB at  630.20KiB/s ETA 00:00 (frag 62/61)
+[2025-05-12T10:27:26.835+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~   2.79MiB at  630.20KiB/s ETA 00:00 (frag 62/61)
+[2025-05-12T10:27:26.836+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~   2.79MiB at  630.20KiB/s ETA 00:00 (frag 63/61)
+[2025-05-12T10:27:26.836+0000] {logging_mixin.py:190} WARNING - ERROR: The downloaded file is empty
+[2025-05-12T10:27:26.837+0000] {downloader.py:92} INFO - Download status for https://x.com/elonmusk/status/1916035259990479114/video/1: Failed: ERROR: The downloaded file is empty
+[2025-05-12T10:27:26.837+0000] {downloader.py:209} ERROR - Error downloading video from https://x.com/elonmusk/status/1916035259990479114/video/1: ERROR: The downloaded file is empty
+[2025-05-12T10:27:26.838+0000] {logging_mixin.py:190} INFO - Error downloading video: ERROR: The downloaded file is empty
+[2025-05-12T10:27:26.838+0000] {downloader.py:92} INFO - Download status for https://x.com/elonmusk/status/1916035259990479114/video/1: Download Error: ERROR: The downloaded file is empty
+[2025-05-12T10:27:26.838+0000] {logging_mixin.py:190} INFO - Download Error: ERROR: The downloaded file is empty
+[2025-05-12T10:27:28.736+0000] {logging_mixin.py:190} INFO - Downloaded video 1916035259990479114 to data/1916035259990479114.mp3/.mp3
+[2025-05-12T10:27:28.854+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T10:27:28.884+0000] {logging_mixin.py:190} INFO - [twitter] Extracting URL: https://x.com/elonmusk/status/1921611528467341607/video/1
+[2025-05-12T10:27:28.884+0000] {logging_mixin.py:190} INFO - [twitter] 1921611528467341607: Downloading guest token
+[2025-05-12T10:27:29.186+0000] {logging_mixin.py:190} INFO - [twitter] 1921611528467341607: Downloading GraphQL JSON
+[2025-05-12T10:27:29.515+0000] {logging_mixin.py:190} INFO - [twitter] Downloading playlist 1921611528467341607 - add --no-playlist to download just the URL-specified video number 1
+[2025-05-12T10:27:29.515+0000] {logging_mixin.py:190} INFO - [twitter] 1921611528467341607: Downloading m3u8 information
+[2025-05-12T10:27:29.689+0000] {logging_mixin.py:190} INFO - [info] 1921605899824807936: Downloading 1 format(s): hls-audio-128000-Audio
+[2025-05-12T10:27:29.692+0000] {logging_mixin.py:190} INFO - [hlsnative] Downloading m3u8 manifest
+[2025-05-12T10:27:29.745+0000] {logging_mixin.py:190} INFO - [hlsnative] Total fragments: 279
+[2025-05-12T10:27:29.745+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1921611528467341607
+[2025-05-12T10:27:29.801+0000] {logging_mixin.py:190} INFO - [download]   2.5% of ~   9.33MiB at    4.20KiB/s ETA Unknown (frag 6/279)
+[2025-05-12T10:27:29.802+0000] {logging_mixin.py:190} INFO - [download]   2.5% of ~   9.36MiB at    4.20KiB/s ETA Unknown (frag 7/279)
+[2025-05-12T10:27:29.855+0000] {logging_mixin.py:190} INFO - [download]   2.4% of ~   9.78MiB at    7.81KiB/s ETA Unknown (frag 7/279)
+[2025-05-12T10:27:29.856+0000] {logging_mixin.py:190} INFO - [download]   2.4% of ~   9.82MiB at    7.81KiB/s ETA Unknown (frag 7/279)
+[2025-05-12T10:27:29.856+0000] {logging_mixin.py:190} INFO - [download]   2.4% of ~   9.89MiB at    7.81KiB/s ETA Unknown (frag 7/279)
+[2025-05-12T10:27:29.858+0000] {logging_mixin.py:190} INFO - [download]   2.5% of ~  10.02MiB at    7.81KiB/s ETA Unknown (frag 7/279)
+[2025-05-12T10:27:29.862+0000] {logging_mixin.py:190} INFO - [download]   2.6% of ~  10.30MiB at    7.81KiB/s ETA Unknown (frag 7/279)
+[2025-05-12T10:27:29.865+0000] {logging_mixin.py:190} INFO - [download]   2.6% of ~  10.84MiB at    7.81KiB/s ETA Unknown (frag 7/279)
+[2025-05-12T10:27:29.865+0000] {logging_mixin.py:190} INFO - [download]   2.5% of ~  11.41MiB at    7.81KiB/s ETA Unknown (frag 8/279)
+[2025-05-12T10:27:29.921+0000] {logging_mixin.py:190} INFO - [download]   2.8% of ~  10.14MiB at   90.28KiB/s ETA Unknown (frag 8/279)
+[2025-05-12T10:27:29.921+0000] {logging_mixin.py:190} INFO - [download]   2.8% of ~  10.17MiB at   90.28KiB/s ETA Unknown (frag 8/279)
+[2025-05-12T10:27:29.922+0000] {logging_mixin.py:190} INFO - [download]   2.8% of ~  10.23MiB at   90.28KiB/s ETA Unknown (frag 8/279)
+[2025-05-12T10:27:29.922+0000] {logging_mixin.py:190} INFO - [download]   2.9% of ~  10.35MiB at   90.28KiB/s ETA Unknown (frag 8/279)
+[2025-05-12T10:27:29.924+0000] {logging_mixin.py:190} INFO - [download]   2.9% of ~  10.59MiB at   90.28KiB/s ETA Unknown (frag 8/279)
+[2025-05-12T10:27:29.927+0000] {logging_mixin.py:190} INFO - [download]   3.0% of ~  11.07MiB at   90.28KiB/s ETA Unknown (frag 8/279)
+[2025-05-12T10:27:29.928+0000] {logging_mixin.py:190} INFO - [download]   2.8% of ~  11.58MiB at   90.28KiB/s ETA Unknown (frag 9/279)
+[2025-05-12T10:27:29.984+0000] {logging_mixin.py:190} INFO - [download]   3.1% of ~  10.42MiB at  185.31KiB/s ETA Unknown (frag 9/279)
+[2025-05-12T10:27:29.985+0000] {logging_mixin.py:190} INFO - [download]   3.2% of ~  10.44MiB at  185.31KiB/s ETA Unknown (frag 9/279)
+[2025-05-12T10:27:29.985+0000] {logging_mixin.py:190} INFO - [download]   3.2% of ~  10.50MiB at  185.31KiB/s ETA Unknown (frag 9/279)
+[2025-05-12T10:27:29.986+0000] {logging_mixin.py:190} INFO - [download]   3.2% of ~  10.61MiB at  185.31KiB/s ETA Unknown (frag 9/279)
+[2025-05-12T10:27:29.987+0000] {logging_mixin.py:190} INFO - [download]   3.3% of ~  10.83MiB at  185.31KiB/s ETA Unknown (frag 9/279)
+[2025-05-12T10:27:29.991+0000] {logging_mixin.py:190} INFO - [download]   3.3% of ~  11.26MiB at  185.31KiB/s ETA Unknown (frag 9/279)
+[2025-05-12T10:27:29.991+0000] {logging_mixin.py:190} INFO - [download]   3.2% of ~  11.71MiB at  185.31KiB/s ETA Unknown (frag 10/279)
+[2025-05-12T10:27:30.049+0000] {logging_mixin.py:190} INFO - [download]   3.5% of ~  10.65MiB at  272.86KiB/s ETA Unknown (frag 10/279)
+[2025-05-12T10:27:30.049+0000] {logging_mixin.py:190} INFO - [download]   3.5% of ~  10.68MiB at  272.86KiB/s ETA Unknown (frag 10/279)
+[2025-05-12T10:27:30.050+0000] {logging_mixin.py:190} INFO - [download]   3.5% of ~  10.72MiB at  272.86KiB/s ETA Unknown (frag 10/279)
+[2025-05-12T10:27:30.050+0000] {logging_mixin.py:190} INFO - [download]   3.6% of ~  10.82MiB at  272.86KiB/s ETA Unknown (frag 10/279)
+[2025-05-12T10:27:30.051+0000] {logging_mixin.py:190} INFO - [download]   3.7% of ~  11.02MiB at  272.86KiB/s ETA Unknown (frag 10/279)
+[2025-05-12T10:27:30.055+0000] {logging_mixin.py:190} INFO - [download]   3.7% of ~  11.42MiB at  272.86KiB/s ETA Unknown (frag 10/279)
+[2025-05-12T10:27:30.055+0000] {logging_mixin.py:190} INFO - [download]   3.5% of ~  11.83MiB at  272.86KiB/s ETA Unknown (frag 11/279)
+[2025-05-12T10:27:30.111+0000] {logging_mixin.py:190} INFO - [download]   3.9% of ~  10.84MiB at  348.89KiB/s ETA Unknown (frag 11/279)
+[2025-05-12T10:27:30.111+0000] {logging_mixin.py:190} INFO - [download]   3.9% of ~  10.86MiB at  348.89KiB/s ETA Unknown (frag 11/279)
+[2025-05-12T10:27:30.112+0000] {logging_mixin.py:190} INFO - [download]   3.9% of ~  10.91MiB at  348.89KiB/s ETA Unknown (frag 11/279)
+[2025-05-12T10:27:30.112+0000] {logging_mixin.py:190} INFO - [download]   4.0% of ~  11.00MiB at  348.89KiB/s ETA Unknown (frag 11/279)
+[2025-05-12T10:27:30.114+0000] {logging_mixin.py:190} INFO - [download]   4.0% of ~  11.18MiB at  348.89KiB/s ETA Unknown (frag 11/279)
+[2025-05-12T10:27:30.118+0000] {logging_mixin.py:190} INFO - [download]   4.0% of ~  11.54MiB at  348.89KiB/s ETA Unknown (frag 11/279)
+[2025-05-12T10:27:30.118+0000] {logging_mixin.py:190} INFO - [download]   3.9% of ~  11.92MiB at  348.89KiB/s ETA Unknown (frag 12/279)
+[2025-05-12T10:27:30.173+0000] {logging_mixin.py:190} INFO - [download]   4.2% of ~  11.01MiB at  412.31KiB/s ETA Unknown (frag 12/279)
+[2025-05-12T10:27:30.174+0000] {logging_mixin.py:190} INFO - [download]   4.3% of ~  11.03MiB at  412.31KiB/s ETA Unknown (frag 12/279)
+[2025-05-12T10:27:30.174+0000] {logging_mixin.py:190} INFO - [download]   4.3% of ~  11.07MiB at  412.31KiB/s ETA Unknown (frag 12/279)
+[2025-05-12T10:27:30.175+0000] {logging_mixin.py:190} INFO - [download]   4.3% of ~  11.15MiB at  412.31KiB/s ETA Unknown (frag 12/279)
+[2025-05-12T10:27:30.177+0000] {logging_mixin.py:190} INFO - [download]   4.4% of ~  11.32MiB at  412.31KiB/s ETA Unknown (frag 12/279)
+[2025-05-12T10:27:30.180+0000] {logging_mixin.py:190} INFO - [download]   4.4% of ~  11.66MiB at  412.31KiB/s ETA Unknown (frag 12/279)
+[2025-05-12T10:27:30.181+0000] {logging_mixin.py:190} INFO - [download]   4.3% of ~  12.01MiB at  412.31KiB/s ETA Unknown (frag 13/279)
+[2025-05-12T10:27:30.243+0000] {logging_mixin.py:190} INFO - [download]   4.6% of ~  11.15MiB at  462.18KiB/s ETA Unknown (frag 13/279)
+[2025-05-12T10:27:30.243+0000] {logging_mixin.py:190} INFO - [download]   4.6% of ~  11.17MiB at  462.18KiB/s ETA Unknown (frag 13/279)
+[2025-05-12T10:27:30.244+0000] {logging_mixin.py:190} INFO - [download]   4.6% of ~  11.20MiB at  462.18KiB/s ETA Unknown (frag 13/279)
+[2025-05-12T10:27:30.244+0000] {logging_mixin.py:190} INFO - [download]   4.7% of ~  11.28MiB at  462.18KiB/s ETA Unknown (frag 13/279)
+[2025-05-12T10:27:30.246+0000] {logging_mixin.py:190} INFO - [download]   4.7% of ~  11.44MiB at  462.18KiB/s ETA Unknown (frag 13/279)
+[2025-05-12T10:27:30.249+0000] {logging_mixin.py:190} INFO - [download]   4.8% of ~  11.75MiB at  462.18KiB/s ETA Unknown (frag 13/279)
+[2025-05-12T10:27:30.250+0000] {logging_mixin.py:190} INFO - [download]   4.6% of ~  12.07MiB at  462.18KiB/s ETA Unknown (frag 14/279)
+[2025-05-12T10:27:30.305+0000] {logging_mixin.py:190} INFO - [download]   5.0% of ~  11.26MiB at  503.06KiB/s ETA Unknown (frag 14/279)
+[2025-05-12T10:27:30.306+0000] {logging_mixin.py:190} INFO - [download]   5.0% of ~  11.28MiB at  503.06KiB/s ETA Unknown (frag 14/279)
+[2025-05-12T10:27:30.307+0000] {logging_mixin.py:190} INFO - [download]   5.0% of ~  11.32MiB at  503.06KiB/s ETA Unknown (frag 14/279)
+[2025-05-12T10:27:30.307+0000] {logging_mixin.py:190} INFO - [download]   5.0% of ~  11.39MiB at  503.06KiB/s ETA Unknown (frag 14/279)
+[2025-05-12T10:27:30.309+0000] {logging_mixin.py:190} INFO - [download]   5.1% of ~  11.53MiB at  503.06KiB/s ETA Unknown (frag 14/279)
+[2025-05-12T10:27:30.312+0000] {logging_mixin.py:190} INFO - [download]   5.1% of ~  11.82MiB at  503.06KiB/s ETA Unknown (frag 14/279)
+[2025-05-12T10:27:30.313+0000] {logging_mixin.py:190} INFO - [download]   5.0% of ~  12.12MiB at  503.06KiB/s ETA Unknown (frag 15/279)
+[2025-05-12T10:27:30.369+0000] {logging_mixin.py:190} INFO - [download]   5.3% of ~  11.37MiB at  536.23KiB/s ETA Unknown (frag 15/279)
+[2025-05-12T10:27:30.369+0000] {logging_mixin.py:190} INFO - [download]   5.3% of ~  11.39MiB at  536.23KiB/s ETA Unknown (frag 15/279)
+[2025-05-12T10:27:30.370+0000] {logging_mixin.py:190} INFO - [download]   5.4% of ~  11.42MiB at  536.23KiB/s ETA Unknown (frag 15/279)
+[2025-05-12T10:27:30.370+0000] {logging_mixin.py:190} INFO - [download]   5.4% of ~  11.49MiB at  536.23KiB/s ETA Unknown (frag 15/279)
+[2025-05-12T10:27:30.372+0000] {logging_mixin.py:190} INFO - [download]   5.5% of ~  11.62MiB at  536.23KiB/s ETA Unknown (frag 15/279)
+[2025-05-12T10:27:30.375+0000] {logging_mixin.py:190} INFO - [download]   5.5% of ~  11.90MiB at  536.23KiB/s ETA Unknown (frag 15/279)
+[2025-05-12T10:27:30.376+0000] {logging_mixin.py:190} INFO - [download]   5.4% of ~  12.18MiB at  536.23KiB/s ETA Unknown (frag 16/279)
+[2025-05-12T10:27:30.433+0000] {logging_mixin.py:190} INFO - [download]   5.7% of ~  11.46MiB at  563.06KiB/s ETA Unknown (frag 16/279)
+[2025-05-12T10:27:30.433+0000] {logging_mixin.py:190} INFO - [download]   5.7% of ~  11.48MiB at  563.06KiB/s ETA Unknown (frag 16/279)
+[2025-05-12T10:27:30.434+0000] {logging_mixin.py:190} INFO - [download]   5.7% of ~  11.51MiB at  563.06KiB/s ETA Unknown (frag 16/279)
+[2025-05-12T10:27:30.434+0000] {logging_mixin.py:190} INFO - [download]   5.8% of ~  11.58MiB at  563.06KiB/s ETA Unknown (frag 16/279)
+[2025-05-12T10:27:30.436+0000] {logging_mixin.py:190} INFO - [download]   5.8% of ~  11.70MiB at  563.06KiB/s ETA Unknown (frag 16/279)
+[2025-05-12T10:27:30.440+0000] {logging_mixin.py:190} INFO - [download]   5.8% of ~  11.96MiB at  563.06KiB/s ETA Unknown (frag 16/279)
+[2025-05-12T10:27:30.441+0000] {logging_mixin.py:190} INFO - [download]   5.7% of ~  12.23MiB at  563.06KiB/s ETA Unknown (frag 17/279)
+[2025-05-12T10:27:30.496+0000] {logging_mixin.py:190} INFO - [download]   6.1% of ~  11.54MiB at  585.05KiB/s ETA Unknown (frag 17/279)
+[2025-05-12T10:27:30.497+0000] {logging_mixin.py:190} INFO - [download]   6.1% of ~  11.56MiB at  585.05KiB/s ETA Unknown (frag 17/279)
+[2025-05-12T10:27:30.497+0000] {logging_mixin.py:190} INFO - [download]   6.1% of ~  11.59MiB at  585.05KiB/s ETA Unknown (frag 17/279)
+[2025-05-12T10:27:30.498+0000] {logging_mixin.py:190} INFO - [download]   6.1% of ~  11.65MiB at  585.05KiB/s ETA Unknown (frag 17/279)
+[2025-05-12T10:27:30.499+0000] {logging_mixin.py:190} INFO - [download]   6.2% of ~  11.77MiB at  585.05KiB/s ETA Unknown (frag 17/279)
+[2025-05-12T10:27:30.503+0000] {logging_mixin.py:190} INFO - [download]   6.2% of ~  12.01MiB at  585.05KiB/s ETA Unknown (frag 17/279)
+[2025-05-12T10:27:30.503+0000] {logging_mixin.py:190} INFO - [download]   6.1% of ~  12.26MiB at  585.05KiB/s ETA Unknown (frag 18/279)
+[2025-05-12T10:27:30.559+0000] {logging_mixin.py:190} INFO - [download]   6.4% of ~  11.62MiB at  603.12KiB/s ETA Unknown (frag 18/279)
+[2025-05-12T10:27:30.560+0000] {logging_mixin.py:190} INFO - [download]   6.4% of ~  11.64MiB at  603.12KiB/s ETA Unknown (frag 18/279)
+[2025-05-12T10:27:30.560+0000] {logging_mixin.py:190} INFO - [download]   6.4% of ~  11.66MiB at  603.12KiB/s ETA Unknown (frag 18/279)
+[2025-05-12T10:27:30.561+0000] {logging_mixin.py:190} INFO - [download]   6.5% of ~  11.72MiB at  603.12KiB/s ETA Unknown (frag 18/279)
+[2025-05-12T10:27:30.563+0000] {logging_mixin.py:190} INFO - [download]   6.5% of ~  11.84MiB at  603.12KiB/s ETA Unknown (frag 18/279)
+[2025-05-12T10:27:30.566+0000] {logging_mixin.py:190} INFO - [download]   6.6% of ~  12.07MiB at  603.12KiB/s ETA Unknown (frag 18/279)
+[2025-05-12T10:27:30.567+0000] {logging_mixin.py:190} INFO - [download]   6.4% of ~  12.31MiB at  603.12KiB/s ETA Unknown (frag 19/279)
+[2025-05-12T10:27:30.623+0000] {logging_mixin.py:190} INFO - [download]   6.8% of ~  11.69MiB at  618.10KiB/s ETA Unknown (frag 19/279)
+[2025-05-12T10:27:30.623+0000] {logging_mixin.py:190} INFO - [download]   6.8% of ~  11.70MiB at  618.10KiB/s ETA Unknown (frag 19/279)
+[2025-05-12T10:27:30.624+0000] {logging_mixin.py:190} INFO - [download]   6.8% of ~  11.73MiB at  618.10KiB/s ETA Unknown (frag 19/279)
+[2025-05-12T10:27:30.624+0000] {logging_mixin.py:190} INFO - [download]   6.8% of ~  11.78MiB at  618.10KiB/s ETA Unknown (frag 19/279)
+[2025-05-12T10:27:30.626+0000] {logging_mixin.py:190} INFO - [download]   6.9% of ~  11.89MiB at  618.10KiB/s ETA Unknown (frag 19/279)
+[2025-05-12T10:27:30.630+0000] {logging_mixin.py:190} INFO - [download]   6.9% of ~  12.11MiB at  618.10KiB/s ETA Unknown (frag 19/279)
+[2025-05-12T10:27:30.630+0000] {logging_mixin.py:190} INFO - [download]   6.8% of ~  12.33MiB at  618.10KiB/s ETA Unknown (frag 20/279)
+[2025-05-12T10:27:30.686+0000] {logging_mixin.py:190} INFO - [download]   7.1% of ~  11.75MiB at  630.53KiB/s ETA Unknown (frag 20/279)
+[2025-05-12T10:27:30.686+0000] {logging_mixin.py:190} INFO - [download]   7.1% of ~  11.76MiB at  630.53KiB/s ETA Unknown (frag 20/279)
+[2025-05-12T10:27:30.687+0000] {logging_mixin.py:190} INFO - [download]   7.2% of ~  11.79MiB at  630.53KiB/s ETA Unknown (frag 20/279)
+[2025-05-12T10:27:30.687+0000] {logging_mixin.py:190} INFO - [download]   7.2% of ~  11.84MiB at  630.53KiB/s ETA Unknown (frag 20/279)
+[2025-05-12T10:27:30.689+0000] {logging_mixin.py:190} INFO - [download]   7.3% of ~  11.94MiB at  630.53KiB/s ETA Unknown (frag 20/279)
+[2025-05-12T10:27:30.693+0000] {logging_mixin.py:190} INFO - [download]   7.3% of ~  12.15MiB at  630.53KiB/s ETA Unknown (frag 20/279)
+[2025-05-12T10:27:30.693+0000] {logging_mixin.py:190} INFO - [download]   7.1% of ~  12.37MiB at  630.53KiB/s ETA Unknown (frag 21/279)
+[2025-05-12T10:27:30.748+0000] {logging_mixin.py:190} INFO - [download]   7.5% of ~  11.81MiB at  641.24KiB/s ETA 00:16 (frag 21/279)  
+[2025-05-12T10:27:30.749+0000] {logging_mixin.py:190} INFO - [download]   7.5% of ~  11.82MiB at  641.24KiB/s ETA 00:16 (frag 21/279)
+[2025-05-12T10:27:30.750+0000] {logging_mixin.py:190} INFO - [download]   7.5% of ~  11.84MiB at  641.24KiB/s ETA 00:16 (frag 21/279)
+[2025-05-12T10:27:30.750+0000] {logging_mixin.py:190} INFO - [download]   7.6% of ~  11.89MiB at  641.24KiB/s ETA 00:16 (frag 21/279)
+[2025-05-12T10:27:30.751+0000] {logging_mixin.py:190} INFO - [download]   7.6% of ~  11.99MiB at  641.24KiB/s ETA 00:16 (frag 21/279)
+[2025-05-12T10:27:30.755+0000] {logging_mixin.py:190} INFO - [download]   7.6% of ~  12.19MiB at  641.24KiB/s ETA 00:16 (frag 21/279)
+[2025-05-12T10:27:30.756+0000] {logging_mixin.py:190} INFO - [download]   7.5% of ~  12.39MiB at  641.24KiB/s ETA 00:16 (frag 22/279)
+[2025-05-12T10:27:30.813+0000] {logging_mixin.py:190} INFO - [download]   7.9% of ~  11.85MiB at  649.97KiB/s ETA 00:16 (frag 22/279)
+[2025-05-12T10:27:30.814+0000] {logging_mixin.py:190} INFO - [download]   7.9% of ~  11.86MiB at  649.97KiB/s ETA 00:16 (frag 22/279)
+[2025-05-12T10:27:30.814+0000] {logging_mixin.py:190} INFO - [download]   7.9% of ~  11.89MiB at  649.97KiB/s ETA 00:16 (frag 22/279)
+[2025-05-12T10:27:30.815+0000] {logging_mixin.py:190} INFO - [download]   7.9% of ~  11.93MiB at  649.97KiB/s ETA 00:16 (frag 22/279)
+[2025-05-12T10:27:30.817+0000] {logging_mixin.py:190} INFO - [download]   8.0% of ~  12.03MiB at  649.97KiB/s ETA 00:16 (frag 22/279)
+[2025-05-12T10:27:30.820+0000] {logging_mixin.py:190} INFO - [download]   8.0% of ~  12.22MiB at  649.97KiB/s ETA 00:16 (frag 22/279)
+[2025-05-12T10:27:30.821+0000] {logging_mixin.py:190} INFO - [download]   7.9% of ~  12.41MiB at  649.97KiB/s ETA 00:16 (frag 23/279)
+[2025-05-12T10:27:30.876+0000] {logging_mixin.py:190} INFO - [download]   8.2% of ~  11.90MiB at  657.34KiB/s ETA 00:16 (frag 23/279)
+[2025-05-12T10:27:30.877+0000] {logging_mixin.py:190} INFO - [download]   8.2% of ~  11.91MiB at  657.34KiB/s ETA 00:16 (frag 23/279)
+[2025-05-12T10:27:30.877+0000] {logging_mixin.py:190} INFO - [download]   8.2% of ~  11.93MiB at  657.34KiB/s ETA 00:16 (frag 23/279)
+[2025-05-12T10:27:30.878+0000] {logging_mixin.py:190} INFO - [download]   8.3% of ~  11.98MiB at  657.34KiB/s ETA 00:16 (frag 23/279)
+[2025-05-12T10:27:30.880+0000] {logging_mixin.py:190} INFO - [download]   8.3% of ~  12.07MiB at  657.34KiB/s ETA 00:16 (frag 23/279)
+[2025-05-12T10:27:30.884+0000] {logging_mixin.py:190} INFO - [download]   8.4% of ~  12.25MiB at  657.34KiB/s ETA 00:16 (frag 23/279)
+[2025-05-12T10:27:30.884+0000] {logging_mixin.py:190} INFO - [download]   8.2% of ~  12.44MiB at  657.34KiB/s ETA 00:16 (frag 24/279)
+[2025-05-12T10:27:30.941+0000] {logging_mixin.py:190} INFO - [download]   8.6% of ~  11.94MiB at  663.61KiB/s ETA 00:16 (frag 24/279)
+[2025-05-12T10:27:30.941+0000] {logging_mixin.py:190} INFO - [download]   8.6% of ~  11.95MiB at  663.61KiB/s ETA 00:16 (frag 24/279)
+[2025-05-12T10:27:30.942+0000] {logging_mixin.py:190} INFO - [download]   8.6% of ~  11.97MiB at  663.61KiB/s ETA 00:16 (frag 24/279)
+[2025-05-12T10:27:30.942+0000] {logging_mixin.py:190} INFO - [download]   8.6% of ~  12.02MiB at  663.61KiB/s ETA 00:16 (frag 24/279)
+[2025-05-12T10:27:30.943+0000] {logging_mixin.py:190} INFO - [download]   8.7% of ~  12.10MiB at  663.61KiB/s ETA 00:16 (frag 24/279)
+[2025-05-12T10:27:30.947+0000] {logging_mixin.py:190} INFO - [download]   8.7% of ~  12.28MiB at  663.61KiB/s ETA 00:16 (frag 24/279)
+[2025-05-12T10:27:30.947+0000] {logging_mixin.py:190} INFO - [download]   8.6% of ~  12.45MiB at  663.61KiB/s ETA 00:16 (frag 25/279)
+[2025-05-12T10:27:31.003+0000] {logging_mixin.py:190} INFO - [download]   8.9% of ~  11.98MiB at  669.21KiB/s ETA 00:16 (frag 25/279)
+[2025-05-12T10:27:31.003+0000] {logging_mixin.py:190} INFO - [download]   8.9% of ~  11.99MiB at  669.21KiB/s ETA 00:16 (frag 25/279)
+[2025-05-12T10:27:31.004+0000] {logging_mixin.py:190} INFO - [download]   9.0% of ~  12.01MiB at  669.21KiB/s ETA 00:16 (frag 25/279)
+[2025-05-12T10:27:31.004+0000] {logging_mixin.py:190} INFO - [download]   9.0% of ~  12.06MiB at  669.21KiB/s ETA 00:16 (frag 25/279)
+[2025-05-12T10:27:31.007+0000] {logging_mixin.py:190} INFO - [download]   9.1% of ~  12.14MiB at  669.21KiB/s ETA 00:16 (frag 25/279)
+[2025-05-12T10:27:31.011+0000] {logging_mixin.py:190} INFO - [download]   9.1% of ~  12.31MiB at  669.21KiB/s ETA 00:16 (frag 25/279)
+[2025-05-12T10:27:31.011+0000] {logging_mixin.py:190} INFO - [download]   8.9% of ~  12.49MiB at  669.21KiB/s ETA 00:16 (frag 26/279)
+[2025-05-12T10:27:31.067+0000] {logging_mixin.py:190} INFO - [download]   9.3% of ~  12.02MiB at  674.05KiB/s ETA 00:16 (frag 26/279)
+[2025-05-12T10:27:31.068+0000] {logging_mixin.py:190} INFO - [download]   9.3% of ~  12.03MiB at  674.05KiB/s ETA 00:16 (frag 26/279)
+[2025-05-12T10:27:31.069+0000] {logging_mixin.py:190} INFO - [download]   9.3% of ~  12.05MiB at  674.05KiB/s ETA 00:16 (frag 26/279)
+[2025-05-12T10:27:31.069+0000] {logging_mixin.py:190} INFO - [download]   9.4% of ~  12.09MiB at  674.05KiB/s ETA 00:16 (frag 26/279)
+[2025-05-12T10:27:31.070+0000] {logging_mixin.py:190} INFO - [download]   9.4% of ~  12.17MiB at  674.05KiB/s ETA 00:16 (frag 26/279)
+[2025-05-12T10:27:31.073+0000] {logging_mixin.py:190} INFO - [download]   9.4% of ~  12.33MiB at  674.05KiB/s ETA 00:16 (frag 26/279)
+[2025-05-12T10:27:31.074+0000] {logging_mixin.py:190} INFO - [download]   9.3% of ~  12.50MiB at  674.05KiB/s ETA 00:16 (frag 27/279)
+[2025-05-12T10:27:31.129+0000] {logging_mixin.py:190} INFO - [download]   9.7% of ~  12.05MiB at  678.53KiB/s ETA 00:16 (frag 27/279)
+[2025-05-12T10:27:31.130+0000] {logging_mixin.py:190} INFO - [download]   9.7% of ~  12.06MiB at  678.53KiB/s ETA 00:16 (frag 27/279)
+[2025-05-12T10:27:31.130+0000] {logging_mixin.py:190} INFO - [download]   9.7% of ~  12.08MiB at  678.53KiB/s ETA 00:16 (frag 27/279)
+[2025-05-12T10:27:31.131+0000] {logging_mixin.py:190} INFO - [download]   9.7% of ~  12.12MiB at  678.53KiB/s ETA 00:16 (frag 27/279)
+[2025-05-12T10:27:31.133+0000] {logging_mixin.py:190} INFO - [download]   9.8% of ~  12.19MiB at  678.53KiB/s ETA 00:16 (frag 27/279)
+[2025-05-12T10:27:31.137+0000] {logging_mixin.py:190} INFO - [download]   9.8% of ~  12.35MiB at  678.53KiB/s ETA 00:16 (frag 27/279)
+[2025-05-12T10:27:31.137+0000] {logging_mixin.py:190} INFO - [download]   9.7% of ~  12.51MiB at  678.53KiB/s ETA 00:16 (frag 28/279)
+[2025-05-12T10:27:31.200+0000] {logging_mixin.py:190} INFO - [download]  10.0% of ~  12.08MiB at  681.28KiB/s ETA 00:16 (frag 28/279)
+[2025-05-12T10:27:31.201+0000] {logging_mixin.py:190} INFO - [download]  10.0% of ~  12.09MiB at  681.28KiB/s ETA 00:16 (frag 28/279)
+[2025-05-12T10:27:31.201+0000] {logging_mixin.py:190} INFO - [download]  10.0% of ~  12.11MiB at  681.28KiB/s ETA 00:16 (frag 28/279)
+[2025-05-12T10:27:31.202+0000] {logging_mixin.py:190} INFO - [download]  10.1% of ~  12.15MiB at  681.28KiB/s ETA 00:16 (frag 28/279)
+[2025-05-12T10:27:31.204+0000] {logging_mixin.py:190} INFO - [download]  10.1% of ~  12.22MiB at  681.28KiB/s ETA 00:16 (frag 28/279)
+[2025-05-12T10:27:31.206+0000] {logging_mixin.py:190} INFO - [download]  10.1% of ~  12.37MiB at  681.28KiB/s ETA 00:16 (frag 28/279)
+[2025-05-12T10:27:31.207+0000] {logging_mixin.py:190} INFO - [download]  10.0% of ~  12.53MiB at  681.28KiB/s ETA 00:16 (frag 29/279)
+[2025-05-12T10:27:31.214+0000] {logging_mixin.py:190} INFO - [download] data/1921611528467341607.part-Frag29 has already been downloaded
+[2025-05-12T10:27:31.214+0000] {logging_mixin.py:190} WARNING - ERROR: Unable to download video: [Errno 2] No such file or directory: 'data/1921611528467341607.part-Frag29'
+[2025-05-12T10:27:31.215+0000] {downloader.py:92} INFO - Download status for https://x.com/elonmusk/status/1921611528467341607/video/1: Failed: ERROR: Unable to download video: [Errno 2] No such file or directory: 'data/1921611528467341607.part-Frag29'
+[2025-05-12T10:27:31.215+0000] {downloader.py:209} ERROR - Error downloading video from https://x.com/elonmusk/status/1921611528467341607/video/1: ERROR: Unable to download video: [Errno 2] No such file or directory: 'data/1921611528467341607.part-Frag29'
+[2025-05-12T10:27:31.215+0000] {logging_mixin.py:190} INFO - Error downloading video: ERROR: Unable to download video: [Errno 2] No such file or directory: 'data/1921611528467341607.part-Frag29'
+[2025-05-12T10:27:31.215+0000] {downloader.py:92} INFO - Download status for https://x.com/elonmusk/status/1921611528467341607/video/1: Download Error: ERROR: Unable to download video: [Errno 2] No such file or directory: 'data/1921611528467341607.part-Frag29'
+[2025-05-12T10:27:31.215+0000] {logging_mixin.py:190} INFO - Download Error: ERROR: Unable to download video: [Errno 2] No such file or directory: 'data/1921611528467341607.part-Frag29'
+[2025-05-12T10:27:33.122+0000] {logging_mixin.py:190} INFO - Downloaded video 1921611528467341607 to data/1921611528467341607.mp3/.mp3
+[2025-05-12T10:27:33.273+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T10:27:33.302+0000] {logging_mixin.py:190} INFO - [twitter] Extracting URL: https://x.com/elonmusk/status/1916999224664953190/video/1
+[2025-05-12T10:27:33.303+0000] {logging_mixin.py:190} INFO - [twitter] 1916999224664953190: Downloading guest token
+[2025-05-12T10:27:33.617+0000] {logging_mixin.py:190} INFO - [twitter] 1916999224664953190: Downloading GraphQL JSON
+[2025-05-12T10:27:33.917+0000] {logging_mixin.py:190} INFO - [twitter] Downloading playlist 1916999224664953190 - add --no-playlist to download just the URL-specified video number 1
+[2025-05-12T10:27:33.918+0000] {logging_mixin.py:190} INFO - [twitter] 1916999224664953190: Downloading m3u8 information
+[2025-05-12T10:27:34.103+0000] {logging_mixin.py:190} INFO - [info] 1916998838667382787: Downloading 1 format(s): hls-audio-128000-Audio
+[2025-05-12T10:27:34.106+0000] {logging_mixin.py:190} INFO - [hlsnative] Downloading m3u8 manifest
+[2025-05-12T10:27:34.162+0000] {logging_mixin.py:190} INFO - [hlsnative] Total fragments: 61
+[2025-05-12T10:27:34.162+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1916999224664953190
+[2025-05-12T10:27:34.225+0000] {logging_mixin.py:190} INFO - [download]   1.6% of ~  46.82KiB at    3.70KiB/s ETA Unknown (frag 0/61)
+[2025-05-12T10:27:34.225+0000] {logging_mixin.py:190} INFO - [download]   0.8% of ~  93.64KiB at    3.70KiB/s ETA Unknown (frag 1/61)
+[2025-05-12T10:27:34.284+0000] {logging_mixin.py:190} INFO - [download]   0.1% of ~   1.44MiB at    6.98KiB/s ETA Unknown (frag 1/61)
+[2025-05-12T10:27:34.284+0000] {logging_mixin.py:190} INFO - [download]   0.2% of ~   1.47MiB at    6.98KiB/s ETA Unknown (frag 1/61)
+[2025-05-12T10:27:34.285+0000] {logging_mixin.py:190} INFO - [download]   0.5% of ~   1.53MiB at    6.98KiB/s ETA Unknown (frag 1/61)
+[2025-05-12T10:27:34.286+0000] {logging_mixin.py:190} INFO - [download]   0.9% of ~   1.65MiB at    6.98KiB/s ETA Unknown (frag 1/61)
+[2025-05-12T10:27:34.290+0000] {logging_mixin.py:190} INFO - [download]   1.6% of ~   1.89MiB at    6.98KiB/s ETA Unknown (frag 1/61)
+[2025-05-12T10:27:34.294+0000] {logging_mixin.py:190} INFO - [download]   2.0% of ~   2.37MiB at    6.98KiB/s ETA Unknown (frag 1/61)
+[2025-05-12T10:27:34.294+0000] {logging_mixin.py:190} INFO - [download]   1.7% of ~   2.87MiB at    6.98KiB/s ETA Unknown (frag 2/61)
+[2025-05-12T10:27:34.396+0000] {logging_mixin.py:190} INFO - [download]   2.5% of ~   1.91MiB at   68.54KiB/s ETA Unknown (frag 2/61)
+[2025-05-12T10:27:34.396+0000] {logging_mixin.py:190} INFO - [download]   2.6% of ~   1.93MiB at   68.54KiB/s ETA Unknown (frag 2/61)
+[2025-05-12T10:27:34.397+0000] {logging_mixin.py:190} INFO - [download]   2.8% of ~   1.97MiB at   68.54KiB/s ETA Unknown (frag 2/61)
+[2025-05-12T10:27:34.397+0000] {logging_mixin.py:190} INFO - [download]   3.0% of ~   2.04MiB at   68.54KiB/s ETA Unknown (frag 2/61)
+[2025-05-12T10:27:34.400+0000] {logging_mixin.py:190} INFO - [download]   3.5% of ~   2.20MiB at   68.54KiB/s ETA Unknown (frag 2/61)
+[2025-05-12T10:27:34.404+0000] {logging_mixin.py:190} INFO - [download]   3.7% of ~   2.52MiB at   68.54KiB/s ETA Unknown (frag 2/61)
+[2025-05-12T10:27:34.404+0000] {logging_mixin.py:190} INFO - [download]   3.3% of ~   2.85MiB at   68.54KiB/s ETA Unknown (frag 3/61)
+[2025-05-12T10:27:34.468+0000] {logging_mixin.py:190} INFO - [download]   4.4% of ~   2.14MiB at  143.07KiB/s ETA Unknown (frag 3/61)
+[2025-05-12T10:27:34.469+0000] {logging_mixin.py:190} INFO - [download]   4.5% of ~   2.16MiB at  143.07KiB/s ETA Unknown (frag 3/61)
+[2025-05-12T10:27:34.470+0000] {logging_mixin.py:190} INFO - [download]   4.6% of ~   2.18MiB at  143.07KiB/s ETA Unknown (frag 3/61)
+[2025-05-12T10:27:34.470+0000] {logging_mixin.py:190} INFO - [download]   4.8% of ~   2.24MiB at  143.07KiB/s ETA Unknown (frag 3/61)
+[2025-05-12T10:27:34.473+0000] {logging_mixin.py:190} INFO - [download]   5.2% of ~   2.36MiB at  143.07KiB/s ETA Unknown (frag 3/61)
+[2025-05-12T10:27:34.475+0000] {logging_mixin.py:190} INFO - [download]   5.4% of ~   2.60MiB at  143.07KiB/s ETA Unknown (frag 3/61)
+[2025-05-12T10:27:34.476+0000] {logging_mixin.py:190} INFO - [download]   4.9% of ~   2.85MiB at  143.07KiB/s ETA Unknown (frag 4/61)
+[2025-05-12T10:27:34.541+0000] {logging_mixin.py:190} INFO - [download]   6.2% of ~   2.28MiB at  214.98KiB/s ETA Unknown (frag 4/61)
+[2025-05-12T10:27:34.541+0000] {logging_mixin.py:190} INFO - [download]   6.3% of ~   2.29MiB at  214.98KiB/s ETA Unknown (frag 4/61)
+[2025-05-12T10:27:34.542+0000] {logging_mixin.py:190} INFO - [download]   6.4% of ~   2.31MiB at  214.98KiB/s ETA Unknown (frag 4/61)
+[2025-05-12T10:27:34.542+0000] {logging_mixin.py:190} INFO - [download]   6.6% of ~   2.36MiB at  214.98KiB/s ETA Unknown (frag 4/61)
+[2025-05-12T10:27:34.544+0000] {logging_mixin.py:190} INFO - [download]   6.9% of ~   2.46MiB at  214.98KiB/s ETA Unknown (frag 4/61)
+[2025-05-12T10:27:34.548+0000] {logging_mixin.py:190} INFO - [download]   7.1% of ~   2.65MiB at  214.98KiB/s ETA Unknown (frag 4/61)
+[2025-05-12T10:27:34.549+0000] {logging_mixin.py:190} INFO - [download]   6.6% of ~   2.85MiB at  214.98KiB/s ETA Unknown (frag 5/61)
+[2025-05-12T10:27:34.607+0000] {logging_mixin.py:190} INFO - [download]   7.9% of ~   2.37MiB at  280.14KiB/s ETA Unknown (frag 5/61)
+[2025-05-12T10:27:34.608+0000] {logging_mixin.py:190} INFO - [download]   8.0% of ~   2.38MiB at  280.14KiB/s ETA Unknown (frag 5/61)
+[2025-05-12T10:27:34.609+0000] {logging_mixin.py:190} INFO - [download]   8.1% of ~   2.40MiB at  280.14KiB/s ETA Unknown (frag 5/61)
+[2025-05-12T10:27:34.610+0000] {logging_mixin.py:190} INFO - [download]   8.3% of ~   2.44MiB at  280.14KiB/s ETA Unknown (frag 5/61)
+[2025-05-12T10:27:34.611+0000] {logging_mixin.py:190} INFO - [download]   8.6% of ~   2.52MiB at  280.14KiB/s ETA Unknown (frag 5/61)
+[2025-05-12T10:27:34.615+0000] {logging_mixin.py:190} INFO - [download]   8.7% of ~   2.68MiB at  280.14KiB/s ETA Unknown (frag 5/61)
+[2025-05-12T10:27:34.615+0000] {logging_mixin.py:190} INFO - [download]   8.2% of ~   2.84MiB at  280.14KiB/s ETA Unknown (frag 6/61)
+[2025-05-12T10:27:34.675+0000] {logging_mixin.py:190} INFO - [download]   9.6% of ~   2.44MiB at  336.37KiB/s ETA Unknown (frag 6/61)
+[2025-05-12T10:27:34.676+0000] {logging_mixin.py:190} INFO - [download]   9.6% of ~   2.44MiB at  336.37KiB/s ETA Unknown (frag 6/61)
+[2025-05-12T10:27:34.676+0000] {logging_mixin.py:190} INFO - [download]   9.7% of ~   2.46MiB at  336.37KiB/s ETA Unknown (frag 6/61)
+[2025-05-12T10:27:34.677+0000] {logging_mixin.py:190} INFO - [download]   9.9% of ~   2.50MiB at  336.37KiB/s ETA Unknown (frag 6/61)
+[2025-05-12T10:27:34.678+0000] {logging_mixin.py:190} INFO - [download]  10.3% of ~   2.56MiB at  336.37KiB/s ETA Unknown (frag 6/61)
+[2025-05-12T10:27:34.682+0000] {logging_mixin.py:190} INFO - [download]  10.4% of ~   2.70MiB at  336.37KiB/s ETA Unknown (frag 6/61)
+[2025-05-12T10:27:34.683+0000] {logging_mixin.py:190} INFO - [download]   9.8% of ~   2.84MiB at  336.37KiB/s ETA Unknown (frag 7/61)
+[2025-05-12T10:27:34.742+0000] {logging_mixin.py:190} INFO - [download]  11.3% of ~   2.48MiB at  384.21KiB/s ETA Unknown (frag 7/61)
+[2025-05-12T10:27:34.743+0000] {logging_mixin.py:190} INFO - [download]  11.3% of ~   2.49MiB at  384.21KiB/s ETA Unknown (frag 7/61)
+[2025-05-12T10:27:34.743+0000] {logging_mixin.py:190} INFO - [download]  11.4% of ~   2.51MiB at  384.21KiB/s ETA Unknown (frag 7/61)
+[2025-05-12T10:27:34.744+0000] {logging_mixin.py:190} INFO - [download]  11.6% of ~   2.54MiB at  384.21KiB/s ETA Unknown (frag 7/61)
+[2025-05-12T10:27:34.745+0000] {logging_mixin.py:190} INFO - [download]  11.9% of ~   2.60MiB at  384.21KiB/s ETA Unknown (frag 7/61)
+[2025-05-12T10:27:34.749+0000] {logging_mixin.py:190} INFO - [download]  12.0% of ~   2.72MiB at  384.21KiB/s ETA Unknown (frag 7/61)
+[2025-05-12T10:27:34.750+0000] {logging_mixin.py:190} INFO - [download]  11.5% of ~   2.84MiB at  384.21KiB/s ETA Unknown (frag 8/61)
+[2025-05-12T10:27:34.814+0000] {logging_mixin.py:190} INFO - [download]  12.9% of ~   2.52MiB at  423.18KiB/s ETA Unknown (frag 8/61)
+[2025-05-12T10:27:34.814+0000] {logging_mixin.py:190} INFO - [download]  13.0% of ~   2.53MiB at  423.18KiB/s ETA Unknown (frag 8/61)
+[2025-05-12T10:27:34.815+0000] {logging_mixin.py:190} INFO - [download]  13.1% of ~   2.54MiB at  423.18KiB/s ETA Unknown (frag 8/61)
+[2025-05-12T10:27:34.817+0000] {logging_mixin.py:190} INFO - [download]  13.2% of ~   2.57MiB at  423.18KiB/s ETA Unknown (frag 8/61)
+[2025-05-12T10:27:34.821+0000] {logging_mixin.py:190} INFO - [download]  13.6% of ~   2.62MiB at  423.18KiB/s ETA Unknown (frag 8/61)
+[2025-05-12T10:27:34.822+0000] {logging_mixin.py:190} INFO - [download]  13.6% of ~   2.73MiB at  423.18KiB/s ETA Unknown (frag 8/61)
+[2025-05-12T10:27:34.822+0000] {logging_mixin.py:190} INFO - [download]  13.1% of ~   2.84MiB at  423.18KiB/s ETA Unknown (frag 9/61)
+[2025-05-12T10:27:34.881+0000] {logging_mixin.py:190} INFO - [download]  14.6% of ~   2.56MiB at  455.87KiB/s ETA Unknown (frag 9/61)
+[2025-05-12T10:27:34.882+0000] {logging_mixin.py:190} INFO - [download]  14.7% of ~   2.56MiB at  455.87KiB/s ETA Unknown (frag 9/61)
+[2025-05-12T10:27:34.882+0000] {logging_mixin.py:190} INFO - [download]  14.7% of ~   2.57MiB at  455.87KiB/s ETA Unknown (frag 9/61)
+[2025-05-12T10:27:34.883+0000] {logging_mixin.py:190} INFO - [download]  14.9% of ~   2.60MiB at  455.87KiB/s ETA Unknown (frag 9/61)
+[2025-05-12T10:27:34.885+0000] {logging_mixin.py:190} INFO - [download]  15.2% of ~   2.64MiB at  455.87KiB/s ETA Unknown (frag 9/61)
+[2025-05-12T10:27:34.889+0000] {logging_mixin.py:190} INFO - [download]  15.3% of ~   2.74MiB at  455.87KiB/s ETA Unknown (frag 9/61)
+[2025-05-12T10:27:34.889+0000] {logging_mixin.py:190} INFO - [download]  14.8% of ~   2.84MiB at  455.87KiB/s ETA Unknown (frag 10/61)
+[2025-05-12T10:27:34.948+0000] {logging_mixin.py:190} INFO - [download]  16.3% of ~   2.58MiB at  483.41KiB/s ETA Unknown (frag 10/61)
+[2025-05-12T10:27:34.948+0000] {logging_mixin.py:190} INFO - [download]  16.3% of ~   2.58MiB at  483.41KiB/s ETA Unknown (frag 10/61)
+[2025-05-12T10:27:34.949+0000] {logging_mixin.py:190} INFO - [download]  16.4% of ~   2.60MiB at  483.41KiB/s ETA Unknown (frag 10/61)
+[2025-05-12T10:27:34.952+0000] {logging_mixin.py:190} INFO - [download]  16.6% of ~   2.62MiB at  483.41KiB/s ETA Unknown (frag 10/61)
+[2025-05-12T10:27:34.955+0000] {logging_mixin.py:190} INFO - [download]  16.9% of ~   2.66MiB at  483.41KiB/s ETA Unknown (frag 10/61)
+[2025-05-12T10:27:34.956+0000] {logging_mixin.py:190} INFO - [download]  16.9% of ~   2.75MiB at  483.41KiB/s ETA Unknown (frag 10/61)
+[2025-05-12T10:27:34.957+0000] {logging_mixin.py:190} INFO - [download]  16.4% of ~   2.84MiB at  483.41KiB/s ETA Unknown (frag 11/61)
+[2025-05-12T10:27:35.018+0000] {logging_mixin.py:190} INFO - [download]  17.9% of ~   2.60MiB at  505.70KiB/s ETA Unknown (frag 11/61)
+[2025-05-12T10:27:35.019+0000] {logging_mixin.py:190} INFO - [download]  18.0% of ~   2.61MiB at  505.70KiB/s ETA Unknown (frag 11/61)
+[2025-05-12T10:27:35.019+0000] {logging_mixin.py:190} INFO - [download]  18.0% of ~   2.62MiB at  505.70KiB/s ETA Unknown (frag 11/61)
+[2025-05-12T10:27:35.020+0000] {logging_mixin.py:190} INFO - [download]  18.2% of ~   2.64MiB at  505.70KiB/s ETA Unknown (frag 11/61)
+[2025-05-12T10:27:35.022+0000] {logging_mixin.py:190} INFO - [download]  18.5% of ~   2.68MiB at  505.70KiB/s ETA Unknown (frag 11/61)
+[2025-05-12T10:27:35.026+0000] {logging_mixin.py:190} INFO - [download]  18.6% of ~   2.76MiB at  505.70KiB/s ETA Unknown (frag 11/61)
+[2025-05-12T10:27:35.026+0000] {logging_mixin.py:190} INFO - [download]  18.0% of ~   2.84MiB at  505.70KiB/s ETA Unknown (frag 12/61)
+[2025-05-12T10:27:35.087+0000] {logging_mixin.py:190} INFO - [download]  19.6% of ~   2.62MiB at  524.37KiB/s ETA Unknown (frag 12/61)
+[2025-05-12T10:27:35.088+0000] {logging_mixin.py:190} INFO - [download]  19.6% of ~   2.62MiB at  524.37KiB/s ETA Unknown (frag 12/61)
+[2025-05-12T10:27:35.088+0000] {logging_mixin.py:190} INFO - [download]  19.7% of ~   2.63MiB at  524.37KiB/s ETA Unknown (frag 12/61)
+[2025-05-12T10:27:35.089+0000] {logging_mixin.py:190} INFO - [download]  19.9% of ~   2.65MiB at  524.37KiB/s ETA Unknown (frag 12/61)
+[2025-05-12T10:27:35.093+0000] {logging_mixin.py:190} INFO - [download]  20.2% of ~   2.69MiB at  524.37KiB/s ETA Unknown (frag 12/61)
+[2025-05-12T10:27:35.095+0000] {logging_mixin.py:190} INFO - [download]  20.2% of ~   2.76MiB at  524.37KiB/s ETA Unknown (frag 12/61)
+[2025-05-12T10:27:35.096+0000] {logging_mixin.py:190} INFO - [download]  19.7% of ~   2.84MiB at  524.37KiB/s ETA Unknown (frag 13/61)
+[2025-05-12T10:27:35.156+0000] {logging_mixin.py:190} INFO - [download]  21.2% of ~   2.63MiB at  540.03KiB/s ETA Unknown (frag 13/61)
+[2025-05-12T10:27:35.156+0000] {logging_mixin.py:190} INFO - [download]  21.3% of ~   2.64MiB at  540.03KiB/s ETA Unknown (frag 13/61)
+[2025-05-12T10:27:35.157+0000] {logging_mixin.py:190} INFO - [download]  21.3% of ~   2.65MiB at  540.03KiB/s ETA Unknown (frag 13/61)
+[2025-05-12T10:27:35.157+0000] {logging_mixin.py:190} INFO - [download]  21.5% of ~   2.66MiB at  540.03KiB/s ETA Unknown (frag 13/61)
+[2025-05-12T10:27:35.160+0000] {logging_mixin.py:190} INFO - [download]  21.8% of ~   2.70MiB at  540.03KiB/s ETA Unknown (frag 13/61)
+[2025-05-12T10:27:35.163+0000] {logging_mixin.py:190} INFO - [download]  21.9% of ~   2.77MiB at  540.03KiB/s ETA Unknown (frag 13/61)
+[2025-05-12T10:27:35.164+0000] {logging_mixin.py:190} INFO - [download]  21.3% of ~   2.84MiB at  540.03KiB/s ETA Unknown (frag 14/61)
+[2025-05-12T10:27:35.223+0000] {logging_mixin.py:190} INFO - [download]  22.9% of ~   2.65MiB at  553.52KiB/s ETA 00:03 (frag 14/61)  
+[2025-05-12T10:27:35.223+0000] {logging_mixin.py:190} INFO - [download]  22.9% of ~   2.65MiB at  553.52KiB/s ETA 00:03 (frag 14/61)
+[2025-05-12T10:27:35.224+0000] {logging_mixin.py:190} INFO - [download]  23.0% of ~   2.66MiB at  553.52KiB/s ETA 00:03 (frag 14/61)
+[2025-05-12T10:27:35.224+0000] {logging_mixin.py:190} INFO - [download]  23.1% of ~   2.68MiB at  553.52KiB/s ETA 00:03 (frag 14/61)
+[2025-05-12T10:27:35.231+0000] {logging_mixin.py:190} INFO - [download]  23.4% of ~   2.71MiB at  553.52KiB/s ETA 00:03 (frag 14/61)
+[2025-05-12T10:27:35.235+0000] {logging_mixin.py:190} INFO - [download]  23.5% of ~   2.77MiB at  553.52KiB/s ETA 00:03 (frag 14/61)
+[2025-05-12T10:27:35.235+0000] {logging_mixin.py:190} INFO - [download]  22.9% of ~   2.84MiB at  553.52KiB/s ETA 00:03 (frag 15/61)
+[2025-05-12T10:27:35.301+0000] {logging_mixin.py:190} INFO - [download]  24.5% of ~   2.66MiB at  563.41KiB/s ETA 00:03 (frag 15/61)
+[2025-05-12T10:27:35.302+0000] {logging_mixin.py:190} INFO - [download]  24.6% of ~   2.66MiB at  563.41KiB/s ETA 00:03 (frag 15/61)
+[2025-05-12T10:27:35.302+0000] {logging_mixin.py:190} INFO - [download]  24.6% of ~   2.67MiB at  563.41KiB/s ETA 00:03 (frag 15/61)
+[2025-05-12T10:27:35.303+0000] {logging_mixin.py:190} INFO - [download]  24.8% of ~   2.68MiB at  563.41KiB/s ETA 00:03 (frag 15/61)
+[2025-05-12T10:27:35.303+0000] {logging_mixin.py:190} INFO - [download]  25.1% of ~   2.71MiB at  563.41KiB/s ETA 00:03 (frag 15/61)
+[2025-05-12T10:27:35.304+0000] {logging_mixin.py:190} INFO - [download]  25.1% of ~   2.77MiB at  563.41KiB/s ETA 00:03 (frag 15/61)
+[2025-05-12T10:27:35.305+0000] {logging_mixin.py:190} INFO - [download]  24.6% of ~   2.83MiB at  563.41KiB/s ETA 00:03 (frag 16/61)
+[2025-05-12T10:27:35.363+0000] {logging_mixin.py:190} INFO - [download]  26.2% of ~   2.67MiB at  573.01KiB/s ETA 00:03 (frag 16/61)
+[2025-05-12T10:27:35.364+0000] {logging_mixin.py:190} INFO - [download]  26.2% of ~   2.67MiB at  573.01KiB/s ETA 00:03 (frag 16/61)
+[2025-05-12T10:27:35.365+0000] {logging_mixin.py:190} INFO - [download]  26.3% of ~   2.68MiB at  573.01KiB/s ETA 00:03 (frag 16/61)
+[2025-05-12T10:27:35.365+0000] {logging_mixin.py:190} INFO - [download]  26.4% of ~   2.69MiB at  573.01KiB/s ETA 00:03 (frag 16/61)
+[2025-05-12T10:27:35.367+0000] {logging_mixin.py:190} INFO - [download]  26.7% of ~   2.72MiB at  573.01KiB/s ETA 00:03 (frag 16/61)
+[2025-05-12T10:27:35.371+0000] {logging_mixin.py:190} INFO - [download]  26.8% of ~   2.78MiB at  573.01KiB/s ETA 00:03 (frag 16/61)
+[2025-05-12T10:27:35.372+0000] {logging_mixin.py:190} INFO - [download]  26.2% of ~   2.84MiB at  573.01KiB/s ETA 00:03 (frag 17/61)
+[2025-05-12T10:27:35.432+0000] {logging_mixin.py:190} INFO - [download]  27.8% of ~   2.68MiB at  581.42KiB/s ETA 00:03 (frag 17/61)
+[2025-05-12T10:27:35.432+0000] {logging_mixin.py:190} INFO - [download]  27.8% of ~   2.68MiB at  581.42KiB/s ETA 00:03 (frag 17/61)
+[2025-05-12T10:27:35.433+0000] {logging_mixin.py:190} INFO - [download]  27.9% of ~   2.69MiB at  581.42KiB/s ETA 00:03 (frag 17/61)
+[2025-05-12T10:27:35.433+0000] {logging_mixin.py:190} INFO - [download]  28.1% of ~   2.70MiB at  581.42KiB/s ETA 00:03 (frag 17/61)
+[2025-05-12T10:27:35.435+0000] {logging_mixin.py:190} INFO - [download]  28.4% of ~   2.73MiB at  581.42KiB/s ETA 00:03 (frag 17/61)
+[2025-05-12T10:27:35.439+0000] {logging_mixin.py:190} INFO - [download]  28.4% of ~   2.78MiB at  581.42KiB/s ETA 00:03 (frag 17/61)
+[2025-05-12T10:27:35.439+0000] {logging_mixin.py:190} INFO - [download]  27.9% of ~   2.84MiB at  581.42KiB/s ETA 00:03 (frag 18/61)
+[2025-05-12T10:27:35.499+0000] {logging_mixin.py:190} INFO - [download]  29.5% of ~   2.69MiB at  588.85KiB/s ETA 00:03 (frag 18/61)
+[2025-05-12T10:27:35.500+0000] {logging_mixin.py:190} INFO - [download]  29.5% of ~   2.69MiB at  588.85KiB/s ETA 00:03 (frag 18/61)
+[2025-05-12T10:27:35.500+0000] {logging_mixin.py:190} INFO - [download]  29.6% of ~   2.70MiB at  588.85KiB/s ETA 00:03 (frag 18/61)
+[2025-05-12T10:27:35.501+0000] {logging_mixin.py:190} INFO - [download]  29.7% of ~   2.71MiB at  588.85KiB/s ETA 00:03 (frag 18/61)
+[2025-05-12T10:27:35.502+0000] {logging_mixin.py:190} INFO - [download]  30.0% of ~   2.73MiB at  588.85KiB/s ETA 00:03 (frag 18/61)
+[2025-05-12T10:27:35.506+0000] {logging_mixin.py:190} INFO - [download]  30.1% of ~   2.78MiB at  588.85KiB/s ETA 00:03 (frag 18/61)
+[2025-05-12T10:27:35.507+0000] {logging_mixin.py:190} INFO - [download]  29.5% of ~   2.83MiB at  588.85KiB/s ETA 00:03 (frag 19/61)
+[2025-05-12T10:27:35.568+0000] {logging_mixin.py:190} INFO - [download]  31.1% of ~   2.69MiB at  595.32KiB/s ETA 00:03 (frag 19/61)
+[2025-05-12T10:27:35.568+0000] {logging_mixin.py:190} INFO - [download]  31.1% of ~   2.70MiB at  595.32KiB/s ETA 00:03 (frag 19/61)
+[2025-05-12T10:27:35.569+0000] {logging_mixin.py:190} INFO - [download]  31.2% of ~   2.70MiB at  595.32KiB/s ETA 00:03 (frag 19/61)
+[2025-05-12T10:27:35.569+0000] {logging_mixin.py:190} INFO - [download]  31.4% of ~   2.71MiB at  595.32KiB/s ETA 00:03 (frag 19/61)
+[2025-05-12T10:27:35.571+0000] {logging_mixin.py:190} INFO - [download]  31.7% of ~   2.74MiB at  595.32KiB/s ETA 00:03 (frag 19/61)
+[2025-05-12T10:27:35.576+0000] {logging_mixin.py:190} INFO - [download]  31.7% of ~   2.79MiB at  595.32KiB/s ETA 00:03 (frag 19/61)
+[2025-05-12T10:27:35.576+0000] {logging_mixin.py:190} INFO - [download]  31.1% of ~   2.84MiB at  595.32KiB/s ETA 00:03 (frag 20/61)
+[2025-05-12T10:27:35.637+0000] {logging_mixin.py:190} INFO - [download]  32.7% of ~   2.70MiB at  600.95KiB/s ETA 00:03 (frag 20/61)
+[2025-05-12T10:27:35.637+0000] {logging_mixin.py:190} INFO - [download]  32.8% of ~   2.70MiB at  600.95KiB/s ETA 00:03 (frag 20/61)
+[2025-05-12T10:27:35.638+0000] {logging_mixin.py:190} INFO - [download]  32.9% of ~   2.71MiB at  600.95KiB/s ETA 00:03 (frag 20/61)
+[2025-05-12T10:27:35.638+0000] {logging_mixin.py:190} INFO - [download]  33.0% of ~   2.72MiB at  600.95KiB/s ETA 00:03 (frag 20/61)
+[2025-05-12T10:27:35.640+0000] {logging_mixin.py:190} INFO - [download]  33.3% of ~   2.74MiB at  600.95KiB/s ETA 00:03 (frag 20/61)
+[2025-05-12T10:27:35.644+0000] {logging_mixin.py:190} INFO - [download]  33.3% of ~   2.79MiB at  600.95KiB/s ETA 00:03 (frag 20/61)
+[2025-05-12T10:27:35.645+0000] {logging_mixin.py:190} INFO - [download]  32.8% of ~   2.84MiB at  600.95KiB/s ETA 00:03 (frag 21/61)
+[2025-05-12T10:27:35.703+0000] {logging_mixin.py:190} INFO - [download]  34.4% of ~   2.71MiB at  606.26KiB/s ETA 00:03 (frag 21/61)
+[2025-05-12T10:27:35.704+0000] {logging_mixin.py:190} INFO - [download]  34.4% of ~   2.71MiB at  606.26KiB/s ETA 00:03 (frag 21/61)
+[2025-05-12T10:27:35.704+0000] {logging_mixin.py:190} INFO - [download]  34.5% of ~   2.71MiB at  606.26KiB/s ETA 00:03 (frag 21/61)
+[2025-05-12T10:27:35.705+0000] {logging_mixin.py:190} INFO - [download]  34.7% of ~   2.73MiB at  606.26KiB/s ETA 00:03 (frag 21/61)
+[2025-05-12T10:27:35.707+0000] {logging_mixin.py:190} INFO - [download]  35.0% of ~   2.75MiB at  606.26KiB/s ETA 00:03 (frag 21/61)
+[2025-05-12T10:27:35.711+0000] {logging_mixin.py:190} INFO - [download]  35.0% of ~   2.79MiB at  606.26KiB/s ETA 00:03 (frag 21/61)
+[2025-05-12T10:27:35.711+0000] {logging_mixin.py:190} INFO - [download]  34.4% of ~   2.83MiB at  606.26KiB/s ETA 00:03 (frag 22/61)
+[2025-05-12T10:27:35.772+0000] {logging_mixin.py:190} INFO - [download]  36.0% of ~   2.71MiB at  610.87KiB/s ETA 00:03 (frag 22/61)
+[2025-05-12T10:27:35.773+0000] {logging_mixin.py:190} INFO - [download]  36.1% of ~   2.71MiB at  610.87KiB/s ETA 00:03 (frag 22/61)
+[2025-05-12T10:27:35.773+0000] {logging_mixin.py:190} INFO - [download]  36.1% of ~   2.72MiB at  610.87KiB/s ETA 00:03 (frag 22/61)
+[2025-05-12T10:27:35.774+0000] {logging_mixin.py:190} INFO - [download]  36.3% of ~   2.73MiB at  610.87KiB/s ETA 00:03 (frag 22/61)
+[2025-05-12T10:27:35.775+0000] {logging_mixin.py:190} INFO - [download]  36.6% of ~   2.75MiB at  610.87KiB/s ETA 00:03 (frag 22/61)
+[2025-05-12T10:27:35.779+0000] {logging_mixin.py:190} INFO - [download]  36.6% of ~   2.79MiB at  610.87KiB/s ETA 00:03 (frag 22/61)
+[2025-05-12T10:27:35.780+0000] {logging_mixin.py:190} INFO - [download]  36.1% of ~   2.84MiB at  610.87KiB/s ETA 00:03 (frag 23/61)
+[2025-05-12T10:27:35.839+0000] {logging_mixin.py:190} INFO - [download]  37.7% of ~   2.72MiB at  615.14KiB/s ETA 00:03 (frag 23/61)
+[2025-05-12T10:27:35.840+0000] {logging_mixin.py:190} INFO - [download]  37.7% of ~   2.72MiB at  615.14KiB/s ETA 00:03 (frag 23/61)
+[2025-05-12T10:27:35.840+0000] {logging_mixin.py:190} INFO - [download]  37.8% of ~   2.72MiB at  615.14KiB/s ETA 00:03 (frag 23/61)
+[2025-05-12T10:27:35.841+0000] {logging_mixin.py:190} INFO - [download]  37.9% of ~   2.73MiB at  615.14KiB/s ETA 00:03 (frag 23/61)
+[2025-05-12T10:27:35.843+0000] {logging_mixin.py:190} INFO - [download]  38.2% of ~   2.75MiB at  615.14KiB/s ETA 00:03 (frag 23/61)
+[2025-05-12T10:27:35.847+0000] {logging_mixin.py:190} INFO - [download]  38.3% of ~   2.79MiB at  615.14KiB/s ETA 00:03 (frag 23/61)
+[2025-05-12T10:27:35.848+0000] {logging_mixin.py:190} INFO - [download]  37.7% of ~   2.83MiB at  615.14KiB/s ETA 00:03 (frag 24/61)
+[2025-05-12T10:27:35.907+0000] {logging_mixin.py:190} INFO - [download]  39.3% of ~   2.72MiB at  618.95KiB/s ETA 00:03 (frag 24/61)
+[2025-05-12T10:27:35.908+0000] {logging_mixin.py:190} INFO - [download]  39.3% of ~   2.72MiB at  618.95KiB/s ETA 00:03 (frag 24/61)
+[2025-05-12T10:27:35.908+0000] {logging_mixin.py:190} INFO - [download]  39.4% of ~   2.73MiB at  618.95KiB/s ETA 00:03 (frag 24/61)
+[2025-05-12T10:27:35.909+0000] {logging_mixin.py:190} INFO - [download]  39.6% of ~   2.74MiB at  618.95KiB/s ETA 00:03 (frag 24/61)
+[2025-05-12T10:27:35.911+0000] {logging_mixin.py:190} INFO - [download]  39.9% of ~   2.76MiB at  618.95KiB/s ETA 00:03 (frag 24/61)
+[2025-05-12T10:27:35.915+0000] {logging_mixin.py:190} INFO - [download]  39.9% of ~   2.80MiB at  618.95KiB/s ETA 00:03 (frag 24/61)
+[2025-05-12T10:27:35.916+0000] {logging_mixin.py:190} INFO - [download]  39.3% of ~   2.84MiB at  618.95KiB/s ETA 00:03 (frag 25/61)
+[2025-05-12T10:27:35.976+0000] {logging_mixin.py:190} INFO - [download]  41.0% of ~   2.73MiB at  622.40KiB/s ETA 00:03 (frag 25/61)
+[2025-05-12T10:27:35.977+0000] {logging_mixin.py:190} INFO - [download]  41.0% of ~   2.73MiB at  622.40KiB/s ETA 00:03 (frag 25/61)
+[2025-05-12T10:27:35.977+0000] {logging_mixin.py:190} INFO - [download]  41.1% of ~   2.73MiB at  622.40KiB/s ETA 00:03 (frag 25/61)
+[2025-05-12T10:27:35.978+0000] {logging_mixin.py:190} INFO - [download]  41.2% of ~   2.74MiB at  622.40KiB/s ETA 00:03 (frag 25/61)
+[2025-05-12T10:27:35.982+0000] {logging_mixin.py:190} INFO - [download]  41.5% of ~   2.76MiB at  622.40KiB/s ETA 00:03 (frag 25/61)
+[2025-05-12T10:27:35.983+0000] {logging_mixin.py:190} INFO - [download]  41.5% of ~   2.80MiB at  622.40KiB/s ETA 00:03 (frag 25/61)
+[2025-05-12T10:27:35.984+0000] {logging_mixin.py:190} INFO - [download]  41.0% of ~   2.84MiB at  622.40KiB/s ETA 00:03 (frag 26/61)
+[2025-05-12T10:27:36.043+0000] {logging_mixin.py:190} INFO - [download]  42.6% of ~   2.73MiB at  625.65KiB/s ETA 00:03 (frag 26/61)
+[2025-05-12T10:27:36.044+0000] {logging_mixin.py:190} INFO - [download]  42.6% of ~   2.73MiB at  625.65KiB/s ETA 00:03 (frag 26/61)
+[2025-05-12T10:27:36.044+0000] {logging_mixin.py:190} INFO - [download]  42.7% of ~   2.74MiB at  625.65KiB/s ETA 00:03 (frag 26/61)
+[2025-05-12T10:27:36.045+0000] {logging_mixin.py:190} INFO - [download]  42.9% of ~   2.74MiB at  625.65KiB/s ETA 00:03 (frag 26/61)
+[2025-05-12T10:27:36.047+0000] {logging_mixin.py:190} INFO - [download]  43.2% of ~   2.76MiB at  625.65KiB/s ETA 00:03 (frag 26/61)
+[2025-05-12T10:27:36.051+0000] {logging_mixin.py:190} INFO - [download]  43.2% of ~   2.80MiB at  625.65KiB/s ETA 00:03 (frag 26/61)
+[2025-05-12T10:27:36.052+0000] {logging_mixin.py:190} INFO - [download]  42.6% of ~   2.83MiB at  625.65KiB/s ETA 00:03 (frag 27/61)
+[2025-05-12T10:27:36.114+0000] {logging_mixin.py:190} INFO - [download]  44.2% of ~   2.73MiB at  628.31KiB/s ETA 00:03 (frag 27/61)
+[2025-05-12T10:27:36.115+0000] {logging_mixin.py:190} INFO - [download]  44.3% of ~   2.74MiB at  628.31KiB/s ETA 00:03 (frag 27/61)
+[2025-05-12T10:27:36.115+0000] {logging_mixin.py:190} INFO - [download]  44.3% of ~   2.74MiB at  628.31KiB/s ETA 00:03 (frag 27/61)
+[2025-05-12T10:27:36.117+0000] {logging_mixin.py:190} INFO - [download]  44.5% of ~   2.75MiB at  628.31KiB/s ETA 00:03 (frag 27/61)
+[2025-05-12T10:27:36.121+0000] {logging_mixin.py:190} INFO - [download]  44.8% of ~   2.77MiB at  628.31KiB/s ETA 00:03 (frag 27/61)
+[2025-05-12T10:27:36.123+0000] {logging_mixin.py:190} INFO - [download]  44.8% of ~   2.80MiB at  628.31KiB/s ETA 00:03 (frag 27/61)
+[2025-05-12T10:27:36.123+0000] {logging_mixin.py:190} INFO - [download]  44.3% of ~   2.83MiB at  628.31KiB/s ETA 00:03 (frag 28/61)
+[2025-05-12T10:27:36.183+0000] {logging_mixin.py:190} INFO - [download]  45.9% of ~   2.74MiB at  630.71KiB/s ETA 00:02 (frag 28/61)
+[2025-05-12T10:27:36.184+0000] {logging_mixin.py:190} INFO - [download]  45.9% of ~   2.74MiB at  630.71KiB/s ETA 00:02 (frag 28/61)
+[2025-05-12T10:27:36.184+0000] {logging_mixin.py:190} INFO - [download]  46.0% of ~   2.74MiB at  630.71KiB/s ETA 00:02 (frag 28/61)
+[2025-05-12T10:27:36.185+0000] {logging_mixin.py:190} INFO - [download]  46.1% of ~   2.75MiB at  630.71KiB/s ETA 00:02 (frag 28/61)
+[2025-05-12T10:27:36.187+0000] {logging_mixin.py:190} INFO - [download]  46.4% of ~   2.77MiB at  630.71KiB/s ETA 00:02 (frag 28/61)
+[2025-05-12T10:27:36.191+0000] {logging_mixin.py:190} INFO - [download]  46.5% of ~   2.80MiB at  630.71KiB/s ETA 00:02 (frag 28/61)
+[2025-05-12T10:27:36.191+0000] {logging_mixin.py:190} INFO - [download]  45.9% of ~   2.84MiB at  630.71KiB/s ETA 00:02 (frag 29/61)
+[2025-05-12T10:27:36.261+0000] {logging_mixin.py:190} INFO - [download]  47.5% of ~   2.74MiB at  632.11KiB/s ETA 00:02 (frag 29/61)
+[2025-05-12T10:27:36.262+0000] {logging_mixin.py:190} INFO - [download]  47.6% of ~   2.74MiB at  632.11KiB/s ETA 00:02 (frag 29/61)
+[2025-05-12T10:27:36.263+0000] {logging_mixin.py:190} INFO - [download]  47.6% of ~   2.75MiB at  632.11KiB/s ETA 00:02 (frag 29/61)
+[2025-05-12T10:27:36.264+0000] {logging_mixin.py:190} INFO - [download]  47.8% of ~   2.75MiB at  632.11KiB/s ETA 00:02 (frag 29/61)
+[2025-05-12T10:27:36.264+0000] {logging_mixin.py:190} INFO - [download]  48.1% of ~   2.77MiB at  632.11KiB/s ETA 00:02 (frag 29/61)
+[2025-05-12T10:27:36.265+0000] {logging_mixin.py:190} INFO - [download]  48.1% of ~   2.80MiB at  632.11KiB/s ETA 00:02 (frag 29/61)
+[2025-05-12T10:27:36.266+0000] {logging_mixin.py:190} INFO - [download]  47.5% of ~   2.83MiB at  632.11KiB/s ETA 00:02 (frag 30/61)
+[2025-05-12T10:27:36.336+0000] {logging_mixin.py:190} INFO - [download]  49.2% of ~   2.74MiB at  633.06KiB/s ETA 00:02 (frag 30/61)
+[2025-05-12T10:27:36.337+0000] {logging_mixin.py:190} INFO - [download]  49.2% of ~   2.74MiB at  633.06KiB/s ETA 00:02 (frag 30/61)
+[2025-05-12T10:27:36.337+0000] {logging_mixin.py:190} INFO - [download]  49.3% of ~   2.75MiB at  633.06KiB/s ETA 00:02 (frag 30/61)
+[2025-05-12T10:27:36.340+0000] {logging_mixin.py:190} INFO - [download]  49.4% of ~   2.76MiB at  633.06KiB/s ETA 00:02 (frag 30/61)
+[2025-05-12T10:27:36.344+0000] {logging_mixin.py:190} INFO - [download]  49.7% of ~   2.77MiB at  633.06KiB/s ETA 00:02 (frag 30/61)
+[2025-05-12T10:27:36.344+0000] {logging_mixin.py:190} INFO - [download]  49.7% of ~   2.80MiB at  633.06KiB/s ETA 00:02 (frag 30/61)
+[2025-05-12T10:27:36.345+0000] {logging_mixin.py:190} INFO - [download]  49.2% of ~   2.83MiB at  633.06KiB/s ETA 00:02 (frag 31/61)
+[2025-05-12T10:27:36.406+0000] {logging_mixin.py:190} INFO - [download]  50.8% of ~   2.75MiB at  634.12KiB/s ETA 00:02 (frag 31/61)
+[2025-05-12T10:27:36.407+0000] {logging_mixin.py:190} INFO - [download]  50.8% of ~   2.75MiB at  634.12KiB/s ETA 00:02 (frag 31/61)
+[2025-05-12T10:27:36.407+0000] {logging_mixin.py:190} INFO - [download]  50.9% of ~   2.75MiB at  634.12KiB/s ETA 00:02 (frag 31/61)
+[2025-05-12T10:27:36.410+0000] {logging_mixin.py:190} INFO - [download]  51.1% of ~   2.76MiB at  634.12KiB/s ETA 00:02 (frag 31/61)
+[2025-05-12T10:27:36.414+0000] {logging_mixin.py:190} INFO - [download]  51.4% of ~   2.77MiB at  634.12KiB/s ETA 00:02 (frag 31/61)
+[2025-05-12T10:27:36.416+0000] {logging_mixin.py:190} INFO - [download]  51.4% of ~   2.80MiB at  634.12KiB/s ETA 00:02 (frag 31/61)
+[2025-05-12T10:27:36.416+0000] {logging_mixin.py:190} INFO - [download]  50.8% of ~   2.83MiB at  634.12KiB/s ETA 00:02 (frag 32/61)
+[2025-05-12T10:27:36.476+0000] {logging_mixin.py:190} INFO - [download]  52.4% of ~   2.75MiB at  635.26KiB/s ETA 00:02 (frag 32/61)
+[2025-05-12T10:27:36.477+0000] {logging_mixin.py:190} INFO - [download]  52.5% of ~   2.75MiB at  635.26KiB/s ETA 00:02 (frag 32/61)
+[2025-05-12T10:27:36.478+0000] {logging_mixin.py:190} INFO - [download]  52.6% of ~   2.75MiB at  635.26KiB/s ETA 00:02 (frag 32/61)
+[2025-05-12T10:27:36.479+0000] {logging_mixin.py:190} INFO - [download]  52.7% of ~   2.76MiB at  635.26KiB/s ETA 00:02 (frag 32/61)
+[2025-05-12T10:27:36.480+0000] {logging_mixin.py:190} INFO - [download]  53.0% of ~   2.78MiB at  635.26KiB/s ETA 00:02 (frag 32/61)
+[2025-05-12T10:27:36.483+0000] {logging_mixin.py:190} INFO - [download]  53.0% of ~   2.80MiB at  635.26KiB/s ETA 00:02 (frag 32/61)
+[2025-05-12T10:27:36.484+0000] {logging_mixin.py:190} INFO - [download]  52.5% of ~   2.83MiB at  635.26KiB/s ETA 00:02 (frag 33/61)
+[2025-05-12T10:27:36.547+0000] {logging_mixin.py:190} INFO - [download]  54.1% of ~   2.75MiB at  636.36KiB/s ETA 00:02 (frag 33/61)
+[2025-05-12T10:27:36.548+0000] {logging_mixin.py:190} INFO - [download]  54.1% of ~   2.75MiB at  636.36KiB/s ETA 00:02 (frag 33/61)
+[2025-05-12T10:27:36.548+0000] {logging_mixin.py:190} INFO - [download]  54.2% of ~   2.76MiB at  636.36KiB/s ETA 00:02 (frag 33/61)
+[2025-05-12T10:27:36.549+0000] {logging_mixin.py:190} INFO - [download]  54.3% of ~   2.76MiB at  636.36KiB/s ETA 00:02 (frag 33/61)
+[2025-05-12T10:27:36.550+0000] {logging_mixin.py:190} INFO - [download]  54.6% of ~   2.78MiB at  636.36KiB/s ETA 00:02 (frag 33/61)
+[2025-05-12T10:27:36.554+0000] {logging_mixin.py:190} INFO - [download]  54.7% of ~   2.81MiB at  636.36KiB/s ETA 00:02 (frag 33/61)
+[2025-05-12T10:27:36.554+0000] {logging_mixin.py:190} INFO - [download]  54.1% of ~   2.83MiB at  636.36KiB/s ETA 00:02 (frag 34/61)
+[2025-05-12T10:27:36.624+0000] {logging_mixin.py:190} INFO - [download]  55.7% of ~   2.75MiB at  636.92KiB/s ETA 00:02 (frag 34/61)
+[2025-05-12T10:27:36.625+0000] {logging_mixin.py:190} INFO - [download]  55.8% of ~   2.75MiB at  636.92KiB/s ETA 00:02 (frag 34/61)
+[2025-05-12T10:27:36.625+0000] {logging_mixin.py:190} INFO - [download]  55.8% of ~   2.76MiB at  636.92KiB/s ETA 00:02 (frag 34/61)
+[2025-05-12T10:27:36.626+0000] {logging_mixin.py:190} INFO - [download]  56.0% of ~   2.76MiB at  636.92KiB/s ETA 00:02 (frag 34/61)
+[2025-05-12T10:27:36.627+0000] {logging_mixin.py:190} INFO - [download]  56.3% of ~   2.78MiB at  636.92KiB/s ETA 00:02 (frag 34/61)
+[2025-05-12T10:27:36.631+0000] {logging_mixin.py:190} INFO - [download]  56.3% of ~   2.81MiB at  636.92KiB/s ETA 00:02 (frag 34/61)
+[2025-05-12T10:27:36.632+0000] {logging_mixin.py:190} INFO - [download]  55.7% of ~   2.83MiB at  636.92KiB/s ETA 00:02 (frag 35/61)
+[2025-05-12T10:27:36.718+0000] {logging_mixin.py:190} INFO - [download]  57.4% of ~   2.76MiB at  635.82KiB/s ETA 00:02 (frag 35/61)
+[2025-05-12T10:27:36.719+0000] {logging_mixin.py:190} INFO - [download]  57.4% of ~   2.76MiB at  635.82KiB/s ETA 00:02 (frag 35/61)
+[2025-05-12T10:27:36.720+0000] {logging_mixin.py:190} INFO - [download]  57.5% of ~   2.76MiB at  635.82KiB/s ETA 00:02 (frag 35/61)
+[2025-05-12T10:27:36.720+0000] {logging_mixin.py:190} INFO - [download]  57.6% of ~   2.77MiB at  635.82KiB/s ETA 00:02 (frag 35/61)
+[2025-05-12T10:27:36.725+0000] {logging_mixin.py:190} INFO - [download]  57.9% of ~   2.78MiB at  635.82KiB/s ETA 00:02 (frag 35/61)
+[2025-05-12T10:27:36.729+0000] {logging_mixin.py:190} INFO - [download]  57.9% of ~   2.81MiB at  635.82KiB/s ETA 00:02 (frag 35/61)
+[2025-05-12T10:27:36.729+0000] {logging_mixin.py:190} INFO - [download]  57.4% of ~   2.83MiB at  635.82KiB/s ETA 00:02 (frag 36/61)
+[2025-05-12T10:27:36.804+0000] {logging_mixin.py:190} INFO - [download]  59.0% of ~   2.76MiB at  634.29KiB/s ETA 00:02 (frag 36/61)
+[2025-05-12T10:27:36.805+0000] {logging_mixin.py:190} INFO - [download]  59.0% of ~   2.76MiB at  634.29KiB/s ETA 00:02 (frag 36/61)
+[2025-05-12T10:27:36.805+0000] {logging_mixin.py:190} INFO - [download]  59.1% of ~   2.76MiB at  634.29KiB/s ETA 00:02 (frag 36/61)
+[2025-05-12T10:27:36.806+0000] {logging_mixin.py:190} INFO - [download]  59.3% of ~   2.77MiB at  634.29KiB/s ETA 00:02 (frag 36/61)
+[2025-05-12T10:27:36.812+0000] {logging_mixin.py:190} INFO - [download]  59.5% of ~   2.78MiB at  634.29KiB/s ETA 00:02 (frag 36/61)
+[2025-05-12T10:27:36.821+0000] {logging_mixin.py:190} INFO - [download]  59.6% of ~   2.81MiB at  634.29KiB/s ETA 00:02 (frag 36/61)
+[2025-05-12T10:27:36.822+0000] {logging_mixin.py:190} INFO - [download]  59.0% of ~   2.83MiB at  634.29KiB/s ETA 00:02 (frag 37/61)
+[2025-05-12T10:27:36.901+0000] {logging_mixin.py:190} INFO - [download]  60.7% of ~   2.76MiB at  631.78KiB/s ETA 00:02 (frag 37/61)
+[2025-05-12T10:27:36.902+0000] {logging_mixin.py:190} INFO - [download]  60.7% of ~   2.76MiB at  631.78KiB/s ETA 00:02 (frag 37/61)
+[2025-05-12T10:27:36.902+0000] {logging_mixin.py:190} INFO - [download]  60.8% of ~   2.76MiB at  631.78KiB/s ETA 00:02 (frag 37/61)
+[2025-05-12T10:27:36.902+0000] {logging_mixin.py:190} INFO - [download]  60.9% of ~   2.77MiB at  631.78KiB/s ETA 00:02 (frag 37/61)
+[2025-05-12T10:27:36.907+0000] {logging_mixin.py:190} INFO - [download]  61.2% of ~   2.78MiB at  631.78KiB/s ETA 00:02 (frag 37/61)
+[2025-05-12T10:27:36.912+0000] {logging_mixin.py:190} INFO - [download]  61.2% of ~   2.81MiB at  631.78KiB/s ETA 00:02 (frag 37/61)
+[2025-05-12T10:27:36.913+0000] {logging_mixin.py:190} INFO - [download]  60.7% of ~   2.83MiB at  631.78KiB/s ETA 00:02 (frag 38/61)
+[2025-05-12T10:27:36.990+0000] {logging_mixin.py:190} INFO - [download]  62.3% of ~   2.76MiB at  629.13KiB/s ETA 00:02 (frag 38/61)
+[2025-05-12T10:27:36.990+0000] {logging_mixin.py:190} INFO - [download]  62.3% of ~   2.76MiB at  629.13KiB/s ETA 00:02 (frag 38/61)
+[2025-05-12T10:27:36.991+0000] {logging_mixin.py:190} INFO - [download]  62.4% of ~   2.77MiB at  629.13KiB/s ETA 00:02 (frag 38/61)
+[2025-05-12T10:27:36.991+0000] {logging_mixin.py:190} INFO - [download]  62.5% of ~   2.77MiB at  629.13KiB/s ETA 00:02 (frag 38/61)
+[2025-05-12T10:27:36.994+0000] {logging_mixin.py:190} INFO - [download]  62.8% of ~   2.78MiB at  629.13KiB/s ETA 00:02 (frag 38/61)
+[2025-05-12T10:27:36.996+0000] {logging_mixin.py:190} INFO - [download]  62.9% of ~   2.81MiB at  629.13KiB/s ETA 00:02 (frag 38/61)
+[2025-05-12T10:27:36.996+0000] {logging_mixin.py:190} INFO - [download]  62.3% of ~   2.83MiB at  629.13KiB/s ETA 00:02 (frag 39/61)
+[2025-05-12T10:27:37.077+0000] {logging_mixin.py:190} INFO - [download]  63.9% of ~   2.76MiB at  626.57KiB/s ETA 00:02 (frag 39/61)
+[2025-05-12T10:27:37.078+0000] {logging_mixin.py:190} INFO - [download]  64.0% of ~   2.76MiB at  626.57KiB/s ETA 00:02 (frag 39/61)
+[2025-05-12T10:27:37.079+0000] {logging_mixin.py:190} INFO - [download]  64.0% of ~   2.77MiB at  626.57KiB/s ETA 00:02 (frag 39/61)
+[2025-05-12T10:27:37.079+0000] {logging_mixin.py:190} INFO - [download]  64.2% of ~   2.77MiB at  626.57KiB/s ETA 00:02 (frag 39/61)
+[2025-05-12T10:27:37.087+0000] {logging_mixin.py:190} INFO - [download]  64.5% of ~   2.79MiB at  626.57KiB/s ETA 00:02 (frag 39/61)
+[2025-05-12T10:27:37.090+0000] {logging_mixin.py:190} INFO - [download]  64.5% of ~   2.81MiB at  626.57KiB/s ETA 00:02 (frag 39/61)
+[2025-05-12T10:27:37.090+0000] {logging_mixin.py:190} INFO - [download]  63.9% of ~   2.83MiB at  626.57KiB/s ETA 00:02 (frag 40/61)
+[2025-05-12T10:27:37.188+0000] {logging_mixin.py:190} INFO - [download]  65.6% of ~   2.76MiB at  626.48KiB/s ETA 00:02 (frag 40/61)
+[2025-05-12T10:27:37.188+0000] {logging_mixin.py:190} INFO - [download]  65.6% of ~   2.77MiB at  626.48KiB/s ETA 00:02 (frag 40/61)
+[2025-05-12T10:27:37.189+0000] {logging_mixin.py:190} INFO - [download]  65.7% of ~   2.77MiB at  626.48KiB/s ETA 00:02 (frag 40/61)
+[2025-05-12T10:27:37.192+0000] {logging_mixin.py:190} INFO - [download]  65.8% of ~   2.77MiB at  626.48KiB/s ETA 00:02 (frag 40/61)
+[2025-05-12T10:27:37.390+0000] {logging_mixin.py:190} INFO - [download]  66.1% of ~   2.79MiB at  622.55KiB/s ETA 00:02 (frag 40/61)
+[2025-05-12T10:27:37.391+0000] {logging_mixin.py:190} INFO - [download]  66.1% of ~   2.81MiB at  622.55KiB/s ETA 00:02 (frag 40/61)
+[2025-05-12T10:27:37.392+0000] {logging_mixin.py:190} INFO - [download]  65.6% of ~   2.83MiB at  622.55KiB/s ETA 00:02 (frag 41/61)
+[2025-05-12T10:27:37.456+0000] {logging_mixin.py:190} INFO - [download]  67.2% of ~   2.77MiB at  617.23KiB/s ETA 00:02 (frag 41/61)
+[2025-05-12T10:27:37.457+0000] {logging_mixin.py:190} INFO - [download]  67.2% of ~   2.77MiB at  617.23KiB/s ETA 00:02 (frag 41/61)
+[2025-05-12T10:27:37.457+0000] {logging_mixin.py:190} INFO - [download]  67.3% of ~   2.77MiB at  617.23KiB/s ETA 00:02 (frag 41/61)
+[2025-05-12T10:27:37.457+0000] {logging_mixin.py:190} INFO - [download]  67.5% of ~   2.78MiB at  617.23KiB/s ETA 00:02 (frag 41/61)
+[2025-05-12T10:27:37.463+0000] {logging_mixin.py:190} INFO - [download]  67.7% of ~   2.79MiB at  617.23KiB/s ETA 00:02 (frag 41/61)
+[2025-05-12T10:27:37.467+0000] {logging_mixin.py:190} INFO - [download]  67.8% of ~   2.81MiB at  617.23KiB/s ETA 00:02 (frag 41/61)
+[2025-05-12T10:27:37.468+0000] {logging_mixin.py:190} INFO - [download]  67.2% of ~   2.83MiB at  617.23KiB/s ETA 00:02 (frag 42/61)
+[2025-05-12T10:27:37.549+0000] {logging_mixin.py:190} INFO - [download]  68.9% of ~   2.77MiB at  611.51KiB/s ETA 00:01 (frag 42/61)
+[2025-05-12T10:27:37.550+0000] {logging_mixin.py:190} INFO - [download]  68.9% of ~   2.77MiB at  611.51KiB/s ETA 00:01 (frag 42/61)
+[2025-05-12T10:27:37.550+0000] {logging_mixin.py:190} INFO - [download]  69.0% of ~   2.77MiB at  611.51KiB/s ETA 00:01 (frag 42/61)
+[2025-05-12T10:27:37.551+0000] {logging_mixin.py:190} INFO - [download]  69.1% of ~   2.78MiB at  611.51KiB/s ETA 00:01 (frag 42/61)
+[2025-05-12T10:27:37.553+0000] {logging_mixin.py:190} INFO - [download]  69.4% of ~   2.79MiB at  611.51KiB/s ETA 00:01 (frag 42/61)
+[2025-05-12T10:27:37.557+0000] {logging_mixin.py:190} INFO - [download]  69.4% of ~   2.81MiB at  611.51KiB/s ETA 00:01 (frag 42/61)
+[2025-05-12T10:27:37.558+0000] {logging_mixin.py:190} INFO - [download]  68.9% of ~   2.83MiB at  611.51KiB/s ETA 00:01 (frag 43/61)
+[2025-05-12T10:27:37.625+0000] {logging_mixin.py:190} INFO - [download]  70.5% of ~   2.77MiB at  606.98KiB/s ETA 00:01 (frag 43/61)
+[2025-05-12T10:27:37.626+0000] {logging_mixin.py:190} INFO - [download]  70.5% of ~   2.77MiB at  606.98KiB/s ETA 00:01 (frag 43/61)
+[2025-05-12T10:27:37.626+0000] {logging_mixin.py:190} INFO - [download]  70.6% of ~   2.77MiB at  606.98KiB/s ETA 00:01 (frag 43/61)
+[2025-05-12T10:27:37.627+0000] {logging_mixin.py:190} INFO - [download]  70.7% of ~   2.78MiB at  606.98KiB/s ETA 00:01 (frag 43/61)
+[2025-05-12T10:27:37.630+0000] {logging_mixin.py:190} INFO - [download]  71.0% of ~   2.79MiB at  606.98KiB/s ETA 00:01 (frag 43/61)
+[2025-05-12T10:27:37.636+0000] {logging_mixin.py:190} INFO - [download]  71.1% of ~   2.81MiB at  606.98KiB/s ETA 00:01 (frag 43/61)
+[2025-05-12T10:27:37.636+0000] {logging_mixin.py:190} INFO - [download]  70.5% of ~   2.83MiB at  606.98KiB/s ETA 00:01 (frag 44/61)
+[2025-05-12T10:27:37.708+0000] {logging_mixin.py:190} INFO - [download]  72.1% of ~   2.77MiB at  602.85KiB/s ETA 00:01 (frag 44/61)
+[2025-05-12T10:27:37.709+0000] {logging_mixin.py:190} INFO - [download]  72.2% of ~   2.77MiB at  602.85KiB/s ETA 00:01 (frag 44/61)
+[2025-05-12T10:27:37.710+0000] {logging_mixin.py:190} INFO - [download]  72.2% of ~   2.78MiB at  602.85KiB/s ETA 00:01 (frag 44/61)
+[2025-05-12T10:27:37.711+0000] {logging_mixin.py:190} INFO - [download]  72.4% of ~   2.78MiB at  602.85KiB/s ETA 00:01 (frag 44/61)
+[2025-05-12T10:27:37.715+0000] {logging_mixin.py:190} INFO - [download]  72.7% of ~   2.79MiB at  602.85KiB/s ETA 00:01 (frag 44/61)
+[2025-05-12T10:27:37.716+0000] {logging_mixin.py:190} INFO - [download]  72.7% of ~   2.81MiB at  602.85KiB/s ETA 00:01 (frag 44/61)
+[2025-05-12T10:27:37.717+0000] {logging_mixin.py:190} INFO - [download]  72.1% of ~   2.83MiB at  602.85KiB/s ETA 00:01 (frag 45/61)
+[2025-05-12T10:27:37.786+0000] {logging_mixin.py:190} INFO - [download]  73.8% of ~   2.77MiB at  599.58KiB/s ETA 00:01 (frag 45/61)
+[2025-05-12T10:27:37.787+0000] {logging_mixin.py:190} INFO - [download]  73.8% of ~   2.77MiB at  599.58KiB/s ETA 00:01 (frag 45/61)
+[2025-05-12T10:27:37.787+0000] {logging_mixin.py:190} INFO - [download]  73.9% of ~   2.78MiB at  599.58KiB/s ETA 00:01 (frag 45/61)
+[2025-05-12T10:27:37.788+0000] {logging_mixin.py:190} INFO - [download]  74.0% of ~   2.78MiB at  599.58KiB/s ETA 00:01 (frag 45/61)
+[2025-05-12T10:27:37.790+0000] {logging_mixin.py:190} INFO - [download]  74.3% of ~   2.79MiB at  599.58KiB/s ETA 00:01 (frag 45/61)
+[2025-05-12T10:27:37.793+0000] {logging_mixin.py:190} INFO - [download]  74.3% of ~   2.81MiB at  599.58KiB/s ETA 00:01 (frag 45/61)
+[2025-05-12T10:27:37.794+0000] {logging_mixin.py:190} INFO - [download]  73.8% of ~   2.83MiB at  599.58KiB/s ETA 00:01 (frag 46/61)
+[2025-05-12T10:27:37.864+0000] {logging_mixin.py:190} INFO - [download]  75.4% of ~   2.77MiB at  596.63KiB/s ETA 00:01 (frag 46/61)
+[2025-05-12T10:27:37.865+0000] {logging_mixin.py:190} INFO - [download]  75.4% of ~   2.78MiB at  596.63KiB/s ETA 00:01 (frag 46/61)
+[2025-05-12T10:27:37.865+0000] {logging_mixin.py:190} INFO - [download]  75.5% of ~   2.78MiB at  596.63KiB/s ETA 00:01 (frag 46/61)
+[2025-05-12T10:27:37.866+0000] {logging_mixin.py:190} INFO - [download]  75.7% of ~   2.78MiB at  596.63KiB/s ETA 00:01 (frag 46/61)
+[2025-05-12T10:27:37.868+0000] {logging_mixin.py:190} INFO - [download]  75.9% of ~   2.79MiB at  596.63KiB/s ETA 00:01 (frag 46/61)
+[2025-05-12T10:27:37.872+0000] {logging_mixin.py:190} INFO - [download]  76.0% of ~   2.81MiB at  596.63KiB/s ETA 00:01 (frag 46/61)
+[2025-05-12T10:27:37.872+0000] {logging_mixin.py:190} INFO - [download]  75.4% of ~   2.83MiB at  596.63KiB/s ETA 00:01 (frag 47/61)
+[2025-05-12T10:27:37.942+0000] {logging_mixin.py:190} INFO - [download]  77.1% of ~   2.77MiB at  593.89KiB/s ETA 00:01 (frag 47/61)
+[2025-05-12T10:27:37.943+0000] {logging_mixin.py:190} INFO - [download]  77.1% of ~   2.78MiB at  593.89KiB/s ETA 00:01 (frag 47/61)
+[2025-05-12T10:27:37.943+0000] {logging_mixin.py:190} INFO - [download]  77.2% of ~   2.78MiB at  593.89KiB/s ETA 00:01 (frag 47/61)
+[2025-05-12T10:27:37.944+0000] {logging_mixin.py:190} INFO - [download]  77.3% of ~   2.78MiB at  593.89KiB/s ETA 00:01 (frag 47/61)
+[2025-05-12T10:27:37.946+0000] {logging_mixin.py:190} INFO - [download]  77.6% of ~   2.79MiB at  593.89KiB/s ETA 00:01 (frag 47/61)
+[2025-05-12T10:27:37.950+0000] {logging_mixin.py:190} INFO - [download]  77.6% of ~   2.81MiB at  593.89KiB/s ETA 00:01 (frag 47/61)
+[2025-05-12T10:27:37.951+0000] {logging_mixin.py:190} INFO - [download]  77.1% of ~   2.83MiB at  593.89KiB/s ETA 00:01 (frag 48/61)
+[2025-05-12T10:27:38.011+0000] {logging_mixin.py:190} INFO - [download]  78.7% of ~   2.78MiB at  592.10KiB/s ETA 00:01 (frag 48/61)
+[2025-05-12T10:27:38.012+0000] {logging_mixin.py:190} INFO - [download]  78.7% of ~   2.78MiB at  592.10KiB/s ETA 00:01 (frag 48/61)
+[2025-05-12T10:27:38.012+0000] {logging_mixin.py:190} INFO - [download]  78.8% of ~   2.78MiB at  592.10KiB/s ETA 00:01 (frag 48/61)
+[2025-05-12T10:27:38.012+0000] {logging_mixin.py:190} INFO - [download]  78.9% of ~   2.78MiB at  592.10KiB/s ETA 00:01 (frag 48/61)
+[2025-05-12T10:27:38.015+0000] {logging_mixin.py:190} INFO - [download]  79.2% of ~   2.79MiB at  592.10KiB/s ETA 00:01 (frag 48/61)
+[2025-05-12T10:27:38.019+0000] {logging_mixin.py:190} INFO - [download]  79.3% of ~   2.81MiB at  592.10KiB/s ETA 00:01 (frag 48/61)
+[2025-05-12T10:27:38.020+0000] {logging_mixin.py:190} INFO - [download]  78.7% of ~   2.83MiB at  592.10KiB/s ETA 00:01 (frag 49/61)
+[2025-05-12T10:27:38.080+0000] {logging_mixin.py:190} INFO - [download]  80.3% of ~   2.78MiB at  590.83KiB/s ETA 00:01 (frag 49/61)
+[2025-05-12T10:27:38.081+0000] {logging_mixin.py:190} INFO - [download]  80.4% of ~   2.78MiB at  590.83KiB/s ETA 00:01 (frag 49/61)
+[2025-05-12T10:27:38.081+0000] {logging_mixin.py:190} INFO - [download]  80.4% of ~   2.78MiB at  590.83KiB/s ETA 00:01 (frag 49/61)
+[2025-05-12T10:27:38.082+0000] {logging_mixin.py:190} INFO - [download]  80.6% of ~   2.79MiB at  590.83KiB/s ETA 00:01 (frag 49/61)
+[2025-05-12T10:27:38.083+0000] {logging_mixin.py:190} INFO - [download]  80.9% of ~   2.80MiB at  590.83KiB/s ETA 00:01 (frag 49/61)
+[2025-05-12T10:27:38.087+0000] {logging_mixin.py:190} INFO - [download]  80.9% of ~   2.81MiB at  590.83KiB/s ETA 00:01 (frag 49/61)
+[2025-05-12T10:27:38.087+0000] {logging_mixin.py:190} INFO - [download]  80.3% of ~   2.83MiB at  590.83KiB/s ETA 00:01 (frag 50/61)
+[2025-05-12T10:27:38.159+0000] {logging_mixin.py:190} INFO - [download]  82.0% of ~   2.78MiB at  588.47KiB/s ETA 00:01 (frag 50/61)
+[2025-05-12T10:27:38.160+0000] {logging_mixin.py:190} INFO - [download]  82.0% of ~   2.78MiB at  588.47KiB/s ETA 00:01 (frag 50/61)
+[2025-05-12T10:27:38.160+0000] {logging_mixin.py:190} INFO - [download]  82.1% of ~   2.78MiB at  588.47KiB/s ETA 00:01 (frag 50/61)
+[2025-05-12T10:27:38.161+0000] {logging_mixin.py:190} INFO - [download]  82.2% of ~   2.79MiB at  588.47KiB/s ETA 00:01 (frag 50/61)
+[2025-05-12T10:27:38.163+0000] {logging_mixin.py:190} INFO - [download]  82.5% of ~   2.80MiB at  588.47KiB/s ETA 00:01 (frag 50/61)
+[2025-05-12T10:27:38.167+0000] {logging_mixin.py:190} INFO - [download]  82.5% of ~   2.81MiB at  588.47KiB/s ETA 00:01 (frag 50/61)
+[2025-05-12T10:27:38.168+0000] {logging_mixin.py:190} INFO - [download]  82.0% of ~   2.83MiB at  588.47KiB/s ETA 00:01 (frag 51/61)
+[2025-05-12T10:27:38.245+0000] {logging_mixin.py:190} INFO - [download]  83.6% of ~   2.78MiB at  586.35KiB/s ETA 00:01 (frag 51/61)
+[2025-05-12T10:27:38.246+0000] {logging_mixin.py:190} INFO - [download]  83.6% of ~   2.78MiB at  586.35KiB/s ETA 00:01 (frag 51/61)
+[2025-05-12T10:27:38.246+0000] {logging_mixin.py:190} INFO - [download]  83.7% of ~   2.78MiB at  586.35KiB/s ETA 00:01 (frag 51/61)
+[2025-05-12T10:27:38.246+0000] {logging_mixin.py:190} INFO - [download]  83.9% of ~   2.79MiB at  586.35KiB/s ETA 00:01 (frag 51/61)
+[2025-05-12T10:27:38.249+0000] {logging_mixin.py:190} INFO - [download]  84.1% of ~   2.80MiB at  586.35KiB/s ETA 00:01 (frag 51/61)
+[2025-05-12T10:27:38.252+0000] {logging_mixin.py:190} INFO - [download]  84.2% of ~   2.81MiB at  586.35KiB/s ETA 00:01 (frag 51/61)
+[2025-05-12T10:27:38.253+0000] {logging_mixin.py:190} INFO - [download]  83.6% of ~   2.83MiB at  586.35KiB/s ETA 00:01 (frag 52/61)
+[2025-05-12T10:27:38.322+0000] {logging_mixin.py:190} INFO - [download]  85.2% of ~   2.78MiB at  584.04KiB/s ETA 00:01 (frag 52/61)
+[2025-05-12T10:27:38.322+0000] {logging_mixin.py:190} INFO - [download]  85.3% of ~   2.78MiB at  584.04KiB/s ETA 00:01 (frag 52/61)
+[2025-05-12T10:27:38.323+0000] {logging_mixin.py:190} INFO - [download]  85.4% of ~   2.78MiB at  584.04KiB/s ETA 00:01 (frag 52/61)
+[2025-05-12T10:27:38.325+0000] {logging_mixin.py:190} INFO - [download]  85.5% of ~   2.79MiB at  584.04KiB/s ETA 00:01 (frag 52/61)
+[2025-05-12T10:27:38.330+0000] {logging_mixin.py:190} INFO - [download]  85.8% of ~   2.80MiB at  584.04KiB/s ETA 00:01 (frag 52/61)
+[2025-05-12T10:27:38.331+0000] {logging_mixin.py:190} INFO - [download]  85.8% of ~   2.82MiB at  584.04KiB/s ETA 00:01 (frag 52/61)
+[2025-05-12T10:27:38.331+0000] {logging_mixin.py:190} INFO - [download]  85.2% of ~   2.83MiB at  584.04KiB/s ETA 00:01 (frag 53/61)
+[2025-05-12T10:27:38.403+0000] {logging_mixin.py:190} INFO - [download]  86.9% of ~   2.78MiB at  581.66KiB/s ETA 00:01 (frag 53/61)
+[2025-05-12T10:27:38.404+0000] {logging_mixin.py:190} INFO - [download]  86.9% of ~   2.78MiB at  581.66KiB/s ETA 00:01 (frag 53/61)
+[2025-05-12T10:27:38.404+0000] {logging_mixin.py:190} INFO - [download]  87.0% of ~   2.78MiB at  581.66KiB/s ETA 00:01 (frag 53/61)
+[2025-05-12T10:27:38.405+0000] {logging_mixin.py:190} INFO - [download]  87.1% of ~   2.79MiB at  581.66KiB/s ETA 00:01 (frag 53/61)
+[2025-05-12T10:27:38.407+0000] {logging_mixin.py:190} INFO - [download]  87.4% of ~   2.80MiB at  581.66KiB/s ETA 00:01 (frag 53/61)
+[2025-05-12T10:27:38.411+0000] {logging_mixin.py:190} INFO - [download]  87.4% of ~   2.82MiB at  581.66KiB/s ETA 00:01 (frag 53/61)
+[2025-05-12T10:27:38.411+0000] {logging_mixin.py:190} INFO - [download]  86.9% of ~   2.83MiB at  581.66KiB/s ETA 00:01 (frag 54/61)
+[2025-05-12T10:27:38.470+0000] {logging_mixin.py:190} INFO - [download]  88.5% of ~   2.78MiB at  580.00KiB/s ETA 00:01 (frag 54/61)
+[2025-05-12T10:27:38.471+0000] {logging_mixin.py:190} INFO - [download]  88.6% of ~   2.78MiB at  580.00KiB/s ETA 00:01 (frag 54/61)
+[2025-05-12T10:27:38.472+0000] {logging_mixin.py:190} INFO - [download]  88.6% of ~   2.79MiB at  580.00KiB/s ETA 00:01 (frag 54/61)
+[2025-05-12T10:27:38.472+0000] {logging_mixin.py:190} INFO - [download]  88.8% of ~   2.79MiB at  580.00KiB/s ETA 00:01 (frag 54/61)
+[2025-05-12T10:27:38.474+0000] {logging_mixin.py:190} INFO - [download]  89.1% of ~   2.80MiB at  580.00KiB/s ETA 00:01 (frag 54/61)
+[2025-05-12T10:27:38.478+0000] {logging_mixin.py:190} INFO - [download]  89.1% of ~   2.82MiB at  580.00KiB/s ETA 00:01 (frag 54/61)
+[2025-05-12T10:27:38.479+0000] {logging_mixin.py:190} INFO - [download]  88.5% of ~   2.83MiB at  580.00KiB/s ETA 00:01 (frag 55/61)
+[2025-05-12T10:27:38.552+0000] {logging_mixin.py:190} INFO - [download]  90.2% of ~   2.78MiB at  578.05KiB/s ETA 00:01 (frag 55/61)
+[2025-05-12T10:27:38.553+0000] {logging_mixin.py:190} INFO - [download]  90.2% of ~   2.78MiB at  578.05KiB/s ETA 00:01 (frag 55/61)
+[2025-05-12T10:27:38.554+0000] {logging_mixin.py:190} INFO - [download]  90.3% of ~   2.79MiB at  578.05KiB/s ETA 00:01 (frag 55/61)
+[2025-05-12T10:27:38.554+0000] {logging_mixin.py:190} INFO - [download]  90.4% of ~   2.79MiB at  578.05KiB/s ETA 00:01 (frag 55/61)
+[2025-05-12T10:27:38.555+0000] {logging_mixin.py:190} INFO - [download]  90.7% of ~   2.80MiB at  578.05KiB/s ETA 00:01 (frag 55/61)
+[2025-05-12T10:27:38.559+0000] {logging_mixin.py:190} INFO - [download]  90.7% of ~   2.82MiB at  578.05KiB/s ETA 00:01 (frag 55/61)
+[2025-05-12T10:27:38.560+0000] {logging_mixin.py:190} INFO - [download]  90.2% of ~   2.83MiB at  578.05KiB/s ETA 00:01 (frag 56/61)
+[2025-05-12T10:27:38.620+0000] {logging_mixin.py:190} INFO - [download]  91.8% of ~   2.78MiB at  576.78KiB/s ETA 00:01 (frag 56/61)
+[2025-05-12T10:27:38.621+0000] {logging_mixin.py:190} INFO - [download]  91.8% of ~   2.78MiB at  576.78KiB/s ETA 00:01 (frag 56/61)
+[2025-05-12T10:27:38.622+0000] {logging_mixin.py:190} INFO - [download]  91.9% of ~   2.79MiB at  576.78KiB/s ETA 00:01 (frag 56/61)
+[2025-05-12T10:27:38.623+0000] {logging_mixin.py:190} INFO - [download]  92.1% of ~   2.79MiB at  576.78KiB/s ETA 00:01 (frag 56/61)
+[2025-05-12T10:27:38.623+0000] {logging_mixin.py:190} INFO - [download]  92.3% of ~   2.80MiB at  576.78KiB/s ETA 00:01 (frag 56/61)
+[2025-05-12T10:27:38.627+0000] {logging_mixin.py:190} INFO - [download]  92.4% of ~   2.82MiB at  576.78KiB/s ETA 00:01 (frag 56/61)
+[2025-05-12T10:27:38.628+0000] {logging_mixin.py:190} INFO - [download]  91.8% of ~   2.83MiB at  576.78KiB/s ETA 00:01 (frag 57/61)
+[2025-05-12T10:27:38.699+0000] {logging_mixin.py:190} INFO - [download]  93.4% of ~   2.78MiB at  575.14KiB/s ETA 00:00 (frag 57/61)
+[2025-05-12T10:27:38.700+0000] {logging_mixin.py:190} INFO - [download]  93.5% of ~   2.79MiB at  575.14KiB/s ETA 00:00 (frag 57/61)
+[2025-05-12T10:27:38.700+0000] {logging_mixin.py:190} INFO - [download]  93.6% of ~   2.79MiB at  575.14KiB/s ETA 00:00 (frag 57/61)
+[2025-05-12T10:27:38.700+0000] {logging_mixin.py:190} INFO - [download]  93.7% of ~   2.79MiB at  575.14KiB/s ETA 00:00 (frag 57/61)
+[2025-05-12T10:27:38.702+0000] {logging_mixin.py:190} INFO - [download]  94.0% of ~   2.80MiB at  575.14KiB/s ETA 00:00 (frag 57/61)
+[2025-05-12T10:27:38.706+0000] {logging_mixin.py:190} INFO - [download]  94.0% of ~   2.82MiB at  575.14KiB/s ETA 00:00 (frag 57/61)
+[2025-05-12T10:27:38.707+0000] {logging_mixin.py:190} INFO - [download]  93.4% of ~   2.83MiB at  575.14KiB/s ETA 00:00 (frag 58/61)
+[2025-05-12T10:27:38.767+0000] {logging_mixin.py:190} INFO - [download]  95.1% of ~   2.79MiB at  574.09KiB/s ETA 00:00 (frag 58/61)
+[2025-05-12T10:27:38.768+0000] {logging_mixin.py:190} INFO - [download]  95.1% of ~   2.79MiB at  574.09KiB/s ETA 00:00 (frag 58/61)
+[2025-05-12T10:27:38.768+0000] {logging_mixin.py:190} INFO - [download]  95.2% of ~   2.79MiB at  574.09KiB/s ETA 00:00 (frag 58/61)
+[2025-05-12T10:27:38.769+0000] {logging_mixin.py:190} INFO - [download]  95.3% of ~   2.79MiB at  574.09KiB/s ETA 00:00 (frag 58/61)
+[2025-05-12T10:27:38.770+0000] {logging_mixin.py:190} INFO - [download]  95.6% of ~   2.80MiB at  574.09KiB/s ETA 00:00 (frag 58/61)
+[2025-05-12T10:27:38.774+0000] {logging_mixin.py:190} INFO - [download]  95.6% of ~   2.82MiB at  574.09KiB/s ETA 00:00 (frag 58/61)
+[2025-05-12T10:27:38.774+0000] {logging_mixin.py:190} INFO - [download]  95.1% of ~   2.83MiB at  574.09KiB/s ETA 00:00 (frag 59/61)
+[2025-05-12T10:27:38.836+0000] {logging_mixin.py:190} INFO - [download]  96.7% of ~   2.79MiB at  573.22KiB/s ETA 00:00 (frag 59/61)
+[2025-05-12T10:27:38.837+0000] {logging_mixin.py:190} INFO - [download]  96.8% of ~   2.79MiB at  573.22KiB/s ETA 00:00 (frag 59/61)
+[2025-05-12T10:27:38.837+0000] {logging_mixin.py:190} INFO - [download]  96.8% of ~   2.79MiB at  573.22KiB/s ETA 00:00 (frag 59/61)
+[2025-05-12T10:27:38.838+0000] {logging_mixin.py:190} INFO - [download]  97.0% of ~   2.79MiB at  573.22KiB/s ETA 00:00 (frag 59/61)
+[2025-05-12T10:27:38.840+0000] {logging_mixin.py:190} INFO - [download]  97.3% of ~   2.80MiB at  573.22KiB/s ETA 00:00 (frag 59/61)
+[2025-05-12T10:27:38.843+0000] {logging_mixin.py:190} INFO - [download]  97.3% of ~   2.82MiB at  573.22KiB/s ETA 00:00 (frag 59/61)
+[2025-05-12T10:27:38.844+0000] {logging_mixin.py:190} INFO - [download]  96.7% of ~   2.83MiB at  573.22KiB/s ETA 00:00 (frag 60/61)
+[2025-05-12T10:27:38.905+0000] {logging_mixin.py:190} INFO - [download]  98.4% of ~   2.79MiB at  572.59KiB/s ETA 00:00 (frag 60/61)
+[2025-05-12T10:27:38.905+0000] {logging_mixin.py:190} INFO - [download]  98.4% of ~   2.79MiB at  572.59KiB/s ETA 00:00 (frag 60/61)
+[2025-05-12T10:27:38.906+0000] {logging_mixin.py:190} INFO - [download]  98.5% of ~   2.79MiB at  572.59KiB/s ETA 00:00 (frag 60/61)
+[2025-05-12T10:27:38.906+0000] {logging_mixin.py:190} INFO - [download]  98.6% of ~   2.79MiB at  572.59KiB/s ETA 00:00 (frag 60/61)
+[2025-05-12T10:27:38.908+0000] {logging_mixin.py:190} INFO - [download]  98.9% of ~   2.80MiB at  572.59KiB/s ETA 00:00 (frag 60/61)
+[2025-05-12T10:27:38.911+0000] {logging_mixin.py:190} INFO - [download]  98.9% of ~   2.82MiB at  572.59KiB/s ETA 00:00 (frag 60/61)
+[2025-05-12T10:27:38.912+0000] {logging_mixin.py:190} INFO - [download]  98.4% of ~   2.83MiB at  572.59KiB/s ETA 00:00 (frag 61/61)
+[2025-05-12T10:27:38.974+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~   2.79MiB at  572.12KiB/s ETA 00:00 (frag 61/61)
+[2025-05-12T10:27:38.974+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~   2.79MiB at  572.12KiB/s ETA 00:00 (frag 61/61)
+[2025-05-12T10:27:38.975+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~   2.79MiB at  572.12KiB/s ETA 00:00 (frag 61/61)
+[2025-05-12T10:27:38.976+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~   2.79MiB at  572.12KiB/s ETA 00:00 (frag 62/61)
+[2025-05-12T10:27:38.984+0000] {logging_mixin.py:190} INFO - [download] 100% of    2.79MiB in 00:00:04 at 592.55KiB/s               
+[2025-05-12T10:27:39.111+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1916999224664953190.mp3
+[2025-05-12T10:27:40.695+0000] {logging_mixin.py:190} INFO - Deleting original file data/1916999224664953190 (pass -k to keep)
+[2025-05-12T10:27:40.698+0000] {downloader.py:92} INFO - Download status for https://x.com/elonmusk/status/1916999224664953190/video/1: Success
+[2025-05-12T10:27:40.698+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1916999224664953190
+[2025-05-12T10:27:40.707+0000] {logging_mixin.py:190} INFO - Downloaded video 1916999224664953190 to data/1916999224664953190
+[2025-05-12T10:27:40.837+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T10:27:40.867+0000] {logging_mixin.py:190} INFO - [twitter] Extracting URL: https://x.com/elonmusk/status/1907317741763084507/video/1
+[2025-05-12T10:27:40.868+0000] {logging_mixin.py:190} INFO - [twitter] 1907317741763084507: Downloading guest token
+[2025-05-12T10:27:41.193+0000] {logging_mixin.py:190} INFO - [twitter] 1907317741763084507: Downloading GraphQL JSON
+[2025-05-12T10:27:41.511+0000] {logging_mixin.py:190} INFO - [twitter] Downloading playlist 1907317741763084507 - add --no-playlist to download just the URL-specified video number 1
+[2025-05-12T10:27:41.512+0000] {logging_mixin.py:190} INFO - [twitter] 1907317741763084507: Downloading m3u8 information
+[2025-05-12T10:27:41.685+0000] {logging_mixin.py:190} INFO - [info] 1907317725434720256: Downloading 1 format(s): hls-audio-128000-Audio
+[2025-05-12T10:27:41.688+0000] {logging_mixin.py:190} INFO - [hlsnative] Downloading m3u8 manifest
+[2025-05-12T10:27:41.741+0000] {logging_mixin.py:190} INFO - [hlsnative] Total fragments: 6
+[2025-05-12T10:27:41.742+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1907317741763084507
+[2025-05-12T10:27:41.797+0000] {logging_mixin.py:190} INFO - [download]  16.7% of ~   4.61KiB at    4.20KiB/s ETA Unknown (frag 0/6)
+[2025-05-12T10:27:41.798+0000] {logging_mixin.py:190} INFO - [download]   8.3% of ~   9.21KiB at    4.20KiB/s ETA Unknown (frag 1/6)
+[2025-05-12T10:27:41.866+0000] {logging_mixin.py:190} INFO - [download]   1.2% of ~ 145.71KiB at    7.21KiB/s ETA Unknown (frag 1/6)
+[2025-05-12T10:27:41.867+0000] {logging_mixin.py:190} INFO - [download]   2.5% of ~ 148.71KiB at    7.21KiB/s ETA Unknown (frag 1/6)
+[2025-05-12T10:27:41.868+0000] {logging_mixin.py:190} INFO - [download]   5.0% of ~ 154.71KiB at    7.21KiB/s ETA Unknown (frag 1/6)
+[2025-05-12T10:27:41.869+0000] {logging_mixin.py:190} INFO - [download]   9.5% of ~ 166.71KiB at    7.21KiB/s ETA Unknown (frag 1/6)
+[2025-05-12T10:27:41.872+0000] {logging_mixin.py:190} INFO - [download]  16.7% of ~ 190.71KiB at    7.21KiB/s ETA Unknown (frag 1/6)
+[2025-05-12T10:27:41.875+0000] {logging_mixin.py:190} INFO - [download]  20.3% of ~ 238.71KiB at    7.21KiB/s ETA Unknown (frag 1/6)
+[2025-05-12T10:27:41.876+0000] {logging_mixin.py:190} INFO - [download]  16.8% of ~ 289.12KiB at    7.21KiB/s ETA Unknown (frag 2/6)
+[2025-05-12T10:27:41.946+0000] {logging_mixin.py:190} INFO - [download]  25.8% of ~ 192.20KiB at   78.15KiB/s ETA Unknown (frag 2/6)
+[2025-05-12T10:27:41.946+0000] {logging_mixin.py:190} INFO - [download]  26.6% of ~ 194.20KiB at   78.15KiB/s ETA Unknown (frag 2/6)
+[2025-05-12T10:27:41.947+0000] {logging_mixin.py:190} INFO - [download]  28.0% of ~ 198.20KiB at   78.15KiB/s ETA Unknown (frag 2/6)
+[2025-05-12T10:27:41.948+0000] {logging_mixin.py:190} INFO - [download]  30.8% of ~ 206.20KiB at   78.15KiB/s ETA Unknown (frag 2/6)
+[2025-05-12T10:27:41.951+0000] {logging_mixin.py:190} INFO - [download]  35.8% of ~ 222.20KiB at   78.15KiB/s ETA Unknown (frag 2/6)
+[2025-05-12T10:27:41.955+0000] {logging_mixin.py:190} INFO - [download]  37.8% of ~ 254.20KiB at   78.15KiB/s ETA Unknown (frag 2/6)
+[2025-05-12T10:27:41.956+0000] {logging_mixin.py:190} INFO - [download]  33.5% of ~ 287.26KiB at   78.15KiB/s ETA Unknown (frag 3/6)
+[2025-05-12T10:27:42.024+0000] {logging_mixin.py:190} INFO - [download]  45.0% of ~ 215.75KiB at  158.20KiB/s ETA Unknown (frag 3/6)
+[2025-05-12T10:27:42.024+0000] {logging_mixin.py:190} INFO - [download]  45.6% of ~ 217.25KiB at  158.20KiB/s ETA Unknown (frag 3/6)
+[2025-05-12T10:27:42.025+0000] {logging_mixin.py:190} INFO - [download]  46.8% of ~ 220.25KiB at  158.20KiB/s ETA Unknown (frag 3/6)
+[2025-05-12T10:27:42.025+0000] {logging_mixin.py:190} INFO - [download]  49.1% of ~ 226.25KiB at  158.20KiB/s ETA Unknown (frag 3/6)
+[2025-05-12T10:27:42.027+0000] {logging_mixin.py:190} INFO - [download]  53.3% of ~ 238.25KiB at  158.20KiB/s ETA Unknown (frag 3/6)
+[2025-05-12T10:27:42.031+0000] {logging_mixin.py:190} INFO - [download]  54.8% of ~ 262.25KiB at  158.20KiB/s ETA Unknown (frag 3/6)
+[2025-05-12T10:27:42.032+0000] {logging_mixin.py:190} INFO - [download]  50.1% of ~ 287.36KiB at  158.20KiB/s ETA Unknown (frag 4/6)
+[2025-05-12T10:27:42.094+0000] {logging_mixin.py:190} INFO - [download]  63.1% of ~ 229.67KiB at  234.22KiB/s ETA Unknown (frag 4/6)
+[2025-05-12T10:27:42.095+0000] {logging_mixin.py:190} INFO - [download]  63.6% of ~ 230.87KiB at  234.22KiB/s ETA Unknown (frag 4/6)
+[2025-05-12T10:27:42.095+0000] {logging_mixin.py:190} INFO - [download]  64.7% of ~ 233.27KiB at  234.22KiB/s ETA Unknown (frag 4/6)
+[2025-05-12T10:27:42.096+0000] {logging_mixin.py:190} INFO - [download]  66.7% of ~ 238.07KiB at  234.22KiB/s ETA Unknown (frag 4/6)
+[2025-05-12T10:27:42.098+0000] {logging_mixin.py:190} INFO - [download]  70.6% of ~ 247.67KiB at  234.22KiB/s ETA Unknown (frag 4/6)
+[2025-05-12T10:27:42.101+0000] {logging_mixin.py:190} INFO - [download]  71.7% of ~ 266.87KiB at  234.22KiB/s ETA Unknown (frag 4/6)
+[2025-05-12T10:27:42.102+0000] {logging_mixin.py:190} INFO - [download]  66.7% of ~ 286.74KiB at  234.22KiB/s ETA Unknown (frag 5/6)
+[2025-05-12T10:27:42.160+0000] {logging_mixin.py:190} INFO - [download]  80.6% of ~ 238.66KiB at  302.10KiB/s ETA Unknown (frag 5/6)
+[2025-05-12T10:27:42.161+0000] {logging_mixin.py:190} INFO - [download]  81.1% of ~ 239.66KiB at  302.10KiB/s ETA Unknown (frag 5/6)
+[2025-05-12T10:27:42.161+0000] {logging_mixin.py:190} INFO - [download]  82.1% of ~ 241.66KiB at  302.10KiB/s ETA Unknown (frag 5/6)
+[2025-05-12T10:27:42.162+0000] {logging_mixin.py:190} INFO - [download]  84.0% of ~ 245.66KiB at  302.10KiB/s ETA Unknown (frag 5/6)
+[2025-05-12T10:27:42.163+0000] {logging_mixin.py:190} INFO - [download]  87.7% of ~ 253.66KiB at  302.10KiB/s ETA Unknown (frag 5/6)
+[2025-05-12T10:27:42.167+0000] {logging_mixin.py:190} INFO - [download]  88.5% of ~ 269.66KiB at  302.10KiB/s ETA Unknown (frag 5/6)
+[2025-05-12T10:27:42.168+0000] {logging_mixin.py:190} INFO - [download]  83.5% of ~ 285.93KiB at  302.10KiB/s ETA Unknown (frag 6/6)
+[2025-05-12T10:27:42.228+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~ 239.66KiB at  359.42KiB/s ETA Unknown (frag 6/6)
+[2025-05-12T10:27:42.229+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~ 241.66KiB at  359.42KiB/s ETA Unknown (frag 6/6)
+[2025-05-12T10:27:42.229+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~ 245.66KiB at  359.42KiB/s ETA Unknown (frag 6/6)
+[2025-05-12T10:27:42.230+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~ 253.66KiB at  359.42KiB/s ETA Unknown (frag 6/6)
+[2025-05-12T10:27:42.233+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~ 267.76KiB at  359.42KiB/s ETA Unknown (frag 6/6)
+[2025-05-12T10:27:42.233+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~ 267.76KiB at  359.42KiB/s ETA Unknown (frag 7/6)
+[2025-05-12T10:27:42.234+0000] {logging_mixin.py:190} INFO - [download] 100% of  267.76KiB in 00:00:00 at 544.20KiB/s               
+[2025-05-12T10:27:42.321+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1907317741763084507.mp3
+[2025-05-12T10:27:42.501+0000] {logging_mixin.py:190} INFO - Deleting original file data/1907317741763084507 (pass -k to keep)
+[2025-05-12T10:27:42.504+0000] {downloader.py:92} INFO - Download status for https://x.com/elonmusk/status/1907317741763084507/video/1: Success
+[2025-05-12T10:27:42.505+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1907317741763084507
+[2025-05-12T10:27:42.510+0000] {logging_mixin.py:190} INFO - Downloaded video 1907317741763084507 to data/1907317741763084507
+[2025-05-12T10:27:42.622+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-12T10:27:42.651+0000] {logging_mixin.py:190} INFO - [twitter] Extracting URL: https://x.com/elonmusk/status/1921015655584985240/video/1
+[2025-05-12T10:27:42.652+0000] {logging_mixin.py:190} INFO - [twitter] 1921015655584985240: Downloading guest token
+[2025-05-12T10:27:42.927+0000] {logging_mixin.py:190} INFO - [twitter] 1921015655584985240: Downloading GraphQL JSON
+[2025-05-12T10:27:43.242+0000] {logging_mixin.py:190} INFO - [twitter] Downloading playlist 1921015655584985240 - add --no-playlist to download just the URL-specified video number 1
+[2025-05-12T10:27:43.242+0000] {logging_mixin.py:190} INFO - [twitter] 1921015655584985240: Downloading m3u8 information
+[2025-05-12T10:27:43.426+0000] {logging_mixin.py:190} INFO - [info] 1921015633283588096: Downloading 1 format(s): hls-audio-128000-Audio
+[2025-05-12T10:27:43.429+0000] {logging_mixin.py:190} INFO - [hlsnative] Downloading m3u8 manifest
+[2025-05-12T10:27:43.486+0000] {logging_mixin.py:190} INFO - [hlsnative] Total fragments: 5
+[2025-05-12T10:27:43.486+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1921015655584985240
+[2025-05-12T10:27:43.543+0000] {logging_mixin.py:190} INFO - [download]  20.0% of ~   3.84KiB at    4.12KiB/s ETA Unknown (frag 0/5)
+[2025-05-12T10:27:43.543+0000] {logging_mixin.py:190} INFO - [download]  10.0% of ~   7.68KiB at    4.12KiB/s ETA Unknown (frag 1/5)
+[2025-05-12T10:27:43.616+0000] {logging_mixin.py:190} INFO - [download]   1.5% of ~ 121.66KiB at    6.99KiB/s ETA Unknown (frag 1/5)
+[2025-05-12T10:27:43.616+0000] {logging_mixin.py:190} INFO - [download]   3.0% of ~ 124.16KiB at    6.99KiB/s ETA Unknown (frag 1/5)
+[2025-05-12T10:27:43.617+0000] {logging_mixin.py:190} INFO - [download]   6.0% of ~ 129.16KiB at    6.99KiB/s ETA Unknown (frag 1/5)
+[2025-05-12T10:27:43.619+0000] {logging_mixin.py:190} INFO - [download]  11.3% of ~ 139.16KiB at    6.99KiB/s ETA Unknown (frag 1/5)
+[2025-05-12T10:27:43.623+0000] {logging_mixin.py:190} INFO - [download]  20.0% of ~ 159.16KiB at    6.99KiB/s ETA Unknown (frag 1/5)
+[2025-05-12T10:27:43.627+0000] {logging_mixin.py:190} INFO - [download]  24.4% of ~ 199.16KiB at    6.99KiB/s ETA Unknown (frag 1/5)
+[2025-05-12T10:27:43.628+0000] {logging_mixin.py:190} INFO - [download]  20.2% of ~ 241.41KiB at    6.99KiB/s ETA Unknown (frag 2/5)
+[2025-05-12T10:27:43.691+0000] {logging_mixin.py:190} INFO - [download]  31.0% of ~ 160.14KiB at   77.88KiB/s ETA Unknown (frag 2/5)
+[2025-05-12T10:27:43.691+0000] {logging_mixin.py:190} INFO - [download]  31.9% of ~ 161.80KiB at   77.88KiB/s ETA Unknown (frag 2/5)
+[2025-05-12T10:27:43.692+0000] {logging_mixin.py:190} INFO - [download]  33.7% of ~ 165.14KiB at   77.88KiB/s ETA Unknown (frag 2/5)
+[2025-05-12T10:27:43.693+0000] {logging_mixin.py:190} INFO - [download]  37.1% of ~ 171.80KiB at   77.88KiB/s ETA Unknown (frag 2/5)
+[2025-05-12T10:27:43.694+0000] {logging_mixin.py:190} INFO - [download]  43.0% of ~ 185.14KiB at   77.88KiB/s ETA Unknown (frag 2/5)
+[2025-05-12T10:27:43.698+0000] {logging_mixin.py:190} INFO - [download]  45.4% of ~ 211.80KiB at   77.88KiB/s ETA Unknown (frag 2/5)
+[2025-05-12T10:27:43.699+0000] {logging_mixin.py:190} INFO - [download]  40.2% of ~ 239.16KiB at   77.88KiB/s ETA Unknown (frag 3/5)
+[2025-05-12T10:27:43.757+0000] {logging_mixin.py:190} INFO - [download]  54.0% of ~ 179.81KiB at  162.11KiB/s ETA Unknown (frag 3/5)
+[2025-05-12T10:27:43.758+0000] {logging_mixin.py:190} INFO - [download]  54.7% of ~ 181.06KiB at  162.11KiB/s ETA Unknown (frag 3/5)
+[2025-05-12T10:27:43.758+0000] {logging_mixin.py:190} INFO - [download]  56.2% of ~ 183.56KiB at  162.11KiB/s ETA Unknown (frag 3/5)
+[2025-05-12T10:27:43.759+0000] {logging_mixin.py:190} INFO - [download]  58.9% of ~ 188.56KiB at  162.11KiB/s ETA Unknown (frag 3/5)
+[2025-05-12T10:27:43.761+0000] {logging_mixin.py:190} INFO - [download]  64.0% of ~ 198.56KiB at  162.11KiB/s ETA Unknown (frag 3/5)
+[2025-05-12T10:27:43.765+0000] {logging_mixin.py:190} INFO - [download]  65.8% of ~ 218.56KiB at  162.11KiB/s ETA Unknown (frag 3/5)
+[2025-05-12T10:27:43.766+0000] {logging_mixin.py:190} INFO - [download]  60.1% of ~ 239.52KiB at  162.11KiB/s ETA Unknown (frag 4/5)
+[2025-05-12T10:27:43.837+0000] {logging_mixin.py:190} INFO - [download]  75.7% of ~ 191.25KiB at  237.37KiB/s ETA Unknown (frag 4/5)
+[2025-05-12T10:27:43.838+0000] {logging_mixin.py:190} INFO - [download]  76.4% of ~ 192.25KiB at  237.37KiB/s ETA Unknown (frag 4/5)
+[2025-05-12T10:27:43.839+0000] {logging_mixin.py:190} INFO - [download]  77.7% of ~ 194.25KiB at  237.37KiB/s ETA Unknown (frag 4/5)
+[2025-05-12T10:27:43.840+0000] {logging_mixin.py:190} INFO - [download]  80.1% of ~ 198.25KiB at  237.37KiB/s ETA Unknown (frag 4/5)
+[2025-05-12T10:27:43.840+0000] {logging_mixin.py:190} INFO - [download]  84.8% of ~ 206.25KiB at  237.37KiB/s ETA Unknown (frag 4/5)
+[2025-05-12T10:27:43.844+0000] {logging_mixin.py:190} INFO - [download]  86.1% of ~ 222.25KiB at  237.37KiB/s ETA Unknown (frag 4/5)
+[2025-05-12T10:27:43.845+0000] {logging_mixin.py:190} INFO - [download]  80.1% of ~ 238.65KiB at  237.37KiB/s ETA Unknown (frag 5/5)
+[2025-05-12T10:27:43.907+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~ 192.25KiB at  303.37KiB/s ETA Unknown (frag 5/5)
+[2025-05-12T10:27:43.908+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~ 194.25KiB at  303.37KiB/s ETA Unknown (frag 5/5)
+[2025-05-12T10:27:43.908+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~ 198.25KiB at  303.37KiB/s ETA Unknown (frag 5/5)
+[2025-05-12T10:27:43.909+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~ 206.25KiB at  303.37KiB/s ETA Unknown (frag 5/5)
+[2025-05-12T10:27:43.909+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~ 209.51KiB at  303.37KiB/s ETA Unknown (frag 5/5)
+[2025-05-12T10:27:43.910+0000] {logging_mixin.py:190} INFO - [download] 100.0% of ~ 209.51KiB at  303.37KiB/s ETA Unknown (frag 6/5)
+[2025-05-12T10:27:43.910+0000] {logging_mixin.py:190} INFO - [download] 100% of  209.51KiB in 00:00:00 at 494.52KiB/s               
+[2025-05-12T10:27:44.005+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1921015655584985240.mp3
+[2025-05-12T10:27:44.177+0000] {logging_mixin.py:190} INFO - Deleting original file data/1921015655584985240 (pass -k to keep)
+[2025-05-12T10:27:44.180+0000] {downloader.py:92} INFO - Download status for https://x.com/elonmusk/status/1921015655584985240/video/1: Success
+[2025-05-12T10:27:44.180+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1921015655584985240
+[2025-05-12T10:27:44.186+0000] {logging_mixin.py:190} INFO - Downloaded video 1921015655584985240 to data/1921015655584985240
+[2025-05-12T10:27:44.186+0000] {logging_mixin.py:190} INFO - Downloaded 5 new videos.
+[2025-05-12T10:27:44.226+0000] {python.py:240} INFO - Done. Returned value was: [{'video_id': '1916035259990479114', 'file_path': 'data/1916035259990479114.mp3/.mp3'}, {'video_id': '1921611528467341607', 'file_path': 'data/1921611528467341607.mp3/.mp3'}, {'video_id': '1916999224664953190', 'file_path': 'data/1916999224664953190'}, {'video_id': '1907317741763084507', 'file_path': 'data/1907317741763084507'}, {'video_id': '1921015655584985240', 'file_path': 'data/1921015655584985240'}]
+[2025-05-12T10:27:44.244+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-12T10:27:44.244+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=x_videos_scraper_dag, task_id=x_videos_scraper, run_id=manual__2025-05-12T10:27:04.898280+00:00, execution_date=20250512T102704, start_date=20250512T102705, end_date=20250512T102744
+[2025-05-12T10:27:44.268+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-12T10:27:44.283+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-12T10:27:44.284+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

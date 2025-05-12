@@ -4649,3 +4649,23 @@ sqlalchemy.exc.InvalidRequestError: Table 'facebook' is already defined for this
 [2025-05-09T11:02:26.777+0000] {logging_mixin.py:190} INFO - [2025-05-09T11:02:26.776+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/insta_scraper.py
 [2025-05-09T11:02:26.880+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/insta_scraper.py
 [2025-05-09T11:02:26.895+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/insta_scraper.py took 0.127 seconds
+[2025-05-09T11:02:57.477+0000] {processor.py:186} INFO - Started process (PID=4290) to work on /opt/airflow/dags/tasks/insta_scraper.py
+[2025-05-09T11:02:57.478+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/insta_scraper.py for tasks to queue
+[2025-05-09T11:02:57.479+0000] {logging_mixin.py:190} INFO - [2025-05-09T11:02:57.479+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/insta_scraper.py
+[2025-05-09T11:02:57.561+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/insta_scraper.py
+[2025-05-09T11:02:57.570+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/insta_scraper.py took 0.097 seconds
+[2025-05-09T11:03:28.129+0000] {processor.py:186} INFO - Started process (PID=4309) to work on /opt/airflow/dags/tasks/insta_scraper.py
+[2025-05-09T11:03:28.130+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/insta_scraper.py for tasks to queue
+[2025-05-09T11:03:28.131+0000] {logging_mixin.py:190} INFO - [2025-05-09T11:03:28.131+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/insta_scraper.py
+[2025-05-09T11:03:28.216+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/insta_scraper.py
+[2025-05-09T11:03:28.225+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/insta_scraper.py took 0.101 seconds
+[2025-05-09T11:03:58.716+0000] {processor.py:186} INFO - Started process (PID=4328) to work on /opt/airflow/dags/tasks/insta_scraper.py
+[2025-05-09T11:03:58.717+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/insta_scraper.py for tasks to queue
+[2025-05-09T11:03:58.718+0000] {logging_mixin.py:190} INFO - [2025-05-09T11:03:58.718+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/insta_scraper.py
+[2025-05-09T11:03:58.791+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/insta_scraper.py
+[2025-05-09T11:03:58.802+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/insta_scraper.py took 0.090 seconds
+[2025-05-09T11:04:29.569+0000] {processor.py:186} INFO - Started process (PID=4347) to work on /opt/airflow/dags/tasks/insta_scraper.py
+[2025-05-09T11:04:29.570+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/insta_scraper.py for tasks to queue
+[2025-05-09T11:04:29.572+0000] {logging_mixin.py:190} INFO - [2025-05-09T11:04:29.572+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/insta_scraper.py
+[2025-05-09T11:04:29.656+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/insta_scraper.py
+[2025-05-09T11:04:29.666+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/insta_scraper.py took 0.106 seconds

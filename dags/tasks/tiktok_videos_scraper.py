@@ -1,6 +1,7 @@
 from airflow.decorators import task
 from dags.app.worker.schema import TaskStatus
 from utils.downloader import batch_download_from_file, download_video
+from dags.tasks.get_transcript import audio_to_transcript
 from config import Config
 
 import sys
@@ -34,11 +35,11 @@ def tiktok_videos_scraper(id = "therock",count = 10, ms_tokens=None, TIKTOK_ERRO
             async for video in user.videos(count=count):
                 print(f"https://www.tiktok.com/@{id}/video/"+video.as_dict['id'])
                 videos.append(f"https://www.tiktok.com/@{id}/video/"+video.as_dict['id'])
-                os.makedirs(os.path.dirname(TIKTOK_ERROR_FILE_PATH), exist_ok=True)
-                with open(TIKTOK_ERROR_FILE_PATH, "w",encoding='utf-8') as f:
-                    f.write(f"{video}\n")        
+                # os.makedirs(os.path.dirname(TIKTOK_ERROR_FILE_PATH), exist_ok=True)
+                # with open(TIKTOK_ERROR_FILE_PATH, "w",encoding='utf-8') as f:
+                #     f.write(f"{video}\n")        
 
-            results = get_all_videos_from_db()
+            results = get_all_videos_from_db(platform="tiktok")
             for result in results:
                 if result.url in videos:
                     videos.remove(result.url)
@@ -48,12 +49,27 @@ def tiktok_videos_scraper(id = "therock",count = 10, ms_tokens=None, TIKTOK_ERRO
 
             print(f"New videos: {len(new_links)}")
 
+            results = []
+
             for link in new_links:
                 video_id = extract_id(link)
-                task_id = create_pending_video(video_id, link)
-                result = download_video(link, Config.DOWNLOAD_DIRECTORY)
-                if result:
-                    update_video_status(video_id, TaskStatus.DOWNLOADED.value, platform="tiktok")
-
-            # batch_download_from_file(TIKTOK_FILE_PATH, DOWNLOAD_DIRECTORY, platform="tiktok")
-    asyncio.run(user_example())
+                task_id = create_pending_video(video_id, link, platform="tiktok")
+                file_path = download_video(link, Config.DOWNLOAD_DIRECTORY)
+                if file_path:
+                    update_video_status(video_id, TaskStatus.PROCESSING.value, platform="tiktok")
+                    result = {
+                        "video_id": video_id,
+                        "file_path": file_path,
+                    }
+                    print(f"Downloaded video {result['video_id']} to {result['file_path']}")
+                    results.append(result)                    
+                    
+                else:
+                    update_video_status(video_id, TaskStatus.FAILURE.value, platform="tiktok")
+                
+            print(f"Downloaded {len(results)} new videos.")
+            return results
+    #         # batch_download_from_file(TIKTOK_FILE_PATH, DOWNLOAD_DIRECTORY, platform="tiktok")
+    # asyncio.run(user_example())
+    results = asyncio.run(user_example())
+    return results  # thêm dòng này

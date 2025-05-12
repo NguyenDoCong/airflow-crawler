@@ -22,11 +22,20 @@ def get_video_from_db(video_id):
     finally:
         db.close()
 
-def get_all_videos_from_db():
+def get_all_videos_from_db(platform=None):
     """Get all data from database"""
     db = get_db()
     try:
-        return db.query(Facebook).all()
+        if platform == "x":
+            return db.query(X).filter(Tiktok.status == TaskStatus.SUCCESS.value).all()
+        elif platform == "tiktok":
+            return db.query(Tiktok).filter(Tiktok.status == TaskStatus.SUCCESS.value).all()
+        elif platform == "instagram":
+            return db.query(Instagram).filter(Tiktok.status == TaskStatus.SUCCESS.value).all()
+        else:
+            # Default to Facebook if no platform is specified
+            # or if the platform is not recognized
+            return db.query(Facebook).filter(Tiktok.status == TaskStatus.SUCCESS.value).all()
     except SQLAlchemyError as e:
         logger.error(f"Error when query database: {str(e)}")
         return None

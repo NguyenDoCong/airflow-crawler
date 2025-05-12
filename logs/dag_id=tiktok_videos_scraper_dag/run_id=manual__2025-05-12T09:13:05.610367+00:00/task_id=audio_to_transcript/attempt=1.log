@@ -1,0 +1,190 @@
+[2025-05-12T09:14:00.264+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-12T09:14:00.275+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.audio_to_transcript manual__2025-05-12T09:13:05.610367+00:00 [queued]>
+[2025-05-12T09:14:00.280+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.audio_to_transcript manual__2025-05-12T09:13:05.610367+00:00 [queued]>
+[2025-05-12T09:14:00.280+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-12T09:14:00.288+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonVirtualenvDecoratedOperator): audio_to_transcript> on 2025-05-12 09:13:05.610367+00:00
+[2025-05-12T09:14:00.291+0000] {standard_task_runner.py:72} INFO - Started process 2491 to run task
+[2025-05-12T09:14:00.294+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'audio_to_transcript', 'manual__2025-05-12T09:13:05.610367+00:00', '--job-id', '5239', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpdiaj8sx8']
+[2025-05-12T09:14:00.295+0000] {standard_task_runner.py:105} INFO - Job 5239: Subtask audio_to_transcript
+[2025-05-12T09:14:00.330+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.audio_to_transcript manual__2025-05-12T09:13:05.610367+00:00 [running]> on host c8bc4aa1f737
+[2025-05-12T09:14:00.392+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='audio_to_transcript' AIRFLOW_CTX_EXECUTION_DATE='2025-05-12T09:13:05.610367+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-12T09:13:05.610367+00:00'
+[2025-05-12T09:14:00.393+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-12T09:14:00.396+0000] {process_utils.py:186} INFO - Executing cmd: /home/airflow/.local/bin/python -m virtualenv /tmp/venv9nnrkmo1 --python=python
+[2025-05-12T09:14:00.396+0000] {process_utils.py:190} INFO - Output:
+[2025-05-12T09:14:00.963+0000] {process_utils.py:194} INFO - created virtual environment CPython3.10.14.final.0-64 in 193ms
+[2025-05-12T09:14:00.963+0000] {process_utils.py:194} INFO -   creator CPython3Posix(dest=/tmp/venv9nnrkmo1, clear=False, no_vcs_ignore=False, global=False)
+[2025-05-12T09:14:00.963+0000] {process_utils.py:194} INFO -   seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/airflow/.local/share/virtualenv)
+[2025-05-12T09:14:00.963+0000] {process_utils.py:194} INFO -     added seed packages: pip==24.1, setuptools==70.1.0, wheel==0.43.0
+[2025-05-12T09:14:00.963+0000] {process_utils.py:194} INFO -   activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+[2025-05-12T09:14:00.989+0000] {process_utils.py:186} INFO - Executing cmd: /tmp/venv9nnrkmo1/bin/pip install -r /tmp/venv9nnrkmo1/requirements.txt
+[2025-05-12T09:14:00.989+0000] {process_utils.py:190} INFO - Output:
+[2025-05-12T09:14:01.887+0000] {process_utils.py:194} INFO - Collecting faster-whisper==1.1.1 (from -r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:01.888+0000] {process_utils.py:194} INFO -   Using cached faster_whisper-1.1.1-py3-none-any.whl.metadata (16 kB)
+[2025-05-12T09:14:02.007+0000] {process_utils.py:194} INFO - Collecting ctranslate2<5,>=4.0 (from faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:02.008+0000] {process_utils.py:194} INFO -   Using cached ctranslate2-4.6.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (10 kB)
+[2025-05-12T09:14:02.111+0000] {process_utils.py:194} INFO - Collecting huggingface-hub>=0.13 (from faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:02.112+0000] {process_utils.py:194} INFO -   Using cached huggingface_hub-0.31.1-py3-none-any.whl.metadata (13 kB)
+[2025-05-12T09:14:02.299+0000] {process_utils.py:194} INFO - Collecting tokenizers<1,>=0.13 (from faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:02.300+0000] {process_utils.py:194} INFO -   Using cached tokenizers-0.21.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+[2025-05-12T09:14:02.401+0000] {process_utils.py:194} INFO - Collecting onnxruntime<2,>=1.14 (from faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:02.403+0000] {process_utils.py:194} INFO -   Using cached onnxruntime-1.22.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (4.5 kB)
+[2025-05-12T09:14:02.503+0000] {process_utils.py:194} INFO - Collecting av>=11 (from faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:02.504+0000] {process_utils.py:194} INFO -   Using cached av-14.3.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.7 kB)
+[2025-05-12T09:14:02.617+0000] {process_utils.py:194} INFO - Collecting tqdm (from faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:02.618+0000] {process_utils.py:194} INFO -   Using cached tqdm-4.67.1-py3-none-any.whl.metadata (57 kB)
+[2025-05-12T09:14:02.622+0000] {process_utils.py:194} INFO - Requirement already satisfied: setuptools in /tmp/venv9nnrkmo1/lib/python3.10/site-packages (from ctranslate2<5,>=4.0->faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1)) (70.1.0)
+[2025-05-12T09:14:02.804+0000] {process_utils.py:194} INFO - Collecting numpy (from ctranslate2<5,>=4.0->faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:02.805+0000] {process_utils.py:194} INFO -   Using cached numpy-2.2.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+[2025-05-12T09:14:02.893+0000] {process_utils.py:194} INFO - Collecting pyyaml<7,>=5.3 (from ctranslate2<5,>=4.0->faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:02.894+0000] {process_utils.py:194} INFO -   Using cached PyYAML-6.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+[2025-05-12T09:14:02.983+0000] {process_utils.py:194} INFO - Collecting filelock (from huggingface-hub>=0.13->faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:02.984+0000] {process_utils.py:194} INFO -   Using cached filelock-3.18.0-py3-none-any.whl.metadata (2.9 kB)
+[2025-05-12T09:14:03.067+0000] {process_utils.py:194} INFO - Collecting fsspec>=2023.5.0 (from huggingface-hub>=0.13->faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:03.069+0000] {process_utils.py:194} INFO -   Using cached fsspec-2025.3.2-py3-none-any.whl.metadata (11 kB)
+[2025-05-12T09:14:03.169+0000] {process_utils.py:194} INFO - Collecting packaging>=20.9 (from huggingface-hub>=0.13->faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:03.170+0000] {process_utils.py:194} INFO -   Using cached packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+[2025-05-12T09:14:03.252+0000] {process_utils.py:194} INFO - Collecting requests (from huggingface-hub>=0.13->faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:03.254+0000] {process_utils.py:194} INFO -   Using cached requests-2.32.3-py3-none-any.whl.metadata (4.6 kB)
+[2025-05-12T09:14:03.337+0000] {process_utils.py:194} INFO - Collecting typing-extensions>=3.7.4.3 (from huggingface-hub>=0.13->faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:03.339+0000] {process_utils.py:194} INFO -   Using cached typing_extensions-4.13.2-py3-none-any.whl.metadata (3.0 kB)
+[2025-05-12T09:14:03.414+0000] {process_utils.py:194} INFO - Collecting hf-xet<2.0.0,>=1.1.0 (from huggingface-hub>=0.13->faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:03.415+0000] {process_utils.py:194} INFO -   Using cached hf_xet-1.1.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (494 bytes)
+[2025-05-12T09:14:03.492+0000] {process_utils.py:194} INFO - Collecting coloredlogs (from onnxruntime<2,>=1.14->faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:03.494+0000] {process_utils.py:194} INFO -   Using cached coloredlogs-15.0.1-py2.py3-none-any.whl.metadata (12 kB)
+[2025-05-12T09:14:03.595+0000] {process_utils.py:194} INFO - Collecting flatbuffers (from onnxruntime<2,>=1.14->faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:03.597+0000] {process_utils.py:194} INFO -   Using cached flatbuffers-25.2.10-py2.py3-none-any.whl.metadata (875 bytes)
+[2025-05-12T09:14:03.815+0000] {process_utils.py:194} INFO - Collecting protobuf (from onnxruntime<2,>=1.14->faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:03.817+0000] {process_utils.py:194} INFO -   Using cached protobuf-6.30.2-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+[2025-05-12T09:14:03.894+0000] {process_utils.py:194} INFO - Collecting sympy (from onnxruntime<2,>=1.14->faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:03.895+0000] {process_utils.py:194} INFO -   Using cached sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+[2025-05-12T09:14:03.990+0000] {process_utils.py:194} INFO - Collecting humanfriendly>=9.1 (from coloredlogs->onnxruntime<2,>=1.14->faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:03.991+0000] {process_utils.py:194} INFO -   Using cached humanfriendly-10.0-py2.py3-none-any.whl.metadata (9.2 kB)
+[2025-05-12T09:14:04.113+0000] {process_utils.py:194} INFO - Collecting charset-normalizer<4,>=2 (from requests->huggingface-hub>=0.13->faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:04.115+0000] {process_utils.py:194} INFO -   Using cached charset_normalizer-3.4.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (35 kB)
+[2025-05-12T09:14:04.192+0000] {process_utils.py:194} INFO - Collecting idna<4,>=2.5 (from requests->huggingface-hub>=0.13->faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:04.194+0000] {process_utils.py:194} INFO -   Using cached idna-3.10-py3-none-any.whl.metadata (10 kB)
+[2025-05-12T09:14:04.286+0000] {process_utils.py:194} INFO - Collecting urllib3<3,>=1.21.1 (from requests->huggingface-hub>=0.13->faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:04.287+0000] {process_utils.py:194} INFO -   Using cached urllib3-2.4.0-py3-none-any.whl.metadata (6.5 kB)
+[2025-05-12T09:14:04.366+0000] {process_utils.py:194} INFO - Collecting certifi>=2017.4.17 (from requests->huggingface-hub>=0.13->faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:04.367+0000] {process_utils.py:194} INFO -   Using cached certifi-2025.4.26-py3-none-any.whl.metadata (2.5 kB)
+[2025-05-12T09:14:04.444+0000] {process_utils.py:194} INFO - Collecting mpmath<1.4,>=1.1.0 (from sympy->onnxruntime<2,>=1.14->faster-whisper==1.1.1->-r /tmp/venv9nnrkmo1/requirements.txt (line 1))
+[2025-05-12T09:14:04.445+0000] {process_utils.py:194} INFO -   Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+[2025-05-12T09:14:04.452+0000] {process_utils.py:194} INFO - Using cached faster_whisper-1.1.1-py3-none-any.whl (1.1 MB)
+[2025-05-12T09:14:04.455+0000] {process_utils.py:194} INFO - Using cached av-14.3.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (34.7 MB)
+[2025-05-12T09:14:04.499+0000] {process_utils.py:194} INFO - Using cached ctranslate2-4.6.0-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (38.4 MB)
+[2025-05-12T09:14:04.544+0000] {process_utils.py:194} INFO - Using cached huggingface_hub-0.31.1-py3-none-any.whl (484 kB)
+[2025-05-12T09:14:04.545+0000] {process_utils.py:194} INFO - Using cached onnxruntime-1.22.0-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.4 MB)
+[2025-05-12T09:14:04.564+0000] {process_utils.py:194} INFO - Using cached tokenizers-0.21.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+[2025-05-12T09:14:04.569+0000] {process_utils.py:194} INFO - Using cached tqdm-4.67.1-py3-none-any.whl (78 kB)
+[2025-05-12T09:14:04.570+0000] {process_utils.py:194} INFO - Using cached fsspec-2025.3.2-py3-none-any.whl (194 kB)
+[2025-05-12T09:14:04.571+0000] {process_utils.py:194} INFO - Using cached hf_xet-1.1.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (53.6 MB)
+[2025-05-12T09:14:04.634+0000] {process_utils.py:194} INFO - Using cached numpy-2.2.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.4 MB)
+[2025-05-12T09:14:04.656+0000] {process_utils.py:194} INFO - Using cached packaging-25.0-py3-none-any.whl (66 kB)
+[2025-05-12T09:14:04.657+0000] {process_utils.py:194} INFO - Using cached PyYAML-6.0.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (751 kB)
+[2025-05-12T09:14:04.658+0000] {process_utils.py:194} INFO - Using cached typing_extensions-4.13.2-py3-none-any.whl (45 kB)
+[2025-05-12T09:14:04.659+0000] {process_utils.py:194} INFO - Using cached coloredlogs-15.0.1-py2.py3-none-any.whl (46 kB)
+[2025-05-12T09:14:04.660+0000] {process_utils.py:194} INFO - Using cached filelock-3.18.0-py3-none-any.whl (16 kB)
+[2025-05-12T09:14:04.661+0000] {process_utils.py:194} INFO - Using cached flatbuffers-25.2.10-py2.py3-none-any.whl (30 kB)
+[2025-05-12T09:14:04.662+0000] {process_utils.py:194} INFO - Using cached protobuf-6.30.2-cp39-abi3-manylinux2014_x86_64.whl (316 kB)
+[2025-05-12T09:14:04.663+0000] {process_utils.py:194} INFO - Using cached requests-2.32.3-py3-none-any.whl (64 kB)
+[2025-05-12T09:14:04.664+0000] {process_utils.py:194} INFO - Using cached sympy-1.14.0-py3-none-any.whl (6.3 MB)
+[2025-05-12T09:14:04.673+0000] {process_utils.py:194} INFO - Using cached certifi-2025.4.26-py3-none-any.whl (159 kB)
+[2025-05-12T09:14:04.674+0000] {process_utils.py:194} INFO - Using cached charset_normalizer-3.4.2-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (149 kB)
+[2025-05-12T09:14:04.675+0000] {process_utils.py:194} INFO - Using cached humanfriendly-10.0-py2.py3-none-any.whl (86 kB)
+[2025-05-12T09:14:04.676+0000] {process_utils.py:194} INFO - Using cached idna-3.10-py3-none-any.whl (70 kB)
+[2025-05-12T09:14:04.677+0000] {process_utils.py:194} INFO - Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+[2025-05-12T09:14:04.678+0000] {process_utils.py:194} INFO - Using cached urllib3-2.4.0-py3-none-any.whl (128 kB)
+[2025-05-12T09:14:04.944+0000] {process_utils.py:194} INFO - Installing collected packages: mpmath, flatbuffers, urllib3, typing-extensions, tqdm, sympy, pyyaml, protobuf, packaging, numpy, idna, humanfriendly, hf-xet, fsspec, filelock, charset-normalizer, certifi, av, requests, ctranslate2, coloredlogs, onnxruntime, huggingface-hub, tokenizers, faster-whisper
+[2025-05-12T09:14:12.204+0000] {process_utils.py:194} INFO - Successfully installed av-14.3.0 certifi-2025.4.26 charset-normalizer-3.4.2 coloredlogs-15.0.1 ctranslate2-4.6.0 faster-whisper-1.1.1 filelock-3.18.0 flatbuffers-25.2.10 fsspec-2025.3.2 hf-xet-1.1.0 huggingface-hub-0.31.1 humanfriendly-10.0 idna-3.10 mpmath-1.3.0 numpy-2.2.5 onnxruntime-1.22.0 packaging-25.0 protobuf-6.30.2 pyyaml-6.0.2 requests-2.32.3 sympy-1.14.0 tokenizers-0.21.1 tqdm-4.67.1 typing-extensions-4.13.2 urllib3-2.4.0
+[2025-05-12T09:14:12.455+0000] {process_utils.py:194} INFO - 
+[2025-05-12T09:14:12.456+0000] {process_utils.py:194} INFO - [notice] A new release of pip is available: 24.1 -> 25.1.1
+[2025-05-12T09:14:12.456+0000] {process_utils.py:194} INFO - [notice] To update, run: python -m pip install --upgrade pip
+[2025-05-12T09:14:12.691+0000] {python.py:513} INFO - Use 'pickle' as serializer.
+[2025-05-12T09:14:12.696+0000] {process_utils.py:186} INFO - Executing cmd: /tmp/venv9nnrkmo1/bin/python /tmp/venv-callu3fuohp4/script.py /tmp/venv-callu3fuohp4/script.in /tmp/venv-callu3fuohp4/script.out /tmp/venv-callu3fuohp4/string_args.txt /tmp/venv-callu3fuohp4/termination.log
+[2025-05-12T09:14:12.697+0000] {process_utils.py:190} INFO - Output:
+[2025-05-12T09:14:13.076+0000] {process_utils.py:194} INFO - Traceback (most recent call last):
+[2025-05-12T09:14:13.076+0000] {process_utils.py:194} INFO -   File "/tmp/venv-callu3fuohp4/script.py", line 83, in <module>
+[2025-05-12T09:14:13.076+0000] {process_utils.py:194} INFO -     res = audio_to_transcript(*arg_dict["args"], **arg_dict["kwargs"])
+[2025-05-12T09:14:13.076+0000] {process_utils.py:194} INFO -   File "/tmp/venv-callu3fuohp4/script.py", line 31, in audio_to_transcript
+[2025-05-12T09:14:13.076+0000] {process_utils.py:194} INFO -     from app.core.database_utils import update_video_status
+[2025-05-12T09:14:13.077+0000] {process_utils.py:194} INFO - ModuleNotFoundError: No module named 'app'
+[2025-05-12T09:14:13.273+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 505, in execute
+    return super().execute(context=serializable_context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 870, in execute_callable
+    result = self._execute_python_callable_in_subprocess(python_path)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 588, in _execute_python_callable_in_subprocess
+    raise AirflowException(error_msg) from None
+airflow.exceptions.AirflowException: Process returned non-zero exit status 1.
+No module named 'app'
+[2025-05-12T09:14:13.276+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=tiktok_videos_scraper_dag, task_id=audio_to_transcript, run_id=manual__2025-05-12T09:13:05.610367+00:00, execution_date=20250512T091305, start_date=20250512T091400, end_date=20250512T091413
+[2025-05-12T09:14:13.301+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-12T09:14:13.302+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 5239 for task audio_to_transcript (Process returned non-zero exit status 1.
+No module named 'app'; 2491)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/decorators/base.py", line 266, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 505, in execute
+    return super().execute(context=serializable_context)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 870, in execute_callable
+    result = self._execute_python_callable_in_subprocess(python_path)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 588, in _execute_python_callable_in_subprocess
+    raise AirflowException(error_msg) from None
+airflow.exceptions.AirflowException: Process returned non-zero exit status 1.
+No module named 'app'
+[2025-05-12T09:14:13.315+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 1
+[2025-05-12T09:14:13.326+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-12T09:14:13.328+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

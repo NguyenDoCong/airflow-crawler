@@ -46,6 +46,14 @@ RUN mkdir -p /opt/airflow/dags /opt/airflow/logs /opt/airflow/plugins /opt/airfl
     && chown -R airflow:root /opt/airflow \
     && chmod -R 775 /opt/airflow
 
+# RUN apt update && apt install -y \
+#     build-essential \
+#     cmake \
+#     git \
+#     curl \
+#     libssl-dev \
+#     ca-certificates
+
 # Set working directory
 WORKDIR /opt/airflow
 
@@ -55,8 +63,6 @@ ENV PYTHONPATH=/opt/airflow
 # Switch back to airflow user for security
 USER airflow
 
+
 # Expose ports (if needed)
 EXPOSE 8080
-
-# Set healthcheck
-HEALTHCHECK CMD ["airflow", "jobs", "check"]

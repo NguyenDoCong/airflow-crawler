@@ -11,4 +11,5 @@ httpx>=0.27.0,<1.0
 ffmpeg
 
 asyncpg
+faster-whisper==1.1.1
 # sqlalchemy>=2.0.0,<3.0

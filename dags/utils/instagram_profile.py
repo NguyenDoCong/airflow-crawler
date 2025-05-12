@@ -89,26 +89,40 @@ class ProfileScraper(BaseInstagramScraper):
                     "[bold red]Don't close the app![/bold red] Saving scraped data to database, it can take a while!"
                 )
 
-                results = get_all_videos_from_db()
-                for result in results:
-                    if result.url in video_urls:
-                        video_urls.remove(result.url)
+                db_videos = get_all_videos_from_db()
+                for video in db_videos:
+                    if video.url in video_urls:
+                        video_urls.remove(video.url)
                 print(f"Remaining new videos: {len(video_urls)}")
 
                 new_links = set(video_urls)
 
                 print(f"New videos: {len(new_links)}")
 
+                results = []
+
                 for link in new_links:
                     video_id = extract_id(link)
-                    task_id = create_pending_video(video_id, link)
-                    result = download_video(link, Config.DOWNLOAD_DIRECTORY)
-                    if result:
-                        update_video_status(video_id, TaskStatus.DOWNLOADED.value, platform="instagram")
+                    task_id = create_pending_video(video_id, link, platform='instagram')
+                    file_path = download_video(link, Config.DOWNLOAD_DIRECTORY)
+                    if file_path:
+                        update_video_status(video_id, TaskStatus.PROCESSING.value, platform="instagram")
+                        result = {
+                            "video_id": video_id,
+                            "file_path": file_path,
+                        }
+                        print(f"Downloaded video {result['video_id']} to {result['file_path']}")
+                        results.append(result)                    
+                        
+                    else:
+                        update_video_status(video_id, TaskStatus.FAILURE.value, platform="instagram")
                     
+                print(f"Downloaded {len(results)} new videos.")
 
                 self._driver.quit()
                 self.success = True
+
+                return results
 
         except Exception as e:
   

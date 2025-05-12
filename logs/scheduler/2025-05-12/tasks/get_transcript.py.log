@@ -1,0 +1,118 @@
+[2025-05-12T09:06:29.650+0000] {processor.py:186} INFO - Started process (PID=2386) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:06:29.650+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:06:29.652+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:06:29.652+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:06:29.662+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:06:29.673+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.028 seconds
+[2025-05-12T09:07:00.209+0000] {processor.py:186} INFO - Started process (PID=2406) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:07:00.238+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:07:00.241+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:07:00.241+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:07:00.253+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:07:00.267+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.064 seconds
+[2025-05-12T09:07:31.065+0000] {processor.py:186} INFO - Started process (PID=2426) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:07:31.066+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:07:31.068+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:07:31.068+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:07:31.077+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:07:31.087+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.026 seconds
+[2025-05-12T09:08:01.792+0000] {processor.py:186} INFO - Started process (PID=2446) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:08:01.806+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:08:01.808+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:08:01.807+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:08:01.818+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:08:01.829+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.042 seconds
+[2025-05-12T09:08:32.429+0000] {processor.py:186} INFO - Started process (PID=2472) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:08:32.445+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:08:32.448+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:08:32.448+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:08:32.457+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:08:32.467+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.043 seconds
+[2025-05-12T09:08:41.042+0000] {processor.py:186} INFO - Started process (PID=2473) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:08:41.043+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:08:41.045+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:08:41.045+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:08:41.048+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:08:41.058+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.021 seconds
+[2025-05-12T09:09:11.574+0000] {processor.py:186} INFO - Started process (PID=2493) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:09:11.589+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:09:11.591+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:09:11.590+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:09:11.593+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:09:11.604+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.034 seconds
+[2025-05-12T09:09:42.180+0000] {processor.py:186} INFO - Started process (PID=2513) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:09:42.181+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:09:42.183+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:09:42.182+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:09:42.185+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:09:42.195+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.020 seconds
+[2025-05-12T09:10:13.247+0000] {processor.py:186} INFO - Started process (PID=2533) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:10:13.255+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:10:13.257+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:10:13.257+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:10:13.260+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:10:13.270+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.028 seconds
+[2025-05-12T09:10:44.036+0000] {processor.py:186} INFO - Started process (PID=2554) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:10:44.037+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:10:44.039+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:10:44.039+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:10:44.042+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:10:44.054+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.022 seconds
+[2025-05-12T09:11:14.714+0000] {processor.py:186} INFO - Started process (PID=2574) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:11:14.717+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:11:14.719+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:11:14.719+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:11:14.722+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:11:14.731+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.022 seconds
+[2025-05-12T09:11:45.221+0000] {processor.py:186} INFO - Started process (PID=2601) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:11:45.222+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:11:45.224+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:11:45.224+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:11:45.227+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:11:45.237+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.020 seconds
+[2025-05-12T09:12:15.694+0000] {processor.py:186} INFO - Started process (PID=2621) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:12:15.698+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:12:15.700+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:12:15.699+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:12:15.702+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:12:15.713+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.024 seconds
+[2025-05-12T09:12:45.135+0000] {processor.py:186} INFO - Started process (PID=2641) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:12:45.139+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:12:45.141+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:12:45.141+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:12:45.143+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:12:45.155+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.024 seconds
+[2025-05-12T09:13:02.514+0000] {processor.py:186} INFO - Started process (PID=2644) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:13:02.515+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:13:02.517+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:13:02.517+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:13:02.518+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:13:02.518+0000] {dagbag.py:365} INFO - File /opt/airflow/dags/tasks/get_transcript.py assumed to contain no DAGs. Skipping.
+[2025-05-12T09:13:02.518+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:13:02.530+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.021 seconds
+[2025-05-12T09:13:03.546+0000] {processor.py:186} INFO - Started process (PID=2645) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:13:03.546+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:13:03.548+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:13:03.547+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:13:03.548+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:13:03.548+0000] {dagbag.py:365} INFO - File /opt/airflow/dags/tasks/get_transcript.py assumed to contain no DAGs. Skipping.
+[2025-05-12T09:13:03.549+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:13:03.559+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.018 seconds
+[2025-05-12T09:13:39.613+0000] {processor.py:186} INFO - Started process (PID=2665) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:13:39.613+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:13:39.615+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:13:39.615+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:13:39.616+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:13:39.616+0000] {dagbag.py:365} INFO - File /opt/airflow/dags/tasks/get_transcript.py assumed to contain no DAGs. Skipping.
+[2025-05-12T09:13:39.616+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:13:39.626+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.018 seconds
+[2025-05-12T09:14:10.324+0000] {processor.py:186} INFO - Started process (PID=2700) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:14:10.326+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:14:10.328+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:14:10.328+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:14:10.330+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:14:10.330+0000] {dagbag.py:365} INFO - File /opt/airflow/dags/tasks/get_transcript.py assumed to contain no DAGs. Skipping.
+[2025-05-12T09:14:10.330+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:14:10.345+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.027 seconds
+[2025-05-12T09:14:41.068+0000] {processor.py:186} INFO - Started process (PID=2720) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:14:41.080+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:14:41.082+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:14:41.082+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:14:41.083+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:14:41.083+0000] {dagbag.py:365} INFO - File /opt/airflow/dags/tasks/get_transcript.py assumed to contain no DAGs. Skipping.
+[2025-05-12T09:14:41.083+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:14:41.095+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.033 seconds
+[2025-05-12T09:15:11.883+0000] {processor.py:186} INFO - Started process (PID=2740) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:15:11.892+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:15:11.895+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:15:11.894+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:15:11.896+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:15:11.896+0000] {dagbag.py:365} INFO - File /opt/airflow/dags/tasks/get_transcript.py assumed to contain no DAGs. Skipping.
+[2025-05-12T09:15:11.896+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:15:11.909+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.032 seconds
+[2025-05-12T09:15:42.552+0000] {processor.py:186} INFO - Started process (PID=2760) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:15:42.561+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:15:42.563+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:15:42.562+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:15:42.563+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:15:42.563+0000] {dagbag.py:365} INFO - File /opt/airflow/dags/tasks/get_transcript.py assumed to contain no DAGs. Skipping.
+[2025-05-12T09:15:42.564+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:15:42.574+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.027 seconds
+[2025-05-12T09:15:51.784+0000] {processor.py:186} INFO - Started process (PID=2763) to work on /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:15:51.800+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/get_transcript.py for tasks to queue
+[2025-05-12T09:15:51.801+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:15:51.801+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:15:51.802+0000] {logging_mixin.py:190} INFO - [2025-05-12T09:15:51.802+0000] {dagbag.py:365} INFO - File /opt/airflow/dags/tasks/get_transcript.py assumed to contain no DAGs. Skipping.
+[2025-05-12T09:15:51.802+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/get_transcript.py
+[2025-05-12T09:15:51.813+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/get_transcript.py took 0.034 seconds

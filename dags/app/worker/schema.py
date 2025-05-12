@@ -4,7 +4,7 @@ from enum import Enum
 class TaskStatus(Enum):
     PENDING: str = "PENDING"
     PROCESSING: str = "PROCESSING"
-    DOWNLOADED: str = "DOWNLOADED"
+    # DOWNLOADED: str = "DOWNLOADED"
     SUCCESS: str = "SUCCESS"
     FAILURE: str = "FAILURE"
     RETRY: str = "RETRY"

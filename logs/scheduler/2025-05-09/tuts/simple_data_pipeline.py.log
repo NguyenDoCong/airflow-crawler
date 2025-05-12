@@ -5983,3 +5983,31 @@
 [2025-05-09T11:02:16.609+0000] {logging_mixin.py:190} INFO - [2025-05-09T11:02:16.608+0000] {dag.py:3211} INFO - Sync 1 DAGs
 [2025-05-09T11:02:16.624+0000] {logging_mixin.py:190} INFO - [2025-05-09T11:02:16.623+0000] {dag.py:4138} INFO - Setting next_dagrun for process_employees to 2025-05-08 00:00:00+00:00, run_after=2025-05-09 00:00:00+00:00
 [2025-05-09T11:02:16.635+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tuts/simple_data_pipeline.py took 0.061 seconds
+[2025-05-09T11:02:47.292+0000] {processor.py:186} INFO - Started process (PID=4287) to work on /opt/airflow/dags/tuts/simple_data_pipeline.py
+[2025-05-09T11:02:47.293+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tuts/simple_data_pipeline.py for tasks to queue
+[2025-05-09T11:02:47.294+0000] {logging_mixin.py:190} INFO - [2025-05-09T11:02:47.294+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tuts/simple_data_pipeline.py
+[2025-05-09T11:02:47.303+0000] {processor.py:925} INFO - DAG(s) 'process_employees' retrieved from /opt/airflow/dags/tuts/simple_data_pipeline.py
+[2025-05-09T11:02:47.323+0000] {logging_mixin.py:190} INFO - [2025-05-09T11:02:47.323+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-09T11:02:47.337+0000] {logging_mixin.py:190} INFO - [2025-05-09T11:02:47.337+0000] {dag.py:4138} INFO - Setting next_dagrun for process_employees to 2025-05-08 00:00:00+00:00, run_after=2025-05-09 00:00:00+00:00
+[2025-05-09T11:02:47.350+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tuts/simple_data_pipeline.py took 0.063 seconds
+[2025-05-09T11:03:17.997+0000] {processor.py:186} INFO - Started process (PID=4306) to work on /opt/airflow/dags/tuts/simple_data_pipeline.py
+[2025-05-09T11:03:17.998+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tuts/simple_data_pipeline.py for tasks to queue
+[2025-05-09T11:03:17.999+0000] {logging_mixin.py:190} INFO - [2025-05-09T11:03:17.998+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tuts/simple_data_pipeline.py
+[2025-05-09T11:03:18.007+0000] {processor.py:925} INFO - DAG(s) 'process_employees' retrieved from /opt/airflow/dags/tuts/simple_data_pipeline.py
+[2025-05-09T11:03:18.028+0000] {logging_mixin.py:190} INFO - [2025-05-09T11:03:18.028+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-09T11:03:18.042+0000] {logging_mixin.py:190} INFO - [2025-05-09T11:03:18.042+0000] {dag.py:4138} INFO - Setting next_dagrun for process_employees to 2025-05-08 00:00:00+00:00, run_after=2025-05-09 00:00:00+00:00
+[2025-05-09T11:03:18.058+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tuts/simple_data_pipeline.py took 0.067 seconds
+[2025-05-09T11:03:48.529+0000] {processor.py:186} INFO - Started process (PID=4325) to work on /opt/airflow/dags/tuts/simple_data_pipeline.py
+[2025-05-09T11:03:48.531+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tuts/simple_data_pipeline.py for tasks to queue
+[2025-05-09T11:03:48.532+0000] {logging_mixin.py:190} INFO - [2025-05-09T11:03:48.531+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tuts/simple_data_pipeline.py
+[2025-05-09T11:03:48.540+0000] {processor.py:925} INFO - DAG(s) 'process_employees' retrieved from /opt/airflow/dags/tuts/simple_data_pipeline.py
+[2025-05-09T11:03:48.561+0000] {logging_mixin.py:190} INFO - [2025-05-09T11:03:48.561+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-09T11:03:48.576+0000] {logging_mixin.py:190} INFO - [2025-05-09T11:03:48.576+0000] {dag.py:4138} INFO - Setting next_dagrun for process_employees to 2025-05-08 00:00:00+00:00, run_after=2025-05-09 00:00:00+00:00
+[2025-05-09T11:03:48.590+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tuts/simple_data_pipeline.py took 0.065 seconds
+[2025-05-09T11:04:19.373+0000] {processor.py:186} INFO - Started process (PID=4344) to work on /opt/airflow/dags/tuts/simple_data_pipeline.py
+[2025-05-09T11:04:19.374+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tuts/simple_data_pipeline.py for tasks to queue
+[2025-05-09T11:04:19.375+0000] {logging_mixin.py:190} INFO - [2025-05-09T11:04:19.375+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tuts/simple_data_pipeline.py
+[2025-05-09T11:04:19.384+0000] {processor.py:925} INFO - DAG(s) 'process_employees' retrieved from /opt/airflow/dags/tuts/simple_data_pipeline.py
+[2025-05-09T11:04:19.406+0000] {logging_mixin.py:190} INFO - [2025-05-09T11:04:19.406+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-09T11:04:19.426+0000] {logging_mixin.py:190} INFO - [2025-05-09T11:04:19.425+0000] {dag.py:4138} INFO - Setting next_dagrun for process_employees to 2025-05-08 00:00:00+00:00, run_after=2025-05-09 00:00:00+00:00
+[2025-05-09T11:04:19.443+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tuts/simple_data_pipeline.py took 0.081 seconds

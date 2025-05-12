@@ -9,7 +9,7 @@ class Config:
     MAX_CONSECUTIVE_SCROLLS = 1
 
     # Download directory
-    DOWNLOAD_DIRECTORY = "media"
+    DOWNLOAD_DIRECTORY = "data"
     downloaded_videos_file = "scraped_data/downloaded_videos.txt"
 
     # Facebook login"
