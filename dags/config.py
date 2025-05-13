@@ -8,6 +8,8 @@ class Config:
     SCROLL_PAUSE_TIME = 3
     MAX_CONSECUTIVE_SCROLLS = 1
 
+    WAIT_TIME = 10
+
     # Download directory
     DOWNLOAD_DIRECTORY = "data"
     downloaded_videos_file = "scraped_data/downloaded_videos.txt"

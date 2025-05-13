@@ -18,7 +18,7 @@ from dags.utils.get_id import extract_id
 class ProfileScraper(BaseInstagramScraper):
     def __init__(self, user_id: str) -> None:
         print(f"Scraping Instagram profile: {user_id}")
-        super().__init__(user_id, base_url=f"https://www.instagram.com/{user_id}/")
+        super().__init__(user_id, base_url=f"https://www.instagram.com/{user_id}/reels/")
         self.success = False
         self._driver.add_cookie(
             {
@@ -39,16 +39,16 @@ class ProfileScraper(BaseInstagramScraper):
         try:
             def extract_callback(driver):
                 # Click to reels tab
-                reels_tab = self._driver.find_element(
-                    By.XPATH, "//a[contains(@href, '/reels/')]"
-                )
-                reels_tab.click()
-                # Wait for the page to load
-                self._wait.until(
-                    EC.presence_of_all_elements_located(
-                        (By.TAG_NAME, "a")
-                    )
-                )
+                # reels_tab = self._driver.find_element(
+                #     By.XPATH, "//a[contains(@href, '/reels/')]"
+                # )
+                # reels_tab.click()
+                # # Wait for the page to load
+                # self._wait.until(
+                #     EC.presence_of_all_elements_located(
+                #         (By.TAG_NAME, "a")
+                #     )
+                # )
                 # Find all video elements
                 video_elements = self._driver.find_elements(By.TAG_NAME, "a")
                 print(f"Found {len(video_elements)} video tags")
@@ -62,6 +62,7 @@ class ProfileScraper(BaseInstagramScraper):
 
         except Exception as e:
             # logs.log_error(f"An error occurred while extracting videos: {e}")
+            print(f"An error occurred while extracting videos: {e}")
             pass
 
         print(f"Extracted {len(extracted_video_urls)} video URLs")
@@ -69,42 +70,46 @@ class ProfileScraper(BaseInstagramScraper):
 
   
 
-    def pipeline_videos(self, scrolls=10) -> None:
+    def pipeline_videos(self, scrolls=10):
         """
         Pipeline to scrape videos
+        
+        Returns:
+            list: List of downloaded video results
+            list: Empty list if no new videos or error occurs
         """
+        results = []
         try:
             rprint(f"[bold]Step 1 of 2 - Loading profile page[/bold]")
             video_urls = self.extract_videos(scrolls=scrolls)
 
             if not video_urls:
                 print_no_data_info()
-                self._driver.quit()
                 self.success = False
-            else:
-                rprint(
-                    f"[bold]Step 2 of 2 - Downloading and saving videos [/bold]")
+                return []
+                
+            rprint(f"[bold]Step 2 of 2 - Downloading and saving videos [/bold]")
+            rprint("[bold red]Don't close the app![/bold red] Saving scraped data to database, it can take a while!")
 
-                rprint(
-                    "[bold red]Don't close the app![/bold red] Saving scraped data to database, it can take a while!"
-                )
+            # Filter existing videos
+            db_videos = get_all_videos_from_db()
+            for video in db_videos:
+                if video.url in video_urls:
+                    video_urls.remove(video.url)
+            
+            new_links = set(video_urls)
+            print(f"New videos to download: {len(new_links)}")
 
-                db_videos = get_all_videos_from_db()
-                for video in db_videos:
-                    if video.url in video_urls:
-                        video_urls.remove(video.url)
-                print(f"Remaining new videos: {len(video_urls)}")
+            if not new_links:
+                self.success = True
+                return []
 
-                new_links = set(video_urls)
-
-                print(f"New videos: {len(new_links)}")
-
-                results = []
-
-                for link in new_links:
+            for link in new_links:
+                try:
                     video_id = extract_id(link)
                     task_id = create_pending_video(video_id, link, platform='instagram')
                     file_path = download_video(link, Config.DOWNLOAD_DIRECTORY)
+                    
                     if file_path:
                         update_video_status(video_id, TaskStatus.PROCESSING.value, platform="instagram")
                         result = {
@@ -112,21 +117,25 @@ class ProfileScraper(BaseInstagramScraper):
                             "file_path": file_path,
                         }
                         print(f"Downloaded video {result['video_id']} to {result['file_path']}")
-                        results.append(result)                    
-                        
+                        results.append(result)
                     else:
-                        update_video_status(video_id, TaskStatus.FAILURE.value, platform="instagram")
-                    
-                print(f"Downloaded {len(results)} new videos.")
+                        update_video_status(video_id, TaskStatus.FAILURE.value, platform="instagram", logs="Error downloading video")
+                except Exception as e:
+                    rprint(f"Error downloading video {link}: {str(e)}")
+                    continue
 
-                self._driver.quit()
-                self.success = True
-
-                return results
+            print(f"Downloaded {len(results)} new videos.")
+            self.success = True
 
         except Exception as e:
-  
-            rprint(f"An error occurred {e}")
-
+            rprint(f"An error occurred: {str(e)}")
+            self.success = False
+        
         finally:
-            self._driver.quit()
+            if hasattr(self, '_driver'):
+                try:
+                    self._driver.quit()
+                except:
+                    pass
+
+        return results  # Always return results list, even if empty

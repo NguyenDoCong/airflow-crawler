@@ -1,0 +1,52 @@
+[2025-05-13T03:03:35.655+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-13T03:03:35.665+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-13T03:03:35.077442+00:00 [queued]>
+[2025-05-13T03:03:35.670+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-13T03:03:35.077442+00:00 [queued]>
+[2025-05-13T03:03:35.670+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-13T03:03:35.678+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): fb_videos_scraper> on 2025-05-13 03:03:35.077442+00:00
+[2025-05-13T03:03:35.680+0000] {standard_task_runner.py:72} INFO - Started process 7931 to run task
+[2025-05-13T03:03:35.683+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'fb_videos_scraper', 'manual__2025-05-13T03:03:35.077442+00:00', '--job-id', '5342', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpoy42gd83']
+[2025-05-13T03:03:35.684+0000] {standard_task_runner.py:105} INFO - Job 5342: Subtask fb_videos_scraper
+[2025-05-13T03:03:35.719+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-13T03:03:35.077442+00:00 [running]> on host 79b7354865cb
+[2025-05-13T03:03:35.772+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='fb_videos_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-05-13T03:03:35.077442+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-13T03:03:35.077442+00:00'
+[2025-05-13T03:03:35.773+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-13T03:03:35.792+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.92); currently, chromedriver 136.0.7103.92 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-13T03:03:40.115+0000] {logging_mixin.py:190} INFO - Step 1 of 3 - Load cookies
+[2025-05-13T03:03:43.272+0000] {logging_mixin.py:190} INFO - Step 2 of 3 - Scrolling page
+[2025-05-13T03:03:43.272+0000] {logging_mixin.py:190} INFO - Scrolling...
+[2025-05-13T03:03:46.284+0000] {logging_mixin.py:190} INFO - Error occurred while scrolling: local variable 'count' referenced before assignment
+[2025-05-13T03:03:46.285+0000] {logging_mixin.py:190} INFO - Step 3 of 3 - Extract videos urls
+[2025-05-13T03:03:46.294+0000] {logging_mixin.py:190} INFO - Found 48 a tags
+[2025-05-13T03:03:46.396+0000] {logging_mixin.py:190} INFO - An error occurred Message: stale element reference: stale element not found in 
+the current frame
+  (Session info: chrome=136.0.7103.92); For documentation on this error, please 
+visit: 
+https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-el
+ement-reference-exception
+Stacktrace:
+#0 0x556041ac5a8e <unknown>
+#1 0x556041582b0b <unknown>
+#2 0x556041589f99 <unknown>
+#3 0x55604158c19a <unknown>
+#4 0x5560416187a8 <unknown>
+#5 0x5560415f6c02 <unknown>
+#6 0x556041617dc5 <unknown>
+#7 0x5560415f69b3 <unknown>
+#8 0x5560415c0c59 <unknown>
+#9 0x5560415c1a08 <unknown>
+#10 0x556041a9240a <unknown>
+#11 0x556041a9585e <unknown>
+#12 0x556041a95308 <unknown>
+#13 0x556041a95ce5 <unknown>
+#14 0x556041a7bb7b <unknown>
+#15 0x556041a96050 <unknown>
+#16 0x556041a64ae9 <unknown>
+#17 0x556041ab4df5 <unknown>
+#18 0x556041ab4fdb <unknown>
+#19 0x556041ac4c05 <unknown>
+#20 0x7f573f225134 <unknown>
+[2025-05-13T03:03:46.509+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-05-13T03:03:46.517+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-13T03:03:46.517+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=facebook_videos_scraper_dag, task_id=fb_videos_scraper, run_id=manual__2025-05-13T03:03:35.077442+00:00, execution_date=20250513T030335, start_date=20250513T030335, end_date=20250513T030346
+[2025-05-13T03:03:46.561+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-13T03:03:46.578+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-13T03:03:46.579+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

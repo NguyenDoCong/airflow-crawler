@@ -1,0 +1,80 @@
+[2025-05-13T03:28:29.494+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-13T03:28:29.505+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-13T03:28:28.836528+00:00 [queued]>
+[2025-05-13T03:28:29.509+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-13T03:28:28.836528+00:00 [queued]>
+[2025-05-13T03:28:29.509+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-13T03:28:29.517+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): fb_videos_scraper> on 2025-05-13 03:28:28.836528+00:00
+[2025-05-13T03:28:29.519+0000] {standard_task_runner.py:72} INFO - Started process 10767 to run task
+[2025-05-13T03:28:29.522+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'fb_videos_scraper', 'manual__2025-05-13T03:28:28.836528+00:00', '--job-id', '5358', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmp6bi7hd6v']
+[2025-05-13T03:28:29.523+0000] {standard_task_runner.py:105} INFO - Job 5358: Subtask fb_videos_scraper
+[2025-05-13T03:28:29.553+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-13T03:28:28.836528+00:00 [running]> on host 79b7354865cb
+[2025-05-13T03:28:29.603+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='fb_videos_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-05-13T03:28:28.836528+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-13T03:28:28.836528+00:00'
+[2025-05-13T03:28:29.604+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-13T03:28:29.619+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.92); currently, chromedriver 136.0.7103.92 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-13T03:28:31.625+0000] {logging_mixin.py:190} INFO - Step 1 of 3 - Load cookies
+[2025-05-13T03:28:32.095+0000] {logging_mixin.py:190} INFO - Step 2 of 3 - Scrolling page
+[2025-05-13T03:28:32.096+0000] {logging_mixin.py:190} INFO - Scrolling...
+[2025-05-13T03:28:46.383+0000] {logging_mixin.py:190} INFO - Error occurred while scrolling: Message: tab crashed
+  (Session info: chrome=136.0.7103.92)
+Stacktrace:
+#0 0x557e58a26a8e <unknown>
+#1 0x557e584e37f6 <unknown>
+#2 0x557e584d061f <unknown>
+#3 0x557e584cfa3d <unknown>
+#4 0x557e584cf17b <unknown>
+#5 0x557e584cf0bc <unknown>
+#6 0x557e584cd608 <unknown>
+#7 0x557e584cdab9 <unknown>
+#8 0x557e584db160 <unknown>
+#9 0x557e584f14ff <unknown>
+#10 0x557e584f6a4b <unknown>
+#11 0x557e584ce02d <unknown>
+#12 0x557e584f0f5d <unknown>
+#13 0x557e5857902c <unknown>
+#14 0x557e585579b3 <unknown>
+#15 0x557e58521c59 <unknown>
+#16 0x557e58522a08 <unknown>
+#17 0x557e589f340a <unknown>
+#18 0x557e589f685e <unknown>
+#19 0x557e589f6308 <unknown>
+#20 0x557e589f6ce5 <unknown>
+#21 0x557e589dcb7b <unknown>
+#22 0x557e589f7050 <unknown>
+#23 0x557e589c5ae9 <unknown>
+#24 0x557e58a15df5 <unknown>
+#25 0x557e58a15fdb <unknown>
+#26 0x557e58a25c05 <unknown>
+#27 0x7f2c864e1134 <unknown>
+[2025-05-13T03:28:46.384+0000] {logging_mixin.py:190} INFO - Step 3 of 3 - Extract videos urls
+[2025-05-13T03:28:46.389+0000] {logging_mixin.py:190} INFO - An error occurred Message: tab crashed
+  (Session info: chrome=136.0.7103.92)
+Stacktrace:
+#0 0x557e58a26a8e <unknown>
+#1 0x557e584e37f6 <unknown>
+#2 0x557e584cf073 <unknown>
+#3 0x557e584cd608 <unknown>
+#4 0x557e584cdab9 <unknown>
+#5 0x557e584db160 <unknown>
+#6 0x557e584f14ff <unknown>
+#7 0x557e584f6a4b <unknown>
+#8 0x557e584ce02d <unknown>
+#9 0x557e584f0f5d <unknown>
+#10 0x557e58578cf7 <unknown>
+#11 0x557e585579b3 <unknown>
+#12 0x557e58521c59 <unknown>
+#13 0x557e58522a08 <unknown>
+#14 0x557e589f340a <unknown>
+#15 0x557e589f685e <unknown>
+#16 0x557e589f6308 <unknown>
+#17 0x557e589f6ce5 <unknown>
+#18 0x557e589dcb7b <unknown>
+#19 0x557e589f7050 <unknown>
+#20 0x557e589c5ae9 <unknown>
+#21 0x557e58a15df5 <unknown>
+#22 0x557e58a15fdb <unknown>
+#23 0x557e58a25c05 <unknown>
+#24 0x7f2c864e1134 <unknown>
+[2025-05-13T03:28:46.518+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-05-13T03:28:46.526+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-13T03:28:46.526+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=facebook_videos_scraper_dag, task_id=fb_videos_scraper, run_id=manual__2025-05-13T03:28:28.836528+00:00, execution_date=20250513T032828, start_date=20250513T032829, end_date=20250513T032846
+[2025-05-13T03:28:46.547+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-13T03:28:46.554+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

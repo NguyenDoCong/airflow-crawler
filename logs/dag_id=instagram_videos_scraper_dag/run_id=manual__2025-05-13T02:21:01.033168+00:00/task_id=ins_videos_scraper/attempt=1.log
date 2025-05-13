@@ -1,0 +1,36 @@
+[2025-05-13T02:21:02.026+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-13T02:21:02.037+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.ins_videos_scraper manual__2025-05-13T02:21:01.033168+00:00 [queued]>
+[2025-05-13T02:21:02.042+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.ins_videos_scraper manual__2025-05-13T02:21:01.033168+00:00 [queued]>
+[2025-05-13T02:21:02.042+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-13T02:21:02.049+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): ins_videos_scraper> on 2025-05-13 02:21:01.033168+00:00
+[2025-05-13T02:21:02.052+0000] {standard_task_runner.py:72} INFO - Started process 692 to run task
+[2025-05-13T02:21:02.055+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'instagram_videos_scraper_dag', 'ins_videos_scraper', 'manual__2025-05-13T02:21:01.033168+00:00', '--job-id', '5326', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpvadoafpw']
+[2025-05-13T02:21:02.056+0000] {standard_task_runner.py:105} INFO - Job 5326: Subtask ins_videos_scraper
+[2025-05-13T02:21:02.086+0000] {task_command.py:467} INFO - Running <TaskInstance: instagram_videos_scraper_dag.ins_videos_scraper manual__2025-05-13T02:21:01.033168+00:00 [running]> on host 79b7354865cb
+[2025-05-13T02:21:02.135+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='instagram_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='ins_videos_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-05-13T02:21:01.033168+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-13T02:21:01.033168+00:00'
+[2025-05-13T02:21:02.136+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-13T02:21:02.137+0000] {logging_mixin.py:190} INFO - Scraping Instagram profile: baukrysie
+[2025-05-13T02:21:02.150+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.92); currently, chromedriver 136.0.7103.92 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-13T02:21:02.914+0000] {logging_mixin.py:190} INFO - url: https://www.instagram.com/baukrysie/
+[2025-05-13T02:21:04.665+0000] {logging_mixin.py:190} INFO - Step 1 of 2 - Loading profile page
+[2025-05-13T02:21:04.666+0000] {logging_mixin.py:190} INFO - Extracting videos...
+[2025-05-13T02:21:07.712+0000] {logging_mixin.py:190} INFO - Count: 1, Limit: 10
+[2025-05-13T02:21:07.712+0000] {logging_mixin.py:190} INFO - Scrolling... 1 iterations
+[2025-05-13T02:21:07.802+0000] {logging_mixin.py:190} INFO - Found 51 video tags
+[2025-05-13T02:21:08.020+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/baukrysie/reel/DH0KpCARMKo/
+[2025-05-13T02:21:08.047+0000] {logging_mixin.py:190} INFO - Extracted 1 video URLs
+[2025-05-13T02:21:08.047+0000] {logging_mixin.py:190} INFO - Step 2 of 2 - Downloading and saving videos
+[2025-05-13T02:21:08.048+0000] {logging_mixin.py:190} INFO - Don't close the app! Saving scraped data to database, it can take a while!
+[2025-05-13T02:21:08.057+0000] {warnings.py:109} WARNING - /opt/airflow/dags/app/core/database_utils.py:38: SAWarning: SELECT statement has a cartesian product between FROM element(s) "facebook" and FROM element "tiktok".  Apply join condition(s) between each element to resolve.
+  return db.query(Facebook).filter(Tiktok.status == TaskStatus.SUCCESS.value).all()
+
+[2025-05-13T02:21:08.075+0000] {logging_mixin.py:190} INFO - Remaining new videos: 1
+[2025-05-13T02:21:08.075+0000] {logging_mixin.py:190} INFO - New videos: 1
+[2025-05-13T02:21:08.209+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-13T02:21:08.210+0000] {logging_mixin.py:190} INFO - An error occurred local variable 'id' referenced before assignment
+[2025-05-13T02:21:08.373+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-05-13T02:21:08.380+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-13T02:21:08.380+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instagram_videos_scraper_dag, task_id=ins_videos_scraper, run_id=manual__2025-05-13T02:21:01.033168+00:00, execution_date=20250513T022101, start_date=20250513T022102, end_date=20250513T022108
+[2025-05-13T02:21:08.401+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-13T02:21:08.414+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-13T02:21:08.415+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

@@ -1,0 +1,124 @@
+[2025-05-13T03:33:59.092+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-13T03:33:59.102+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-13T03:33:58.200496+00:00 [queued]>
+[2025-05-13T03:33:59.106+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-13T03:33:58.200496+00:00 [queued]>
+[2025-05-13T03:33:59.106+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-13T03:33:59.112+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): fb_videos_scraper> on 2025-05-13 03:33:58.200496+00:00
+[2025-05-13T03:33:59.115+0000] {standard_task_runner.py:72} INFO - Started process 11355 to run task
+[2025-05-13T03:33:59.117+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'fb_videos_scraper', 'manual__2025-05-13T03:33:58.200496+00:00', '--job-id', '5362', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmp6ht0vjrw']
+[2025-05-13T03:33:59.118+0000] {standard_task_runner.py:105} INFO - Job 5362: Subtask fb_videos_scraper
+[2025-05-13T03:33:59.150+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-13T03:33:58.200496+00:00 [running]> on host 79b7354865cb
+[2025-05-13T03:33:59.197+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='fb_videos_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-05-13T03:33:58.200496+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-13T03:33:58.200496+00:00'
+[2025-05-13T03:33:59.198+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-13T03:33:59.213+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.92); currently, chromedriver 136.0.7103.92 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-13T03:34:01.096+0000] {logging_mixin.py:190} INFO - Step 1 of 3 - Load cookies
+[2025-05-13T03:34:07.454+0000] {logging_mixin.py:190} INFO - Step 2 of 3 - Scrolling page
+[2025-05-13T03:34:07.454+0000] {logging_mixin.py:190} INFO - Scrolling...
+[2025-05-13T03:34:10.471+0000] {logging_mixin.py:190} INFO - Error occurred while scrolling: local variable 'count' referenced before assignment
+[2025-05-13T03:34:10.472+0000] {logging_mixin.py:190} INFO - Step 3 of 3 - Extract videos urls
+[2025-05-13T03:34:10.485+0000] {logging_mixin.py:190} INFO - Found 90 a tags
+[2025-05-13T03:34:10.712+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/100087341155257/videos/300258409024726
+[2025-05-13T03:34:10.729+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/300258409024726/?comment_id=641977490908630&__tn__=R]
+[2025-05-13T03:34:10.734+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/612326127913584/
+[2025-05-13T03:34:10.745+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/1019921852555282/
+[2025-05-13T03:34:10.756+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/1496815271117860/
+[2025-05-13T03:34:10.766+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/7206305039381158/
+[2025-05-13T03:34:10.776+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/300258409024726/
+[2025-05-13T03:34:10.786+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/736392504839613/
+[2025-05-13T03:34:10.796+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/199672223024300/
+[2025-05-13T03:34:10.806+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/796377181594223/
+[2025-05-13T03:34:10.816+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/963843274971699/
+[2025-05-13T03:34:10.826+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/2110165422507634/
+[2025-05-13T03:34:10.835+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/585395010300236/
+[2025-05-13T03:34:10.844+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/726600225473500/
+[2025-05-13T03:34:10.854+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/2909373262542225/
+[2025-05-13T03:34:10.864+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/500334525564870/
+[2025-05-13T03:34:10.873+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/883435672700861/
+[2025-05-13T03:34:10.883+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/568776548091697/
+[2025-05-13T03:34:10.893+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/9291383070887304/
+[2025-05-13T03:34:10.903+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/501990768664483/
+[2025-05-13T03:34:10.913+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/5608822982568234/
+[2025-05-13T03:34:10.923+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/1281437455976230/
+[2025-05-13T03:34:10.933+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/3235875553391967/
+[2025-05-13T03:34:10.944+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/902792580882044/
+[2025-05-13T03:34:10.949+0000] {logging_mixin.py:190} INFO - Found 24 href elements
+[2025-05-13T03:34:10.950+0000] {logging_mixin.py:190} INFO -  Scraped data:
+[2025-05-13T03:34:10.950+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/100087341155257/videos/300258409024726
+[2025-05-13T03:34:10.951+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/official.parkhangseo/videos/300258409024726/?comment_id
+=641977490908630&__tn__=R]
+[2025-05-13T03:34:10.951+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/612326127913584/
+[2025-05-13T03:34:10.951+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/1019921852555282/
+[2025-05-13T03:34:10.951+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/1496815271117860/
+[2025-05-13T03:34:10.952+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/7206305039381158/
+[2025-05-13T03:34:10.952+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/300258409024726/
+[2025-05-13T03:34:10.952+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/736392504839613/
+[2025-05-13T03:34:10.952+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/199672223024300/
+[2025-05-13T03:34:10.952+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/796377181594223/
+[2025-05-13T03:34:10.953+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/963843274971699/
+[2025-05-13T03:34:10.953+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/2110165422507634/
+[2025-05-13T03:34:10.953+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/585395010300236/
+[2025-05-13T03:34:10.954+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/726600225473500/
+[2025-05-13T03:34:10.954+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/2909373262542225/
+[2025-05-13T03:34:10.954+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/500334525564870/
+[2025-05-13T03:34:10.954+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/883435672700861/
+[2025-05-13T03:34:10.954+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/568776548091697/
+[2025-05-13T03:34:10.955+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/9291383070887304/
+[2025-05-13T03:34:10.955+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/501990768664483/
+[2025-05-13T03:34:10.955+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/5608822982568234/
+[2025-05-13T03:34:10.955+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/1281437455976230/
+[2025-05-13T03:34:10.956+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/3235875553391967/
+[2025-05-13T03:34:10.956+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/902792580882044/
+[2025-05-13T03:34:10.956+0000] {logging_mixin.py:190} INFO - Don't close the app! Saving scraped data to database, it can take a while!
+[2025-05-13T03:34:10.965+0000] {warnings.py:109} WARNING - /opt/airflow/dags/app/core/database_utils.py:38: SAWarning: SELECT statement has a cartesian product between FROM element(s) "facebook" and FROM element "tiktok".  Apply join condition(s) between each element to resolve.
+  return db.query(Facebook).filter(Tiktok.status == TaskStatus.SUCCESS.value).all()
+
+[2025-05-13T03:34:11.097+0000] {logging_mixin.py:190} INFO - Remaining new videos: 2
+[2025-05-13T03:34:11.097+0000] {logging_mixin.py:190} INFO - New videos: 2
+[2025-05-13T03:34:11.276+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-13T03:34:11.276+0000] {logging_mixin.py:190} INFO - Downloading video from 300258409024726...
+[2025-05-13T03:34:11.368+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/300258409024726/?comment_id=641977490908630&__tn__=R]
+[2025-05-13T03:34:11.368+0000] {logging_mixin.py:190} INFO - [facebook] 300258409024726: Downloading webpage
+[2025-05-13T03:34:13.764+0000] {logging_mixin.py:190} INFO - [info] 300258409024726: Downloading 1 format(s): 163720786705959a
+[2025-05-13T03:34:13.798+0000] {logging_mixin.py:190} INFO - [download] Destination: data/300258409024726
+[2025-05-13T03:34:13.798+0000] {logging_mixin.py:190} INFO - [download]   1.1% of   93.14KiB at  709.58KiB/s ETA 00:00
+[2025-05-13T03:34:13.799+0000] {logging_mixin.py:190} INFO - [download]   3.2% of   93.14KiB at    1.19MiB/s ETA 00:00
+[2025-05-13T03:34:13.799+0000] {logging_mixin.py:190} INFO - [download]   7.5% of   93.14KiB at    2.40MiB/s ETA 00:00
+[2025-05-13T03:34:13.800+0000] {logging_mixin.py:190} INFO - [download]  16.1% of   93.14KiB at    4.52MiB/s ETA 00:00
+[2025-05-13T03:34:13.801+0000] {logging_mixin.py:190} INFO - [download]  33.3% of   93.14KiB at    6.87MiB/s ETA 00:00
+[2025-05-13T03:34:13.804+0000] {logging_mixin.py:190} INFO - [download]  67.6% of   93.14KiB at    8.68MiB/s ETA 00:00
+[2025-05-13T03:34:13.806+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   93.14KiB at    9.39MiB/s ETA 00:00
+[2025-05-13T03:34:13.807+0000] {logging_mixin.py:190} INFO - [download] 100% of   93.14KiB in 00:00:00 at 2.24MiB/s   
+[2025-05-13T03:34:14.098+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/300258409024726"
+[2025-05-13T03:34:14.251+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/300258409024726.mp3
+[2025-05-13T03:34:14.396+0000] {logging_mixin.py:190} INFO - Deleting original file data/300258409024726 (pass -k to keep)
+[2025-05-13T03:34:14.401+0000] {downloader.py:92} INFO - Download status for https://www.facebook.com/official.parkhangseo/videos/300258409024726/?comment_id=641977490908630&__tn__=R]: Success
+[2025-05-13T03:34:14.401+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 300258409024726
+[2025-05-13T03:34:14.406+0000] {logging_mixin.py:190} INFO - Downloaded video 300258409024726 to data/300258409024726.mp3
+[2025-05-13T03:34:14.512+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-13T03:34:14.512+0000] {logging_mixin.py:190} INFO - Downloading video from 300258409024726...
+[2025-05-13T03:34:14.542+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/300258409024726/
+[2025-05-13T03:34:14.542+0000] {logging_mixin.py:190} INFO - [facebook] 300258409024726: Downloading webpage
+[2025-05-13T03:34:15.333+0000] {logging_mixin.py:190} INFO - [info] 300258409024726: Downloading 1 format(s): 163720786705959a
+[2025-05-13T03:34:15.362+0000] {logging_mixin.py:190} INFO - [download] Destination: data/300258409024726
+[2025-05-13T03:34:15.362+0000] {logging_mixin.py:190} INFO - [download]   1.1% of   93.14KiB at  711.62KiB/s ETA 00:00
+[2025-05-13T03:34:15.368+0000] {logging_mixin.py:190} INFO - [download]   3.2% of   93.14KiB at  411.19KiB/s ETA 00:00
+[2025-05-13T03:34:15.369+0000] {logging_mixin.py:190} INFO - [download]   7.5% of   93.14KiB at  899.46KiB/s ETA 00:00
+[2025-05-13T03:34:15.369+0000] {logging_mixin.py:190} INFO - [download]  16.1% of   93.14KiB at    1.80MiB/s ETA 00:00
+[2025-05-13T03:34:15.369+0000] {logging_mixin.py:190} INFO - [download]  33.3% of   93.14KiB at    3.57MiB/s ETA 00:00
+[2025-05-13T03:34:15.372+0000] {logging_mixin.py:190} INFO - [download]  67.6% of   93.14KiB at    5.51MiB/s ETA 00:00
+[2025-05-13T03:34:15.375+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   93.14KiB at    6.60MiB/s ETA 00:00
+[2025-05-13T03:34:15.375+0000] {logging_mixin.py:190} INFO - [download] 100% of   93.14KiB in 00:00:00 at 2.30MiB/s   
+[2025-05-13T03:34:15.377+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/300258409024726"
+[2025-05-13T03:34:15.459+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/300258409024726.mp3
+[2025-05-13T03:34:15.596+0000] {logging_mixin.py:190} INFO - Deleting original file data/300258409024726 (pass -k to keep)
+[2025-05-13T03:34:15.599+0000] {downloader.py:92} INFO - Download status for https://www.facebook.com/official.parkhangseo/videos/300258409024726/: Success
+[2025-05-13T03:34:15.599+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 300258409024726
+[2025-05-13T03:34:15.604+0000] {logging_mixin.py:190} INFO - Downloaded video 300258409024726 to data/300258409024726.mp3
+[2025-05-13T03:34:15.701+0000] {python.py:240} INFO - Done. Returned value was: [{'video_id': '300258409024726', 'file_path': 'data/300258409024726.mp3'}, {'video_id': '300258409024726', 'file_path': 'data/300258409024726.mp3'}]
+[2025-05-13T03:34:15.716+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-13T03:34:15.716+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=facebook_videos_scraper_dag, task_id=fb_videos_scraper, run_id=manual__2025-05-13T03:33:58.200496+00:00, execution_date=20250513T033358, start_date=20250513T033359, end_date=20250513T033415
+[2025-05-13T03:34:15.762+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-13T03:34:15.775+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-13T03:34:15.776+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

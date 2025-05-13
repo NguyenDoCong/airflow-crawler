@@ -62,54 +62,82 @@ class AccountVideo(BaseFacebookScraper):
 
     def save_video_urls_to_database_pipeline(self, scrolls=10) -> None:
         """Pipeline to save video url to database"""
+        results = []
+        rprint("[bold]Step 1 of 3 - Load cookies[/bold]")
         try:
-            rprint("[bold]Step 1 of 3 - Load cookies[/bold]")
             self._load_cookies_and_refresh_driver()
+        except Exception as e:
+            rprint(f"[red]Error in loading cookies: {e}[/red]")
+            self.success = False
+            return []
 
-            rprint("[bold]Step 2 of 3 - Scrolling page[/bold]")
-            scroll_page(self._driver, scrolls=scrolls)
+        rprint("[bold]Step 2 of 3 - Scrolling page[/bold]")
+        
+        scroll_page(self._driver, scrolls=scrolls)
 
-            rprint("[bold]Step 3 of 3 - Extract videos urls[/bold]")
+        rprint("[bold]Step 3 of 3 - Extract videos urls[/bold]")
+        try:
             videos = self.scrape_video_urls()
 
             if not videos:
                 output.print_no_data_info()
                 self._driver.quit()
                 self.success = False
+                return []
             else:
                 output.print_list(videos)
-
                 rprint(
                     "[bold red]Don't close the app![/bold red] Saving scraped data to database, it can take a while!"
                 )
-                
-                results = get_all_videos_from_db()
-                for result in results:
-                    if result.url in videos:
-                        videos.remove(result.url)
-                print(f"Remaining new videos: {len(videos)}")
-
-                new_links = set(videos)
-
-                print(f"New videos: {len(new_links)}")
-
-                for link in new_links:
-                    video_id = extract_id(link)
-                    task_id = create_pending_video(video_id, link)
-                    result = download_video(link, Config.DOWNLOAD_DIRECTORY)
-                    if result:
-                        update_video_status(video_id, TaskStatus.PROCESSING.value, platform="facebook")
-                    else:
-                        update_video_status(video_id, TaskStatus.FAILURE.value, platform="facebook")
-
-                # with open(Config.downloaded_videos_file, "a") as f:
-                #     for link in new_links:
-                #         f.write(link + "\n")   
-
-                self._driver.quit()
-                self.success = True
-
         except Exception as e:
-            # logs.log_error(f"An error occurred: {e}")
-            rprint(f"An error occurred {e}")
+            rprint(f"[red]Error while scraping videos: {e}[/red]")
+            self._driver.quit()
+            self.success = False
+            return []
+         
+        db_videos = get_all_videos_from_db()
+        for video in db_videos:
+            if video.url in videos:
+                videos.remove(video.url)
+        print(f"Remaining new videos: {len(videos)}")
+
+        new_links = set(videos)
+
+        print(f"New videos: {len(new_links)}")
+
+        for link in new_links:
+            try:
+                video_id = extract_id(link)
+            except Exception as e:
+                rprint(f"[red]Error while extracting video ID: {e}[/red]")
+                self._driver.quit()
+                self.success = False
+                return []
+            task_id = create_pending_video(video_id, link)
+            try:
+                file_path = download_video(link, Config.DOWNLOAD_DIRECTORY)
+                
+                if file_path:
+                    update_video_status(video_id, TaskStatus.PROCESSING.value, platform="facebook")
+                    result = {
+                        "video_id": video_id,
+                        "file_path": file_path,
+                    }
+                    print(f"Downloaded video {result['video_id']} to {result['file_path']}")
+                    results.append(result)
+                else:
+                    update_video_status(video_id, TaskStatus.FAILURE.value, platform="facebook", logs="Error download video")
+            except Exception as e:
+                # logs.log_error(f"An error occurred: {e}")
+                rprint(f"[red]Error while saving videos to DB or downloading: {e}[/red]")
+                self._driver.quit()
+                self.success = False
+                return []
+
+        self._driver.quit()
+        self.success = True
+
+        return results
+
+        
 

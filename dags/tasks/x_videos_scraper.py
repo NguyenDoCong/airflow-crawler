@@ -15,29 +15,22 @@ from dags.utils.get_id import extract_id
 def x_videos_scraper(id = "elonmusk", scrolls = 5):
     from playwright.sync_api import sync_playwright
 
-    # storage_state_path = "dags/utils/state.json"
-    # use_storage_state = False
-    # if not os.path.exists(storage_state_path):
-    #     os.makedirs(os.path.dirname(storage_state_path), exist_ok=True)
-    # try:
-    #     with open(storage_state_path, "r", encoding="utf-8") as f:
-    #         json.load(f)
-    #     use_storage_state = True
-    # except Exception as e:
-    #     print(f"Error loading storage_state.json: {e}")
-
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch()
-        context = browser.new_context(storage_state="dags/utils/state.json")
-        # context = browser.new_context()
-        # if use_storage_state:
-        #     context = browser.new_context(storage_state=storage_state_path)
-        # else:
-        #     context = browser.new_context()
+        try:
+            context = browser.new_context(storage_state="dags/utils/state.json")
+        except Exception as e:
+            print(f"Error loading cookies: {e}")
+            return []
+
         page = context.new_page() 
 
         # Truy cập trang cá nhân
-        page.goto(f"https://x.com/{id}/media", timeout=15000)
+        try:
+            page.goto(f"https://x.com/{id}/media", timeout=15000)
+        except Exception as e:
+            print(f"Error accessing page: {e}")
+            return []
 
         page.wait_for_timeout(5000)  # chờ page load
 
@@ -76,20 +69,25 @@ def x_videos_scraper(id = "elonmusk", scrolls = 5):
         results = []
 
         for link in new_links:
-            video_id = extract_id(link)
-            task_id = create_pending_video(video_id, link, platform="x")
-            file_path = download_video(link, Config.DOWNLOAD_DIRECTORY)
-            if file_path:
-                update_video_status(video_id, TaskStatus.PROCESSING.value, platform="x")
-                result = {
-                    "video_id": video_id,
-                    "file_path": file_path,
-                }
-                print(f"Downloaded video {result['video_id']} to {result['file_path']}")
-                results.append(result)                    
-                
-            else:
-                update_video_status(video_id, TaskStatus.FAILURE.value, platform="x")
+            try:
+                video_id = extract_id(link)
+                task_id = create_pending_video(video_id, link, platform="x")
+                file_path = download_video(link, Config.DOWNLOAD_DIRECTORY)
+                if file_path:
+                    update_video_status(video_id, TaskStatus.PROCESSING.value, platform="x")
+                    result = {
+                        "video_id": video_id,
+                        "file_path": file_path,
+                    }
+                    print(f"Downloaded video {result['video_id']} to {result['file_path']}")
+                    results.append(result)                    
+                    
+                else:
+                    update_video_status(video_id, TaskStatus.FAILURE.value, platform="x", logs="Error downloading video")
+            except Exception as e:
+                print(f"Error downloading video {link}: {e}")
+                # update_video_status(video_id, TaskStatus.FAILURE.value, platform="x", logs="Error downloading video")
+                continue
             
         print(f"Downloaded {len(results)} new videos.")
 

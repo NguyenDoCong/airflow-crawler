@@ -15,6 +15,8 @@ from concurrent.futures import ThreadPoolExecutor
 from config import Config
 from functools import partial
 import re
+from dags.utils.get_id import extract_id
+
 
 import sys
 sys.path.insert(1, 'src/utils')
@@ -141,33 +143,42 @@ def batch_download_from_file(file_path, download_directory, platform=None):
 
     print("Download complete.")
 
-def extract_id(url):
+# def extract_id(url):
     
-    if "x.com" in url or "twitter.com" in url:
-        match = re.search(r"status/(\d+)", url)
-        if match:
-            id= match.group(1)
+#     if "x.com" in url or "twitter.com" in url:
+#         match = re.search(r"status/(\d+)", url)
+#         if match:
+#             id= match.group(1)
     
-    elif "facebook.com" in url:
-        match = re.search(r"videos/(\d+)", url)
-        if match:
-            id= match.group(1)
+#     elif "facebook.com" in url:
+#         match = re.search(r"videos/(\d+)", url)
+#         if match:
+#             id= match.group(1)
     
-    elif "tiktok.com" in url:
-        match = re.search(r"video/(\d+)", url)
-        if match:
-            id= match.group(1)
+#     elif "tiktok.com" in url:
+#         match = re.search(r"video/(\d+)", url)
+#         if match:
+#             id= match.group(1)
+
+#     elif "instagram.com" in url:
+#         match = re.search(r'/reel/([A-Za-z0-9_-]+)/?', url)
+#         if match:
+#             id= match.group(1)
+#     else:
+#         id= match.group(1)
     
-    else:
-        id= match.group(1)
-    
-    return id 
+#     return id 
 
 def download_video(url, download_directory):
     """Download a YouTube or TikTok video with user-selected format (ensuring video has audio)."""
     ensure_internet_connection()
-    
-    id = extract_id(url)
+    try:
+        id = extract_id(url)
+    except Exception as e:
+        print(f"Error extracting video ID: {e}")
+        return None
+
+    print(f"Downloading video from {id}...")
     try:        
         ydl_opts = {"listformats": True}
         ydl_opts = {
@@ -205,12 +216,12 @@ def download_video(url, download_directory):
         return file_path + ".mp3"
 
     except Exception as e:
-        log_download(url, f"Failed: {str(e)}")
-        logging.error(f"Error downloading video from {url}: {str(e)}")
-        print(f"\033[1;31mError downloading video:\033[0m {str(e)}")
+        # log_download(url, f"Failed: {str(e)}")
+        # logging.error(f"Error downloading video from {url}: {str(e)}")
+        # print(f"\033[1;31mError downloading video:\033[0m {str(e)}")
 
-        log_download(url, f"Download Error: {str(e)}")
-        print(f"\033[1;31mDownload Error:\033[0m {str(e)}")
+        # log_download(url, f"Download Error: {str(e)}")
+        # print(f"\033[1;31mDownload Error:\033[0m {str(e)}")
         
         url = f"https://www.tikwm.com/video/music/{id}.mp3"
         file = requests.get(url)

@@ -1,0 +1,30 @@
+[2025-05-13T06:21:49.520+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-13T06:21:49.534+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-13T06:21:48.357694+00:00 [queued]>
+[2025-05-13T06:21:49.540+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-13T06:21:48.357694+00:00 [queued]>
+[2025-05-13T06:21:49.540+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-13T06:21:49.549+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): fb_videos_scraper> on 2025-05-13 06:21:48.357694+00:00
+[2025-05-13T06:21:49.552+0000] {standard_task_runner.py:72} INFO - Started process 14380 to run task
+[2025-05-13T06:21:49.555+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'fb_videos_scraper', 'manual__2025-05-13T06:21:48.357694+00:00', '--job-id', '5368', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpiirparh4']
+[2025-05-13T06:21:49.556+0000] {standard_task_runner.py:105} INFO - Job 5368: Subtask fb_videos_scraper
+[2025-05-13T06:21:49.588+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-13T06:21:48.357694+00:00 [running]> on host 79b7354865cb
+[2025-05-13T06:21:49.645+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='fb_videos_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-05-13T06:21:48.357694+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-13T06:21:48.357694+00:00'
+[2025-05-13T06:21:49.646+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-13T06:21:50.749+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.92); currently, chromedriver 136.0.7103.92 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-13T06:25:16.044+0000] {local_task_job_runner.py:341} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-05-13T06:25:16.045+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2025-05-13T06:25:16.048+0000] {process_utils.py:132} INFO - Sending 15 to group 14380. PIDs of all processes in the group: [14435, 14441, 14445, 14446, 14477, 14486, 14502, 14504, 14525, 14566, 14613, 14380]
+[2025-05-13T06:25:16.048+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 14380
+[2025-05-13T06:25:16.049+0000] {taskinstance.py:3083} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-05-13T06:25:16.053+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14566, status='terminated', started='06:21:52') (14566) terminated with exit code None
+[2025-05-13T06:25:16.054+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14504, status='terminated', started='06:21:51') (14504) terminated with exit code None
+[2025-05-13T06:25:16.068+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-13T06:25:16.080+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14435, status='terminated', started='06:21:50') (14435) terminated with exit code None
+[2025-05-13T06:25:16.080+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14445, status='terminated', started='06:21:51') (14445) terminated with exit code None
+[2025-05-13T06:25:16.081+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14441, status='terminated', started='06:21:51') (14441) terminated with exit code None
+[2025-05-13T06:25:16.081+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14380, status='terminated', exitcode=0, started='06:21:49') (14380) terminated with exit code 0
+[2025-05-13T06:25:16.081+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14502, status='terminated', started='06:21:51') (14502) terminated with exit code None
+[2025-05-13T06:25:16.081+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14486, status='terminated', started='06:21:51') (14486) terminated with exit code None
+[2025-05-13T06:25:16.081+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14477, status='terminated', started='06:21:51') (14477) terminated with exit code None
+[2025-05-13T06:25:16.081+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14613, status='terminated', started='06:24:51') (14613) terminated with exit code None
+[2025-05-13T06:25:16.081+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14446, status='terminated', started='06:21:51') (14446) terminated with exit code None
+[2025-05-13T06:25:16.082+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14525, status='terminated', started='06:21:51') (14525) terminated with exit code None

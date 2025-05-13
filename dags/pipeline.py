@@ -19,7 +19,7 @@ from config import Config
 #     catchup=False,
 # ) as dag:
 #     downloads= tiktok_videos_scraper(id="hoaminzy_hoadambut", 
-#                                         count=1, 
+#                                         count=50, 
 #                                         ms_tokens=Config.MS_TOKENS, 
 #                                         TIKTOK_ERROR_FILE_PATH=Config.TIKTOK_ERROR_FILE_PATH, 
 #                                         TIKTOK_FILE_PATH=Config.TIKTOK_FILE_PATH,
@@ -44,30 +44,30 @@ from config import Config
 #     catchup=False,
 # ) as dag:
 #     downloads = x_videos_scraper(id="elonmusk",
-#                                     scrolls=5)
+#                                     scrolls=10)
 #     transcript = audio_to_transcript(downloads, platform="x")
 
          
-with DAG(
-    dag_id="instagram_videos_scraper_dag",
-    schedule_interval=None,  # Set your desired schedule
-    start_date=days_ago(1),
-    catchup=False,
-) as dag:
-    downloads = ins_videos_scraper(id="baukrysie",
-                                    INSTAGRAM_FILE_PATH=Config.INSTAGRAM_FILE_PATH,
-                                    download_directory=Config.DOWNLOAD_DIRECTORY,
-                                    scrolls=10)
-    transcript = audio_to_transcript(downloads, platform="instagram")
-
 # with DAG(
-#     dag_id="facebook_videos_scraper_dag",
+#     dag_id="instagram_videos_scraper_dag",
 #     schedule_interval=None,  # Set your desired schedule
 #     start_date=days_ago(1),
 #     catchup=False,
 # ) as dag:
-#     scrape_task = fb_videos_scraper(id="official.parkhangseo",
-#                                     FACEBOOK_FILE_PATH=Config.FACEBOOK_FILE_PATH,
-#                                     DOWNLOAD_DIRECTORY=Config.DOWNLOAD_DIRECTORY,
-#                                     scrolls=5)
-    
+#     downloads = ins_videos_scraper(id="baukrysie",
+#                                     INSTAGRAM_FILE_PATH=Config.INSTAGRAM_FILE_PATH,
+#                                     download_directory=Config.DOWNLOAD_DIRECTORY,
+#                                     scrolls=15)
+#     transcript = audio_to_transcript(downloads, platform="instagram")
+
+with DAG(
+    dag_id="facebook_videos_scraper_dag",
+    schedule_interval=None,  # Set your desired schedule
+    start_date=days_ago(1),
+    catchup=False,
+) as dag:
+    downloads = fb_videos_scraper(id="official.parkhangseo",
+                                    FACEBOOK_FILE_PATH=Config.FACEBOOK_FILE_PATH,
+                                    DOWNLOAD_DIRECTORY=Config.DOWNLOAD_DIRECTORY,
+                                    scrolls=10)
+    transcript = audio_to_transcript(downloads, platform="facebook")

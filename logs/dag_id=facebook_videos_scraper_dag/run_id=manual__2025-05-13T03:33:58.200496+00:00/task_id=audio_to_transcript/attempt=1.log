@@ -1,0 +1,25 @@
+[2025-05-13T03:34:16.869+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-13T03:34:16.880+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.audio_to_transcript manual__2025-05-13T03:33:58.200496+00:00 [queued]>
+[2025-05-13T03:34:16.884+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.audio_to_transcript manual__2025-05-13T03:33:58.200496+00:00 [queued]>
+[2025-05-13T03:34:16.884+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-13T03:34:16.891+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): audio_to_transcript> on 2025-05-13 03:33:58.200496+00:00
+[2025-05-13T03:34:16.894+0000] {standard_task_runner.py:72} INFO - Started process 11655 to run task
+[2025-05-13T03:34:16.896+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'audio_to_transcript', 'manual__2025-05-13T03:33:58.200496+00:00', '--job-id', '5363', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmp8yaw44y3']
+[2025-05-13T03:34:16.897+0000] {standard_task_runner.py:105} INFO - Job 5363: Subtask audio_to_transcript
+[2025-05-13T03:34:16.929+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.audio_to_transcript manual__2025-05-13T03:33:58.200496+00:00 [running]> on host 79b7354865cb
+[2025-05-13T03:34:17.002+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='audio_to_transcript' AIRFLOW_CTX_EXECUTION_DATE='2025-05-13T03:33:58.200496+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-13T03:33:58.200496+00:00'
+[2025-05-13T03:34:17.003+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-13T03:34:17.231+0000] {get_transcript.py:33} INFO - Processing audio file: data/300258409024726.mp3
+[2025-05-13T03:34:18.013+0000] {transcribe.py:839} INFO - Processing audio with duration 00:15.325
+[2025-05-13T03:34:18.295+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.53
+[2025-05-13T03:34:18.298+0000] {get_transcript.py:43} INFO - Detected language 'en' with probability 0.5273290872573853
+[2025-05-13T03:34:18.742+0000] {get_transcript.py:33} INFO - Processing audio file: data/300258409024726.mp3
+[2025-05-13T03:34:19.672+0000] {transcribe.py:839} INFO - Processing audio with duration 00:15.325
+[2025-05-13T03:34:19.917+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.53
+[2025-05-13T03:34:19.919+0000] {get_transcript.py:43} INFO - Detected language 'en' with probability 0.5273290872573853
+[2025-05-13T03:34:20.332+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-05-13T03:34:20.339+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-13T03:34:20.340+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=facebook_videos_scraper_dag, task_id=audio_to_transcript, run_id=manual__2025-05-13T03:33:58.200496+00:00, execution_date=20250513T033358, start_date=20250513T033416, end_date=20250513T033420
+[2025-05-13T03:34:20.361+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-13T03:34:20.372+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-13T03:34:20.373+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

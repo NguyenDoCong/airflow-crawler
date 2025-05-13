@@ -1,0 +1,50 @@
+[2025-05-13T03:09:18.564+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-13T03:09:18.574+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-13T03:09:17.289955+00:00 [queued]>
+[2025-05-13T03:09:18.579+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-13T03:09:17.289955+00:00 [queued]>
+[2025-05-13T03:09:18.579+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-13T03:09:18.587+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): fb_videos_scraper> on 2025-05-13 03:09:17.289955+00:00
+[2025-05-13T03:09:18.590+0000] {standard_task_runner.py:72} INFO - Started process 8517 to run task
+[2025-05-13T03:09:18.592+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'fb_videos_scraper', 'manual__2025-05-13T03:09:17.289955+00:00', '--job-id', '5346', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmp0yzlcosf']
+[2025-05-13T03:09:18.594+0000] {standard_task_runner.py:105} INFO - Job 5346: Subtask fb_videos_scraper
+[2025-05-13T03:09:18.626+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-13T03:09:17.289955+00:00 [running]> on host 79b7354865cb
+[2025-05-13T03:09:18.684+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='fb_videos_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-05-13T03:09:17.289955+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-13T03:09:17.289955+00:00'
+[2025-05-13T03:09:18.685+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-13T03:09:18.701+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.92); currently, chromedriver 136.0.7103.92 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-13T03:09:20.843+0000] {logging_mixin.py:190} INFO - Step 1 of 3 - Load cookies
+[2025-05-13T03:09:37.834+0000] {logging_mixin.py:190} INFO - An error occurred Message: tab crashed
+  (Session info: chrome=136.0.7103.92)
+Stacktrace:
+#0 0x5579851dca8e <unknown>
+#1 0x557984c997f6 <unknown>
+#2 0x557984c8661f <unknown>
+#3 0x557984c85a3d <unknown>
+#4 0x557984c8517b <unknown>
+#5 0x557984c850bc <unknown>
+#6 0x557984c83608 <unknown>
+#7 0x557984c83ab9 <unknown>
+#8 0x557984c91160 <unknown>
+#9 0x557984ca74ff <unknown>
+#10 0x557984caca4b <unknown>
+#11 0x557984c8402d <unknown>
+#12 0x557984ca6f5d <unknown>
+#13 0x557984d2f02c <unknown>
+#14 0x557984d0d9b3 <unknown>
+#15 0x557984cd7c59 <unknown>
+#16 0x557984cd8a08 <unknown>
+#17 0x5579851a940a <unknown>
+#18 0x5579851ac85e <unknown>
+#19 0x5579851ac308 <unknown>
+#20 0x5579851acce5 <unknown>
+#21 0x557985192b7b <unknown>
+#22 0x5579851ad050 <unknown>
+#23 0x55798517bae9 <unknown>
+#24 0x5579851cbdf5 <unknown>
+#25 0x5579851cbfdb <unknown>
+#26 0x5579851dbc05 <unknown>
+#27 0x7f2cbf8d1134 <unknown>
+[2025-05-13T03:09:37.947+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-05-13T03:09:37.954+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-13T03:09:37.954+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=facebook_videos_scraper_dag, task_id=fb_videos_scraper, run_id=manual__2025-05-13T03:09:17.289955+00:00, execution_date=20250513T030917, start_date=20250513T030918, end_date=20250513T030937
+[2025-05-13T03:09:37.989+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-13T03:09:38.001+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-13T03:09:38.011+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

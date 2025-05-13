@@ -26,10 +26,9 @@ def audio_to_transcript(downloads, platform="tiktok"):
 
 
     for download in downloads:
-        id = download["video_id"]
-        audio_path = download["file_path"]
         try: 
-            
+            id = download["video_id"]
+            audio_path = download["file_path"]
             logging.info(f"Processing audio file: {audio_path}")
             
             # Initialize model
@@ -55,3 +54,7 @@ def audio_to_transcript(downloads, platform="tiktok"):
                                 platform=platform)
         except Exception as e:
             logging.error(f"Error transcripting video from {id}: {str(e)}")
+            update_video_status(id,
+                                TaskStatus.FAILURE.value,
+                                platform=platform,
+                                logs=f"Error transcripting video: {str(e)}")

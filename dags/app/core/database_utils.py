@@ -118,7 +118,7 @@ def create_pending_video(video_id, url, task_id=None, platform=None):
     finally:
         db.close()
 
-def update_video_status(video_id, status, transcript=None, content=None, platform=None):
+def update_video_status(video_id, status, transcript=None, content=None, platform=None, logs=None):
     """
     Update status of video in database
     
@@ -152,6 +152,9 @@ def update_video_status(video_id, status, transcript=None, content=None, platfor
             
         if content is not None:
             video.content = content
+
+        if logs is not None:
+            video.logs = logs
             
         db.commit()
         return True

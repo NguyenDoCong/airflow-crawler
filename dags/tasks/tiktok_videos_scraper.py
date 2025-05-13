@@ -28,27 +28,28 @@ def tiktok_videos_scraper(id = "therock",count = 10, ms_tokens=None, TIKTOK_ERRO
     async def user_example():
         async with TikTokApi() as api:
             # Đổi ms_tokens nếu bị lỗi chạy headless
-            await api.create_sessions(ms_tokens=['azquqBjM67uB1DOXOvXJuaQxP1vQD8Ez_a8kDxBXNDBbLFFRE4KWUDuX-l0OjQvpgbE_dYsreYMw739sg14g8lycqGHMkEzwuWRN-L0ldYWWGwWoYs4Gw8MDxAWhEscDMqFxCSFgB3ayJ_KUoLceFA=='], 
-                                      num_sessions=1, sleep_after=3, browser=os.getenv("TIKTOK_BROWSER", "chromium"))
-            user = api.user(f"{id}")
             videos=[]
-            async for video in user.videos(count=count):
-                print(f"https://www.tiktok.com/@{id}/video/"+video.as_dict['id'])
-                videos.append(f"https://www.tiktok.com/@{id}/video/"+video.as_dict['id'])
-                # os.makedirs(os.path.dirname(TIKTOK_ERROR_FILE_PATH), exist_ok=True)
-                # with open(TIKTOK_ERROR_FILE_PATH, "w",encoding='utf-8') as f:
-                #     f.write(f"{video}\n")        
+            new_links = []
+            try:
+                await api.create_sessions(ms_tokens=['azquqBjM67uB1DOXOvXJuaQxP1vQD8Ez_a8kDxBXNDBbLFFRE4KWUDuX-l0OjQvpgbE_dYsreYMw739sg14g8lycqGHMkEzwuWRN-L0ldYWWGwWoYs4Gw8MDxAWhEscDMqFxCSFgB3ayJ_KUoLceFA=='], 
+                                        num_sessions=1, sleep_after=3, browser=os.getenv("TIKTOK_BROWSER", "chromium"))
+                user = api.user(f"{id}")
+                async for video in user.videos(count=count):
+                    print(f"https://www.tiktok.com/@{id}/video/"+video.as_dict['id'])
+                    videos.append(f"https://www.tiktok.com/@{id}/video/"+video.as_dict['id'])     
 
-            results = get_all_videos_from_db(platform="tiktok")
-            for result in results:
-                if result.url in videos:
-                    videos.remove(result.url)
-            print(f"Remaining new videos: {len(videos)}")
+                results = get_all_videos_from_db(platform="tiktok")
+                for result in results:
+                    if result.url in videos:
+                        videos.remove(result.url)
+                print(f"Remaining new videos: {len(videos)}")
 
-            new_links = set(videos)
+                new_links = set(videos)
 
-            print(f"New videos: {len(new_links)}")
-
+                print(f"New videos: {len(new_links)}")
+            except Exception as e:
+                print(f"Error in TikTok API: {e}")
+                return []
             results = []
 
             for link in new_links:
@@ -65,7 +66,7 @@ def tiktok_videos_scraper(id = "therock",count = 10, ms_tokens=None, TIKTOK_ERRO
                     results.append(result)                    
                     
                 else:
-                    update_video_status(video_id, TaskStatus.FAILURE.value, platform="tiktok")
+                    update_video_status(video_id, TaskStatus.FAILURE.value, platform="tiktok", logs="Error downloading video")
                 
             print(f"Downloaded {len(results)} new videos.")
             return results
