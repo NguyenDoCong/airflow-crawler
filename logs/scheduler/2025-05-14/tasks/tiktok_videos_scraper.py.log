@@ -4788,3 +4788,13 @@
 [2025-05-14T11:16:42.885+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:16:42.885+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/tiktok_videos_scraper.py
 [2025-05-14T11:16:42.991+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/tiktok_videos_scraper.py
 [2025-05-14T11:16:43.018+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/tiktok_videos_scraper.py took 0.152 seconds
+[2025-05-14T11:17:13.991+0000] {processor.py:186} INFO - Started process (PID=7266) to work on /opt/airflow/dags/tasks/tiktok_videos_scraper.py
+[2025-05-14T11:17:13.999+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/tiktok_videos_scraper.py for tasks to queue
+[2025-05-14T11:17:14.000+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:14.000+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/tiktok_videos_scraper.py
+[2025-05-14T11:17:14.053+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/tiktok_videos_scraper.py
+[2025-05-14T11:17:14.063+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/tiktok_videos_scraper.py took 0.077 seconds
+[2025-05-14T11:17:44.198+0000] {processor.py:186} INFO - Started process (PID=7293) to work on /opt/airflow/dags/tasks/tiktok_videos_scraper.py
+[2025-05-14T11:17:44.209+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/tiktok_videos_scraper.py for tasks to queue
+[2025-05-14T11:17:44.209+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:44.209+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/tiktok_videos_scraper.py
+[2025-05-14T11:17:44.265+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/tiktok_videos_scraper.py
+[2025-05-14T11:17:44.276+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/tiktok_videos_scraper.py took 0.083 seconds

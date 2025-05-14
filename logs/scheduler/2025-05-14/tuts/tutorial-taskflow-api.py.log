@@ -6508,3 +6508,17 @@
 [2025-05-14T11:16:31.286+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:16:31.286+0000] {dag.py:3211} INFO - Sync 1 DAGs
 [2025-05-14T11:16:31.296+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:16:31.295+0000] {dag.py:4138} INFO - Setting next_dagrun for tutorial_taskflow_api to None, run_after=None
 [2025-05-14T11:16:31.309+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tuts/tutorial-taskflow-api.py took 0.056 seconds
+[2025-05-14T11:17:01.547+0000] {processor.py:186} INFO - Started process (PID=7256) to work on /opt/airflow/dags/tuts/tutorial-taskflow-api.py
+[2025-05-14T11:17:01.548+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tuts/tutorial-taskflow-api.py for tasks to queue
+[2025-05-14T11:17:01.548+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:01.548+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tuts/tutorial-taskflow-api.py
+[2025-05-14T11:17:01.554+0000] {processor.py:925} INFO - DAG(s) 'tutorial_taskflow_api' retrieved from /opt/airflow/dags/tuts/tutorial-taskflow-api.py
+[2025-05-14T11:17:01.577+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:01.576+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T11:17:01.586+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:01.586+0000] {dag.py:4138} INFO - Setting next_dagrun for tutorial_taskflow_api to None, run_after=None
+[2025-05-14T11:17:01.597+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tuts/tutorial-taskflow-api.py took 0.055 seconds
+[2025-05-14T11:17:31.758+0000] {processor.py:186} INFO - Started process (PID=7283) to work on /opt/airflow/dags/tuts/tutorial-taskflow-api.py
+[2025-05-14T11:17:31.760+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tuts/tutorial-taskflow-api.py for tasks to queue
+[2025-05-14T11:17:31.761+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:31.760+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tuts/tutorial-taskflow-api.py
+[2025-05-14T11:17:31.767+0000] {processor.py:925} INFO - DAG(s) 'tutorial_taskflow_api' retrieved from /opt/airflow/dags/tuts/tutorial-taskflow-api.py
+[2025-05-14T11:17:31.785+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:31.785+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T11:17:31.793+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:31.793+0000] {dag.py:4138} INFO - Setting next_dagrun for tutorial_taskflow_api to None, run_after=None
+[2025-05-14T11:17:31.804+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tuts/tutorial-taskflow-api.py took 0.049 seconds

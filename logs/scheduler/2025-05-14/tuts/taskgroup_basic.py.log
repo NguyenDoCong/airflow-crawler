@@ -8368,3 +8368,21 @@
 [2025-05-14T11:16:31.134+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:16:31.134+0000] {dag.py:3211} INFO - Sync 1 DAGs
 [2025-05-14T11:16:31.156+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:16:31.156+0000] {dag.py:4138} INFO - Setting next_dagrun for dag1 to 2022-04-28 00:00:00+00:00, run_after=2022-04-29 00:00:00+00:00
 [2025-05-14T11:16:31.168+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tuts/taskgroup_basic.py took 0.106 seconds
+[2025-05-14T11:17:01.391+0000] {processor.py:186} INFO - Started process (PID=7253) to work on /opt/airflow/dags/tuts/taskgroup_basic.py
+[2025-05-14T11:17:01.395+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tuts/taskgroup_basic.py for tasks to queue
+[2025-05-14T11:17:01.396+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:01.396+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tuts/taskgroup_basic.py
+[2025-05-14T11:17:01.401+0000] {logging_mixin.py:190} INFO - 3
+[2025-05-14T11:17:01.401+0000] {logging_mixin.py:190} INFO - 2
+[2025-05-14T11:17:01.404+0000] {processor.py:925} INFO - DAG(s) 'dag1' retrieved from /opt/airflow/dags/tuts/taskgroup_basic.py
+[2025-05-14T11:17:01.425+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:01.425+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T11:17:01.439+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:01.439+0000] {dag.py:4138} INFO - Setting next_dagrun for dag1 to 2022-04-28 00:00:00+00:00, run_after=2022-04-29 00:00:00+00:00
+[2025-05-14T11:17:01.461+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tuts/taskgroup_basic.py took 0.075 seconds
+[2025-05-14T11:17:31.614+0000] {processor.py:186} INFO - Started process (PID=7280) to work on /opt/airflow/dags/tuts/taskgroup_basic.py
+[2025-05-14T11:17:31.615+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tuts/taskgroup_basic.py for tasks to queue
+[2025-05-14T11:17:31.616+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:31.615+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tuts/taskgroup_basic.py
+[2025-05-14T11:17:31.621+0000] {logging_mixin.py:190} INFO - 3
+[2025-05-14T11:17:31.621+0000] {logging_mixin.py:190} INFO - 2
+[2025-05-14T11:17:31.624+0000] {processor.py:925} INFO - DAG(s) 'dag1' retrieved from /opt/airflow/dags/tuts/taskgroup_basic.py
+[2025-05-14T11:17:31.646+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:31.646+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T11:17:31.662+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:31.662+0000] {dag.py:4138} INFO - Setting next_dagrun for dag1 to 2022-04-28 00:00:00+00:00, run_after=2022-04-29 00:00:00+00:00
+[2025-05-14T11:17:31.694+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tuts/taskgroup_basic.py took 0.085 seconds

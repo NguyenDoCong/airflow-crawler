@@ -9903,3 +9903,17 @@ TypeError: got an unexpected keyword argument 'TIKTOK_FILE_PATH'
 [2025-05-14T11:16:35.485+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:16:35.485+0000] {dag.py:3211} INFO - Sync 1 DAGs
 [2025-05-14T11:16:35.502+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:16:35.501+0000] {dag.py:4138} INFO - Setting next_dagrun for tiktok_videos_scraper_dag to None, run_after=None
 [2025-05-14T11:16:35.518+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_tiktok.py took 0.131 seconds
+[2025-05-14T11:17:05.625+0000] {processor.py:186} INFO - Started process (PID=7260) to work on /opt/airflow/dags/pipeline_tiktok.py
+[2025-05-14T11:17:05.631+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_tiktok.py for tasks to queue
+[2025-05-14T11:17:05.632+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:05.632+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_tiktok.py
+[2025-05-14T11:17:05.690+0000] {processor.py:925} INFO - DAG(s) 'tiktok_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline_tiktok.py
+[2025-05-14T11:17:05.709+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:05.708+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T11:17:05.718+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:05.717+0000] {dag.py:4138} INFO - Setting next_dagrun for tiktok_videos_scraper_dag to None, run_after=None
+[2025-05-14T11:17:05.729+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_tiktok.py took 0.108 seconds
+[2025-05-14T11:17:35.835+0000] {processor.py:186} INFO - Started process (PID=7287) to work on /opt/airflow/dags/pipeline_tiktok.py
+[2025-05-14T11:17:35.846+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_tiktok.py for tasks to queue
+[2025-05-14T11:17:35.847+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:35.847+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_tiktok.py
+[2025-05-14T11:17:35.904+0000] {processor.py:925} INFO - DAG(s) 'tiktok_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline_tiktok.py
+[2025-05-14T11:17:35.923+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:35.923+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T11:17:35.932+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:35.931+0000] {dag.py:4138} INFO - Setting next_dagrun for tiktok_videos_scraper_dag to None, run_after=None
+[2025-05-14T11:17:35.951+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_tiktok.py took 0.120 seconds
