@@ -1,6 +1,6 @@
 from airflow.decorators import task
 from utils.instagram_profile import ProfileScraper 
-from utils.downloader import batch_download_from_file
+# from utils.downloader import batch_download_from_file
 
 import sys
 sys.path.append('/opt/airflow/dags')

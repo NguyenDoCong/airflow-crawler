@@ -1,7 +1,6 @@
 from airflow.decorators import task
 from dags.app.worker.schema import TaskStatus
-from utils.downloader import batch_download_from_file, download_video
-from dags.tasks.get_transcript import audio_to_transcript
+from utils.downloader import download_video
 from config import Config
 
 import sys
@@ -15,7 +14,7 @@ from dags.utils.get_id import extract_id
 # )
 @task
 
-def tiktok_videos_scraper(id = "therock",count = 10, ms_tokens=None, TIKTOK_ERROR_FILE_PATH= "data/scraped_data/tiktok.txt", TIKTOK_FILE_PATH="data/scraped_data/tiktok.txt", DOWNLOAD_DIRECTORY="media"):
+def tiktok_videos_scraper(id = "therock",count = 10, ms_tokens=None, DOWNLOAD_DIRECTORY="data"):
     from TikTokApi import TikTokApi
     import asyncio
     import os
@@ -23,15 +22,15 @@ def tiktok_videos_scraper(id = "therock",count = 10, ms_tokens=None, TIKTOK_ERRO
     ms_tokens = os.environ.get(
     "ms_token", None
     )  # set your own ms_token, think it might need to have visited a profile
-    # ms_token = Config.MS_TOKENS
+    ms_tokens = Config.MS_TOKENS
     
-    async def user_example():
+    async def user_template():
         async with TikTokApi() as api:
             # Đổi ms_tokens nếu bị lỗi chạy headless
             videos=[]
             new_links = []
             try:
-                await api.create_sessions(ms_tokens=['azquqBjM67uB1DOXOvXJuaQxP1vQD8Ez_a8kDxBXNDBbLFFRE4KWUDuX-l0OjQvpgbE_dYsreYMw739sg14g8lycqGHMkEzwuWRN-L0ldYWWGwWoYs4Gw8MDxAWhEscDMqFxCSFgB3ayJ_KUoLceFA=='], 
+                await api.create_sessions(ms_tokens=ms_tokens, 
                                         num_sessions=1, sleep_after=3, browser=os.getenv("TIKTOK_BROWSER", "chromium"))
                 user = api.user(f"{id}")
                 async for video in user.videos(count=count):
@@ -42,7 +41,7 @@ def tiktok_videos_scraper(id = "therock",count = 10, ms_tokens=None, TIKTOK_ERRO
                 for result in results:
                     if result.url in videos:
                         videos.remove(result.url)
-                print(f"Remaining new videos: {len(videos)}")
+                # print(f"Remaining new videos: {len(videos)}")
 
                 new_links = set(videos)
 
@@ -70,7 +69,6 @@ def tiktok_videos_scraper(id = "therock",count = 10, ms_tokens=None, TIKTOK_ERRO
                 
             print(f"Downloaded {len(results)} new videos.")
             return results
-    #         # batch_download_from_file(TIKTOK_FILE_PATH, DOWNLOAD_DIRECTORY, platform="tiktok")
     # asyncio.run(user_example())
-    results = asyncio.run(user_example())
-    return results  # thêm dòng này
+    results = asyncio.run(user_template())
+    return results  

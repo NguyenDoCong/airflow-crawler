@@ -41,6 +41,9 @@ x-airflow-common:
     - ./config:/opt/airflow/config
     - ./plugins:/opt/airflow/plugins
     - ./data:/opt/airflow/data 
+    - ./dags/utils:/opt/airflow/dags/utils
+    - ./data/scraped_data:/opt/airflow/scraped_data
+
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on
@@ -66,14 +69,14 @@ services:
   airflow-webserver:
     <<: *airflow-common
     command: webserver
-    volumes:
-      - ./dags:/opt/airflow/dags
-      - ./dags/utils:/opt/airflow/dags/utils
-      - ./logs:/opt/airflow/logs
-      - ./config:/opt/airflow/config
-      - ./plugins:/opt/airflow/plugins
-      - ./data:/opt/airflow/data
-      - ./data/scraped_data:/opt/airflow/scraped_data
+    # volumes:
+      # - ./dags:/opt/airflow/dags
+      # - ./dags/utils:/opt/airflow/dags/utils
+      # - ./logs:/opt/airflow/logs
+      # - ./config:/opt/airflow/config
+      # - ./plugins:/opt/airflow/plugins
+      # - ./data:/opt/airflow/data
+      # - ./data/scraped_data:/opt/airflow/scraped_data
 
     ports:
       - "${AIRFLOW_WEBSERVER_PORT:-8080}:8080"
@@ -91,14 +94,14 @@ services:
   airflow-scheduler:
     <<: *airflow-common
     command: scheduler
-    volumes:
-      - ./dags:/opt/airflow/dags
-      - ./dags/utils:/opt/airflow/dags/utils
-      - ./logs:/opt/airflow/logs
-      - ./config:/opt/airflow/config
-      - ./plugins:/opt/airflow/plugins
-      - ./data:/opt/airflow/data
-      - ./data/scraped_data:/opt/airflow/scraped_data
+    # volumes:
+      # - ./dags:/opt/airflow/dags
+      # - ./dags/utils:/opt/airflow/dags/utils
+      # - ./logs:/opt/airflow/logs
+      # - ./config:/opt/airflow/config
+      # - ./plugins:/opt/airflow/plugins
+      # - ./data:/opt/airflow/data
+      # - ./data/scraped_data:/opt/airflow/scraped_data
 
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:8974/health"]
@@ -114,14 +117,14 @@ services:
   airflow-worker:
     <<: *airflow-common
     command: celery worker
-    volumes:
-      - ./dags:/opt/airflow/dags
-      - ./dags/utils:/opt/airflow/dags/utils
-      - ./logs:/opt/airflow/logs
-      - ./config:/opt/airflow/config
-      - ./plugins:/opt/airflow/plugins
-      - ./data:/opt/airflow/data
-      - ./data/scraped_data:/opt/airflow/scraped_data
+    # volumes:
+      # - ./dags:/opt/airflow/dags
+      # - ./dags/utils:/opt/airflow/dags/utils
+      # - ./logs:/opt/airflow/logs
+      # - ./config:/opt/airflow/config
+      # - ./plugins:/opt/airflow/plugins
+      # - ./data:/opt/airflow/data
+      # - ./data/scraped_data:/opt/airflow/scraped_data
 
     healthcheck:
       test:
@@ -144,14 +147,14 @@ services:
   airflow-triggerer:
     <<: *airflow-common
     command: triggerer
-    volumes:
-      - ./dags:/opt/airflow/dags
-      - ./dags/utils:/opt/airflow/dags/utils
-      - ./logs:/opt/airflow/logs    
-      - ./config:/opt/airflow/config
-      - ./plugins:/opt/airflow/plugins
-      - ./data:/opt/airflow/data
-      - ./data/scraped_data:/opt/airflow/scraped_data
+    # volumes:
+      # - ./dags:/opt/airflow/dags
+      # - ./dags/utils:/opt/airflow/dags/utils
+      # - ./logs:/opt/airflow/logs    
+      # - ./config:/opt/airflow/config
+      # - ./plugins:/opt/airflow/plugins
+      # - ./data:/opt/airflow/data
+      # - ./data/scraped_data:/opt/airflow/scraped_data
     healthcheck:
       test: ["CMD-SHELL", 'airflow jobs check --job-type TriggererJob --hostname "$${HOSTNAME}"']
       interval: 30s

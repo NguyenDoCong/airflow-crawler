@@ -1,0 +1,573 @@
+[2025-05-14T09:26:56.906+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-14T09:26:56.917+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-14T09:26:56.401790+00:00 [queued]>
+[2025-05-14T09:26:56.924+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-14T09:26:56.401790+00:00 [queued]>
+[2025-05-14T09:26:56.925+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-14T09:26:56.933+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): fb_videos_scraper> on 2025-05-14 09:26:56.401790+00:00
+[2025-05-14T09:26:56.936+0000] {standard_task_runner.py:72} INFO - Started process 1642 to run task
+[2025-05-14T09:26:56.938+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'fb_videos_scraper', 'manual__2025-05-14T09:26:56.401790+00:00', '--job-id', '5459', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_fb.py', '--cfg-path', '/tmp/tmpa30539jo']
+[2025-05-14T09:26:56.940+0000] {standard_task_runner.py:105} INFO - Job 5459: Subtask fb_videos_scraper
+[2025-05-14T09:26:56.976+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.fb_videos_scraper manual__2025-05-14T09:26:56.401790+00:00 [running]> on host 255dbbe6d096
+[2025-05-14T09:26:57.036+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='fb_videos_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-05-14T09:26:56.401790+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-14T09:26:56.401790+00:00'
+[2025-05-14T09:26:57.037+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-14T09:27:54.800+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.92); currently, chromedriver 136.0.7103.92 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-14T09:27:56.987+0000] {logging_mixin.py:190} INFO - Step 1 of 3 - Load cookies
+[2025-05-14T09:28:14.984+0000] {logging_mixin.py:190} INFO - Step 2 of 3 - Scrolling page
+[2025-05-14T09:28:14.984+0000] {logging_mixin.py:190} INFO - Scrolling 10 iterations...
+[2025-05-14T09:28:21.027+0000] {logging_mixin.py:190} INFO - Scrolled 2 iterations
+[2025-05-14T09:28:21.027+0000] {logging_mixin.py:190} INFO - Step 3 of 3 - Extract videos urls
+[2025-05-14T09:28:21.040+0000] {logging_mixin.py:190} INFO - Found 93 a tags
+[2025-05-14T09:28:21.291+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/100087341155257/videos/612326127913584
+[2025-05-14T09:28:21.296+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/612326127913584/
+[2025-05-14T09:28:21.306+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/1019921852555282/
+[2025-05-14T09:28:21.316+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/1496815271117860/
+[2025-05-14T09:28:21.325+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/7206305039381158/
+[2025-05-14T09:28:21.336+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/300258409024726/
+[2025-05-14T09:28:21.346+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/736392504839613/
+[2025-05-14T09:28:21.356+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/199672223024300/
+[2025-05-14T09:28:21.365+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/796377181594223/
+[2025-05-14T09:28:21.376+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/963843274971699/
+[2025-05-14T09:28:21.386+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/2110165422507634/
+[2025-05-14T09:28:21.396+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/585395010300236/
+[2025-05-14T09:28:21.407+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/726600225473500/
+[2025-05-14T09:28:21.416+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/2909373262542225/
+[2025-05-14T09:28:21.426+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/500334525564870/
+[2025-05-14T09:28:21.435+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/883435672700861/
+[2025-05-14T09:28:21.444+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/568776548091697/
+[2025-05-14T09:28:21.453+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/9291383070887304/
+[2025-05-14T09:28:21.463+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/501990768664483/
+[2025-05-14T09:28:21.473+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/5608822982568234/
+[2025-05-14T09:28:21.482+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/1281437455976230/
+[2025-05-14T09:28:21.491+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/3235875553391967/
+[2025-05-14T09:28:21.500+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/official.parkhangseo/videos/902792580882044/
+[2025-05-14T09:28:21.505+0000] {logging_mixin.py:190} INFO - Found 23 href elements
+[2025-05-14T09:28:21.505+0000] {logging_mixin.py:190} INFO -  Scraped data:
+[2025-05-14T09:28:21.506+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/100087341155257/videos/612326127913584
+[2025-05-14T09:28:21.506+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/612326127913584/
+[2025-05-14T09:28:21.506+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/1019921852555282/
+[2025-05-14T09:28:21.506+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/1496815271117860/
+[2025-05-14T09:28:21.507+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/7206305039381158/
+[2025-05-14T09:28:21.507+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/300258409024726/
+[2025-05-14T09:28:21.507+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/736392504839613/
+[2025-05-14T09:28:21.507+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/199672223024300/
+[2025-05-14T09:28:21.507+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/796377181594223/
+[2025-05-14T09:28:21.508+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/963843274971699/
+[2025-05-14T09:28:21.508+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/2110165422507634/
+[2025-05-14T09:28:21.508+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/585395010300236/
+[2025-05-14T09:28:21.508+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/726600225473500/
+[2025-05-14T09:28:21.509+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/2909373262542225/
+[2025-05-14T09:28:21.509+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/500334525564870/
+[2025-05-14T09:28:21.509+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/883435672700861/
+[2025-05-14T09:28:21.509+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/568776548091697/
+[2025-05-14T09:28:21.510+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/9291383070887304/
+[2025-05-14T09:28:21.510+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/501990768664483/
+[2025-05-14T09:28:21.510+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/5608822982568234/
+[2025-05-14T09:28:21.510+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/1281437455976230/
+[2025-05-14T09:28:21.510+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/3235875553391967/
+[2025-05-14T09:28:21.511+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/official.parkhangseo/videos/902792580882044/
+[2025-05-14T09:28:21.511+0000] {logging_mixin.py:190} INFO - Don't close the app! Saving scraped data to database, it can take a while!
+[2025-05-14T09:28:21.521+0000] {warnings.py:109} WARNING - /opt/airflow/dags/app/core/database_utils.py:38: SAWarning: SELECT statement has a cartesian product between FROM element(s) "facebook" and FROM element "tiktok".  Apply join condition(s) between each element to resolve.
+  return db.query(Facebook).filter(Tiktok.status == TaskStatus.SUCCESS.value).all()
+
+[2025-05-14T09:28:21.523+0000] {logging_mixin.py:190} INFO - Remaining new videos: 23
+[2025-05-14T09:28:21.523+0000] {logging_mixin.py:190} INFO - New videos: 23
+[2025-05-14T09:28:21.654+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:21.654+0000] {logging_mixin.py:190} INFO - Downloading video from 1019921852555282...
+[2025-05-14T09:28:21.757+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/1019921852555282/
+[2025-05-14T09:28:21.758+0000] {logging_mixin.py:190} INFO - [facebook] 1019921852555282: Downloading webpage
+[2025-05-14T09:28:22.807+0000] {logging_mixin.py:190} INFO - [info] 1019921852555282: Downloading 1 format(s): 203100809504502a
+[2025-05-14T09:28:23.163+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1019921852555282
+[2025-05-14T09:28:23.164+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  372.70KiB at  Unknown B/s ETA Unknown
+[2025-05-14T09:28:23.165+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  372.70KiB at    2.23MiB/s ETA 00:00  
+[2025-05-14T09:28:23.165+0000] {logging_mixin.py:190} INFO - [download]   1.9% of  372.70KiB at    4.12MiB/s ETA 00:00
+[2025-05-14T09:28:23.165+0000] {logging_mixin.py:190} INFO - [download]   4.0% of  372.70KiB at    7.29MiB/s ETA 00:00
+[2025-05-14T09:28:23.167+0000] {logging_mixin.py:190} INFO - [download]   8.3% of  372.70KiB at    8.38MiB/s ETA 00:00
+[2025-05-14T09:28:23.172+0000] {logging_mixin.py:190} INFO - [download]  16.9% of  372.70KiB at    7.14MiB/s ETA 00:00
+[2025-05-14T09:28:23.181+0000] {logging_mixin.py:190} INFO - [download]  34.1% of  372.70KiB at    7.13MiB/s ETA 00:00
+[2025-05-14T09:28:23.199+0000] {logging_mixin.py:190} INFO - [download]  68.4% of  372.70KiB at    6.97MiB/s ETA 00:00
+[2025-05-14T09:28:23.216+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  372.70KiB at    6.98MiB/s ETA 00:00
+[2025-05-14T09:28:23.216+0000] {logging_mixin.py:190} INFO - [download] 100% of  372.70KiB in 00:00:00 at 917.38KiB/s 
+[2025-05-14T09:28:23.269+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1019921852555282"
+[2025-05-14T09:28:23.404+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1019921852555282.mp3
+[2025-05-14T09:28:24.095+0000] {logging_mixin.py:190} INFO - Deleting original file data/1019921852555282 (pass -k to keep)
+[2025-05-14T09:28:24.098+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1019921852555282
+[2025-05-14T09:28:24.107+0000] {logging_mixin.py:190} INFO - Downloaded video 1019921852555282 to data/1019921852555282.mp3
+[2025-05-14T09:28:24.230+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:24.230+0000] {logging_mixin.py:190} INFO - Downloading video from 1496815271117860...
+[2025-05-14T09:28:24.263+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/1496815271117860/
+[2025-05-14T09:28:24.263+0000] {logging_mixin.py:190} INFO - [facebook] 1496815271117860: Downloading webpage
+[2025-05-14T09:28:26.689+0000] {logging_mixin.py:190} INFO - [info] 1496815271117860: Downloading 1 format(s): 7113149612037720a
+[2025-05-14T09:28:26.763+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1496815271117860
+[2025-05-14T09:28:26.764+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  332.25KiB at  Unknown B/s ETA Unknown
+[2025-05-14T09:28:26.764+0000] {logging_mixin.py:190} INFO - [download]   0.9% of  332.25KiB at    2.70MiB/s ETA 00:00  
+[2025-05-14T09:28:26.764+0000] {logging_mixin.py:190} INFO - [download]   2.1% of  332.25KiB at    4.67MiB/s ETA 00:00
+[2025-05-14T09:28:26.765+0000] {logging_mixin.py:190} INFO - [download]   4.5% of  332.25KiB at    7.85MiB/s ETA 00:00
+[2025-05-14T09:28:26.766+0000] {logging_mixin.py:190} INFO - [download]   9.3% of  332.25KiB at    9.91MiB/s ETA 00:00
+[2025-05-14T09:28:26.770+0000] {logging_mixin.py:190} INFO - [download]  19.0% of  332.25KiB at    9.26MiB/s ETA 00:00
+[2025-05-14T09:28:26.778+0000] {logging_mixin.py:190} INFO - [download]  38.2% of  332.25KiB at    8.55MiB/s ETA 00:00
+[2025-05-14T09:28:26.791+0000] {logging_mixin.py:190} INFO - [download]  76.7% of  332.25KiB at    9.05MiB/s ETA 00:00
+[2025-05-14T09:28:26.798+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  332.25KiB at    9.37MiB/s ETA 00:00
+[2025-05-14T09:28:26.798+0000] {logging_mixin.py:190} INFO - [download] 100% of  332.25KiB in 00:00:00 at 3.03MiB/s   
+[2025-05-14T09:28:26.800+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1496815271117860"
+[2025-05-14T09:28:26.891+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1496815271117860.mp3
+[2025-05-14T09:28:27.485+0000] {logging_mixin.py:190} INFO - Deleting original file data/1496815271117860 (pass -k to keep)
+[2025-05-14T09:28:27.488+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1496815271117860
+[2025-05-14T09:28:27.493+0000] {logging_mixin.py:190} INFO - Downloaded video 1496815271117860 to data/1496815271117860.mp3
+[2025-05-14T09:28:27.607+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:27.608+0000] {logging_mixin.py:190} INFO - Downloading video from 902792580882044...
+[2025-05-14T09:28:27.637+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/902792580882044/
+[2025-05-14T09:28:27.637+0000] {logging_mixin.py:190} INFO - [facebook] 902792580882044: Downloading webpage
+[2025-05-14T09:28:28.504+0000] {logging_mixin.py:190} INFO - [info] 902792580882044: Downloading 1 format(s): 1386698001737744a
+[2025-05-14T09:28:28.556+0000] {logging_mixin.py:190} INFO - [download] Destination: data/902792580882044
+[2025-05-14T09:28:28.556+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  218.87KiB at  584.90KiB/s ETA 00:00
+[2025-05-14T09:28:28.557+0000] {logging_mixin.py:190} INFO - [download]   1.4% of  218.87KiB at    1.22MiB/s ETA 00:00
+[2025-05-14T09:28:28.557+0000] {logging_mixin.py:190} INFO - [download]   3.2% of  218.87KiB at    2.32MiB/s ETA 00:00
+[2025-05-14T09:28:28.558+0000] {logging_mixin.py:190} INFO - [download]   6.9% of  218.87KiB at    4.25MiB/s ETA 00:00
+[2025-05-14T09:28:28.559+0000] {logging_mixin.py:190} INFO - [download]  14.2% of  218.87KiB at    6.66MiB/s ETA 00:00
+[2025-05-14T09:28:28.562+0000] {logging_mixin.py:190} INFO - [download]  28.8% of  218.87KiB at    8.14MiB/s ETA 00:00
+[2025-05-14T09:28:28.569+0000] {logging_mixin.py:190} INFO - [download]  58.0% of  218.87KiB at    8.73MiB/s ETA 00:00
+[2025-05-14T09:28:28.578+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  218.87KiB at    9.30MiB/s ETA 00:00
+[2025-05-14T09:28:28.578+0000] {logging_mixin.py:190} INFO - [download] 100% of  218.87KiB in 00:00:00 at 2.99MiB/s   
+[2025-05-14T09:28:28.580+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/902792580882044"
+[2025-05-14T09:28:28.671+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/902792580882044.mp3
+[2025-05-14T09:28:29.141+0000] {logging_mixin.py:190} INFO - Deleting original file data/902792580882044 (pass -k to keep)
+[2025-05-14T09:28:29.144+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 902792580882044
+[2025-05-14T09:28:29.150+0000] {logging_mixin.py:190} INFO - Downloaded video 902792580882044 to data/902792580882044.mp3
+[2025-05-14T09:28:29.276+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:29.277+0000] {logging_mixin.py:190} INFO - Downloading video from 963843274971699...
+[2025-05-14T09:28:29.306+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/963843274971699/
+[2025-05-14T09:28:29.307+0000] {logging_mixin.py:190} INFO - [facebook] 963843274971699: Downloading webpage
+[2025-05-14T09:28:30.130+0000] {logging_mixin.py:190} INFO - [info] 963843274971699: Downloading 1 format(s): 773530004151374a
+[2025-05-14T09:28:30.183+0000] {logging_mixin.py:190} INFO - [download] Destination: data/963843274971699
+[2025-05-14T09:28:30.183+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  539.30KiB at  564.51KiB/s ETA 00:00
+[2025-05-14T09:28:30.188+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  539.30KiB at  474.06KiB/s ETA 00:01
+[2025-05-14T09:28:30.189+0000] {logging_mixin.py:190} INFO - [download]   1.3% of  539.30KiB at  990.89KiB/s ETA 00:00
+[2025-05-14T09:28:30.189+0000] {logging_mixin.py:190} INFO - [download]   2.8% of  539.30KiB at    1.95MiB/s ETA 00:00
+[2025-05-14T09:28:30.189+0000] {logging_mixin.py:190} INFO - [download]   5.7% of  539.30KiB at    3.82MiB/s ETA 00:00
+[2025-05-14T09:28:30.192+0000] {logging_mixin.py:190} INFO - [download]  11.7% of  539.30KiB at    5.74MiB/s ETA 00:00
+[2025-05-14T09:28:30.198+0000] {logging_mixin.py:190} INFO - [download]  23.5% of  539.30KiB at    7.39MiB/s ETA 00:00
+[2025-05-14T09:28:30.212+0000] {logging_mixin.py:190} INFO - [download]  47.3% of  539.30KiB at    8.15MiB/s ETA 00:00
+[2025-05-14T09:28:30.237+0000] {logging_mixin.py:190} INFO - [download]  94.8% of  539.30KiB at    8.94MiB/s ETA 00:00
+[2025-05-14T09:28:30.240+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  539.30KiB at    9.04MiB/s ETA 00:00
+[2025-05-14T09:28:30.241+0000] {logging_mixin.py:190} INFO - [download] 100% of  539.30KiB in 00:00:00 at 4.91MiB/s   
+[2025-05-14T09:28:30.242+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/963843274971699"
+[2025-05-14T09:28:30.340+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/963843274971699.mp3
+[2025-05-14T09:28:31.289+0000] {logging_mixin.py:190} INFO - Deleting original file data/963843274971699 (pass -k to keep)
+[2025-05-14T09:28:31.292+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 963843274971699
+[2025-05-14T09:28:31.297+0000] {logging_mixin.py:190} INFO - Downloaded video 963843274971699 to data/963843274971699.mp3
+[2025-05-14T09:28:31.420+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:31.421+0000] {logging_mixin.py:190} INFO - Downloading video from 5608822982568234...
+[2025-05-14T09:28:31.451+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/5608822982568234/
+[2025-05-14T09:28:31.451+0000] {logging_mixin.py:190} INFO - [facebook] 5608822982568234: Downloading webpage
+[2025-05-14T09:28:32.234+0000] {logging_mixin.py:190} INFO - [info] 5608822982568234: Downloading 1 format(s): sd
+[2025-05-14T09:28:32.263+0000] {logging_mixin.py:190} INFO - [download] Destination: data/5608822982568234
+[2025-05-14T09:28:32.263+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    4.14MiB at  Unknown B/s ETA Unknown
+[2025-05-14T09:28:32.268+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    4.14MiB at  586.75KiB/s ETA 00:07  
+[2025-05-14T09:28:32.268+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    4.14MiB at    1.21MiB/s ETA 00:03
+[2025-05-14T09:28:32.268+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    4.14MiB at    2.42MiB/s ETA 00:01
+[2025-05-14T09:28:32.269+0000] {logging_mixin.py:190} INFO - [download]   0.7% of    4.14MiB at    4.51MiB/s ETA 00:00
+[2025-05-14T09:28:32.272+0000] {logging_mixin.py:190} INFO - [download]   1.5% of    4.14MiB at    6.28MiB/s ETA 00:00
+[2025-05-14T09:28:32.278+0000] {logging_mixin.py:190} INFO - [download]   3.0% of    4.14MiB at    7.77MiB/s ETA 00:00
+[2025-05-14T09:28:32.291+0000] {logging_mixin.py:190} INFO - [download]   6.0% of    4.14MiB at    8.80MiB/s ETA 00:00
+[2025-05-14T09:28:32.315+0000] {logging_mixin.py:190} INFO - [download]  12.0% of    4.14MiB at    9.50MiB/s ETA 00:00
+[2025-05-14T09:28:32.365+0000] {logging_mixin.py:190} INFO - [download]  24.1% of    4.14MiB at    9.76MiB/s ETA 00:00
+[2025-05-14T09:28:32.469+0000] {logging_mixin.py:190} INFO - [download]  48.3% of    4.14MiB at    9.70MiB/s ETA 00:00
+[2025-05-14T09:28:32.670+0000] {logging_mixin.py:190} INFO - [download]  96.5% of    4.14MiB at    9.81MiB/s ETA 00:00
+[2025-05-14T09:28:32.683+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    4.14MiB at    9.85MiB/s ETA 00:00
+[2025-05-14T09:28:32.684+0000] {logging_mixin.py:190} INFO - [download] 100% of    4.14MiB in 00:00:00 at 9.24MiB/s   
+[2025-05-14T09:28:32.733+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/5608822982568234.mp3
+[2025-05-14T09:28:33.477+0000] {logging_mixin.py:190} INFO - Deleting original file data/5608822982568234 (pass -k to keep)
+[2025-05-14T09:28:33.479+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 5608822982568234
+[2025-05-14T09:28:33.485+0000] {logging_mixin.py:190} INFO - Downloaded video 5608822982568234 to data/5608822982568234.mp3
+[2025-05-14T09:28:33.607+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:33.607+0000] {logging_mixin.py:190} INFO - Downloading video from 7206305039381158...
+[2025-05-14T09:28:33.637+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/7206305039381158/
+[2025-05-14T09:28:33.637+0000] {logging_mixin.py:190} INFO - [facebook] 7206305039381158: Downloading webpage
+[2025-05-14T09:28:34.523+0000] {logging_mixin.py:190} INFO - [info] 7206305039381158: Downloading 1 format(s): 1036734707527654a
+[2025-05-14T09:28:34.569+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7206305039381158
+[2025-05-14T09:28:34.570+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  146.16KiB at  538.70KiB/s ETA 00:00
+[2025-05-14T09:28:34.571+0000] {logging_mixin.py:190} INFO - [download]   2.1% of  146.16KiB at  961.48KiB/s ETA 00:00
+[2025-05-14T09:28:34.571+0000] {logging_mixin.py:190} INFO - [download]   4.8% of  146.16KiB at    1.89MiB/s ETA 00:00
+[2025-05-14T09:28:34.572+0000] {logging_mixin.py:190} INFO - [download]  10.3% of  146.16KiB at    3.67MiB/s ETA 00:00
+[2025-05-14T09:28:34.573+0000] {logging_mixin.py:190} INFO - [download]  21.2% of  146.16KiB at    5.19MiB/s ETA 00:00
+[2025-05-14T09:28:34.577+0000] {logging_mixin.py:190} INFO - [download]  43.1% of  146.16KiB at    6.88MiB/s ETA 00:00
+[2025-05-14T09:28:34.583+0000] {logging_mixin.py:190} INFO - [download]  86.9% of  146.16KiB at    8.20MiB/s ETA 00:00
+[2025-05-14T09:28:34.585+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  146.16KiB at    8.17MiB/s ETA 00:00
+[2025-05-14T09:28:34.586+0000] {logging_mixin.py:190} INFO - [download] 100% of  146.16KiB in 00:00:00 at 2.40MiB/s   
+[2025-05-14T09:28:34.587+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/7206305039381158"
+[2025-05-14T09:28:34.677+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7206305039381158.mp3
+[2025-05-14T09:28:34.989+0000] {logging_mixin.py:190} INFO - Deleting original file data/7206305039381158 (pass -k to keep)
+[2025-05-14T09:28:34.991+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7206305039381158
+[2025-05-14T09:28:34.999+0000] {logging_mixin.py:190} INFO - Downloaded video 7206305039381158 to data/7206305039381158.mp3
+[2025-05-14T09:28:35.125+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:35.125+0000] {logging_mixin.py:190} INFO - Downloading video from 726600225473500...
+[2025-05-14T09:28:35.159+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/726600225473500/
+[2025-05-14T09:28:35.160+0000] {logging_mixin.py:190} INFO - [facebook] 726600225473500: Downloading webpage
+[2025-05-14T09:28:36.010+0000] {logging_mixin.py:190} INFO - [info] 726600225473500: Downloading 1 format(s): 2473727886110568a
+[2025-05-14T09:28:36.053+0000] {logging_mixin.py:190} INFO - [download] Destination: data/726600225473500
+[2025-05-14T09:28:36.053+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  442.52KiB at  704.21KiB/s ETA 00:00
+[2025-05-14T09:28:36.057+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  442.52KiB at  533.74KiB/s ETA 00:00
+[2025-05-14T09:28:36.058+0000] {logging_mixin.py:190} INFO - [download]   1.6% of  442.52KiB at    1.11MiB/s ETA 00:00
+[2025-05-14T09:28:36.058+0000] {logging_mixin.py:190} INFO - [download]   3.4% of  442.52KiB at    2.24MiB/s ETA 00:00
+[2025-05-14T09:28:36.059+0000] {logging_mixin.py:190} INFO - [download]   7.0% of  442.52KiB at    4.15MiB/s ETA 00:00
+[2025-05-14T09:28:36.063+0000] {logging_mixin.py:190} INFO - [download]  14.2% of  442.52KiB at    5.59MiB/s ETA 00:00
+[2025-05-14T09:28:36.070+0000] {logging_mixin.py:190} INFO - [download]  28.7% of  442.52KiB at    6.80MiB/s ETA 00:00
+[2025-05-14T09:28:36.084+0000] {logging_mixin.py:190} INFO - [download]  57.6% of  442.52KiB at    7.74MiB/s ETA 00:00
+[2025-05-14T09:28:36.113+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  442.52KiB at    7.06MiB/s ETA 00:00
+[2025-05-14T09:28:36.114+0000] {logging_mixin.py:190} INFO - [download] 100% of  442.52KiB in 00:00:00 at 4.26MiB/s   
+[2025-05-14T09:28:36.115+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/726600225473500"
+[2025-05-14T09:28:36.208+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/726600225473500.mp3
+[2025-05-14T09:28:36.747+0000] {logging_mixin.py:190} INFO - Deleting original file data/726600225473500 (pass -k to keep)
+[2025-05-14T09:28:36.750+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 726600225473500
+[2025-05-14T09:28:36.770+0000] {logging_mixin.py:190} INFO - Downloaded video 726600225473500 to data/726600225473500.mp3
+[2025-05-14T09:28:36.901+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:36.901+0000] {logging_mixin.py:190} INFO - Downloading video from 612326127913584...
+[2025-05-14T09:28:36.930+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/100087341155257/videos/612326127913584
+[2025-05-14T09:28:36.931+0000] {logging_mixin.py:190} INFO - [facebook] 612326127913584: Downloading webpage
+[2025-05-14T09:28:37.746+0000] {logging_mixin.py:190} INFO - [info] 612326127913584: Downloading 1 format(s): 612076641509076a
+[2025-05-14T09:28:37.773+0000] {logging_mixin.py:190} INFO - [download] Destination: data/612326127913584
+[2025-05-14T09:28:37.773+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  371.23KiB at  Unknown B/s ETA Unknown
+[2025-05-14T09:28:37.776+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  371.23KiB at  865.64KiB/s ETA 00:00  
+[2025-05-14T09:28:37.776+0000] {logging_mixin.py:190} INFO - [download]   1.9% of  371.23KiB at    1.74MiB/s ETA 00:00
+[2025-05-14T09:28:37.777+0000] {logging_mixin.py:190} INFO - [download]   4.0% of  371.23KiB at    3.41MiB/s ETA 00:00
+[2025-05-14T09:28:37.778+0000] {logging_mixin.py:190} INFO - [download]   8.4% of  371.23KiB at    5.83MiB/s ETA 00:00
+[2025-05-14T09:28:37.780+0000] {logging_mixin.py:190} INFO - [download]  17.0% of  371.23KiB at    7.70MiB/s ETA 00:00
+[2025-05-14T09:28:37.787+0000] {logging_mixin.py:190} INFO - [download]  34.2% of  371.23KiB at    8.78MiB/s ETA 00:00
+[2025-05-14T09:28:37.799+0000] {logging_mixin.py:190} INFO - [download]  68.7% of  371.23KiB at    9.38MiB/s ETA 00:00
+[2025-05-14T09:28:37.810+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  371.23KiB at    9.75MiB/s ETA 00:00
+[2025-05-14T09:28:37.810+0000] {logging_mixin.py:190} INFO - [download] 100% of  371.23KiB in 00:00:00 at 5.89MiB/s   
+[2025-05-14T09:28:37.812+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/612326127913584"
+[2025-05-14T09:28:37.903+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/612326127913584.mp3
+[2025-05-14T09:28:38.419+0000] {logging_mixin.py:190} INFO - Deleting original file data/612326127913584 (pass -k to keep)
+[2025-05-14T09:28:38.422+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 612326127913584
+[2025-05-14T09:28:38.441+0000] {logging_mixin.py:190} INFO - Downloaded video 612326127913584 to data/612326127913584.mp3
+[2025-05-14T09:28:38.557+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:38.557+0000] {logging_mixin.py:190} INFO - Downloading video from 736392504839613...
+[2025-05-14T09:28:38.596+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/736392504839613/
+[2025-05-14T09:28:38.596+0000] {logging_mixin.py:190} INFO - [facebook] 736392504839613: Downloading webpage
+[2025-05-14T09:28:39.360+0000] {logging_mixin.py:190} INFO - [info] 736392504839613: Downloading 1 format(s): 1305999593664255a
+[2025-05-14T09:28:39.621+0000] {logging_mixin.py:190} INFO - [download] Destination: data/736392504839613
+[2025-05-14T09:28:39.621+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  353.37KiB at  Unknown B/s ETA Unknown
+[2025-05-14T09:28:39.622+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  353.37KiB at    2.10MiB/s ETA 00:00  
+[2025-05-14T09:28:39.623+0000] {logging_mixin.py:190} INFO - [download]   2.0% of  353.37KiB at    3.56MiB/s ETA 00:00
+[2025-05-14T09:28:39.623+0000] {logging_mixin.py:190} INFO - [download]   4.2% of  353.37KiB at    5.67MiB/s ETA 00:00
+[2025-05-14T09:28:39.625+0000] {logging_mixin.py:190} INFO - [download]   8.8% of  353.37KiB at    7.42MiB/s ETA 00:00
+[2025-05-14T09:28:39.628+0000] {logging_mixin.py:190} INFO - [download]  17.8% of  353.37KiB at    8.64MiB/s ETA 00:00
+[2025-05-14T09:28:39.634+0000] {logging_mixin.py:190} INFO - [download]  35.9% of  353.37KiB at    9.35MiB/s ETA 00:00
+[2025-05-14T09:28:39.707+0000] {logging_mixin.py:190} INFO - [download]  72.2% of  353.37KiB at    2.88MiB/s ETA 00:00
+[2025-05-14T09:28:39.717+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  353.37KiB at    3.58MiB/s ETA 00:00
+[2025-05-14T09:28:39.718+0000] {logging_mixin.py:190} INFO - [download] 100% of  353.37KiB in 00:00:00 at 994.08KiB/s 
+[2025-05-14T09:28:39.720+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/736392504839613"
+[2025-05-14T09:28:39.813+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/736392504839613.mp3
+[2025-05-14T09:28:40.488+0000] {logging_mixin.py:190} INFO - Deleting original file data/736392504839613 (pass -k to keep)
+[2025-05-14T09:28:40.491+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 736392504839613
+[2025-05-14T09:28:40.507+0000] {logging_mixin.py:190} INFO - Downloaded video 736392504839613 to data/736392504839613.mp3
+[2025-05-14T09:28:40.645+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:40.645+0000] {logging_mixin.py:190} INFO - Downloading video from 612326127913584...
+[2025-05-14T09:28:40.675+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/612326127913584/
+[2025-05-14T09:28:40.675+0000] {logging_mixin.py:190} INFO - [facebook] 612326127913584: Downloading webpage
+[2025-05-14T09:28:41.488+0000] {logging_mixin.py:190} INFO - [info] 612326127913584: Downloading 1 format(s): 612076641509076a
+[2025-05-14T09:28:41.516+0000] {logging_mixin.py:190} INFO - [download] Destination: data/612326127913584
+[2025-05-14T09:28:41.516+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  371.23KiB at  Unknown B/s ETA Unknown
+[2025-05-14T09:28:41.519+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  371.23KiB at  892.03KiB/s ETA 00:00  
+[2025-05-14T09:28:41.519+0000] {logging_mixin.py:190} INFO - [download]   1.9% of  371.23KiB at    1.71MiB/s ETA 00:00
+[2025-05-14T09:28:41.520+0000] {logging_mixin.py:190} INFO - [download]   4.0% of  371.23KiB at    3.28MiB/s ETA 00:00
+[2025-05-14T09:28:41.520+0000] {logging_mixin.py:190} INFO - [download]   8.4% of  371.23KiB at    6.18MiB/s ETA 00:00
+[2025-05-14T09:28:41.523+0000] {logging_mixin.py:190} INFO - [download]  17.0% of  371.23KiB at    7.76MiB/s ETA 00:00
+[2025-05-14T09:28:41.530+0000] {logging_mixin.py:190} INFO - [download]  34.2% of  371.23KiB at    8.40MiB/s ETA 00:00
+[2025-05-14T09:28:41.542+0000] {logging_mixin.py:190} INFO - [download]  68.7% of  371.23KiB at    9.17MiB/s ETA 00:00
+[2025-05-14T09:28:41.553+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  371.23KiB at    9.55MiB/s ETA 00:00
+[2025-05-14T09:28:41.554+0000] {logging_mixin.py:190} INFO - [download] 100% of  371.23KiB in 00:00:00 at 5.71MiB/s   
+[2025-05-14T09:28:41.556+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/612326127913584"
+[2025-05-14T09:28:41.649+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/612326127913584.mp3
+[2025-05-14T09:28:42.169+0000] {logging_mixin.py:190} INFO - Deleting original file data/612326127913584 (pass -k to keep)
+[2025-05-14T09:28:42.172+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 612326127913584
+[2025-05-14T09:28:42.178+0000] {logging_mixin.py:190} INFO - Downloaded video 612326127913584 to data/612326127913584.mp3
+[2025-05-14T09:28:42.292+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:42.293+0000] {logging_mixin.py:190} INFO - Downloading video from 1281437455976230...
+[2025-05-14T09:28:42.323+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/1281437455976230/
+[2025-05-14T09:28:42.324+0000] {logging_mixin.py:190} INFO - [facebook] 1281437455976230: Downloading webpage
+[2025-05-14T09:28:43.302+0000] {logging_mixin.py:190} INFO - [info] 1281437455976230: Downloading 1 format(s): sd
+[2025-05-14T09:28:43.335+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1281437455976230
+[2025-05-14T09:28:43.336+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    2.89MiB at  624.15KiB/s ETA 00:04
+[2025-05-14T09:28:43.340+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    2.89MiB at  479.62KiB/s ETA 00:06
+[2025-05-14T09:28:43.341+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    2.89MiB at 1005.76KiB/s ETA 00:02
+[2025-05-14T09:28:43.341+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    2.89MiB at    1.96MiB/s ETA 00:01
+[2025-05-14T09:28:43.342+0000] {logging_mixin.py:190} INFO - [download]   1.0% of    2.89MiB at    3.82MiB/s ETA 00:00
+[2025-05-14T09:28:43.344+0000] {logging_mixin.py:190} INFO - [download]   2.1% of    2.89MiB at    5.94MiB/s ETA 00:00
+[2025-05-14T09:28:43.351+0000] {logging_mixin.py:190} INFO - [download]   4.3% of    2.89MiB at    7.43MiB/s ETA 00:00
+[2025-05-14T09:28:43.363+0000] {logging_mixin.py:190} INFO - [download]   8.6% of    2.89MiB at    8.70MiB/s ETA 00:00
+[2025-05-14T09:28:43.388+0000] {logging_mixin.py:190} INFO - [download]  17.3% of    2.89MiB at    9.26MiB/s ETA 00:00
+[2025-05-14T09:28:43.438+0000] {logging_mixin.py:190} INFO - [download]  34.5% of    2.89MiB at    9.60MiB/s ETA 00:00
+[2025-05-14T09:28:43.538+0000] {logging_mixin.py:190} INFO - [download]  69.1% of    2.89MiB at    9.78MiB/s ETA 00:00
+[2025-05-14T09:28:43.626+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    2.89MiB at    9.91MiB/s ETA 00:00
+[2025-05-14T09:28:43.627+0000] {logging_mixin.py:190} INFO - [download] 100% of    2.89MiB in 00:00:00 at 8.95MiB/s   
+[2025-05-14T09:28:43.676+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1281437455976230.mp3
+[2025-05-14T09:28:44.221+0000] {logging_mixin.py:190} INFO - Deleting original file data/1281437455976230 (pass -k to keep)
+[2025-05-14T09:28:44.222+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1281437455976230
+[2025-05-14T09:28:44.235+0000] {logging_mixin.py:190} INFO - Downloaded video 1281437455976230 to data/1281437455976230.mp3
+[2025-05-14T09:28:44.365+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:44.365+0000] {logging_mixin.py:190} INFO - Downloading video from 3235875553391967...
+[2025-05-14T09:28:44.396+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/3235875553391967/
+[2025-05-14T09:28:44.396+0000] {logging_mixin.py:190} INFO - [facebook] 3235875553391967: Downloading webpage
+[2025-05-14T09:28:45.219+0000] {logging_mixin.py:190} INFO - [info] 3235875553391967: Downloading 1 format(s): 659139509329905a
+[2025-05-14T09:28:45.259+0000] {logging_mixin.py:190} INFO - [download] Destination: data/3235875553391967
+[2025-05-14T09:28:45.259+0000] {logging_mixin.py:190} INFO - [download]   1.0% of  103.57KiB at  985.97KiB/s ETA 00:00
+[2025-05-14T09:28:45.260+0000] {logging_mixin.py:190} INFO - [download]   2.9% of  103.57KiB at    1.46MiB/s ETA 00:00
+[2025-05-14T09:28:45.260+0000] {logging_mixin.py:190} INFO - [download]   6.8% of  103.57KiB at    2.80MiB/s ETA 00:00
+[2025-05-14T09:28:45.261+0000] {logging_mixin.py:190} INFO - [download]  14.5% of  103.57KiB at    5.21MiB/s ETA 00:00
+[2025-05-14T09:28:45.262+0000] {logging_mixin.py:190} INFO - [download]  29.9% of  103.57KiB at    7.01MiB/s ETA 00:00
+[2025-05-14T09:28:45.267+0000] {logging_mixin.py:190} INFO - [download]  60.8% of  103.57KiB at    6.73MiB/s ETA 00:00
+[2025-05-14T09:28:45.271+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  103.57KiB at    7.75MiB/s ETA 00:00
+[2025-05-14T09:28:45.272+0000] {logging_mixin.py:190} INFO - [download] 100% of  103.57KiB in 00:00:00 at 2.05MiB/s   
+[2025-05-14T09:28:45.273+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/3235875553391967"
+[2025-05-14T09:28:45.365+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/3235875553391967.mp3
+[2025-05-14T09:28:45.592+0000] {logging_mixin.py:190} INFO - Deleting original file data/3235875553391967 (pass -k to keep)
+[2025-05-14T09:28:45.595+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 3235875553391967
+[2025-05-14T09:28:45.599+0000] {logging_mixin.py:190} INFO - Downloaded video 3235875553391967 to data/3235875553391967.mp3
+[2025-05-14T09:28:45.717+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:45.717+0000] {logging_mixin.py:190} INFO - Downloading video from 500334525564870...
+[2025-05-14T09:28:45.748+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/500334525564870/
+[2025-05-14T09:28:45.748+0000] {logging_mixin.py:190} INFO - [facebook] 500334525564870: Downloading webpage
+[2025-05-14T09:28:43.960+0000] {logging_mixin.py:190} INFO - [info] 500334525564870: Downloading 1 format(s): 5619936188115470a
+[2025-05-14T09:28:43.997+0000] {logging_mixin.py:190} INFO - [download] Destination: data/500334525564870
+[2025-05-14T09:28:43.998+0000] {logging_mixin.py:190} INFO - [download]   2.5% of   39.94KiB at  Unknown B/s ETA Unknown
+[2025-05-14T09:28:44.000+0000] {logging_mixin.py:190} INFO - [download]   7.5% of   39.94KiB at    1.11MiB/s ETA 00:00  
+[2025-05-14T09:28:44.000+0000] {logging_mixin.py:190} INFO - [download]  17.5% of   39.94KiB at    2.17MiB/s ETA 00:00
+[2025-05-14T09:28:44.001+0000] {logging_mixin.py:190} INFO - [download]  37.6% of   39.94KiB at    4.07MiB/s ETA 00:00
+[2025-05-14T09:28:44.001+0000] {logging_mixin.py:190} INFO - [download]  77.6% of   39.94KiB at    7.16MiB/s ETA 00:00
+[2025-05-14T09:28:44.002+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   39.94KiB at    7.93MiB/s ETA 00:00
+[2025-05-14T09:28:44.002+0000] {logging_mixin.py:190} INFO - [download] 100% of   39.94KiB in 00:00:00 at 1004.92KiB/s
+[2025-05-14T09:28:44.004+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/500334525564870"
+[2025-05-14T09:28:44.095+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/500334525564870.mp3
+[2025-05-14T09:28:44.189+0000] {logging_mixin.py:190} INFO - Deleting original file data/500334525564870 (pass -k to keep)
+[2025-05-14T09:28:44.193+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 500334525564870
+[2025-05-14T09:28:44.206+0000] {logging_mixin.py:190} INFO - Downloaded video 500334525564870 to data/500334525564870.mp3
+[2025-05-14T09:28:44.326+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:44.326+0000] {logging_mixin.py:190} INFO - Downloading video from 2909373262542225...
+[2025-05-14T09:28:44.357+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/2909373262542225/
+[2025-05-14T09:28:44.357+0000] {logging_mixin.py:190} INFO - [facebook] 2909373262542225: Downloading webpage
+[2025-05-14T09:28:45.069+0000] {logging_mixin.py:190} INFO - [info] 2909373262542225: Downloading 1 format(s): 583129750293826a
+[2025-05-14T09:28:45.128+0000] {logging_mixin.py:190} INFO - [download] Destination: data/2909373262542225
+[2025-05-14T09:28:45.129+0000] {logging_mixin.py:190} INFO - [download]   1.6% of   63.48KiB at  945.09KiB/s ETA 00:00
+[2025-05-14T09:28:45.131+0000] {logging_mixin.py:190} INFO - [download]   4.7% of   63.48KiB at  947.29KiB/s ETA 00:00
+[2025-05-14T09:28:45.131+0000] {logging_mixin.py:190} INFO - [download]  11.0% of   63.48KiB at    1.75MiB/s ETA 00:00
+[2025-05-14T09:28:45.132+0000] {logging_mixin.py:190} INFO - [download]  23.6% of   63.48KiB at    3.24MiB/s ETA 00:00
+[2025-05-14T09:28:45.132+0000] {logging_mixin.py:190} INFO - [download]  48.8% of   63.48KiB at    6.08MiB/s ETA 00:00
+[2025-05-14T09:28:45.135+0000] {logging_mixin.py:190} INFO - [download]  99.2% of   63.48KiB at    7.59MiB/s ETA 00:00
+[2025-05-14T09:28:45.136+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   63.48KiB at    7.29MiB/s ETA 00:00
+[2025-05-14T09:28:45.136+0000] {logging_mixin.py:190} INFO - [download] 100% of   63.48KiB in 00:00:00 at 997.20KiB/s 
+[2025-05-14T09:28:45.138+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/2909373262542225"
+[2025-05-14T09:28:45.230+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/2909373262542225.mp3
+[2025-05-14T09:28:45.385+0000] {logging_mixin.py:190} INFO - Deleting original file data/2909373262542225 (pass -k to keep)
+[2025-05-14T09:28:45.388+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 2909373262542225
+[2025-05-14T09:28:45.393+0000] {logging_mixin.py:190} INFO - Downloaded video 2909373262542225 to data/2909373262542225.mp3
+[2025-05-14T09:28:45.511+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:45.511+0000] {logging_mixin.py:190} INFO - Downloading video from 796377181594223...
+[2025-05-14T09:28:45.543+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/796377181594223/
+[2025-05-14T09:28:45.543+0000] {logging_mixin.py:190} INFO - [facebook] 796377181594223: Downloading webpage
+[2025-05-14T09:28:46.319+0000] {logging_mixin.py:190} INFO - [info] 796377181594223: Downloading 1 format(s): 6147421238667501a
+[2025-05-14T09:28:46.353+0000] {logging_mixin.py:190} INFO - [download] Destination: data/796377181594223
+[2025-05-14T09:28:46.354+0000] {logging_mixin.py:190} INFO - [download]   1.0% of  100.10KiB at  653.01KiB/s ETA 00:00
+[2025-05-14T09:28:46.356+0000] {logging_mixin.py:190} INFO - [download]   3.0% of  100.10KiB at  704.18KiB/s ETA 00:00
+[2025-05-14T09:28:46.357+0000] {logging_mixin.py:190} INFO - [download]   7.0% of  100.10KiB at    1.43MiB/s ETA 00:00
+[2025-05-14T09:28:46.357+0000] {logging_mixin.py:190} INFO - [download]  15.0% of  100.10KiB at    2.82MiB/s ETA 00:00
+[2025-05-14T09:28:46.358+0000] {logging_mixin.py:190} INFO - [download]  31.0% of  100.10KiB at    5.26MiB/s ETA 00:00
+[2025-05-14T09:28:46.361+0000] {logging_mixin.py:190} INFO - [download]  62.9% of  100.10KiB at    6.95MiB/s ETA 00:00
+[2025-05-14T09:28:46.365+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  100.10KiB at    7.83MiB/s ETA 00:00
+[2025-05-14T09:28:46.365+0000] {logging_mixin.py:190} INFO - [download] 100% of  100.10KiB in 00:00:00 at 2.25MiB/s   
+[2025-05-14T09:28:46.367+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/796377181594223"
+[2025-05-14T09:28:46.460+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/796377181594223.mp3
+[2025-05-14T09:28:46.617+0000] {logging_mixin.py:190} INFO - Deleting original file data/796377181594223 (pass -k to keep)
+[2025-05-14T09:28:46.620+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 796377181594223
+[2025-05-14T09:28:46.625+0000] {logging_mixin.py:190} INFO - Downloaded video 796377181594223 to data/796377181594223.mp3
+[2025-05-14T09:28:46.748+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:46.749+0000] {logging_mixin.py:190} INFO - Downloading video from 568776548091697...
+[2025-05-14T09:28:46.779+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/568776548091697/
+[2025-05-14T09:28:46.779+0000] {logging_mixin.py:190} INFO - [facebook] 568776548091697: Downloading webpage
+[2025-05-14T09:28:47.561+0000] {logging_mixin.py:190} INFO - [info] 568776548091697: Downloading 1 format(s): 872858203913510a
+[2025-05-14T09:28:47.598+0000] {logging_mixin.py:190} INFO - [download] Destination: data/568776548091697
+[2025-05-14T09:28:47.599+0000] {logging_mixin.py:190} INFO - [download]   1.0% of   95.65KiB at  779.18KiB/s ETA 00:00
+[2025-05-14T09:28:47.601+0000] {logging_mixin.py:190} INFO - [download]   3.1% of   95.65KiB at  824.57KiB/s ETA 00:00
+[2025-05-14T09:28:47.601+0000] {logging_mixin.py:190} INFO - [download]   7.3% of   95.65KiB at    1.63MiB/s ETA 00:00
+[2025-05-14T09:28:47.602+0000] {logging_mixin.py:190} INFO - [download]  15.7% of   95.65KiB at    3.15MiB/s ETA 00:00
+[2025-05-14T09:28:47.602+0000] {logging_mixin.py:190} INFO - [download]  32.4% of   95.65KiB at    5.80MiB/s ETA 00:00
+[2025-05-14T09:28:47.606+0000] {logging_mixin.py:190} INFO - [download]  65.9% of   95.65KiB at    7.46MiB/s ETA 00:00
+[2025-05-14T09:28:47.609+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   95.65KiB at    8.28MiB/s ETA 00:00
+[2025-05-14T09:28:47.609+0000] {logging_mixin.py:190} INFO - [download] 100% of   95.65KiB in 00:00:00 at 2.04MiB/s   
+[2025-05-14T09:28:47.611+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/568776548091697"
+[2025-05-14T09:28:47.703+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/568776548091697.mp3
+[2025-05-14T09:28:47.891+0000] {logging_mixin.py:190} INFO - Deleting original file data/568776548091697 (pass -k to keep)
+[2025-05-14T09:28:47.894+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 568776548091697
+[2025-05-14T09:28:47.899+0000] {logging_mixin.py:190} INFO - Downloaded video 568776548091697 to data/568776548091697.mp3
+[2025-05-14T09:28:48.021+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:48.022+0000] {logging_mixin.py:190} INFO - Downloading video from 501990768664483...
+[2025-05-14T09:28:48.054+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/501990768664483/
+[2025-05-14T09:28:48.054+0000] {logging_mixin.py:190} INFO - [facebook] 501990768664483: Downloading webpage
+[2025-05-14T09:28:48.852+0000] {logging_mixin.py:190} INFO - [info] 501990768664483: Downloading 1 format(s): sd
+[2025-05-14T09:28:48.882+0000] {logging_mixin.py:190} INFO - [download] Destination: data/501990768664483
+[2025-05-14T09:28:48.883+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.28MiB at  594.68KiB/s ETA 00:02
+[2025-05-14T09:28:48.887+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.28MiB at  507.85KiB/s ETA 00:02
+[2025-05-14T09:28:48.887+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    1.28MiB at    1.04MiB/s ETA 00:01
+[2025-05-14T09:28:48.888+0000] {logging_mixin.py:190} INFO - [download]   1.1% of    1.28MiB at    2.11MiB/s ETA 00:00
+[2025-05-14T09:28:48.889+0000] {logging_mixin.py:190} INFO - [download]   2.4% of    1.28MiB at    3.80MiB/s ETA 00:00
+[2025-05-14T09:28:48.892+0000] {logging_mixin.py:190} INFO - [download]   4.8% of    1.28MiB at    5.52MiB/s ETA 00:00
+[2025-05-14T09:28:48.899+0000] {logging_mixin.py:190} INFO - [download]   9.7% of    1.28MiB at    6.80MiB/s ETA 00:00
+[2025-05-14T09:28:48.913+0000] {logging_mixin.py:190} INFO - [download]  19.5% of    1.28MiB at    7.84MiB/s ETA 00:00
+[2025-05-14T09:28:48.938+0000] {logging_mixin.py:190} INFO - [download]  39.0% of    1.28MiB at    8.75MiB/s ETA 00:00
+[2025-05-14T09:28:48.989+0000] {logging_mixin.py:190} INFO - [download]  78.1% of    1.28MiB at    9.24MiB/s ETA 00:00
+[2025-05-14T09:28:49.017+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.28MiB at    9.40MiB/s ETA 00:00
+[2025-05-14T09:28:49.018+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.28MiB in 00:00:00 at 7.79MiB/s   
+[2025-05-14T09:28:49.066+0000] {logging_mixin.py:190} WARNING - ERROR: Postprocessing: WARNING: unable to obtain file audio codec with ffprobe
+[2025-05-14T09:28:49.067+0000] {logging_mixin.py:190} INFO - 
+Error downloading video using yt-dlp: ERROR: Postprocessing: WARNING: unable to obtain file audio codec with ffprobe
+[2025-05-14T09:28:51.144+0000] {logging_mixin.py:190} INFO - Downloaded video 501990768664483 to data/501990768664483.mp3
+[2025-05-14T09:28:51.270+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:51.270+0000] {logging_mixin.py:190} INFO - Downloading video from 199672223024300...
+[2025-05-14T09:28:51.300+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/199672223024300/
+[2025-05-14T09:28:51.300+0000] {logging_mixin.py:190} INFO - [facebook] 199672223024300: Downloading webpage
+[2025-05-14T09:28:54.134+0000] {logging_mixin.py:190} INFO - [info] 199672223024300: Downloading 1 format(s): sd
+[2025-05-14T09:28:54.163+0000] {logging_mixin.py:190} INFO - [download] Destination: data/199672223024300
+[2025-05-14T09:28:54.164+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.72MiB at  765.38KiB/s ETA 00:02
+[2025-05-14T09:28:54.166+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.72MiB at  857.91KiB/s ETA 00:02
+[2025-05-14T09:28:54.166+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    1.72MiB at    1.70MiB/s ETA 00:01
+[2025-05-14T09:28:54.166+0000] {logging_mixin.py:190} INFO - [download]   0.9% of    1.72MiB at    3.32MiB/s ETA 00:00
+[2025-05-14T09:28:54.167+0000] {logging_mixin.py:190} INFO - [download]   1.8% of    1.72MiB at    5.87MiB/s ETA 00:00
+[2025-05-14T09:28:54.174+0000] {logging_mixin.py:190} INFO - [download]   3.6% of    1.72MiB at    5.41MiB/s ETA 00:00
+[2025-05-14T09:28:54.180+0000] {logging_mixin.py:190} INFO - [download]   7.2% of    1.72MiB at    7.12MiB/s ETA 00:00
+[2025-05-14T09:28:54.192+0000] {logging_mixin.py:190} INFO - [download]  14.5% of    1.72MiB at    8.37MiB/s ETA 00:00
+[2025-05-14T09:28:54.216+0000] {logging_mixin.py:190} INFO - [download]  29.1% of    1.72MiB at    9.22MiB/s ETA 00:00
+[2025-05-14T09:28:54.267+0000] {logging_mixin.py:190} INFO - [download]  58.2% of    1.72MiB at    9.56MiB/s ETA 00:00
+[2025-05-14T09:28:54.338+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.72MiB at    9.77MiB/s ETA 00:00
+[2025-05-14T09:28:54.339+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.72MiB in 00:00:00 at 8.43MiB/s   
+[2025-05-14T09:28:54.386+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/199672223024300.mp3
+[2025-05-14T09:28:54.538+0000] {logging_mixin.py:190} INFO - Deleting original file data/199672223024300 (pass -k to keep)
+[2025-05-14T09:28:54.539+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 199672223024300
+[2025-05-14T09:28:54.544+0000] {logging_mixin.py:190} INFO - Downloaded video 199672223024300 to data/199672223024300.mp3
+[2025-05-14T09:28:54.675+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:54.675+0000] {logging_mixin.py:190} INFO - Downloading video from 300258409024726...
+[2025-05-14T09:28:54.709+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/300258409024726/
+[2025-05-14T09:28:54.709+0000] {logging_mixin.py:190} INFO - [facebook] 300258409024726: Downloading webpage
+[2025-05-14T09:28:55.491+0000] {logging_mixin.py:190} INFO - [info] 300258409024726: Downloading 1 format(s): 163720786705959a
+[2025-05-14T09:28:55.518+0000] {logging_mixin.py:190} INFO - [download] Destination: data/300258409024726
+[2025-05-14T09:28:55.519+0000] {logging_mixin.py:190} INFO - [download]   1.1% of   93.14KiB at  Unknown B/s ETA Unknown
+[2025-05-14T09:28:55.521+0000] {logging_mixin.py:190} INFO - [download]   3.2% of   93.14KiB at    1.00MiB/s ETA 00:00  
+[2025-05-14T09:28:55.521+0000] {logging_mixin.py:190} INFO - [download]   7.5% of   93.14KiB at    1.99MiB/s ETA 00:00
+[2025-05-14T09:28:55.522+0000] {logging_mixin.py:190} INFO - [download]  16.1% of   93.14KiB at    3.76MiB/s ETA 00:00
+[2025-05-14T09:28:55.522+0000] {logging_mixin.py:190} INFO - [download]  33.3% of   93.14KiB at    6.97MiB/s ETA 00:00
+[2025-05-14T09:28:55.525+0000] {logging_mixin.py:190} INFO - [download]  67.6% of   93.14KiB at    8.52MiB/s ETA 00:00
+[2025-05-14T09:28:55.528+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   93.14KiB at    9.11MiB/s ETA 00:00
+[2025-05-14T09:28:55.528+0000] {logging_mixin.py:190} INFO - [download] 100% of   93.14KiB in 00:00:00 at 2.63MiB/s   
+[2025-05-14T09:28:55.530+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/300258409024726"
+[2025-05-14T09:28:55.621+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/300258409024726.mp3
+[2025-05-14T09:28:55.770+0000] {logging_mixin.py:190} INFO - Deleting original file data/300258409024726 (pass -k to keep)
+[2025-05-14T09:28:55.773+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 300258409024726
+[2025-05-14T09:28:55.779+0000] {logging_mixin.py:190} INFO - Downloaded video 300258409024726 to data/300258409024726.mp3
+[2025-05-14T09:28:55.902+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:55.902+0000] {logging_mixin.py:190} INFO - Downloading video from 9291383070887304...
+[2025-05-14T09:28:55.932+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/9291383070887304/
+[2025-05-14T09:28:55.933+0000] {logging_mixin.py:190} INFO - [facebook] 9291383070887304: Downloading webpage
+[2025-05-14T09:28:56.794+0000] {logging_mixin.py:190} INFO - [info] 9291383070887304: Downloading 1 format(s): 191895053647298a
+[2025-05-14T09:28:56.822+0000] {logging_mixin.py:190} INFO - [download] Destination: data/9291383070887304
+[2025-05-14T09:28:56.822+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  430.17KiB at  659.79KiB/s ETA 00:00
+[2025-05-14T09:28:56.824+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  430.17KiB at  807.22KiB/s ETA 00:00
+[2025-05-14T09:28:56.825+0000] {logging_mixin.py:190} INFO - [download]   1.6% of  430.17KiB at    1.64MiB/s ETA 00:00
+[2025-05-14T09:28:56.825+0000] {logging_mixin.py:190} INFO - [download]   3.5% of  430.17KiB at    3.22MiB/s ETA 00:00
+[2025-05-14T09:28:56.826+0000] {logging_mixin.py:190} INFO - [download]   7.2% of  430.17KiB at    5.28MiB/s ETA 00:00
+[2025-05-14T09:28:56.829+0000] {logging_mixin.py:190} INFO - [download]  14.6% of  430.17KiB at    7.34MiB/s ETA 00:00
+[2025-05-14T09:28:56.835+0000] {logging_mixin.py:190} INFO - [download]  29.5% of  430.17KiB at    8.56MiB/s ETA 00:00
+[2025-05-14T09:28:56.849+0000] {logging_mixin.py:190} INFO - [download]  59.3% of  430.17KiB at    8.98MiB/s ETA 00:00
+[2025-05-14T09:28:56.865+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  430.17KiB at    9.54MiB/s ETA 00:00
+[2025-05-14T09:28:56.866+0000] {logging_mixin.py:190} INFO - [download] 100% of  430.17KiB in 00:00:00 at 6.05MiB/s   
+[2025-05-14T09:28:56.867+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/9291383070887304"
+[2025-05-14T09:28:56.959+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/9291383070887304.mp3
+[2025-05-14T09:28:57.698+0000] {logging_mixin.py:190} INFO - Deleting original file data/9291383070887304 (pass -k to keep)
+[2025-05-14T09:28:57.700+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 9291383070887304
+[2025-05-14T09:28:57.707+0000] {logging_mixin.py:190} INFO - Downloaded video 9291383070887304 to data/9291383070887304.mp3
+[2025-05-14T09:28:57.838+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:57.839+0000] {logging_mixin.py:190} INFO - Downloading video from 883435672700861...
+[2025-05-14T09:28:57.869+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/883435672700861/
+[2025-05-14T09:28:57.870+0000] {logging_mixin.py:190} INFO - [facebook] 883435672700861: Downloading webpage
+[2025-05-14T09:28:58.733+0000] {logging_mixin.py:190} INFO - [info] 883435672700861: Downloading 1 format(s): 748585903444441a
+[2025-05-14T09:28:58.758+0000] {logging_mixin.py:190} INFO - [download] Destination: data/883435672700861
+[2025-05-14T09:28:58.758+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  214.89KiB at  877.84KiB/s ETA 00:00
+[2025-05-14T09:28:58.760+0000] {logging_mixin.py:190} INFO - [download]   1.4% of  214.89KiB at 1017.62KiB/s ETA 00:00
+[2025-05-14T09:28:58.761+0000] {logging_mixin.py:190} INFO - [download]   3.3% of  214.89KiB at    1.92MiB/s ETA 00:00
+[2025-05-14T09:28:58.761+0000] {logging_mixin.py:190} INFO - [download]   7.0% of  214.89KiB at    3.67MiB/s ETA 00:00
+[2025-05-14T09:28:58.761+0000] {logging_mixin.py:190} INFO - [download]  14.4% of  214.89KiB at    6.90MiB/s ETA 00:00
+[2025-05-14T09:28:58.765+0000] {logging_mixin.py:190} INFO - [download]  29.3% of  214.89KiB at    8.22MiB/s ETA 00:00
+[2025-05-14T09:28:58.771+0000] {logging_mixin.py:190} INFO - [download]  59.1% of  214.89KiB at    9.22MiB/s ETA 00:00
+[2025-05-14T09:28:58.779+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  214.89KiB at    9.68MiB/s ETA 00:00
+[2025-05-14T09:28:58.780+0000] {logging_mixin.py:190} INFO - [download] 100% of  214.89KiB in 00:00:00 at 4.84MiB/s   
+[2025-05-14T09:28:58.781+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/883435672700861"
+[2025-05-14T09:28:58.874+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/883435672700861.mp3
+[2025-05-14T09:28:59.285+0000] {logging_mixin.py:190} INFO - Deleting original file data/883435672700861 (pass -k to keep)
+[2025-05-14T09:28:59.287+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 883435672700861
+[2025-05-14T09:28:59.293+0000] {logging_mixin.py:190} INFO - Downloaded video 883435672700861 to data/883435672700861.mp3
+[2025-05-14T09:28:59.417+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:28:59.417+0000] {logging_mixin.py:190} INFO - Downloading video from 2110165422507634...
+[2025-05-14T09:28:59.447+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/2110165422507634/
+[2025-05-14T09:28:59.447+0000] {logging_mixin.py:190} INFO - [facebook] 2110165422507634: Downloading webpage
+[2025-05-14T09:29:00.275+0000] {logging_mixin.py:190} INFO - [info] 2110165422507634: Downloading 1 format(s): 584412058096201a
+[2025-05-14T09:29:00.326+0000] {logging_mixin.py:190} INFO - [download] Destination: data/2110165422507634
+[2025-05-14T09:29:00.326+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  197.40KiB at  835.02KiB/s ETA 00:00
+[2025-05-14T09:29:00.329+0000] {logging_mixin.py:190} INFO - [download]   1.5% of  197.40KiB at  850.02KiB/s ETA 00:00
+[2025-05-14T09:29:00.329+0000] {logging_mixin.py:190} INFO - [download]   3.5% of  197.40KiB at    1.68MiB/s ETA 00:00
+[2025-05-14T09:29:00.330+0000] {logging_mixin.py:190} INFO - [download]   7.6% of  197.40KiB at    3.27MiB/s ETA 00:00
+[2025-05-14T09:29:00.330+0000] {logging_mixin.py:190} INFO - [download]  15.7% of  197.40KiB at    5.76MiB/s ETA 00:00
+[2025-05-14T09:29:00.333+0000] {logging_mixin.py:190} INFO - [download]  31.9% of  197.40KiB at    7.81MiB/s ETA 00:00
+[2025-05-14T09:29:00.339+0000] {logging_mixin.py:190} INFO - [download]  64.3% of  197.40KiB at    8.83MiB/s ETA 00:00
+[2025-05-14T09:29:00.346+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  197.40KiB at    9.40MiB/s ETA 00:00
+[2025-05-14T09:29:00.347+0000] {logging_mixin.py:190} INFO - [download] 100% of  197.40KiB in 00:00:00 at 2.83MiB/s   
+[2025-05-14T09:29:00.348+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/2110165422507634"
+[2025-05-14T09:29:00.443+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/2110165422507634.mp3
+[2025-05-14T09:29:00.730+0000] {logging_mixin.py:190} INFO - Deleting original file data/2110165422507634 (pass -k to keep)
+[2025-05-14T09:29:00.733+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 2110165422507634
+[2025-05-14T09:29:00.738+0000] {logging_mixin.py:190} INFO - Downloaded video 2110165422507634 to data/2110165422507634.mp3
+[2025-05-14T09:29:00.852+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-14T09:29:00.853+0000] {logging_mixin.py:190} INFO - Downloading video from 585395010300236...
+[2025-05-14T09:29:00.883+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/official.parkhangseo/videos/585395010300236/
+[2025-05-14T09:29:00.883+0000] {logging_mixin.py:190} INFO - [facebook] 585395010300236: Downloading webpage
+[2025-05-14T09:29:02.900+0000] {logging_mixin.py:190} INFO - [info] 585395010300236: Downloading 1 format(s): 156996007172959a
+[2025-05-14T09:29:02.928+0000] {logging_mixin.py:190} INFO - [download] Destination: data/585395010300236
+[2025-05-14T09:29:02.928+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  139.92KiB at  526.46KiB/s ETA 00:00
+[2025-05-14T09:29:02.930+0000] {logging_mixin.py:190} INFO - [download]   2.1% of  139.92KiB at  956.51KiB/s ETA 00:00
+[2025-05-14T09:29:02.930+0000] {logging_mixin.py:190} INFO - [download]   5.0% of  139.92KiB at    1.82MiB/s ETA 00:00
+[2025-05-14T09:29:02.931+0000] {logging_mixin.py:190} INFO - [download]  10.7% of  139.92KiB at    3.52MiB/s ETA 00:00
+[2025-05-14T09:29:02.932+0000] {logging_mixin.py:190} INFO - [download]  22.2% of  139.92KiB at    5.67MiB/s ETA 00:00
+[2025-05-14T09:29:02.935+0000] {logging_mixin.py:190} INFO - [download]  45.0% of  139.92KiB at    7.40MiB/s ETA 00:00
+[2025-05-14T09:29:02.941+0000] {logging_mixin.py:190} INFO - [download]  90.8% of  139.92KiB at    8.52MiB/s ETA 00:00
+[2025-05-14T09:29:02.942+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  139.92KiB at    8.81MiB/s ETA 00:00
+[2025-05-14T09:29:02.943+0000] {logging_mixin.py:190} INFO - [download] 100% of  139.92KiB in 00:00:00 at 3.55MiB/s   
+[2025-05-14T09:29:02.944+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/585395010300236"
+[2025-05-14T09:29:03.037+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/585395010300236.mp3
+[2025-05-14T09:29:03.335+0000] {logging_mixin.py:190} INFO - Deleting original file data/585395010300236 (pass -k to keep)
+[2025-05-14T09:29:03.338+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 585395010300236
+[2025-05-14T09:29:03.343+0000] {logging_mixin.py:190} INFO - Downloaded video 585395010300236 to data/585395010300236.mp3
+[2025-05-14T09:29:03.483+0000] {python.py:240} INFO - Done. Returned value was: [{'video_id': '1019921852555282', 'file_path': 'data/1019921852555282.mp3'}, {'video_id': '1496815271117860', 'file_path': 'data/1496815271117860.mp3'}, {'video_id': '902792580882044', 'file_path': 'data/902792580882044.mp3'}, {'video_id': '963843274971699', 'file_path': 'data/963843274971699.mp3'}, {'video_id': '5608822982568234', 'file_path': 'data/5608822982568234.mp3'}, {'video_id': '7206305039381158', 'file_path': 'data/7206305039381158.mp3'}, {'video_id': '726600225473500', 'file_path': 'data/726600225473500.mp3'}, {'video_id': '612326127913584', 'file_path': 'data/612326127913584.mp3'}, {'video_id': '736392504839613', 'file_path': 'data/736392504839613.mp3'}, {'video_id': '612326127913584', 'file_path': 'data/612326127913584.mp3'}, {'video_id': '1281437455976230', 'file_path': 'data/1281437455976230.mp3'}, {'video_id': '3235875553391967', 'file_path': 'data/3235875553391967.mp3'}, {'video_id': '500334525564870', 'file_path': 'data/500334525564870.mp3'}, {'video_id': '2909373262542225', 'file_path': 'data/2909373262542225.mp3'}, {'video_id': '796377181594223', 'file_path': 'data/796377181594223.mp3'}, {'video_id': '568776548091697', 'file_path': 'data/568776548091697.mp3'}, {'video_id': '501990768664483', 'file_path': 'data/501990768664483.mp3'}, {'video_id': '199672223024300', 'file_path': 'data/199672223024300.mp3'}, {'video_id': '300258409024726', 'file_path': 'data/300258409024726.mp3'}, {'video_id': '9291383070887304', 'file_path': 'data/9291383070887304.mp3'}, {'video_id': '883435672700861', 'file_path': 'data/883435672700861.mp3'}, {'video_id': '2110165422507634', 'file_path': 'data/2110165422507634.mp3'}, {'video_id': '585395010300236', 'file_path': 'data/585395010300236.mp3'}]
+[2025-05-14T09:29:03.503+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-14T09:29:03.503+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=facebook_videos_scraper_dag, task_id=fb_videos_scraper, run_id=manual__2025-05-14T09:26:56.401790+00:00, execution_date=20250514T092656, start_date=20250514T092656, end_date=20250514T092903
+[2025-05-14T09:29:03.548+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-14T09:29:03.560+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-14T09:29:03.562+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

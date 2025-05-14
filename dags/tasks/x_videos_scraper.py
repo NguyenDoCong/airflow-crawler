@@ -1,5 +1,5 @@
 from airflow.decorators import task
-from utils.downloader import batch_download_from_file, download_video
+from utils.downloader import download_video
 from config import Config
 import os
 import json
@@ -12,25 +12,16 @@ from app.worker.schema import TaskStatus
 from dags.utils.get_id import extract_id
 
 @task
-def x_videos_scraper(id = "elonmusk", scrolls = 5):
+def x_videos_scraper(id = "elonmusk",scrolls = 5):
     from playwright.sync_api import sync_playwright
 
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch()
-        try:
-            context = browser.new_context(storage_state="dags/utils/state.json")
-        except Exception as e:
-            print(f"Error loading cookies: {e}")
-            return []
-
+        context = browser.new_context(storage_state="dags/utils/state.json")
         page = context.new_page() 
 
         # Truy cập trang cá nhân
-        try:
-            page.goto(f"https://x.com/{id}/media", timeout=15000)
-        except Exception as e:
-            print(f"Error accessing page: {e}")
-            return []
+        page.goto(f"https://x.com/{id}/media", timeout=15000)
 
         page.wait_for_timeout(5000)  # chờ page load
 

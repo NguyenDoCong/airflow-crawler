@@ -1,0 +1,1190 @@
+[2025-05-14T10:52:06.302+0000] {processor.py:186} INFO - Started process (PID=5928) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:52:06.302+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T10:52:06.305+0000] {logging_mixin.py:190} INFO - [2025-05-14T10:52:06.304+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:52:06.347+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T10:52:06.348+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T10:52:06.348+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T10:52:06.348+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:52:06.358+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.061 seconds
+[2025-05-14T10:52:37.223+0000] {processor.py:186} INFO - Started process (PID=5955) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:52:37.226+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T10:52:37.228+0000] {logging_mixin.py:190} INFO - [2025-05-14T10:52:37.228+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:52:37.253+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T10:52:37.253+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T10:52:37.253+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T10:52:37.254+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:52:37.266+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.048 seconds
+[2025-05-14T10:53:08.164+0000] {processor.py:186} INFO - Started process (PID=5983) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:53:08.165+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T10:53:08.167+0000] {logging_mixin.py:190} INFO - [2025-05-14T10:53:08.167+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:53:08.193+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T10:53:08.194+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T10:53:08.194+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T10:53:08.194+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:53:08.205+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.046 seconds
+[2025-05-14T10:53:39.095+0000] {processor.py:186} INFO - Started process (PID=6010) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:53:39.096+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T10:53:39.098+0000] {logging_mixin.py:190} INFO - [2025-05-14T10:53:39.098+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:53:39.110+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T10:53:39.110+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T10:53:39.110+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T10:53:39.111+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:53:39.121+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.031 seconds
+[2025-05-14T10:54:10.001+0000] {processor.py:186} INFO - Started process (PID=6037) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:54:10.002+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T10:54:10.004+0000] {logging_mixin.py:190} INFO - [2025-05-14T10:54:10.003+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:54:10.015+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T10:54:10.015+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T10:54:10.016+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T10:54:10.016+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:54:10.027+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.031 seconds
+[2025-05-14T10:54:40.074+0000] {processor.py:186} INFO - Started process (PID=6065) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:54:40.078+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T10:54:40.079+0000] {logging_mixin.py:190} INFO - [2025-05-14T10:54:40.079+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:54:40.092+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T10:54:40.092+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T10:54:40.092+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T10:54:40.093+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:54:40.104+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.034 seconds
+[2025-05-14T10:55:10.175+0000] {processor.py:186} INFO - Started process (PID=6092) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:55:10.176+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T10:55:10.178+0000] {logging_mixin.py:190} INFO - [2025-05-14T10:55:10.178+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:55:10.190+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T10:55:10.190+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T10:55:10.190+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T10:55:10.190+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:55:10.201+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.031 seconds
+[2025-05-14T10:55:40.425+0000] {processor.py:186} INFO - Started process (PID=6119) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:55:40.426+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T10:55:40.427+0000] {logging_mixin.py:190} INFO - [2025-05-14T10:55:40.427+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:55:40.439+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T10:55:40.439+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T10:55:40.439+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T10:55:40.439+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:55:40.449+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.029 seconds
+[2025-05-14T10:56:10.564+0000] {processor.py:186} INFO - Started process (PID=6146) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:56:10.566+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T10:56:10.568+0000] {logging_mixin.py:190} INFO - [2025-05-14T10:56:10.568+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:56:10.582+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T10:56:10.582+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T10:56:10.582+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T10:56:10.582+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:56:10.593+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.033 seconds
+[2025-05-14T10:56:40.739+0000] {processor.py:186} INFO - Started process (PID=6173) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:56:40.740+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T10:56:40.741+0000] {logging_mixin.py:190} INFO - [2025-05-14T10:56:40.741+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:56:40.752+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T10:56:40.753+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T10:56:40.753+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T10:56:40.753+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:56:40.762+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.028 seconds
+[2025-05-14T10:57:11.648+0000] {processor.py:186} INFO - Started process (PID=6200) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:57:11.649+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T10:57:11.651+0000] {logging_mixin.py:190} INFO - [2025-05-14T10:57:11.650+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:57:11.662+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T10:57:11.662+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T10:57:11.662+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T10:57:11.662+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:57:11.673+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.030 seconds
+[2025-05-14T10:57:42.614+0000] {processor.py:186} INFO - Started process (PID=6227) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:57:42.625+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T10:57:42.627+0000] {logging_mixin.py:190} INFO - [2025-05-14T10:57:42.627+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:57:42.640+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T10:57:42.640+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T10:57:42.641+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T10:57:42.641+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:57:42.652+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.043 seconds
+[2025-05-14T10:58:13.620+0000] {processor.py:186} INFO - Started process (PID=6254) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:58:13.631+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T10:58:13.633+0000] {logging_mixin.py:190} INFO - [2025-05-14T10:58:13.633+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:58:13.646+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T10:58:13.646+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T10:58:13.646+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T10:58:13.647+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:58:13.658+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.042 seconds
+[2025-05-14T10:58:43.814+0000] {processor.py:186} INFO - Started process (PID=6281) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:58:43.823+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T10:58:43.824+0000] {logging_mixin.py:190} INFO - [2025-05-14T10:58:43.824+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:58:43.835+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T10:58:43.835+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T10:58:43.835+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T10:58:43.835+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:58:43.846+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.036 seconds
+[2025-05-14T10:59:13.940+0000] {processor.py:186} INFO - Started process (PID=6308) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:59:13.950+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T10:59:13.952+0000] {logging_mixin.py:190} INFO - [2025-05-14T10:59:13.951+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:59:13.965+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T10:59:13.965+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T10:59:13.966+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T10:59:13.966+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:59:13.977+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.041 seconds
+[2025-05-14T10:59:44.062+0000] {processor.py:186} INFO - Started process (PID=6335) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:59:44.063+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T10:59:44.064+0000] {logging_mixin.py:190} INFO - [2025-05-14T10:59:44.064+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:59:44.076+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T10:59:44.076+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T10:59:44.076+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T10:59:44.076+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T10:59:44.086+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.029 seconds
+[2025-05-14T11:00:14.172+0000] {processor.py:186} INFO - Started process (PID=6362) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:00:14.173+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:00:14.174+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:00:14.174+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:00:14.189+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:00:14.189+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:00:14.189+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:00:14.190+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:00:14.200+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.033 seconds
+[2025-05-14T11:00:45.019+0000] {processor.py:186} INFO - Started process (PID=6395) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:00:45.023+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:00:45.025+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:00:45.024+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:00:45.037+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:00:45.037+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:00:45.038+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:00:45.038+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:00:45.049+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.034 seconds
+[2025-05-14T11:01:15.923+0000] {processor.py:186} INFO - Started process (PID=6422) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:01:15.924+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:01:15.926+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:01:15.926+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:01:15.938+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:01:15.938+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:01:15.938+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:01:15.938+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:01:15.948+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.030 seconds
+[2025-05-14T11:01:46.785+0000] {processor.py:186} INFO - Started process (PID=6448) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:01:46.786+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:01:46.788+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:01:46.788+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:01:46.800+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:01:46.800+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:01:46.800+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:01:46.800+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:01:46.811+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.031 seconds
+[2025-05-14T11:02:17.606+0000] {processor.py:186} INFO - Started process (PID=6475) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:02:17.610+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:02:17.611+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:02:17.611+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:02:17.623+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:02:17.623+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:02:17.623+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:02:17.623+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:02:17.633+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.032 seconds
+[2025-05-14T11:02:47.672+0000] {processor.py:186} INFO - Started process (PID=6502) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:02:47.675+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:02:47.677+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:02:47.676+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:02:47.688+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:02:47.688+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:02:47.688+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:02:47.689+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:02:47.699+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.032 seconds
+[2025-05-14T11:03:17.725+0000] {processor.py:186} INFO - Started process (PID=6529) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:03:17.726+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:03:17.728+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:03:17.728+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:03:17.738+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:03:17.739+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:03:17.739+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:03:17.739+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:03:17.749+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.028 seconds
+[2025-05-14T11:03:47.833+0000] {processor.py:186} INFO - Started process (PID=6557) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:03:47.834+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:03:47.835+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:03:47.835+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:03:47.848+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:03:47.848+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:03:47.848+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:03:47.848+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:03:47.859+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.031 seconds
+[2025-05-14T11:04:17.899+0000] {processor.py:186} INFO - Started process (PID=6582) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:04:17.900+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:04:17.901+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:04:17.901+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:04:17.912+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:04:17.912+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:04:17.912+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:04:17.912+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:04:17.923+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.029 seconds
+[2025-05-14T11:04:48.913+0000] {processor.py:186} INFO - Started process (PID=6609) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:04:48.914+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:04:48.916+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:04:48.916+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:04:48.930+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:04:48.930+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:04:48.930+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:04:48.930+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:04:48.943+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.036 seconds
+[2025-05-14T11:05:19.774+0000] {processor.py:186} INFO - Started process (PID=6636) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:05:19.775+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:05:19.776+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:05:19.776+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:05:19.790+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:05:19.791+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:05:19.791+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:05:19.791+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:05:19.805+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.036 seconds
+[2025-05-14T11:05:50.626+0000] {processor.py:186} INFO - Started process (PID=6663) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:05:50.627+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:05:50.628+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:05:50.628+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:05:50.642+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:05:50.642+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:05:50.642+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:05:50.642+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:05:50.653+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.032 seconds
+[2025-05-14T11:06:21.518+0000] {processor.py:186} INFO - Started process (PID=6690) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:06:21.519+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:06:21.520+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:06:21.520+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:06:21.531+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:06:21.531+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:06:21.531+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:06:21.532+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:06:21.542+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.029 seconds
+[2025-05-14T11:06:52.384+0000] {processor.py:186} INFO - Started process (PID=6717) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:06:52.385+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:06:52.386+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:06:52.385+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:06:52.396+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:06:52.397+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:06:52.397+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:06:52.397+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:06:52.407+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.027 seconds
+[2025-05-14T11:07:23.234+0000] {processor.py:186} INFO - Started process (PID=6744) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:07:23.235+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:07:23.236+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:07:23.236+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:07:23.247+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:07:23.248+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:07:23.248+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:07:23.248+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:07:23.258+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.030 seconds
+[2025-05-14T11:07:54.117+0000] {processor.py:186} INFO - Started process (PID=6771) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:07:54.118+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:07:54.119+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:07:54.118+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:07:54.130+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:07:54.130+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:07:54.130+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:07:54.131+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:07:54.139+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.027 seconds
+[2025-05-14T11:08:24.968+0000] {processor.py:186} INFO - Started process (PID=6798) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:08:24.972+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:08:24.972+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:08:24.972+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:08:24.985+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:08:24.985+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:08:24.985+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:08:24.985+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:08:24.996+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.033 seconds
+[2025-05-14T11:08:55.823+0000] {processor.py:186} INFO - Started process (PID=6825) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:08:55.824+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:08:55.825+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:08:55.824+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:08:55.836+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:08:55.836+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:08:55.836+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:08:55.836+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:08:55.845+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.028 seconds
+[2025-05-14T11:09:26.684+0000] {processor.py:186} INFO - Started process (PID=6852) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:09:26.685+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:09:26.686+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:09:26.686+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:09:26.701+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:09:26.701+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:09:26.701+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:09:26.701+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:09:26.713+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.034 seconds
+[2025-05-14T11:09:57.567+0000] {processor.py:186} INFO - Started process (PID=6879) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:09:57.570+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:09:57.571+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:09:57.571+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:09:57.585+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:09:57.585+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:09:57.585+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:09:57.586+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:09:57.595+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.033 seconds
+[2025-05-14T11:10:28.447+0000] {processor.py:186} INFO - Started process (PID=6906) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:10:28.449+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:10:28.449+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:10:28.449+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:10:28.460+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:10:28.460+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:10:28.460+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:10:28.460+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:10:28.470+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.028 seconds
+[2025-05-14T11:10:59.374+0000] {processor.py:186} INFO - Started process (PID=6934) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:10:59.375+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:10:59.376+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:10:59.376+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:10:59.388+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:10:59.388+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:10:59.388+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:10:59.388+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:10:59.398+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.028 seconds
+[2025-05-14T11:11:30.263+0000] {processor.py:186} INFO - Started process (PID=6961) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:11:30.264+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:11:30.265+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:11:30.265+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:11:30.276+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:11:30.276+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:11:30.276+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:11:30.276+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:11:30.286+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.029 seconds
+[2025-05-14T11:12:01.142+0000] {processor.py:186} INFO - Started process (PID=6988) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:12:01.143+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:12:01.144+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:12:01.144+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:12:01.155+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:12:01.156+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:12:01.156+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:12:01.156+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:12:01.166+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.028 seconds
+[2025-05-14T11:12:32.015+0000] {processor.py:186} INFO - Started process (PID=7015) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:12:32.019+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:12:32.020+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:12:32.020+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:12:32.035+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:12:32.035+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:12:32.036+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:12:32.036+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:12:32.049+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.040 seconds
+[2025-05-14T11:13:02.067+0000] {processor.py:186} INFO - Started process (PID=7042) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:13:02.069+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:13:02.069+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:13:02.069+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:13:02.081+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:13:02.081+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:13:02.081+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:13:02.081+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:13:02.092+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.030 seconds
+[2025-05-14T11:13:33.083+0000] {processor.py:186} INFO - Started process (PID=7069) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:13:33.084+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:13:33.085+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:13:33.085+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:13:33.097+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:13:33.097+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:13:33.097+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:13:33.097+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:13:33.107+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.028 seconds
+[2025-05-14T11:14:03.990+0000] {processor.py:186} INFO - Started process (PID=7097) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:14:03.991+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:14:03.992+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:14:03.992+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:14:04.003+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:14:04.003+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:14:04.004+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:14:04.004+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:14:04.014+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.029 seconds
+[2025-05-14T11:14:34.812+0000] {processor.py:186} INFO - Started process (PID=7124) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:14:34.813+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:14:34.814+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:14:34.814+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:14:34.826+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:14:34.827+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:14:34.827+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:14:34.827+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:14:34.836+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.029 seconds
+[2025-05-14T11:15:05.628+0000] {processor.py:186} INFO - Started process (PID=7151) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:15:05.629+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:15:05.630+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:15:05.630+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:15:05.651+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:15:05.651+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:15:05.651+0000] {logging_mixin.py:190} INFO - Response: 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Airflow 404</title>
+    <link rel="icon" type="image/png" href="/static/pin_32.png">
+  </head>
+  <body>
+    <div style="font-family: verdana; text-align: center; margin-top: 200px;">
+      <img src="/static/pin_100.png" width="50px" alt="pin-logo" />
+      <h1>Airflow 404</h1>
+      <p>Page cannot be found.</p>
+      <a href="/">Return to the main page</a>
+      <p></p>
+    </div>
+  </body>
+</html>
+[2025-05-14T11:15:05.651+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:15:05.661+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.038 seconds
+[2025-05-14T11:15:35.421+0000] {processor.py:186} INFO - Started process (PID=7178) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:15:35.422+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:15:35.423+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:15:35.423+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:15:35.525+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:15:35.525+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:15:35.527+0000] {logging_mixin.py:190} INFO - Response: {
+  "detail": "DAG with dag_id: 'pipeline_request_dag' not found",
+  "status": 404,
+  "title": "DAG not found",
+  "type": "https://airflow.apache.org/docs/apache-airflow/2.10.0/stable-rest-api-ref.html#section/Errors/NotFound"
+}
+[2025-05-14T11:15:35.528+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:15:35.538+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.121 seconds
+[2025-05-14T11:15:36.436+0000] {processor.py:186} INFO - Started process (PID=7179) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:15:36.436+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:15:36.437+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:15:36.437+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:15:36.579+0000] {logging_mixin.py:190} INFO - ❌ Failed to trigger DAG.
+[2025-05-14T11:15:36.580+0000] {logging_mixin.py:190} INFO - Status code: 404
+[2025-05-14T11:15:36.580+0000] {logging_mixin.py:190} INFO - Response: {
+  "detail": "DAG with dag_id: 'pipeline_request_dag' not found",
+  "status": 404,
+  "title": "DAG not found",
+  "type": "https://airflow.apache.org/docs/apache-airflow/2.10.0/stable-rest-api-ref.html#section/Errors/NotFound"
+}
+[2025-05-14T11:15:36.580+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:15:36.590+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.159 seconds
+[2025-05-14T11:15:55.907+0000] {processor.py:186} INFO - Started process (PID=7195) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:15:55.908+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:15:55.909+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:15:55.909+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:15:56.026+0000] {logging_mixin.py:190} INFO - ✅ DAG triggered successfully!
+[2025-05-14T11:15:56.027+0000] {logging_mixin.py:190} INFO - {'conf': {'env': 'prod', 'run_type': 'manual', 'user_id': 123}, 'dag_id': 'pipeline_request', 'dag_run_id': 'manual__2025-05-14T11:15:55.911401', 'data_interval_end': '2025-05-14T11:15:55.911409+00:00', 'data_interval_start': '2025-05-14T11:15:55.911409+00:00', 'end_date': None, 'execution_date': '2025-05-14T11:15:55.911409+00:00', 'external_trigger': True, 'last_scheduling_decision': None, 'logical_date': '2025-05-14T11:15:55.911409+00:00', 'note': 'Triggered from Python script', 'run_type': 'manual', 'start_date': None, 'state': 'queued'}
+[2025-05-14T11:15:56.027+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:15:56.037+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.135 seconds
+[2025-05-14T11:16:26.842+0000] {processor.py:186} INFO - Started process (PID=7222) to work on /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:16:26.843+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/utils/request_example.py for tasks to queue
+[2025-05-14T11:16:26.846+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:16:26.845+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:16:26.955+0000] {logging_mixin.py:190} INFO - ✅ DAG triggered successfully!
+[2025-05-14T11:16:26.955+0000] {logging_mixin.py:190} INFO - {'conf': {'env': 'prod', 'run_type': 'manual', 'user_id': 123}, 'dag_id': 'pipeline_request', 'dag_run_id': 'manual__2025-05-14T11:16:26.852333', 'data_interval_end': '2025-05-14T11:16:26.852354+00:00', 'data_interval_start': '2025-05-14T11:16:26.852354+00:00', 'end_date': None, 'execution_date': '2025-05-14T11:16:26.852354+00:00', 'external_trigger': True, 'last_scheduling_decision': None, 'logical_date': '2025-05-14T11:16:26.852354+00:00', 'note': 'Triggered from Python script', 'run_type': 'manual', 'start_date': None, 'state': 'queued'}
+[2025-05-14T11:16:26.956+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/utils/request_example.py
+[2025-05-14T11:16:26.967+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/utils/request_example.py took 0.140 seconds

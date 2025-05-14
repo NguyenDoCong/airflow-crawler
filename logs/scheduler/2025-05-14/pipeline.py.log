@@ -1,0 +1,147 @@
+[2025-05-14T02:22:20.231+0000] {processor.py:186} INFO - Started process (PID=55) to work on /opt/airflow/dags/pipeline.py
+[2025-05-14T02:22:20.232+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-05-14T02:22:20.237+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:22:20.237+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:22:20.533+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:22:20.836+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:22:20.836+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T02:22:20.850+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:22:20.850+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T02:22:20.870+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline.py took 0.649 seconds
+[2025-05-14T02:22:50.903+0000] {processor.py:186} INFO - Started process (PID=78) to work on /opt/airflow/dags/pipeline.py
+[2025-05-14T02:22:50.913+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-05-14T02:22:50.914+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:22:50.914+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:22:51.001+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:22:51.021+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:22:51.020+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T02:22:51.142+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:22:51.142+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T02:22:51.166+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline.py took 0.267 seconds
+[2025-05-14T02:23:21.546+0000] {processor.py:186} INFO - Started process (PID=100) to work on /opt/airflow/dags/pipeline.py
+[2025-05-14T02:23:21.547+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-05-14T02:23:21.549+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:23:21.548+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:23:21.631+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:23:21.757+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:23:21.756+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T02:23:21.765+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:23:21.764+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T02:23:21.777+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline.py took 0.237 seconds
+[2025-05-14T02:23:52.634+0000] {processor.py:186} INFO - Started process (PID=119) to work on /opt/airflow/dags/pipeline.py
+[2025-05-14T02:23:52.645+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-05-14T02:23:52.646+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:23:52.646+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:23:52.735+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:23:52.753+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:23:52.752+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T02:23:52.761+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:23:52.761+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T02:23:52.773+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline.py took 0.144 seconds
+[2025-05-14T02:24:22.790+0000] {processor.py:186} INFO - Started process (PID=138) to work on /opt/airflow/dags/pipeline.py
+[2025-05-14T02:24:22.791+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-05-14T02:24:22.793+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:24:22.792+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:24:22.882+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:24:22.900+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:24:22.900+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T02:24:23.017+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:24:23.017+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T02:24:23.029+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline.py took 0.244 seconds
+[2025-05-14T02:24:53.497+0000] {processor.py:186} INFO - Started process (PID=157) to work on /opt/airflow/dags/pipeline.py
+[2025-05-14T02:24:53.500+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-05-14T02:24:53.502+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:24:53.501+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:24:53.587+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:24:53.729+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:24:53.729+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T02:24:53.737+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:24:53.736+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T02:24:53.747+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline.py took 0.255 seconds
+[2025-05-14T02:25:24.142+0000] {processor.py:186} INFO - Started process (PID=176) to work on /opt/airflow/dags/pipeline.py
+[2025-05-14T02:25:24.153+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-05-14T02:25:24.155+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:25:24.155+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:25:24.240+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:25:24.257+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:25:24.257+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T02:25:24.266+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:25:24.265+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T02:25:24.280+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline.py took 0.143 seconds
+[2025-05-14T02:25:54.553+0000] {processor.py:186} INFO - Started process (PID=195) to work on /opt/airflow/dags/pipeline.py
+[2025-05-14T02:25:54.555+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-05-14T02:25:54.557+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:25:54.556+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:25:54.642+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:25:54.658+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:25:54.658+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T02:25:54.789+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:25:54.788+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T02:25:54.801+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline.py took 0.252 seconds
+[2025-05-14T02:26:25.539+0000] {processor.py:186} INFO - Started process (PID=214) to work on /opt/airflow/dags/pipeline.py
+[2025-05-14T02:26:25.541+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-05-14T02:26:25.542+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:26:25.542+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:26:25.626+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:26:25.774+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:26:25.774+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T02:26:25.782+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:26:25.781+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T02:26:25.793+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline.py took 0.259 seconds
+[2025-05-14T02:26:56.165+0000] {processor.py:186} INFO - Started process (PID=233) to work on /opt/airflow/dags/pipeline.py
+[2025-05-14T02:26:56.166+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-05-14T02:26:56.168+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:26:56.168+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:26:56.260+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:26:56.277+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:26:56.277+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T02:26:56.286+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:26:56.286+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T02:26:56.298+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline.py took 0.138 seconds
+[2025-05-14T02:27:26.345+0000] {processor.py:186} INFO - Started process (PID=258) to work on /opt/airflow/dags/pipeline.py
+[2025-05-14T02:27:26.346+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-05-14T02:27:26.348+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:27:26.348+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:27:26.436+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:27:26.452+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:27:26.452+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T02:27:26.567+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:27:26.566+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T02:27:26.579+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline.py took 0.238 seconds
+[2025-05-14T02:27:56.744+0000] {processor.py:186} INFO - Started process (PID=283) to work on /opt/airflow/dags/pipeline.py
+[2025-05-14T02:27:56.748+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-05-14T02:27:56.749+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:27:56.749+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:27:56.835+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:27:56.959+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:27:56.959+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T02:27:56.966+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:27:56.966+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T02:27:56.977+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline.py took 0.238 seconds
+[2025-05-14T02:28:27.108+0000] {processor.py:186} INFO - Started process (PID=302) to work on /opt/airflow/dags/pipeline.py
+[2025-05-14T02:28:27.110+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-05-14T02:28:27.112+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:28:27.111+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:28:27.198+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:28:27.215+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:28:27.215+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T02:28:27.224+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:28:27.224+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T02:28:27.236+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline.py took 0.132 seconds
+[2025-05-14T02:28:57.367+0000] {processor.py:186} INFO - Started process (PID=321) to work on /opt/airflow/dags/pipeline.py
+[2025-05-14T02:28:57.368+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-05-14T02:28:57.369+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:28:57.369+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:28:57.449+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:28:57.466+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:28:57.465+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T02:28:57.578+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:28:57.578+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T02:28:57.590+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline.py took 0.227 seconds
+[2025-05-14T02:29:27.750+0000] {processor.py:186} INFO - Started process (PID=340) to work on /opt/airflow/dags/pipeline.py
+[2025-05-14T02:29:27.751+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-05-14T02:29:27.753+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:29:27.753+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:29:27.836+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:29:27.958+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:29:27.958+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T02:29:27.966+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:29:27.966+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T02:29:27.978+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline.py took 0.233 seconds
+[2025-05-14T02:29:58.348+0000] {processor.py:186} INFO - Started process (PID=359) to work on /opt/airflow/dags/pipeline.py
+[2025-05-14T02:29:58.351+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-05-14T02:29:58.353+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:29:58.353+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:29:58.433+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:29:58.450+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:29:58.450+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T02:29:58.458+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:29:58.458+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T02:29:58.470+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline.py took 0.127 seconds
+[2025-05-14T02:30:28.690+0000] {processor.py:186} INFO - Started process (PID=378) to work on /opt/airflow/dags/pipeline.py
+[2025-05-14T02:30:28.692+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-05-14T02:30:28.693+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:30:28.693+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:30:28.773+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:30:28.789+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:30:28.789+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T02:30:28.798+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:30:28.798+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T02:30:28.918+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline.py took 0.232 seconds
+[2025-05-14T02:30:59.001+0000] {processor.py:186} INFO - Started process (PID=399) to work on /opt/airflow/dags/pipeline.py
+[2025-05-14T02:30:59.003+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-05-14T02:30:59.004+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:30:59.004+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:30:59.089+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:30:59.223+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:30:59.222+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T02:30:59.232+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:30:59.231+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T02:30:59.246+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline.py took 0.249 seconds
+[2025-05-14T02:31:29.379+0000] {processor.py:186} INFO - Started process (PID=416) to work on /opt/airflow/dags/pipeline.py
+[2025-05-14T02:31:29.396+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-05-14T02:31:29.398+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:31:29.397+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:31:29.478+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:31:29.499+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:31:29.499+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T02:31:29.507+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:31:29.507+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T02:31:29.519+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline.py took 0.145 seconds
+[2025-05-14T02:31:59.816+0000] {processor.py:186} INFO - Started process (PID=435) to work on /opt/airflow/dags/pipeline.py
+[2025-05-14T02:31:59.819+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-05-14T02:31:59.821+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:31:59.821+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:31:59.911+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:31:59.929+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:31:59.929+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T02:31:59.938+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:31:59.938+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T02:32:00.058+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline.py took 0.248 seconds
+[2025-05-14T02:32:30.652+0000] {processor.py:186} INFO - Started process (PID=454) to work on /opt/airflow/dags/pipeline.py
+[2025-05-14T02:32:30.653+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline.py for tasks to queue
+[2025-05-14T02:32:30.655+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:32:30.655+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:32:30.759+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline.py
+[2025-05-14T02:32:30.923+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:32:30.923+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T02:32:30.932+0000] {logging_mixin.py:190} INFO - [2025-05-14T02:32:30.931+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T02:32:30.947+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline.py took 0.300 seconds

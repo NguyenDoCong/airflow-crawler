@@ -19,7 +19,6 @@ class BaseInstagramScraper(Scraper):
         # options = Options()
         user_data_dir = tempfile.mkdtemp()
         options.add_argument(f"--user-data-dir={user_data_dir}")
-
         options.add_argument("--headless=new")
 
         options.add_argument(
@@ -32,7 +31,6 @@ class BaseInstagramScraper(Scraper):
         options.add_argument("--window-size=1920,1080")
 
         self._driver = webdriver.Chrome(options=options)
-        print(f"url: {self._base_url}")
         self._driver.get(self._base_url)
         self._wait = WebDriverWait(self._driver, 10)
         self.success = False

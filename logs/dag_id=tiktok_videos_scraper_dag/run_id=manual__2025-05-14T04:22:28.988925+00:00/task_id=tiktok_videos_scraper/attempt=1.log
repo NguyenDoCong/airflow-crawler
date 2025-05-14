@@ -1,0 +1,30 @@
+[2025-05-14T04:22:29.992+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-14T04:22:30.004+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper manual__2025-05-14T04:22:28.988925+00:00 [queued]>
+[2025-05-14T04:22:30.010+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper manual__2025-05-14T04:22:28.988925+00:00 [queued]>
+[2025-05-14T04:22:30.011+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-14T04:22:30.019+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): tiktok_videos_scraper> on 2025-05-14 04:22:28.988925+00:00
+[2025-05-14T04:22:30.021+0000] {standard_task_runner.py:72} INFO - Started process 1954 to run task
+[2025-05-14T04:22:30.025+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'tiktok_videos_scraper', 'manual__2025-05-14T04:22:28.988925+00:00', '--job-id', '5406', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmps97wd5ih']
+[2025-05-14T04:22:30.027+0000] {standard_task_runner.py:105} INFO - Job 5406: Subtask tiktok_videos_scraper
+[2025-05-14T04:22:30.067+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper manual__2025-05-14T04:22:28.988925+00:00 [running]> on host 79b7354865cb
+[2025-05-14T04:22:30.128+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='tiktok_videos_scraper' AIRFLOW_CTX_EXECUTION_DATE='2025-05-14T04:22:28.988925+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-14T04:22:28.988925+00:00'
+[2025-05-14T04:22:30.129+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-14T04:23:55.786+0000] {local_task_job_runner.py:341} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-05-14T04:23:55.788+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2025-05-14T04:23:55.789+0000] {process_utils.py:132} INFO - Sending 15 to group 1954. PIDs of all processes in the group: [1957, 1969, 1973, 1974, 2005, 2006, 2050, 2051, 2078, 1954]
+[2025-05-14T04:23:55.789+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 1954
+[2025-05-14T04:23:55.790+0000] {taskinstance.py:3083} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-05-14T04:23:55.804+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=2006, status='terminated', started='04:22:30') (2006) terminated with exit code None
+[2025-05-14T04:23:55.805+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=2051, status='terminated', started='04:22:30') (2051) terminated with exit code None
+[2025-05-14T04:23:55.805+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=2078, status='terminated', started='04:22:30') (2078) terminated with exit code None
+[2025-05-14T04:23:55.859+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=2005, status='terminated', started='04:22:30') (2005) terminated with exit code None
+[2025-05-14T04:23:55.859+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=1973, status='terminated', started='04:22:30') (1973) terminated with exit code None
+[2025-05-14T04:23:56.000+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=1974, status='terminated', started='04:22:30') (1974) terminated with exit code None
+[2025-05-14T04:23:56.000+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=1969, status='terminated', started='04:22:30') (1969) terminated with exit code None
+[2025-05-14T04:23:56.001+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=2050, status='terminated', started='04:22:30') (2050) terminated with exit code None
+[2025-05-14T04:24:50.809+0000] {process_utils.py:150} WARNING - process psutil.Process(pid=1957, name='node', status='sleeping', started='04:22:30') did not respond to SIGTERM. Trying SIGKILL
+[2025-05-14T04:24:50.810+0000] {process_utils.py:150} WARNING - process psutil.Process(pid=1954, name='airflow task ru', status='sleeping', started='04:22:29') did not respond to SIGTERM. Trying SIGKILL
+[2025-05-14T04:24:50.810+0000] {process_utils.py:87} INFO - Sending the signal 9 to group 1954
+[2025-05-14T04:24:50.818+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=1957, name='node', status='terminated', started='04:22:30') (1957) terminated with exit code None
+[2025-05-14T04:24:50.819+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=1954, name='airflow task ru', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='04:22:29') (1954) terminated with exit code -9
+[2025-05-14T04:24:50.819+0000] {standard_task_runner.py:190} ERROR - ('Job 5406 was killed before it finished (likely due to running out of memory)', 'For more information, see https://airflow.apache.org/docs/apache-airflow/stable/troubleshooting.html#LocalTaskJob-killed')

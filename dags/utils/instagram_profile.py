@@ -16,8 +16,8 @@ from app.core.database_utils import create_pending_video, get_all_videos_from_db
 from dags.utils.get_id import extract_id
 
 class ProfileScraper(BaseInstagramScraper):
+
     def __init__(self, user_id: str) -> None:
-        print(f"Scraping Instagram profile: {user_id}")
         super().__init__(user_id, base_url=f"https://www.instagram.com/{user_id}/reels/")
         self.success = False
         self._driver.add_cookie(

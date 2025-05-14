@@ -1,0 +1,43 @@
+[2025-05-14T09:25:33.916+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-14T09:25:33.931+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: x_videos_scraper_dag.audio_to_transcript manual__2025-05-14T09:23:27.522519+00:00 [queued]>
+[2025-05-14T09:25:33.939+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: x_videos_scraper_dag.audio_to_transcript manual__2025-05-14T09:23:27.522519+00:00 [queued]>
+[2025-05-14T09:25:33.940+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-14T09:25:33.951+0000] {taskinstance.py:2879} INFO - Executing <Task(_PythonDecoratedOperator): audio_to_transcript> on 2025-05-14 09:23:27.522519+00:00
+[2025-05-14T09:25:33.954+0000] {standard_task_runner.py:72} INFO - Started process 1458 to run task
+[2025-05-14T09:25:33.957+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'x_videos_scraper_dag', 'audio_to_transcript', 'manual__2025-05-14T09:23:27.522519+00:00', '--job-id', '5458', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_x.py', '--cfg-path', '/tmp/tmps3adn8pl']
+[2025-05-14T09:25:33.959+0000] {standard_task_runner.py:105} INFO - Job 5458: Subtask audio_to_transcript
+[2025-05-14T09:25:34.002+0000] {task_command.py:467} INFO - Running <TaskInstance: x_videos_scraper_dag.audio_to_transcript manual__2025-05-14T09:23:27.522519+00:00 [running]> on host 255dbbe6d096
+[2025-05-14T09:25:34.084+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='x_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='audio_to_transcript' AIRFLOW_CTX_EXECUTION_DATE='2025-05-14T09:23:27.522519+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-14T09:23:27.522519+00:00'
+[2025-05-14T09:25:34.085+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-14T09:25:34.321+0000] {get_transcript.py:32} INFO - Processing audio file: data/1921611528467341607.mp3
+[2025-05-14T09:25:45.402+0000] {transcribe.py:839} INFO - Processing audio with duration 13:54.859
+[2025-05-14T09:25:46.207+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.36
+[2025-05-14T09:25:46.210+0000] {get_transcript.py:42} INFO - Detected language 'en' with probability 0.3567602038383484
+[2025-05-14T09:26:01.284+0000] {get_transcript.py:32} INFO - Processing audio file: data/1921015655584985240.mp3
+[2025-05-14T09:26:01.806+0000] {transcribe.py:839} INFO - Processing audio with duration 00:13.166
+[2025-05-14T09:26:02.055+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.90
+[2025-05-14T09:26:02.058+0000] {get_transcript.py:42} INFO - Detected language 'en' with probability 0.8989195227622986
+[2025-05-14T09:26:03.060+0000] {get_transcript.py:32} INFO - Processing audio file: data/1907363501405777937.mp3
+[2025-05-14T09:26:04.066+0000] {transcribe.py:839} INFO - Processing audio with duration 06:00.095
+[2025-05-14T09:26:04.547+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.93
+[2025-05-14T09:26:04.548+0000] {get_transcript.py:42} INFO - Detected language 'en' with probability 0.934556782245636
+[2025-05-14T09:26:15.667+0000] {get_transcript.py:32} INFO - Processing audio file: data/1922083384085430492.mp3
+[2025-05-14T09:26:16.091+0000] {get_transcript.py:56} ERROR - Error transcripting video from 1922083384085430492: [Errno 1094995529] Invalid data found when processing input: 'data/1922083384085430492.mp3'
+[2025-05-14T09:26:16.096+0000] {get_transcript.py:32} INFO - Processing audio file: data/1907317741763084507.mp3
+[2025-05-14T09:26:16.664+0000] {transcribe.py:839} INFO - Processing audio with duration 00:16.858
+[2025-05-14T09:26:16.981+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.37
+[2025-05-14T09:26:16.982+0000] {get_transcript.py:42} INFO - Detected language 'en' with probability 0.37014544010162354
+[2025-05-14T09:26:17.498+0000] {get_transcript.py:32} INFO - Processing audio file: data/1916035259990479114.mp3
+[2025-05-14T09:26:18.238+0000] {transcribe.py:839} INFO - Processing audio with duration 03:00.187
+[2025-05-14T09:26:18.632+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.47
+[2025-05-14T09:26:18.633+0000] {get_transcript.py:42} INFO - Detected language 'en' with probability 0.4653269946575165
+[2025-05-14T09:26:24.447+0000] {get_transcript.py:32} INFO - Processing audio file: data/1916999224664953190.mp3
+[2025-05-14T09:26:25.218+0000] {transcribe.py:839} INFO - Processing audio with duration 03:00.203
+[2025-05-14T09:26:25.627+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.40
+[2025-05-14T09:26:25.629+0000] {get_transcript.py:42} INFO - Detected language 'en' with probability 0.40242817997932434
+[2025-05-14T09:26:32.293+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-05-14T09:26:32.302+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-14T09:26:32.302+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=x_videos_scraper_dag, task_id=audio_to_transcript, run_id=manual__2025-05-14T09:23:27.522519+00:00, execution_date=20250514T092327, start_date=20250514T092533, end_date=20250514T092632
+[2025-05-14T09:26:32.360+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-14T09:26:32.375+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-14T09:26:32.388+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
