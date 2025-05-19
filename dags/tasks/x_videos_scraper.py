@@ -1,4 +1,4 @@
-from airflow.decorators import task
+# from airflow.decorators import task
 from utils.downloader import download_video
 from config import Config
 import os
@@ -11,7 +11,7 @@ from app.core.database_utils import create_pending_video, get_all_videos_from_db
 from app.worker.schema import TaskStatus
 from dags.utils.get_id import extract_id
 
-@task
+# @task
 def x_videos_scraper(id = "elonmusk",scrolls = 5):
     from playwright.sync_api import sync_playwright
 

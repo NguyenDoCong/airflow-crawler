@@ -1,0 +1,56 @@
+[2025-05-15T09:54:37.866+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-15T09:54:37.878+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-15T09:54:37.335411+00:00 [queued]>
+[2025-05-15T09:54:37.883+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-15T09:54:37.335411+00:00 [queued]>
+[2025-05-15T09:54:37.883+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-15T09:54:37.893+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): tiktok_videos_scraper_task> on 2025-05-15 09:54:37.335411+00:00
+[2025-05-15T09:54:37.896+0000] {standard_task_runner.py:72} INFO - Started process 876 to run task
+[2025-05-15T09:54:37.899+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'tiktok_videos_scraper_task', 'manual__2025-05-15T09:54:37.335411+00:00', '--job-id', '5976', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmp1wye7exc']
+[2025-05-15T09:54:37.901+0000] {standard_task_runner.py:105} INFO - Job 5976: Subtask tiktok_videos_scraper_task
+[2025-05-15T09:54:37.936+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-15T09:54:37.335411+00:00 [running]> on host 8579eb2523da
+[2025-05-15T09:54:37.988+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='tiktok_videos_scraper_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-15T09:54:37.335411+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-15T09:54:37.335411+00:00'
+[2025-05-15T09:54:37.989+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-15T09:54:52.915+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476458995692178696
+[2025-05-15T09:54:52.915+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7207404062344482075
+[2025-05-15T09:54:52.915+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7201501377284033818
+[2025-05-15T09:54:52.916+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7503443446078786824
+[2025-05-15T09:54:52.916+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7503424669492530439
+[2025-05-15T09:54:52.916+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7502354085140581650
+[2025-05-15T09:54:52.916+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7500593263758413064
+[2025-05-15T09:54:52.916+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7500122651810188562
+[2025-05-15T09:54:52.916+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7499066838945369362
+[2025-05-15T09:54:52.916+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7496423563117776136
+[2025-05-15T09:54:52.916+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7493974332792737042
+[2025-05-15T09:54:52.916+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7493015381292911890
+[2025-05-15T09:54:52.916+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7491178093588090119
+[2025-05-15T09:54:52.916+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7488702196213632262
+[2025-05-15T09:54:52.916+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7487144559412022534
+[2025-05-15T09:54:52.916+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7485747662218693896
+[2025-05-15T09:54:52.916+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7485362731500047634
+[2025-05-15T09:54:52.916+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7482423020078861575
+[2025-05-15T09:54:52.916+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7481299039611407623
+[2025-05-15T09:54:52.917+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7480168247904570632
+[2025-05-15T09:54:52.917+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7479281687831022866
+[2025-05-15T09:54:52.917+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7478731702903393543
+[2025-05-15T09:54:52.917+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477993675306355976
+[2025-05-15T09:54:52.917+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477823132770897159
+[2025-05-15T09:54:52.917+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477145543064521992
+[2025-05-15T09:54:52.917+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477130668615437586
+[2025-05-15T09:54:52.917+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476821366457568520
+[2025-05-15T09:54:52.917+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476806809555045640
+[2025-05-15T09:54:52.917+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476792217672224008
+[2025-05-15T09:54:52.917+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476773956255632647
+[2025-05-15T09:54:52.917+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476064550148934930
+[2025-05-15T09:54:52.917+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476035118407093522
+[2025-05-15T09:54:52.917+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7472395151692893458
+[2025-05-15T09:54:52.917+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7471257605847993618
+[2025-05-15T09:54:52.917+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7470532163381857554
+[2025-05-15T09:54:52.918+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7470452040808942866
+[2025-05-15T09:54:52.918+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7470141470943563026
+[2025-05-15T09:54:52.932+0000] {logging_mixin.py:190} INFO - New videos: 0
+[2025-05-15T09:54:52.932+0000] {logging_mixin.py:190} INFO - Downloaded 0 new videos.
+[2025-05-15T09:54:53.080+0000] {python.py:240} INFO - Done. Returned value was: []
+[2025-05-15T09:54:53.096+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-15T09:54:53.096+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tiktok_videos_scraper_dag, task_id=tiktok_videos_scraper_task, run_id=manual__2025-05-15T09:54:37.335411+00:00, execution_date=20250515T095437, start_date=20250515T095437, end_date=20250515T095453
+[2025-05-15T09:54:53.141+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-15T09:54:53.156+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-15T09:54:53.158+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

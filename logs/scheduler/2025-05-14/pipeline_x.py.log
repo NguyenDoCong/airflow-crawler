@@ -8456,3 +8456,11 @@ IndentationError: expected an indented block after 'try' statement on line 16
 [2025-05-14T11:17:44.297+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:44.296+0000] {dag.py:4138} INFO - Setting next_dagrun for x_login_dag to None, run_after=None
 [2025-05-14T11:17:44.299+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:44.299+0000] {dag.py:4138} INFO - Setting next_dagrun for x_videos_scraper_dag to None, run_after=None
 [2025-05-14T11:17:44.308+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_x.py took 0.119 seconds
+[2025-05-14T11:18:15.110+0000] {processor.py:186} INFO - Started process (PID=7319) to work on /opt/airflow/dags/pipeline_x.py
+[2025-05-14T11:18:15.111+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_x.py for tasks to queue
+[2025-05-14T11:18:15.112+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:18:15.112+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_x.py
+[2025-05-14T11:18:15.176+0000] {processor.py:925} INFO - DAG(s) 'x_login_dag', 'x_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline_x.py
+[2025-05-14T11:18:15.196+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:18:15.195+0000] {dag.py:3211} INFO - Sync 2 DAGs
+[2025-05-14T11:18:15.204+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:18:15.204+0000] {dag.py:4138} INFO - Setting next_dagrun for x_login_dag to None, run_after=None
+[2025-05-14T11:18:15.206+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:18:15.206+0000] {dag.py:4138} INFO - Setting next_dagrun for x_videos_scraper_dag to None, run_after=None
+[2025-05-14T11:18:15.218+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_x.py took 0.112 seconds

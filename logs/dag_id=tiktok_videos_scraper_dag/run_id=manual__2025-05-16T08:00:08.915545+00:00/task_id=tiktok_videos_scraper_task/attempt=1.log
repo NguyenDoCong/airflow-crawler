@@ -1,0 +1,815 @@
+[2025-05-16T08:00:10.242+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-16T08:00:10.252+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-16T08:00:08.915545+00:00 [queued]>
+[2025-05-16T08:00:10.258+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-16T08:00:08.915545+00:00 [queued]>
+[2025-05-16T08:00:10.259+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-16T08:00:10.281+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): tiktok_videos_scraper_task> on 2025-05-16 08:00:08.915545+00:00
+[2025-05-16T08:00:10.284+0000] {standard_task_runner.py:72} INFO - Started process 16338 to run task
+[2025-05-16T08:00:10.287+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'tiktok_videos_scraper_task', 'manual__2025-05-16T08:00:08.915545+00:00', '--job-id', '6115', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmp1imlkdug']
+[2025-05-16T08:00:10.288+0000] {standard_task_runner.py:105} INFO - Job 6115: Subtask tiktok_videos_scraper_task
+[2025-05-16T08:00:10.322+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-16T08:00:08.915545+00:00 [running]> on host 8579eb2523da
+[2025-05-16T08:00:10.377+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='tiktok_videos_scraper_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-16T08:00:08.915545+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-16T08:00:08.915545+00:00'
+[2025-05-16T08:00:10.378+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-16T08:00:18.366+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476458995692178696
+[2025-05-16T08:00:18.367+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7207404062344482075
+[2025-05-16T08:00:18.367+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7201501377284033818
+[2025-05-16T08:00:18.367+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7503443446078786824
+[2025-05-16T08:00:18.367+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7503424669492530439
+[2025-05-16T08:00:18.367+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7502354085140581650
+[2025-05-16T08:00:18.367+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7500593263758413064
+[2025-05-16T08:00:18.367+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7500122651810188562
+[2025-05-16T08:00:18.367+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7499066838945369362
+[2025-05-16T08:00:18.367+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7496423563117776136
+[2025-05-16T08:00:18.367+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7493974332792737042
+[2025-05-16T08:00:18.367+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7493015381292911890
+[2025-05-16T08:00:18.367+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7491178093588090119
+[2025-05-16T08:00:18.367+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7488702196213632262
+[2025-05-16T08:00:18.367+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7487144559412022534
+[2025-05-16T08:00:18.368+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7485747662218693896
+[2025-05-16T08:00:18.368+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7485362731500047634
+[2025-05-16T08:00:18.368+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7482423020078861575
+[2025-05-16T08:00:18.368+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7481299039611407623
+[2025-05-16T08:00:18.368+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7480168247904570632
+[2025-05-16T08:00:18.368+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7479281687831022866
+[2025-05-16T08:00:18.368+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7478731702903393543
+[2025-05-16T08:00:18.368+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477993675306355976
+[2025-05-16T08:00:18.368+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477823132770897159
+[2025-05-16T08:00:18.368+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477145543064521992
+[2025-05-16T08:00:18.368+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477130668615437586
+[2025-05-16T08:00:18.368+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476821366457568520
+[2025-05-16T08:00:18.368+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476806809555045640
+[2025-05-16T08:00:18.368+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476792217672224008
+[2025-05-16T08:00:18.368+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476773956255632647
+[2025-05-16T08:00:18.369+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476064550148934930
+[2025-05-16T08:00:18.369+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476035118407093522
+[2025-05-16T08:00:18.369+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7472395151692893458
+[2025-05-16T08:00:18.369+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7471257605847993618
+[2025-05-16T08:00:18.369+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7470532163381857554
+[2025-05-16T08:00:18.369+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7470452040808942866
+[2025-05-16T08:00:18.369+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7470141470943563026
+[2025-05-16T08:00:18.378+0000] {logging_mixin.py:190} INFO - New videos: 37
+[2025-05-16T08:00:18.545+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T08:00:18.545+0000] {logging_mixin.py:190} INFO - Downloading video from 7481299039611407623...
+[2025-05-16T08:00:18.909+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7481299039611407623
+[2025-05-16T08:00:18.910+0000] {logging_mixin.py:190} INFO - [TikTok] 7481299039611407623: Downloading webpage
+[2025-05-16T08:00:19.651+0000] {logging_mixin.py:190} INFO - [info] 7481299039611407623: Downloading 1 format(s): bytevc1_1080p_3529952-1
+[2025-05-16T08:00:19.950+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7481299039611407623
+[2025-05-16T08:00:19.951+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   38.77MiB at  575.51KiB/s ETA 01:09
+[2025-05-16T08:00:19.952+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   38.77MiB at    1.08MiB/s ETA 00:35
+[2025-05-16T08:00:19.953+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   38.77MiB at    2.04MiB/s ETA 00:19
+[2025-05-16T08:00:19.953+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   38.77MiB at    3.66MiB/s ETA 00:10
+[2025-05-16T08:00:19.957+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   38.77MiB at    3.75MiB/s ETA 00:10
+[2025-05-16T08:00:20.015+0000] {logging_mixin.py:190} INFO - [download]   0.2% of   38.77MiB at  954.10KiB/s ETA 00:41
+[2025-05-16T08:00:20.086+0000] {logging_mixin.py:190} INFO - [download]   0.3% of   38.77MiB at  935.74KiB/s ETA 00:42
+[2025-05-16T08:00:20.139+0000] {logging_mixin.py:190} INFO - [download]   0.6% of   38.77MiB at    1.32MiB/s ETA 00:29
+[2025-05-16T08:00:20.218+0000] {logging_mixin.py:190} INFO - [download]   1.3% of   38.77MiB at    1.86MiB/s ETA 00:20
+[2025-05-16T08:00:20.287+0000] {logging_mixin.py:190} INFO - [download]   2.6% of   38.77MiB at    2.96MiB/s ETA 00:12
+[2025-05-16T08:00:20.580+0000] {logging_mixin.py:190} INFO - [download]   5.2% of   38.77MiB at    3.17MiB/s ETA 00:11
+[2025-05-16T08:00:20.711+0000] {logging_mixin.py:190} INFO - [download]  10.3% of   38.77MiB at    5.25MiB/s ETA 00:06
+[2025-05-16T08:00:21.170+0000] {logging_mixin.py:190} INFO - [download]  20.6% of   38.77MiB at    6.55MiB/s ETA 00:04
+[2025-05-16T08:00:21.635+0000] {logging_mixin.py:190} INFO - [download]  30.9% of   38.77MiB at    7.12MiB/s ETA 00:03
+[2025-05-16T08:00:22.160+0000] {logging_mixin.py:190} INFO - [download]  41.3% of   38.77MiB at    7.24MiB/s ETA 00:03
+[2025-05-16T08:00:22.676+0000] {logging_mixin.py:190} INFO - [download]  51.6% of   38.77MiB at    7.33MiB/s ETA 00:02
+[2025-05-16T08:00:23.209+0000] {logging_mixin.py:190} INFO - [download]  61.9% of   38.77MiB at    7.36MiB/s ETA 00:02
+[2025-05-16T08:00:23.777+0000] {logging_mixin.py:190} INFO - [download]  72.2% of   38.77MiB at    7.32MiB/s ETA 00:01
+[2025-05-16T08:00:24.305+0000] {logging_mixin.py:190} INFO - [download]  82.5% of   38.77MiB at    7.35MiB/s ETA 00:00
+[2025-05-16T08:00:24.817+0000] {logging_mixin.py:190} INFO - [download]  92.8% of   38.77MiB at    7.40MiB/s ETA 00:00
+[2025-05-16T08:00:25.234+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   38.77MiB at    7.34MiB/s ETA 00:00
+[2025-05-16T08:00:25.239+0000] {logging_mixin.py:190} INFO - [download] 100% of   38.77MiB in 00:00:05 at 6.94MiB/s   
+[2025-05-16T08:00:25.669+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7481299039611407623.mp3
+[2025-05-16T08:00:26.799+0000] {logging_mixin.py:190} INFO - Deleting original file data/7481299039611407623 (pass -k to keep)
+[2025-05-16T08:00:26.806+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7481299039611407623
+[2025-05-16T08:00:26.812+0000] {logging_mixin.py:190} INFO - Downloaded video 7481299039611407623 to data/7481299039611407623.mp3
+[2025-05-16T08:00:26.926+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T08:00:26.927+0000] {logging_mixin.py:190} INFO - Downloading video from 7485362731500047634...
+[2025-05-16T08:00:26.960+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7485362731500047634
+[2025-05-16T08:00:26.961+0000] {logging_mixin.py:190} INFO - [TikTok] 7485362731500047634: Downloading webpage
+[2025-05-16T08:00:27.837+0000] {logging_mixin.py:190} INFO - [info] 7485362731500047634: Downloading 1 format(s): bytevc1_1080p_2690616-1
+[2025-05-16T08:00:28.076+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7485362731500047634
+[2025-05-16T08:00:28.077+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   28.81MiB at  Unknown B/s ETA Unknown
+[2025-05-16T08:00:28.077+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   28.81MiB at    2.59MiB/s ETA 00:11  
+[2025-05-16T08:00:28.078+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   28.81MiB at    4.24MiB/s ETA 00:06
+[2025-05-16T08:00:28.080+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   28.81MiB at    4.00MiB/s ETA 00:07
+[2025-05-16T08:00:28.085+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   28.81MiB at    3.53MiB/s ETA 00:08
+[2025-05-16T08:00:28.143+0000] {logging_mixin.py:190} INFO - [download]   0.2% of   28.81MiB at  937.28KiB/s ETA 00:31
+[2025-05-16T08:00:28.209+0000] {logging_mixin.py:190} INFO - [download]   0.4% of   28.81MiB at  953.94KiB/s ETA 00:30
+[2025-05-16T08:00:28.262+0000] {logging_mixin.py:190} INFO - [download]   0.9% of   28.81MiB at    1.34MiB/s ETA 00:21
+[2025-05-16T08:00:28.338+0000] {logging_mixin.py:190} INFO - [download]   1.7% of   28.81MiB at    1.91MiB/s ETA 00:14
+[2025-05-16T08:00:28.438+0000] {logging_mixin.py:190} INFO - [download]   3.5% of   28.81MiB at    2.76MiB/s ETA 00:10
+[2025-05-16T08:00:28.707+0000] {logging_mixin.py:190} INFO - [download]   6.9% of   28.81MiB at    3.17MiB/s ETA 00:08
+[2025-05-16T08:00:28.818+0000] {logging_mixin.py:190} INFO - [download]  13.9% of   28.81MiB at    5.39MiB/s ETA 00:04
+[2025-05-16T08:00:29.279+0000] {logging_mixin.py:190} INFO - [download]  27.8% of   28.81MiB at    6.65MiB/s ETA 00:03
+[2025-05-16T08:00:29.915+0000] {logging_mixin.py:190} INFO - [download]  41.7% of   28.81MiB at    6.52MiB/s ETA 00:02
+[2025-05-16T08:00:30.232+0000] {logging_mixin.py:190} INFO - [download]  55.5% of   28.81MiB at    7.42MiB/s ETA 00:01
+[2025-05-16T08:00:30.854+0000] {logging_mixin.py:190} INFO - [download]  69.4% of   28.81MiB at    7.20MiB/s ETA 00:01
+[2025-05-16T08:00:31.235+0000] {logging_mixin.py:190} INFO - [download]  83.3% of   28.81MiB at    7.60MiB/s ETA 00:00
+[2025-05-16T08:00:31.599+0000] {logging_mixin.py:190} INFO - [download]  97.2% of   28.81MiB at    7.95MiB/s ETA 00:00
+[2025-05-16T08:00:31.733+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   28.81MiB at    7.88MiB/s ETA 00:00
+[2025-05-16T08:00:31.736+0000] {logging_mixin.py:190} INFO - [download] 100% of   28.81MiB in 00:00:03 at 7.39MiB/s   
+[2025-05-16T08:00:31.834+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7485362731500047634.mp3
+[2025-05-16T08:00:32.961+0000] {logging_mixin.py:190} INFO - Deleting original file data/7485362731500047634 (pass -k to keep)
+[2025-05-16T08:00:32.967+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7485362731500047634
+[2025-05-16T08:00:32.973+0000] {logging_mixin.py:190} INFO - Downloaded video 7485362731500047634 to data/7485362731500047634.mp3
+[2025-05-16T08:00:33.090+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T08:00:33.090+0000] {logging_mixin.py:190} INFO - Downloading video from 7201501377284033818...
+[2025-05-16T08:00:33.127+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7201501377284033818
+[2025-05-16T08:00:33.127+0000] {logging_mixin.py:190} INFO - [TikTok] 7201501377284033818: Downloading webpage
+[2025-05-16T08:00:33.806+0000] {logging_mixin.py:190} INFO - [info] 7201501377284033818: Downloading 1 format(s): bytevc1_1080p_558942-1
+[2025-05-16T08:00:34.043+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7201501377284033818
+[2025-05-16T08:00:34.043+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    2.46MiB at  375.33KiB/s ETA 00:06
+[2025-05-16T08:00:34.044+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    2.46MiB at  902.91KiB/s ETA 00:02
+[2025-05-16T08:00:34.044+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    2.46MiB at    1.76MiB/s ETA 00:01
+[2025-05-16T08:00:34.047+0000] {logging_mixin.py:190} INFO - [download]   0.6% of    2.46MiB at    2.34MiB/s ETA 00:01
+[2025-05-16T08:00:34.054+0000] {logging_mixin.py:190} INFO - [download]   1.2% of    2.46MiB at    2.35MiB/s ETA 00:01
+[2025-05-16T08:00:34.116+0000] {logging_mixin.py:190} INFO - [download]   2.5% of    2.46MiB at  840.17KiB/s ETA 00:02
+[2025-05-16T08:00:34.183+0000] {logging_mixin.py:190} INFO - [download]   5.1% of    2.46MiB at  891.75KiB/s ETA 00:02
+[2025-05-16T08:00:34.233+0000] {logging_mixin.py:190} INFO - [download]  10.1% of    2.46MiB at    1.29MiB/s ETA 00:01
+[2025-05-16T08:00:34.316+0000] {logging_mixin.py:190} INFO - [download]  20.3% of    2.46MiB at    1.81MiB/s ETA 00:01
+[2025-05-16T08:00:34.385+0000] {logging_mixin.py:190} INFO - [download]  40.7% of    2.46MiB at    2.90MiB/s ETA 00:00
+[2025-05-16T08:00:34.572+0000] {logging_mixin.py:190} INFO - [download]  81.4% of    2.46MiB at    3.77MiB/s ETA 00:00
+[2025-05-16T08:00:34.625+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    2.46MiB at    4.20MiB/s ETA 00:00
+[2025-05-16T08:00:34.626+0000] {logging_mixin.py:190} INFO - [download] 100% of    2.46MiB in 00:00:00 at 3.01MiB/s   
+[2025-05-16T08:00:34.682+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7201501377284033818.mp3
+[2025-05-16T08:00:35.112+0000] {logging_mixin.py:190} INFO - Deleting original file data/7201501377284033818 (pass -k to keep)
+[2025-05-16T08:00:35.116+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7201501377284033818
+[2025-05-16T08:00:35.122+0000] {logging_mixin.py:190} INFO - Downloaded video 7201501377284033818 to data/7201501377284033818.mp3
+[2025-05-16T08:00:35.246+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T08:00:35.246+0000] {logging_mixin.py:190} INFO - Downloading video from 7476792217672224008...
+[2025-05-16T08:00:35.280+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7476792217672224008
+[2025-05-16T08:00:35.280+0000] {logging_mixin.py:190} INFO - [TikTok] 7476792217672224008: Downloading webpage
+[2025-05-16T08:00:35.980+0000] {logging_mixin.py:190} INFO - [info] 7476792217672224008: Downloading 1 format(s): bytevc1_1080p_2202961-1
+[2025-05-16T08:00:36.374+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7476792217672224008
+[2025-05-16T08:00:36.374+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    6.75MiB at  Unknown B/s ETA Unknown
+[2025-05-16T08:00:36.375+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    6.75MiB at    1.95MiB/s ETA 00:03  
+[2025-05-16T08:00:36.376+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    6.75MiB at    2.39MiB/s ETA 00:02
+[2025-05-16T08:00:36.386+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    6.75MiB at    1.16MiB/s ETA 00:05
+[2025-05-16T08:00:36.388+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    6.75MiB at    2.12MiB/s ETA 00:03
+[2025-05-16T08:00:36.448+0000] {logging_mixin.py:190} INFO - [download]   0.9% of    6.75MiB at  853.71KiB/s ETA 00:08
+[2025-05-16T08:00:36.513+0000] {logging_mixin.py:190} INFO - [download]   1.8% of    6.75MiB at  913.92KiB/s ETA 00:07
+[2025-05-16T08:00:36.560+0000] {logging_mixin.py:190} INFO - [download]   3.7% of    6.75MiB at    1.34MiB/s ETA 00:04
+[2025-05-16T08:00:36.635+0000] {logging_mixin.py:190} INFO - [download]   7.4% of    6.75MiB at    1.91MiB/s ETA 00:03
+[2025-05-16T08:00:36.701+0000] {logging_mixin.py:190} INFO - [download]  14.8% of    6.75MiB at    3.05MiB/s ETA 00:01
+[2025-05-16T08:00:37.079+0000] {logging_mixin.py:190} INFO - [download]  29.6% of    6.75MiB at    2.84MiB/s ETA 00:01
+[2025-05-16T08:00:37.177+0000] {logging_mixin.py:190} INFO - [download]  59.2% of    6.75MiB at    4.98MiB/s ETA 00:00
+[2025-05-16T08:00:37.489+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    6.75MiB at    6.06MiB/s ETA 00:00
+[2025-05-16T08:00:37.491+0000] {logging_mixin.py:190} INFO - [download] 100% of    6.75MiB in 00:00:01 at 4.48MiB/s   
+[2025-05-16T08:00:37.541+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7476792217672224008.mp3
+[2025-05-16T08:00:37.862+0000] {logging_mixin.py:190} INFO - Deleting original file data/7476792217672224008 (pass -k to keep)
+[2025-05-16T08:00:37.866+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7476792217672224008
+[2025-05-16T08:00:37.871+0000] {logging_mixin.py:190} INFO - Downloaded video 7476792217672224008 to data/7476792217672224008.mp3
+[2025-05-16T08:00:37.996+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T08:00:37.996+0000] {logging_mixin.py:190} INFO - Downloading video from 7477823132770897159...
+[2025-05-16T08:00:38.028+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7477823132770897159
+[2025-05-16T08:00:38.028+0000] {logging_mixin.py:190} INFO - [TikTok] 7477823132770897159: Downloading webpage
+[2025-05-16T08:00:38.768+0000] {logging_mixin.py:190} INFO - [info] 7477823132770897159: Downloading 1 format(s): bytevc1_1080p_650078-1
+[2025-05-16T08:00:39.148+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7477823132770897159
+[2025-05-16T08:00:39.149+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.79MiB at  779.76KiB/s ETA 00:02
+[2025-05-16T08:00:39.150+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.79MiB at    1.22MiB/s ETA 00:01
+[2025-05-16T08:00:39.151+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    1.79MiB at    2.05MiB/s ETA 00:00
+[2025-05-16T08:00:39.152+0000] {logging_mixin.py:190} INFO - [download]   0.8% of    1.79MiB at    3.61MiB/s ETA 00:00
+[2025-05-16T08:00:39.157+0000] {logging_mixin.py:190} INFO - [download]   1.7% of    1.79MiB at    3.29MiB/s ETA 00:00
+[2025-05-16T08:00:39.219+0000] {logging_mixin.py:190} INFO - [download]   3.4% of    1.79MiB at  886.35KiB/s ETA 00:01
+[2025-05-16T08:00:39.286+0000] {logging_mixin.py:190} INFO - [download]   6.9% of    1.79MiB at  922.41KiB/s ETA 00:01
+[2025-05-16T08:00:39.336+0000] {logging_mixin.py:190} INFO - [download]  13.9% of    1.79MiB at    1.32MiB/s ETA 00:01
+[2025-05-16T08:00:39.413+0000] {logging_mixin.py:190} INFO - [download]  27.9% of    1.79MiB at    1.88MiB/s ETA 00:00
+[2025-05-16T08:00:39.483+0000] {logging_mixin.py:190} INFO - [download]  55.9% of    1.79MiB at    2.98MiB/s ETA 00:00
+[2025-05-16T08:00:39.566+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.79MiB at    4.27MiB/s ETA 00:00
+[2025-05-16T08:00:39.567+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.79MiB in 00:00:00 at 2.24MiB/s   
+[2025-05-16T08:00:39.613+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7477823132770897159.mp3
+[2025-05-16T08:00:39.890+0000] {logging_mixin.py:190} INFO - Deleting original file data/7477823132770897159 (pass -k to keep)
+[2025-05-16T08:00:39.894+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7477823132770897159
+[2025-05-16T08:00:39.905+0000] {logging_mixin.py:190} INFO - Downloaded video 7477823132770897159 to data/7477823132770897159.mp3
+[2025-05-16T08:00:40.044+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T08:00:40.044+0000] {logging_mixin.py:190} INFO - Downloading video from 7503443446078786824...
+[2025-05-16T08:00:40.078+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7503443446078786824
+[2025-05-16T08:00:40.079+0000] {logging_mixin.py:190} INFO - [TikTok] 7503443446078786824: Downloading webpage
+[2025-05-16T08:00:40.737+0000] {logging_mixin.py:190} INFO - [info] 7503443446078786824: Downloading 1 format(s): bytevc1_1080p_1970774-1
+[2025-05-16T08:00:40.985+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7503443446078786824
+[2025-05-16T08:00:40.986+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   49.21MiB at  Unknown B/s ETA Unknown
+[2025-05-16T08:00:40.986+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   49.21MiB at    2.45MiB/s ETA 00:20  
+[2025-05-16T08:00:40.987+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   49.21MiB at    4.04MiB/s ETA 00:12
+[2025-05-16T08:00:40.989+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   49.21MiB at    3.85MiB/s ETA 00:12
+[2025-05-16T08:00:40.995+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   49.21MiB at    3.06MiB/s ETA 00:16
+[2025-05-16T08:00:41.052+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   49.21MiB at  938.80KiB/s ETA 00:53
+[2025-05-16T08:00:41.124+0000] {logging_mixin.py:190} INFO - [download]   0.3% of   49.21MiB at  916.56KiB/s ETA 00:54
+[2025-05-16T08:00:41.168+0000] {logging_mixin.py:190} INFO - [download]   0.5% of   49.21MiB at    1.36MiB/s ETA 00:35
+[2025-05-16T08:00:41.246+0000] {logging_mixin.py:190} INFO - [download]   1.0% of   49.21MiB at    1.91MiB/s ETA 00:25
+[2025-05-16T08:00:41.314+0000] {logging_mixin.py:190} INFO - [download]   2.0% of   49.21MiB at    3.04MiB/s ETA 00:15
+[2025-05-16T08:00:41.700+0000] {logging_mixin.py:190} INFO - [download]   4.1% of   49.21MiB at    2.80MiB/s ETA 00:16
+[2025-05-16T08:00:41.783+0000] {logging_mixin.py:190} INFO - [download]   8.1% of   49.21MiB at    5.01MiB/s ETA 00:09
+[2025-05-16T08:00:42.208+0000] {logging_mixin.py:190} INFO - [download]  16.3% of   49.21MiB at    6.54MiB/s ETA 00:06
+[2025-05-16T08:00:42.792+0000] {logging_mixin.py:190} INFO - [download]  24.4% of   49.21MiB at    6.64MiB/s ETA 00:05
+[2025-05-16T08:00:43.263+0000] {logging_mixin.py:190} INFO - [download]  32.5% of   49.21MiB at    7.02MiB/s ETA 00:04
+[2025-05-16T08:00:43.843+0000] {logging_mixin.py:190} INFO - [download]  40.6% of   49.21MiB at    7.00MiB/s ETA 00:04
+[2025-05-16T08:00:41.723+0000] {logging_mixin.py:190} INFO - [download]  48.8% of   49.21MiB at   32.54MiB/s ETA 00:00
+[2025-05-16T08:00:42.244+0000] {logging_mixin.py:190} INFO - [download]  56.9% of   49.21MiB at   22.25MiB/s ETA 00:00
+[2025-05-16T08:00:42.665+0000] {logging_mixin.py:190} INFO - [download]  65.0% of   49.21MiB at   19.05MiB/s ETA 00:00
+[2025-05-16T08:00:43.179+0000] {logging_mixin.py:190} INFO - [download]  73.2% of   49.21MiB at   16.41MiB/s ETA 00:00
+[2025-05-16T08:00:43.608+0000] {logging_mixin.py:190} INFO - [download]  81.3% of   49.21MiB at   15.25MiB/s ETA 00:00
+[2025-05-16T08:00:43.963+0000] {logging_mixin.py:190} INFO - [download]  89.4% of   49.21MiB at   14.78MiB/s ETA 00:00
+[2025-05-16T08:00:44.568+0000] {logging_mixin.py:190} INFO - [download]  97.5% of   49.21MiB at   13.40MiB/s ETA 00:00
+[2025-05-16T08:00:44.607+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   49.21MiB at   13.59MiB/s ETA 00:00
+[2025-05-16T08:00:44.611+0000] {logging_mixin.py:190} INFO - [download] 100% of   49.21MiB in 00:00:03 at 12.72MiB/s  
+[2025-05-16T08:00:44.659+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7503443446078786824.mp3
+[2025-05-16T08:00:46.946+0000] {logging_mixin.py:190} INFO - Deleting original file data/7503443446078786824 (pass -k to keep)
+[2025-05-16T08:00:46.952+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7503443446078786824
+[2025-05-16T08:00:46.958+0000] {logging_mixin.py:190} INFO - Downloaded video 7503443446078786824 to data/7503443446078786824.mp3
+[2025-05-16T08:00:47.357+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T08:00:47.358+0000] {logging_mixin.py:190} INFO - Downloading video from 7476821366457568520...
+[2025-05-16T08:00:47.390+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7476821366457568520
+[2025-05-16T08:00:47.391+0000] {logging_mixin.py:190} INFO - [TikTok] 7476821366457568520: Downloading webpage
+[2025-05-16T08:00:48.063+0000] {logging_mixin.py:190} INFO - [info] 7476821366457568520: Downloading 1 format(s): bytevc1_1080p_2917354-1
+[2025-05-16T08:00:48.310+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7476821366457568520
+[2025-05-16T08:00:48.310+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   17.40MiB at  Unknown B/s ETA Unknown
+[2025-05-16T08:00:48.311+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   17.40MiB at    2.38MiB/s ETA 00:07  
+[2025-05-16T08:00:48.311+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   17.40MiB at    4.16MiB/s ETA 00:04
+[2025-05-16T08:00:48.314+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   17.40MiB at    3.60MiB/s ETA 00:04
+[2025-05-16T08:00:48.319+0000] {logging_mixin.py:190} INFO - [download]   0.2% of   17.40MiB at    3.25MiB/s ETA 00:05
+[2025-05-16T08:00:48.377+0000] {logging_mixin.py:190} INFO - [download]   0.4% of   17.40MiB at  937.87KiB/s ETA 00:18
+[2025-05-16T08:00:48.448+0000] {logging_mixin.py:190} INFO - [download]   0.7% of   17.40MiB at  917.52KiB/s ETA 00:19
+[2025-05-16T08:00:48.494+0000] {logging_mixin.py:190} INFO - [download]   1.4% of   17.40MiB at    1.35MiB/s ETA 00:12
+[2025-05-16T08:00:48.569+0000] {logging_mixin.py:190} INFO - [download]   2.9% of   17.40MiB at    1.92MiB/s ETA 00:08
+[2025-05-16T08:00:48.648+0000] {logging_mixin.py:190} INFO - [download]   5.7% of   17.40MiB at    2.95MiB/s ETA 00:05
+[2025-05-16T08:00:49.017+0000] {logging_mixin.py:190} INFO - [download]  11.5% of   17.40MiB at    2.83MiB/s ETA 00:05
+[2025-05-16T08:00:49.041+0000] {logging_mixin.py:190} INFO - [download]  23.0% of   17.40MiB at    5.47MiB/s ETA 00:02
+[2025-05-16T08:00:49.497+0000] {logging_mixin.py:190} INFO - [download]  46.0% of   17.40MiB at    6.74MiB/s ETA 00:01
+[2025-05-16T08:00:50.122+0000] {logging_mixin.py:190} INFO - [download]  69.0% of   17.40MiB at    6.62MiB/s ETA 00:00
+[2025-05-16T08:00:50.470+0000] {local_task_job_runner.py:341} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-05-16T08:00:50.471+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2025-05-16T08:00:50.471+0000] {process_utils.py:132} INFO - Sending 15 to group 16338. PIDs of all processes in the group: [16341, 16353, 16360, 16361, 16389, 16502, 16398, 16450, 16451, 16475, 16338]
+[2025-05-16T08:00:50.472+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 16338
+[2025-05-16T08:00:50.472+0000] {taskinstance.py:3083} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-05-16T08:00:50.517+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/pipeline_tiktok.py", line 18, in run_tiktok_videos_scraper
+    return tiktok_videos_scraper(
+  File "/opt/airflow/dags/tasks/tiktok_videos_scraper.py", line 73, in tiktok_videos_scraper
+    results = asyncio.run(user_template())
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/opt/airflow/dags/tasks/tiktok_videos_scraper.py", line 28, in user_template
+    async with TikTokApi() as api:
+  File "/home/airflow/.local/lib/python3.10/site-packages/TikTokApi/tiktok.py", line 544, in __aexit__
+    await self.close_sessions()
+  File "/home/airflow/.local/lib/python3.10/site-packages/TikTokApi/tiktok.py", line 527, in close_sessions
+    await session.context.close()
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 13448, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_browser_context.py", line 599, in close
+    await self._channel.send("close", {"reason": reason})
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.close: Target page, context or browser has been closed
+Browser logs:
+
+[pid=16353][err] [16383:16383:0516/080011.581402:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16383:16383:0516/080011.581896:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16383:16383:0516/080011.581952:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16383:16383:0516/080011.583567:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16383:16383:0516/080011.583647:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16383:16383:0516/080011.583772:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16383:16383:0516/080011.583880:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16383:16383:0516/080011.583924:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16383:16383:0516/080011.584001:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16383:16383:0516/080011.591788:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16353:16367:0516/080011.656516:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=16353][err] [16353:16367:0516/080011.705894:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=16353][err] [16353:16367:0516/080011.706760:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=16353][err] [16353:16353:0516/080011.719820:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=16353][err] [16353:16353:0516/080011.735700:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=16353][err] [16414:16414:0516/080011.735721:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16414:16414:0516/080011.735814:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16414:16414:0516/080011.735893:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16414:16414:0516/080011.735957:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16414:16414:0516/080011.736041:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16414:16414:0516/080011.736094:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16414:16414:0516/080011.736960:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16414:16414:0516/080011.737041:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16414:16414:0516/080011.737148:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16414:16414:0516/080011.737194:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16414:16414:0516/080011.737255:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16414:16414:0516/080011.737294:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16414:16414:0516/080011.738746:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16353:16353:0516/080011.744164:ERROR:ui/base/accelerators/global_accelerator_listener/global_accelerator_listener_linux.cc:356] Failed to connect to signal: org.freedesktop.portal.GlobalShortcuts.Activated
+[pid=16353][err] [16353:16353:0516/080011.744196:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=16353][err] [16353:16367:0516/080011.744257:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=16353][err] [16353:16424:0516/080011.752621:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=16353][err] [16353:16424:0516/080011.752639:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=16353][err] [16353:16424:0516/080011.752657:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=16353][err] [16353:16424:0516/080011.752668:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=16353][err] [16353:16424:0516/080011.752674:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=16353][err] [16353:16353:0516/080011.761621:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=16353][err] [16425:16425:0516/080011.766502:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16425:16425:0516/080011.766673:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16425:16425:0516/080011.766744:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16425:16425:0516/080011.766795:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16425:16425:0516/080011.766865:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16425:16425:0516/080011.766940:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16425:16425:0516/080011.767821:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16425:16425:0516/080011.767899:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16425:16425:0516/080011.767972:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16425:16425:0516/080011.768080:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16425:16425:0516/080011.768147:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16425:16425:0516/080011.768184:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16425:16425:0516/080011.769447:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16431:16431:0516/080011.780271:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16431:16431:0516/080011.780385:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16431:16431:0516/080011.780513:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16431:16431:0516/080011.780562:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16431:16431:0516/080011.780613:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16431:16431:0516/080011.780680:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16431:16431:0516/080011.781445:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16431:16431:0516/080011.781523:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16431:16431:0516/080011.781592:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16431:16431:0516/080011.781695:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16431:16431:0516/080011.781761:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16431:16431:0516/080011.781812:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16431:16431:0516/080011.782940:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16437:16437:0516/080011.796461:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16437:16437:0516/080011.796589:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16437:16437:0516/080011.796784:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16437:16437:0516/080011.796844:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16437:16437:0516/080011.796892:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16437:16437:0516/080011.796928:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16437:16437:0516/080011.797769:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16437:16437:0516/080011.797839:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16437:16437:0516/080011.797908:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16437:16437:0516/080011.798028:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16437:16437:0516/080011.798091:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16437:16437:0516/080011.798156:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16437:16437:0516/080011.799245:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16443:16443:0516/080011.806562:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16443:16443:0516/080011.806696:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16443:16443:0516/080011.806818:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16443:16443:0516/080011.806866:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16443:16443:0516/080011.806999:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16443:16443:0516/080011.807062:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16443:16443:0516/080011.807932:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16443:16443:0516/080011.808002:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16443:16443:0516/080011.808060:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16443:16443:0516/080011.808154:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16443:16443:0516/080011.808211:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16443:16443:0516/080011.808270:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16443:16443:0516/080011.809323:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16463:16463:0516/080011.933871:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16463:16463:0516/080011.933976:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16463:16463:0516/080011.934040:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16463:16463:0516/080011.934079:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16463:16463:0516/080011.934129:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16463:16463:0516/080011.934184:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16463:16463:0516/080011.934915:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16463:16463:0516/080011.934986:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16463:16463:0516/080011.935067:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16463:16463:0516/080011.935109:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16463:16463:0516/080011.935174:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16463:16463:0516/080011.935231:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16463:16463:0516/080011.936095:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16469:16469:0516/080011.942879:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16469:16469:0516/080011.943020:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16469:16469:0516/080011.943211:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16469:16469:0516/080011.943278:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16469:16469:0516/080011.943352:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16469:16469:0516/080011.943398:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16469:16469:0516/080011.944117:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16469:16469:0516/080011.944308:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16469:16469:0516/080011.944656:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16469:16469:0516/080011.944703:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16469:16469:0516/080011.944748:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16469:16469:0516/080011.944802:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16469:16469:0516/080011.945996:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16389:16394:0516/080012.373487:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=16353][err] [16389:16394:0516/080012.608413:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=16353][err] [16389:16394:0516/080014.535920:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=16353][err] [16389:16394:0516/080014.696246:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=16353] <gracefully close start>
+[2025-05-16T08:00:50.524+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=tiktok_videos_scraper_dag, task_id=tiktok_videos_scraper_task, run_id=manual__2025-05-16T08:00:08.915545+00:00, execution_date=20250516T080008, start_date=20250516T080010, end_date=20250516T080050
+[2025-05-16T08:00:50.536+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-16T08:00:50.536+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 6115 for task tiktok_videos_scraper_task (BrowserContext.close: Target page, context or browser has been closed
+Browser logs:
+
+[pid=16353][err] [16383:16383:0516/080011.581402:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16383:16383:0516/080011.581896:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16383:16383:0516/080011.581952:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16383:16383:0516/080011.583567:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16383:16383:0516/080011.583647:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16383:16383:0516/080011.583772:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16383:16383:0516/080011.583880:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16383:16383:0516/080011.583924:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16383:16383:0516/080011.584001:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16383:16383:0516/080011.591788:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16353:16367:0516/080011.656516:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=16353][err] [16353:16367:0516/080011.705894:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=16353][err] [16353:16367:0516/080011.706760:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=16353][err] [16353:16353:0516/080011.719820:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=16353][err] [16353:16353:0516/080011.735700:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=16353][err] [16414:16414:0516/080011.735721:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16414:16414:0516/080011.735814:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16414:16414:0516/080011.735893:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16414:16414:0516/080011.735957:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16414:16414:0516/080011.736041:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16414:16414:0516/080011.736094:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16414:16414:0516/080011.736960:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16414:16414:0516/080011.737041:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16414:16414:0516/080011.737148:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16414:16414:0516/080011.737194:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16414:16414:0516/080011.737255:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16414:16414:0516/080011.737294:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16414:16414:0516/080011.738746:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16353:16353:0516/080011.744164:ERROR:ui/base/accelerators/global_accelerator_listener/global_accelerator_listener_linux.cc:356] Failed to connect to signal: org.freedesktop.portal.GlobalShortcuts.Activated
+[pid=16353][err] [16353:16353:0516/080011.744196:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=16353][err] [16353:16367:0516/080011.744257:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=16353][err] [16353:16424:0516/080011.752621:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=16353][err] [16353:16424:0516/080011.752639:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=16353][err] [16353:16424:0516/080011.752657:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=16353][err] [16353:16424:0516/080011.752668:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=16353][err] [16353:16424:0516/080011.752674:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=16353][err] [16353:16353:0516/080011.761621:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=16353][err] [16425:16425:0516/080011.766502:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16425:16425:0516/080011.766673:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16425:16425:0516/080011.766744:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16425:16425:0516/080011.766795:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16425:16425:0516/080011.766865:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16425:16425:0516/080011.766940:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16425:16425:0516/080011.767821:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16425:16425:0516/080011.767899:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16425:16425:0516/080011.767972:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16425:16425:0516/080011.768080:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16425:16425:0516/080011.768147:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16425:16425:0516/080011.768184:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16425:16425:0516/080011.769447:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16431:16431:0516/080011.780271:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16431:16431:0516/080011.780385:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16431:16431:0516/080011.780513:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16431:16431:0516/080011.780562:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16431:16431:0516/080011.780613:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16431:16431:0516/080011.780680:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16431:16431:0516/080011.781445:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16431:16431:0516/080011.781523:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16431:16431:0516/080011.781592:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16431:16431:0516/080011.781695:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16431:16431:0516/080011.781761:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16431:16431:0516/080011.781812:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16431:16431:0516/080011.782940:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16437:16437:0516/080011.796461:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16437:16437:0516/080011.796589:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16437:16437:0516/080011.796784:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16437:16437:0516/080011.796844:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16437:16437:0516/080011.796892:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16437:16437:0516/080011.796928:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16437:16437:0516/080011.797769:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16437:16437:0516/080011.797839:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16437:16437:0516/080011.797908:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16437:16437:0516/080011.798028:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16437:16437:0516/080011.798091:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16437:16437:0516/080011.798156:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16437:16437:0516/080011.799245:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16443:16443:0516/080011.806562:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16443:16443:0516/080011.806696:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16443:16443:0516/080011.806818:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16443:16443:0516/080011.806866:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16443:16443:0516/080011.806999:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16443:16443:0516/080011.807062:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16443:16443:0516/080011.807932:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16443:16443:0516/080011.808002:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16443:16443:0516/080011.808060:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16443:16443:0516/080011.808154:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16443:16443:0516/080011.808211:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16443:16443:0516/080011.808270:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16443:16443:0516/080011.809323:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16463:16463:0516/080011.933871:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16463:16463:0516/080011.933976:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16463:16463:0516/080011.934040:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16463:16463:0516/080011.934079:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16463:16463:0516/080011.934129:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16463:16463:0516/080011.934184:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16463:16463:0516/080011.934915:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16463:16463:0516/080011.934986:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16463:16463:0516/080011.935067:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16463:16463:0516/080011.935109:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16463:16463:0516/080011.935174:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16463:16463:0516/080011.935231:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16463:16463:0516/080011.936095:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16469:16469:0516/080011.942879:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16469:16469:0516/080011.943020:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16469:16469:0516/080011.943211:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16469:16469:0516/080011.943278:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16469:16469:0516/080011.943352:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16469:16469:0516/080011.943398:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16469:16469:0516/080011.944117:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16469:16469:0516/080011.944308:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16469:16469:0516/080011.944656:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16469:16469:0516/080011.944703:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16469:16469:0516/080011.944748:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16469:16469:0516/080011.944802:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16469:16469:0516/080011.945996:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16389:16394:0516/080012.373487:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=16353][err] [16389:16394:0516/080012.608413:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=16353][err] [16389:16394:0516/080014.535920:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=16353][err] [16389:16394:0516/080014.696246:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=16353] <gracefully close start>; 16338)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/pipeline_tiktok.py", line 18, in run_tiktok_videos_scraper
+    return tiktok_videos_scraper(
+  File "/opt/airflow/dags/tasks/tiktok_videos_scraper.py", line 73, in tiktok_videos_scraper
+    results = asyncio.run(user_template())
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/opt/airflow/dags/tasks/tiktok_videos_scraper.py", line 28, in user_template
+    async with TikTokApi() as api:
+  File "/home/airflow/.local/lib/python3.10/site-packages/TikTokApi/tiktok.py", line 544, in __aexit__
+    await self.close_sessions()
+  File "/home/airflow/.local/lib/python3.10/site-packages/TikTokApi/tiktok.py", line 527, in close_sessions
+    await session.context.close()
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 13448, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_browser_context.py", line 599, in close
+    await self._channel.send("close", {"reason": reason})
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.close: Target page, context or browser has been closed
+Browser logs:
+
+[pid=16353][err] [16383:16383:0516/080011.581402:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16383:16383:0516/080011.581896:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16383:16383:0516/080011.581952:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16383:16383:0516/080011.583567:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16383:16383:0516/080011.583647:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16383:16383:0516/080011.583772:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16383:16383:0516/080011.583880:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16383:16383:0516/080011.583924:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16383:16383:0516/080011.584001:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16383:16383:0516/080011.591788:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16353:16367:0516/080011.656516:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=16353][err] [16353:16367:0516/080011.705894:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=16353][err] [16353:16367:0516/080011.706760:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=16353][err] [16353:16353:0516/080011.719820:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=16353][err] [16353:16353:0516/080011.735700:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=16353][err] [16414:16414:0516/080011.735721:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16414:16414:0516/080011.735814:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16414:16414:0516/080011.735893:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16414:16414:0516/080011.735957:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16414:16414:0516/080011.736041:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16414:16414:0516/080011.736094:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16414:16414:0516/080011.736960:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16414:16414:0516/080011.737041:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16414:16414:0516/080011.737148:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16414:16414:0516/080011.737194:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16414:16414:0516/080011.737255:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16414:16414:0516/080011.737294:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16414:16414:0516/080011.738746:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16353:16353:0516/080011.744164:ERROR:ui/base/accelerators/global_accelerator_listener/global_accelerator_listener_linux.cc:356] Failed to connect to signal: org.freedesktop.portal.GlobalShortcuts.Activated
+[pid=16353][err] [16353:16353:0516/080011.744196:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=16353][err] [16353:16367:0516/080011.744257:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=16353][err] [16353:16424:0516/080011.752621:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=16353][err] [16353:16424:0516/080011.752639:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=16353][err] [16353:16424:0516/080011.752657:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=16353][err] [16353:16424:0516/080011.752668:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=16353][err] [16353:16424:0516/080011.752674:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=16353][err] [16353:16353:0516/080011.761621:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=16353][err] [16425:16425:0516/080011.766502:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16425:16425:0516/080011.766673:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16425:16425:0516/080011.766744:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16425:16425:0516/080011.766795:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16425:16425:0516/080011.766865:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16425:16425:0516/080011.766940:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16425:16425:0516/080011.767821:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16425:16425:0516/080011.767899:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16425:16425:0516/080011.767972:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16425:16425:0516/080011.768080:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16425:16425:0516/080011.768147:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16425:16425:0516/080011.768184:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16425:16425:0516/080011.769447:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16431:16431:0516/080011.780271:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16431:16431:0516/080011.780385:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16431:16431:0516/080011.780513:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16431:16431:0516/080011.780562:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16431:16431:0516/080011.780613:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16431:16431:0516/080011.780680:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16431:16431:0516/080011.781445:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16431:16431:0516/080011.781523:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16431:16431:0516/080011.781592:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16431:16431:0516/080011.781695:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16431:16431:0516/080011.781761:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16431:16431:0516/080011.781812:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16431:16431:0516/080011.782940:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16437:16437:0516/080011.796461:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16437:16437:0516/080011.796589:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16437:16437:0516/080011.796784:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16437:16437:0516/080011.796844:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16437:16437:0516/080011.796892:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16437:16437:0516/080011.796928:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16437:16437:0516/080011.797769:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16437:16437:0516/080011.797839:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16437:16437:0516/080011.797908:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16437:16437:0516/080011.798028:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16437:16437:0516/080011.798091:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16437:16437:0516/080011.798156:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16437:16437:0516/080011.799245:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16443:16443:0516/080011.806562:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16443:16443:0516/080011.806696:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16443:16443:0516/080011.806818:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16443:16443:0516/080011.806866:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16443:16443:0516/080011.806999:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16443:16443:0516/080011.807062:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16443:16443:0516/080011.807932:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16443:16443:0516/080011.808002:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16443:16443:0516/080011.808060:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16443:16443:0516/080011.808154:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16443:16443:0516/080011.808211:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16443:16443:0516/080011.808270:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16443:16443:0516/080011.809323:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16463:16463:0516/080011.933871:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16463:16463:0516/080011.933976:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16463:16463:0516/080011.934040:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16463:16463:0516/080011.934079:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16463:16463:0516/080011.934129:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16463:16463:0516/080011.934184:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16463:16463:0516/080011.934915:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16463:16463:0516/080011.934986:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16463:16463:0516/080011.935067:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16463:16463:0516/080011.935109:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16463:16463:0516/080011.935174:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16463:16463:0516/080011.935231:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16463:16463:0516/080011.936095:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16469:16469:0516/080011.942879:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16469:16469:0516/080011.943020:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16469:16469:0516/080011.943211:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16469:16469:0516/080011.943278:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16469:16469:0516/080011.943352:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16469:16469:0516/080011.943398:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16469:16469:0516/080011.944117:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=16353][err] [16469:16469:0516/080011.944308:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=16353][err] [16469:16469:0516/080011.944656:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=16353][err] [16469:16469:0516/080011.944703:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=16353][err] [16469:16469:0516/080011.944748:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=16353][err] [16469:16469:0516/080011.944802:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=16353][err] [16469:16469:0516/080011.945996:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=16353][err] [16389:16394:0516/080012.373487:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=16353][err] [16389:16394:0516/080012.608413:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=16353][err] [16389:16394:0516/080014.535920:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=16353][err] [16389:16394:0516/080014.696246:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=16353] <gracefully close start>
+[2025-05-16T08:00:50.567+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=16502, status='terminated', started='08:00:13') (16502) terminated with exit code None
+[2025-05-16T08:00:50.567+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=16338, status='terminated', exitcode=1, started='08:00:10') (16338) terminated with exit code 1
+[2025-05-16T08:00:50.568+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=16475, status='terminated', started='08:00:11') (16475) terminated with exit code None
+[2025-05-16T08:00:50.568+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=16398, status='terminated', started='08:00:11') (16398) terminated with exit code None
+[2025-05-16T08:00:50.568+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=16361, status='terminated', started='08:00:11') (16361) terminated with exit code None
+[2025-05-16T08:00:50.568+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=16450, status='terminated', started='08:00:11') (16450) terminated with exit code None
+[2025-05-16T08:00:50.568+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=16451, status='terminated', started='08:00:11') (16451) terminated with exit code None
+[2025-05-16T08:00:50.568+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=16360, status='terminated', started='08:00:11') (16360) terminated with exit code None
+[2025-05-16T08:00:50.569+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=16389, status='terminated', started='08:00:11') (16389) terminated with exit code None
+[2025-05-16T08:00:50.623+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=16341, status='terminated', started='08:00:10') (16341) terminated with exit code None
+[2025-05-16T08:00:50.623+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=16353, status='terminated', started='08:00:10') (16353) terminated with exit code None

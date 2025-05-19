@@ -1,0 +1,576 @@
+[2025-05-19T02:39:23.997+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-19T02:39:24.007+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-19T02:39:23.661687+00:00 [queued]>
+[2025-05-19T02:39:24.011+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-19T02:39:23.661687+00:00 [queued]>
+[2025-05-19T02:39:24.011+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-19T02:39:24.018+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): tiktok_videos_scraper_task> on 2025-05-19 02:39:23.661687+00:00
+[2025-05-19T02:39:24.020+0000] {standard_task_runner.py:72} INFO - Started process 679 to run task
+[2025-05-19T02:39:24.023+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'tiktok_videos_scraper_task', 'manual__2025-05-19T02:39:23.661687+00:00', '--job-id', '6153', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpiiuy80br']
+[2025-05-19T02:39:24.024+0000] {standard_task_runner.py:105} INFO - Job 6153: Subtask tiktok_videos_scraper_task
+[2025-05-19T02:39:24.056+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-19T02:39:23.661687+00:00 [running]> on host 8579eb2523da
+[2025-05-19T02:39:24.101+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='tiktok_videos_scraper_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-19T02:39:23.661687+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-19T02:39:23.661687+00:00'
+[2025-05-19T02:39:24.102+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-19T02:39:31.836+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476458995692178696
+[2025-05-19T02:39:31.836+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7207404062344482075
+[2025-05-19T02:39:31.836+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7201501377284033818
+[2025-05-19T02:39:31.836+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7503443446078786824
+[2025-05-19T02:39:31.836+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7503424669492530439
+[2025-05-19T02:39:31.836+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7502354085140581650
+[2025-05-19T02:39:31.836+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7500593263758413064
+[2025-05-19T02:39:31.836+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7500122651810188562
+[2025-05-19T02:39:31.836+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7499066838945369362
+[2025-05-19T02:39:31.837+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7496423563117776136
+[2025-05-19T02:39:31.837+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7493974332792737042
+[2025-05-19T02:39:31.837+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7493015381292911890
+[2025-05-19T02:39:31.837+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7491178093588090119
+[2025-05-19T02:39:31.837+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7488702196213632262
+[2025-05-19T02:39:31.837+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7487144559412022534
+[2025-05-19T02:39:31.837+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7485747662218693896
+[2025-05-19T02:39:31.837+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7485362731500047634
+[2025-05-19T02:39:31.837+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7482423020078861575
+[2025-05-19T02:39:31.837+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7481299039611407623
+[2025-05-19T02:39:31.837+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7480168247904570632
+[2025-05-19T02:39:31.837+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7479281687831022866
+[2025-05-19T02:39:31.837+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7478731702903393543
+[2025-05-19T02:39:31.837+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477993675306355976
+[2025-05-19T02:39:31.837+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477823132770897159
+[2025-05-19T02:39:31.837+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477145543064521992
+[2025-05-19T02:39:31.838+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477130668615437586
+[2025-05-19T02:39:31.838+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476821366457568520
+[2025-05-19T02:39:31.838+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476806809555045640
+[2025-05-19T02:39:31.838+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476792217672224008
+[2025-05-19T02:39:31.838+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476773956255632647
+[2025-05-19T02:39:31.838+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476064550148934930
+[2025-05-19T02:39:31.838+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476035118407093522
+[2025-05-19T02:39:31.838+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7472395151692893458
+[2025-05-19T02:39:31.838+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7471257605847993618
+[2025-05-19T02:39:31.838+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7470532163381857554
+[2025-05-19T02:39:31.838+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7470452040808942866
+[2025-05-19T02:39:31.838+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7470141470943563026
+[2025-05-19T02:39:31.847+0000] {logging_mixin.py:190} INFO - New videos: 37
+[2025-05-19T02:39:31.966+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-19T02:39:31.966+0000] {logging_mixin.py:190} INFO - Downloading video from 7482423020078861575...
+[2025-05-19T02:39:32.318+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7482423020078861575
+[2025-05-19T02:39:32.319+0000] {logging_mixin.py:190} INFO - [TikTok] 7482423020078861575: Downloading webpage
+[2025-05-19T02:39:32.848+0000] {logging_mixin.py:190} INFO - [info] 7482423020078861575: Downloading 1 format(s): bytevc1_1080p_757681-1
+[2025-05-19T02:39:33.028+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7482423020078861575
+[2025-05-19T02:39:33.029+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  878.66KiB at  458.85KiB/s ETA 00:01
+[2025-05-19T02:39:33.030+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  878.66KiB at  899.36KiB/s ETA 00:00
+[2025-05-19T02:39:33.031+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  878.66KiB at    1.64MiB/s ETA 00:00
+[2025-05-19T02:39:33.031+0000] {logging_mixin.py:190} INFO - [download]   1.7% of  878.66KiB at    3.01MiB/s ETA 00:00
+[2025-05-19T02:39:33.034+0000] {logging_mixin.py:190} INFO - [download]   3.5% of  878.66KiB at    4.11MiB/s ETA 00:00
+[2025-05-19T02:39:33.080+0000] {logging_mixin.py:190} INFO - [download]   7.2% of  878.66KiB at    1.15MiB/s ETA 00:00
+[2025-05-19T02:39:33.127+0000] {logging_mixin.py:190} INFO - [download]  14.5% of  878.66KiB at    1.24MiB/s ETA 00:00
+[2025-05-19T02:39:33.161+0000] {logging_mixin.py:190} INFO - [download]  29.0% of  878.66KiB at    1.86MiB/s ETA 00:00
+[2025-05-19T02:39:33.216+0000] {logging_mixin.py:190} INFO - [download]  58.2% of  878.66KiB at    2.63MiB/s ETA 00:00
+[2025-05-19T02:39:33.257+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  878.66KiB at    3.73MiB/s ETA 00:00
+[2025-05-19T02:39:33.257+0000] {logging_mixin.py:190} INFO - [download] 100% of  878.66KiB in 00:00:00 at 2.11MiB/s   
+[2025-05-19T02:39:33.383+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7482423020078861575.mp3
+[2025-05-19T02:39:33.517+0000] {logging_mixin.py:190} INFO - Deleting original file data/7482423020078861575 (pass -k to keep)
+[2025-05-19T02:39:33.520+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7482423020078861575
+[2025-05-19T02:39:33.525+0000] {logging_mixin.py:190} INFO - Downloaded video 7482423020078861575 to data/7482423020078861575.mp3
+[2025-05-19T02:39:33.638+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-19T02:39:33.639+0000] {logging_mixin.py:190} INFO - Downloading video from 7201501377284033818...
+[2025-05-19T02:39:33.671+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7201501377284033818
+[2025-05-19T02:39:33.672+0000] {logging_mixin.py:190} INFO - [TikTok] 7201501377284033818: Downloading webpage
+[2025-05-19T02:39:34.237+0000] {logging_mixin.py:190} INFO - [info] 7201501377284033818: Downloading 1 format(s): bytevc1_1080p_558942-1
+[2025-05-19T02:39:34.416+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7201501377284033818
+[2025-05-19T02:39:34.416+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    2.46MiB at  539.25KiB/s ETA 00:04
+[2025-05-19T02:39:34.417+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    2.46MiB at    1.17MiB/s ETA 00:02
+[2025-05-19T02:39:34.417+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    2.46MiB at    2.30MiB/s ETA 00:01
+[2025-05-19T02:39:34.418+0000] {logging_mixin.py:190} INFO - [download]   0.6% of    2.46MiB at    3.63MiB/s ETA 00:00
+[2025-05-19T02:39:34.423+0000] {logging_mixin.py:190} INFO - [download]   1.2% of    2.46MiB at    3.47MiB/s ETA 00:00
+[2025-05-19T02:39:34.469+0000] {logging_mixin.py:190} INFO - [download]   2.5% of    2.46MiB at    1.13MiB/s ETA 00:02
+[2025-05-19T02:39:34.520+0000] {logging_mixin.py:190} INFO - [download]   5.1% of    2.46MiB at    1.18MiB/s ETA 00:01
+[2025-05-19T02:39:34.556+0000] {logging_mixin.py:190} INFO - [download]  10.1% of    2.46MiB at    1.76MiB/s ETA 00:01
+[2025-05-19T02:39:34.616+0000] {logging_mixin.py:190} INFO - [download]  20.3% of    2.46MiB at    2.48MiB/s ETA 00:00
+[2025-05-19T02:39:34.666+0000] {logging_mixin.py:190} INFO - [download]  40.7% of    2.46MiB at    3.97MiB/s ETA 00:00
+[2025-05-19T02:39:34.805+0000] {logging_mixin.py:190} INFO - [download]  81.4% of    2.46MiB at    5.12MiB/s ETA 00:00
+[2025-05-19T02:39:34.842+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    2.46MiB at    5.74MiB/s ETA 00:00
+[2025-05-19T02:39:34.844+0000] {logging_mixin.py:190} INFO - [download] 100% of    2.46MiB in 00:00:00 at 4.08MiB/s   
+[2025-05-19T02:39:34.890+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7201501377284033818.mp3
+[2025-05-19T02:39:35.303+0000] {logging_mixin.py:190} INFO - Deleting original file data/7201501377284033818 (pass -k to keep)
+[2025-05-19T02:39:35.307+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7201501377284033818
+[2025-05-19T02:39:35.312+0000] {logging_mixin.py:190} INFO - Downloaded video 7201501377284033818 to data/7201501377284033818.mp3
+[2025-05-19T02:39:35.421+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-19T02:39:35.421+0000] {logging_mixin.py:190} INFO - Downloading video from 7480168247904570632...
+[2025-05-19T02:39:35.451+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7480168247904570632
+[2025-05-19T02:39:35.451+0000] {logging_mixin.py:190} INFO - [TikTok] 7480168247904570632: Downloading webpage
+[2025-05-19T02:39:36.077+0000] {logging_mixin.py:190} INFO - [info] 7480168247904570632: Downloading 1 format(s): bytevc1_1080p_3360189-1
+[2025-05-19T02:39:36.258+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7480168247904570632
+[2025-05-19T02:39:36.259+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   42.44MiB at  463.72KiB/s ETA 01:34
+[2025-05-19T02:39:36.261+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   42.44MiB at  806.91KiB/s ETA 00:54
+[2025-05-19T02:39:36.262+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   42.44MiB at    1.44MiB/s ETA 00:29
+[2025-05-19T02:39:36.262+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   42.44MiB at    2.63MiB/s ETA 00:16
+[2025-05-19T02:39:36.265+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   42.44MiB at    3.63MiB/s ETA 00:11
+[2025-05-19T02:39:36.317+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   42.44MiB at    1.03MiB/s ETA 00:41
+[2025-05-19T02:39:36.367+0000] {logging_mixin.py:190} INFO - [download]   0.3% of   42.44MiB at    1.12MiB/s ETA 00:37
+[2025-05-19T02:39:36.408+0000] {logging_mixin.py:190} INFO - [download]   0.6% of   42.44MiB at    1.64MiB/s ETA 00:25
+[2025-05-19T02:39:36.469+0000] {logging_mixin.py:190} INFO - [download]   1.2% of   42.44MiB at    2.36MiB/s ETA 00:17
+[2025-05-19T02:39:36.522+0000] {logging_mixin.py:190} INFO - [download]   2.4% of   42.44MiB at    3.76MiB/s ETA 00:11
+[2025-05-19T02:39:36.770+0000] {logging_mixin.py:190} INFO - [download]   4.7% of   42.44MiB at    3.90MiB/s ETA 00:10
+[2025-05-19T02:39:35.439+0000] {logging_mixin.py:190} INFO - [download]   9.4% of   42.44MiB at  Unknown B/s ETA Unknown
+[2025-05-19T02:39:35.733+0000] {logging_mixin.py:190} INFO - [download]  18.8% of   42.44MiB at  Unknown B/s ETA Unknown
+[2025-05-19T02:39:36.157+0000] {logging_mixin.py:190} INFO - [download]  28.3% of   42.44MiB at  Unknown B/s ETA Unknown
+[2025-05-19T02:39:36.559+0000] {logging_mixin.py:190} INFO - [download]  37.7% of   42.44MiB at   53.03MiB/s ETA 00:00  
+[2025-05-19T02:39:37.046+0000] {logging_mixin.py:190} INFO - [download]  47.1% of   42.44MiB at   25.34MiB/s ETA 00:00
+[2025-05-19T02:39:37.508+0000] {logging_mixin.py:190} INFO - [download]  56.5% of   42.44MiB at   19.18MiB/s ETA 00:00
+[2025-05-19T02:39:37.891+0000] {logging_mixin.py:190} INFO - [download]  66.0% of   42.44MiB at   17.13MiB/s ETA 00:00
+[2025-05-19T02:39:38.309+0000] {logging_mixin.py:190} INFO - [download]  75.4% of   42.44MiB at   15.60MiB/s ETA 00:00
+[2025-05-19T02:39:38.692+0000] {logging_mixin.py:190} INFO - [download]  84.8% of   42.44MiB at   14.79MiB/s ETA 00:00
+[2025-05-19T02:39:39.126+0000] {logging_mixin.py:190} INFO - [download]  94.2% of   42.44MiB at   13.94MiB/s ETA 00:00
+[2025-05-19T02:39:39.370+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   42.44MiB at   13.63MiB/s ETA 00:00
+[2025-05-19T02:39:39.374+0000] {logging_mixin.py:190} INFO - [download] 100% of   42.44MiB in 00:00:03 at 12.89MiB/s  
+[2025-05-19T02:39:39.419+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7480168247904570632.mp3
+[2025-05-19T02:39:40.549+0000] {logging_mixin.py:190} INFO - Deleting original file data/7480168247904570632 (pass -k to keep)
+[2025-05-19T02:39:40.554+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7480168247904570632
+[2025-05-19T02:39:40.559+0000] {logging_mixin.py:190} INFO - Downloaded video 7480168247904570632 to data/7480168247904570632.mp3
+[2025-05-19T02:39:40.704+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-19T02:39:40.704+0000] {logging_mixin.py:190} INFO - Downloading video from 7485362731500047634...
+[2025-05-19T02:39:40.732+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7485362731500047634
+[2025-05-19T02:39:40.732+0000] {logging_mixin.py:190} INFO - [TikTok] 7485362731500047634: Downloading webpage
+[2025-05-19T02:39:41.423+0000] {logging_mixin.py:190} INFO - [info] 7485362731500047634: Downloading 1 format(s): bytevc1_1080p_2690616-1
+[2025-05-19T02:39:41.608+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7485362731500047634
+[2025-05-19T02:39:41.609+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   28.81MiB at  578.68KiB/s ETA 00:51
+[2025-05-19T02:39:41.610+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   28.81MiB at    1.10MiB/s ETA 00:26
+[2025-05-19T02:39:41.610+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   28.81MiB at    2.05MiB/s ETA 00:14
+[2025-05-19T02:39:41.611+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   28.81MiB at    3.80MiB/s ETA 00:07
+[2025-05-19T02:39:41.615+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   28.81MiB at    3.89MiB/s ETA 00:07
+[2025-05-19T02:39:41.660+0000] {logging_mixin.py:190} INFO - [download]   0.2% of   28.81MiB at    1.16MiB/s ETA 00:24
+[2025-05-19T02:39:41.708+0000] {logging_mixin.py:190} INFO - [download]   0.4% of   28.81MiB at    1.24MiB/s ETA 00:23
+[2025-05-19T02:39:41.743+0000] {logging_mixin.py:190} INFO - [download]   0.9% of   28.81MiB at    1.84MiB/s ETA 00:15
+[2025-05-19T02:39:41.799+0000] {logging_mixin.py:190} INFO - [download]   1.7% of   28.81MiB at    2.61MiB/s ETA 00:10
+[2025-05-19T02:39:41.847+0000] {logging_mixin.py:190} INFO - [download]   3.5% of   28.81MiB at    4.17MiB/s ETA 00:06
+[2025-05-19T02:39:42.008+0000] {logging_mixin.py:190} INFO - [download]   6.9% of   28.81MiB at    4.99MiB/s ETA 00:05
+[2025-05-19T02:39:42.186+0000] {logging_mixin.py:190} INFO - [download]  13.9% of   28.81MiB at    6.91MiB/s ETA 00:03
+[2025-05-19T02:39:42.528+0000] {logging_mixin.py:190} INFO - [download]  27.8% of   28.81MiB at    8.68MiB/s ETA 00:02
+[2025-05-19T02:39:43.006+0000] {logging_mixin.py:190} INFO - [download]  41.7% of   28.81MiB at    8.58MiB/s ETA 00:01
+[2025-05-19T02:39:43.436+0000] {logging_mixin.py:190} INFO - [download]  55.5% of   28.81MiB at    8.75MiB/s ETA 00:01
+[2025-05-19T02:39:43.834+0000] {logging_mixin.py:190} INFO - [download]  69.4% of   28.81MiB at    8.98MiB/s ETA 00:00
+[2025-05-19T02:39:44.373+0000] {logging_mixin.py:190} INFO - [download]  83.3% of   28.81MiB at    8.68MiB/s ETA 00:00
+[2025-05-19T02:39:44.825+0000] {logging_mixin.py:190} INFO - [download]  97.2% of   28.81MiB at    8.70MiB/s ETA 00:00
+[2025-05-19T02:39:44.876+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   28.81MiB at    8.81MiB/s ETA 00:00
+[2025-05-19T02:39:44.890+0000] {logging_mixin.py:190} INFO - [download] 100% of   28.81MiB in 00:00:03 at 8.31MiB/s   
+[2025-05-19T02:39:45.024+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7485362731500047634.mp3
+[2025-05-19T02:39:46.153+0000] {logging_mixin.py:190} INFO - Deleting original file data/7485362731500047634 (pass -k to keep)
+[2025-05-19T02:39:46.158+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7485362731500047634
+[2025-05-19T02:39:46.169+0000] {logging_mixin.py:190} INFO - Downloaded video 7485362731500047634 to data/7485362731500047634.mp3
+[2025-05-19T02:39:46.296+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-19T02:39:46.297+0000] {logging_mixin.py:190} INFO - Downloading video from 7493974332792737042...
+[2025-05-19T02:39:46.332+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7493974332792737042
+[2025-05-19T02:39:46.332+0000] {logging_mixin.py:190} INFO - [TikTok] 7493974332792737042: Downloading webpage
+[2025-05-19T02:39:47.044+0000] {logging_mixin.py:190} INFO - [info] 7493974332792737042: Downloading 1 format(s): bytevc1_1080p_3400847-1
+[2025-05-19T02:39:47.048+0000] {logging_mixin.py:190} INFO - [download] Resuming download at byte 16776192
+[2025-05-19T02:39:47.230+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7493974332792737042
+[2025-05-19T02:39:47.231+0000] {logging_mixin.py:190} INFO - [download]  10.7% of  149.08MiB at  216.77KiB/s ETA 10:29
+[2025-05-19T02:39:47.231+0000] {logging_mixin.py:190} INFO - [download]  10.7% of  149.08MiB at  576.30KiB/s ETA 03:56
+[2025-05-19T02:39:47.231+0000] {logging_mixin.py:190} INFO - [download]  10.7% of  149.08MiB at    1.22MiB/s ETA 01:48
+[2025-05-19T02:39:47.232+0000] {logging_mixin.py:190} INFO - [download]  10.7% of  149.08MiB at    2.44MiB/s ETA 00:54
+[2025-05-19T02:39:47.235+0000] {logging_mixin.py:190} INFO - [download]  10.8% of  149.08MiB at    3.31MiB/s ETA 00:40
+[2025-05-19T02:39:47.280+0000] {logging_mixin.py:190} INFO - [download]  10.8% of  149.08MiB at    1.14MiB/s ETA 01:56
+[2025-05-19T02:39:47.331+0000] {logging_mixin.py:190} INFO - [download]  10.8% of  149.08MiB at    1.18MiB/s ETA 01:52
+[2025-05-19T02:39:47.370+0000] {logging_mixin.py:190} INFO - [download]  10.9% of  149.08MiB at    1.73MiB/s ETA 01:16
+[2025-05-19T02:39:47.431+0000] {logging_mixin.py:190} INFO - [download]  11.1% of  149.08MiB at    2.43MiB/s ETA 00:54
+[2025-05-19T02:39:47.485+0000] {logging_mixin.py:190} INFO - [download]  11.4% of  149.08MiB at    3.86MiB/s ETA 00:34
+[2025-05-19T02:39:47.654+0000] {logging_mixin.py:190} INFO - [download]  12.1% of  149.08MiB at    4.67MiB/s ETA 00:28
+[2025-05-19T02:39:47.899+0000] {logging_mixin.py:190} INFO - [download]  13.4% of  149.08MiB at    5.95MiB/s ETA 00:21
+[2025-05-19T02:39:48.169+0000] {logging_mixin.py:190} INFO - [download]  16.1% of  149.08MiB at    8.49MiB/s ETA 00:14
+[2025-05-19T02:39:48.626+0000] {logging_mixin.py:190} INFO - [download]  18.8% of  149.08MiB at    8.57MiB/s ETA 00:14
+[2025-05-19T02:39:48.926+0000] {logging_mixin.py:190} INFO - [download]  21.5% of  149.08MiB at    9.41MiB/s ETA 00:12
+[2025-05-19T02:39:49.381+0000] {logging_mixin.py:190} INFO - [download]  24.1% of  149.08MiB at    9.28MiB/s ETA 00:12
+[2025-05-19T02:39:49.673+0000] {logging_mixin.py:190} INFO - [download]  26.8% of  149.08MiB at    9.81MiB/s ETA 00:11
+[2025-05-19T02:39:50.052+0000] {logging_mixin.py:190} INFO - [download]  29.5% of  149.08MiB at    9.91MiB/s ETA 00:10
+[2025-05-19T02:39:50.484+0000] {logging_mixin.py:190} INFO - [download]  32.2% of  149.08MiB at    9.82MiB/s ETA 00:10
+[2025-05-19T02:39:50.876+0000] {logging_mixin.py:190} INFO - [download]  34.9% of  149.08MiB at    9.86MiB/s ETA 00:09
+[2025-05-19T02:39:51.393+0000] {logging_mixin.py:190} INFO - [download]  37.6% of  149.08MiB at    9.60MiB/s ETA 00:09
+[2025-05-19T02:39:51.726+0000] {logging_mixin.py:190} INFO - [download]  40.2% of  149.08MiB at    9.78MiB/s ETA 00:09
+[2025-05-19T02:39:52.144+0000] {logging_mixin.py:190} INFO - [download]  42.9% of  149.08MiB at    9.76MiB/s ETA 00:08
+[2025-05-19T02:39:52.557+0000] {logging_mixin.py:190} INFO - [download]  45.6% of  149.08MiB at    9.75MiB/s ETA 00:08
+[2025-05-19T02:39:52.950+0000] {logging_mixin.py:190} INFO - [download]  48.3% of  149.08MiB at    9.78MiB/s ETA 00:07
+[2025-05-19T02:39:53.337+0000] {logging_mixin.py:190} INFO - [download]  51.0% of  149.08MiB at    9.82MiB/s ETA 00:07
+[2025-05-19T02:39:53.753+0000] {logging_mixin.py:190} INFO - [download]  53.7% of  149.08MiB at    9.81MiB/s ETA 00:07
+[2025-05-19T02:39:54.148+0000] {logging_mixin.py:190} INFO - [download]  56.3% of  149.08MiB at    9.82MiB/s ETA 00:06
+[2025-05-19T02:39:54.557+0000] {logging_mixin.py:190} INFO - [download]  59.0% of  149.08MiB at    9.82MiB/s ETA 00:06
+[2025-05-19T02:39:54.959+0000] {logging_mixin.py:190} INFO - [download]  61.7% of  149.08MiB at    9.83MiB/s ETA 00:05
+[2025-05-19T02:39:55.354+0000] {logging_mixin.py:190} INFO - [download]  64.4% of  149.08MiB at    9.84MiB/s ETA 00:05
+[2025-05-19T02:39:55.730+0000] {logging_mixin.py:190} INFO - [download]  67.1% of  149.08MiB at    9.88MiB/s ETA 00:04
+[2025-05-19T02:39:56.109+0000] {logging_mixin.py:190} INFO - [download]  69.8% of  149.08MiB at    9.91MiB/s ETA 00:04
+[2025-05-19T02:39:56.473+0000] {logging_mixin.py:190} INFO - [download]  72.4% of  149.08MiB at    9.95MiB/s ETA 00:04
+[2025-05-19T02:39:56.855+0000] {logging_mixin.py:190} INFO - [download]  75.1% of  149.08MiB at    9.97MiB/s ETA 00:03
+[2025-05-19T02:39:57.232+0000] {logging_mixin.py:190} INFO - [download]  77.8% of  149.08MiB at    9.99MiB/s ETA 00:03
+[2025-05-19T02:39:57.529+0000] {logging_mixin.py:190} INFO - [download]  80.5% of  149.08MiB at   10.09MiB/s ETA 00:02
+[2025-05-19T02:39:57.956+0000] {logging_mixin.py:190} INFO - [download]  83.2% of  149.08MiB at   10.06MiB/s ETA 00:02
+[2025-05-19T02:39:58.269+0000] {logging_mixin.py:190} INFO - [download]  85.9% of  149.08MiB at   10.14MiB/s ETA 00:02
+[2025-05-19T02:39:58.982+0000] {logging_mixin.py:190} INFO - [download]  88.5% of  149.08MiB at    9.87MiB/s ETA 00:01
+[2025-05-19T02:39:59.430+0000] {logging_mixin.py:190} INFO - [download]  91.2% of  149.08MiB at    9.83MiB/s ETA 00:01
+[2025-05-19T02:39:59.818+0000] {logging_mixin.py:190} INFO - [download]  93.9% of  149.08MiB at    9.85MiB/s ETA 00:00
+[2025-05-19T02:40:00.205+0000] {logging_mixin.py:190} INFO - [download]  96.6% of  149.08MiB at    9.86MiB/s ETA 00:00
+[2025-05-19T02:40:00.590+0000] {logging_mixin.py:190} INFO - [download]  99.3% of  149.08MiB at    9.88MiB/s ETA 00:00
+[2025-05-19T02:40:00.631+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  149.08MiB at    9.93MiB/s ETA 00:00
+[2025-05-19T02:40:00.632+0000] {logging_mixin.py:190} INFO - [download] 100% of  149.08MiB in 00:00:13 at 10.98MiB/s  
+[2025-05-19T02:40:00.680+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7493974332792737042.mp3
+[2025-05-19T02:40:04.308+0000] {local_task_job_runner.py:341} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-05-19T02:40:04.309+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2025-05-19T02:40:04.310+0000] {process_utils.py:132} INFO - Sending 15 to group 679. PIDs of all processes in the group: [682, 936, 694, 698, 699, 730, 812, 731, 781, 782, 774, 679]
+[2025-05-19T02:40:04.310+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 679
+[2025-05-19T02:40:04.310+0000] {taskinstance.py:3083} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-05-19T02:40:04.329+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/pipeline_tiktok.py", line 18, in run_tiktok_videos_scraper
+    return tiktok_videos_scraper(
+  File "/opt/airflow/dags/tasks/tiktok_videos_scraper.py", line 73, in tiktok_videos_scraper
+    results = asyncio.run(user_template())
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/opt/airflow/dags/tasks/tiktok_videos_scraper.py", line 28, in user_template
+    async with TikTokApi() as api:
+  File "/home/airflow/.local/lib/python3.10/site-packages/TikTokApi/tiktok.py", line 544, in __aexit__
+    await self.close_sessions()
+  File "/home/airflow/.local/lib/python3.10/site-packages/TikTokApi/tiktok.py", line 527, in close_sessions
+    await session.context.close()
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 13448, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_browser_context.py", line 599, in close
+    await self._channel.send("close", {"reason": reason})
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.close: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /opt/airflow/.cache/ms-playwright/chromium-1169/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DeferRendererTasksAfterInput,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --no-sandbox --headless=new --user-data-dir=/tmp/playwright_chromiumdev_profile-DiebyL --remote-debugging-pipe --no-startup-window
+<launched> pid=694
+[pid=694][err] [694:709:0519/023924.771783:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:712:0519/023924.772543:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:712:0519/023924.772583:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:709:0519/023924.775137:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [694:709:0519/023924.775162:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [694:709:0519/023924.775168:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [694:709:0519/023924.775171:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [723:723:0519/023924.785043:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] [723:723:0519/023924.785246:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] [723:723:0519/023924.785402:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=694][err] [723:723:0519/023924.785483:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=694][err] [723:723:0519/023924.785590:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=694][err] [723:723:0519/023924.785632:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=694][err] [723:723:0519/023924.786310:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] [723:723:0519/023924.786388:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] [723:723:0519/023924.786446:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=694][err] [723:723:0519/023924.786491:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=694][err] [723:723:0519/023924.786535:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=694][err] [723:723:0519/023924.786586:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=694][err] [723:723:0519/023924.787746:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=694][err] [694:709:0519/023924.800958:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [694:709:0519/023924.810986:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [694:709:0519/023924.811042:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [694:694:0519/023924.812951:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=694][err] [694:694:0519/023924.871724:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=694][err] [694:694:0519/023924.872599:ERROR:ui/base/accelerators/global_accelerator_listener/global_accelerator_listener_linux.cc:356] Failed to connect to signal: org.freedesktop.portal.GlobalShortcuts.Activated
+[pid=694][err] [694:694:0519/023924.872629:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=694][err] [694:709:0519/023924.872789:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [694:757:0519/023924.873422:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:757:0519/023924.873503:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:757:0519/023924.873535:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:757:0519/023924.873619:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:757:0519/023924.873644:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:694:0519/023924.874209:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=694][err] [755:755:0519/023924.875580:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] [755:755:0519/023924.875703:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] [755:755:0519/023924.875758:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=694][err] [755:755:0519/023924.875802:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=694][err] [755:755:0519/023924.875915:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=694][err] [755:755:0519/023924.875973:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=694][err] [755:755:0519/023924.876769:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] [755:755:0519/023924.876843:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] [755:755:0519/023924.876894:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=694][err] [755:755:0519/023924.876938:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=694][err] [755:755:0519/023924.876981:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=694][err] [755:755:0519/023924.877022:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=694][err] [755:755:0519/023924.878174:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=694][err] [768:768:0519/023924.887033:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] [768:768:0519/023924.887197:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] [768:768:0519/023924.887406:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=694][err] [768:768:0519/023924.887492:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=694][err] [768:768:0519/023924.887534:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=694][err] [768:768:0519/023924.887657:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=694][err] [768:768:0519/023924.888701:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] [768:768:0519/023924.888793:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] [768:768:0519/023924.888847:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=694][err] [768:768:0519/023924.888893:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=694][err] [768:768:0519/023924.888952:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=694][err] [768:768:0519/023924.889003:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=694][err] [768:768:0519/023924.890034:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=694][err] [730:749:0519/023927.793872:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=694][err] [730:749:0519/023927.878876:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=694][err] [730:749:0519/023929.490886:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=694][err] [730:749:0519/023929.549760:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=694] <gracefully close start>
+[2025-05-19T02:40:04.336+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=tiktok_videos_scraper_dag, task_id=tiktok_videos_scraper_task, run_id=manual__2025-05-19T02:39:23.661687+00:00, execution_date=20250519T023923, start_date=20250519T023924, end_date=20250519T024004
+[2025-05-19T02:40:04.344+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-19T02:40:04.344+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 6153 for task tiktok_videos_scraper_task (BrowserContext.close: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /opt/airflow/.cache/ms-playwright/chromium-1169/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DeferRendererTasksAfterInput,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --no-sandbox --headless=new --user-data-dir=/tmp/playwright_chromiumdev_profile-DiebyL --remote-debugging-pipe --no-startup-window
+<launched> pid=694
+[pid=694][err] [694:709:0519/023924.771783:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:712:0519/023924.772543:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:712:0519/023924.772583:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:709:0519/023924.775137:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [694:709:0519/023924.775162:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [694:709:0519/023924.775168:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [694:709:0519/023924.775171:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [723:723:0519/023924.785043:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] [723:723:0519/023924.785246:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] [723:723:0519/023924.785402:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=694][err] [723:723:0519/023924.785483:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=694][err] [723:723:0519/023924.785590:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=694][err] [723:723:0519/023924.785632:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=694][err] [723:723:0519/023924.786310:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] [723:723:0519/023924.786388:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] [723:723:0519/023924.786446:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=694][err] [723:723:0519/023924.786491:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=694][err] [723:723:0519/023924.786535:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=694][err] [723:723:0519/023924.786586:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=694][err] [723:723:0519/023924.787746:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=694][err] [694:709:0519/023924.800958:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [694:709:0519/023924.810986:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [694:709:0519/023924.811042:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [694:694:0519/023924.812951:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=694][err] [694:694:0519/023924.871724:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=694][err] [694:694:0519/023924.872599:ERROR:ui/base/accelerators/global_accelerator_listener/global_accelerator_listener_linux.cc:356] Failed to connect to signal: org.freedesktop.portal.GlobalShortcuts.Activated
+[pid=694][err] [694:694:0519/023924.872629:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=694][err] [694:709:0519/023924.872789:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [694:757:0519/023924.873422:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:757:0519/023924.873503:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:757:0519/023924.873535:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:757:0519/023924.873619:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:757:0519/023924.873644:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:694:0519/023924.874209:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=694][err] [755:755:0519/023924.875580:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] [755:755:0519/023924.875703:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] [755:755:0519/023924.875758:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=694][err] [755:755:0519/023924.875802:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=694][err] [755:755:0519/023924.875915:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=694][err] [755:755:0519/023924.875973:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=694][err] [755:755:0519/023924.876769:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] [755:755:0519/023924.876843:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] [755:755:0519/023924.876894:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=694][err] [755:755:0519/023924.876938:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=694][err] [755:755:0519/023924.876981:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=694][err] [755:755:0519/023924.877022:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=694][err] [755:755:0519/023924.878174:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=694][err] [768:768:0519/023924.887033:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] [768:768:0519/023924.887197:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] [768:768:0519/023924.887406:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=694][err] [768:768:0519/023924.887492:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=694][err] [768:768:0519/023924.887534:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=694][err] [768:768:0519/023924.887657:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=694][err] [768:768:0519/023924.888701:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] [768:768:0519/023924.888793:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] [768:768:0519/023924.888847:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=694][err] [768:768:0519/023924.888893:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=694][err] [768:768:0519/023924.888952:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=694][err] [768:768:0519/023924.889003:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=694][err] [768:768:0519/023924.890034:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=694][err] [730:749:0519/023927.793872:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=694][err] [730:749:0519/023927.878876:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=694][err] [730:749:0519/023929.490886:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=694][err] [730:749:0519/023929.549760:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=694] <gracefully close start>; 679)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/pipeline_tiktok.py", line 18, in run_tiktok_videos_scraper
+    return tiktok_videos_scraper(
+  File "/opt/airflow/dags/tasks/tiktok_videos_scraper.py", line 73, in tiktok_videos_scraper
+    results = asyncio.run(user_template())
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/opt/airflow/dags/tasks/tiktok_videos_scraper.py", line 28, in user_template
+    async with TikTokApi() as api:
+  File "/home/airflow/.local/lib/python3.10/site-packages/TikTokApi/tiktok.py", line 544, in __aexit__
+    await self.close_sessions()
+  File "/home/airflow/.local/lib/python3.10/site-packages/TikTokApi/tiktok.py", line 527, in close_sessions
+    await session.context.close()
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/async_api/_generated.py", line 13448, in close
+    return mapping.from_maybe_impl(await self._impl_obj.close(reason=reason))
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_browser_context.py", line 599, in close
+    await self._channel.send("close", {"reason": reason})
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 61, in send
+    return await self._connection.wrap_api_call(
+  File "/home/airflow/.local/lib/python3.10/site-packages/playwright/_impl/_connection.py", line 528, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TargetClosedError: BrowserContext.close: Target page, context or browser has been closed
+Browser logs:
+
+<launching> /opt/airflow/.cache/ms-playwright/chromium-1169/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DeferRendererTasksAfterInput,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --no-sandbox --headless=new --user-data-dir=/tmp/playwright_chromiumdev_profile-DiebyL --remote-debugging-pipe --no-startup-window
+<launched> pid=694
+[pid=694][err] [694:709:0519/023924.771783:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:712:0519/023924.772543:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:712:0519/023924.772583:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:709:0519/023924.775137:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [694:709:0519/023924.775162:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [694:709:0519/023924.775168:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [694:709:0519/023924.775171:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [723:723:0519/023924.785043:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] [723:723:0519/023924.785246:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] [723:723:0519/023924.785402:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=694][err] [723:723:0519/023924.785483:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=694][err] [723:723:0519/023924.785590:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=694][err] [723:723:0519/023924.785632:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=694][err] [723:723:0519/023924.786310:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] [723:723:0519/023924.786388:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] [723:723:0519/023924.786446:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=694][err] [723:723:0519/023924.786491:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=694][err] [723:723:0519/023924.786535:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=694][err] [723:723:0519/023924.786586:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=694][err] [723:723:0519/023924.787746:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=694][err] [694:709:0519/023924.800958:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [694:709:0519/023924.810986:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [694:709:0519/023924.811042:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [694:694:0519/023924.812951:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=694][err] [694:694:0519/023924.871724:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=694][err] [694:694:0519/023924.872599:ERROR:ui/base/accelerators/global_accelerator_listener/global_accelerator_listener_linux.cc:356] Failed to connect to signal: org.freedesktop.portal.GlobalShortcuts.Activated
+[pid=694][err] [694:694:0519/023924.872629:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=694][err] [694:709:0519/023924.872789:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are "tcp" and on UNIX "unix")
+[pid=694][err] [694:757:0519/023924.873422:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:757:0519/023924.873503:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:757:0519/023924.873535:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:757:0519/023924.873619:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:757:0519/023924.873644:ERROR:dbus/bus.cc:408] Failed to connect to the bus: Failed to connect to socket /run/dbus/system_bus_socket: No such file or directory
+[pid=694][err] [694:694:0519/023924.874209:ERROR:dbus/object_proxy.cc:590] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: 
+[pid=694][err] [755:755:0519/023924.875580:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] [755:755:0519/023924.875703:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] [755:755:0519/023924.875758:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=694][err] [755:755:0519/023924.875802:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=694][err] [755:755:0519/023924.875915:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=694][err] [755:755:0519/023924.875973:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=694][err] [755:755:0519/023924.876769:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] [755:755:0519/023924.876843:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] [755:755:0519/023924.876894:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=694][err] [755:755:0519/023924.876938:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=694][err] [755:755:0519/023924.876981:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=694][err] [755:755:0519/023924.877022:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=694][err] [755:755:0519/023924.878174:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=694][err] [768:768:0519/023924.887033:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] [768:768:0519/023924.887197:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] [768:768:0519/023924.887406:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=694][err] [768:768:0519/023924.887492:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=694][err] [768:768:0519/023924.887534:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=694][err] [768:768:0519/023924.887657:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=694][err] [768:768:0519/023924.888701:ERROR:ui/gl/angle_platform_impl.cc:49] DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] ERR: DisplayVkXcb.cpp:58 (initialize): xcb_connect() failed, error 1
+[pid=694][err] [768:768:0519/023924.888793:ERROR:ui/gl/angle_platform_impl.cc:49] Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] ERR: Display.cpp:1079 (initialize): ANGLE Display::initialize error 0: Not initialized.
+[pid=694][err] [768:768:0519/023924.888847:ERROR:ui/gl/gl_display.cc:508] EGL Driver message (Critical) eglInitialize: Not initialized.
+[pid=694][err] [768:768:0519/023924.888893:ERROR:ui/gl/gl_display.cc:780] eglInitialize SwANGLE failed with error EGL_NOT_INITIALIZED
+[pid=694][err] [768:768:0519/023924.888952:ERROR:ui/gl/gl_display.cc:815] Initialization of all EGL display types failed.
+[pid=694][err] [768:768:0519/023924.889003:ERROR:ui/ozone/common/gl_ozone_egl.cc:26] GLDisplayEGL::Initialize failed.
+[pid=694][err] [768:768:0519/023924.890034:ERROR:components/viz/service/main/viz_main_impl.cc:183] Exiting GPU process due to errors during initialization
+[pid=694][err] [730:749:0519/023927.793872:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=694][err] [730:749:0519/023927.878876:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=694][err] [730:749:0519/023929.490886:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=694][err] [730:749:0519/023929.549760:ERROR:services/network/p2p/socket_manager.cc:147] Failed to resolve address for stun.l.google.com., errorcode: -105
+[pid=694] <gracefully close start>
+[2025-05-19T02:40:04.404+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=731, status='terminated', started='02:39:23') (731) terminated with exit code None
+[2025-05-19T02:40:04.404+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=781, status='terminated', started='02:39:23') (781) terminated with exit code None
+[2025-05-19T02:40:04.404+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=774, status='terminated', started='02:39:23') (774) terminated with exit code None
+[2025-05-19T02:40:04.405+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=679, status='terminated', exitcode=1, started='02:39:23') (679) terminated with exit code 1
+[2025-05-19T02:40:04.405+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=936, status='terminated', started='02:40:01') (936) terminated with exit code None
+[2025-05-19T02:40:04.405+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=730, status='terminated', started='02:39:23') (730) terminated with exit code None
+[2025-05-19T02:40:04.405+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=782, status='terminated', started='02:39:23') (782) terminated with exit code None
+[2025-05-19T02:40:04.432+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=682, status='terminated', started='02:39:23') (682) terminated with exit code None
+[2025-05-19T02:40:04.433+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=699, status='terminated', started='02:39:23') (699) terminated with exit code None
+[2025-05-19T02:40:04.433+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=694, status='terminated', started='02:39:23') (694) terminated with exit code None
+[2025-05-19T02:40:04.433+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=812, status='terminated', started='02:39:25') (812) terminated with exit code None
+[2025-05-19T02:40:04.433+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=698, status='terminated', started='02:39:23') (698) terminated with exit code None

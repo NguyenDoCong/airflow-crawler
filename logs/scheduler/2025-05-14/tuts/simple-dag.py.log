@@ -6522,3 +6522,10 @@
 [2025-05-14T11:17:31.739+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:31.739+0000] {dag.py:3211} INFO - Sync 1 DAGs
 [2025-05-14T11:17:31.753+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:31.753+0000] {dag.py:4138} INFO - Setting next_dagrun for demo to 2025-05-05 00:00:00+00:00, run_after=2025-05-06 00:00:00+00:00
 [2025-05-14T11:17:31.765+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tuts/simple-dag.py took 0.057 seconds
+[2025-05-14T11:18:02.662+0000] {processor.py:186} INFO - Started process (PID=7309) to work on /opt/airflow/dags/tuts/simple-dag.py
+[2025-05-14T11:18:02.663+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tuts/simple-dag.py for tasks to queue
+[2025-05-14T11:18:02.663+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:18:02.663+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tuts/simple-dag.py
+[2025-05-14T11:18:02.670+0000] {processor.py:925} INFO - DAG(s) 'demo' retrieved from /opt/airflow/dags/tuts/simple-dag.py
+[2025-05-14T11:18:02.689+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:18:02.688+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T11:18:02.703+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:18:02.703+0000] {dag.py:4138} INFO - Setting next_dagrun for demo to 2025-05-05 00:00:00+00:00, run_after=2025-05-06 00:00:00+00:00
+[2025-05-14T11:18:02.712+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tuts/simple-dag.py took 0.055 seconds

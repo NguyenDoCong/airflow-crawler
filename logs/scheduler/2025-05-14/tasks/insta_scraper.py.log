@@ -6030,3 +6030,8 @@ ImportError: cannot import name 'batch_download_from_file' from 'utils.downloade
 [2025-05-14T11:17:35.847+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:35.847+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/insta_scraper.py
 [2025-05-14T11:17:35.931+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/insta_scraper.py
 [2025-05-14T11:17:35.941+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/insta_scraper.py took 0.113 seconds
+[2025-05-14T11:18:06.778+0000] {processor.py:186} INFO - Started process (PID=7313) to work on /opt/airflow/dags/tasks/insta_scraper.py
+[2025-05-14T11:18:06.779+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/insta_scraper.py for tasks to queue
+[2025-05-14T11:18:06.780+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:18:06.780+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/insta_scraper.py
+[2025-05-14T11:18:06.862+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/insta_scraper.py
+[2025-05-14T11:18:06.873+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/insta_scraper.py took 0.100 seconds

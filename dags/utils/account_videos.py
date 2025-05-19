@@ -12,7 +12,7 @@ from utils import output
 from config import Config
 
 from app.core.database_utils import create_pending_video, get_all_videos_from_db, update_video_status
-from dags.utils.get_id import extract_id
+from dags.utils.get_id import extract_id, extract_user_id
 
 # logs = Logs()
 
@@ -108,12 +108,13 @@ class AccountVideo(BaseFacebookScraper):
         for link in new_links:
             try:
                 video_id = extract_id(link)
+                user_id = extract_user_id(link)
             except Exception as e:
                 rprint(f"[red]Error while extracting video ID: {e}[/red]")
                 self._driver.quit()
                 self.success = False
                 return []
-            task_id = create_pending_video(video_id, link)
+            task_id = create_pending_video(video_id, user_id, link)
             try:
                 file_path = download_video(link, Config.DOWNLOAD_DIRECTORY)
                 

@@ -1,0 +1,130 @@
+[2025-05-19T03:47:33.849+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-19T03:47:33.863+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-19T03:47:33.205261+00:00 [queued]>
+[2025-05-19T03:47:33.869+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-19T03:47:33.205261+00:00 [queued]>
+[2025-05-19T03:47:33.869+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-19T03:47:33.878+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): tiktok_videos_scraper_task> on 2025-05-19 03:47:33.205261+00:00
+[2025-05-19T03:47:33.882+0000] {standard_task_runner.py:72} INFO - Started process 4150 to run task
+[2025-05-19T03:47:33.885+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'tiktok_videos_scraper_task', 'manual__2025-05-19T03:47:33.205261+00:00', '--job-id', '6158', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpnrwq7w2x']
+[2025-05-19T03:47:33.888+0000] {standard_task_runner.py:105} INFO - Job 6158: Subtask tiktok_videos_scraper_task
+[2025-05-19T03:47:33.929+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-19T03:47:33.205261+00:00 [running]> on host 8579eb2523da
+[2025-05-19T03:47:33.993+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='tiktok_videos_scraper_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-19T03:47:33.205261+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-19T03:47:33.205261+00:00'
+[2025-05-19T03:47:33.994+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-19T03:47:45.924+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476458995692178696
+[2025-05-19T03:47:45.924+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7207404062344482075
+[2025-05-19T03:47:45.925+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7201501377284033818
+[2025-05-19T03:47:45.925+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7503443446078786824
+[2025-05-19T03:47:45.925+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7503424669492530439
+[2025-05-19T03:47:45.925+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7502354085140581650
+[2025-05-19T03:47:45.925+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7500593263758413064
+[2025-05-19T03:47:45.925+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7500122651810188562
+[2025-05-19T03:47:45.925+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7499066838945369362
+[2025-05-19T03:47:45.925+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7496423563117776136
+[2025-05-19T03:47:45.925+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7493974332792737042
+[2025-05-19T03:47:45.925+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7493015381292911890
+[2025-05-19T03:47:45.925+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7491178093588090119
+[2025-05-19T03:47:45.925+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7488702196213632262
+[2025-05-19T03:47:45.926+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7487144559412022534
+[2025-05-19T03:47:45.926+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7485747662218693896
+[2025-05-19T03:47:45.926+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7485362731500047634
+[2025-05-19T03:47:45.926+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7482423020078861575
+[2025-05-19T03:47:45.926+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7481299039611407623
+[2025-05-19T03:47:45.926+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7480168247904570632
+[2025-05-19T03:47:45.926+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7479281687831022866
+[2025-05-19T03:47:45.926+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7478731702903393543
+[2025-05-19T03:47:45.926+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477993675306355976
+[2025-05-19T03:47:45.926+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477823132770897159
+[2025-05-19T03:47:45.926+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477145543064521992
+[2025-05-19T03:47:45.926+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477130668615437586
+[2025-05-19T03:47:45.926+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476821366457568520
+[2025-05-19T03:47:45.927+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476806809555045640
+[2025-05-19T03:47:45.927+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476792217672224008
+[2025-05-19T03:47:45.927+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476773956255632647
+[2025-05-19T03:47:45.927+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476064550148934930
+[2025-05-19T03:47:45.927+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476035118407093522
+[2025-05-19T03:47:45.927+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7472395151692893458
+[2025-05-19T03:47:45.927+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7471257605847993618
+[2025-05-19T03:47:45.927+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7470532163381857554
+[2025-05-19T03:47:45.927+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7470452040808942866
+[2025-05-19T03:47:45.927+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7470141470943563026
+[2025-05-19T03:47:45.938+0000] {logging_mixin.py:190} INFO - New videos: 37
+[2025-05-19T03:47:46.082+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/pipeline_tiktok.py", line 18, in run_tiktok_videos_scraper
+    return tiktok_videos_scraper(
+  File "/opt/airflow/dags/tasks/tiktok_videos_scraper.py", line 73, in tiktok_videos_scraper
+    results = asyncio.run(user_template())
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/opt/airflow/dags/tasks/tiktok_videos_scraper.py", line 56, in user_template
+    task_id = create_pending_video(video_id, link, platform="tiktok")
+TypeError: create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-19T03:47:46.088+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=tiktok_videos_scraper_dag, task_id=tiktok_videos_scraper_task, run_id=manual__2025-05-19T03:47:33.205261+00:00, execution_date=20250519T034733, start_date=20250519T034733, end_date=20250519T034746
+[2025-05-19T03:47:46.098+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-19T03:47:46.098+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 6158 for task tiktok_videos_scraper_task (create_pending_video() missing 1 required positional argument: 'url'; 4150)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/pipeline_tiktok.py", line 18, in run_tiktok_videos_scraper
+    return tiktok_videos_scraper(
+  File "/opt/airflow/dags/tasks/tiktok_videos_scraper.py", line 73, in tiktok_videos_scraper
+    results = asyncio.run(user_template())
+  File "/usr/local/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/local/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/opt/airflow/dags/tasks/tiktok_videos_scraper.py", line 56, in user_template
+    task_id = create_pending_video(video_id, link, platform="tiktok")
+TypeError: create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-19T03:47:46.144+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 1
+[2025-05-19T03:47:46.157+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-19T03:47:46.172+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

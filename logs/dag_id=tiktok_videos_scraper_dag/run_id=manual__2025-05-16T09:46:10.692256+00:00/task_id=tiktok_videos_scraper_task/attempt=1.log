@@ -1,0 +1,133 @@
+[2025-05-16T09:46:11.071+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-16T09:46:11.081+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-16T09:46:10.692256+00:00 [queued]>
+[2025-05-16T09:46:11.085+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-16T09:46:10.692256+00:00 [queued]>
+[2025-05-16T09:46:11.085+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-16T09:46:11.093+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): tiktok_videos_scraper_task> on 2025-05-16 09:46:10.692256+00:00
+[2025-05-16T09:46:11.095+0000] {standard_task_runner.py:72} INFO - Started process 4651 to run task
+[2025-05-16T09:46:11.098+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'tiktok_videos_scraper_task', 'manual__2025-05-16T09:46:10.692256+00:00', '--job-id', '6145', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpgd6uaxdz']
+[2025-05-16T09:46:11.099+0000] {standard_task_runner.py:105} INFO - Job 6145: Subtask tiktok_videos_scraper_task
+[2025-05-16T09:46:11.134+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-16T09:46:10.692256+00:00 [running]> on host 8579eb2523da
+[2025-05-16T09:46:11.184+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='tiktok_videos_scraper_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-16T09:46:10.692256+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-16T09:46:10.692256+00:00'
+[2025-05-16T09:46:11.184+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-16T09:46:20.555+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476458995692178696
+[2025-05-16T09:46:20.555+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7207404062344482075
+[2025-05-16T09:46:20.555+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7201501377284033818
+[2025-05-16T09:46:20.555+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7503443446078786824
+[2025-05-16T09:46:20.555+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7503424669492530439
+[2025-05-16T09:46:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7502354085140581650
+[2025-05-16T09:46:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7500593263758413064
+[2025-05-16T09:46:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7500122651810188562
+[2025-05-16T09:46:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7499066838945369362
+[2025-05-16T09:46:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7496423563117776136
+[2025-05-16T09:46:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7493974332792737042
+[2025-05-16T09:46:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7493015381292911890
+[2025-05-16T09:46:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7491178093588090119
+[2025-05-16T09:46:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7488702196213632262
+[2025-05-16T09:46:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7487144559412022534
+[2025-05-16T09:46:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7485747662218693896
+[2025-05-16T09:46:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7485362731500047634
+[2025-05-16T09:46:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7482423020078861575
+[2025-05-16T09:46:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7481299039611407623
+[2025-05-16T09:46:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7480168247904570632
+[2025-05-16T09:46:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7479281687831022866
+[2025-05-16T09:46:20.557+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7478731702903393543
+[2025-05-16T09:46:20.557+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477993675306355976
+[2025-05-16T09:46:20.557+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477823132770897159
+[2025-05-16T09:46:20.557+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477145543064521992
+[2025-05-16T09:46:20.557+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477130668615437586
+[2025-05-16T09:46:20.557+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476821366457568520
+[2025-05-16T09:46:20.557+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476806809555045640
+[2025-05-16T09:46:20.557+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476792217672224008
+[2025-05-16T09:46:20.557+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476773956255632647
+[2025-05-16T09:46:20.557+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476064550148934930
+[2025-05-16T09:46:20.557+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476035118407093522
+[2025-05-16T09:46:20.557+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7472395151692893458
+[2025-05-16T09:46:20.557+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7471257605847993618
+[2025-05-16T09:46:20.557+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7470532163381857554
+[2025-05-16T09:46:20.558+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7470452040808942866
+[2025-05-16T09:46:20.558+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7470141470943563026
+[2025-05-16T09:46:20.566+0000] {logging_mixin.py:190} INFO - New videos: 37
+[2025-05-16T09:46:20.827+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T09:46:20.828+0000] {logging_mixin.py:190} INFO - Downloading video from 7478731702903393543...
+[2025-05-16T09:46:21.163+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7478731702903393543
+[2025-05-16T09:46:21.163+0000] {logging_mixin.py:190} INFO - [TikTok] 7478731702903393543: Downloading webpage
+[2025-05-16T09:46:21.821+0000] {logging_mixin.py:190} INFO - [info] 7478731702903393543: Downloading 1 format(s): bytevc1_1080p_4901538-1
+[2025-05-16T09:46:22.038+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7478731702903393543
+[2025-05-16T09:46:22.039+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   93.77MiB at  351.25KiB/s ETA 04:34
+[2025-05-16T09:46:22.039+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   93.77MiB at  776.77KiB/s ETA 02:03
+[2025-05-16T09:46:22.040+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   93.77MiB at    1.50MiB/s ETA 01:02
+[2025-05-16T09:46:22.041+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   93.77MiB at    2.54MiB/s ETA 00:36
+[2025-05-16T09:46:22.047+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   93.77MiB at    2.62MiB/s ETA 00:35
+[2025-05-16T09:46:22.100+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   93.77MiB at  980.92KiB/s ETA 01:37
+[2025-05-16T09:46:22.164+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   93.77MiB at  986.87KiB/s ETA 01:37
+[2025-05-16T09:46:22.216+0000] {logging_mixin.py:190} INFO - [download]   0.3% of   93.77MiB at    1.38MiB/s ETA 01:07
+[2025-05-16T09:46:22.285+0000] {logging_mixin.py:190} INFO - [download]   0.5% of   93.77MiB at    2.01MiB/s ETA 00:46
+[2025-05-16T09:46:22.353+0000] {logging_mixin.py:190} INFO - [download]   1.1% of   93.77MiB at    3.15MiB/s ETA 00:29
+[2025-05-16T09:46:22.448+0000] {logging_mixin.py:190} INFO - [download]   2.1% of   93.77MiB at    4.84MiB/s ETA 00:18
+[2025-05-16T09:46:22.753+0000] {logging_mixin.py:190} INFO - [download]   4.3% of   93.77MiB at    5.58MiB/s ETA 00:16
+[2025-05-16T09:46:23.051+0000] {logging_mixin.py:190} INFO - [download]   8.5% of   93.77MiB at    7.88MiB/s ETA 00:10
+[2025-05-16T09:46:23.544+0000] {logging_mixin.py:190} INFO - [download]  12.8% of   93.77MiB at    7.96MiB/s ETA 00:10
+[2025-05-16T09:46:23.852+0000] {logging_mixin.py:190} INFO - [download]  17.1% of   93.77MiB at    8.81MiB/s ETA 00:08
+[2025-05-16T09:46:24.288+0000] {logging_mixin.py:190} INFO - [download]  21.3% of   93.77MiB at    8.88MiB/s ETA 00:08
+[2025-05-16T09:46:24.635+0000] {logging_mixin.py:190} INFO - [download]  25.6% of   93.77MiB at    9.23MiB/s ETA 00:07
+[2025-05-16T09:46:25.207+0000] {logging_mixin.py:190} INFO - [download]  29.9% of   93.77MiB at    8.83MiB/s ETA 00:07
+[2025-05-16T09:46:25.437+0000] {logging_mixin.py:190} INFO - [download]  34.1% of   93.77MiB at    9.41MiB/s ETA 00:06
+[2025-05-16T09:46:25.812+0000] {logging_mixin.py:190} INFO - [download]  38.4% of   93.77MiB at    9.53MiB/s ETA 00:06
+[2025-05-16T09:46:26.260+0000] {logging_mixin.py:190} INFO - [download]  42.7% of   93.77MiB at    9.47MiB/s ETA 00:05
+[2025-05-16T09:46:26.676+0000] {logging_mixin.py:190} INFO - [download]  46.9% of   93.77MiB at    9.48MiB/s ETA 00:05
+[2025-05-16T09:46:27.148+0000] {logging_mixin.py:190} INFO - [download]  51.2% of   93.77MiB at    9.39MiB/s ETA 00:04
+[2025-05-16T09:46:27.477+0000] {logging_mixin.py:190} INFO - [download]  55.5% of   93.77MiB at    9.56MiB/s ETA 00:04
+[2025-05-16T09:46:27.777+0000] {logging_mixin.py:190} INFO - [download]  59.7% of   93.77MiB at    9.75MiB/s ETA 00:03
+[2025-05-16T09:46:28.187+0000] {logging_mixin.py:190} INFO - [download]  64.0% of   93.77MiB at    9.75MiB/s ETA 00:03
+[2025-05-16T09:46:28.652+0000] {logging_mixin.py:190} INFO - [download]  68.3% of   93.77MiB at    9.67MiB/s ETA 00:03
+[2025-05-16T09:46:28.979+0000] {logging_mixin.py:190} INFO - [download]  72.5% of   93.77MiB at    9.79MiB/s ETA 00:02
+[2025-05-16T09:46:29.469+0000] {logging_mixin.py:190} INFO - [download]  76.8% of   93.77MiB at    9.69MiB/s ETA 00:02
+[2025-05-16T09:46:29.796+0000] {logging_mixin.py:190} INFO - [download]  81.1% of   93.77MiB at    9.79MiB/s ETA 00:01
+[2025-05-16T09:46:30.184+0000] {logging_mixin.py:190} INFO - [download]  85.3% of   93.77MiB at    9.82MiB/s ETA 00:01
+[2025-05-16T09:46:30.608+0000] {logging_mixin.py:190} INFO - [download]  89.6% of   93.77MiB at    9.80MiB/s ETA 00:00
+[2025-05-16T09:46:31.059+0000] {logging_mixin.py:190} INFO - [download]  93.8% of   93.77MiB at    9.75MiB/s ETA 00:00
+[2025-05-16T09:46:31.433+0000] {logging_mixin.py:190} INFO - [download]  98.1% of   93.77MiB at    9.79MiB/s ETA 00:00
+[2025-05-16T09:46:31.614+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   93.77MiB at    9.79MiB/s ETA 00:00
+[2025-05-16T09:46:31.629+0000] {logging_mixin.py:190} INFO - [download] 100% of   93.77MiB in 00:00:09 at 9.56MiB/s   
+[2025-05-16T09:46:31.753+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7478731702903393543.mp3
+[2025-05-16T09:46:33.502+0000] {logging_mixin.py:190} INFO - Deleting original file data/7478731702903393543 (pass -k to keep)
+[2025-05-16T09:46:33.511+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7478731702903393543
+[2025-05-16T09:46:33.517+0000] {logging_mixin.py:190} INFO - Downloaded video 7478731702903393543 to data/7478731702903393543.mp3
+[2025-05-16T09:46:33.766+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T09:46:33.766+0000] {logging_mixin.py:190} INFO - Downloading video from 7485362731500047634...
+[2025-05-16T09:46:33.795+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7485362731500047634
+[2025-05-16T09:46:33.796+0000] {logging_mixin.py:190} INFO - [TikTok] 7485362731500047634: Downloading webpage
+[2025-05-16T09:46:34.423+0000] {logging_mixin.py:190} INFO - [info] 7485362731500047634: Downloading 1 format(s): bytevc1_1080p_2690616-1
+[2025-05-16T09:46:34.635+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7485362731500047634
+[2025-05-16T09:46:34.635+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   28.81MiB at  382.06KiB/s ETA 01:17
+[2025-05-16T09:46:34.636+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   28.81MiB at  972.03KiB/s ETA 00:30
+[2025-05-16T09:46:34.636+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   28.81MiB at    1.99MiB/s ETA 00:14
+[2025-05-16T09:46:34.639+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   28.81MiB at    2.43MiB/s ETA 00:11
+[2025-05-16T09:46:34.644+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   28.81MiB at    2.75MiB/s ETA 00:10
+[2025-05-16T09:46:34.698+0000] {logging_mixin.py:190} INFO - [download]   0.2% of   28.81MiB at  969.67KiB/s ETA 00:30
+[2025-05-16T09:46:34.759+0000] {logging_mixin.py:190} INFO - [download]   0.4% of   28.81MiB at 1009.96KiB/s ETA 00:29
+[2025-05-16T09:46:34.805+0000] {logging_mixin.py:190} INFO - [download]   0.9% of   28.81MiB at    1.45MiB/s ETA 00:19
+[2025-05-16T09:46:34.877+0000] {logging_mixin.py:190} INFO - [download]   1.7% of   28.81MiB at    2.04MiB/s ETA 00:13
+[2025-05-16T09:46:34.940+0000] {logging_mixin.py:190} INFO - [download]   3.5% of   28.81MiB at    3.25MiB/s ETA 00:08
+[2025-05-16T09:46:35.124+0000] {logging_mixin.py:190} INFO - [download]   6.9% of   28.81MiB at    4.07MiB/s ETA 00:06
+[2025-05-16T09:46:35.358+0000] {logging_mixin.py:190} INFO - [download]  13.9% of   28.81MiB at    5.51MiB/s ETA 00:04
+[2025-05-16T09:46:35.726+0000] {logging_mixin.py:190} INFO - [download]  27.8% of   28.81MiB at    7.32MiB/s ETA 00:02
+[2025-05-16T09:46:36.101+0000] {logging_mixin.py:190} INFO - [download]  41.7% of   28.81MiB at    8.17MiB/s ETA 00:02
+[2025-05-16T09:46:36.361+0000] {local_task_job_runner.py:341} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-05-16T09:46:36.362+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2025-05-16T09:46:36.363+0000] {process_utils.py:132} INFO - Sending 15 to group 4651. PIDs of all processes in the group: [4654, 4666, 4671, 4673, 4696, 4793, 4702, 4746, 4747, 4768, 4651]
+[2025-05-16T09:46:36.363+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 4651
+[2025-05-16T09:46:36.363+0000] {taskinstance.py:3083} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-05-16T09:46:36.455+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=4671, status='terminated', started='09:46:11') (4671) terminated with exit code None
+[2025-05-16T09:46:36.456+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=4666, status='terminated', started='09:46:11') (4666) terminated with exit code None
+[2025-05-16T09:46:36.456+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=4747, status='terminated', started='09:46:11') (4747) terminated with exit code None
+[2025-05-16T09:46:36.456+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=4793, status='terminated', started='09:46:13') (4793) terminated with exit code None
+[2025-05-16T09:46:36.456+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=4768, status='terminated', started='09:46:11') (4768) terminated with exit code None
+[2025-05-16T09:46:36.471+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-16T09:46:36.483+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=4651, status='terminated', exitcode=0, started='09:46:11') (4651) terminated with exit code 0
+[2025-05-16T09:46:36.483+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=4673, status='terminated', started='09:46:11') (4673) terminated with exit code None
+[2025-05-16T09:46:36.484+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=4696, status='terminated', started='09:46:11') (4696) terminated with exit code None
+[2025-05-16T09:46:36.484+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=4702, status='terminated', started='09:46:11') (4702) terminated with exit code None
+[2025-05-16T09:46:36.484+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=4746, status='terminated', started='09:46:11') (4746) terminated with exit code None
+[2025-05-16T09:46:36.484+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=4654, status='terminated', started='09:46:11') (4654) terminated with exit code None

@@ -1,0 +1,135 @@
+[2025-05-16T07:18:13.076+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-16T07:18:13.088+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.audio_to_transcript_task manual__2025-05-16T07:16:24.383008+00:00 [queued]>
+[2025-05-16T07:18:13.093+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.audio_to_transcript_task manual__2025-05-16T07:16:24.383008+00:00 [queued]>
+[2025-05-16T07:18:13.093+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-16T07:18:13.101+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): audio_to_transcript_task> on 2025-05-16 07:16:24.383008+00:00
+[2025-05-16T07:18:13.104+0000] {standard_task_runner.py:72} INFO - Started process 12735 to run task
+[2025-05-16T07:18:13.107+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'audio_to_transcript_task', 'manual__2025-05-16T07:16:24.383008+00:00', '--job-id', '6105', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmplwv14cnl']
+[2025-05-16T07:18:13.108+0000] {standard_task_runner.py:105} INFO - Job 6105: Subtask audio_to_transcript_task
+[2025-05-16T07:18:13.144+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.audio_to_transcript_task manual__2025-05-16T07:16:24.383008+00:00 [running]> on host 8579eb2523da
+[2025-05-16T07:18:13.198+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='audio_to_transcript_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-16T07:16:24.383008+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-16T07:16:24.383008+00:00'
+[2025-05-16T07:18:13.199+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-16T07:18:13.455+0000] {get_transcript.py:39} INFO - Number of downloads to process: 35
+[2025-05-16T07:18:13.455+0000] {get_transcript.py:44} INFO - Processing audio file: data/7439166215316114696.mp3
+[2025-05-16T07:18:14.854+0000] {transcribe.py:839} INFO - Processing audio with duration 00:47.000
+[2025-05-16T07:18:15.250+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.94
+[2025-05-16T07:18:15.253+0000] {get_transcript.py:54} INFO - Detected language 'vi' with probability 0.9379425048828125
+[2025-05-16T07:18:17.183+0000] {get_transcript.py:44} INFO - Processing audio file: data/7441075883340746002.mp3
+[2025-05-16T07:18:17.701+0000] {transcribe.py:839} INFO - Processing audio with duration 00:14.864
+[2025-05-16T07:18:17.967+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.95
+[2025-05-16T07:18:17.968+0000] {get_transcript.py:54} INFO - Detected language 'vi' with probability 0.947411298751831
+[2025-05-16T07:18:18.463+0000] {get_transcript.py:44} INFO - Processing audio file: data/7466795079034785042.mp3
+[2025-05-16T07:18:19.006+0000] {transcribe.py:839} INFO - Processing audio with duration 00:25.220
+[2025-05-16T07:18:19.283+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.97
+[2025-05-16T07:18:19.285+0000] {get_transcript.py:54} INFO - Detected language 'vi' with probability 0.9728661179542542
+[2025-05-16T07:18:19.720+0000] {get_transcript.py:44} INFO - Processing audio file: data/7445947525749558536.mp3
+[2025-05-16T07:18:20.402+0000] {transcribe.py:839} INFO - Processing audio with duration 01:42.449
+[2025-05-16T07:18:20.744+0000] {transcribe.py:906} INFO - Detected language 'th' with probability 0.61
+[2025-05-16T07:18:20.746+0000] {get_transcript.py:54} INFO - Detected language 'th' with probability 0.6060971617698669
+[2025-05-16T07:18:44.797+0000] {get_transcript.py:44} INFO - Processing audio file: data/7451386098875518215.mp3
+[2025-05-16T07:18:45.443+0000] {transcribe.py:839} INFO - Processing audio with duration 01:13.285
+[2025-05-16T07:18:45.916+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.35
+[2025-05-16T07:18:45.919+0000] {get_transcript.py:54} INFO - Detected language 'en' with probability 0.3517926037311554
+[2025-05-16T07:18:49.984+0000] {get_transcript.py:44} INFO - Processing audio file: data/7466456064993627410.mp3
+[2025-05-16T07:18:50.556+0000] {transcribe.py:839} INFO - Processing audio with duration 00:29.446
+[2025-05-16T07:18:50.874+0000] {transcribe.py:906} INFO - Detected language 'ko' with probability 0.28
+[2025-05-16T07:18:50.875+0000] {get_transcript.py:54} INFO - Detected language 'ko' with probability 0.28247642517089844
+[2025-05-16T07:18:51.084+0000] {get_transcript.py:44} INFO - Processing audio file: data/7445284290176339218.mp3
+[2025-05-16T07:18:52.334+0000] {transcribe.py:839} INFO - Processing audio with duration 01:00.000
+[2025-05-16T07:18:52.689+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.82
+[2025-05-16T07:18:52.691+0000] {get_transcript.py:54} INFO - Detected language 'vi' with probability 0.82402503490448
+[2025-05-16T07:19:03.052+0000] {get_transcript.py:44} INFO - Processing audio file: data/7452385446581046535.mp3
+[2025-05-16T07:19:03.608+0000] {transcribe.py:839} INFO - Processing audio with duration 00:49.415
+[2025-05-16T07:19:03.889+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.76
+[2025-05-16T07:19:03.890+0000] {get_transcript.py:54} INFO - Detected language 'vi' with probability 0.7609930038452148
+[2025-05-16T07:19:12.512+0000] {get_transcript.py:44} INFO - Processing audio file: data/7454193652458425608.mp3
+[2025-05-16T07:19:13.154+0000] {transcribe.py:839} INFO - Processing audio with duration 01:16.892
+[2025-05-16T07:19:13.470+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.88
+[2025-05-16T07:19:13.471+0000] {get_transcript.py:54} INFO - Detected language 'vi' with probability 0.8788952827453613
+[2025-05-16T07:19:14.831+0000] {get_transcript.py:44} INFO - Processing audio file: data/7437713010346478855.mp3
+[2025-05-16T07:19:16.078+0000] {transcribe.py:839} INFO - Processing audio with duration 02:30.607
+[2025-05-16T07:19:16.410+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.88
+[2025-05-16T07:19:16.412+0000] {get_transcript.py:54} INFO - Detected language 'vi' with probability 0.8824706673622131
+[2025-05-16T07:19:35.303+0000] {get_transcript.py:44} INFO - Processing audio file: data/7440877607345720583.mp3
+[2025-05-16T07:19:35.880+0000] {transcribe.py:839} INFO - Processing audio with duration 00:11.381
+[2025-05-16T07:19:36.128+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.67
+[2025-05-16T07:19:36.130+0000] {get_transcript.py:54} INFO - Detected language 'en' with probability 0.6705809831619263
+[2025-05-16T07:19:36.406+0000] {get_transcript.py:44} INFO - Processing audio file: data/7446787050801532167.mp3
+[2025-05-16T07:19:36.927+0000] {transcribe.py:839} INFO - Processing audio with duration 00:11.334
+[2025-05-16T07:19:37.182+0000] {transcribe.py:906} INFO - Detected language 'ko' with probability 0.38
+[2025-05-16T07:19:37.183+0000] {get_transcript.py:54} INFO - Detected language 'ko' with probability 0.37816303968429565
+[2025-05-16T07:19:39.477+0000] {get_transcript.py:44} INFO - Processing audio file: data/7441232482713767186.mp3
+[2025-05-16T07:19:40.055+0000] {transcribe.py:839} INFO - Processing audio with duration 00:39.012
+[2025-05-16T07:19:40.324+0000] {transcribe.py:906} INFO - Detected language 'nn' with probability 0.23
+[2025-05-16T07:19:40.327+0000] {get_transcript.py:54} INFO - Detected language 'nn' with probability 0.22782129049301147
+[2025-05-16T07:19:43.043+0000] {get_transcript.py:44} INFO - Processing audio file: data/7465698139597589768.mp3
+[2025-05-16T07:19:43.806+0000] {transcribe.py:839} INFO - Processing audio with duration 00:33.718
+[2025-05-16T07:19:41.610+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.90
+[2025-05-16T07:19:41.612+0000] {get_transcript.py:54} INFO - Detected language 'vi' with probability 0.9027135372161865
+[2025-05-16T07:19:43.841+0000] {get_transcript.py:44} INFO - Processing audio file: data/7439215028269485320.mp3
+[2025-05-16T07:19:44.361+0000] {transcribe.py:839} INFO - Processing audio with duration 00:22.340
+[2025-05-16T07:19:44.624+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.24
+[2025-05-16T07:19:44.625+0000] {get_transcript.py:54} INFO - Detected language 'vi' with probability 0.24183912575244904
+[2025-05-16T07:19:49.007+0000] {get_transcript.py:44} INFO - Processing audio file: data/7454042656142920968.mp3
+[2025-05-16T07:19:49.705+0000] {transcribe.py:839} INFO - Processing audio with duration 02:32.419
+[2025-05-16T07:19:50.025+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.86
+[2025-05-16T07:19:50.026+0000] {get_transcript.py:54} INFO - Detected language 'vi' with probability 0.8552653789520264
+[2025-05-16T07:19:55.145+0000] {get_transcript.py:44} INFO - Processing audio file: data/7451374739890720008.mp3
+[2025-05-16T07:19:55.750+0000] {transcribe.py:839} INFO - Processing audio with duration 01:35.390
+[2025-05-16T07:19:56.034+0000] {transcribe.py:906} INFO - Detected language 'la' with probability 0.20
+[2025-05-16T07:19:56.036+0000] {get_transcript.py:54} INFO - Detected language 'la' with probability 0.19571885466575623
+[2025-05-16T07:20:01.529+0000] {get_transcript.py:44} INFO - Processing audio file: data/7444538584016751880.mp3
+[2025-05-16T07:20:02.184+0000] {transcribe.py:839} INFO - Processing audio with duration 02:24.802
+[2025-05-16T07:20:02.482+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.91
+[2025-05-16T07:20:02.483+0000] {get_transcript.py:54} INFO - Detected language 'vi' with probability 0.9117290377616882
+[2025-05-16T07:20:11.888+0000] {get_transcript.py:44} INFO - Processing audio file: data/7451378763993992456.mp3
+[2025-05-16T07:20:12.488+0000] {transcribe.py:839} INFO - Processing audio with duration 01:02.232
+[2025-05-16T07:20:12.762+0000] {transcribe.py:906} INFO - Detected language 'ko' with probability 0.28
+[2025-05-16T07:20:12.765+0000] {get_transcript.py:54} INFO - Detected language 'ko' with probability 0.28100842237472534
+[2025-05-16T07:20:20.045+0000] {get_transcript.py:44} INFO - Processing audio file: data/7448994195089493266.mp3
+[2025-05-16T07:20:20.637+0000] {transcribe.py:839} INFO - Processing audio with duration 00:43.238
+[2025-05-16T07:20:20.933+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.79
+[2025-05-16T07:20:20.934+0000] {get_transcript.py:54} INFO - Detected language 'vi' with probability 0.7927568554878235
+[2025-05-16T07:20:24.129+0000] {get_transcript.py:44} INFO - Processing audio file: data/7452334283357719815.mp3
+[2025-05-16T07:20:24.833+0000] {transcribe.py:839} INFO - Processing audio with duration 02:59.447
+[2025-05-16T07:20:25.201+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.90
+[2025-05-16T07:20:25.203+0000] {get_transcript.py:54} INFO - Detected language 'vi' with probability 0.9016799330711365
+[2025-05-16T07:20:40.661+0000] {get_transcript.py:44} INFO - Processing audio file: data/7466461706999418130.mp3
+[2025-05-16T07:20:41.210+0000] {transcribe.py:839} INFO - Processing audio with duration 00:19.647
+[2025-05-16T07:20:41.436+0000] {transcribe.py:906} INFO - Detected language 'es' with probability 0.56
+[2025-05-16T07:20:41.437+0000] {get_transcript.py:54} INFO - Detected language 'es' with probability 0.5614286065101624
+[2025-05-16T07:20:41.929+0000] {get_transcript.py:44} INFO - Processing audio file: data/7441062886274764050.mp3
+[2025-05-16T07:20:42.511+0000] {transcribe.py:839} INFO - Processing audio with duration 00:56.009
+[2025-05-16T07:20:42.824+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.91
+[2025-05-16T07:20:42.825+0000] {get_transcript.py:54} INFO - Detected language 'vi' with probability 0.9124600291252136
+[2025-05-16T07:20:43.546+0000] {get_transcript.py:44} INFO - Processing audio file: data/7455673651925421330.mp3
+[2025-05-16T07:20:44.058+0000] {transcribe.py:839} INFO - Processing audio with duration 00:09.059
+[2025-05-16T07:20:44.290+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.42
+[2025-05-16T07:20:44.291+0000] {get_transcript.py:54} INFO - Detected language 'en' with probability 0.4162435531616211
+[2025-05-16T07:20:44.450+0000] {get_transcript.py:44} INFO - Processing audio file: data/7465323770719243538.mp3
+[2025-05-16T07:20:45.163+0000] {transcribe.py:839} INFO - Processing audio with duration 00:31.350
+[2025-05-16T07:20:45.437+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.64
+[2025-05-16T07:20:45.438+0000] {get_transcript.py:54} INFO - Detected language 'vi' with probability 0.644463062286377
+[2025-05-16T07:20:46.213+0000] {get_transcript.py:44} INFO - Processing audio file: data/7447347701731036424.mp3
+[2025-05-16T07:20:46.946+0000] {transcribe.py:839} INFO - Processing audio with duration 02:48.394
+[2025-05-16T07:20:47.350+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.95
+[2025-05-16T07:20:47.351+0000] {get_transcript.py:54} INFO - Detected language 'vi' with probability 0.9498057961463928
+[2025-05-16T07:20:57.025+0000] {get_transcript.py:44} INFO - Processing audio file: data/7451143872953978130.mp3
+[2025-05-16T07:20:57.630+0000] {transcribe.py:839} INFO - Processing audio with duration 00:44.957
+[2025-05-16T07:20:57.928+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.44
+[2025-05-16T07:20:57.930+0000] {get_transcript.py:54} INFO - Detected language 'vi' with probability 0.4391096830368042
+[2025-05-16T07:20:58.756+0000] {get_transcript.py:44} INFO - Processing audio file: data/7465554238215703826.mp3
+[2025-05-16T07:20:59.583+0000] {transcribe.py:839} INFO - Processing audio with duration 04:39.339
+[2025-05-16T07:21:00.034+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.84
+[2025-05-16T07:21:00.046+0000] {get_transcript.py:54} INFO - Detected language 'vi' with probability 0.8358273506164551
+[2025-05-16T07:21:45.801+0000] {get_transcript.py:44} INFO - Processing audio file: data/7452691717175741704.mp3
+[2025-05-16T07:21:46.509+0000] {transcribe.py:839} INFO - Processing audio with duration 01:09.012
+[2025-05-16T07:21:46.837+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.98
+[2025-05-16T07:21:46.838+0000] {get_transcript.py:54} INFO - Detected language 'vi' with probability 0.978884220123291
+[2025-05-16T07:21:49.770+0000] {local_task_job_runner.py:341} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-05-16T07:21:49.771+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2025-05-16T07:21:49.772+0000] {process_utils.py:132} INFO - Sending 15 to group 12735. PIDs of all processes in the group: [12735]
+[2025-05-16T07:21:49.772+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 12735
+[2025-05-16T07:21:50.221+0000] {taskinstance.py:3083} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-05-16T07:21:50.251+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-16T07:21:50.280+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=12735, status='terminated', exitcode=0, started='07:18:12') (12735) terminated with exit code 0

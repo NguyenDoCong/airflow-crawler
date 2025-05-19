@@ -7711,3 +7711,10 @@ IndentationError: expected an indented block after 'try' statement on line 16
 [2025-05-14T11:17:44.413+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:44.412+0000] {dag.py:3211} INFO - Sync 1 DAGs
 [2025-05-14T11:17:44.421+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:17:44.421+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
 [2025-05-14T11:17:44.432+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_fb.py took 0.144 seconds
+[2025-05-14T11:18:15.204+0000] {processor.py:186} INFO - Started process (PID=7321) to work on /opt/airflow/dags/pipeline_fb.py
+[2025-05-14T11:18:15.205+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_fb.py for tasks to queue
+[2025-05-14T11:18:15.205+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:18:15.205+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_fb.py
+[2025-05-14T11:18:15.291+0000] {processor.py:925} INFO - DAG(s) 'facebook_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline_fb.py
+[2025-05-14T11:18:15.306+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:18:15.306+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-14T11:18:15.314+0000] {logging_mixin.py:190} INFO - [2025-05-14T11:18:15.314+0000] {dag.py:4138} INFO - Setting next_dagrun for facebook_videos_scraper_dag to None, run_after=None
+[2025-05-14T11:18:15.325+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_fb.py took 0.125 seconds

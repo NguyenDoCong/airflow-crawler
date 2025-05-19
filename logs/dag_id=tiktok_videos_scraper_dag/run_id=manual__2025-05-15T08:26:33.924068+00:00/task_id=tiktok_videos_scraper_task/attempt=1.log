@@ -1,0 +1,21 @@
+[2025-05-15T08:26:35.182+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-15T08:26:35.199+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-15T08:26:33.924068+00:00 [queued]>
+[2025-05-15T08:26:35.205+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-15T08:26:33.924068+00:00 [queued]>
+[2025-05-15T08:26:35.206+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-15T08:26:35.215+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): tiktok_videos_scraper_task> on 2025-05-15 08:26:33.924068+00:00
+[2025-05-15T08:26:35.220+0000] {standard_task_runner.py:72} INFO - Started process 969 to run task
+[2025-05-15T08:26:35.230+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'tiktok_videos_scraper_task', 'manual__2025-05-15T08:26:33.924068+00:00', '--job-id', '5939', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpp4_vx7zp']
+[2025-05-15T08:26:35.231+0000] {standard_task_runner.py:105} INFO - Job 5939: Subtask tiktok_videos_scraper_task
+[2025-05-15T08:26:35.303+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-15T08:26:33.924068+00:00 [running]> on host 8579eb2523da
+[2025-05-15T08:26:35.409+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='tiktok_videos_scraper_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-15T08:26:33.924068+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-15T08:26:33.924068+00:00'
+[2025-05-15T08:26:35.411+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-15T08:44:14.550+0000] {job.py:229} INFO - Heartbeat recovered after 17.51 seconds
+[2025-05-15T09:03:31.398+0000] {job.py:229} INFO - Heartbeat recovered after 56.32 seconds
+[2025-05-15T09:04:52.296+0000] {job.py:229} INFO - Heartbeat recovered after 81.15 seconds
+[2025-05-15T09:05:41.029+0000] {job.py:229} INFO - Heartbeat recovered after 51.35 seconds
+[2025-05-15T09:06:52.021+0000] {job.py:229} INFO - Heartbeat recovered after 71.12 seconds
+[2025-05-15T09:07:00.016+0000] {job.py:229} INFO - Heartbeat recovered after 21.50 seconds
+[2025-05-15T09:08:00.926+0000] {job.py:229} INFO - Heartbeat recovered after 39.35 seconds
+[2025-05-16T07:57:25.510+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-16T07:57:25.520+0000] {taskinstance.py:2593} INFO - Dependencies not met for <TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-15T08:26:33.924068+00:00 [failed]>, dependency 'Task Instance State' FAILED: Task is in the 'failed' state.
+[2025-05-16T07:57:25.525+0000] {local_task_job_runner.py:166} INFO - Task is not able to be run

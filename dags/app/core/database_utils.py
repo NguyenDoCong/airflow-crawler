@@ -42,7 +42,7 @@ def get_all_videos_from_db(platform=None):
     finally:
         db.close()
 
-def create_pending_video(video_id, url, task_id=None, platform=None):
+def create_pending_video(video_id, user_id, url, task_id=None, platform=None):
     """
     Create PENDING record in database while task assign
     
@@ -83,6 +83,7 @@ def create_pending_video(video_id, url, task_id=None, platform=None):
                 new_video = X(
                     video_id=video_id,
                     url=url,
+                    user_id=user_id,
                     task_id=task_id,
                     status=TaskStatus.PENDING.value
                 )
@@ -90,6 +91,7 @@ def create_pending_video(video_id, url, task_id=None, platform=None):
                 new_video = Tiktok(
                     video_id=video_id,
                     url=url,
+                    user_id=user_id,                    
                     task_id=task_id,
                     status=TaskStatus.PENDING.value
                 )
@@ -97,6 +99,7 @@ def create_pending_video(video_id, url, task_id=None, platform=None):
                 new_video = Instagram(
                     video_id=video_id,
                     url=url,
+                    user_id=user_id,
                     task_id=task_id,
                     status=TaskStatus.PENDING.value
                 )
@@ -104,6 +107,7 @@ def create_pending_video(video_id, url, task_id=None, platform=None):
                 new_video = Facebook(
                     video_id=video_id,
                     url=url,
+                    user_id=user_id,
                     task_id=task_id,
                     status=TaskStatus.PENDING.value
             )

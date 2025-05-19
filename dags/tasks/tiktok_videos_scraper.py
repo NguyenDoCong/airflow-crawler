@@ -1,4 +1,4 @@
-from airflow.decorators import task
+# from airflow.decorators import task
 from dags.app.worker.schema import TaskStatus
 from utils.downloader import download_video
 from config import Config
@@ -12,7 +12,7 @@ from dags.utils.get_id import extract_id
 # @task.virtualenv(
 #     task_id="virtualenv_python", requirements=["TikTokApi==7.1.0"], system_site_packages=False
 # )
-@task
+# @task
 
 def tiktok_videos_scraper(id = "therock",count = 10, ms_tokens=None, DOWNLOAD_DIRECTORY="data"):
     from TikTokApi import TikTokApi
@@ -53,7 +53,8 @@ def tiktok_videos_scraper(id = "therock",count = 10, ms_tokens=None, DOWNLOAD_DI
 
             for link in new_links:
                 video_id = extract_id(link)
-                task_id = create_pending_video(video_id, link, platform="tiktok")
+                # user_id = extract_user_id(link)
+                task_id = create_pending_video(video_id, id, link, platform="tiktok")
                 file_path = download_video(link, Config.DOWNLOAD_DIRECTORY)
                 if file_path:
                     update_video_status(video_id, TaskStatus.PROCESSING.value, platform="tiktok")

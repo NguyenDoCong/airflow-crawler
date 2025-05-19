@@ -1,0 +1,28 @@
+[2025-05-15T03:30:21.342+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-15T03:30:21.372+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-15T03:30:19.638052 [queued]>
+[2025-05-15T03:30:21.383+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-15T03:30:19.638052 [queued]>
+[2025-05-15T03:30:21.384+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-15T03:30:21.400+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): tiktok_videos_scraper_task> on 2025-05-15 03:30:19.638079+00:00
+[2025-05-15T03:30:21.408+0000] {standard_task_runner.py:72} INFO - Started process 21711 to run task
+[2025-05-15T03:30:21.419+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'tiktok_videos_scraper_task', 'manual__2025-05-15T03:30:19.638052', '--job-id', '5758', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpugf6qgal']
+[2025-05-15T03:30:21.430+0000] {standard_task_runner.py:105} INFO - Job 5758: Subtask tiktok_videos_scraper_task
+[2025-05-15T03:30:21.580+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-15T03:30:19.638052 [running]> on host 255dbbe6d096
+[2025-05-15T03:30:30.643+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='tiktok_videos_scraper_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-15T03:30:19.638079+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-15T03:30:19.638052'
+[2025-05-15T03:30:30.644+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-15T03:30:42.730+0000] {logging_mixin.py:190} INFO - Error in TikTok API: Page.evaluate: TypeError: undefined is not a function
+    at h (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.290/webmssdk.js:1:110185)
+    at Array.yg (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.290/webmssdk.js:1:109880)
+    at n (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.290/webmssdk.js:1:160663)
+    at https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.290/webmssdk.js:1:56397
+    at f (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.290/webmssdk.js:1:48658)
+    at window.fetch (https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/secsdk/secsdk-lastest.umd.js:5211:40)
+    at eval (eval at evaluate (:313:29), <anonymous>:3:21)
+    at new Promise (<anonymous>)
+    at eval (eval at evaluate (:313:29), <anonymous>:2:24)
+    at UtilityScript.evaluate (<anonymous>:320:18)
+[2025-05-15T03:30:42.887+0000] {python.py:240} INFO - Done. Returned value was: []
+[2025-05-15T03:30:42.906+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-15T03:30:42.907+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tiktok_videos_scraper_dag, task_id=tiktok_videos_scraper_task, run_id=manual__2025-05-15T03:30:19.638052, execution_date=20250515T033019, start_date=20250515T033021, end_date=20250515T033042
+[2025-05-15T03:30:42.961+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-15T03:30:42.975+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-15T03:30:42.992+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

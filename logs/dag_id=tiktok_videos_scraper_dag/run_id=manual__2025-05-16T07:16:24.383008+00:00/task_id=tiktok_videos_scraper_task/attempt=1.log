@@ -1,0 +1,969 @@
+[2025-05-16T07:16:25.123+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-16T07:16:25.136+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-16T07:16:24.383008+00:00 [queued]>
+[2025-05-16T07:16:25.142+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-16T07:16:24.383008+00:00 [queued]>
+[2025-05-16T07:16:25.142+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-16T07:16:25.150+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): tiktok_videos_scraper_task> on 2025-05-16 07:16:24.383008+00:00
+[2025-05-16T07:16:25.153+0000] {standard_task_runner.py:72} INFO - Started process 11776 to run task
+[2025-05-16T07:16:25.155+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'tiktok_videos_scraper_task', 'manual__2025-05-16T07:16:24.383008+00:00', '--job-id', '6104', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpwp767qnq']
+[2025-05-16T07:16:25.157+0000] {standard_task_runner.py:105} INFO - Job 6104: Subtask tiktok_videos_scraper_task
+[2025-05-16T07:16:25.190+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-16T07:16:24.383008+00:00 [running]> on host 8579eb2523da
+[2025-05-16T07:16:25.242+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='tiktok_videos_scraper_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-16T07:16:24.383008+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-16T07:16:24.383008+00:00'
+[2025-05-16T07:16:25.243+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-16T07:16:33.554+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476458995692178696
+[2025-05-16T07:16:33.565+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7207404062344482075
+[2025-05-16T07:16:33.566+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7201501377284033818
+[2025-05-16T07:16:33.566+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7503443446078786824
+[2025-05-16T07:16:33.566+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7503424669492530439
+[2025-05-16T07:16:33.566+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7502354085140581650
+[2025-05-16T07:16:33.566+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7500593263758413064
+[2025-05-16T07:16:33.566+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7500122651810188562
+[2025-05-16T07:16:33.567+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7499066838945369362
+[2025-05-16T07:16:33.567+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7496423563117776136
+[2025-05-16T07:16:33.567+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7493974332792737042
+[2025-05-16T07:16:33.567+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7493015381292911890
+[2025-05-16T07:16:33.567+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7491178093588090119
+[2025-05-16T07:16:33.567+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7488702196213632262
+[2025-05-16T07:16:33.567+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7487144559412022534
+[2025-05-16T07:16:33.567+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7485747662218693896
+[2025-05-16T07:16:33.567+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7485362731500047634
+[2025-05-16T07:16:33.567+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7482423020078861575
+[2025-05-16T07:16:33.568+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7481299039611407623
+[2025-05-16T07:16:33.568+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7480168247904570632
+[2025-05-16T07:16:33.568+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7479281687831022866
+[2025-05-16T07:16:33.568+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7478731702903393543
+[2025-05-16T07:16:33.568+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477993675306355976
+[2025-05-16T07:16:33.568+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477823132770897159
+[2025-05-16T07:16:33.568+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477145543064521992
+[2025-05-16T07:16:33.568+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7477130668615437586
+[2025-05-16T07:16:33.568+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476821366457568520
+[2025-05-16T07:16:33.568+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476806809555045640
+[2025-05-16T07:16:33.568+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476792217672224008
+[2025-05-16T07:16:33.568+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476773956255632647
+[2025-05-16T07:16:33.568+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476064550148934930
+[2025-05-16T07:16:33.569+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7476035118407093522
+[2025-05-16T07:16:33.569+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7472395151692893458
+[2025-05-16T07:16:33.569+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7471257605847993618
+[2025-05-16T07:16:33.569+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7470532163381857554
+[2025-05-16T07:16:33.569+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7470452040808942866
+[2025-05-16T07:16:33.569+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7470141470943563026
+[2025-05-16T07:16:34.321+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7468218353681698056
+[2025-05-16T07:16:34.321+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7466795079034785042
+[2025-05-16T07:16:34.322+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7466461706999418130
+[2025-05-16T07:16:34.322+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7466456064993627410
+[2025-05-16T07:16:34.322+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7465698139597589768
+[2025-05-16T07:16:34.322+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7465554238215703826
+[2025-05-16T07:16:34.322+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7465323770719243538
+[2025-05-16T07:16:34.322+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7457153698225982727
+[2025-05-16T07:16:34.322+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7455673651925421330
+[2025-05-16T07:16:34.322+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7454522286293421320
+[2025-05-16T07:16:34.322+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7454193652458425608
+[2025-05-16T07:16:34.323+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7454042656142920968
+[2025-05-16T07:16:34.323+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7452691717175741704
+[2025-05-16T07:16:34.323+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7452569215648795922
+[2025-05-16T07:16:34.323+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7452385446581046535
+[2025-05-16T07:16:34.323+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7452334283357719815
+[2025-05-16T07:16:34.323+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7451386098875518215
+[2025-05-16T07:16:34.324+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7451378763993992456
+[2025-05-16T07:16:34.324+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7451374739890720008
+[2025-05-16T07:16:34.324+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7451143872953978130
+[2025-05-16T07:16:34.324+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7448994195089493266
+[2025-05-16T07:16:34.324+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7447347701731036424
+[2025-05-16T07:16:34.324+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7446787050801532167
+[2025-05-16T07:16:34.324+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7445947525749558536
+[2025-05-16T07:16:34.324+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7445284290176339218
+[2025-05-16T07:16:34.324+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7444918111012179218
+[2025-05-16T07:16:34.324+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7444538584016751880
+[2025-05-16T07:16:34.324+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7441232482713767186
+[2025-05-16T07:16:34.324+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7441075883340746002
+[2025-05-16T07:16:34.324+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7441062886274764050
+[2025-05-16T07:16:34.324+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7440877607345720583
+[2025-05-16T07:16:34.325+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7439215028269485320
+[2025-05-16T07:16:34.325+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7439166215316114696
+[2025-05-16T07:16:34.325+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7437713010346478855
+[2025-05-16T07:16:34.325+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hoaminzy_hoadambut/video/7434917829230595335
+[2025-05-16T07:16:34.336+0000] {logging_mixin.py:190} INFO - New videos: 35
+[2025-05-16T07:16:34.482+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:16:34.483+0000] {logging_mixin.py:190} INFO - Downloading video from 7439166215316114696...
+[2025-05-16T07:16:34.858+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7439166215316114696
+[2025-05-16T07:16:34.859+0000] {logging_mixin.py:190} INFO - [TikTok] 7439166215316114696: Downloading webpage
+[2025-05-16T07:16:35.563+0000] {logging_mixin.py:190} INFO - [info] 7439166215316114696: Downloading 1 format(s): bytevc1_720p_261430-1
+[2025-05-16T07:16:35.786+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7439166215316114696
+[2025-05-16T07:16:35.788+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.47MiB at  457.49KiB/s ETA 00:03
+[2025-05-16T07:16:35.789+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.47MiB at  825.43KiB/s ETA 00:01
+[2025-05-16T07:16:35.789+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    1.47MiB at    1.56MiB/s ETA 00:00
+[2025-05-16T07:16:35.790+0000] {logging_mixin.py:190} INFO - [download]   1.0% of    1.47MiB at    2.90MiB/s ETA 00:00
+[2025-05-16T07:16:35.792+0000] {logging_mixin.py:190} INFO - [download]   2.1% of    1.47MiB at    4.24MiB/s ETA 00:00
+[2025-05-16T07:16:35.851+0000] {logging_mixin.py:190} INFO - [download]   4.2% of    1.47MiB at  955.15KiB/s ETA 00:01
+[2025-05-16T07:16:35.916+0000] {logging_mixin.py:190} INFO - [download]   8.4% of    1.47MiB at  967.04KiB/s ETA 00:01
+[2025-05-16T07:16:35.966+0000] {logging_mixin.py:190} INFO - [download]  17.0% of    1.47MiB at    1.37MiB/s ETA 00:00
+[2025-05-16T07:16:36.045+0000] {logging_mixin.py:190} INFO - [download]  34.0% of    1.47MiB at    1.92MiB/s ETA 00:00
+[2025-05-16T07:16:36.111+0000] {logging_mixin.py:190} INFO - [download]  68.0% of    1.47MiB at    3.06MiB/s ETA 00:00
+[2025-05-16T07:16:36.157+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.47MiB at    3.95MiB/s ETA 00:00
+[2025-05-16T07:16:36.158+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.47MiB in 00:00:00 at 2.48MiB/s   
+[2025-05-16T07:16:36.479+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7439166215316114696.mp3
+[2025-05-16T07:16:37.045+0000] {logging_mixin.py:190} INFO - Deleting original file data/7439166215316114696 (pass -k to keep)
+[2025-05-16T07:16:37.048+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7439166215316114696
+[2025-05-16T07:16:37.054+0000] {logging_mixin.py:190} INFO - Downloaded video 7439166215316114696 to data/7439166215316114696.mp3
+[2025-05-16T07:16:37.176+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:16:37.176+0000] {logging_mixin.py:190} INFO - Downloading video from 7441075883340746002...
+[2025-05-16T07:16:37.208+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7441075883340746002
+[2025-05-16T07:16:37.208+0000] {logging_mixin.py:190} INFO - [TikTok] 7441075883340746002: Downloading webpage
+[2025-05-16T07:16:37.911+0000] {logging_mixin.py:190} INFO - [info] 7441075883340746002: Downloading 1 format(s): bytevc1_1080p_1064986-1
+[2025-05-16T07:16:38.134+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7441075883340746002
+[2025-05-16T07:16:38.136+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.90MiB at  405.99KiB/s ETA 00:04
+[2025-05-16T07:16:38.137+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.90MiB at  769.64KiB/s ETA 00:02
+[2025-05-16T07:16:38.138+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    1.90MiB at    1.40MiB/s ETA 00:01
+[2025-05-16T07:16:38.138+0000] {logging_mixin.py:190} INFO - [download]   0.8% of    1.90MiB at    2.60MiB/s ETA 00:00
+[2025-05-16T07:16:38.142+0000] {logging_mixin.py:190} INFO - [download]   1.6% of    1.90MiB at    3.12MiB/s ETA 00:00
+[2025-05-16T07:16:38.201+0000] {logging_mixin.py:190} INFO - [download]   3.2% of    1.90MiB at  926.76KiB/s ETA 00:02
+[2025-05-16T07:16:38.268+0000] {logging_mixin.py:190} INFO - [download]   6.5% of    1.90MiB at  942.25KiB/s ETA 00:01
+[2025-05-16T07:16:38.319+0000] {logging_mixin.py:190} INFO - [download]  13.1% of    1.90MiB at    1.34MiB/s ETA 00:01
+[2025-05-16T07:16:38.394+0000] {logging_mixin.py:190} INFO - [download]  26.2% of    1.90MiB at    1.91MiB/s ETA 00:00
+[2025-05-16T07:16:38.459+0000] {logging_mixin.py:190} INFO - [download]  52.5% of    1.90MiB at    3.06MiB/s ETA 00:00
+[2025-05-16T07:16:38.547+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.90MiB at    4.60MiB/s ETA 00:00
+[2025-05-16T07:16:38.548+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.90MiB in 00:00:00 at 3.01MiB/s   
+[2025-05-16T07:16:38.597+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7441075883340746002.mp3
+[2025-05-16T07:16:38.808+0000] {logging_mixin.py:190} INFO - Deleting original file data/7441075883340746002 (pass -k to keep)
+[2025-05-16T07:16:38.811+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7441075883340746002
+[2025-05-16T07:16:38.816+0000] {logging_mixin.py:190} INFO - Downloaded video 7441075883340746002 to data/7441075883340746002.mp3
+[2025-05-16T07:16:38.950+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:16:38.951+0000] {logging_mixin.py:190} INFO - Downloading video from 7466795079034785042...
+[2025-05-16T07:16:38.982+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7466795079034785042
+[2025-05-16T07:16:38.983+0000] {logging_mixin.py:190} INFO - [TikTok] 7466795079034785042: Downloading webpage
+[2025-05-16T07:16:39.631+0000] {logging_mixin.py:190} INFO - [info] 7466795079034785042: Downloading 1 format(s): bytevc1_1080p_437734-1
+[2025-05-16T07:16:39.860+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7466795079034785042
+[2025-05-16T07:16:39.861+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.32MiB at  Unknown B/s ETA Unknown
+[2025-05-16T07:16:39.861+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.32MiB at    2.34MiB/s ETA 00:00  
+[2025-05-16T07:16:39.862+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    1.32MiB at    3.88MiB/s ETA 00:00
+[2025-05-16T07:16:39.867+0000] {logging_mixin.py:190} INFO - [download]   1.1% of    1.32MiB at    2.11MiB/s ETA 00:00
+[2025-05-16T07:16:39.874+0000] {logging_mixin.py:190} INFO - [download]   2.3% of    1.32MiB at    2.16MiB/s ETA 00:00
+[2025-05-16T07:16:39.940+0000] {logging_mixin.py:190} INFO - [download]   4.6% of    1.32MiB at  788.87KiB/s ETA 00:01
+[2025-05-16T07:16:40.007+0000] {logging_mixin.py:190} INFO - [download]   9.4% of    1.32MiB at  864.21KiB/s ETA 00:01
+[2025-05-16T07:16:40.058+0000] {logging_mixin.py:190} INFO - [download]  18.8% of    1.32MiB at    1.26MiB/s ETA 00:00
+[2025-05-16T07:16:40.132+0000] {logging_mixin.py:190} INFO - [download]  37.7% of    1.32MiB at    1.83MiB/s ETA 00:00
+[2025-05-16T07:16:40.197+0000] {logging_mixin.py:190} INFO - [download]  75.4% of    1.32MiB at    2.97MiB/s ETA 00:00
+[2025-05-16T07:16:40.227+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.32MiB at    3.61MiB/s ETA 00:00
+[2025-05-16T07:16:40.227+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.32MiB in 00:00:00 at 2.23MiB/s   
+[2025-05-16T07:16:40.276+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7466795079034785042.mp3
+[2025-05-16T07:16:40.578+0000] {logging_mixin.py:190} INFO - Deleting original file data/7466795079034785042 (pass -k to keep)
+[2025-05-16T07:16:40.581+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7466795079034785042
+[2025-05-16T07:16:40.690+0000] {logging_mixin.py:190} INFO - Downloaded video 7466795079034785042 to data/7466795079034785042.mp3
+[2025-05-16T07:16:40.813+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:16:40.814+0000] {logging_mixin.py:190} INFO - Downloading video from 7445947525749558536...
+[2025-05-16T07:16:40.846+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7445947525749558536
+[2025-05-16T07:16:40.846+0000] {logging_mixin.py:190} INFO - [TikTok] 7445947525749558536: Downloading webpage
+[2025-05-16T07:16:41.572+0000] {logging_mixin.py:190} INFO - [info] 7445947525749558536: Downloading 1 format(s): bytevc1_1080p_383750-1
+[2025-05-16T07:16:41.798+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7445947525749558536
+[2025-05-16T07:16:41.800+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    4.69MiB at  635.60KiB/s ETA 00:07
+[2025-05-16T07:16:41.801+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    4.69MiB at  991.33KiB/s ETA 00:04
+[2025-05-16T07:16:41.802+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    4.69MiB at    1.69MiB/s ETA 00:02
+[2025-05-16T07:16:41.802+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    4.69MiB at    3.01MiB/s ETA 00:01
+[2025-05-16T07:16:41.805+0000] {logging_mixin.py:190} INFO - [download]   0.6% of    4.69MiB at    4.00MiB/s ETA 00:01
+[2025-05-16T07:16:41.863+0000] {logging_mixin.py:190} INFO - [download]   1.3% of    4.69MiB at  964.21KiB/s ETA 00:04
+[2025-05-16T07:16:41.929+0000] {logging_mixin.py:190} INFO - [download]   2.6% of    4.69MiB at  969.28KiB/s ETA 00:04
+[2025-05-16T07:16:41.977+0000] {logging_mixin.py:190} INFO - [download]   5.3% of    4.69MiB at    1.39MiB/s ETA 00:03
+[2025-05-16T07:16:42.054+0000] {logging_mixin.py:190} INFO - [download]  10.6% of    4.69MiB at    1.94MiB/s ETA 00:02
+[2025-05-16T07:16:42.117+0000] {logging_mixin.py:190} INFO - [download]  21.3% of    4.69MiB at    3.13MiB/s ETA 00:01
+[2025-05-16T07:16:42.217+0000] {logging_mixin.py:190} INFO - [download]  42.6% of    4.69MiB at    4.77MiB/s ETA 00:00
+[2025-05-16T07:16:42.491+0000] {logging_mixin.py:190} INFO - [download]  85.2% of    4.69MiB at    5.77MiB/s ETA 00:00
+[2025-05-16T07:16:42.552+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    4.69MiB at    6.22MiB/s ETA 00:00
+[2025-05-16T07:16:42.554+0000] {logging_mixin.py:190} INFO - [download] 100% of    4.69MiB in 00:00:00 at 4.79MiB/s   
+[2025-05-16T07:16:42.601+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7445947525749558536.mp3
+[2025-05-16T07:16:43.709+0000] {logging_mixin.py:190} INFO - Deleting original file data/7445947525749558536 (pass -k to keep)
+[2025-05-16T07:16:43.713+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7445947525749558536
+[2025-05-16T07:16:43.719+0000] {logging_mixin.py:190} INFO - Downloaded video 7445947525749558536 to data/7445947525749558536.mp3
+[2025-05-16T07:16:43.842+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:16:43.843+0000] {logging_mixin.py:190} INFO - Downloading video from 7451386098875518215...
+[2025-05-16T07:16:43.880+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7451386098875518215
+[2025-05-16T07:16:43.880+0000] {logging_mixin.py:190} INFO - [TikTok] 7451386098875518215: Downloading webpage
+[2025-05-16T07:16:42.115+0000] {logging_mixin.py:190} INFO - [info] 7451386098875518215: Downloading 1 format(s): bytevc1_1080p_2658863-1
+[2025-05-16T07:16:42.343+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7451386098875518215
+[2025-05-16T07:16:42.343+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   23.28MiB at  Unknown B/s ETA Unknown
+[2025-05-16T07:16:42.344+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   23.28MiB at    2.69MiB/s ETA 00:08  
+[2025-05-16T07:16:42.344+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   23.28MiB at    4.49MiB/s ETA 00:05
+[2025-05-16T07:16:42.351+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   23.28MiB at    1.86MiB/s ETA 00:12
+[2025-05-16T07:16:42.358+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   23.28MiB at    2.03MiB/s ETA 00:11
+[2025-05-16T07:16:42.414+0000] {logging_mixin.py:190} INFO - [download]   0.3% of   23.28MiB at  888.82KiB/s ETA 00:26
+[2025-05-16T07:16:42.480+0000] {logging_mixin.py:190} INFO - [download]   0.5% of   23.28MiB at  928.36KiB/s ETA 00:25
+[2025-05-16T07:16:42.527+0000] {logging_mixin.py:190} INFO - [download]   1.1% of   23.28MiB at    1.35MiB/s ETA 00:17
+[2025-05-16T07:16:42.603+0000] {logging_mixin.py:190} INFO - [download]   2.1% of   23.28MiB at    1.92MiB/s ETA 00:11
+[2025-05-16T07:16:42.667+0000] {logging_mixin.py:190} INFO - [download]   4.3% of   23.28MiB at    3.08MiB/s ETA 00:07
+[2025-05-16T07:16:42.861+0000] {logging_mixin.py:190} INFO - [download]   8.6% of   23.28MiB at    3.86MiB/s ETA 00:05
+[2025-05-16T07:16:43.039+0000] {logging_mixin.py:190} INFO - [download]  17.2% of   23.28MiB at    5.74MiB/s ETA 00:03
+[2025-05-16T07:16:43.399+0000] {logging_mixin.py:190} INFO - [download]  34.4% of   23.28MiB at    7.57MiB/s ETA 00:02
+[2025-05-16T07:16:43.849+0000] {logging_mixin.py:190} INFO - [download]  51.5% of   23.28MiB at    7.97MiB/s ETA 00:01
+[2025-05-16T07:16:44.239+0000] {logging_mixin.py:190} INFO - [download]  68.7% of   23.28MiB at    8.44MiB/s ETA 00:00
+[2025-05-16T07:16:44.628+0000] {logging_mixin.py:190} INFO - [download]  85.9% of   23.28MiB at    8.75MiB/s ETA 00:00
+[2025-05-16T07:16:44.944+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   23.28MiB at    8.95MiB/s ETA 00:00
+[2025-05-16T07:16:44.947+0000] {logging_mixin.py:190} INFO - [download] 100% of   23.28MiB in 00:00:02 at 8.23MiB/s   
+[2025-05-16T07:16:45.018+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7451386098875518215.mp3
+[2025-05-16T07:16:45.836+0000] {logging_mixin.py:190} INFO - Deleting original file data/7451386098875518215 (pass -k to keep)
+[2025-05-16T07:16:45.841+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7451386098875518215
+[2025-05-16T07:16:45.847+0000] {logging_mixin.py:190} INFO - Downloaded video 7451386098875518215 to data/7451386098875518215.mp3
+[2025-05-16T07:16:45.977+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:16:45.977+0000] {logging_mixin.py:190} INFO - Downloading video from 7466456064993627410...
+[2025-05-16T07:16:46.009+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7466456064993627410
+[2025-05-16T07:16:46.009+0000] {logging_mixin.py:190} INFO - [TikTok] 7466456064993627410: Downloading webpage
+[2025-05-16T07:16:46.710+0000] {logging_mixin.py:190} INFO - [info] 7466456064993627410: Downloading 1 format(s): bytevc1_1080p_1531707-1
+[2025-05-16T07:16:46.933+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7466456064993627410
+[2025-05-16T07:16:46.934+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    5.40MiB at  Unknown B/s ETA Unknown
+[2025-05-16T07:16:46.934+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    5.40MiB at    2.53MiB/s ETA 00:02  
+[2025-05-16T07:16:46.935+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    5.40MiB at    4.27MiB/s ETA 00:01
+[2025-05-16T07:16:46.936+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    5.40MiB at    4.77MiB/s ETA 00:01
+[2025-05-16T07:16:46.942+0000] {logging_mixin.py:190} INFO - [download]   0.6% of    5.40MiB at    3.37MiB/s ETA 00:01
+[2025-05-16T07:16:47.001+0000] {logging_mixin.py:190} INFO - [download]   1.1% of    5.40MiB at  938.46KiB/s ETA 00:05
+[2025-05-16T07:16:47.066+0000] {logging_mixin.py:190} INFO - [download]   2.3% of    5.40MiB at  954.40KiB/s ETA 00:05
+[2025-05-16T07:16:47.115+0000] {logging_mixin.py:190} INFO - [download]   4.6% of    5.40MiB at    1.37MiB/s ETA 00:03
+[2025-05-16T07:16:47.195+0000] {logging_mixin.py:190} INFO - [download]   9.2% of    5.40MiB at    1.91MiB/s ETA 00:02
+[2025-05-16T07:16:47.263+0000] {logging_mixin.py:190} INFO - [download]  18.5% of    5.40MiB at    3.03MiB/s ETA 00:01
+[2025-05-16T07:16:47.363+0000] {logging_mixin.py:190} INFO - [download]  37.0% of    5.40MiB at    4.65MiB/s ETA 00:00
+[2025-05-16T07:16:47.628+0000] {logging_mixin.py:190} INFO - [download]  74.0% of    5.40MiB at    5.76MiB/s ETA 00:00
+[2025-05-16T07:16:47.774+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    5.40MiB at    6.43MiB/s ETA 00:00
+[2025-05-16T07:16:47.775+0000] {logging_mixin.py:190} INFO - [download] 100% of    5.40MiB in 00:00:01 at 5.09MiB/s   
+[2025-05-16T07:16:47.897+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7466456064993627410.mp3
+[2025-05-16T07:16:48.270+0000] {logging_mixin.py:190} INFO - Deleting original file data/7466456064993627410 (pass -k to keep)
+[2025-05-16T07:16:48.273+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7466456064993627410
+[2025-05-16T07:16:48.279+0000] {logging_mixin.py:190} INFO - Downloaded video 7466456064993627410 to data/7466456064993627410.mp3
+[2025-05-16T07:16:48.410+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:16:48.410+0000] {logging_mixin.py:190} INFO - Downloading video from 7445284290176339218...
+[2025-05-16T07:16:48.442+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7445284290176339218
+[2025-05-16T07:16:48.443+0000] {logging_mixin.py:190} INFO - [TikTok] 7445284290176339218: Downloading webpage
+[2025-05-16T07:16:49.131+0000] {logging_mixin.py:190} INFO - [info] 7445284290176339218: Downloading 1 format(s): audio
+[2025-05-16T07:16:49.188+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7445284290176339218
+[2025-05-16T07:16:49.188+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  949.56KiB at  Unknown B/s ETA Unknown
+[2025-05-16T07:16:49.189+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  949.56KiB at    2.53MiB/s ETA 00:00  
+[2025-05-16T07:16:49.189+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  949.56KiB at    4.15MiB/s ETA 00:00
+[2025-05-16T07:16:49.190+0000] {logging_mixin.py:190} INFO - [download]   1.6% of  949.56KiB at    7.05MiB/s ETA 00:00
+[2025-05-16T07:16:49.190+0000] {logging_mixin.py:190} INFO - [download]   3.3% of  949.56KiB at   12.02MiB/s ETA 00:00
+[2025-05-16T07:16:49.192+0000] {logging_mixin.py:190} INFO - [download]   6.6% of  949.56KiB at   14.24MiB/s ETA 00:00
+[2025-05-16T07:16:49.198+0000] {logging_mixin.py:190} INFO - [download]  13.4% of  949.56KiB at   12.32MiB/s ETA 00:00
+[2025-05-16T07:16:49.210+0000] {logging_mixin.py:190} INFO - [download]  26.9% of  949.56KiB at   11.15MiB/s ETA 00:00
+[2025-05-16T07:16:49.234+0000] {logging_mixin.py:190} INFO - [download]  53.8% of  949.56KiB at   10.74MiB/s ETA 00:00
+[2025-05-16T07:16:49.275+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  949.56KiB at   10.57MiB/s ETA 00:00
+[2025-05-16T07:16:49.276+0000] {logging_mixin.py:190} INFO - [download] 100% of  949.56KiB in 00:00:00 at 6.44MiB/s   
+[2025-05-16T07:16:49.321+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7445284290176339218.mp3
+[2025-05-16T07:16:49.981+0000] {logging_mixin.py:190} INFO - Deleting original file data/7445284290176339218 (pass -k to keep)
+[2025-05-16T07:16:49.982+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7445284290176339218
+[2025-05-16T07:16:49.988+0000] {logging_mixin.py:190} INFO - Downloaded video 7445284290176339218 to data/7445284290176339218.mp3
+[2025-05-16T07:16:50.119+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:16:50.120+0000] {logging_mixin.py:190} INFO - Downloading video from 7452385446581046535...
+[2025-05-16T07:16:50.150+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7452385446581046535
+[2025-05-16T07:16:50.151+0000] {logging_mixin.py:190} INFO - [TikTok] 7452385446581046535: Downloading webpage
+[2025-05-16T07:16:50.896+0000] {logging_mixin.py:190} INFO - [info] 7452385446581046535: Downloading 1 format(s): bytevc1_1080p_969293-1
+[2025-05-16T07:16:51.123+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7452385446581046535
+[2025-05-16T07:16:51.124+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    5.73MiB at  Unknown B/s ETA Unknown
+[2025-05-16T07:16:51.124+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    5.73MiB at    1.83MiB/s ETA 00:03  
+[2025-05-16T07:16:51.125+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    5.73MiB at    3.12MiB/s ETA 00:01
+[2025-05-16T07:16:51.130+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    5.73MiB at    1.99MiB/s ETA 00:02
+[2025-05-16T07:16:51.137+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    5.73MiB at    2.12MiB/s ETA 00:02
+[2025-05-16T07:16:51.195+0000] {logging_mixin.py:190} INFO - [download]   1.1% of    5.73MiB at  879.61KiB/s ETA 00:06
+[2025-05-16T07:16:51.260+0000] {logging_mixin.py:190} INFO - [download]   2.2% of    5.73MiB at  923.82KiB/s ETA 00:06
+[2025-05-16T07:16:51.308+0000] {logging_mixin.py:190} INFO - [download]   4.3% of    5.73MiB at    1.34MiB/s ETA 00:04
+[2025-05-16T07:16:51.385+0000] {logging_mixin.py:190} INFO - [download]   8.7% of    5.73MiB at    1.90MiB/s ETA 00:02
+[2025-05-16T07:16:51.450+0000] {logging_mixin.py:190} INFO - [download]  17.4% of    5.73MiB at    3.05MiB/s ETA 00:01
+[2025-05-16T07:16:51.663+0000] {logging_mixin.py:190} INFO - [download]  34.9% of    5.73MiB at    3.70MiB/s ETA 00:01
+[2025-05-16T07:16:51.771+0000] {logging_mixin.py:190} INFO - [download]  69.8% of    5.73MiB at    6.17MiB/s ETA 00:00
+[2025-05-16T07:16:52.014+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    5.73MiB at    6.43MiB/s ETA 00:00
+[2025-05-16T07:16:52.031+0000] {logging_mixin.py:190} INFO - [download] 100% of    5.73MiB in 00:00:01 at 5.06MiB/s   
+[2025-05-16T07:16:52.083+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7452385446581046535.mp3
+[2025-05-16T07:16:52.669+0000] {logging_mixin.py:190} INFO - Deleting original file data/7452385446581046535 (pass -k to keep)
+[2025-05-16T07:16:52.673+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7452385446581046535
+[2025-05-16T07:16:52.685+0000] {logging_mixin.py:190} INFO - Downloaded video 7452385446581046535 to data/7452385446581046535.mp3
+[2025-05-16T07:16:52.836+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:16:52.836+0000] {logging_mixin.py:190} INFO - Downloading video from 7454193652458425608...
+[2025-05-16T07:16:52.869+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7454193652458425608
+[2025-05-16T07:16:52.870+0000] {logging_mixin.py:190} INFO - [TikTok] 7454193652458425608: Downloading webpage
+[2025-05-16T07:16:53.628+0000] {logging_mixin.py:190} INFO - [info] 7454193652458425608: Downloading 1 format(s): audio
+[2025-05-16T07:16:53.629+0000] {logging_mixin.py:190} INFO - [download] data/7454193652458425608.mp3 has already been downloaded
+[2025-05-16T07:16:53.678+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Not converting audio data/7454193652458425608.mp3; file is already in target format mp3
+[2025-05-16T07:16:53.680+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7454193652458425608
+[2025-05-16T07:16:53.684+0000] {logging_mixin.py:190} INFO - Downloaded video 7454193652458425608 to data/7454193652458425608.mp3
+[2025-05-16T07:16:53.807+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:16:53.808+0000] {logging_mixin.py:190} INFO - Downloading video from 7437713010346478855...
+[2025-05-16T07:16:53.841+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7437713010346478855
+[2025-05-16T07:16:53.842+0000] {logging_mixin.py:190} INFO - [TikTok] 7437713010346478855: Downloading webpage
+[2025-05-16T07:16:54.588+0000] {logging_mixin.py:190} INFO - [info] 7437713010346478855: Downloading 1 format(s): bytevc1_540p_686099-1
+[2025-05-16T07:16:54.812+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7437713010346478855
+[2025-05-16T07:16:54.813+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   12.33MiB at  444.55KiB/s ETA 00:28
+[2025-05-16T07:16:54.813+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   12.33MiB at    1.02MiB/s ETA 00:12
+[2025-05-16T07:16:54.814+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   12.33MiB at    2.09MiB/s ETA 00:05
+[2025-05-16T07:16:54.814+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   12.33MiB at    3.98MiB/s ETA 00:03
+[2025-05-16T07:16:54.819+0000] {logging_mixin.py:190} INFO - [download]   0.2% of   12.33MiB at    3.71MiB/s ETA 00:03
+[2025-05-16T07:16:54.887+0000] {logging_mixin.py:190} INFO - [download]   0.5% of   12.33MiB at  831.36KiB/s ETA 00:15
+[2025-05-16T07:16:54.953+0000] {logging_mixin.py:190} INFO - [download]   1.0% of   12.33MiB at  894.63KiB/s ETA 00:13
+[2025-05-16T07:16:55.003+0000] {logging_mixin.py:190} INFO - [download]   2.0% of   12.33MiB at    1.29MiB/s ETA 00:09
+[2025-05-16T07:16:55.083+0000] {logging_mixin.py:190} INFO - [download]   4.0% of   12.33MiB at    1.83MiB/s ETA 00:06
+[2025-05-16T07:16:55.151+0000] {logging_mixin.py:190} INFO - [download]   8.1% of   12.33MiB at    2.94MiB/s ETA 00:03
+[2025-05-16T07:16:55.248+0000] {logging_mixin.py:190} INFO - [download]  16.2% of   12.33MiB at    4.57MiB/s ETA 00:02
+[2025-05-16T07:16:55.518+0000] {logging_mixin.py:190} INFO - [download]  32.4% of   12.33MiB at    5.66MiB/s ETA 00:01
+[2025-05-16T07:16:55.878+0000] {logging_mixin.py:190} INFO - [download]  64.9% of   12.33MiB at    7.49MiB/s ETA 00:00
+[2025-05-16T07:16:56.270+0000] {logging_mixin.py:190} INFO - [download]  97.3% of   12.33MiB at    8.22MiB/s ETA 00:00
+[2025-05-16T07:16:56.299+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   12.33MiB at    8.29MiB/s ETA 00:00
+[2025-05-16T07:16:56.301+0000] {logging_mixin.py:190} INFO - [download] 100% of   12.33MiB in 00:00:01 at 7.21MiB/s   
+[2025-05-16T07:16:56.349+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7437713010346478855.mp3
+[2025-05-16T07:16:57.427+0000] {logging_mixin.py:190} INFO - Deleting original file data/7437713010346478855 (pass -k to keep)
+[2025-05-16T07:16:57.430+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7437713010346478855
+[2025-05-16T07:16:57.438+0000] {logging_mixin.py:190} INFO - Downloaded video 7437713010346478855 to data/7437713010346478855.mp3
+[2025-05-16T07:16:57.571+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:16:57.572+0000] {logging_mixin.py:190} INFO - Downloading video from 7440877607345720583...
+[2025-05-16T07:16:57.601+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7440877607345720583
+[2025-05-16T07:16:57.602+0000] {logging_mixin.py:190} INFO - [TikTok] 7440877607345720583: Downloading webpage
+[2025-05-16T07:16:58.363+0000] {logging_mixin.py:190} INFO - [info] 7440877607345720583: Downloading 1 format(s): bytevc1_1080p_1357582-1
+[2025-05-16T07:16:58.591+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7440877607345720583
+[2025-05-16T07:16:58.592+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.87MiB at  176.65KiB/s ETA 00:10
+[2025-05-16T07:16:58.592+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.87MiB at  483.03KiB/s ETA 00:03
+[2025-05-16T07:16:58.593+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    1.87MiB at    1.03MiB/s ETA 00:01
+[2025-05-16T07:16:58.594+0000] {logging_mixin.py:190} INFO - [download]   0.8% of    1.87MiB at    1.89MiB/s ETA 00:00
+[2025-05-16T07:16:58.603+0000] {logging_mixin.py:190} INFO - [download]   1.6% of    1.87MiB at    1.76MiB/s ETA 00:01
+[2025-05-16T07:16:58.662+0000] {logging_mixin.py:190} INFO - [download]   3.3% of    1.87MiB at  832.79KiB/s ETA 00:02
+[2025-05-16T07:16:58.728+0000] {logging_mixin.py:190} INFO - [download]   6.6% of    1.87MiB at  896.86KiB/s ETA 00:01
+[2025-05-16T07:16:58.777+0000] {logging_mixin.py:190} INFO - [download]  13.3% of    1.87MiB at    1.31MiB/s ETA 00:01
+[2025-05-16T07:16:58.854+0000] {logging_mixin.py:190} INFO - [download]  26.7% of    1.87MiB at    1.86MiB/s ETA 00:00
+[2025-05-16T07:16:58.921+0000] {logging_mixin.py:190} INFO - [download]  53.5% of    1.87MiB at    2.98MiB/s ETA 00:00
+[2025-05-16T07:16:59.005+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.87MiB at    4.46MiB/s ETA 00:00
+[2025-05-16T07:16:59.006+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.87MiB in 00:00:00 at 2.92MiB/s   
+[2025-05-16T07:16:59.055+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7440877607345720583.mp3
+[2025-05-16T07:16:59.226+0000] {logging_mixin.py:190} INFO - Deleting original file data/7440877607345720583 (pass -k to keep)
+[2025-05-16T07:16:59.229+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7440877607345720583
+[2025-05-16T07:16:59.235+0000] {logging_mixin.py:190} INFO - Downloaded video 7440877607345720583 to data/7440877607345720583.mp3
+[2025-05-16T07:16:59.358+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:16:59.359+0000] {logging_mixin.py:190} INFO - Downloading video from 7446787050801532167...
+[2025-05-16T07:16:59.392+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7446787050801532167
+[2025-05-16T07:16:59.392+0000] {logging_mixin.py:190} INFO - [TikTok] 7446787050801532167: Downloading webpage
+[2025-05-16T07:17:00.104+0000] {logging_mixin.py:190} INFO - [info] 7446787050801532167: Downloading 1 format(s): bytevc1_1080p_690408-1
+[2025-05-16T07:17:00.328+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7446787050801532167
+[2025-05-16T07:17:00.328+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  966.76KiB at  409.16KiB/s ETA 00:02
+[2025-05-16T07:17:00.329+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  966.76KiB at  991.17KiB/s ETA 00:00
+[2025-05-16T07:17:00.329+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  966.76KiB at    1.97MiB/s ETA 00:00
+[2025-05-16T07:17:00.332+0000] {logging_mixin.py:190} INFO - [download]   1.6% of  966.76KiB at    2.46MiB/s ETA 00:00
+[2025-05-16T07:17:00.338+0000] {logging_mixin.py:190} INFO - [download]   3.2% of  966.76KiB at    2.48MiB/s ETA 00:00
+[2025-05-16T07:17:00.400+0000] {logging_mixin.py:190} INFO - [download]   6.5% of  966.76KiB at  849.62KiB/s ETA 00:01
+[2025-05-16T07:17:00.468+0000] {logging_mixin.py:190} INFO - [download]  13.1% of  966.76KiB at  892.20KiB/s ETA 00:00
+[2025-05-16T07:17:00.518+0000] {logging_mixin.py:190} INFO - [download]  26.4% of  966.76KiB at    1.30MiB/s ETA 00:00
+[2025-05-16T07:17:00.594+0000] {logging_mixin.py:190} INFO - [download]  52.9% of  966.76KiB at    1.86MiB/s ETA 00:00
+[2025-05-16T07:17:00.654+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  966.76KiB at    2.87MiB/s ETA 00:00
+[2025-05-16T07:17:00.655+0000] {logging_mixin.py:190} INFO - [download] 100% of  966.76KiB in 00:00:00 at 1.72MiB/s   
+[2025-05-16T07:17:00.702+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7446787050801532167.mp3
+[2025-05-16T07:17:00.865+0000] {logging_mixin.py:190} INFO - Deleting original file data/7446787050801532167 (pass -k to keep)
+[2025-05-16T07:17:00.868+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7446787050801532167
+[2025-05-16T07:17:00.872+0000] {logging_mixin.py:190} INFO - Downloaded video 7446787050801532167 to data/7446787050801532167.mp3
+[2025-05-16T07:17:00.991+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:17:00.992+0000] {logging_mixin.py:190} INFO - Downloading video from 7441232482713767186...
+[2025-05-16T07:17:01.025+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7441232482713767186
+[2025-05-16T07:17:01.025+0000] {logging_mixin.py:190} INFO - [TikTok] 7441232482713767186: Downloading webpage
+[2025-05-16T07:17:01.786+0000] {logging_mixin.py:190} INFO - [info] 7441232482713767186: Downloading 1 format(s): bytevc1_1080p_1109875-1
+[2025-05-16T07:17:02.015+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7441232482713767186
+[2025-05-16T07:17:02.016+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    5.18MiB at  563.07KiB/s ETA 00:09
+[2025-05-16T07:17:02.017+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    5.18MiB at 1016.23KiB/s ETA 00:05
+[2025-05-16T07:17:02.018+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    5.18MiB at    1.90MiB/s ETA 00:02
+[2025-05-16T07:17:02.018+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    5.18MiB at    3.50MiB/s ETA 00:01
+[2025-05-16T07:17:02.023+0000] {logging_mixin.py:190} INFO - [download]   0.6% of    5.18MiB at    3.32MiB/s ETA 00:01
+[2025-05-16T07:17:02.084+0000] {logging_mixin.py:190} INFO - [download]   1.2% of    5.18MiB at  910.15KiB/s ETA 00:05
+[2025-05-16T07:17:02.152+0000] {logging_mixin.py:190} INFO - [download]   2.4% of    5.18MiB at  929.65KiB/s ETA 00:05
+[2025-05-16T07:17:02.202+0000] {logging_mixin.py:190} INFO - [download]   4.8% of    5.18MiB at    1.32MiB/s ETA 00:03
+[2025-05-16T07:17:02.280+0000] {logging_mixin.py:190} INFO - [download]   9.6% of    5.18MiB at    1.87MiB/s ETA 00:02
+[2025-05-16T07:17:02.347+0000] {logging_mixin.py:190} INFO - [download]  19.3% of    5.18MiB at    3.00MiB/s ETA 00:01
+[2025-05-16T07:17:02.539+0000] {logging_mixin.py:190} INFO - [download]  38.6% of    5.18MiB at    3.81MiB/s ETA 00:00
+[2025-05-16T07:17:02.711+0000] {logging_mixin.py:190} INFO - [download]  77.2% of    5.18MiB at    5.74MiB/s ETA 00:00
+[2025-05-16T07:17:02.769+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    5.18MiB at    6.86MiB/s ETA 00:00
+[2025-05-16T07:17:02.770+0000] {logging_mixin.py:190} INFO - [download] 100% of    5.18MiB in 00:00:00 at 5.28MiB/s   
+[2025-05-16T07:17:02.816+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7441232482713767186.mp3
+[2025-05-16T07:17:03.244+0000] {logging_mixin.py:190} INFO - Deleting original file data/7441232482713767186 (pass -k to keep)
+[2025-05-16T07:17:03.247+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7441232482713767186
+[2025-05-16T07:17:03.254+0000] {logging_mixin.py:190} INFO - Downloaded video 7441232482713767186 to data/7441232482713767186.mp3
+[2025-05-16T07:17:03.373+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:17:03.373+0000] {logging_mixin.py:190} INFO - Downloading video from 7465698139597589768...
+[2025-05-16T07:17:03.409+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7465698139597589768
+[2025-05-16T07:17:03.409+0000] {logging_mixin.py:190} INFO - [TikTok] 7465698139597589768: Downloading webpage
+[2025-05-16T07:17:04.179+0000] {logging_mixin.py:190} INFO - [info] 7465698139597589768: Downloading 1 format(s): bytevc1_1080p_476723-1
+[2025-05-16T07:17:04.404+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7465698139597589768
+[2025-05-16T07:17:04.405+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.93MiB at  Unknown B/s ETA Unknown
+[2025-05-16T07:17:04.405+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.93MiB at    2.40MiB/s ETA 00:00  
+[2025-05-16T07:17:04.406+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    1.93MiB at    4.11MiB/s ETA 00:00
+[2025-05-16T07:17:04.408+0000] {logging_mixin.py:190} INFO - [download]   0.8% of    1.93MiB at    4.15MiB/s ETA 00:00
+[2025-05-16T07:17:04.414+0000] {logging_mixin.py:190} INFO - [download]   1.6% of    1.93MiB at    3.14MiB/s ETA 00:00
+[2025-05-16T07:17:04.470+0000] {logging_mixin.py:190} INFO - [download]   3.2% of    1.93MiB at  960.61KiB/s ETA 00:01
+[2025-05-16T07:17:04.537+0000] {logging_mixin.py:190} INFO - [download]   6.4% of    1.93MiB at  958.03KiB/s ETA 00:01
+[2025-05-16T07:17:04.585+0000] {logging_mixin.py:190} INFO - [download]  12.9% of    1.93MiB at    1.37MiB/s ETA 00:01
+[2025-05-16T07:17:04.668+0000] {logging_mixin.py:190} INFO - [download]  25.9% of    1.93MiB at    1.89MiB/s ETA 00:00
+[2025-05-16T07:17:04.737+0000] {logging_mixin.py:190} INFO - [download]  51.9% of    1.93MiB at    3.00MiB/s ETA 00:00
+[2025-05-16T07:17:04.827+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.93MiB at    4.55MiB/s ETA 00:00
+[2025-05-16T07:17:04.828+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.93MiB in 00:00:00 at 2.98MiB/s   
+[2025-05-16T07:17:04.878+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7465698139597589768.mp3
+[2025-05-16T07:17:05.270+0000] {logging_mixin.py:190} INFO - Deleting original file data/7465698139597589768 (pass -k to keep)
+[2025-05-16T07:17:05.273+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7465698139597589768
+[2025-05-16T07:17:05.279+0000] {logging_mixin.py:190} INFO - Downloaded video 7465698139597589768 to data/7465698139597589768.mp3
+[2025-05-16T07:17:05.404+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:17:05.404+0000] {logging_mixin.py:190} INFO - Downloading video from 7439215028269485320...
+[2025-05-16T07:17:05.442+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7439215028269485320
+[2025-05-16T07:17:05.442+0000] {logging_mixin.py:190} INFO - [TikTok] 7439215028269485320: Downloading webpage
+[2025-05-16T07:17:06.124+0000] {logging_mixin.py:190} INFO - [info] 7439215028269485320: Downloading 1 format(s): bytevc1_1080p_1134489-1
+[2025-05-16T07:17:06.352+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7439215028269485320
+[2025-05-16T07:17:06.352+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    3.04MiB at  Unknown B/s ETA Unknown
+[2025-05-16T07:17:06.353+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    3.04MiB at    2.40MiB/s ETA 00:01  
+[2025-05-16T07:17:06.353+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    3.04MiB at    3.97MiB/s ETA 00:00
+[2025-05-16T07:17:06.355+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    3.04MiB at    4.44MiB/s ETA 00:00
+[2025-05-16T07:17:06.361+0000] {logging_mixin.py:190} INFO - [download]   1.0% of    3.04MiB at    3.16MiB/s ETA 00:00
+[2025-05-16T07:17:06.420+0000] {logging_mixin.py:190} INFO - [download]   2.0% of    3.04MiB at  920.01KiB/s ETA 00:03
+[2025-05-16T07:17:06.489+0000] {logging_mixin.py:190} INFO - [download]   4.1% of    3.04MiB at  928.07KiB/s ETA 00:03
+[2025-05-16T07:17:06.537+0000] {logging_mixin.py:190} INFO - [download]   8.2% of    3.04MiB at    1.34MiB/s ETA 00:02
+[2025-05-16T07:17:06.615+0000] {logging_mixin.py:190} INFO - [download]  16.4% of    3.04MiB at    1.90MiB/s ETA 00:01
+[2025-05-16T07:17:06.680+0000] {logging_mixin.py:190} INFO - [download]  32.9% of    3.04MiB at    3.04MiB/s ETA 00:00
+[2025-05-16T07:17:06.844+0000] {logging_mixin.py:190} INFO - [download]  65.8% of    3.04MiB at    4.06MiB/s ETA 00:00
+[2025-05-16T07:17:06.908+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    3.04MiB at    5.47MiB/s ETA 00:00
+[2025-05-16T07:17:06.909+0000] {logging_mixin.py:190} INFO - [download] 100% of    3.04MiB in 00:00:00 at 3.89MiB/s   
+[2025-05-16T07:17:06.954+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7439215028269485320.mp3
+[2025-05-16T07:17:07.218+0000] {logging_mixin.py:190} INFO - Deleting original file data/7439215028269485320 (pass -k to keep)
+[2025-05-16T07:17:07.221+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7439215028269485320
+[2025-05-16T07:17:07.227+0000] {logging_mixin.py:190} INFO - Downloaded video 7439215028269485320 to data/7439215028269485320.mp3
+[2025-05-16T07:17:07.429+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:17:07.429+0000] {logging_mixin.py:190} INFO - Downloading video from 7454042656142920968...
+[2025-05-16T07:17:07.460+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7454042656142920968
+[2025-05-16T07:17:07.461+0000] {logging_mixin.py:190} INFO - [TikTok] 7454042656142920968: Downloading webpage
+[2025-05-16T07:17:08.214+0000] {logging_mixin.py:190} INFO - [info] 7454042656142920968: Downloading 1 format(s): bytevc1_1080p_1068009-1
+[2025-05-16T07:17:08.437+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7454042656142920968
+[2025-05-16T07:17:08.439+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   19.43MiB at  721.79KiB/s ETA 00:27
+[2025-05-16T07:17:08.439+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   19.43MiB at    1.09MiB/s ETA 00:17
+[2025-05-16T07:17:08.440+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   19.43MiB at    2.01MiB/s ETA 00:09
+[2025-05-16T07:17:08.443+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   19.43MiB at    2.30MiB/s ETA 00:08
+[2025-05-16T07:17:08.450+0000] {logging_mixin.py:190} INFO - [download]   0.2% of   19.43MiB at    2.32MiB/s ETA 00:08
+[2025-05-16T07:17:08.509+0000] {logging_mixin.py:190} INFO - [download]   0.3% of   19.43MiB at  869.53KiB/s ETA 00:22
+[2025-05-16T07:17:08.575+0000] {logging_mixin.py:190} INFO - [download]   0.6% of   19.43MiB at  919.96KiB/s ETA 00:21
+[2025-05-16T07:17:08.624+0000] {logging_mixin.py:190} INFO - [download]   1.3% of   19.43MiB at    1.33MiB/s ETA 00:14
+[2025-05-16T07:17:08.697+0000] {logging_mixin.py:190} INFO - [download]   2.6% of   19.43MiB at    1.91MiB/s ETA 00:09
+[2025-05-16T07:17:08.761+0000] {logging_mixin.py:190} INFO - [download]   5.1% of   19.43MiB at    3.08MiB/s ETA 00:05
+[2025-05-16T07:17:09.053+0000] {logging_mixin.py:190} INFO - [download]  10.3% of   19.43MiB at    3.24MiB/s ETA 00:05
+[2025-05-16T07:17:09.123+0000] {logging_mixin.py:190} INFO - [download]  20.6% of   19.43MiB at    5.83MiB/s ETA 00:02
+[2025-05-16T07:17:09.484+0000] {logging_mixin.py:190} INFO - [download]  41.2% of   19.43MiB at    7.64MiB/s ETA 00:01
+[2025-05-16T07:17:09.871+0000] {logging_mixin.py:190} INFO - [download]  61.8% of   19.43MiB at    8.37MiB/s ETA 00:00
+[2025-05-16T07:17:10.260+0000] {logging_mixin.py:190} INFO - [download]  82.3% of   19.43MiB at    8.77MiB/s ETA 00:00
+[2025-05-16T07:17:10.593+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   19.43MiB at    9.01MiB/s ETA 00:00
+[2025-05-16T07:17:10.595+0000] {logging_mixin.py:190} INFO - [download] 100% of   19.43MiB in 00:00:02 at 8.17MiB/s   
+[2025-05-16T07:17:10.643+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7454042656142920968.mp3
+[2025-05-16T07:17:12.352+0000] {logging_mixin.py:190} INFO - Deleting original file data/7454042656142920968 (pass -k to keep)
+[2025-05-16T07:17:12.356+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7454042656142920968
+[2025-05-16T07:17:12.361+0000] {logging_mixin.py:190} INFO - Downloaded video 7454042656142920968 to data/7454042656142920968.mp3
+[2025-05-16T07:17:12.480+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:17:12.480+0000] {logging_mixin.py:190} INFO - Downloading video from 7451374739890720008...
+[2025-05-16T07:17:12.511+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7451374739890720008
+[2025-05-16T07:17:12.511+0000] {logging_mixin.py:190} INFO - [TikTok] 7451374739890720008: Downloading webpage
+[2025-05-16T07:17:13.246+0000] {logging_mixin.py:190} INFO - [info] 7451374739890720008: Downloading 1 format(s): bytevc1_1080p_1326657-1
+[2025-05-16T07:17:13.465+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7451374739890720008
+[2025-05-16T07:17:13.466+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   15.11MiB at  996.98KiB/s ETA 00:15
+[2025-05-16T07:17:13.467+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   15.11MiB at    1.52MiB/s ETA 00:09
+[2025-05-16T07:17:13.468+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   15.11MiB at    2.64MiB/s ETA 00:05
+[2025-05-16T07:17:13.472+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   15.11MiB at    2.07MiB/s ETA 00:07
+[2025-05-16T07:17:13.479+0000] {logging_mixin.py:190} INFO - [download]   0.2% of   15.11MiB at    2.22MiB/s ETA 00:06
+[2025-05-16T07:17:13.538+0000] {logging_mixin.py:190} INFO - [download]   0.4% of   15.11MiB at  862.40KiB/s ETA 00:17
+[2025-05-16T07:17:13.604+0000] {logging_mixin.py:190} INFO - [download]   0.8% of   15.11MiB at  913.41KiB/s ETA 00:16
+[2025-05-16T07:17:13.653+0000] {logging_mixin.py:190} INFO - [download]   1.6% of   15.11MiB at    1.33MiB/s ETA 00:11
+[2025-05-16T07:17:13.729+0000] {logging_mixin.py:190} INFO - [download]   3.3% of   15.11MiB at    1.89MiB/s ETA 00:07
+[2025-05-16T07:17:13.794+0000] {logging_mixin.py:190} INFO - [download]   6.6% of   15.11MiB at    3.04MiB/s ETA 00:04
+[2025-05-16T07:17:13.990+0000] {logging_mixin.py:190} INFO - [download]  13.2% of   15.11MiB at    3.81MiB/s ETA 00:03
+[2025-05-16T07:17:11.690+0000] {logging_mixin.py:190} INFO - [download]  26.5% of   15.11MiB at  Unknown B/s ETA Unknown
+[2025-05-16T07:17:12.051+0000] {logging_mixin.py:190} INFO - [download]  52.9% of   15.11MiB at  Unknown B/s ETA Unknown
+[2025-05-16T07:17:12.440+0000] {logging_mixin.py:190} INFO - [download]  79.4% of   15.11MiB at  Unknown B/s ETA Unknown
+[2025-05-16T07:17:12.768+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   15.11MiB at  Unknown B/s ETA Unknown
+[2025-05-16T07:17:12.770+0000] {logging_mixin.py:190} INFO - [download] 100% of   15.11MiB in -1:59:59 at N/A/s         
+[2025-05-16T07:17:12.822+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7451374739890720008.mp3
+[2025-05-16T07:17:13.797+0000] {logging_mixin.py:190} INFO - Deleting original file data/7451374739890720008 (pass -k to keep)
+[2025-05-16T07:17:13.801+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7451374739890720008
+[2025-05-16T07:17:13.806+0000] {logging_mixin.py:190} INFO - Downloaded video 7451374739890720008 to data/7451374739890720008.mp3
+[2025-05-16T07:17:13.954+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:17:13.954+0000] {logging_mixin.py:190} INFO - Downloading video from 7444538584016751880...
+[2025-05-16T07:17:13.985+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7444538584016751880
+[2025-05-16T07:17:13.985+0000] {logging_mixin.py:190} INFO - [TikTok] 7444538584016751880: Downloading webpage
+[2025-05-16T07:17:14.646+0000] {logging_mixin.py:190} INFO - [info] 7444538584016751880: Downloading 1 format(s): bytevc1_1080p_369639-1
+[2025-05-16T07:17:14.870+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7444538584016751880
+[2025-05-16T07:17:14.870+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    6.39MiB at  333.78KiB/s ETA 00:19
+[2025-05-16T07:17:14.871+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    6.39MiB at  831.54KiB/s ETA 00:07
+[2025-05-16T07:17:14.871+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    6.39MiB at    1.70MiB/s ETA 00:03
+[2025-05-16T07:17:14.872+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    6.39MiB at    3.33MiB/s ETA 00:01
+[2025-05-16T07:17:14.876+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    6.39MiB at    3.48MiB/s ETA 00:01
+[2025-05-16T07:17:14.933+0000] {logging_mixin.py:190} INFO - [download]   1.0% of    6.39MiB at  959.93KiB/s ETA 00:06
+[2025-05-16T07:17:15.000+0000] {logging_mixin.py:190} INFO - [download]   1.9% of    6.39MiB at  955.92KiB/s ETA 00:06
+[2025-05-16T07:17:15.053+0000] {logging_mixin.py:190} INFO - [download]   3.9% of    6.39MiB at    1.34MiB/s ETA 00:04
+[2025-05-16T07:17:15.127+0000] {logging_mixin.py:190} INFO - [download]   7.8% of    6.39MiB at    1.92MiB/s ETA 00:03
+[2025-05-16T07:17:15.196+0000] {logging_mixin.py:190} INFO - [download]  15.6% of    6.39MiB at    3.04MiB/s ETA 00:01
+[2025-05-16T07:17:15.390+0000] {logging_mixin.py:190} INFO - [download]  31.3% of    6.39MiB at    3.82MiB/s ETA 00:01
+[2025-05-16T07:17:15.556+0000] {logging_mixin.py:190} INFO - [download]  62.6% of    6.39MiB at    5.81MiB/s ETA 00:00
+[2025-05-16T07:17:15.818+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    6.39MiB at    6.72MiB/s ETA 00:00
+[2025-05-16T07:17:15.819+0000] {logging_mixin.py:190} INFO - [download] 100% of    6.39MiB in 00:00:01 at 5.46MiB/s   
+[2025-05-16T07:17:15.873+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7444538584016751880.mp3
+[2025-05-16T07:17:17.352+0000] {logging_mixin.py:190} INFO - Deleting original file data/7444538584016751880 (pass -k to keep)
+[2025-05-16T07:17:17.355+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7444538584016751880
+[2025-05-16T07:17:17.360+0000] {logging_mixin.py:190} INFO - Downloaded video 7444538584016751880 to data/7444538584016751880.mp3
+[2025-05-16T07:17:17.487+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:17:17.487+0000] {logging_mixin.py:190} INFO - Downloading video from 7451378763993992456...
+[2025-05-16T07:17:17.519+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7451378763993992456
+[2025-05-16T07:17:17.519+0000] {logging_mixin.py:190} INFO - [TikTok] 7451378763993992456: Downloading webpage
+[2025-05-16T07:17:18.246+0000] {logging_mixin.py:190} INFO - [info] 7451378763993992456: Downloading 1 format(s): bytevc1_1080p_1467104-1
+[2025-05-16T07:17:18.472+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7451378763993992456
+[2025-05-16T07:17:18.473+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   10.91MiB at  750.86KiB/s ETA 00:15
+[2025-05-16T07:17:18.474+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   10.91MiB at    1.33MiB/s ETA 00:08
+[2025-05-16T07:17:18.474+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   10.91MiB at    2.42MiB/s ETA 00:04
+[2025-05-16T07:17:18.475+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   10.91MiB at    4.30MiB/s ETA 00:02
+[2025-05-16T07:17:18.481+0000] {logging_mixin.py:190} INFO - [download]   0.3% of   10.91MiB at    3.37MiB/s ETA 00:03
+[2025-05-16T07:17:18.545+0000] {logging_mixin.py:190} INFO - [download]   0.6% of   10.91MiB at  858.22KiB/s ETA 00:12
+[2025-05-16T07:17:18.609+0000] {logging_mixin.py:190} INFO - [download]   1.1% of   10.91MiB at  925.41KiB/s ETA 00:11
+[2025-05-16T07:17:18.658+0000] {logging_mixin.py:190} INFO - [download]   2.3% of   10.91MiB at    1.34MiB/s ETA 00:07
+[2025-05-16T07:17:18.733+0000] {logging_mixin.py:190} INFO - [download]   4.6% of   10.91MiB at    1.91MiB/s ETA 00:05
+[2025-05-16T07:17:18.797+0000] {logging_mixin.py:190} INFO - [download]   9.2% of   10.91MiB at    3.08MiB/s ETA 00:03
+[2025-05-16T07:17:18.990+0000] {logging_mixin.py:190} INFO - [download]  18.3% of   10.91MiB at    3.86MiB/s ETA 00:02
+[2025-05-16T07:17:19.185+0000] {logging_mixin.py:190} INFO - [download]  36.6% of   10.91MiB at    5.61MiB/s ETA 00:01
+[2025-05-16T07:17:19.501+0000] {logging_mixin.py:190} INFO - [download]  73.3% of   10.91MiB at    7.77MiB/s ETA 00:00
+[2025-05-16T07:17:19.782+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   10.91MiB at    8.33MiB/s ETA 00:00
+[2025-05-16T07:17:19.784+0000] {logging_mixin.py:190} INFO - [download] 100% of   10.91MiB in 00:00:01 at 7.11MiB/s   
+[2025-05-16T07:17:19.830+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7451378763993992456.mp3
+[2025-05-16T07:17:20.534+0000] {logging_mixin.py:190} INFO - Deleting original file data/7451378763993992456 (pass -k to keep)
+[2025-05-16T07:17:20.538+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7451378763993992456
+[2025-05-16T07:17:20.544+0000] {logging_mixin.py:190} INFO - Downloaded video 7451378763993992456 to data/7451378763993992456.mp3
+[2025-05-16T07:17:20.666+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:17:20.666+0000] {logging_mixin.py:190} INFO - Downloading video from 7448994195089493266...
+[2025-05-16T07:17:20.698+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7448994195089493266
+[2025-05-16T07:17:20.699+0000] {logging_mixin.py:190} INFO - [TikTok] 7448994195089493266: Downloading webpage
+[2025-05-16T07:17:21.401+0000] {logging_mixin.py:190} INFO - [info] 7448994195089493266: Downloading 1 format(s): bytevc1_1080p_813956-1
+[2025-05-16T07:17:21.622+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7448994195089493266
+[2025-05-16T07:17:21.622+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    4.21MiB at  Unknown B/s ETA Unknown
+[2025-05-16T07:17:21.623+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    4.21MiB at    2.37MiB/s ETA 00:01  
+[2025-05-16T07:17:21.623+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    4.21MiB at    4.15MiB/s ETA 00:01
+[2025-05-16T07:17:21.628+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    4.21MiB at    2.09MiB/s ETA 00:02
+[2025-05-16T07:17:21.635+0000] {logging_mixin.py:190} INFO - [download]   0.7% of    4.21MiB at    2.20MiB/s ETA 00:01
+[2025-05-16T07:17:21.692+0000] {logging_mixin.py:190} INFO - [download]   1.5% of    4.21MiB at  887.63KiB/s ETA 00:04
+[2025-05-16T07:17:21.763+0000] {logging_mixin.py:190} INFO - [download]   2.9% of    4.21MiB at  896.60KiB/s ETA 00:04
+[2025-05-16T07:17:21.812+0000] {logging_mixin.py:190} INFO - [download]   5.9% of    4.21MiB at    1.31MiB/s ETA 00:03
+[2025-05-16T07:17:21.891+0000] {logging_mixin.py:190} INFO - [download]  11.9% of    4.21MiB at    1.85MiB/s ETA 00:02
+[2025-05-16T07:17:21.959+0000] {logging_mixin.py:190} INFO - [download]  23.7% of    4.21MiB at    2.96MiB/s ETA 00:01
+[2025-05-16T07:17:22.155+0000] {logging_mixin.py:190} INFO - [download]  47.5% of    4.21MiB at    3.75MiB/s ETA 00:00
+[2025-05-16T07:17:22.321+0000] {logging_mixin.py:190} INFO - [download]  95.0% of    4.21MiB at    5.72MiB/s ETA 00:00
+[2025-05-16T07:17:22.334+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    4.21MiB at    5.90MiB/s ETA 00:00
+[2025-05-16T07:17:22.336+0000] {logging_mixin.py:190} INFO - [download] 100% of    4.21MiB in 00:00:00 at 4.52MiB/s   
+[2025-05-16T07:17:22.387+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7448994195089493266.mp3
+[2025-05-16T07:17:22.910+0000] {logging_mixin.py:190} INFO - Deleting original file data/7448994195089493266 (pass -k to keep)
+[2025-05-16T07:17:22.913+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7448994195089493266
+[2025-05-16T07:17:22.919+0000] {logging_mixin.py:190} INFO - Downloaded video 7448994195089493266 to data/7448994195089493266.mp3
+[2025-05-16T07:17:23.041+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:17:23.041+0000] {logging_mixin.py:190} INFO - Downloading video from 7452334283357719815...
+[2025-05-16T07:17:23.073+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7452334283357719815
+[2025-05-16T07:17:23.074+0000] {logging_mixin.py:190} INFO - [TikTok] 7452334283357719815: Downloading webpage
+[2025-05-16T07:17:23.795+0000] {logging_mixin.py:190} INFO - [info] 7452334283357719815: Downloading 1 format(s): bytevc1_1080p_1132479-1
+[2025-05-16T07:17:24.020+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7452334283357719815
+[2025-05-16T07:17:24.020+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   24.24MiB at  178.39KiB/s ETA 02:19
+[2025-05-16T07:17:24.021+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   24.24MiB at  480.61KiB/s ETA 00:51
+[2025-05-16T07:17:24.021+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   24.24MiB at    1.02MiB/s ETA 00:23
+[2025-05-16T07:17:24.024+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   24.24MiB at    1.60MiB/s ETA 00:15
+[2025-05-16T07:17:24.030+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   24.24MiB at    1.97MiB/s ETA 00:12
+[2025-05-16T07:17:24.086+0000] {logging_mixin.py:190} INFO - [download]   0.3% of   24.24MiB at  881.62KiB/s ETA 00:28
+[2025-05-16T07:17:24.154+0000] {logging_mixin.py:190} INFO - [download]   0.5% of   24.24MiB at  915.69KiB/s ETA 00:26
+[2025-05-16T07:17:24.201+0000] {logging_mixin.py:190} INFO - [download]   1.0% of   24.24MiB at    1.34MiB/s ETA 00:17
+[2025-05-16T07:17:24.279+0000] {logging_mixin.py:190} INFO - [download]   2.1% of   24.24MiB at    1.89MiB/s ETA 00:12
+[2025-05-16T07:17:24.344+0000] {logging_mixin.py:190} INFO - [download]   4.1% of   24.24MiB at    3.04MiB/s ETA 00:07
+[2025-05-16T07:17:24.539+0000] {logging_mixin.py:190} INFO - [download]   8.2% of   24.24MiB at    3.81MiB/s ETA 00:05
+[2025-05-16T07:17:24.834+0000] {logging_mixin.py:190} INFO - [download]  16.5% of   24.24MiB at    4.88MiB/s ETA 00:04
+[2025-05-16T07:17:25.063+0000] {logging_mixin.py:190} INFO - [download]  33.0% of   24.24MiB at    7.63MiB/s ETA 00:02
+[2025-05-16T07:17:25.451+0000] {logging_mixin.py:190} INFO - [download]  49.5% of   24.24MiB at    8.36MiB/s ETA 00:01
+[2025-05-16T07:17:25.843+0000] {logging_mixin.py:190} INFO - [download]  66.0% of   24.24MiB at    8.75MiB/s ETA 00:00
+[2025-05-16T07:17:26.236+0000] {logging_mixin.py:190} INFO - [download]  82.5% of   24.24MiB at    9.00MiB/s ETA 00:00
+[2025-05-16T07:17:26.680+0000] {logging_mixin.py:190} INFO - [download]  99.0% of   24.24MiB at    9.00MiB/s ETA 00:00
+[2025-05-16T07:17:26.697+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   24.24MiB at    9.04MiB/s ETA 00:00
+[2025-05-16T07:17:26.699+0000] {logging_mixin.py:190} INFO - [download] 100% of   24.24MiB in 00:00:02 at 8.36MiB/s   
+[2025-05-16T07:17:26.747+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7452334283357719815.mp3
+[2025-05-16T07:17:28.671+0000] {logging_mixin.py:190} INFO - Deleting original file data/7452334283357719815 (pass -k to keep)
+[2025-05-16T07:17:28.675+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7452334283357719815
+[2025-05-16T07:17:28.681+0000] {logging_mixin.py:190} INFO - Downloaded video 7452334283357719815 to data/7452334283357719815.mp3
+[2025-05-16T07:17:28.806+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:17:28.807+0000] {logging_mixin.py:190} INFO - Downloading video from 7466461706999418130...
+[2025-05-16T07:17:28.838+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7466461706999418130
+[2025-05-16T07:17:28.838+0000] {logging_mixin.py:190} INFO - [TikTok] 7466461706999418130: Downloading webpage
+[2025-05-16T07:17:29.628+0000] {logging_mixin.py:190} INFO - [info] 7466461706999418130: Downloading 1 format(s): bytevc1_1080p_1642835-1
+[2025-05-16T07:17:29.843+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7466461706999418130
+[2025-05-16T07:17:29.844+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    3.88MiB at  Unknown B/s ETA Unknown
+[2025-05-16T07:17:29.845+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    3.88MiB at    2.54MiB/s ETA 00:01  
+[2025-05-16T07:17:29.845+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    3.88MiB at    4.23MiB/s ETA 00:00
+[2025-05-16T07:17:29.847+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    3.88MiB at    4.55MiB/s ETA 00:00
+[2025-05-16T07:17:29.853+0000] {logging_mixin.py:190} INFO - [download]   0.8% of    3.88MiB at    3.23MiB/s ETA 00:01
+[2025-05-16T07:17:29.910+0000] {logging_mixin.py:190} INFO - [download]   1.6% of    3.88MiB at  945.83KiB/s ETA 00:04
+[2025-05-16T07:17:29.977+0000] {logging_mixin.py:190} INFO - [download]   3.2% of    3.88MiB at  956.10KiB/s ETA 00:04
+[2025-05-16T07:17:30.024+0000] {logging_mixin.py:190} INFO - [download]   6.4% of    3.88MiB at    1.38MiB/s ETA 00:02
+[2025-05-16T07:17:30.103+0000] {logging_mixin.py:190} INFO - [download]  12.9% of    3.88MiB at    1.92MiB/s ETA 00:01
+[2025-05-16T07:17:30.170+0000] {logging_mixin.py:190} INFO - [download]  25.8% of    3.88MiB at    3.06MiB/s ETA 00:00
+[2025-05-16T07:17:30.362+0000] {logging_mixin.py:190} INFO - [download]  51.6% of    3.88MiB at    3.86MiB/s ETA 00:00
+[2025-05-16T07:17:30.453+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    3.88MiB at    6.36MiB/s ETA 00:00
+[2025-05-16T07:17:30.454+0000] {logging_mixin.py:190} INFO - [download] 100% of    3.88MiB in 00:00:00 at 4.71MiB/s   
+[2025-05-16T07:17:30.504+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7466461706999418130.mp3
+[2025-05-16T07:17:30.753+0000] {logging_mixin.py:190} INFO - Deleting original file data/7466461706999418130 (pass -k to keep)
+[2025-05-16T07:17:30.756+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7466461706999418130
+[2025-05-16T07:17:30.761+0000] {logging_mixin.py:190} INFO - Downloaded video 7466461706999418130 to data/7466461706999418130.mp3
+[2025-05-16T07:17:30.881+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:17:30.882+0000] {logging_mixin.py:190} INFO - Downloading video from 7441062886274764050...
+[2025-05-16T07:17:30.913+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7441062886274764050
+[2025-05-16T07:17:30.914+0000] {logging_mixin.py:190} INFO - [TikTok] 7441062886274764050: Downloading webpage
+[2025-05-16T07:17:31.577+0000] {logging_mixin.py:190} INFO - [info] 7441062886274764050: Downloading 1 format(s): bytevc1_1080p_1451927-1
+[2025-05-16T07:17:31.805+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7441062886274764050
+[2025-05-16T07:17:31.805+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    9.72MiB at  363.52KiB/s ETA 00:27
+[2025-05-16T07:17:31.806+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    9.72MiB at  910.88KiB/s ETA 00:10
+[2025-05-16T07:17:31.806+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    9.72MiB at    1.87MiB/s ETA 00:05
+[2025-05-16T07:17:31.806+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    9.72MiB at    3.63MiB/s ETA 00:02
+[2025-05-16T07:17:31.811+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    9.72MiB at    3.51MiB/s ETA 00:02
+[2025-05-16T07:17:31.870+0000] {logging_mixin.py:190} INFO - [download]   0.6% of    9.72MiB at  938.93KiB/s ETA 00:10
+[2025-05-16T07:17:31.935+0000] {logging_mixin.py:190} INFO - [download]   1.3% of    9.72MiB at  959.86KiB/s ETA 00:10
+[2025-05-16T07:17:31.984+0000] {logging_mixin.py:190} INFO - [download]   2.6% of    9.72MiB at    1.37MiB/s ETA 00:06
+[2025-05-16T07:17:32.064+0000] {logging_mixin.py:190} INFO - [download]   5.1% of    9.72MiB at    1.91MiB/s ETA 00:04
+[2025-05-16T07:17:32.129+0000] {logging_mixin.py:190} INFO - [download]  10.3% of    9.72MiB at    3.06MiB/s ETA 00:02
+[2025-05-16T07:17:32.228+0000] {logging_mixin.py:190} INFO - [download]  20.6% of    9.72MiB at    4.70MiB/s ETA 00:01
+[2025-05-16T07:17:32.492+0000] {logging_mixin.py:190} INFO - [download]  41.2% of    9.72MiB at    5.80MiB/s ETA 00:00
+[2025-05-16T07:17:32.851+0000] {logging_mixin.py:190} INFO - [download]  82.3% of    9.72MiB at    7.63MiB/s ETA 00:00
+[2025-05-16T07:17:33.017+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    9.72MiB at    8.00MiB/s ETA 00:00
+[2025-05-16T07:17:33.019+0000] {logging_mixin.py:190} INFO - [download] 100% of    9.72MiB in 00:00:01 at 6.76MiB/s   
+[2025-05-16T07:17:33.068+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7441062886274764050.mp3
+[2025-05-16T07:17:33.712+0000] {logging_mixin.py:190} INFO - Deleting original file data/7441062886274764050 (pass -k to keep)
+[2025-05-16T07:17:33.716+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7441062886274764050
+[2025-05-16T07:17:33.721+0000] {logging_mixin.py:190} INFO - Downloaded video 7441062886274764050 to data/7441062886274764050.mp3
+[2025-05-16T07:17:33.854+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:17:33.854+0000] {logging_mixin.py:190} INFO - Downloading video from 7455673651925421330...
+[2025-05-16T07:17:33.888+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7455673651925421330
+[2025-05-16T07:17:33.888+0000] {logging_mixin.py:190} INFO - [TikTok] 7455673651925421330: Downloading webpage
+[2025-05-16T07:17:34.626+0000] {logging_mixin.py:190} INFO - [info] 7455673651925421330: Downloading 1 format(s): bytevc1_1080p_883794-1
+[2025-05-16T07:17:34.856+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7455673651925421330
+[2025-05-16T07:17:34.856+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  994.59KiB at  469.11KiB/s ETA 00:02
+[2025-05-16T07:17:34.856+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  994.59KiB at    1.08MiB/s ETA 00:00
+[2025-05-16T07:17:34.857+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  994.59KiB at    2.17MiB/s ETA 00:00
+[2025-05-16T07:17:34.859+0000] {logging_mixin.py:190} INFO - [download]   1.5% of  994.59KiB at    2.87MiB/s ETA 00:00
+[2025-05-16T07:17:34.865+0000] {logging_mixin.py:190} INFO - [download]   3.1% of  994.59KiB at    2.65MiB/s ETA 00:00
+[2025-05-16T07:17:34.929+0000] {logging_mixin.py:190} INFO - [download]   6.3% of  994.59KiB at  839.88KiB/s ETA 00:01
+[2025-05-16T07:17:34.994+0000] {logging_mixin.py:190} INFO - [download]  12.8% of  994.59KiB at  904.41KiB/s ETA 00:00
+[2025-05-16T07:17:35.043+0000] {logging_mixin.py:190} INFO - [download]  25.6% of  994.59KiB at    1.32MiB/s ETA 00:00
+[2025-05-16T07:17:35.120+0000] {logging_mixin.py:190} INFO - [download]  51.4% of  994.59KiB at    1.87MiB/s ETA 00:00
+[2025-05-16T07:17:35.183+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  994.59KiB at    2.95MiB/s ETA 00:00
+[2025-05-16T07:17:35.184+0000] {logging_mixin.py:190} INFO - [download] 100% of  994.59KiB in 00:00:00 at 1.75MiB/s   
+[2025-05-16T07:17:35.234+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7455673651925421330.mp3
+[2025-05-16T07:17:35.387+0000] {logging_mixin.py:190} INFO - Deleting original file data/7455673651925421330 (pass -k to keep)
+[2025-05-16T07:17:35.391+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7455673651925421330
+[2025-05-16T07:17:35.396+0000] {logging_mixin.py:190} INFO - Downloaded video 7455673651925421330 to data/7455673651925421330.mp3
+[2025-05-16T07:17:35.518+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:17:35.518+0000] {logging_mixin.py:190} INFO - Downloading video from 7465323770719243538...
+[2025-05-16T07:17:35.561+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7465323770719243538
+[2025-05-16T07:17:35.562+0000] {logging_mixin.py:190} INFO - [TikTok] 7465323770719243538: Downloading webpage
+[2025-05-16T07:17:36.308+0000] {logging_mixin.py:190} INFO - [info] 7465323770719243538: Downloading 1 format(s): bytevc1_1080p_563186-1
+[2025-05-16T07:17:36.569+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7465323770719243538
+[2025-05-16T07:17:36.570+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    2.12MiB at  220.39KiB/s ETA 00:09
+[2025-05-16T07:17:36.570+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    2.12MiB at  585.69KiB/s ETA 00:03
+[2025-05-16T07:17:36.571+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    2.12MiB at    1.23MiB/s ETA 00:01
+[2025-05-16T07:17:36.571+0000] {logging_mixin.py:190} INFO - [download]   0.7% of    2.12MiB at    2.46MiB/s ETA 00:00
+[2025-05-16T07:17:36.579+0000] {logging_mixin.py:190} INFO - [download]   1.4% of    2.12MiB at    2.27MiB/s ETA 00:00
+[2025-05-16T07:17:36.637+0000] {logging_mixin.py:190} INFO - [download]   2.9% of    2.12MiB at  874.66KiB/s ETA 00:02
+[2025-05-16T07:17:36.702+0000] {logging_mixin.py:190} INFO - [download]   5.9% of    2.12MiB at  932.93KiB/s ETA 00:02
+[2025-05-16T07:17:36.744+0000] {logging_mixin.py:190} INFO - [download]  11.8% of    2.12MiB at    1.40MiB/s ETA 00:01
+[2025-05-16T07:17:36.820+0000] {logging_mixin.py:190} INFO - [download]  23.6% of    2.12MiB at    1.96MiB/s ETA 00:00
+[2025-05-16T07:17:36.886+0000] {logging_mixin.py:190} INFO - [download]  47.2% of    2.12MiB at    3.12MiB/s ETA 00:00
+[2025-05-16T07:17:37.051+0000] {logging_mixin.py:190} INFO - [download]  94.5% of    2.12MiB at    4.12MiB/s ETA 00:00
+[2025-05-16T07:17:37.119+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    2.12MiB at    3.82MiB/s ETA 00:00
+[2025-05-16T07:17:37.121+0000] {logging_mixin.py:190} INFO - [download] 100% of    2.12MiB in 00:00:00 at 2.61MiB/s   
+[2025-05-16T07:17:37.168+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7465323770719243538.mp3
+[2025-05-16T07:17:37.568+0000] {logging_mixin.py:190} INFO - Deleting original file data/7465323770719243538 (pass -k to keep)
+[2025-05-16T07:17:37.571+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7465323770719243538
+[2025-05-16T07:17:37.576+0000] {logging_mixin.py:190} INFO - Downloaded video 7465323770719243538 to data/7465323770719243538.mp3
+[2025-05-16T07:17:37.704+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:17:37.705+0000] {logging_mixin.py:190} INFO - Downloading video from 7447347701731036424...
+[2025-05-16T07:17:37.737+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7447347701731036424
+[2025-05-16T07:17:37.737+0000] {logging_mixin.py:190} INFO - [TikTok] 7447347701731036424: Downloading webpage
+[2025-05-16T07:17:38.432+0000] {logging_mixin.py:190} INFO - [info] 7447347701731036424: Downloading 1 format(s): bytevc1_1080p_890742-1
+[2025-05-16T07:17:38.649+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7447347701731036424
+[2025-05-16T07:17:38.649+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   17.90MiB at  330.55KiB/s ETA 00:55
+[2025-05-16T07:17:38.650+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   17.90MiB at  847.16KiB/s ETA 00:21
+[2025-05-16T07:17:38.650+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   17.90MiB at    1.75MiB/s ETA 00:10
+[2025-05-16T07:17:38.650+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   17.90MiB at    3.44MiB/s ETA 00:05
+[2025-05-16T07:17:38.655+0000] {logging_mixin.py:190} INFO - [download]   0.2% of   17.90MiB at    3.48MiB/s ETA 00:05
+[2025-05-16T07:17:38.712+0000] {logging_mixin.py:190} INFO - [download]   0.3% of   17.90MiB at  960.16KiB/s ETA 00:19
+[2025-05-16T07:17:38.781+0000] {logging_mixin.py:190} INFO - [download]   0.7% of   17.90MiB at  944.23KiB/s ETA 00:19
+[2025-05-16T07:17:38.830+0000] {logging_mixin.py:190} INFO - [download]   1.4% of   17.90MiB at    1.35MiB/s ETA 00:13
+[2025-05-16T07:17:38.912+0000] {logging_mixin.py:190} INFO - [download]   2.8% of   17.90MiB at    1.88MiB/s ETA 00:09
+[2025-05-16T07:17:38.982+0000] {logging_mixin.py:190} INFO - [download]   5.6% of   17.90MiB at    2.97MiB/s ETA 00:05
+[2025-05-16T07:17:39.080+0000] {logging_mixin.py:190} INFO - [download]  11.2% of   17.90MiB at    4.61MiB/s ETA 00:03
+[2025-05-16T07:17:39.352+0000] {logging_mixin.py:190} INFO - [download]  22.3% of   17.90MiB at    5.67MiB/s ETA 00:02
+[2025-05-16T07:17:39.711+0000] {logging_mixin.py:190} INFO - [download]  44.7% of   17.90MiB at    7.51MiB/s ETA 00:01
+[2025-05-16T07:17:40.102+0000] {logging_mixin.py:190} INFO - [download]  67.0% of   17.90MiB at    8.24MiB/s ETA 00:00
+[2025-05-16T07:17:40.492+0000] {logging_mixin.py:190} INFO - [download]  89.4% of   17.90MiB at    8.67MiB/s ETA 00:00
+[2025-05-16T07:17:40.675+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   17.90MiB at    8.82MiB/s ETA 00:00
+[2025-05-16T07:17:40.677+0000] {logging_mixin.py:190} INFO - [download] 100% of   17.90MiB in 00:00:02 at 7.98MiB/s   
+[2025-05-16T07:17:40.725+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7447347701731036424.mp3
+[2025-05-16T07:17:42.513+0000] {logging_mixin.py:190} INFO - Deleting original file data/7447347701731036424 (pass -k to keep)
+[2025-05-16T07:17:42.517+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7447347701731036424
+[2025-05-16T07:17:42.521+0000] {logging_mixin.py:190} INFO - Downloaded video 7447347701731036424 to data/7447347701731036424.mp3
+[2025-05-16T07:17:42.662+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:17:42.662+0000] {logging_mixin.py:190} INFO - Downloading video from 7451143872953978130...
+[2025-05-16T07:17:42.693+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7451143872953978130
+[2025-05-16T07:17:42.693+0000] {logging_mixin.py:190} INFO - [TikTok] 7451143872953978130: Downloading webpage
+[2025-05-16T07:17:43.565+0000] {logging_mixin.py:190} INFO - [info] 7451143872953978130: Downloading 1 format(s): bytevc1_1080p_1119822-1
+[2025-05-16T07:17:43.787+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7451143872953978130
+[2025-05-16T07:17:43.787+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    6.02MiB at  Unknown B/s ETA Unknown
+[2025-05-16T07:17:43.788+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    6.02MiB at    2.36MiB/s ETA 00:02  
+[2025-05-16T07:17:43.788+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    6.02MiB at    4.06MiB/s ETA 00:01
+[2025-05-16T07:17:43.790+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    6.02MiB at    4.58MiB/s ETA 00:01
+[2025-05-16T07:17:43.796+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    6.02MiB at    3.31MiB/s ETA 00:01
+[2025-05-16T07:17:43.854+0000] {logging_mixin.py:190} INFO - [download]   1.0% of    6.02MiB at  929.96KiB/s ETA 00:06
+[2025-05-16T07:17:43.921+0000] {logging_mixin.py:190} INFO - [download]   2.1% of    6.02MiB at  949.59KiB/s ETA 00:06
+[2025-05-16T07:17:43.969+0000] {logging_mixin.py:190} INFO - [download]   4.1% of    6.02MiB at    1.37MiB/s ETA 00:04
+[2025-05-16T07:17:41.564+0000] {logging_mixin.py:190} INFO - [download]   8.3% of    6.02MiB at  Unknown B/s ETA Unknown
+[2025-05-16T07:17:41.631+0000] {logging_mixin.py:190} INFO - [download]  16.6% of    6.02MiB at  Unknown B/s ETA Unknown
+[2025-05-16T07:17:41.826+0000] {logging_mixin.py:190} INFO - [download]  33.2% of    6.02MiB at  Unknown B/s ETA Unknown
+[2025-05-16T07:17:42.119+0000] {logging_mixin.py:190} INFO - [download]  66.4% of    6.02MiB at  Unknown B/s ETA Unknown
+[2025-05-16T07:17:42.122+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    6.02MiB at  Unknown B/s ETA Unknown
+[2025-05-16T07:17:42.123+0000] {logging_mixin.py:190} INFO - [download] 100% of    6.02MiB in -1:59:58 at N/A/s         
+[2025-05-16T07:17:42.171+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7451143872953978130.mp3
+[2025-05-16T07:17:42.694+0000] {logging_mixin.py:190} INFO - Deleting original file data/7451143872953978130 (pass -k to keep)
+[2025-05-16T07:17:42.698+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7451143872953978130
+[2025-05-16T07:17:42.703+0000] {logging_mixin.py:190} INFO - Downloaded video 7451143872953978130 to data/7451143872953978130.mp3
+[2025-05-16T07:17:42.827+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:17:42.828+0000] {logging_mixin.py:190} INFO - Downloading video from 7465554238215703826...
+[2025-05-16T07:17:42.861+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7465554238215703826
+[2025-05-16T07:17:42.861+0000] {logging_mixin.py:190} INFO - [TikTok] 7465554238215703826: Downloading webpage
+[2025-05-16T07:17:43.568+0000] {logging_mixin.py:190} INFO - [info] 7465554238215703826: Downloading 1 format(s): bytevc1_1080p_1208589-1
+[2025-05-16T07:17:43.795+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7465554238215703826
+[2025-05-16T07:17:43.796+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   40.26MiB at  158.17KiB/s ETA 04:21
+[2025-05-16T07:17:43.796+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   40.26MiB at  437.65KiB/s ETA 01:34
+[2025-05-16T07:17:43.797+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   40.26MiB at  968.05KiB/s ETA 00:42
+[2025-05-16T07:17:43.797+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   40.26MiB at    1.93MiB/s ETA 00:20
+[2025-05-16T07:17:43.802+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   40.26MiB at    2.48MiB/s ETA 00:16
+[2025-05-16T07:17:43.860+0000] {logging_mixin.py:190} INFO - [download]   0.2% of   40.26MiB at  898.87KiB/s ETA 00:45
+[2025-05-16T07:17:43.928+0000] {logging_mixin.py:190} INFO - [download]   0.3% of   40.26MiB at  920.18KiB/s ETA 00:44
+[2025-05-16T07:17:43.978+0000] {logging_mixin.py:190} INFO - [download]   0.6% of   40.26MiB at    1.32MiB/s ETA 00:30
+[2025-05-16T07:17:44.060+0000] {logging_mixin.py:190} INFO - [download]   1.2% of   40.26MiB at    1.84MiB/s ETA 00:21
+[2025-05-16T07:17:44.131+0000] {logging_mixin.py:190} INFO - [download]   2.5% of   40.26MiB at    2.93MiB/s ETA 00:13
+[2025-05-16T07:17:44.229+0000] {logging_mixin.py:190} INFO - [download]   5.0% of   40.26MiB at    4.55MiB/s ETA 00:08
+[2025-05-16T07:17:44.499+0000] {logging_mixin.py:190} INFO - [download]   9.9% of   40.26MiB at    5.64MiB/s ETA 00:06
+[2025-05-16T07:17:44.858+0000] {logging_mixin.py:190} INFO - [download]  19.9% of   40.26MiB at    7.49MiB/s ETA 00:04
+[2025-05-16T07:17:45.245+0000] {logging_mixin.py:190} INFO - [download]  29.8% of   40.26MiB at    8.24MiB/s ETA 00:03
+[2025-05-16T07:17:45.635+0000] {logging_mixin.py:190} INFO - [download]  39.7% of   40.26MiB at    8.67MiB/s ETA 00:02
+[2025-05-16T07:17:46.025+0000] {logging_mixin.py:190} INFO - [download]  49.7% of   40.26MiB at    8.95MiB/s ETA 00:02
+[2025-05-16T07:17:46.464+0000] {logging_mixin.py:190} INFO - [download]  59.6% of   40.26MiB at    8.98MiB/s ETA 00:01
+[2025-05-16T07:17:46.809+0000] {logging_mixin.py:190} INFO - [download]  69.5% of   40.26MiB at    9.27MiB/s ETA 00:01
+[2025-05-16T07:17:47.199+0000] {logging_mixin.py:190} INFO - [download]  79.5% of   40.26MiB at    9.39MiB/s ETA 00:00
+[2025-05-16T07:17:47.588+0000] {logging_mixin.py:190} INFO - [download]  89.4% of   40.26MiB at    9.48MiB/s ETA 00:00
+[2025-05-16T07:17:47.988+0000] {logging_mixin.py:190} INFO - [download]  99.4% of   40.26MiB at    9.53MiB/s ETA 00:00
+[2025-05-16T07:17:48.012+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   40.26MiB at    9.54MiB/s ETA 00:00
+[2025-05-16T07:17:48.015+0000] {logging_mixin.py:190} INFO - [download] 100% of   40.26MiB in 00:00:04 at 9.06MiB/s   
+[2025-05-16T07:17:48.083+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7465554238215703826.mp3
+[2025-05-16T07:17:50.843+0000] {logging_mixin.py:190} INFO - Deleting original file data/7465554238215703826 (pass -k to keep)
+[2025-05-16T07:17:50.849+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7465554238215703826
+[2025-05-16T07:17:50.856+0000] {logging_mixin.py:190} INFO - Downloaded video 7465554238215703826 to data/7465554238215703826.mp3
+[2025-05-16T07:17:50.983+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:17:50.984+0000] {logging_mixin.py:190} INFO - Downloading video from 7452691717175741704...
+[2025-05-16T07:17:51.016+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7452691717175741704
+[2025-05-16T07:17:51.016+0000] {logging_mixin.py:190} INFO - [TikTok] 7452691717175741704: Downloading webpage
+[2025-05-16T07:17:51.772+0000] {logging_mixin.py:190} INFO - [info] 7452691717175741704: Downloading 1 format(s): bytevc1_1080p_1227401-1
+[2025-05-16T07:17:52.009+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7452691717175741704
+[2025-05-16T07:17:52.010+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   10.12MiB at  339.56KiB/s ETA 00:30
+[2025-05-16T07:17:52.010+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   10.12MiB at  825.65KiB/s ETA 00:12
+[2025-05-16T07:17:52.011+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   10.12MiB at    1.69MiB/s ETA 00:05
+[2025-05-16T07:17:52.011+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   10.12MiB at    3.27MiB/s ETA 00:03
+[2025-05-16T07:17:52.016+0000] {logging_mixin.py:190} INFO - [download]   0.3% of   10.12MiB at    3.37MiB/s ETA 00:02
+[2025-05-16T07:17:52.072+0000] {logging_mixin.py:190} INFO - [download]   0.6% of   10.12MiB at  959.03KiB/s ETA 00:10
+[2025-05-16T07:17:52.141+0000] {logging_mixin.py:190} INFO - [download]   1.2% of   10.12MiB at  948.79KiB/s ETA 00:10
+[2025-05-16T07:17:52.190+0000] {logging_mixin.py:190} INFO - [download]   2.5% of   10.12MiB at    1.36MiB/s ETA 00:07
+[2025-05-16T07:17:52.271+0000] {logging_mixin.py:190} INFO - [download]   4.9% of   10.12MiB at    1.89MiB/s ETA 00:05
+[2025-05-16T07:17:52.337+0000] {logging_mixin.py:190} INFO - [download]   9.9% of   10.12MiB at    3.02MiB/s ETA 00:03
+[2025-05-16T07:17:52.436+0000] {logging_mixin.py:190} INFO - [download]  19.8% of   10.12MiB at    4.66MiB/s ETA 00:01
+[2025-05-16T07:17:52.702+0000] {logging_mixin.py:190} INFO - [download]  39.5% of   10.12MiB at    5.75MiB/s ETA 00:01
+[2025-05-16T07:17:53.062+0000] {logging_mixin.py:190} INFO - [download]  79.0% of   10.12MiB at    7.58MiB/s ETA 00:00
+[2025-05-16T07:17:53.266+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   10.12MiB at    8.04MiB/s ETA 00:00
+[2025-05-16T07:17:53.267+0000] {logging_mixin.py:190} INFO - [download] 100% of   10.12MiB in 00:00:01 at 6.78MiB/s   
+[2025-05-16T07:17:53.316+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7452691717175741704.mp3
+[2025-05-16T07:17:53.831+0000] {logging_mixin.py:190} INFO - Deleting original file data/7452691717175741704 (pass -k to keep)
+[2025-05-16T07:17:53.835+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7452691717175741704
+[2025-05-16T07:17:53.840+0000] {logging_mixin.py:190} INFO - Downloaded video 7452691717175741704 to data/7452691717175741704.mp3
+[2025-05-16T07:17:53.963+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:17:53.964+0000] {logging_mixin.py:190} INFO - Downloading video from 7454522286293421320...
+[2025-05-16T07:17:53.996+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7454522286293421320
+[2025-05-16T07:17:53.997+0000] {logging_mixin.py:190} INFO - [TikTok] 7454522286293421320: Downloading webpage
+[2025-05-16T07:17:54.647+0000] {logging_mixin.py:190} INFO - [info] 7454522286293421320: Downloading 1 format(s): bytevc1_1080p_1620064-1
+[2025-05-16T07:17:54.867+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7454522286293421320
+[2025-05-16T07:17:54.868+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   12.90MiB at  Unknown B/s ETA Unknown
+[2025-05-16T07:17:54.868+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   12.90MiB at    2.25MiB/s ETA 00:05  
+[2025-05-16T07:17:54.869+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   12.90MiB at    3.84MiB/s ETA 00:03
+[2025-05-16T07:17:54.875+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   12.90MiB at    1.92MiB/s ETA 00:06
+[2025-05-16T07:17:54.881+0000] {logging_mixin.py:190} INFO - [download]   0.2% of   12.90MiB at    2.10MiB/s ETA 00:06
+[2025-05-16T07:17:54.945+0000] {logging_mixin.py:190} INFO - [download]   0.5% of   12.90MiB at  812.29KiB/s ETA 00:16
+[2025-05-16T07:17:55.012+0000] {logging_mixin.py:190} INFO - [download]   1.0% of   12.90MiB at  878.05KiB/s ETA 00:14
+[2025-05-16T07:17:55.061+0000] {logging_mixin.py:190} INFO - [download]   1.9% of   12.90MiB at    1.29MiB/s ETA 00:09
+[2025-05-16T07:17:55.138+0000] {logging_mixin.py:190} INFO - [download]   3.9% of   12.90MiB at    1.84MiB/s ETA 00:06
+[2025-05-16T07:17:55.202+0000] {logging_mixin.py:190} INFO - [download]   7.7% of   12.90MiB at    2.98MiB/s ETA 00:03
+[2025-05-16T07:17:55.300+0000] {logging_mixin.py:190} INFO - [download]  15.5% of   12.90MiB at    4.62MiB/s ETA 00:02
+[2025-05-16T07:17:55.610+0000] {logging_mixin.py:190} INFO - [download]  31.0% of   12.90MiB at    5.39MiB/s ETA 00:01
+[2025-05-16T07:17:55.937+0000] {logging_mixin.py:190} INFO - [download]  62.0% of   12.90MiB at    7.47MiB/s ETA 00:00
+[2025-05-16T07:17:56.334+0000] {logging_mixin.py:190} INFO - [download]  93.0% of   12.90MiB at    8.18MiB/s ETA 00:00
+[2025-05-16T07:17:56.479+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   12.90MiB at    8.00MiB/s ETA 00:00
+[2025-05-16T07:17:56.481+0000] {logging_mixin.py:190} INFO - [download] 100% of   12.90MiB in 00:00:01 at 7.05MiB/s   
+[2025-05-16T07:17:56.527+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7454522286293421320.mp3
+[2025-05-16T07:17:57.204+0000] {logging_mixin.py:190} INFO - Deleting original file data/7454522286293421320 (pass -k to keep)
+[2025-05-16T07:17:57.208+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7454522286293421320
+[2025-05-16T07:17:57.213+0000] {logging_mixin.py:190} INFO - Downloaded video 7454522286293421320 to data/7454522286293421320.mp3
+[2025-05-16T07:17:57.359+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:17:57.359+0000] {logging_mixin.py:190} INFO - Downloading video from 7452569215648795922...
+[2025-05-16T07:17:57.391+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7452569215648795922
+[2025-05-16T07:17:57.391+0000] {logging_mixin.py:190} INFO - [TikTok] 7452569215648795922: Downloading webpage
+[2025-05-16T07:17:58.170+0000] {logging_mixin.py:190} INFO - [info] 7452569215648795922: Downloading 1 format(s): bytevc1_1080p_1359742-1
+[2025-05-16T07:17:58.392+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7452569215648795922
+[2025-05-16T07:17:58.393+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   17.08MiB at  264.88KiB/s ETA 01:06
+[2025-05-16T07:17:58.393+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   17.08MiB at  703.62KiB/s ETA 00:24
+[2025-05-16T07:17:58.394+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   17.08MiB at    1.48MiB/s ETA 00:11
+[2025-05-16T07:17:58.394+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   17.08MiB at    2.94MiB/s ETA 00:05
+[2025-05-16T07:17:58.398+0000] {logging_mixin.py:190} INFO - [download]   0.2% of   17.08MiB at    3.29MiB/s ETA 00:05
+[2025-05-16T07:17:58.456+0000] {logging_mixin.py:190} INFO - [download]   0.4% of   17.08MiB at  941.48KiB/s ETA 00:18
+[2025-05-16T07:17:58.523+0000] {logging_mixin.py:190} INFO - [download]   0.7% of   17.08MiB at  948.36KiB/s ETA 00:18
+[2025-05-16T07:17:58.573+0000] {logging_mixin.py:190} INFO - [download]   1.5% of   17.08MiB at    1.36MiB/s ETA 00:12
+[2025-05-16T07:17:58.652+0000] {logging_mixin.py:190} INFO - [download]   2.9% of   17.08MiB at    1.90MiB/s ETA 00:08
+[2025-05-16T07:17:58.719+0000] {logging_mixin.py:190} INFO - [download]   5.9% of   17.08MiB at    3.03MiB/s ETA 00:05
+[2025-05-16T07:17:58.818+0000] {logging_mixin.py:190} INFO - [download]  11.7% of   17.08MiB at    4.66MiB/s ETA 00:03
+[2025-05-16T07:17:59.209+0000] {logging_mixin.py:190} INFO - [download]  23.4% of   17.08MiB at    4.88MiB/s ETA 00:02
+[2025-05-16T07:17:59.425+0000] {logging_mixin.py:190} INFO - [download]  46.8% of   17.08MiB at    7.72MiB/s ETA 00:01
+[2025-05-16T07:17:59.814+0000] {logging_mixin.py:190} INFO - [download]  70.3% of   17.08MiB at    8.42MiB/s ETA 00:00
+[2025-05-16T07:18:00.207+0000] {logging_mixin.py:190} INFO - [download]  93.7% of   17.08MiB at    8.80MiB/s ETA 00:00
+[2025-05-16T07:18:00.307+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   17.08MiB at    8.90MiB/s ETA 00:00
+[2025-05-16T07:18:00.309+0000] {logging_mixin.py:190} INFO - [download] 100% of   17.08MiB in 00:00:02 at 7.99MiB/s   
+[2025-05-16T07:18:00.359+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7452569215648795922.mp3
+[2025-05-16T07:18:01.433+0000] {logging_mixin.py:190} INFO - Deleting original file data/7452569215648795922 (pass -k to keep)
+[2025-05-16T07:18:01.437+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7452569215648795922
+[2025-05-16T07:18:01.442+0000] {logging_mixin.py:190} INFO - Downloaded video 7452569215648795922 to data/7452569215648795922.mp3
+[2025-05-16T07:18:01.571+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:18:01.572+0000] {logging_mixin.py:190} INFO - Downloading video from 7444918111012179218...
+[2025-05-16T07:18:01.607+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7444918111012179218
+[2025-05-16T07:18:01.607+0000] {logging_mixin.py:190} INFO - [TikTok] 7444918111012179218: Downloading webpage
+[2025-05-16T07:18:02.285+0000] {logging_mixin.py:190} INFO - [info] 7444918111012179218: Downloading 1 format(s): bytevc1_1080p_645292-1
+[2025-05-16T07:18:02.523+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7444918111012179218
+[2025-05-16T07:18:02.524+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   18.22MiB at  704.21KiB/s ETA 00:26
+[2025-05-16T07:18:02.525+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   18.22MiB at    1.14MiB/s ETA 00:16
+[2025-05-16T07:18:02.525+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   18.22MiB at    1.99MiB/s ETA 00:09
+[2025-05-16T07:18:02.526+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   18.22MiB at    3.50MiB/s ETA 00:05
+[2025-05-16T07:18:02.530+0000] {logging_mixin.py:190} INFO - [download]   0.2% of   18.22MiB at    3.75MiB/s ETA 00:04
+[2025-05-16T07:18:02.589+0000] {logging_mixin.py:190} INFO - [download]   0.3% of   18.22MiB at  948.77KiB/s ETA 00:19
+[2025-05-16T07:18:02.658+0000] {logging_mixin.py:190} INFO - [download]   0.7% of   18.22MiB at  931.06KiB/s ETA 00:19
+[2025-05-16T07:18:02.713+0000] {logging_mixin.py:190} INFO - [download]   1.4% of   18.22MiB at    1.30MiB/s ETA 00:13
+[2025-05-16T07:18:02.792+0000] {logging_mixin.py:190} INFO - [download]   2.7% of   18.22MiB at    1.85MiB/s ETA 00:09
+[2025-05-16T07:18:02.863+0000] {logging_mixin.py:190} INFO - [download]   5.5% of   18.22MiB at    2.93MiB/s ETA 00:05
+[2025-05-16T07:18:02.961+0000] {logging_mixin.py:190} INFO - [download]  11.0% of   18.22MiB at    4.55MiB/s ETA 00:03
+[2025-05-16T07:18:03.232+0000] {logging_mixin.py:190} INFO - [download]  22.0% of   18.22MiB at    5.63MiB/s ETA 00:02
+[2025-05-16T07:18:03.593+0000] {logging_mixin.py:190} INFO - [download]  43.9% of   18.22MiB at    7.47MiB/s ETA 00:01
+[2025-05-16T07:18:04.063+0000] {logging_mixin.py:190} INFO - [download]  65.9% of   18.22MiB at    7.79MiB/s ETA 00:00
+[2025-05-16T07:18:04.372+0000] {logging_mixin.py:190} INFO - [download]  87.8% of   18.22MiB at    8.65MiB/s ETA 00:00
+[2025-05-16T07:18:04.588+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   18.22MiB at    8.82MiB/s ETA 00:00
+[2025-05-16T07:18:04.590+0000] {logging_mixin.py:190} INFO - [download] 100% of   18.22MiB in 00:00:02 at 7.91MiB/s   
+[2025-05-16T07:18:04.638+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7444918111012179218.mp3
+[2025-05-16T07:18:07.049+0000] {logging_mixin.py:190} INFO - Deleting original file data/7444918111012179218 (pass -k to keep)
+[2025-05-16T07:18:07.053+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7444918111012179218
+[2025-05-16T07:18:07.061+0000] {logging_mixin.py:190} INFO - Downloaded video 7444918111012179218 to data/7444918111012179218.mp3
+[2025-05-16T07:18:07.196+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:18:07.196+0000] {logging_mixin.py:190} INFO - Downloading video from 7468218353681698056...
+[2025-05-16T07:18:07.226+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7468218353681698056
+[2025-05-16T07:18:07.226+0000] {logging_mixin.py:190} INFO - [TikTok] 7468218353681698056: Downloading webpage
+[2025-05-16T07:18:07.864+0000] {logging_mixin.py:190} INFO - [info] 7468218353681698056: Downloading 1 format(s): bytevc1_1080p_653965-1
+[2025-05-16T07:18:08.097+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7468218353681698056
+[2025-05-16T07:18:08.098+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    2.08MiB at  614.64KiB/s ETA 00:03
+[2025-05-16T07:18:08.099+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    2.08MiB at    1.02MiB/s ETA 00:02
+[2025-05-16T07:18:08.100+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    2.08MiB at    1.79MiB/s ETA 00:01
+[2025-05-16T07:18:08.101+0000] {logging_mixin.py:190} INFO - [download]   0.7% of    2.08MiB at    3.23MiB/s ETA 00:00
+[2025-05-16T07:18:08.104+0000] {logging_mixin.py:190} INFO - [download]   1.5% of    2.08MiB at    3.96MiB/s ETA 00:00
+[2025-05-16T07:18:08.166+0000] {logging_mixin.py:190} INFO - [download]   3.0% of    2.08MiB at  908.12KiB/s ETA 00:02
+[2025-05-16T07:18:08.233+0000] {logging_mixin.py:190} INFO - [download]   6.0% of    2.08MiB at  932.74KiB/s ETA 00:02
+[2025-05-16T07:18:08.281+0000] {logging_mixin.py:190} INFO - [download]  12.0% of    2.08MiB at    1.35MiB/s ETA 00:01
+[2025-05-16T07:18:08.357+0000] {logging_mixin.py:190} INFO - [download]  24.0% of    2.08MiB at    1.91MiB/s ETA 00:00
+[2025-05-16T07:18:08.425+0000] {logging_mixin.py:190} INFO - [download]  48.0% of    2.08MiB at    3.04MiB/s ETA 00:00
+[2025-05-16T07:18:08.587+0000] {logging_mixin.py:190} INFO - [download]  96.0% of    2.08MiB at    4.07MiB/s ETA 00:00
+[2025-05-16T07:18:08.652+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    2.08MiB at    3.75MiB/s ETA 00:00
+[2025-05-16T07:18:08.653+0000] {logging_mixin.py:190} INFO - [download] 100% of    2.08MiB in 00:00:00 at 2.65MiB/s   
+[2025-05-16T07:18:08.699+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7468218353681698056.mp3
+[2025-05-16T07:18:09.000+0000] {logging_mixin.py:190} INFO - Deleting original file data/7468218353681698056 (pass -k to keep)
+[2025-05-16T07:18:09.004+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7468218353681698056
+[2025-05-16T07:18:09.010+0000] {logging_mixin.py:190} INFO - Downloaded video 7468218353681698056 to data/7468218353681698056.mp3
+[2025-05-16T07:18:09.134+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:18:09.135+0000] {logging_mixin.py:190} INFO - Downloading video from 7434917829230595335...
+[2025-05-16T07:18:09.175+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7434917829230595335
+[2025-05-16T07:18:09.175+0000] {logging_mixin.py:190} INFO - [TikTok] 7434917829230595335: Downloading webpage
+[2025-05-16T07:18:09.860+0000] {logging_mixin.py:190} INFO - [info] 7434917829230595335: Downloading 1 format(s): bytevc1_1080p_2129498-1
+[2025-05-16T07:18:10.079+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7434917829230595335
+[2025-05-16T07:18:10.079+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    3.22MiB at  Unknown B/s ETA Unknown
+[2025-05-16T07:18:10.080+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    3.22MiB at    2.07MiB/s ETA 00:01  
+[2025-05-16T07:18:10.080+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    3.22MiB at    3.66MiB/s ETA 00:00
+[2025-05-16T07:18:10.082+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    3.22MiB at    4.65MiB/s ETA 00:00
+[2025-05-16T07:18:10.087+0000] {logging_mixin.py:190} INFO - [download]   0.9% of    3.22MiB at    3.46MiB/s ETA 00:00
+[2025-05-16T07:18:10.148+0000] {logging_mixin.py:190} INFO - [download]   1.9% of    3.22MiB at  911.69KiB/s ETA 00:03
+[2025-05-16T07:18:10.213+0000] {logging_mixin.py:190} INFO - [download]   3.9% of    3.22MiB at  945.07KiB/s ETA 00:03
+[2025-05-16T07:18:10.265+0000] {logging_mixin.py:190} INFO - [download]   7.7% of    3.22MiB at    1.34MiB/s ETA 00:02
+[2025-05-16T07:18:10.342+0000] {logging_mixin.py:190} INFO - [download]  15.5% of    3.22MiB at    1.89MiB/s ETA 00:01
+[2025-05-16T07:18:10.406+0000] {logging_mixin.py:190} INFO - [download]  31.1% of    3.22MiB at    3.05MiB/s ETA 00:00
+[2025-05-16T07:18:10.572+0000] {logging_mixin.py:190} INFO - [download]  62.2% of    3.22MiB at    4.06MiB/s ETA 00:00
+[2025-05-16T07:18:10.638+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    3.22MiB at    5.75MiB/s ETA 00:00
+[2025-05-16T07:18:10.639+0000] {logging_mixin.py:190} INFO - [download] 100% of    3.22MiB in 00:00:00 at 4.14MiB/s   
+[2025-05-16T07:18:10.685+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7434917829230595335.mp3
+[2025-05-16T07:18:10.864+0000] {logging_mixin.py:190} INFO - Deleting original file data/7434917829230595335 (pass -k to keep)
+[2025-05-16T07:18:10.868+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7434917829230595335
+[2025-05-16T07:18:10.873+0000] {logging_mixin.py:190} INFO - Downloaded video 7434917829230595335 to data/7434917829230595335.mp3
+[2025-05-16T07:18:11.005+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-16T07:18:11.005+0000] {logging_mixin.py:190} INFO - Downloading video from 7457153698225982727...
+[2025-05-16T07:18:11.040+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@hoaminzy_hoadambut/video/7457153698225982727
+[2025-05-16T07:18:11.040+0000] {logging_mixin.py:190} INFO - [TikTok] 7457153698225982727: Downloading webpage
+[2025-05-16T07:18:11.760+0000] {logging_mixin.py:190} INFO - [info] 7457153698225982727: Downloading 1 format(s): play
+[2025-05-16T07:18:11.829+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7457153698225982727
+[2025-05-16T07:18:11.830+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   17.03MiB at  555.83KiB/s ETA 00:31
+[2025-05-16T07:18:11.831+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   17.03MiB at    1.17MiB/s ETA 00:14
+[2025-05-16T07:18:11.831+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   17.03MiB at    2.21MiB/s ETA 00:07
+[2025-05-16T07:18:11.832+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   17.03MiB at    3.95MiB/s ETA 00:04
+[2025-05-16T07:18:11.834+0000] {logging_mixin.py:190} INFO - [download]   0.2% of   17.03MiB at    5.37MiB/s ETA 00:03
+[2025-05-16T07:18:11.838+0000] {logging_mixin.py:190} INFO - [download]   0.4% of   17.03MiB at    6.52MiB/s ETA 00:02
+[2025-05-16T07:18:11.845+0000] {logging_mixin.py:190} INFO - [download]   0.7% of   17.03MiB at    7.52MiB/s ETA 00:02
+[2025-05-16T07:18:11.859+0000] {logging_mixin.py:190} INFO - [download]   1.5% of   17.03MiB at    7.97MiB/s ETA 00:02
+[2025-05-16T07:18:11.883+0000] {logging_mixin.py:190} INFO - [download]   2.9% of   17.03MiB at    9.11MiB/s ETA 00:01
+[2025-05-16T07:18:11.934+0000] {logging_mixin.py:190} INFO - [download]   5.9% of   17.03MiB at    9.43MiB/s ETA 00:01
+[2025-05-16T07:18:12.036+0000] {logging_mixin.py:190} INFO - [download]  11.7% of   17.03MiB at    9.62MiB/s ETA 00:01
+[2025-05-16T07:18:12.250+0000] {logging_mixin.py:190} INFO - [download]  23.5% of   17.03MiB at    9.48MiB/s ETA 00:01
+[2025-05-16T07:18:12.656+0000] {logging_mixin.py:190} INFO - [download]  47.0% of   17.03MiB at    9.67MiB/s ETA 00:00
+[2025-05-16T07:18:13.052+0000] {logging_mixin.py:190} INFO - [download]  70.4% of   17.03MiB at    9.81MiB/s ETA 00:00
+[2025-05-16T07:18:13.448+0000] {logging_mixin.py:190} INFO - [download]  93.9% of   17.03MiB at    9.88MiB/s ETA 00:00
+[2025-05-16T07:18:13.549+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   17.03MiB at    9.90MiB/s ETA 00:00
+[2025-05-16T07:18:13.551+0000] {logging_mixin.py:190} INFO - [download] 100% of   17.03MiB in 00:00:01 at 9.51MiB/s   
+[2025-05-16T07:18:13.607+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7457153698225982727.mp3
+[2025-05-16T07:18:12.216+0000] {logging_mixin.py:190} INFO - Deleting original file data/7457153698225982727 (pass -k to keep)
+[2025-05-16T07:18:12.218+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7457153698225982727
+[2025-05-16T07:18:12.223+0000] {logging_mixin.py:190} INFO - Downloaded video 7457153698225982727 to data/7457153698225982727.mp3
+[2025-05-16T07:18:12.223+0000] {logging_mixin.py:190} INFO - Downloaded 35 new videos.
+[2025-05-16T07:18:12.505+0000] {python.py:240} INFO - Done. Returned value was: [{'video_id': '7439166215316114696', 'file_path': 'data/7439166215316114696.mp3'}, {'video_id': '7441075883340746002', 'file_path': 'data/7441075883340746002.mp3'}, {'video_id': '7466795079034785042', 'file_path': 'data/7466795079034785042.mp3'}, {'video_id': '7445947525749558536', 'file_path': 'data/7445947525749558536.mp3'}, {'video_id': '7451386098875518215', 'file_path': 'data/7451386098875518215.mp3'}, {'video_id': '7466456064993627410', 'file_path': 'data/7466456064993627410.mp3'}, {'video_id': '7445284290176339218', 'file_path': 'data/7445284290176339218.mp3'}, {'video_id': '7452385446581046535', 'file_path': 'data/7452385446581046535.mp3'}, {'video_id': '7454193652458425608', 'file_path': 'data/7454193652458425608.mp3'}, {'video_id': '7437713010346478855', 'file_path': 'data/7437713010346478855.mp3'}, {'video_id': '7440877607345720583', 'file_path': 'data/7440877607345720583.mp3'}, {'video_id': '7446787050801532167', 'file_path': 'data/7446787050801532167.mp3'}, {'video_id': '7441232482713767186', 'file_path': 'data/7441232482713767186.mp3'}, {'video_id': '7465698139597589768', 'file_path': 'data/7465698139597589768.mp3'}, {'video_id': '7439215028269485320', 'file_path': 'data/7439215028269485320.mp3'}, {'video_id': '7454042656142920968', 'file_path': 'data/7454042656142920968.mp3'}, {'video_id': '7451374739890720008', 'file_path': 'data/7451374739890720008.mp3'}, {'video_id': '7444538584016751880', 'file_path': 'data/7444538584016751880.mp3'}, {'video_id': '7451378763993992456', 'file_path': 'data/7451378763993992456.mp3'}, {'video_id': '7448994195089493266', 'file_path': 'data/7448994195089493266.mp3'}, {'video_id': '7452334283357719815', 'file_path': 'data/7452334283357719815.mp3'}, {'video_id': '7466461706999418130', 'file_path': 'data/7466461706999418130.mp3'}, {'video_id': '7441062886274764050', 'file_path': 'data/7441062886274764050.mp3'}, {'video_id': '7455673651925421330', 'file_path': 'data/7455673651925421330.mp3'}, {'video_id': '7465323770719243538', 'file_path': 'data/7465323770719243538.mp3'}, {'video_id': '7447347701731036424', 'file_path': 'data/7447347701731036424.mp3'}, {'video_id': '7451143872953978130', 'file_path': 'data/7451143872953978130.mp3'}, {'video_id': '7465554238215703826', 'file_path': 'data/7465554238215703826.mp3'}, {'video_id': '7452691717175741704', 'file_path': 'data/7452691717175741704.mp3'}, {'video_id': '7454522286293421320', 'file_path': 'data/7454522286293421320.mp3'}, {'video_id': '7452569215648795922', 'file_path': 'data/7452569215648795922.mp3'}, {'video_id': '7444918111012179218', 'file_path': 'data/7444918111012179218.mp3'}, {'video_id': '7468218353681698056', 'file_path': 'data/7468218353681698056.mp3'}, {'video_id': '7434917829230595335', 'file_path': 'data/7434917829230595335.mp3'}, {'video_id': '7457153698225982727', 'file_path': 'data/7457153698225982727.mp3'}]
+[2025-05-16T07:18:12.525+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-16T07:18:12.525+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tiktok_videos_scraper_dag, task_id=tiktok_videos_scraper_task, run_id=manual__2025-05-16T07:16:24.383008+00:00, execution_date=20250516T071624, start_date=20250516T071625, end_date=20250516T071812
+[2025-05-16T07:18:12.555+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-16T07:18:12.570+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-16T07:18:12.572+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

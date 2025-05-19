@@ -1,0 +1,18 @@
+[2025-05-16T06:32:05.366+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-16T06:32:05.392+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-16T06:32:02.354998+00:00 [queued]>
+[2025-05-16T06:32:05.401+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-16T06:32:02.354998+00:00 [queued]>
+[2025-05-16T06:32:05.401+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-16T06:32:05.414+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): tiktok_videos_scraper_task> on 2025-05-16 06:32:02.354998+00:00
+[2025-05-16T06:32:05.417+0000] {standard_task_runner.py:72} INFO - Started process 6740 to run task
+[2025-05-16T06:32:05.420+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'tiktok_videos_scraper_task', 'manual__2025-05-16T06:32:02.354998+00:00', '--job-id', '6064', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmp5xhy98fi']
+[2025-05-16T06:32:05.421+0000] {standard_task_runner.py:105} INFO - Job 6064: Subtask tiktok_videos_scraper_task
+[2025-05-16T06:32:05.458+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-16T06:32:02.354998+00:00 [running]> on host 8579eb2523da
+[2025-05-16T06:32:05.527+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='tiktok_videos_scraper_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-16T06:32:02.354998+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-16T06:32:02.354998+00:00'
+[2025-05-16T06:32:05.529+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-16T06:32:15.289+0000] {logging_mixin.py:190} INFO - Error in TikTok API: You must provide the username when creating this class to use this method.
+[2025-05-16T06:32:15.464+0000] {python.py:240} INFO - Done. Returned value was: []
+[2025-05-16T06:32:15.484+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-16T06:32:15.484+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tiktok_videos_scraper_dag, task_id=tiktok_videos_scraper_task, run_id=manual__2025-05-16T06:32:02.354998+00:00, execution_date=20250516T063202, start_date=20250516T063205, end_date=20250516T063215
+[2025-05-16T06:32:15.515+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-16T06:32:15.538+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-16T06:32:15.540+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

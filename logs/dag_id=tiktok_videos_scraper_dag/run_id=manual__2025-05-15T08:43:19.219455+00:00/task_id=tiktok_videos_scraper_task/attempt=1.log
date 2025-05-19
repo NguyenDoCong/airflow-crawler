@@ -1,0 +1,21 @@
+[2025-05-15T08:43:20.140+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-15T08:43:20.169+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-15T08:43:19.219455+00:00 [queued]>
+[2025-05-15T08:43:20.180+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-15T08:43:19.219455+00:00 [queued]>
+[2025-05-15T08:43:20.181+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-15T08:43:20.203+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): tiktok_videos_scraper_task> on 2025-05-15 08:43:19.219455+00:00
+[2025-05-15T08:43:20.210+0000] {standard_task_runner.py:72} INFO - Started process 2062 to run task
+[2025-05-15T08:43:20.219+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'tiktok_videos_scraper_task', 'manual__2025-05-15T08:43:19.219455+00:00', '--job-id', '5948', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpvsdg_v09']
+[2025-05-15T08:43:20.222+0000] {standard_task_runner.py:105} INFO - Job 5948: Subtask tiktok_videos_scraper_task
+[2025-05-15T08:43:20.456+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-15T08:43:19.219455+00:00 [running]> on host 8579eb2523da
+[2025-05-15T08:43:20.619+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='tiktok_videos_scraper_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-15T08:43:19.219455+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-15T08:43:19.219455+00:00'
+[2025-05-15T08:43:20.620+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-15T08:44:14.693+0000] {job.py:229} INFO - Heartbeat recovered after 17.69 seconds
+[2025-05-15T08:44:16.183+0000] {logging_mixin.py:190} WARNING - 2025-05-15 08:44:16,097 - TikTokApi.tiktok - ERROR - Failed to create session: Timeout 30000ms exceeded.
+[2025-05-15T08:44:16.097+0000] {tiktok.py:222} ERROR - Failed to create session: Timeout 30000ms exceeded.
+[2025-05-15T08:44:19.816+0000] {logging_mixin.py:190} INFO - Error in TikTok API: Timeout 30000ms exceeded.
+[2025-05-15T08:44:20.160+0000] {python.py:240} INFO - Done. Returned value was: []
+[2025-05-15T08:44:20.196+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-15T08:44:20.196+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tiktok_videos_scraper_dag, task_id=tiktok_videos_scraper_task, run_id=manual__2025-05-15T08:43:19.219455+00:00, execution_date=20250515T084319, start_date=20250515T084320, end_date=20250515T084420
+[2025-05-15T08:44:20.226+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-15T08:44:20.274+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-15T08:44:20.277+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

@@ -1,0 +1,73 @@
+[2025-05-15T02:50:43.106+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-15T02:50:43.116+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-15T02:50:42.185018 [queued]>
+[2025-05-15T02:50:43.121+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-15T02:50:42.185018 [queued]>
+[2025-05-15T02:50:43.121+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-15T02:50:43.128+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): tiktok_videos_scraper_task> on 2025-05-15 02:50:42.185026+00:00
+[2025-05-15T02:50:43.130+0000] {standard_task_runner.py:72} INFO - Started process 6612 to run task
+[2025-05-15T02:50:43.133+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'tiktok_videos_scraper_task', 'manual__2025-05-15T02:50:42.185018', '--job-id', '5597', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpx01x7k83']
+[2025-05-15T02:50:43.134+0000] {standard_task_runner.py:105} INFO - Job 5597: Subtask tiktok_videos_scraper_task
+[2025-05-15T02:50:43.166+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-15T02:50:42.185018 [running]> on host 255dbbe6d096
+[2025-05-15T02:50:43.216+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='tiktok_videos_scraper_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-15T02:50:42.185026+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-15T02:50:42.185018'
+[2025-05-15T02:50:43.217+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-15T02:50:43.219+0000] {python.py:240} INFO - Done. Returned value was: {{ task_instance.xcom_pull(task_ids='tiktok_videos_scraper', dag_id='adhoc_airflow', key='return_value') }}
+[2025-05-15T02:50:43.225+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 789, in _execute_task
+    task_instance.xcom_push(key=XCOM_RETURN_KEY, value=xcom_value, session=session_or_null)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3629, in xcom_push
+    XCom.set(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/api_internal/internal_api_call.py", line 139, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/xcom.py", line 249, in set
+    value = cls.serialize_value(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/xcom.py", line 686, in serialize_value
+    return pickle.dumps(value)
+_pickle.PicklingError: Can't pickle <function tiktok_videos_scraper at 0x7fc4d98577f0>: it's not the same object as tasks.tiktok_videos_scraper.tiktok_videos_scraper
+[2025-05-15T02:50:43.230+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=tiktok_videos_scraper_dag, task_id=tiktok_videos_scraper_task, run_id=manual__2025-05-15T02:50:42.185018, execution_date=20250515T025042, start_date=20250515T025043, end_date=20250515T025043
+[2025-05-15T02:50:43.237+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-15T02:50:43.237+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 5597 for task tiktok_videos_scraper_task (Can't pickle <function tiktok_videos_scraper at 0x7fc4d98577f0>: it's not the same object as tasks.tiktok_videos_scraper.tiktok_videos_scraper; 6612)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 789, in _execute_task
+    task_instance.xcom_push(key=XCOM_RETURN_KEY, value=xcom_value, session=session_or_null)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3629, in xcom_push
+    XCom.set(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/api_internal/internal_api_call.py", line 139, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/xcom.py", line 249, in set
+    value = cls.serialize_value(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/xcom.py", line 686, in serialize_value
+    return pickle.dumps(value)
+_pickle.PicklingError: Can't pickle <function tiktok_videos_scraper at 0x7fc4d98577f0>: it's not the same object as tasks.tiktok_videos_scraper.tiktok_videos_scraper
+[2025-05-15T02:50:43.272+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 1
+[2025-05-15T02:50:43.282+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-15T02:50:43.285+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
