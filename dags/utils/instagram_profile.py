@@ -70,7 +70,7 @@ class ProfileScraper(BaseInstagramScraper):
 
   
 
-    def pipeline_videos(self, scrolls=10):
+    def pipeline_videos(self, id, scrolls=10):
         """
         Pipeline to scrape videos
         
@@ -92,7 +92,7 @@ class ProfileScraper(BaseInstagramScraper):
             rprint("[bold red]Don't close the app![/bold red] Saving scraped data to database, it can take a while!")
 
             # Filter existing videos
-            db_videos = get_all_videos_from_db()
+            db_videos = get_all_videos_from_db(platform="instagram")
             for video in db_videos:
                 if video.url in video_urls:
                     video_urls.remove(video.url)
@@ -107,7 +107,7 @@ class ProfileScraper(BaseInstagramScraper):
             for link in new_links:
                 try:
                     video_id = extract_id(link)
-                    task_id = create_pending_video(video_id, link, platform='instagram')
+                    task_id = create_pending_video(video_id, id, link, platform='instagram')
                     file_path = download_video(link, Config.DOWNLOAD_DIRECTORY)
                     
                     if file_path:

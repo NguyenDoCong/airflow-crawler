@@ -60,7 +60,7 @@ class AccountVideo(BaseFacebookScraper):
 
         return href_elements
 
-    def save_video_urls_to_database_pipeline(self, scrolls=10) -> None:
+    def save_video_urls_to_database_pipeline(self, scrolls=10, user_id="") -> None:
         """Pipeline to save video url to database"""
         results = []
         rprint("[bold]Step 1 of 3 - Load cookies[/bold]")
@@ -95,7 +95,7 @@ class AccountVideo(BaseFacebookScraper):
             self.success = False
             return []
          
-        db_videos = get_all_videos_from_db()
+        db_videos = get_all_videos_from_db(platform="facebook")
         for video in db_videos:
             if video.url in videos:
                 videos.remove(video.url)
@@ -108,7 +108,7 @@ class AccountVideo(BaseFacebookScraper):
         for link in new_links:
             try:
                 video_id = extract_id(link)
-                user_id = extract_user_id(link)
+                # user_id = extract_user_id(link)
             except Exception as e:
                 rprint(f"[red]Error while extracting video ID: {e}[/red]")
                 self._driver.quit()

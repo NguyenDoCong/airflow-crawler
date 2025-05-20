@@ -1,0 +1,31 @@
+[2025-05-20T07:36:55.883+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-20T07:36:55.915+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-20T07:36:54.458908+00:00 [queued]>
+[2025-05-20T07:36:55.923+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-20T07:36:54.458908+00:00 [queued]>
+[2025-05-20T07:36:55.924+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-20T07:36:55.937+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): tiktok_videos_scraper_task> on 2025-05-20 07:36:54.458908+00:00
+[2025-05-20T07:36:55.940+0000] {standard_task_runner.py:72} INFO - Started process 14642 to run task
+[2025-05-20T07:36:55.943+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'tiktok_videos_scraper_task', 'manual__2025-05-20T07:36:54.458908+00:00', '--job-id', '6210', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpna0z23y4']
+[2025-05-20T07:36:55.946+0000] {standard_task_runner.py:105} INFO - Job 6210: Subtask tiktok_videos_scraper_task
+[2025-05-20T07:36:55.992+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-20T07:36:54.458908+00:00 [running]> on host 05534d39966d
+[2025-05-20T07:36:56.075+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='tiktok_videos_scraper_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-20T07:36:54.458908+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-20T07:36:54.458908+00:00'
+[2025-05-20T07:36:56.077+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-20T07:40:47.663+0000] {local_task_job_runner.py:341} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-05-20T07:40:47.665+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2025-05-20T07:40:47.666+0000] {process_utils.py:132} INFO - Sending 15 to group 14642. PIDs of all processes in the group: [14645, 14657, 14664, 14665, 14692, 14701, 14754, 14755, 14778, 14823, 14642]
+[2025-05-20T07:40:47.666+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 14642
+[2025-05-20T07:40:47.667+0000] {taskinstance.py:3083} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-05-20T07:40:47.681+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14692, status='terminated', started='07:36:58') (14692) terminated with exit code None
+[2025-05-20T07:40:47.734+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14657, status='terminated', started='07:36:57') (14657) terminated with exit code None
+[2025-05-20T07:40:47.734+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14664, status='terminated', started='07:36:57') (14664) terminated with exit code None
+[2025-05-20T07:40:47.734+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14823, status='terminated', started='07:39:58') (14823) terminated with exit code None
+[2025-05-20T07:40:47.919+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14778, status='terminated', started='07:36:58') (14778) terminated with exit code None
+[2025-05-20T07:40:47.919+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14754, status='terminated', started='07:36:58') (14754) terminated with exit code None
+[2025-05-20T07:40:47.919+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14665, status='terminated', started='07:36:57') (14665) terminated with exit code None
+[2025-05-20T07:40:47.919+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14755, status='terminated', started='07:36:58') (14755) terminated with exit code None
+[2025-05-20T07:40:47.920+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14701, status='terminated', started='07:36:58') (14701) terminated with exit code None
+[2025-05-20T07:41:44.045+0000] {process_utils.py:150} WARNING - process psutil.Process(pid=14642, name='airflow task ru', status='sleeping', started='07:36:55') did not respond to SIGTERM. Trying SIGKILL
+[2025-05-20T07:41:44.046+0000] {process_utils.py:150} WARNING - process psutil.Process(pid=14645, name='node', status='sleeping', started='07:36:56') did not respond to SIGTERM. Trying SIGKILL
+[2025-05-20T07:41:44.046+0000] {process_utils.py:87} INFO - Sending the signal 9 to group 14642
+[2025-05-20T07:41:44.054+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14642, name='airflow task ru', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='07:36:55') (14642) terminated with exit code -9
+[2025-05-20T07:41:44.054+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=14645, name='node', status='terminated', started='07:36:56') (14645) terminated with exit code None
+[2025-05-20T07:41:44.055+0000] {standard_task_runner.py:190} ERROR - ('Job 6210 was killed before it finished (likely due to running out of memory)', 'For more information, see https://airflow.apache.org/docs/apache-airflow/stable/troubleshooting.html#LocalTaskJob-killed')

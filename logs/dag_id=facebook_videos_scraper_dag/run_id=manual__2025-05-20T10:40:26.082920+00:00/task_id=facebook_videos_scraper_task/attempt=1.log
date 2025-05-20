@@ -1,0 +1,1140 @@
+[2025-05-20T10:40:27.344+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-20T10:40:27.355+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.facebook_videos_scraper_task manual__2025-05-20T10:40:26.082920+00:00 [queued]>
+[2025-05-20T10:40:27.360+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.facebook_videos_scraper_task manual__2025-05-20T10:40:26.082920+00:00 [queued]>
+[2025-05-20T10:40:27.360+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-20T10:40:27.368+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): facebook_videos_scraper_task> on 2025-05-20 10:40:26.082920+00:00
+[2025-05-20T10:40:27.371+0000] {standard_task_runner.py:72} INFO - Started process 37530 to run task
+[2025-05-20T10:40:27.373+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'facebook_videos_scraper_task', 'manual__2025-05-20T10:40:26.082920+00:00', '--job-id', '6303', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_fb.py', '--cfg-path', '/tmp/tmpws0vdor1']
+[2025-05-20T10:40:27.375+0000] {standard_task_runner.py:105} INFO - Job 6303: Subtask facebook_videos_scraper_task
+[2025-05-20T10:40:27.410+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.facebook_videos_scraper_task manual__2025-05-20T10:40:26.082920+00:00 [running]> on host 05534d39966d
+[2025-05-20T10:40:27.461+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='facebook_videos_scraper_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-20T10:40:26.082920+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-20T10:40:26.082920+00:00'
+[2025-05-20T10:40:27.462+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-20T10:40:27.519+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.94); currently, chromedriver 136.0.7103.94 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-20T10:40:30.018+0000] {logging_mixin.py:190} INFO - Step 1 of 3 - Load cookies
+[2025-05-20T10:40:34.165+0000] {logging_mixin.py:190} INFO - Step 2 of 3 - Scrolling page
+[2025-05-20T10:40:34.166+0000] {logging_mixin.py:190} INFO - Scrolling 1 iterations...
+[2025-05-20T10:40:40.192+0000] {logging_mixin.py:190} INFO - Scrolling stopped after 2 iterations
+[2025-05-20T10:40:40.192+0000] {logging_mixin.py:190} INFO - Scrolled 2 iterations
+[2025-05-20T10:40:40.192+0000] {logging_mixin.py:190} INFO - Step 3 of 3 - Extract videos urls
+[2025-05-20T10:40:40.213+0000] {logging_mixin.py:190} INFO - Found 142 a tags
+[2025-05-20T10:40:40.379+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/100044447978953/videos/8681365398626622
+[2025-05-20T10:40:40.393+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/8681365398626622/?comment_id=534531642754789&__tn__=R]
+[2025-05-20T10:40:40.397+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/1743432816216505/
+[2025-05-20T10:40:40.411+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/1258541055210747/
+[2025-05-20T10:40:40.420+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/8681365398626622/
+[2025-05-20T10:40:40.434+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/1243201096942193/
+[2025-05-20T10:40:40.447+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/1240720310291404/
+[2025-05-20T10:40:40.460+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/1498659011015943/
+[2025-05-20T10:40:40.473+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/1196699494859306/
+[2025-05-20T10:40:40.486+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/7570412633087549/
+[2025-05-20T10:40:40.500+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/1486781625568819/
+[2025-05-20T10:40:40.513+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/989088639327161/
+[2025-05-20T10:40:40.522+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/452260924077822/
+[2025-05-20T10:40:40.535+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/1687828848289908/
+[2025-05-20T10:40:40.548+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/427905726805954/
+[2025-05-20T10:40:40.563+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/1169875757589571/
+[2025-05-20T10:40:40.573+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/7645741612178822/
+[2025-05-20T10:40:40.583+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/1152902046026811/
+[2025-05-20T10:40:40.594+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/803213928056688/
+[2025-05-20T10:40:40.603+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/1113105849899605/
+[2025-05-20T10:40:40.611+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/957022549309488/
+[2025-05-20T10:40:40.620+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/1707853956372784/
+[2025-05-20T10:40:40.629+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/409978071713366/
+[2025-05-20T10:40:40.637+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/1061020555163079/
+[2025-05-20T10:40:40.647+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/328465600178614/
+[2025-05-20T10:40:40.656+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/678975881114550/
+[2025-05-20T10:40:40.664+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/1081038476576989/
+[2025-05-20T10:40:40.677+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/1315382265841478/
+[2025-05-20T10:40:40.686+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/746383310757322/
+[2025-05-20T10:40:40.694+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/736549631273388/
+[2025-05-20T10:40:40.703+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/345582778091499/
+[2025-05-20T10:40:40.712+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/1078903316453206/
+[2025-05-20T10:40:40.722+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/1768643370215621/
+[2025-05-20T10:40:40.731+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/374761188336027/
+[2025-05-20T10:40:40.740+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/687193679852872/
+[2025-05-20T10:40:40.753+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/253344827740051/
+[2025-05-20T10:40:40.761+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/882271069764412/
+[2025-05-20T10:40:40.769+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/700442321997916/
+[2025-05-20T10:40:40.778+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/353186830452446/
+[2025-05-20T10:40:40.787+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/353446540380226/
+[2025-05-20T10:40:40.815+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/261539360185903/
+[2025-05-20T10:40:40.844+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/1875168249544727/
+[2025-05-20T10:40:40.856+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/878961347240177/
+[2025-05-20T10:40:40.866+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/appletv/videos/1720201351774691/
+[2025-05-20T10:40:40.876+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/238605299165895/
+[2025-05-20T10:40:40.889+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/806106551064720/
+[2025-05-20T10:40:40.902+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/leomessi/videos/644476217421927/
+[2025-05-20T10:40:40.911+0000] {logging_mixin.py:190} INFO - Found 47 href elements
+[2025-05-20T10:40:40.912+0000] {logging_mixin.py:190} INFO -  Scraped data:
+[2025-05-20T10:40:40.912+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/100044447978953/videos/8681365398626622
+[2025-05-20T10:40:40.912+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/leomessi/videos/8681365398626622/?comment_id=5345316427
+54789&__tn__=R]
+[2025-05-20T10:40:40.913+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/1743432816216505/
+[2025-05-20T10:40:40.913+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/1258541055210747/
+[2025-05-20T10:40:40.913+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/8681365398626622/
+[2025-05-20T10:40:40.914+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/1243201096942193/
+[2025-05-20T10:40:40.914+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/1240720310291404/
+[2025-05-20T10:40:40.914+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/1498659011015943/
+[2025-05-20T10:40:40.915+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/1196699494859306/
+[2025-05-20T10:40:40.915+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/7570412633087549/
+[2025-05-20T10:40:40.915+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/1486781625568819/
+[2025-05-20T10:40:40.915+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/989088639327161/
+[2025-05-20T10:40:40.915+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/452260924077822/
+[2025-05-20T10:40:40.916+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/1687828848289908/
+[2025-05-20T10:40:40.916+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/427905726805954/
+[2025-05-20T10:40:40.916+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/1169875757589571/
+[2025-05-20T10:40:40.916+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/7645741612178822/
+[2025-05-20T10:40:40.917+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/1152902046026811/
+[2025-05-20T10:40:40.917+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/803213928056688/
+[2025-05-20T10:40:40.917+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/1113105849899605/
+[2025-05-20T10:40:40.917+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/957022549309488/
+[2025-05-20T10:40:40.918+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/1707853956372784/
+[2025-05-20T10:40:40.918+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/409978071713366/
+[2025-05-20T10:40:40.918+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/1061020555163079/
+[2025-05-20T10:40:40.918+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/328465600178614/
+[2025-05-20T10:40:40.919+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/678975881114550/
+[2025-05-20T10:40:40.919+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/1081038476576989/
+[2025-05-20T10:40:40.919+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/1315382265841478/
+[2025-05-20T10:40:40.919+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/746383310757322/
+[2025-05-20T10:40:40.919+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/736549631273388/
+[2025-05-20T10:40:40.920+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/345582778091499/
+[2025-05-20T10:40:40.920+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/1078903316453206/
+[2025-05-20T10:40:40.920+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/1768643370215621/
+[2025-05-20T10:40:40.920+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/374761188336027/
+[2025-05-20T10:40:40.921+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/687193679852872/
+[2025-05-20T10:40:40.921+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/253344827740051/
+[2025-05-20T10:40:40.921+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/882271069764412/
+[2025-05-20T10:40:40.921+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/700442321997916/
+[2025-05-20T10:40:40.922+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/353186830452446/
+[2025-05-20T10:40:40.922+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/353446540380226/
+[2025-05-20T10:40:40.922+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/261539360185903/
+[2025-05-20T10:40:40.922+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/1875168249544727/
+[2025-05-20T10:40:40.922+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/878961347240177/
+[2025-05-20T10:40:40.923+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/appletv/videos/1720201351774691/
+[2025-05-20T10:40:40.923+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/238605299165895/
+[2025-05-20T10:40:40.923+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/806106551064720/
+[2025-05-20T10:40:40.923+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/leomessi/videos/644476217421927/
+[2025-05-20T10:40:40.924+0000] {logging_mixin.py:190} INFO - Don't close the app! Saving scraped data to database, it can take a while!
+[2025-05-20T10:40:40.934+0000] {warnings.py:109} WARNING - /opt/airflow/dags/app/core/database_utils.py:38: SAWarning: SELECT statement has a cartesian product between FROM element(s) "facebook" and FROM element "tiktok".  Apply join condition(s) between each element to resolve.
+  return db.query(Facebook).filter(Tiktok.status == TaskStatus.SUCCESS.value).all()
+
+[2025-05-20T10:40:40.944+0000] {logging_mixin.py:190} INFO - Remaining new videos: 47
+[2025-05-20T10:40:40.944+0000] {logging_mixin.py:190} INFO - New videos: 47
+[2025-05-20T10:40:41.097+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:40:41.097+0000] {logging_mixin.py:190} INFO - Downloading video from 1768643370215621...
+[2025-05-20T10:40:41.315+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/1768643370215621/
+[2025-05-20T10:40:41.316+0000] {logging_mixin.py:190} INFO - [facebook] 1768643370215621: Downloading webpage
+[2025-05-20T10:40:42.354+0000] {logging_mixin.py:190} INFO - [info] 1768643370215621: Downloading 1 format(s): 1868175633944845a
+[2025-05-20T10:40:42.575+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1768643370215621
+[2025-05-20T10:40:42.575+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  136.66KiB at  513.50KiB/s ETA 00:00
+[2025-05-20T10:40:42.576+0000] {logging_mixin.py:190} INFO - [download]   2.2% of  136.66KiB at    1.06MiB/s ETA 00:00
+[2025-05-20T10:40:42.576+0000] {logging_mixin.py:190} INFO - [download]   5.1% of  136.66KiB at    2.07MiB/s ETA 00:00
+[2025-05-20T10:40:42.577+0000] {logging_mixin.py:190} INFO - [download]  11.0% of  136.66KiB at    3.77MiB/s ETA 00:00
+[2025-05-20T10:40:42.578+0000] {logging_mixin.py:190} INFO - [download]  22.7% of  136.66KiB at    6.06MiB/s ETA 00:00
+[2025-05-20T10:40:42.581+0000] {logging_mixin.py:190} INFO - [download]  46.1% of  136.66KiB at    7.92MiB/s ETA 00:00
+[2025-05-20T10:40:42.587+0000] {logging_mixin.py:190} INFO - [download]  92.9% of  136.66KiB at    9.02MiB/s ETA 00:00
+[2025-05-20T10:40:42.588+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  136.66KiB at    9.08MiB/s ETA 00:00
+[2025-05-20T10:40:42.588+0000] {logging_mixin.py:190} INFO - [download] 100% of  136.66KiB in 00:00:00 at 593.47KiB/s 
+[2025-05-20T10:40:42.858+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1768643370215621"
+[2025-05-20T10:40:43.005+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1768643370215621.mp3
+[2025-05-20T10:40:43.223+0000] {logging_mixin.py:190} INFO - Deleting original file data/1768643370215621 (pass -k to keep)
+[2025-05-20T10:40:43.226+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1768643370215621
+[2025-05-20T10:40:43.241+0000] {logging_mixin.py:190} INFO - Downloaded video 1768643370215621 to data/1768643370215621.mp3
+[2025-05-20T10:40:43.355+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:40:43.355+0000] {logging_mixin.py:190} INFO - Downloading video from 1243201096942193...
+[2025-05-20T10:40:43.383+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/1243201096942193/
+[2025-05-20T10:40:43.384+0000] {logging_mixin.py:190} INFO - [facebook] 1243201096942193: Downloading webpage
+[2025-05-20T10:40:44.651+0000] {logging_mixin.py:190} INFO - [info] 1243201096942193: Downloading 1 format(s): 1996442400769801a
+[2025-05-20T10:40:44.691+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1243201096942193
+[2025-05-20T10:40:44.691+0000] {logging_mixin.py:190} INFO - [download]   1.4% of   71.99KiB at  539.88KiB/s ETA 00:00
+[2025-05-20T10:40:44.692+0000] {logging_mixin.py:190} INFO - [download]   4.2% of   71.99KiB at 1014.34KiB/s ETA 00:00
+[2025-05-20T10:40:44.692+0000] {logging_mixin.py:190} INFO - [download]   9.7% of   71.99KiB at    2.05MiB/s ETA 00:00
+[2025-05-20T10:40:44.693+0000] {logging_mixin.py:190} INFO - [download]  20.8% of   71.99KiB at    3.98MiB/s ETA 00:00
+[2025-05-20T10:40:44.696+0000] {logging_mixin.py:190} INFO - [download]  43.1% of   71.99KiB at    4.42MiB/s ETA 00:00
+[2025-05-20T10:40:44.698+0000] {logging_mixin.py:190} INFO - [download]  87.5% of   71.99KiB at    6.58MiB/s ETA 00:00
+[2025-05-20T10:40:44.699+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   71.99KiB at    6.96MiB/s ETA 00:00
+[2025-05-20T10:40:44.700+0000] {logging_mixin.py:190} INFO - [download] 100% of   71.99KiB in 00:00:00 at 1.57MiB/s   
+[2025-05-20T10:40:44.701+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1243201096942193"
+[2025-05-20T10:40:44.787+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1243201096942193.mp3
+[2025-05-20T10:40:44.903+0000] {logging_mixin.py:190} INFO - Deleting original file data/1243201096942193 (pass -k to keep)
+[2025-05-20T10:40:44.907+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1243201096942193
+[2025-05-20T10:40:44.912+0000] {logging_mixin.py:190} INFO - Downloaded video 1243201096942193 to data/1243201096942193.mp3
+[2025-05-20T10:40:45.030+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:40:45.030+0000] {logging_mixin.py:190} INFO - Downloading video from 1258541055210747...
+[2025-05-20T10:40:45.060+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/1258541055210747/
+[2025-05-20T10:40:45.060+0000] {logging_mixin.py:190} INFO - [facebook] 1258541055210747: Downloading webpage
+[2025-05-20T10:40:46.130+0000] {logging_mixin.py:190} INFO - [info] 1258541055210747: Downloading 1 format(s): 1986017368588129a
+[2025-05-20T10:40:46.164+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1258541055210747
+[2025-05-20T10:40:46.164+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.28MiB at  985.50KiB/s ETA 00:01
+[2025-05-20T10:40:46.166+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.28MiB at    1.12MiB/s ETA 00:01
+[2025-05-20T10:40:46.166+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    1.28MiB at    2.21MiB/s ETA 00:00
+[2025-05-20T10:40:46.167+0000] {logging_mixin.py:190} INFO - [download]   1.1% of    1.28MiB at    4.25MiB/s ETA 00:00
+[2025-05-20T10:40:46.170+0000] {logging_mixin.py:190} INFO - [download]   2.4% of    1.28MiB at    4.91MiB/s ETA 00:00
+[2025-05-20T10:40:46.173+0000] {logging_mixin.py:190} INFO - [download]   4.8% of    1.28MiB at    6.65MiB/s ETA 00:00
+[2025-05-20T10:40:46.178+0000] {logging_mixin.py:190} INFO - [download]   9.7% of    1.28MiB at    8.34MiB/s ETA 00:00
+[2025-05-20T10:40:46.190+0000] {logging_mixin.py:190} INFO - [download]  19.4% of    1.28MiB at    9.56MiB/s ETA 00:00
+[2025-05-20T10:40:46.382+0000] {logging_mixin.py:190} INFO - [download]  38.9% of    1.28MiB at    2.29MiB/s ETA 00:00
+[2025-05-20T10:40:46.513+0000] {logging_mixin.py:190} INFO - [download]  77.9% of    1.28MiB at    2.86MiB/s ETA 00:00
+[2025-05-20T10:40:46.551+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.28MiB at    3.31MiB/s ETA 00:00
+[2025-05-20T10:40:46.552+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.28MiB in 00:00:00 at 3.06MiB/s   
+[2025-05-20T10:40:46.554+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1258541055210747"
+[2025-05-20T10:40:46.643+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1258541055210747.mp3
+[2025-05-20T10:40:47.846+0000] {logging_mixin.py:190} INFO - Deleting original file data/1258541055210747 (pass -k to keep)
+[2025-05-20T10:40:47.849+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1258541055210747
+[2025-05-20T10:40:47.853+0000] {logging_mixin.py:190} INFO - Downloaded video 1258541055210747 to data/1258541055210747.mp3
+[2025-05-20T10:40:48.013+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:40:48.014+0000] {logging_mixin.py:190} INFO - Downloading video from 882271069764412...
+[2025-05-20T10:40:48.043+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/882271069764412/
+[2025-05-20T10:40:48.043+0000] {logging_mixin.py:190} INFO - [facebook] 882271069764412: Downloading webpage
+[2025-05-20T10:40:49.144+0000] {logging_mixin.py:190} INFO - [info] 882271069764412: Downloading 1 format(s): 1382310349770337a
+[2025-05-20T10:40:49.363+0000] {logging_mixin.py:190} INFO - [download] Destination: data/882271069764412
+[2025-05-20T10:40:49.363+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  495.48KiB at  448.64KiB/s ETA 00:01
+[2025-05-20T10:40:49.364+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  495.48KiB at    1.07MiB/s ETA 00:00
+[2025-05-20T10:40:49.364+0000] {logging_mixin.py:190} INFO - [download]   1.4% of  495.48KiB at    2.18MiB/s ETA 00:00
+[2025-05-20T10:40:49.366+0000] {logging_mixin.py:190} INFO - [download]   3.0% of  495.48KiB at    3.32MiB/s ETA 00:00
+[2025-05-20T10:40:49.371+0000] {logging_mixin.py:190} INFO - [download]   6.3% of  495.48KiB at    3.05MiB/s ETA 00:00
+[2025-05-20T10:40:49.374+0000] {logging_mixin.py:190} INFO - [download]  12.7% of  495.48KiB at    4.79MiB/s ETA 00:00
+[2025-05-20T10:40:49.380+0000] {logging_mixin.py:190} INFO - [download]  25.6% of  495.48KiB at    6.53MiB/s ETA 00:00
+[2025-05-20T10:40:49.392+0000] {logging_mixin.py:190} INFO - [download]  51.5% of  495.48KiB at    8.22MiB/s ETA 00:00
+[2025-05-20T10:40:49.455+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  495.48KiB at    5.18MiB/s ETA 00:00
+[2025-05-20T10:40:49.455+0000] {logging_mixin.py:190} INFO - [download] 100% of  495.48KiB in 00:00:00 at 1.57MiB/s   
+[2025-05-20T10:40:49.457+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/882271069764412"
+[2025-05-20T10:40:49.599+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/882271069764412.mp3
+[2025-05-20T10:40:50.190+0000] {logging_mixin.py:190} INFO - Deleting original file data/882271069764412 (pass -k to keep)
+[2025-05-20T10:40:50.193+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 882271069764412
+[2025-05-20T10:40:50.198+0000] {logging_mixin.py:190} INFO - Downloaded video 882271069764412 to data/882271069764412.mp3
+[2025-05-20T10:40:50.310+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:40:50.311+0000] {logging_mixin.py:190} INFO - Downloading video from 957022549309488...
+[2025-05-20T10:40:50.340+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/957022549309488/
+[2025-05-20T10:40:50.340+0000] {logging_mixin.py:190} INFO - [facebook] 957022549309488: Downloading webpage
+[2025-05-20T10:40:51.277+0000] {logging_mixin.py:190} INFO - [info] 957022549309488: Downloading 1 format(s): 1471250596803910a
+[2025-05-20T10:40:51.334+0000] {logging_mixin.py:190} INFO - [download] Destination: data/957022549309488
+[2025-05-20T10:40:51.335+0000] {logging_mixin.py:190} INFO - [download]   0.9% of  109.62KiB at  560.51KiB/s ETA 00:00
+[2025-05-20T10:40:51.336+0000] {logging_mixin.py:190} INFO - [download]   2.7% of  109.62KiB at    1.04MiB/s ETA 00:00
+[2025-05-20T10:40:51.337+0000] {logging_mixin.py:190} INFO - [download]   6.4% of  109.62KiB at    1.93MiB/s ETA 00:00
+[2025-05-20T10:40:51.339+0000] {logging_mixin.py:190} INFO - [download]  13.7% of  109.62KiB at    2.63MiB/s ETA 00:00
+[2025-05-20T10:40:51.341+0000] {logging_mixin.py:190} INFO - [download]  28.3% of  109.62KiB at    3.73MiB/s ETA 00:00
+[2025-05-20T10:40:51.346+0000] {logging_mixin.py:190} INFO - [download]  57.5% of  109.62KiB at    4.85MiB/s ETA 00:00
+[2025-05-20T10:40:51.513+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  109.62KiB at  610.03KiB/s ETA 00:00
+[2025-05-20T10:40:51.514+0000] {logging_mixin.py:190} INFO - [download] 100% of  109.62KiB in 00:00:00 at 469.78KiB/s 
+[2025-05-20T10:40:51.515+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/957022549309488"
+[2025-05-20T10:40:51.618+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/957022549309488.mp3
+[2025-05-20T10:40:51.846+0000] {logging_mixin.py:190} INFO - Deleting original file data/957022549309488 (pass -k to keep)
+[2025-05-20T10:40:51.849+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 957022549309488
+[2025-05-20T10:40:51.853+0000] {logging_mixin.py:190} INFO - Downloaded video 957022549309488 to data/957022549309488.mp3
+[2025-05-20T10:40:51.964+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:40:51.965+0000] {logging_mixin.py:190} INFO - Downloading video from 1078903316453206...
+[2025-05-20T10:40:51.994+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/1078903316453206/
+[2025-05-20T10:40:51.995+0000] {logging_mixin.py:190} INFO - [facebook] 1078903316453206: Downloading webpage
+[2025-05-20T10:40:53.826+0000] {logging_mixin.py:190} INFO - [info] 1078903316453206: Downloading 1 format(s): 2961387544068211a
+[2025-05-20T10:40:54.125+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1078903316453206
+[2025-05-20T10:40:54.126+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  352.31KiB at    4.17KiB/s ETA 01:24
+[2025-05-20T10:40:54.127+0000] {logging_mixin.py:190} INFO - [download]   0.9% of  352.31KiB at   12.46KiB/s ETA 00:28
+[2025-05-20T10:40:54.128+0000] {logging_mixin.py:190} INFO - [download]   2.0% of  352.31KiB at   28.99KiB/s ETA 00:11
+[2025-05-20T10:40:54.129+0000] {logging_mixin.py:190} INFO - [download]   4.3% of  352.31KiB at   61.92KiB/s ETA 00:05
+[2025-05-20T10:40:54.131+0000] {logging_mixin.py:190} INFO - [download]   8.8% of  352.31KiB at  126.59KiB/s ETA 00:02
+[2025-05-20T10:40:54.134+0000] {logging_mixin.py:190} INFO - [download]  17.9% of  352.31KiB at  253.95KiB/s ETA 00:01
+[2025-05-20T10:40:54.140+0000] {logging_mixin.py:190} INFO - [download]  36.0% of  352.31KiB at  500.55KiB/s ETA 00:00
+[2025-05-20T10:40:54.152+0000] {logging_mixin.py:190} INFO - [download]  72.4% of  352.31KiB at  960.73KiB/s ETA 00:00
+[2025-05-20T10:40:54.160+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  352.31KiB at    1.26MiB/s ETA 00:00
+[2025-05-20T10:40:54.161+0000] {logging_mixin.py:190} INFO - [download] 100% of  352.31KiB in 00:00:00 at 1.04MiB/s   
+[2025-05-20T10:40:54.162+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1078903316453206"
+[2025-05-20T10:40:54.251+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1078903316453206.mp3
+[2025-05-20T10:40:54.719+0000] {logging_mixin.py:190} INFO - Deleting original file data/1078903316453206 (pass -k to keep)
+[2025-05-20T10:40:54.721+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1078903316453206
+[2025-05-20T10:40:54.741+0000] {logging_mixin.py:190} INFO - Downloaded video 1078903316453206 to data/1078903316453206.mp3
+[2025-05-20T10:40:54.851+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:40:54.851+0000] {logging_mixin.py:190} INFO - Downloading video from 687193679852872...
+[2025-05-20T10:40:54.879+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/687193679852872/
+[2025-05-20T10:40:54.880+0000] {logging_mixin.py:190} INFO - [facebook] 687193679852872: Downloading webpage
+[2025-05-20T10:40:56.409+0000] {logging_mixin.py:190} INFO - [info] 687193679852872: Downloading 1 format(s): 1361633761718441a
+[2025-05-20T10:40:56.490+0000] {logging_mixin.py:190} INFO - [download] Destination: data/687193679852872
+[2025-05-20T10:40:56.490+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  459.49KiB at  Unknown B/s ETA Unknown
+[2025-05-20T10:40:56.491+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  459.49KiB at    1.54MiB/s ETA 00:00  
+[2025-05-20T10:40:56.492+0000] {logging_mixin.py:190} INFO - [download]   1.5% of  459.49KiB at    2.50MiB/s ETA 00:00
+[2025-05-20T10:40:56.493+0000] {logging_mixin.py:190} INFO - [download]   3.3% of  459.49KiB at    4.20MiB/s ETA 00:00
+[2025-05-20T10:40:56.493+0000] {logging_mixin.py:190} INFO - [download]   6.7% of  459.49KiB at    7.39MiB/s ETA 00:00
+[2025-05-20T10:40:56.495+0000] {logging_mixin.py:190} INFO - [download]  13.7% of  459.49KiB at   10.58MiB/s ETA 00:00
+[2025-05-20T10:40:56.503+0000] {logging_mixin.py:190} INFO - [download]  27.6% of  459.49KiB at    8.90MiB/s ETA 00:00
+[2025-05-20T10:40:56.515+0000] {logging_mixin.py:190} INFO - [download]  55.5% of  459.49KiB at    9.83MiB/s ETA 00:00
+[2025-05-20T10:40:56.760+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  459.49KiB at    1.66MiB/s ETA 00:00
+[2025-05-20T10:40:56.760+0000] {logging_mixin.py:190} INFO - [download] 100% of  459.49KiB in 00:00:00 at 1.29MiB/s   
+[2025-05-20T10:40:56.762+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/687193679852872"
+[2025-05-20T10:40:56.843+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/687193679852872.mp3
+[2025-05-20T10:40:57.437+0000] {logging_mixin.py:190} INFO - Deleting original file data/687193679852872 (pass -k to keep)
+[2025-05-20T10:40:57.440+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 687193679852872
+[2025-05-20T10:40:57.444+0000] {logging_mixin.py:190} INFO - Downloaded video 687193679852872 to data/687193679852872.mp3
+[2025-05-20T10:40:57.556+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:40:57.557+0000] {logging_mixin.py:190} INFO - Downloading video from 1875168249544727...
+[2025-05-20T10:40:57.585+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/1875168249544727/
+[2025-05-20T10:40:57.585+0000] {logging_mixin.py:190} INFO - [facebook] 1875168249544727: Downloading webpage
+[2025-05-20T10:40:59.119+0000] {logging_mixin.py:190} INFO - [info] 1875168249544727: Downloading 1 format(s): 1420464125545048a
+[2025-05-20T10:40:59.169+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1875168249544727
+[2025-05-20T10:40:59.170+0000] {logging_mixin.py:190} INFO - [download]   0.9% of  110.75KiB at  991.09KiB/s ETA 00:00
+[2025-05-20T10:40:59.170+0000] {logging_mixin.py:190} INFO - [download]   2.7% of  110.75KiB at    1.62MiB/s ETA 00:00
+[2025-05-20T10:40:59.171+0000] {logging_mixin.py:190} INFO - [download]   6.3% of  110.75KiB at    2.89MiB/s ETA 00:00
+[2025-05-20T10:40:59.171+0000] {logging_mixin.py:190} INFO - [download]  13.5% of  110.75KiB at    4.73MiB/s ETA 00:00
+[2025-05-20T10:40:59.175+0000] {logging_mixin.py:190} INFO - [download]  28.0% of  110.75KiB at    4.44MiB/s ETA 00:00
+[2025-05-20T10:40:59.178+0000] {logging_mixin.py:190} INFO - [download]  56.9% of  110.75KiB at    6.46MiB/s ETA 00:00
+[2025-05-20T10:40:59.344+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  110.75KiB at  631.65KiB/s ETA 00:00
+[2025-05-20T10:40:59.344+0000] {logging_mixin.py:190} INFO - [download] 100% of  110.75KiB in 00:00:00 at 497.62KiB/s 
+[2025-05-20T10:40:59.346+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1875168249544727"
+[2025-05-20T10:40:59.431+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1875168249544727.mp3
+[2025-05-20T10:40:59.652+0000] {logging_mixin.py:190} INFO - Deleting original file data/1875168249544727 (pass -k to keep)
+[2025-05-20T10:40:59.655+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1875168249544727
+[2025-05-20T10:40:59.674+0000] {logging_mixin.py:190} INFO - Downloaded video 1875168249544727 to data/1875168249544727.mp3
+[2025-05-20T10:40:59.787+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:40:59.787+0000] {logging_mixin.py:190} INFO - Downloading video from 678975881114550...
+[2025-05-20T10:40:59.815+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/678975881114550/
+[2025-05-20T10:40:59.816+0000] {logging_mixin.py:190} INFO - [facebook] 678975881114550: Downloading webpage
+[2025-05-20T10:41:00.808+0000] {logging_mixin.py:190} INFO - [info] 678975881114550: Downloading 1 format(s): 757019055870450a
+[2025-05-20T10:41:01.135+0000] {logging_mixin.py:190} INFO - [download] Destination: data/678975881114550
+[2025-05-20T10:41:01.136+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  168.02KiB at    6.78KiB/s ETA 00:24
+[2025-05-20T10:41:01.136+0000] {logging_mixin.py:190} INFO - [download]   1.8% of  168.02KiB at   20.21KiB/s ETA 00:08
+[2025-05-20T10:41:01.137+0000] {logging_mixin.py:190} INFO - [download]   4.2% of  168.02KiB at   47.00KiB/s ETA 00:03
+[2025-05-20T10:41:01.137+0000] {logging_mixin.py:190} INFO - [download]   8.9% of  168.02KiB at  100.42KiB/s ETA 00:01
+[2025-05-20T10:41:01.138+0000] {logging_mixin.py:190} INFO - [download]  18.4% of  168.02KiB at  206.82KiB/s ETA 00:00
+[2025-05-20T10:41:01.141+0000] {logging_mixin.py:190} INFO - [download]  37.5% of  168.02KiB at  412.49KiB/s ETA 00:00
+[2025-05-20T10:41:01.146+0000] {logging_mixin.py:190} INFO - [download]  75.6% of  168.02KiB at  801.84KiB/s ETA 00:00
+[2025-05-20T10:41:01.150+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  168.02KiB at    1.01MiB/s ETA 00:00
+[2025-05-20T10:41:01.150+0000] {logging_mixin.py:190} INFO - [download] 100% of  168.02KiB in 00:00:00 at 494.29KiB/s 
+[2025-05-20T10:41:01.151+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/678975881114550"
+[2025-05-20T10:41:01.247+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/678975881114550.mp3
+[2025-05-20T10:41:01.564+0000] {logging_mixin.py:190} INFO - Deleting original file data/678975881114550 (pass -k to keep)
+[2025-05-20T10:41:01.566+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 678975881114550
+[2025-05-20T10:41:01.575+0000] {logging_mixin.py:190} INFO - Downloaded video 678975881114550 to data/678975881114550.mp3
+[2025-05-20T10:41:01.790+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:01.790+0000] {logging_mixin.py:190} INFO - Downloading video from 989088639327161...
+[2025-05-20T10:41:01.818+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/989088639327161/
+[2025-05-20T10:41:01.818+0000] {logging_mixin.py:190} INFO - [facebook] 989088639327161: Downloading webpage
+[2025-05-20T10:41:04.009+0000] {logging_mixin.py:190} INFO - [info] 989088639327161: Downloading 1 format(s): 1052287206820704a
+[2025-05-20T10:41:04.068+0000] {logging_mixin.py:190} INFO - [download] Destination: data/989088639327161
+[2025-05-20T10:41:04.069+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  349.37KiB at  961.11KiB/s ETA 00:00
+[2025-05-20T10:41:04.069+0000] {logging_mixin.py:190} INFO - [download]   0.9% of  349.37KiB at    1.87MiB/s ETA 00:00
+[2025-05-20T10:41:04.070+0000] {logging_mixin.py:190} INFO - [download]   2.0% of  349.37KiB at    3.45MiB/s ETA 00:00
+[2025-05-20T10:41:04.070+0000] {logging_mixin.py:190} INFO - [download]   4.3% of  349.37KiB at    6.16MiB/s ETA 00:00
+[2025-05-20T10:41:04.072+0000] {logging_mixin.py:190} INFO - [download]   8.9% of  349.37KiB at    7.34MiB/s ETA 00:00
+[2025-05-20T10:41:04.074+0000] {logging_mixin.py:190} INFO - [download]  18.0% of  349.37KiB at    9.14MiB/s ETA 00:00
+[2025-05-20T10:41:04.270+0000] {logging_mixin.py:190} INFO - [download]  36.4% of  349.37KiB at  626.65KiB/s ETA 00:00
+[2025-05-20T10:41:04.326+0000] {logging_mixin.py:190} INFO - [download]  73.0% of  349.37KiB at  986.84KiB/s ETA 00:00
+[2025-05-20T10:41:04.335+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  349.37KiB at    1.28MiB/s ETA 00:00
+[2025-05-20T10:41:04.335+0000] {logging_mixin.py:190} INFO - [download] 100% of  349.37KiB in 00:00:00 at 1.06MiB/s   
+[2025-05-20T10:41:04.337+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/989088639327161"
+[2025-05-20T10:41:04.425+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/989088639327161.mp3
+[2025-05-20T10:41:04.905+0000] {logging_mixin.py:190} INFO - Deleting original file data/989088639327161 (pass -k to keep)
+[2025-05-20T10:41:04.908+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 989088639327161
+[2025-05-20T10:41:04.913+0000] {logging_mixin.py:190} INFO - Downloaded video 989088639327161 to data/989088639327161.mp3
+[2025-05-20T10:41:05.023+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:05.023+0000] {logging_mixin.py:190} INFO - Downloading video from 8681365398626622...
+[2025-05-20T10:41:05.051+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/8681365398626622/
+[2025-05-20T10:41:05.051+0000] {logging_mixin.py:190} INFO - [facebook] 8681365398626622: Downloading webpage
+[2025-05-20T10:41:06.171+0000] {logging_mixin.py:190} INFO - [info] 8681365398626622: Downloading 1 format(s): 912229700553606a
+[2025-05-20T10:41:06.224+0000] {logging_mixin.py:190} INFO - [download] Destination: data/8681365398626622
+[2025-05-20T10:41:06.224+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.25MiB at  Unknown B/s ETA Unknown
+[2025-05-20T10:41:06.230+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.25MiB at  488.05KiB/s ETA 00:02  
+[2025-05-20T10:41:06.230+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    1.25MiB at    1.03MiB/s ETA 00:01
+[2025-05-20T10:41:06.231+0000] {logging_mixin.py:190} INFO - [download]   1.2% of    1.25MiB at    2.07MiB/s ETA 00:00
+[2025-05-20T10:41:06.233+0000] {logging_mixin.py:190} INFO - [download]   2.4% of    1.25MiB at    3.34MiB/s ETA 00:00
+[2025-05-20T10:41:06.236+0000] {logging_mixin.py:190} INFO - [download]   4.9% of    1.25MiB at    4.90MiB/s ETA 00:00
+[2025-05-20T10:41:06.243+0000] {logging_mixin.py:190} INFO - [download]   9.9% of    1.25MiB at    6.48MiB/s ETA 00:00
+[2025-05-20T10:41:06.255+0000] {logging_mixin.py:190} INFO - [download]  19.9% of    1.25MiB at    8.00MiB/s ETA 00:00
+[2025-05-20T10:41:06.280+0000] {logging_mixin.py:190} INFO - [download]  39.8% of    1.25MiB at    8.89MiB/s ETA 00:00
+[2025-05-20T10:41:06.497+0000] {logging_mixin.py:190} INFO - [download]  79.8% of    1.25MiB at    3.66MiB/s ETA 00:00
+[2025-05-20T10:41:06.522+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.25MiB at    4.20MiB/s ETA 00:00
+[2025-05-20T10:41:06.523+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.25MiB in 00:00:00 at 3.60MiB/s   
+[2025-05-20T10:41:06.525+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/8681365398626622"
+[2025-05-20T10:41:06.614+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/8681365398626622.mp3
+[2025-05-20T10:41:07.919+0000] {logging_mixin.py:190} INFO - Deleting original file data/8681365398626622 (pass -k to keep)
+[2025-05-20T10:41:07.923+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 8681365398626622
+[2025-05-20T10:41:07.928+0000] {logging_mixin.py:190} INFO - Downloaded video 8681365398626622 to data/8681365398626622.mp3
+[2025-05-20T10:41:08.039+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:08.039+0000] {logging_mixin.py:190} INFO - Downloading video from 353446540380226...
+[2025-05-20T10:41:08.068+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/353446540380226/
+[2025-05-20T10:41:08.068+0000] {logging_mixin.py:190} INFO - [facebook] 353446540380226: Downloading webpage
+[2025-05-20T10:41:09.450+0000] {logging_mixin.py:190} INFO - [info] 353446540380226: Downloading 1 format(s): 1205836651182902a
+[2025-05-20T10:41:09.498+0000] {logging_mixin.py:190} INFO - [download] Destination: data/353446540380226
+[2025-05-20T10:41:09.499+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  151.27KiB at  891.46KiB/s ETA 00:00
+[2025-05-20T10:41:09.499+0000] {logging_mixin.py:190} INFO - [download]   2.0% of  151.27KiB at    1.74MiB/s ETA 00:00
+[2025-05-20T10:41:09.500+0000] {logging_mixin.py:190} INFO - [download]   4.6% of  151.27KiB at    3.00MiB/s ETA 00:00
+[2025-05-20T10:41:09.500+0000] {logging_mixin.py:190} INFO - [download]   9.9% of  151.27KiB at    5.36MiB/s ETA 00:00
+[2025-05-20T10:41:09.501+0000] {logging_mixin.py:190} INFO - [download]  20.5% of  151.27KiB at    7.46MiB/s ETA 00:00
+[2025-05-20T10:41:09.504+0000] {logging_mixin.py:190} INFO - [download]  41.6% of  151.27KiB at    8.71MiB/s ETA 00:00
+[2025-05-20T10:41:09.704+0000] {logging_mixin.py:190} INFO - [download]  84.0% of  151.27KiB at  615.40KiB/s ETA 00:00
+[2025-05-20T10:41:09.761+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  151.27KiB at  573.90KiB/s ETA 00:00
+[2025-05-20T10:41:09.763+0000] {logging_mixin.py:190} INFO - [download] 100% of  151.27KiB in 00:00:00 at 488.53KiB/s 
+[2025-05-20T10:41:09.765+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/353446540380226"
+[2025-05-20T10:41:09.980+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/353446540380226.mp3
+[2025-05-20T10:41:10.201+0000] {logging_mixin.py:190} INFO - Deleting original file data/353446540380226 (pass -k to keep)
+[2025-05-20T10:41:10.204+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 353446540380226
+[2025-05-20T10:41:10.209+0000] {logging_mixin.py:190} INFO - Downloaded video 353446540380226 to data/353446540380226.mp3
+[2025-05-20T10:41:10.329+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:10.330+0000] {logging_mixin.py:190} INFO - Downloading video from 736549631273388...
+[2025-05-20T10:41:10.357+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/736549631273388/
+[2025-05-20T10:41:10.357+0000] {logging_mixin.py:190} INFO - [facebook] 736549631273388: Downloading webpage
+[2025-05-20T10:41:12.307+0000] {logging_mixin.py:190} INFO - [info] 736549631273388: Downloading 1 format(s): 2806572409497717a
+[2025-05-20T10:41:12.361+0000] {logging_mixin.py:190} INFO - [download] Destination: data/736549631273388
+[2025-05-20T10:41:12.361+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  182.24KiB at  910.22KiB/s ETA 00:00
+[2025-05-20T10:41:12.362+0000] {logging_mixin.py:190} INFO - [download]   1.6% of  182.24KiB at    1.77MiB/s ETA 00:00
+[2025-05-20T10:41:12.362+0000] {logging_mixin.py:190} INFO - [download]   3.8% of  182.24KiB at    3.31MiB/s ETA 00:00
+[2025-05-20T10:41:12.363+0000] {logging_mixin.py:190} INFO - [download]   8.2% of  182.24KiB at    5.83MiB/s ETA 00:00
+[2025-05-20T10:41:12.365+0000] {logging_mixin.py:190} INFO - [download]  17.0% of  182.24KiB at    6.52MiB/s ETA 00:00
+[2025-05-20T10:41:12.369+0000] {logging_mixin.py:190} INFO - [download]  34.6% of  182.24KiB at    6.95MiB/s ETA 00:00
+[2025-05-20T10:41:12.562+0000] {logging_mixin.py:190} INFO - [download]  69.7% of  182.24KiB at  628.94KiB/s ETA 00:00
+[2025-05-20T10:41:12.567+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  182.24KiB at  881.06KiB/s ETA 00:00
+[2025-05-20T10:41:12.568+0000] {logging_mixin.py:190} INFO - [download] 100% of  182.24KiB in 00:00:00 at 707.32KiB/s 
+[2025-05-20T10:41:12.569+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/736549631273388"
+[2025-05-20T10:41:12.729+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/736549631273388.mp3
+[2025-05-20T10:41:13.077+0000] {logging_mixin.py:190} INFO - Deleting original file data/736549631273388 (pass -k to keep)
+[2025-05-20T10:41:13.081+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 736549631273388
+[2025-05-20T10:41:13.085+0000] {logging_mixin.py:190} INFO - Downloaded video 736549631273388 to data/736549631273388.mp3
+[2025-05-20T10:41:13.204+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:13.204+0000] {logging_mixin.py:190} INFO - Downloading video from 353186830452446...
+[2025-05-20T10:41:13.233+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/353186830452446/
+[2025-05-20T10:41:13.233+0000] {logging_mixin.py:190} INFO - [facebook] 353186830452446: Downloading webpage
+[2025-05-20T10:41:14.942+0000] {logging_mixin.py:190} INFO - [info] 353186830452446: Downloading 1 format(s): 657477130509662a
+[2025-05-20T10:41:14.964+0000] {logging_mixin.py:190} INFO - [download] Destination: data/353186830452446
+[2025-05-20T10:41:14.965+0000] {logging_mixin.py:190} INFO - [download]   1.3% of   79.99KiB at  813.64KiB/s ETA 00:00
+[2025-05-20T10:41:14.966+0000] {logging_mixin.py:190} INFO - [download]   3.8% of   79.99KiB at    1.05MiB/s ETA 00:00
+[2025-05-20T10:41:14.967+0000] {logging_mixin.py:190} INFO - [download]   8.8% of   79.99KiB at    2.13MiB/s ETA 00:00
+[2025-05-20T10:41:14.967+0000] {logging_mixin.py:190} INFO - [download]  18.8% of   79.99KiB at    4.12MiB/s ETA 00:00
+[2025-05-20T10:41:14.969+0000] {logging_mixin.py:190} INFO - [download]  38.8% of   79.99KiB at    5.77MiB/s ETA 00:00
+[2025-05-20T10:41:14.971+0000] {logging_mixin.py:190} INFO - [download]  78.8% of   79.99KiB at    7.79MiB/s ETA 00:00
+[2025-05-20T10:41:14.973+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   79.99KiB at    8.28MiB/s ETA 00:00
+[2025-05-20T10:41:14.973+0000] {logging_mixin.py:190} INFO - [download] 100% of   79.99KiB in 00:00:00 at 2.70MiB/s   
+[2025-05-20T10:41:14.975+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/353186830452446"
+[2025-05-20T10:41:15.054+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/353186830452446.mp3
+[2025-05-20T10:41:15.175+0000] {logging_mixin.py:190} INFO - Deleting original file data/353186830452446 (pass -k to keep)
+[2025-05-20T10:41:15.178+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 353186830452446
+[2025-05-20T10:41:15.187+0000] {logging_mixin.py:190} INFO - Downloaded video 353186830452446 to data/353186830452446.mp3
+[2025-05-20T10:41:15.301+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:15.301+0000] {logging_mixin.py:190} INFO - Downloading video from 1081038476576989...
+[2025-05-20T10:41:15.336+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/1081038476576989/
+[2025-05-20T10:41:15.336+0000] {logging_mixin.py:190} INFO - [facebook] 1081038476576989: Downloading webpage
+[2025-05-20T10:41:16.747+0000] {logging_mixin.py:190} INFO - [info] 1081038476576989: Downloading 1 format(s): 29318960117718819a
+[2025-05-20T10:41:16.797+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1081038476576989
+[2025-05-20T10:41:16.797+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  279.46KiB at  516.03KiB/s ETA 00:00
+[2025-05-20T10:41:16.798+0000] {logging_mixin.py:190} INFO - [download]   1.1% of  279.46KiB at    1.14MiB/s ETA 00:00
+[2025-05-20T10:41:16.798+0000] {logging_mixin.py:190} INFO - [download]   2.5% of  279.46KiB at    2.24MiB/s ETA 00:00
+[2025-05-20T10:41:16.801+0000] {logging_mixin.py:190} INFO - [download]   5.4% of  279.46KiB at    2.47MiB/s ETA 00:00
+[2025-05-20T10:41:16.804+0000] {logging_mixin.py:190} INFO - [download]  11.1% of  279.46KiB at    3.36MiB/s ETA 00:00
+[2025-05-20T10:41:16.809+0000] {logging_mixin.py:190} INFO - [download]  22.5% of  279.46KiB at    4.33MiB/s ETA 00:00
+[2025-05-20T10:41:16.816+0000] {logging_mixin.py:190} INFO - [download]  45.4% of  279.46KiB at    6.07MiB/s ETA 00:00
+[2025-05-20T10:41:16.827+0000] {logging_mixin.py:190} INFO - [download]  91.2% of  279.46KiB at    7.82MiB/s ETA 00:00
+[2025-05-20T10:41:17.020+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  279.46KiB at    1.21MiB/s ETA 00:00
+[2025-05-20T10:41:17.021+0000] {logging_mixin.py:190} INFO - [download] 100% of  279.46KiB in 00:00:00 at 1.01MiB/s   
+[2025-05-20T10:41:17.023+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1081038476576989"
+[2025-05-20T10:41:17.104+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1081038476576989.mp3
+[2025-05-20T10:41:17.467+0000] {logging_mixin.py:190} INFO - Deleting original file data/1081038476576989 (pass -k to keep)
+[2025-05-20T10:41:17.470+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1081038476576989
+[2025-05-20T10:41:17.490+0000] {logging_mixin.py:190} INFO - Downloaded video 1081038476576989 to data/1081038476576989.mp3
+[2025-05-20T10:41:17.611+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:17.611+0000] {logging_mixin.py:190} INFO - Downloading video from 7570412633087549...
+[2025-05-20T10:41:17.639+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/7570412633087549/
+[2025-05-20T10:41:17.639+0000] {logging_mixin.py:190} INFO - [facebook] 7570412633087549: Downloading webpage
+[2025-05-20T10:41:19.176+0000] {logging_mixin.py:190} INFO - [info] 7570412633087549: Downloading 1 format(s): 690784350078347a
+[2025-05-20T10:41:19.401+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7570412633087549
+[2025-05-20T10:41:19.402+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  141.29KiB at  867.67KiB/s ETA 00:00
+[2025-05-20T10:41:19.402+0000] {logging_mixin.py:190} INFO - [download]   2.1% of  141.29KiB at    1.74MiB/s ETA 00:00
+[2025-05-20T10:41:19.403+0000] {logging_mixin.py:190} INFO - [download]   5.0% of  141.29KiB at    3.30MiB/s ETA 00:00
+[2025-05-20T10:41:19.403+0000] {logging_mixin.py:190} INFO - [download]  10.6% of  141.29KiB at    5.94MiB/s ETA 00:00
+[2025-05-20T10:41:19.405+0000] {logging_mixin.py:190} INFO - [download]  21.9% of  141.29KiB at    7.76MiB/s ETA 00:00
+[2025-05-20T10:41:19.407+0000] {logging_mixin.py:190} INFO - [download]  44.6% of  141.29KiB at    9.06MiB/s ETA 00:00
+[2025-05-20T10:41:19.413+0000] {logging_mixin.py:190} INFO - [download]  89.9% of  141.29KiB at   10.01MiB/s ETA 00:00
+[2025-05-20T10:41:19.514+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  141.29KiB at    1.22MiB/s ETA 00:00
+[2025-05-20T10:41:19.515+0000] {logging_mixin.py:190} INFO - [download] 100% of  141.29KiB in 00:00:00 at 422.18KiB/s 
+[2025-05-20T10:41:19.517+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/7570412633087549"
+[2025-05-20T10:41:19.604+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7570412633087549.mp3
+[2025-05-20T10:41:19.794+0000] {logging_mixin.py:190} INFO - Deleting original file data/7570412633087549 (pass -k to keep)
+[2025-05-20T10:41:19.797+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7570412633087549
+[2025-05-20T10:41:19.801+0000] {logging_mixin.py:190} INFO - Downloaded video 7570412633087549 to data/7570412633087549.mp3
+[2025-05-20T10:41:19.915+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:19.915+0000] {logging_mixin.py:190} INFO - Downloading video from 1315382265841478...
+[2025-05-20T10:41:19.941+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/1315382265841478/
+[2025-05-20T10:41:19.942+0000] {logging_mixin.py:190} INFO - [facebook] 1315382265841478: Downloading webpage
+[2025-05-20T10:41:20.972+0000] {logging_mixin.py:190} INFO - [info] 1315382265841478: Downloading 1 format(s): 937742921208502a
+[2025-05-20T10:41:21.021+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1315382265841478
+[2025-05-20T10:41:21.021+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  182.31KiB at  Unknown B/s ETA Unknown
+[2025-05-20T10:41:21.022+0000] {logging_mixin.py:190} INFO - [download]   1.6% of  182.31KiB at    2.00MiB/s ETA 00:00  
+[2025-05-20T10:41:21.023+0000] {logging_mixin.py:190} INFO - [download]   3.8% of  182.31KiB at    3.31MiB/s ETA 00:00
+[2025-05-20T10:41:21.023+0000] {logging_mixin.py:190} INFO - [download]   8.2% of  182.31KiB at    5.58MiB/s ETA 00:00
+[2025-05-20T10:41:21.026+0000] {logging_mixin.py:190} INFO - [download]  17.0% of  182.31KiB at    5.85MiB/s ETA 00:00
+[2025-05-20T10:41:21.029+0000] {logging_mixin.py:190} INFO - [download]  34.6% of  182.31KiB at    7.19MiB/s ETA 00:00
+[2025-05-20T10:41:21.219+0000] {logging_mixin.py:190} INFO - [download]  69.7% of  182.31KiB at  639.29KiB/s ETA 00:00
+[2025-05-20T10:41:21.224+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  182.31KiB at  896.06KiB/s ETA 00:00
+[2025-05-20T10:41:21.225+0000] {logging_mixin.py:190} INFO - [download] 100% of  182.31KiB in 00:00:00 at 729.17KiB/s 
+[2025-05-20T10:41:21.226+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1315382265841478"
+[2025-05-20T10:41:21.320+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1315382265841478.mp3
+[2025-05-20T10:41:21.654+0000] {logging_mixin.py:190} INFO - Deleting original file data/1315382265841478 (pass -k to keep)
+[2025-05-20T10:41:21.657+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1315382265841478
+[2025-05-20T10:41:21.674+0000] {logging_mixin.py:190} INFO - Downloaded video 1315382265841478 to data/1315382265841478.mp3
+[2025-05-20T10:41:21.782+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:21.783+0000] {logging_mixin.py:190} INFO - Downloading video from 238605299165895...
+[2025-05-20T10:41:21.810+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/238605299165895/
+[2025-05-20T10:41:21.811+0000] {logging_mixin.py:190} INFO - [facebook] 238605299165895: Downloading webpage
+[2025-05-20T10:41:23.336+0000] {logging_mixin.py:190} INFO - [info] 238605299165895: Downloading 1 format(s): 685801797166109a
+[2025-05-20T10:41:23.657+0000] {logging_mixin.py:190} INFO - [download] Destination: data/238605299165895
+[2025-05-20T10:41:23.658+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  682.96KiB at   10.89KiB/s ETA 01:02
+[2025-05-20T10:41:23.659+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  682.96KiB at   32.30KiB/s ETA 00:21
+[2025-05-20T10:41:23.660+0000] {logging_mixin.py:190} INFO - [download]   1.0% of  682.96KiB at   74.83KiB/s ETA 00:09
+[2025-05-20T10:41:23.660+0000] {logging_mixin.py:190} INFO - [download]   2.2% of  682.96KiB at  159.44KiB/s ETA 00:04
+[2025-05-20T10:41:23.661+0000] {logging_mixin.py:190} INFO - [download]   4.5% of  682.96KiB at  326.76KiB/s ETA 00:01
+[2025-05-20T10:41:23.664+0000] {logging_mixin.py:190} INFO - [download]   9.2% of  682.96KiB at  645.81KiB/s ETA 00:00
+[2025-05-20T10:41:23.670+0000] {logging_mixin.py:190} INFO - [download]  18.6% of  682.96KiB at    1.20MiB/s ETA 00:00
+[2025-05-20T10:41:23.681+0000] {logging_mixin.py:190} INFO - [download]  37.3% of  682.96KiB at    2.17MiB/s ETA 00:00
+[2025-05-20T10:41:23.706+0000] {logging_mixin.py:190} INFO - [download]  74.8% of  682.96KiB at    3.58MiB/s ETA 00:00
+[2025-05-20T10:41:23.722+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  682.96KiB at    4.29MiB/s ETA 00:00
+[2025-05-20T10:41:23.722+0000] {logging_mixin.py:190} INFO - [download] 100% of  682.96KiB in 00:00:00 at 1.74MiB/s   
+[2025-05-20T10:41:23.724+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/238605299165895"
+[2025-05-20T10:41:23.853+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/238605299165895.mp3
+[2025-05-20T10:41:24.600+0000] {logging_mixin.py:190} INFO - Deleting original file data/238605299165895 (pass -k to keep)
+[2025-05-20T10:41:24.603+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 238605299165895
+[2025-05-20T10:41:24.608+0000] {logging_mixin.py:190} INFO - Downloaded video 238605299165895 to data/238605299165895.mp3
+[2025-05-20T10:41:24.732+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:24.732+0000] {logging_mixin.py:190} INFO - Downloading video from 644476217421927...
+[2025-05-20T10:41:24.762+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/644476217421927/
+[2025-05-20T10:41:24.762+0000] {logging_mixin.py:190} INFO - [facebook] 644476217421927: Downloading webpage
+[2025-05-20T10:41:26.243+0000] {logging_mixin.py:190} INFO - [info] 644476217421927: Downloading 1 format(s): 324635826659561a
+[2025-05-20T10:41:26.319+0000] {logging_mixin.py:190} INFO - [download] Destination: data/644476217421927
+[2025-05-20T10:41:26.319+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  118.88KiB at  138.92KiB/s ETA 00:00
+[2025-05-20T10:41:26.320+0000] {logging_mixin.py:190} INFO - [download]   2.5% of  118.88KiB at  380.54KiB/s ETA 00:00
+[2025-05-20T10:41:26.321+0000] {logging_mixin.py:190} INFO - [download]   5.9% of  118.88KiB at  832.20KiB/s ETA 00:00
+[2025-05-20T10:41:26.321+0000] {logging_mixin.py:190} INFO - [download]  12.6% of  118.88KiB at    1.64MiB/s ETA 00:00
+[2025-05-20T10:41:26.325+0000] {logging_mixin.py:190} INFO - [download]  26.1% of  118.88KiB at    2.30MiB/s ETA 00:00
+[2025-05-20T10:41:26.328+0000] {logging_mixin.py:190} INFO - [download]  53.0% of  118.88KiB at    3.85MiB/s ETA 00:00
+[2025-05-20T10:41:26.519+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  118.88KiB at  573.64KiB/s ETA 00:00
+[2025-05-20T10:41:26.520+0000] {logging_mixin.py:190} INFO - [download] 100% of  118.88KiB in 00:00:00 at 433.15KiB/s 
+[2025-05-20T10:41:26.522+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/644476217421927"
+[2025-05-20T10:41:26.606+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/644476217421927.mp3
+[2025-05-20T10:41:26.843+0000] {logging_mixin.py:190} INFO - Deleting original file data/644476217421927 (pass -k to keep)
+[2025-05-20T10:41:26.846+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 644476217421927
+[2025-05-20T10:41:26.851+0000] {logging_mixin.py:190} INFO - Downloaded video 644476217421927 to data/644476217421927.mp3
+[2025-05-20T10:41:26.968+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:26.969+0000] {logging_mixin.py:190} INFO - Downloading video from 427905726805954...
+[2025-05-20T10:41:26.996+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/427905726805954/
+[2025-05-20T10:41:26.997+0000] {logging_mixin.py:190} INFO - [facebook] 427905726805954: Downloading webpage
+[2025-05-20T10:41:30.742+0000] {logging_mixin.py:190} INFO - [info] 427905726805954: Downloading 1 format(s): 9717333418355626a
+[2025-05-20T10:41:30.801+0000] {logging_mixin.py:190} INFO - [download] Destination: data/427905726805954
+[2025-05-20T10:41:30.802+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  258.17KiB at  Unknown B/s ETA Unknown
+[2025-05-20T10:41:30.802+0000] {logging_mixin.py:190} INFO - [download]   1.2% of  258.17KiB at    2.69MiB/s ETA 00:00  
+[2025-05-20T10:41:30.803+0000] {logging_mixin.py:190} INFO - [download]   2.7% of  258.17KiB at    4.52MiB/s ETA 00:00
+[2025-05-20T10:41:30.808+0000] {logging_mixin.py:190} INFO - [download]   5.8% of  258.17KiB at    2.00MiB/s ETA 00:00
+[2025-05-20T10:41:30.809+0000] {logging_mixin.py:190} INFO - [download]  12.0% of  258.17KiB at    3.90MiB/s ETA 00:00
+[2025-05-20T10:41:30.815+0000] {logging_mixin.py:190} INFO - [download]  24.4% of  258.17KiB at    4.31MiB/s ETA 00:00
+[2025-05-20T10:41:30.822+0000] {logging_mixin.py:190} INFO - [download]  49.2% of  258.17KiB at    5.87MiB/s ETA 00:00
+[2025-05-20T10:41:31.048+0000] {logging_mixin.py:190} INFO - [download]  98.8% of  258.17KiB at    1.01MiB/s ETA 00:00
+[2025-05-20T10:41:31.049+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  258.17KiB at    1.02MiB/s ETA 00:00
+[2025-05-20T10:41:31.050+0000] {logging_mixin.py:190} INFO - [download] 100% of  258.17KiB in 00:00:00 at 846.31KiB/s 
+[2025-05-20T10:41:31.051+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/427905726805954"
+[2025-05-20T10:41:31.202+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/427905726805954.mp3
+[2025-05-20T10:41:31.533+0000] {logging_mixin.py:190} INFO - Deleting original file data/427905726805954 (pass -k to keep)
+[2025-05-20T10:41:31.535+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 427905726805954
+[2025-05-20T10:41:31.552+0000] {logging_mixin.py:190} INFO - Downloaded video 427905726805954 to data/427905726805954.mp3
+[2025-05-20T10:41:31.679+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:31.679+0000] {logging_mixin.py:190} INFO - Downloading video from 1498659011015943...
+[2025-05-20T10:41:31.707+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/1498659011015943/
+[2025-05-20T10:41:31.708+0000] {logging_mixin.py:190} INFO - [facebook] 1498659011015943: Downloading webpage
+[2025-05-20T10:41:33.376+0000] {logging_mixin.py:190} INFO - [info] 1498659011015943: Downloading 1 format(s): 1830391647807266a
+[2025-05-20T10:41:33.398+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1498659011015943
+[2025-05-20T10:41:33.399+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  194.00KiB at  674.11KiB/s ETA 00:00
+[2025-05-20T10:41:33.401+0000] {logging_mixin.py:190} INFO - [download]   1.5% of  194.00KiB at  913.59KiB/s ETA 00:00
+[2025-05-20T10:41:33.401+0000] {logging_mixin.py:190} INFO - [download]   3.6% of  194.00KiB at    1.77MiB/s ETA 00:00
+[2025-05-20T10:41:33.402+0000] {logging_mixin.py:190} INFO - [download]   7.7% of  194.00KiB at    3.45MiB/s ETA 00:00
+[2025-05-20T10:41:33.404+0000] {logging_mixin.py:190} INFO - [download]  16.0% of  194.00KiB at    4.41MiB/s ETA 00:00
+[2025-05-20T10:41:33.407+0000] {logging_mixin.py:190} INFO - [download]  32.5% of  194.00KiB at    6.14MiB/s ETA 00:00
+[2025-05-20T10:41:33.428+0000] {logging_mixin.py:190} INFO - [download]  65.5% of  194.00KiB at    4.11MiB/s ETA 00:00
+[2025-05-20T10:41:33.434+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  194.00KiB at    5.23MiB/s ETA 00:00
+[2025-05-20T10:41:33.434+0000] {logging_mixin.py:190} INFO - [download] 100% of  194.00KiB in 00:00:00 at 3.47MiB/s   
+[2025-05-20T10:41:33.436+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1498659011015943"
+[2025-05-20T10:41:33.520+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1498659011015943.mp3
+[2025-05-20T10:41:33.775+0000] {logging_mixin.py:190} INFO - Deleting original file data/1498659011015943 (pass -k to keep)
+[2025-05-20T10:41:33.779+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1498659011015943
+[2025-05-20T10:41:33.784+0000] {logging_mixin.py:190} INFO - Downloaded video 1498659011015943 to data/1498659011015943.mp3
+[2025-05-20T10:41:33.894+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:33.894+0000] {logging_mixin.py:190} INFO - Downloading video from 806106551064720...
+[2025-05-20T10:41:33.922+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/806106551064720/
+[2025-05-20T10:41:33.922+0000] {logging_mixin.py:190} INFO - [facebook] 806106551064720: Downloading webpage
+[2025-05-20T10:41:35.614+0000] {logging_mixin.py:190} INFO - [info] 806106551064720: Downloading 1 format(s): 1415755869614286a
+[2025-05-20T10:41:35.798+0000] {logging_mixin.py:190} INFO - [download] Destination: data/806106551064720
+[2025-05-20T10:41:35.799+0000] {logging_mixin.py:190} INFO - [download]   1.1% of   91.67KiB at  346.87KiB/s ETA 00:00
+[2025-05-20T10:41:35.800+0000] {logging_mixin.py:190} INFO - [download]   3.3% of   91.67KiB at  801.97KiB/s ETA 00:00
+[2025-05-20T10:41:35.800+0000] {logging_mixin.py:190} INFO - [download]   7.6% of   91.67KiB at    1.62MiB/s ETA 00:00
+[2025-05-20T10:41:35.801+0000] {logging_mixin.py:190} INFO - [download]  16.4% of   91.67KiB at    3.11MiB/s ETA 00:00
+[2025-05-20T10:41:35.802+0000] {logging_mixin.py:190} INFO - [download]  33.8% of   91.67KiB at    5.49MiB/s ETA 00:00
+[2025-05-20T10:41:35.804+0000] {logging_mixin.py:190} INFO - [download]  68.7% of   91.67KiB at    7.73MiB/s ETA 00:00
+[2025-05-20T10:41:35.806+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   91.67KiB at    8.65MiB/s ETA 00:00
+[2025-05-20T10:41:35.807+0000] {logging_mixin.py:190} INFO - [download] 100% of   91.67KiB in 00:00:00 at 482.19KiB/s 
+[2025-05-20T10:41:35.808+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/806106551064720"
+[2025-05-20T10:41:35.892+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/806106551064720.mp3
+[2025-05-20T10:41:36.047+0000] {logging_mixin.py:190} INFO - Deleting original file data/806106551064720 (pass -k to keep)
+[2025-05-20T10:41:36.049+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 806106551064720
+[2025-05-20T10:41:36.065+0000] {logging_mixin.py:190} INFO - Downloaded video 806106551064720 to data/806106551064720.mp3
+[2025-05-20T10:41:36.179+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:36.179+0000] {logging_mixin.py:190} INFO - Downloading video from 1687828848289908...
+[2025-05-20T10:41:36.208+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/1687828848289908/
+[2025-05-20T10:41:36.209+0000] {logging_mixin.py:190} INFO - [facebook] 1687828848289908: Downloading webpage
+[2025-05-20T10:41:37.539+0000] {logging_mixin.py:190} INFO - [info] 1687828848289908: Downloading 1 format(s): 2252693621862412a
+[2025-05-20T10:41:37.595+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1687828848289908
+[2025-05-20T10:41:37.595+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  532.18KiB at  199.93KiB/s ETA 00:02
+[2025-05-20T10:41:37.596+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  532.18KiB at  537.62KiB/s ETA 00:00
+[2025-05-20T10:41:37.596+0000] {logging_mixin.py:190} INFO - [download]   1.3% of  532.18KiB at    1.13MiB/s ETA 00:00
+[2025-05-20T10:41:37.597+0000] {logging_mixin.py:190} INFO - [download]   2.8% of  532.18KiB at    2.24MiB/s ETA 00:00
+[2025-05-20T10:41:37.599+0000] {logging_mixin.py:190} INFO - [download]   5.8% of  532.18KiB at    3.58MiB/s ETA 00:00
+[2025-05-20T10:41:37.606+0000] {logging_mixin.py:190} INFO - [download]  11.8% of  532.18KiB at    4.07MiB/s ETA 00:00
+[2025-05-20T10:41:37.612+0000] {logging_mixin.py:190} INFO - [download]  23.9% of  532.18KiB at    5.68MiB/s ETA 00:00
+[2025-05-20T10:41:37.819+0000] {logging_mixin.py:190} INFO - [download]  47.9% of  532.18KiB at    1.09MiB/s ETA 00:00
+[2025-05-20T10:41:37.843+0000] {logging_mixin.py:190} INFO - [download]  96.0% of  532.18KiB at    1.98MiB/s ETA 00:00
+[2025-05-20T10:41:37.844+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  532.18KiB at    2.05MiB/s ETA 00:00
+[2025-05-20T10:41:37.845+0000] {logging_mixin.py:190} INFO - [download] 100% of  532.18KiB in 00:00:00 at 1.71MiB/s   
+[2025-05-20T10:41:37.847+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1687828848289908"
+[2025-05-20T10:41:37.934+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1687828848289908.mp3
+[2025-05-20T10:41:38.566+0000] {logging_mixin.py:190} INFO - Deleting original file data/1687828848289908 (pass -k to keep)
+[2025-05-20T10:41:38.569+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1687828848289908
+[2025-05-20T10:41:38.573+0000] {logging_mixin.py:190} INFO - Downloaded video 1687828848289908 to data/1687828848289908.mp3
+[2025-05-20T10:41:38.692+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:38.692+0000] {logging_mixin.py:190} INFO - Downloading video from 452260924077822...
+[2025-05-20T10:41:38.719+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/452260924077822/
+[2025-05-20T10:41:38.720+0000] {logging_mixin.py:190} INFO - [facebook] 452260924077822: Downloading webpage
+[2025-05-20T10:41:40.106+0000] {logging_mixin.py:190} INFO - [info] 452260924077822: Downloading 1 format(s): 1339704720597082a
+[2025-05-20T10:41:40.169+0000] {logging_mixin.py:190} INFO - [download] Destination: data/452260924077822
+[2025-05-20T10:41:40.169+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  683.42KiB at  Unknown B/s ETA Unknown
+[2025-05-20T10:41:40.170+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  683.42KiB at    2.65MiB/s ETA 00:00  
+[2025-05-20T10:41:40.170+0000] {logging_mixin.py:190} INFO - [download]   1.0% of  683.42KiB at    4.43MiB/s ETA 00:00
+[2025-05-20T10:41:40.172+0000] {logging_mixin.py:190} INFO - [download]   2.2% of  683.42KiB at    4.47MiB/s ETA 00:00
+[2025-05-20T10:41:40.175+0000] {logging_mixin.py:190} INFO - [download]   4.5% of  683.42KiB at    4.84MiB/s ETA 00:00
+[2025-05-20T10:41:40.183+0000] {logging_mixin.py:190} INFO - [download]   9.2% of  683.42KiB at    4.38MiB/s ETA 00:00
+[2025-05-20T10:41:40.426+0000] {logging_mixin.py:190} INFO - [download]  18.6% of  683.42KiB at  494.07KiB/s ETA 00:01
+[2025-05-20T10:41:40.437+0000] {logging_mixin.py:190} INFO - [download]  37.3% of  683.42KiB at  950.44KiB/s ETA 00:00
+[2025-05-20T10:41:40.460+0000] {logging_mixin.py:190} INFO - [download]  74.8% of  683.42KiB at    1.71MiB/s ETA 00:00
+[2025-05-20T10:41:40.476+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  683.42KiB at    2.17MiB/s ETA 00:00
+[2025-05-20T10:41:40.476+0000] {logging_mixin.py:190} INFO - [download] 100% of  683.42KiB in 00:00:00 at 1.82MiB/s   
+[2025-05-20T10:41:40.478+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/452260924077822"
+[2025-05-20T10:41:40.615+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/452260924077822.mp3
+[2025-05-20T10:41:41.559+0000] {logging_mixin.py:190} INFO - Deleting original file data/452260924077822 (pass -k to keep)
+[2025-05-20T10:41:41.563+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 452260924077822
+[2025-05-20T10:41:41.570+0000] {logging_mixin.py:190} INFO - Downloaded video 452260924077822 to data/452260924077822.mp3
+[2025-05-20T10:41:41.690+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:41.691+0000] {logging_mixin.py:190} INFO - Downloading video from 1720201351774691...
+[2025-05-20T10:41:41.719+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/appletv/videos/1720201351774691/
+[2025-05-20T10:41:41.719+0000] {logging_mixin.py:190} INFO - [facebook] 1720201351774691: Downloading webpage
+[2025-05-20T10:41:43.113+0000] {logging_mixin.py:190} INFO - [info] 1720201351774691: Downloading 1 format(s): 1741837203436354a
+[2025-05-20T10:41:43.177+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1720201351774691
+[2025-05-20T10:41:43.178+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  265.87KiB at  475.22KiB/s ETA 00:00
+[2025-05-20T10:41:43.178+0000] {logging_mixin.py:190} INFO - [download]   1.1% of  265.87KiB at    1.11MiB/s ETA 00:00
+[2025-05-20T10:41:43.179+0000] {logging_mixin.py:190} INFO - [download]   2.6% of  265.87KiB at    2.16MiB/s ETA 00:00
+[2025-05-20T10:41:43.179+0000] {logging_mixin.py:190} INFO - [download]   5.6% of  265.87KiB at    4.10MiB/s ETA 00:00
+[2025-05-20T10:41:43.183+0000] {logging_mixin.py:190} INFO - [download]  11.7% of  265.87KiB at    4.18MiB/s ETA 00:00
+[2025-05-20T10:41:43.189+0000] {logging_mixin.py:190} INFO - [download]  23.7% of  265.87KiB at    4.83MiB/s ETA 00:00
+[2025-05-20T10:41:43.195+0000] {logging_mixin.py:190} INFO - [download]  47.8% of  265.87KiB at    6.48MiB/s ETA 00:00
+[2025-05-20T10:41:43.207+0000] {logging_mixin.py:190} INFO - [download]  95.9% of  265.87KiB at    8.19MiB/s ETA 00:00
+[2025-05-20T10:41:43.401+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  265.87KiB at    1.15MiB/s ETA 00:00
+[2025-05-20T10:41:43.402+0000] {logging_mixin.py:190} INFO - [download] 100% of  265.87KiB in 00:00:00 at 931.59KiB/s 
+[2025-05-20T10:41:43.404+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1720201351774691"
+[2025-05-20T10:41:43.555+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1720201351774691.mp3
+[2025-05-20T10:41:43.919+0000] {logging_mixin.py:190} INFO - Deleting original file data/1720201351774691 (pass -k to keep)
+[2025-05-20T10:41:43.922+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1720201351774691
+[2025-05-20T10:41:43.928+0000] {logging_mixin.py:190} INFO - Downloaded video 1720201351774691 to data/1720201351774691.mp3
+[2025-05-20T10:41:45.091+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:45.091+0000] {logging_mixin.py:190} INFO - Downloading video from 700442321997916...
+[2025-05-20T10:41:45.118+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/700442321997916/
+[2025-05-20T10:41:45.119+0000] {logging_mixin.py:190} INFO - [facebook] 700442321997916: Downloading webpage
+[2025-05-20T10:41:46.855+0000] {logging_mixin.py:190} INFO - [info] 700442321997916: Downloading 1 format(s): 3071872109642583a
+[2025-05-20T10:41:47.032+0000] {logging_mixin.py:190} INFO - [download] Destination: data/700442321997916
+[2025-05-20T10:41:47.032+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  200.32KiB at  Unknown B/s ETA Unknown
+[2025-05-20T10:41:47.033+0000] {logging_mixin.py:190} INFO - [download]   1.5% of  200.32KiB at    1.99MiB/s ETA 00:00  
+[2025-05-20T10:41:47.033+0000] {logging_mixin.py:190} INFO - [download]   3.5% of  200.32KiB at    3.62MiB/s ETA 00:00
+[2025-05-20T10:41:47.034+0000] {logging_mixin.py:190} INFO - [download]   7.5% of  200.32KiB at    5.84MiB/s ETA 00:00
+[2025-05-20T10:41:47.037+0000] {logging_mixin.py:190} INFO - [download]  15.5% of  200.32KiB at    5.69MiB/s ETA 00:00
+[2025-05-20T10:41:47.040+0000] {logging_mixin.py:190} INFO - [download]  31.4% of  200.32KiB at    7.28MiB/s ETA 00:00
+[2025-05-20T10:41:47.047+0000] {logging_mixin.py:190} INFO - [download]  63.4% of  200.32KiB at    8.04MiB/s ETA 00:00
+[2025-05-20T10:41:47.113+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  200.32KiB at    2.40MiB/s ETA 00:00
+[2025-05-20T10:41:47.114+0000] {logging_mixin.py:190} INFO - [download] 100% of  200.32KiB in 00:00:00 at 782.47KiB/s 
+[2025-05-20T10:41:47.116+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/700442321997916"
+[2025-05-20T10:41:47.227+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/700442321997916.mp3
+[2025-05-20T10:41:47.511+0000] {logging_mixin.py:190} INFO - Deleting original file data/700442321997916 (pass -k to keep)
+[2025-05-20T10:41:47.514+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 700442321997916
+[2025-05-20T10:41:47.520+0000] {logging_mixin.py:190} INFO - Downloaded video 700442321997916 to data/700442321997916.mp3
+[2025-05-20T10:41:47.633+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:47.633+0000] {logging_mixin.py:190} INFO - Downloading video from 253344827740051...
+[2025-05-20T10:41:47.662+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/253344827740051/
+[2025-05-20T10:41:47.662+0000] {logging_mixin.py:190} INFO - [facebook] 253344827740051: Downloading webpage
+[2025-05-20T10:41:48.567+0000] {logging_mixin.py:190} INFO - [info] 253344827740051: Downloading 1 format(s): 1614085369397855a
+[2025-05-20T10:41:48.625+0000] {logging_mixin.py:190} INFO - [download] Destination: data/253344827740051
+[2025-05-20T10:41:48.626+0000] {logging_mixin.py:190} INFO - [download]   1.2% of   86.08KiB at  532.27KiB/s ETA 00:00
+[2025-05-20T10:41:48.627+0000] {logging_mixin.py:190} INFO - [download]   3.5% of   86.08KiB at    1.10MiB/s ETA 00:00
+[2025-05-20T10:41:48.627+0000] {logging_mixin.py:190} INFO - [download]   8.1% of   86.08KiB at    2.08MiB/s ETA 00:00
+[2025-05-20T10:41:48.628+0000] {logging_mixin.py:190} INFO - [download]  17.4% of   86.08KiB at    3.79MiB/s ETA 00:00
+[2025-05-20T10:41:48.630+0000] {logging_mixin.py:190} INFO - [download]  36.0% of   86.08KiB at    5.39MiB/s ETA 00:00
+[2025-05-20T10:41:48.633+0000] {logging_mixin.py:190} INFO - [download]  73.2% of   86.08KiB at    7.12MiB/s ETA 00:00
+[2025-05-20T10:41:48.634+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   86.08KiB at    8.04MiB/s ETA 00:00
+[2025-05-20T10:41:48.635+0000] {logging_mixin.py:190} INFO - [download] 100% of   86.08KiB in 00:00:00 at 1.30MiB/s   
+[2025-05-20T10:41:48.636+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/253344827740051"
+[2025-05-20T10:41:48.719+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/253344827740051.mp3
+[2025-05-20T10:41:48.890+0000] {logging_mixin.py:190} INFO - Deleting original file data/253344827740051 (pass -k to keep)
+[2025-05-20T10:41:48.893+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 253344827740051
+[2025-05-20T10:41:48.909+0000] {logging_mixin.py:190} INFO - Downloaded video 253344827740051 to data/253344827740051.mp3
+[2025-05-20T10:41:49.030+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:49.030+0000] {logging_mixin.py:190} INFO - Downloading video from 746383310757322...
+[2025-05-20T10:41:49.059+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/746383310757322/
+[2025-05-20T10:41:49.059+0000] {logging_mixin.py:190} INFO - [facebook] 746383310757322: Downloading webpage
+[2025-05-20T10:41:50.561+0000] {logging_mixin.py:190} INFO - [info] 746383310757322: Downloading 1 format(s): 743545340996048a
+[2025-05-20T10:41:50.809+0000] {logging_mixin.py:190} INFO - [download] Destination: data/746383310757322
+[2025-05-20T10:41:50.810+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  158.38KiB at  841.38KiB/s ETA 00:00
+[2025-05-20T10:41:50.811+0000] {logging_mixin.py:190} INFO - [download]   1.9% of  158.38KiB at    1.28MiB/s ETA 00:00
+[2025-05-20T10:41:50.812+0000] {logging_mixin.py:190} INFO - [download]   4.4% of  158.38KiB at    2.22MiB/s ETA 00:00
+[2025-05-20T10:41:50.812+0000] {logging_mixin.py:190} INFO - [download]   9.5% of  158.38KiB at    3.99MiB/s ETA 00:00
+[2025-05-20T10:41:50.813+0000] {logging_mixin.py:190} INFO - [download]  19.6% of  158.38KiB at    7.06MiB/s ETA 00:00
+[2025-05-20T10:41:50.813+0000] {logging_mixin.py:190} INFO - [download]  39.8% of  158.38KiB at   12.55MiB/s ETA 00:00
+[2025-05-20T10:41:50.888+0000] {logging_mixin.py:190} INFO - [download]  80.2% of  158.38KiB at    1.57MiB/s ETA 00:00
+[2025-05-20T10:41:50.893+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  158.38KiB at    1.83MiB/s ETA 00:00
+[2025-05-20T10:41:50.894+0000] {logging_mixin.py:190} INFO - [download] 100% of  158.38KiB in 00:00:00 at 480.56KiB/s 
+[2025-05-20T10:41:50.895+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/746383310757322"
+[2025-05-20T10:41:50.975+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/746383310757322.mp3
+[2025-05-20T10:41:51.261+0000] {logging_mixin.py:190} INFO - Deleting original file data/746383310757322 (pass -k to keep)
+[2025-05-20T10:41:51.264+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 746383310757322
+[2025-05-20T10:41:51.269+0000] {logging_mixin.py:190} INFO - Downloaded video 746383310757322 to data/746383310757322.mp3
+[2025-05-20T10:41:51.385+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:51.385+0000] {logging_mixin.py:190} INFO - Downloading video from 7645741612178822...
+[2025-05-20T10:41:51.413+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/7645741612178822/
+[2025-05-20T10:41:51.414+0000] {logging_mixin.py:190} INFO - [facebook] 7645741612178822: Downloading webpage
+[2025-05-20T10:41:54.581+0000] {logging_mixin.py:190} INFO - [info] 7645741612178822: Downloading 1 format(s): 329870236628832a
+[2025-05-20T10:41:54.633+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7645741612178822
+[2025-05-20T10:41:54.633+0000] {logging_mixin.py:190} INFO - [download]   2.1% of   47.55KiB at  Unknown B/s ETA Unknown
+[2025-05-20T10:41:54.634+0000] {logging_mixin.py:190} INFO - [download]   6.3% of   47.55KiB at    2.64MiB/s ETA 00:00  
+[2025-05-20T10:41:54.634+0000] {logging_mixin.py:190} INFO - [download]  14.7% of   47.55KiB at    4.52MiB/s ETA 00:00
+[2025-05-20T10:41:54.635+0000] {logging_mixin.py:190} INFO - [download]  31.5% of   47.55KiB at    5.54MiB/s ETA 00:00
+[2025-05-20T10:41:54.638+0000] {logging_mixin.py:190} INFO - [download]  65.2% of   47.55KiB at    6.31MiB/s ETA 00:00
+[2025-05-20T10:41:54.639+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   47.55KiB at    7.70MiB/s ETA 00:00
+[2025-05-20T10:41:54.639+0000] {logging_mixin.py:190} INFO - [download] 100% of   47.55KiB in 00:00:00 at 866.00KiB/s 
+[2025-05-20T10:41:54.641+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/7645741612178822"
+[2025-05-20T10:41:54.744+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7645741612178822.mp3
+[2025-05-20T10:41:54.857+0000] {logging_mixin.py:190} INFO - Deleting original file data/7645741612178822 (pass -k to keep)
+[2025-05-20T10:41:54.859+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7645741612178822
+[2025-05-20T10:41:54.864+0000] {logging_mixin.py:190} INFO - Downloaded video 7645741612178822 to data/7645741612178822.mp3
+[2025-05-20T10:41:54.983+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:54.984+0000] {logging_mixin.py:190} INFO - Downloading video from 1240720310291404...
+[2025-05-20T10:41:55.013+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/1240720310291404/
+[2025-05-20T10:41:55.013+0000] {logging_mixin.py:190} INFO - [facebook] 1240720310291404: Downloading webpage
+[2025-05-20T10:41:56.321+0000] {logging_mixin.py:190} INFO - [info] 1240720310291404: Downloading 1 format(s): 857636816557075a
+[2025-05-20T10:41:56.355+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1240720310291404
+[2025-05-20T10:41:56.356+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  385.06KiB at  Unknown B/s ETA Unknown
+[2025-05-20T10:41:56.356+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  385.06KiB at    1.75MiB/s ETA 00:00  
+[2025-05-20T10:41:56.357+0000] {logging_mixin.py:190} INFO - [download]   1.8% of  385.06KiB at    3.30MiB/s ETA 00:00
+[2025-05-20T10:41:56.357+0000] {logging_mixin.py:190} INFO - [download]   3.9% of  385.06KiB at    6.02MiB/s ETA 00:00
+[2025-05-20T10:41:56.359+0000] {logging_mixin.py:190} INFO - [download]   8.1% of  385.06KiB at    7.85MiB/s ETA 00:00
+[2025-05-20T10:41:56.361+0000] {logging_mixin.py:190} INFO - [download]  16.4% of  385.06KiB at    9.62MiB/s ETA 00:00
+[2025-05-20T10:41:56.367+0000] {logging_mixin.py:190} INFO - [download]  33.0% of  385.06KiB at    9.71MiB/s ETA 00:00
+[2025-05-20T10:41:56.379+0000] {logging_mixin.py:190} INFO - [download]  66.2% of  385.06KiB at   10.36MiB/s ETA 00:00
+[2025-05-20T10:41:56.688+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  385.06KiB at    1.13MiB/s ETA 00:00
+[2025-05-20T10:41:56.689+0000] {logging_mixin.py:190} INFO - [download] 100% of  385.06KiB in 00:00:00 at 1.03MiB/s   
+[2025-05-20T10:41:56.690+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1240720310291404"
+[2025-05-20T10:41:56.774+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1240720310291404.mp3
+[2025-05-20T10:41:57.196+0000] {logging_mixin.py:190} INFO - Deleting original file data/1240720310291404 (pass -k to keep)
+[2025-05-20T10:41:57.199+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1240720310291404
+[2025-05-20T10:41:57.215+0000] {logging_mixin.py:190} INFO - Downloaded video 1240720310291404 to data/1240720310291404.mp3
+[2025-05-20T10:41:57.343+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:57.343+0000] {logging_mixin.py:190} INFO - Downloading video from 803213928056688...
+[2025-05-20T10:41:57.371+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/803213928056688/
+[2025-05-20T10:41:57.371+0000] {logging_mixin.py:190} INFO - [facebook] 803213928056688: Downloading webpage
+[2025-05-20T10:41:58.296+0000] {logging_mixin.py:190} INFO - [info] 803213928056688: Downloading 1 format(s): 1213714900153437a
+[2025-05-20T10:41:58.371+0000] {logging_mixin.py:190} INFO - [download] Destination: data/803213928056688
+[2025-05-20T10:41:58.372+0000] {logging_mixin.py:190} INFO - [download]   1.0% of  100.78KiB at  909.43KiB/s ETA 00:00
+[2025-05-20T10:41:58.373+0000] {logging_mixin.py:190} INFO - [download]   3.0% of  100.78KiB at    1.55MiB/s ETA 00:00
+[2025-05-20T10:41:58.374+0000] {logging_mixin.py:190} INFO - [download]   6.9% of  100.78KiB at    2.66MiB/s ETA 00:00
+[2025-05-20T10:41:58.374+0000] {logging_mixin.py:190} INFO - [download]  14.9% of  100.78KiB at    4.70MiB/s ETA 00:00
+[2025-05-20T10:41:58.376+0000] {logging_mixin.py:190} INFO - [download]  30.8% of  100.78KiB at    5.70MiB/s ETA 00:00
+[2025-05-20T10:41:58.381+0000] {logging_mixin.py:190} INFO - [download]  62.5% of  100.78KiB at    6.26MiB/s ETA 00:00
+[2025-05-20T10:41:58.564+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  100.78KiB at  523.32KiB/s ETA 00:00
+[2025-05-20T10:41:58.566+0000] {logging_mixin.py:190} INFO - [download] 100% of  100.78KiB in 00:00:00 at 378.50KiB/s 
+[2025-05-20T10:41:58.568+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/803213928056688"
+[2025-05-20T10:41:58.648+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/803213928056688.mp3
+[2025-05-20T10:41:58.800+0000] {logging_mixin.py:190} INFO - Deleting original file data/803213928056688 (pass -k to keep)
+[2025-05-20T10:41:58.803+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 803213928056688
+[2025-05-20T10:41:58.819+0000] {logging_mixin.py:190} INFO - Downloaded video 803213928056688 to data/803213928056688.mp3
+[2025-05-20T10:41:58.932+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:41:58.932+0000] {logging_mixin.py:190} INFO - Downloading video from 345582778091499...
+[2025-05-20T10:41:58.960+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/345582778091499/
+[2025-05-20T10:41:58.960+0000] {logging_mixin.py:190} INFO - [facebook] 345582778091499: Downloading webpage
+[2025-05-20T10:42:00.656+0000] {logging_mixin.py:190} INFO - [info] 345582778091499: Downloading 1 format(s): 1141033178039943a
+[2025-05-20T10:42:00.714+0000] {logging_mixin.py:190} INFO - [download] Destination: data/345582778091499
+[2025-05-20T10:42:00.715+0000] {logging_mixin.py:190} INFO - [download]   6.0% of   16.61KiB at  179.54KiB/s ETA 00:00
+[2025-05-20T10:42:00.715+0000] {logging_mixin.py:190} INFO - [download]  18.1% of   16.61KiB at  487.20KiB/s ETA 00:00
+[2025-05-20T10:42:00.716+0000] {logging_mixin.py:190} INFO - [download]  42.1% of   16.61KiB at    1.03MiB/s ETA 00:00
+[2025-05-20T10:42:00.717+0000] {logging_mixin.py:190} INFO - [download]  90.3% of   16.61KiB at    1.80MiB/s ETA 00:00
+[2025-05-20T10:42:00.718+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   16.61KiB at    1.90MiB/s ETA 00:00
+[2025-05-20T10:42:00.718+0000] {logging_mixin.py:190} INFO - [download] 100% of   16.61KiB in 00:00:00 at 282.36KiB/s 
+[2025-05-20T10:42:00.720+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/345582778091499"
+[2025-05-20T10:42:00.802+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/345582778091499.mp3
+[2025-05-20T10:42:00.863+0000] {logging_mixin.py:190} INFO - Deleting original file data/345582778091499 (pass -k to keep)
+[2025-05-20T10:42:00.866+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 345582778091499
+[2025-05-20T10:42:00.870+0000] {logging_mixin.py:190} INFO - Downloaded video 345582778091499 to data/345582778091499.mp3
+[2025-05-20T10:42:00.987+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:42:00.988+0000] {logging_mixin.py:190} INFO - Downloading video from 328465600178614...
+[2025-05-20T10:42:01.015+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/328465600178614/
+[2025-05-20T10:42:01.016+0000] {logging_mixin.py:190} INFO - [facebook] 328465600178614: Downloading webpage
+[2025-05-20T10:42:02.750+0000] {logging_mixin.py:190} INFO - [info] 328465600178614: Downloading 1 format(s): 584589423987234a
+[2025-05-20T10:42:02.795+0000] {logging_mixin.py:190} INFO - [download] Destination: data/328465600178614
+[2025-05-20T10:42:02.795+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  513.96KiB at  Unknown B/s ETA Unknown
+[2025-05-20T10:42:02.796+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  513.96KiB at    2.40MiB/s ETA 00:00  
+[2025-05-20T10:42:02.796+0000] {logging_mixin.py:190} INFO - [download]   1.4% of  513.96KiB at    4.21MiB/s ETA 00:00
+[2025-05-20T10:42:02.797+0000] {logging_mixin.py:190} INFO - [download]   2.9% of  513.96KiB at    5.78MiB/s ETA 00:00
+[2025-05-20T10:42:02.799+0000] {logging_mixin.py:190} INFO - [download]   6.0% of  513.96KiB at    7.53MiB/s ETA 00:00
+[2025-05-20T10:42:02.801+0000] {logging_mixin.py:190} INFO - [download]  12.3% of  513.96KiB at    9.33MiB/s ETA 00:00
+[2025-05-20T10:42:02.987+0000] {logging_mixin.py:190} INFO - [download]  24.7% of  513.96KiB at  661.90KiB/s ETA 00:00
+[2025-05-20T10:42:03.039+0000] {logging_mixin.py:190} INFO - [download]  49.6% of  513.96KiB at    1.02MiB/s ETA 00:00
+[2025-05-20T10:42:03.063+0000] {logging_mixin.py:190} INFO - [download]  99.4% of  513.96KiB at    1.86MiB/s ETA 00:00
+[2025-05-20T10:42:03.063+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  513.96KiB at    1.87MiB/s ETA 00:00
+[2025-05-20T10:42:03.064+0000] {logging_mixin.py:190} INFO - [download] 100% of  513.96KiB in 00:00:00 at 1.61MiB/s   
+[2025-05-20T10:42:03.066+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/328465600178614"
+[2025-05-20T10:42:03.149+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/328465600178614.mp3
+[2025-05-20T10:42:03.814+0000] {logging_mixin.py:190} INFO - Deleting original file data/328465600178614 (pass -k to keep)
+[2025-05-20T10:42:03.817+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 328465600178614
+[2025-05-20T10:42:03.821+0000] {logging_mixin.py:190} INFO - Downloaded video 328465600178614 to data/328465600178614.mp3
+[2025-05-20T10:42:03.978+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:42:03.978+0000] {logging_mixin.py:190} INFO - Downloading video from 1061020555163079...
+[2025-05-20T10:42:04.007+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/1061020555163079/
+[2025-05-20T10:42:04.007+0000] {logging_mixin.py:190} INFO - [facebook] 1061020555163079: Downloading webpage
+[2025-05-20T10:42:05.142+0000] {logging_mixin.py:190} INFO - [info] 1061020555163079: Downloading 1 format(s): 2616452408550257a
+[2025-05-20T10:42:05.196+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1061020555163079
+[2025-05-20T10:42:05.197+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  785.61KiB at  801.66KiB/s ETA 00:00
+[2025-05-20T10:42:05.198+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  785.61KiB at    1.19MiB/s ETA 00:00
+[2025-05-20T10:42:05.199+0000] {logging_mixin.py:190} INFO - [download]   0.9% of  785.61KiB at    2.05MiB/s ETA 00:00
+[2025-05-20T10:42:05.199+0000] {logging_mixin.py:190} INFO - [download]   1.9% of  785.61KiB at    3.75MiB/s ETA 00:00
+[2025-05-20T10:42:05.201+0000] {logging_mixin.py:190} INFO - [download]   3.9% of  785.61KiB at    6.03MiB/s ETA 00:00
+[2025-05-20T10:42:05.204+0000] {logging_mixin.py:190} INFO - [download]   8.0% of  785.61KiB at    7.65MiB/s ETA 00:00
+[2025-05-20T10:42:05.402+0000] {logging_mixin.py:190} INFO - [download]  16.2% of  785.61KiB at  616.56KiB/s ETA 00:01
+[2025-05-20T10:42:05.413+0000] {logging_mixin.py:190} INFO - [download]  32.5% of  785.61KiB at    1.15MiB/s ETA 00:00
+[2025-05-20T10:42:05.439+0000] {logging_mixin.py:190} INFO - [download]  65.0% of  785.61KiB at    2.05MiB/s ETA 00:00
+[2025-05-20T10:42:05.465+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  785.61KiB at    2.85MiB/s ETA 00:00
+[2025-05-20T10:42:05.466+0000] {logging_mixin.py:190} INFO - [download] 100% of  785.61KiB in 00:00:00 at 2.40MiB/s   
+[2025-05-20T10:42:05.468+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1061020555163079"
+[2025-05-20T10:42:05.553+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1061020555163079.mp3
+[2025-05-20T10:42:06.460+0000] {logging_mixin.py:190} INFO - Deleting original file data/1061020555163079 (pass -k to keep)
+[2025-05-20T10:42:06.464+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1061020555163079
+[2025-05-20T10:42:06.469+0000] {logging_mixin.py:190} INFO - Downloaded video 1061020555163079 to data/1061020555163079.mp3
+[2025-05-20T10:42:06.584+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:42:06.585+0000] {logging_mixin.py:190} INFO - Downloading video from 8681365398626622...
+[2025-05-20T10:42:06.615+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/8681365398626622/?comment_id=534531642754789&__tn__=R]
+[2025-05-20T10:42:06.615+0000] {logging_mixin.py:190} INFO - [facebook] 8681365398626622: Downloading webpage
+[2025-05-20T10:42:07.639+0000] {logging_mixin.py:190} INFO - [info] 8681365398626622: Downloading 1 format(s): 912229700553606a
+[2025-05-20T10:42:07.670+0000] {logging_mixin.py:190} INFO - [download] Destination: data/8681365398626622
+[2025-05-20T10:42:07.670+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.25MiB at  Unknown B/s ETA Unknown
+[2025-05-20T10:42:07.672+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.25MiB at    1.06MiB/s ETA 00:01  
+[2025-05-20T10:42:07.673+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    1.25MiB at    2.07MiB/s ETA 00:00
+[2025-05-20T10:42:07.673+0000] {logging_mixin.py:190} INFO - [download]   1.2% of    1.25MiB at    3.90MiB/s ETA 00:00
+[2025-05-20T10:42:07.674+0000] {logging_mixin.py:190} INFO - [download]   2.4% of    1.25MiB at    7.02MiB/s ETA 00:00
+[2025-05-20T10:42:07.676+0000] {logging_mixin.py:190} INFO - [download]   4.9% of    1.25MiB at    9.05MiB/s ETA 00:00
+[2025-05-20T10:42:07.682+0000] {logging_mixin.py:190} INFO - [download]   9.9% of    1.25MiB at    9.91MiB/s ETA 00:00
+[2025-05-20T10:42:07.694+0000] {logging_mixin.py:190} INFO - [download]  19.9% of    1.25MiB at   10.15MiB/s ETA 00:00
+[2025-05-20T10:42:07.717+0000] {logging_mixin.py:190} INFO - [download]  39.8% of    1.25MiB at   10.35MiB/s ETA 00:00
+[2025-05-20T10:42:07.766+0000] {logging_mixin.py:190} INFO - [download]  79.8% of    1.25MiB at   10.33MiB/s ETA 00:00
+[2025-05-20T10:42:07.791+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.25MiB at   10.31MiB/s ETA 00:00
+[2025-05-20T10:42:07.792+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.25MiB in 00:00:00 at 8.41MiB/s   
+[2025-05-20T10:42:07.794+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/8681365398626622"
+[2025-05-20T10:42:07.882+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/8681365398626622.mp3
+[2025-05-20T10:42:09.166+0000] {logging_mixin.py:190} INFO - Deleting original file data/8681365398626622 (pass -k to keep)
+[2025-05-20T10:42:09.171+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 8681365398626622
+[2025-05-20T10:42:09.179+0000] {logging_mixin.py:190} INFO - Downloaded video 8681365398626622 to data/8681365398626622.mp3
+[2025-05-20T10:42:09.304+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:42:09.304+0000] {logging_mixin.py:190} INFO - Downloading video from 8681365398626622...
+[2025-05-20T10:42:09.333+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/100044447978953/videos/8681365398626622
+[2025-05-20T10:42:09.333+0000] {logging_mixin.py:190} INFO - [facebook] 8681365398626622: Downloading webpage
+[2025-05-20T10:42:10.288+0000] {logging_mixin.py:190} INFO - [info] 8681365398626622: Downloading 1 format(s): 912229700553606a
+[2025-05-20T10:42:10.327+0000] {logging_mixin.py:190} INFO - [download] Destination: data/8681365398626622
+[2025-05-20T10:42:10.327+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.25MiB at  Unknown B/s ETA Unknown
+[2025-05-20T10:42:10.330+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.25MiB at  962.95KiB/s ETA 00:01  
+[2025-05-20T10:42:10.330+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    1.25MiB at    1.87MiB/s ETA 00:00
+[2025-05-20T10:42:10.331+0000] {logging_mixin.py:190} INFO - [download]   1.2% of    1.25MiB at    3.63MiB/s ETA 00:00
+[2025-05-20T10:42:10.332+0000] {logging_mixin.py:190} INFO - [download]   2.4% of    1.25MiB at    5.36MiB/s ETA 00:00
+[2025-05-20T10:42:10.336+0000] {logging_mixin.py:190} INFO - [download]   4.9% of    1.25MiB at    6.71MiB/s ETA 00:00
+[2025-05-20T10:42:10.342+0000] {logging_mixin.py:190} INFO - [download]   9.9% of    1.25MiB at    8.24MiB/s ETA 00:00
+[2025-05-20T10:42:10.353+0000] {logging_mixin.py:190} INFO - [download]  19.9% of    1.25MiB at    9.53MiB/s ETA 00:00
+[2025-05-20T10:42:10.379+0000] {logging_mixin.py:190} INFO - [download]  39.8% of    1.25MiB at    9.50MiB/s ETA 00:00
+[2025-05-20T10:42:10.429+0000] {logging_mixin.py:190} INFO - [download]  79.8% of    1.25MiB at    9.81MiB/s ETA 00:00
+[2025-05-20T10:42:10.456+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.25MiB at    9.73MiB/s ETA 00:00
+[2025-05-20T10:42:10.457+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.25MiB in 00:00:00 at 7.59MiB/s   
+[2025-05-20T10:42:10.459+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/8681365398626622"
+[2025-05-20T10:42:10.601+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/8681365398626622.mp3
+[2025-05-20T10:42:11.875+0000] {logging_mixin.py:190} INFO - Deleting original file data/8681365398626622 (pass -k to keep)
+[2025-05-20T10:42:11.880+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 8681365398626622
+[2025-05-20T10:42:11.889+0000] {logging_mixin.py:190} INFO - Downloaded video 8681365398626622 to data/8681365398626622.mp3
+[2025-05-20T10:42:12.001+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:42:12.002+0000] {logging_mixin.py:190} INFO - Downloading video from 1707853956372784...
+[2025-05-20T10:42:12.030+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/1707853956372784/
+[2025-05-20T10:42:12.031+0000] {logging_mixin.py:190} INFO - [facebook] 1707853956372784: Downloading webpage
+[2025-05-20T10:42:13.253+0000] {logging_mixin.py:190} INFO - [info] 1707853956372784: Downloading 1 format(s): 381924184706998a
+[2025-05-20T10:42:13.497+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1707853956372784
+[2025-05-20T10:42:13.498+0000] {logging_mixin.py:190} INFO - [download]   1.6% of   61.87KiB at  Unknown B/s ETA Unknown
+[2025-05-20T10:42:13.498+0000] {logging_mixin.py:190} INFO - [download]   4.8% of   61.87KiB at    1.89MiB/s ETA 00:00  
+[2025-05-20T10:42:13.499+0000] {logging_mixin.py:190} INFO - [download]  11.3% of   61.87KiB at    3.37MiB/s ETA 00:00
+[2025-05-20T10:42:13.499+0000] {logging_mixin.py:190} INFO - [download]  24.2% of   61.87KiB at    5.88MiB/s ETA 00:00
+[2025-05-20T10:42:13.501+0000] {logging_mixin.py:190} INFO - [download]  50.1% of   61.87KiB at    8.02MiB/s ETA 00:00
+[2025-05-20T10:42:13.503+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   61.87KiB at    9.66MiB/s ETA 00:00
+[2025-05-20T10:42:13.504+0000] {logging_mixin.py:190} INFO - [download] 100% of   61.87KiB in 00:00:00 at 249.62KiB/s 
+[2025-05-20T10:42:13.505+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1707853956372784"
+[2025-05-20T10:42:13.669+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1707853956372784.mp3
+[2025-05-20T10:42:13.778+0000] {logging_mixin.py:190} INFO - Deleting original file data/1707853956372784 (pass -k to keep)
+[2025-05-20T10:42:13.781+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1707853956372784
+[2025-05-20T10:42:13.785+0000] {logging_mixin.py:190} INFO - Downloaded video 1707853956372784 to data/1707853956372784.mp3
+[2025-05-20T10:42:13.898+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:42:13.898+0000] {logging_mixin.py:190} INFO - Downloading video from 261539360185903...
+[2025-05-20T10:42:13.927+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/261539360185903/
+[2025-05-20T10:42:13.927+0000] {logging_mixin.py:190} INFO - [facebook] 261539360185903: Downloading webpage
+[2025-05-20T10:42:14.953+0000] {logging_mixin.py:190} INFO - [info] 261539360185903: Downloading 1 format(s): 1392354951920452a
+[2025-05-20T10:42:15.000+0000] {logging_mixin.py:190} INFO - [download] Destination: data/261539360185903
+[2025-05-20T10:42:15.000+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  513.55KiB at  529.99KiB/s ETA 00:00
+[2025-05-20T10:42:15.001+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  513.55KiB at    1.22MiB/s ETA 00:00
+[2025-05-20T10:42:15.001+0000] {logging_mixin.py:190} INFO - [download]   1.4% of  513.55KiB at    2.45MiB/s ETA 00:00
+[2025-05-20T10:42:15.003+0000] {logging_mixin.py:190} INFO - [download]   2.9% of  513.55KiB at    3.34MiB/s ETA 00:00
+[2025-05-20T10:42:15.004+0000] {logging_mixin.py:190} INFO - [download]   6.0% of  513.55KiB at    5.28MiB/s ETA 00:00
+[2025-05-20T10:42:15.007+0000] {logging_mixin.py:190} INFO - [download]  12.3% of  513.55KiB at    7.31MiB/s ETA 00:00
+[2025-05-20T10:42:15.167+0000] {logging_mixin.py:190} INFO - [download]  24.7% of  513.55KiB at  753.10KiB/s ETA 00:00
+[2025-05-20T10:42:15.243+0000] {logging_mixin.py:190} INFO - [download]  49.7% of  513.55KiB at    1.02MiB/s ETA 00:00
+[2025-05-20T10:42:15.271+0000] {logging_mixin.py:190} INFO - [download]  99.5% of  513.55KiB at    1.83MiB/s ETA 00:00
+[2025-05-20T10:42:15.272+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  513.55KiB at    1.84MiB/s ETA 00:00
+[2025-05-20T10:42:15.272+0000] {logging_mixin.py:190} INFO - [download] 100% of  513.55KiB in 00:00:00 at 1.58MiB/s   
+[2025-05-20T10:42:15.274+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/261539360185903"
+[2025-05-20T10:42:15.402+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/261539360185903.mp3
+[2025-05-20T10:42:16.045+0000] {logging_mixin.py:190} INFO - Deleting original file data/261539360185903 (pass -k to keep)
+[2025-05-20T10:42:16.048+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 261539360185903
+[2025-05-20T10:42:16.053+0000] {logging_mixin.py:190} INFO - Downloaded video 261539360185903 to data/261539360185903.mp3
+[2025-05-20T10:42:16.186+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:42:16.187+0000] {logging_mixin.py:190} INFO - Downloading video from 1196699494859306...
+[2025-05-20T10:42:16.219+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/1196699494859306/
+[2025-05-20T10:42:16.219+0000] {logging_mixin.py:190} INFO - [facebook] 1196699494859306: Downloading webpage
+[2025-05-20T10:42:18.125+0000] {logging_mixin.py:190} INFO - [info] 1196699494859306: Downloading 1 format(s): 1580265955956840a
+[2025-05-20T10:42:18.339+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1196699494859306
+[2025-05-20T10:42:18.339+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  305.36KiB at  Unknown B/s ETA Unknown
+[2025-05-20T10:42:18.339+0000] {logging_mixin.py:190} INFO - [download]   1.0% of  305.36KiB at  Unknown B/s ETA 00:00  
+[2025-05-20T10:42:18.340+0000] {logging_mixin.py:190} INFO - [download]   2.3% of  305.36KiB at    4.99MiB/s ETA 00:00
+[2025-05-20T10:42:18.341+0000] {logging_mixin.py:190} INFO - [download]   4.9% of  305.36KiB at    5.49MiB/s ETA 00:00
+[2025-05-20T10:42:18.343+0000] {logging_mixin.py:190} INFO - [download]  10.2% of  305.36KiB at    7.49MiB/s ETA 00:00
+[2025-05-20T10:42:18.345+0000] {logging_mixin.py:190} INFO - [download]  20.6% of  305.36KiB at    8.96MiB/s ETA 00:00
+[2025-05-20T10:42:18.351+0000] {logging_mixin.py:190} INFO - [download]  41.6% of  305.36KiB at    9.85MiB/s ETA 00:00
+[2025-05-20T10:42:18.363+0000] {logging_mixin.py:190} INFO - [download]  83.5% of  305.36KiB at   10.40MiB/s ETA 00:00
+[2025-05-20T10:42:18.399+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  305.36KiB at    4.93MiB/s ETA 00:00
+[2025-05-20T10:42:18.400+0000] {logging_mixin.py:190} INFO - [download] 100% of  305.36KiB in 00:00:00 at 1.10MiB/s   
+[2025-05-20T10:42:18.402+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1196699494859306"
+[2025-05-20T10:42:18.506+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1196699494859306.mp3
+[2025-05-20T10:42:18.961+0000] {logging_mixin.py:190} INFO - Deleting original file data/1196699494859306 (pass -k to keep)
+[2025-05-20T10:42:18.964+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1196699494859306
+[2025-05-20T10:42:18.969+0000] {logging_mixin.py:190} INFO - Downloaded video 1196699494859306 to data/1196699494859306.mp3
+[2025-05-20T10:42:19.082+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:42:19.083+0000] {logging_mixin.py:190} INFO - Downloading video from 1152902046026811...
+[2025-05-20T10:42:19.112+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/1152902046026811/
+[2025-05-20T10:42:19.112+0000] {logging_mixin.py:190} INFO - [facebook] 1152902046026811: Downloading webpage
+[2025-05-20T10:42:20.901+0000] {logging_mixin.py:190} INFO - [info] 1152902046026811: Downloading 1 format(s): 380240384422171a
+[2025-05-20T10:42:20.953+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1152902046026811
+[2025-05-20T10:42:20.953+0000] {logging_mixin.py:190} INFO - [download]   1.2% of   82.78KiB at  Unknown B/s ETA Unknown
+[2025-05-20T10:42:20.954+0000] {logging_mixin.py:190} INFO - [download]   3.6% of   82.78KiB at    1.95MiB/s ETA 00:00  
+[2025-05-20T10:42:20.954+0000] {logging_mixin.py:190} INFO - [download]   8.5% of   82.78KiB at    3.51MiB/s ETA 00:00
+[2025-05-20T10:42:20.955+0000] {logging_mixin.py:190} INFO - [download]  18.1% of   82.78KiB at    5.92MiB/s ETA 00:00
+[2025-05-20T10:42:20.956+0000] {logging_mixin.py:190} INFO - [download]  37.4% of   82.78KiB at    7.93MiB/s ETA 00:00
+[2025-05-20T10:42:20.959+0000] {logging_mixin.py:190} INFO - [download]  76.1% of   82.78KiB at    8.85MiB/s ETA 00:00
+[2025-05-20T10:42:21.288+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   82.78KiB at  246.69KiB/s ETA 00:00
+[2025-05-20T10:42:21.289+0000] {logging_mixin.py:190} INFO - [download] 100% of   82.78KiB in 00:00:00 at 215.24KiB/s 
+[2025-05-20T10:42:21.291+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1152902046026811"
+[2025-05-20T10:42:21.379+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1152902046026811.mp3
+[2025-05-20T10:42:21.565+0000] {logging_mixin.py:190} INFO - Deleting original file data/1152902046026811 (pass -k to keep)
+[2025-05-20T10:42:21.568+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1152902046026811
+[2025-05-20T10:42:21.572+0000] {logging_mixin.py:190} INFO - Downloaded video 1152902046026811 to data/1152902046026811.mp3
+[2025-05-20T10:42:21.686+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:42:21.686+0000] {logging_mixin.py:190} INFO - Downloading video from 1113105849899605...
+[2025-05-20T10:42:21.716+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/1113105849899605/
+[2025-05-20T10:42:21.716+0000] {logging_mixin.py:190} INFO - [facebook] 1113105849899605: Downloading webpage
+[2025-05-20T10:42:23.349+0000] {logging_mixin.py:190} INFO - [info] 1113105849899605: Downloading 1 format(s): 1709523746634229a
+[2025-05-20T10:42:23.399+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1113105849899605
+[2025-05-20T10:42:23.399+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  156.51KiB at  Unknown B/s ETA Unknown
+[2025-05-20T10:42:23.399+0000] {logging_mixin.py:190} INFO - [download]   1.9% of  156.51KiB at    2.13MiB/s ETA 00:00  
+[2025-05-20T10:42:23.400+0000] {logging_mixin.py:190} INFO - [download]   4.5% of  156.51KiB at    3.82MiB/s ETA 00:00
+[2025-05-20T10:42:23.400+0000] {logging_mixin.py:190} INFO - [download]   9.6% of  156.51KiB at    6.74MiB/s ETA 00:00
+[2025-05-20T10:42:23.401+0000] {logging_mixin.py:190} INFO - [download]  19.8% of  156.51KiB at    8.94MiB/s ETA 00:00
+[2025-05-20T10:42:23.404+0000] {logging_mixin.py:190} INFO - [download]  40.3% of  156.51KiB at    9.88MiB/s ETA 00:00
+[2025-05-20T10:42:23.583+0000] {logging_mixin.py:190} INFO - [download]  81.1% of  156.51KiB at  688.73KiB/s ETA 00:00
+[2025-05-20T10:42:23.585+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  156.51KiB at  836.93KiB/s ETA 00:00
+[2025-05-20T10:42:23.586+0000] {logging_mixin.py:190} INFO - [download] 100% of  156.51KiB in 00:00:00 at 667.44KiB/s 
+[2025-05-20T10:42:23.587+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1113105849899605"
+[2025-05-20T10:42:23.669+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1113105849899605.mp3
+[2025-05-20T10:42:23.900+0000] {logging_mixin.py:190} INFO - Deleting original file data/1113105849899605 (pass -k to keep)
+[2025-05-20T10:42:23.903+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1113105849899605
+[2025-05-20T10:42:23.916+0000] {logging_mixin.py:190} INFO - Downloaded video 1113105849899605 to data/1113105849899605.mp3
+[2025-05-20T10:42:24.036+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:42:24.036+0000] {logging_mixin.py:190} INFO - Downloading video from 1486781625568819...
+[2025-05-20T10:42:24.063+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/1486781625568819/
+[2025-05-20T10:42:24.063+0000] {logging_mixin.py:190} INFO - [facebook] 1486781625568819: Downloading webpage
+[2025-05-20T10:42:25.405+0000] {logging_mixin.py:190} INFO - [info] 1486781625568819: Downloading 1 format(s): 3060857467407031a
+[2025-05-20T10:42:25.463+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1486781625568819
+[2025-05-20T10:42:25.464+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  445.76KiB at  414.33KiB/s ETA 00:01
+[2025-05-20T10:42:25.465+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  445.76KiB at  793.82KiB/s ETA 00:00
+[2025-05-20T10:42:25.466+0000] {logging_mixin.py:190} INFO - [download]   1.6% of  445.76KiB at    1.40MiB/s ETA 00:00
+[2025-05-20T10:42:25.467+0000] {logging_mixin.py:190} INFO - [download]   3.4% of  445.76KiB at    2.50MiB/s ETA 00:00
+[2025-05-20T10:42:25.468+0000] {logging_mixin.py:190} INFO - [download]   7.0% of  445.76KiB at    4.36MiB/s ETA 00:00
+[2025-05-20T10:42:25.469+0000] {logging_mixin.py:190} INFO - [download]  14.1% of  445.76KiB at    7.99MiB/s ETA 00:00
+[2025-05-20T10:42:25.651+0000] {logging_mixin.py:190} INFO - [download]  28.5% of  445.76KiB at  670.69KiB/s ETA 00:00
+[2025-05-20T10:42:25.662+0000] {logging_mixin.py:190} INFO - [download]  57.2% of  445.76KiB at    1.24MiB/s ETA 00:00
+[2025-05-20T10:42:25.710+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  445.76KiB at    1.75MiB/s ETA 00:00
+[2025-05-20T10:42:25.711+0000] {logging_mixin.py:190} INFO - [download] 100% of  445.76KiB in 00:00:00 at 1.44MiB/s   
+[2025-05-20T10:42:25.713+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1486781625568819"
+[2025-05-20T10:42:25.802+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1486781625568819.mp3
+[2025-05-20T10:42:26.386+0000] {logging_mixin.py:190} INFO - Deleting original file data/1486781625568819 (pass -k to keep)
+[2025-05-20T10:42:26.390+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1486781625568819
+[2025-05-20T10:42:26.394+0000] {logging_mixin.py:190} INFO - Downloaded video 1486781625568819 to data/1486781625568819.mp3
+[2025-05-20T10:42:26.507+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:42:26.507+0000] {logging_mixin.py:190} INFO - Downloading video from 409978071713366...
+[2025-05-20T10:42:26.535+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/409978071713366/
+[2025-05-20T10:42:26.535+0000] {logging_mixin.py:190} INFO - [facebook] 409978071713366: Downloading webpage
+[2025-05-20T10:42:27.551+0000] {logging_mixin.py:190} INFO - [info] 409978071713366: Downloading 1 format(s): 928188978608917a
+[2025-05-20T10:42:27.576+0000] {logging_mixin.py:190} INFO - [download] Destination: data/409978071713366
+[2025-05-20T10:42:27.577+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  182.24KiB at  599.36KiB/s ETA 00:00
+[2025-05-20T10:42:27.579+0000] {logging_mixin.py:190} INFO - [download]   1.6% of  182.24KiB at  782.91KiB/s ETA 00:00
+[2025-05-20T10:42:27.579+0000] {logging_mixin.py:190} INFO - [download]   3.8% of  182.24KiB at    1.59MiB/s ETA 00:00
+[2025-05-20T10:42:27.579+0000] {logging_mixin.py:190} INFO - [download]   8.2% of  182.24KiB at    3.14MiB/s ETA 00:00
+[2025-05-20T10:42:27.580+0000] {logging_mixin.py:190} INFO - [download]  17.0% of  182.24KiB at    5.66MiB/s ETA 00:00
+[2025-05-20T10:42:27.583+0000] {logging_mixin.py:190} INFO - [download]  34.6% of  182.24KiB at    7.71MiB/s ETA 00:00
+[2025-05-20T10:42:27.798+0000] {logging_mixin.py:190} INFO - [download]  69.7% of  182.24KiB at  568.89KiB/s ETA 00:00
+[2025-05-20T10:42:27.803+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  182.24KiB at  797.48KiB/s ETA 00:00
+[2025-05-20T10:42:27.804+0000] {logging_mixin.py:190} INFO - [download] 100% of  182.24KiB in 00:00:00 at 727.26KiB/s 
+[2025-05-20T10:42:27.806+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/409978071713366"
+[2025-05-20T10:42:27.888+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/409978071713366.mp3
+[2025-05-20T10:42:28.219+0000] {logging_mixin.py:190} INFO - Deleting original file data/409978071713366 (pass -k to keep)
+[2025-05-20T10:42:28.222+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 409978071713366
+[2025-05-20T10:42:28.226+0000] {logging_mixin.py:190} INFO - Downloaded video 409978071713366 to data/409978071713366.mp3
+[2025-05-20T10:42:28.342+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:42:28.342+0000] {logging_mixin.py:190} INFO - Downloading video from 878961347240177...
+[2025-05-20T10:42:28.371+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/878961347240177/
+[2025-05-20T10:42:28.371+0000] {logging_mixin.py:190} INFO - [facebook] 878961347240177: Downloading webpage
+[2025-05-20T10:42:30.319+0000] {logging_mixin.py:190} INFO - [info] 878961347240177: Downloading 1 format(s): 876627061272864a
+[2025-05-20T10:42:30.572+0000] {logging_mixin.py:190} INFO - [download] Destination: data/878961347240177
+[2025-05-20T10:42:30.573+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  311.22KiB at  Unknown B/s ETA Unknown
+[2025-05-20T10:42:30.573+0000] {logging_mixin.py:190} INFO - [download]   1.0% of  311.22KiB at    2.03MiB/s ETA 00:00  
+[2025-05-20T10:42:30.574+0000] {logging_mixin.py:190} INFO - [download]   2.2% of  311.22KiB at    3.62MiB/s ETA 00:00
+[2025-05-20T10:42:30.575+0000] {logging_mixin.py:190} INFO - [download]   4.8% of  311.22KiB at    4.36MiB/s ETA 00:00
+[2025-05-20T10:42:30.578+0000] {logging_mixin.py:190} INFO - [download]  10.0% of  311.22KiB at    5.06MiB/s ETA 00:00
+[2025-05-20T10:42:30.581+0000] {logging_mixin.py:190} INFO - [download]  20.2% of  311.22KiB at    6.88MiB/s ETA 00:00
+[2025-05-20T10:42:30.641+0000] {logging_mixin.py:190} INFO - [download]  40.8% of  311.22KiB at    1.80MiB/s ETA 00:00
+[2025-05-20T10:42:30.653+0000] {logging_mixin.py:190} INFO - [download]  81.9% of  311.22KiB at    3.09MiB/s ETA 00:00
+[2025-05-20T10:42:30.657+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  311.22KiB at    3.55MiB/s ETA 00:00
+[2025-05-20T10:42:30.658+0000] {logging_mixin.py:190} INFO - [download] 100% of  311.22KiB in 00:00:00 at 926.46KiB/s 
+[2025-05-20T10:42:30.660+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/878961347240177"
+[2025-05-20T10:42:30.744+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/878961347240177.mp3
+[2025-05-20T10:42:31.125+0000] {logging_mixin.py:190} INFO - Deleting original file data/878961347240177 (pass -k to keep)
+[2025-05-20T10:42:31.128+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 878961347240177
+[2025-05-20T10:42:31.147+0000] {logging_mixin.py:190} INFO - Downloaded video 878961347240177 to data/878961347240177.mp3
+[2025-05-20T10:42:31.266+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:42:31.266+0000] {logging_mixin.py:190} INFO - Downloading video from 374761188336027...
+[2025-05-20T10:42:31.294+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/374761188336027/
+[2025-05-20T10:42:31.295+0000] {logging_mixin.py:190} INFO - [facebook] 374761188336027: Downloading webpage
+[2025-05-20T10:42:32.277+0000] {logging_mixin.py:190} INFO - [info] 374761188336027: Downloading 1 format(s): 4126098841048928a
+[2025-05-20T10:42:32.334+0000] {logging_mixin.py:190} INFO - [download] Destination: data/374761188336027
+[2025-05-20T10:42:32.335+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  440.37KiB at  526.66KiB/s ETA 00:00
+[2025-05-20T10:42:32.336+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  440.37KiB at    1.03MiB/s ETA 00:00
+[2025-05-20T10:42:32.336+0000] {logging_mixin.py:190} INFO - [download]   1.6% of  440.37KiB at    1.92MiB/s ETA 00:00
+[2025-05-20T10:42:32.337+0000] {logging_mixin.py:190} INFO - [download]   3.4% of  440.37KiB at    3.47MiB/s ETA 00:00
+[2025-05-20T10:42:32.338+0000] {logging_mixin.py:190} INFO - [download]   7.0% of  440.37KiB at    6.14MiB/s ETA 00:00
+[2025-05-20T10:42:32.340+0000] {logging_mixin.py:190} INFO - [download]  14.3% of  440.37KiB at    8.15MiB/s ETA 00:00
+[2025-05-20T10:42:32.508+0000] {logging_mixin.py:190} INFO - [download]  28.8% of  440.37KiB at  725.08KiB/s ETA 00:00
+[2025-05-20T10:42:32.519+0000] {logging_mixin.py:190} INFO - [download]  57.9% of  440.37KiB at    1.34MiB/s ETA 00:00
+[2025-05-20T10:42:32.589+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  440.37KiB at    1.68MiB/s ETA 00:00
+[2025-05-20T10:42:32.590+0000] {logging_mixin.py:190} INFO - [download] 100% of  440.37KiB in 00:00:00 at 1.39MiB/s   
+[2025-05-20T10:42:32.591+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/374761188336027"
+[2025-05-20T10:42:32.676+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/374761188336027.mp3
+[2025-05-20T10:42:33.185+0000] {logging_mixin.py:190} INFO - Deleting original file data/374761188336027 (pass -k to keep)
+[2025-05-20T10:42:33.188+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 374761188336027
+[2025-05-20T10:42:33.206+0000] {logging_mixin.py:190} INFO - Downloaded video 374761188336027 to data/374761188336027.mp3
+[2025-05-20T10:42:33.336+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:42:33.337+0000] {logging_mixin.py:190} INFO - Downloading video from 1169875757589571...
+[2025-05-20T10:42:33.365+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/1169875757589571/
+[2025-05-20T10:42:33.366+0000] {logging_mixin.py:190} INFO - [facebook] 1169875757589571: Downloading webpage
+[2025-05-20T10:42:35.660+0000] {logging_mixin.py:190} INFO - [info] 1169875757589571: Downloading 1 format(s): 1129530158848481a
+[2025-05-20T10:42:35.713+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1169875757589571
+[2025-05-20T10:42:35.713+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  351.64KiB at  658.45KiB/s ETA 00:00
+[2025-05-20T10:42:35.714+0000] {logging_mixin.py:190} INFO - [download]   0.9% of  351.64KiB at    1.47MiB/s ETA 00:00
+[2025-05-20T10:42:35.714+0000] {logging_mixin.py:190} INFO - [download]   2.0% of  351.64KiB at    2.88MiB/s ETA 00:00
+[2025-05-20T10:42:35.715+0000] {logging_mixin.py:190} INFO - [download]   4.3% of  351.64KiB at    3.99MiB/s ETA 00:00
+[2025-05-20T10:42:35.718+0000] {logging_mixin.py:190} INFO - [download]   8.8% of  351.64KiB at    5.14MiB/s ETA 00:00
+[2025-05-20T10:42:35.720+0000] {logging_mixin.py:190} INFO - [download]  17.9% of  351.64KiB at    7.07MiB/s ETA 00:00
+[2025-05-20T10:42:35.726+0000] {logging_mixin.py:190} INFO - [download]  36.1% of  351.64KiB at    8.40MiB/s ETA 00:00
+[2025-05-20T10:42:35.859+0000] {logging_mixin.py:190} INFO - [download]  72.5% of  351.64KiB at    1.70MiB/s ETA 00:00
+[2025-05-20T10:42:35.973+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  351.64KiB at    1.31MiB/s ETA 00:00
+[2025-05-20T10:42:35.974+0000] {logging_mixin.py:190} INFO - [download] 100% of  351.64KiB in 00:00:00 at 1.10MiB/s   
+[2025-05-20T10:42:35.976+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1169875757589571"
+[2025-05-20T10:42:36.064+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1169875757589571.mp3
+[2025-05-20T10:42:36.538+0000] {logging_mixin.py:190} INFO - Deleting original file data/1169875757589571 (pass -k to keep)
+[2025-05-20T10:42:36.540+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1169875757589571
+[2025-05-20T10:42:36.558+0000] {logging_mixin.py:190} INFO - Downloaded video 1169875757589571 to data/1169875757589571.mp3
+[2025-05-20T10:42:36.671+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T10:42:36.671+0000] {logging_mixin.py:190} INFO - Downloading video from 1743432816216505...
+[2025-05-20T10:42:36.698+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/leomessi/videos/1743432816216505/
+[2025-05-20T10:42:36.699+0000] {logging_mixin.py:190} INFO - [facebook] 1743432816216505: Downloading webpage
+[2025-05-20T10:42:37.578+0000] {logging_mixin.py:190} INFO - [info] 1743432816216505: Downloading 1 format(s): 1166362568452879a
+[2025-05-20T10:42:37.608+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1743432816216505
+[2025-05-20T10:42:37.609+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.13MiB at  829.90KiB/s ETA 00:01
+[2025-05-20T10:42:37.612+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    1.13MiB at  678.18KiB/s ETA 00:01
+[2025-05-20T10:42:37.612+0000] {logging_mixin.py:190} INFO - [download]   0.6% of    1.13MiB at    1.40MiB/s ETA 00:00
+[2025-05-20T10:42:37.613+0000] {logging_mixin.py:190} INFO - [download]   1.3% of    1.13MiB at    2.81MiB/s ETA 00:00
+[2025-05-20T10:42:37.614+0000] {logging_mixin.py:190} INFO - [download]   2.7% of    1.13MiB at    4.35MiB/s ETA 00:00
+[2025-05-20T10:42:37.619+0000] {logging_mixin.py:190} INFO - [download]   5.5% of    1.13MiB at    5.09MiB/s ETA 00:00
+[2025-05-20T10:42:37.632+0000] {logging_mixin.py:190} INFO - [download]  11.0% of    1.13MiB at    5.05MiB/s ETA 00:00
+[2025-05-20T10:42:37.645+0000] {logging_mixin.py:190} INFO - [download]  22.1% of    1.13MiB at    6.62MiB/s ETA 00:00
+[2025-05-20T10:42:37.857+0000] {logging_mixin.py:190} INFO - [download]  44.3% of    1.13MiB at    2.00MiB/s ETA 00:00
+[2025-05-20T10:42:37.907+0000] {logging_mixin.py:190} INFO - [download]  88.7% of    1.13MiB at    3.34MiB/s ETA 00:00
+[2025-05-20T10:42:37.918+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.13MiB at    3.62MiB/s ETA 00:00
+[2025-05-20T10:42:37.919+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.13MiB in 00:00:00 at 3.34MiB/s   
+[2025-05-20T10:42:37.921+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1743432816216505"
+[2025-05-20T10:42:38.053+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1743432816216505.mp3
+[2025-05-20T10:42:39.508+0000] {logging_mixin.py:190} INFO - Deleting original file data/1743432816216505 (pass -k to keep)
+[2025-05-20T10:42:39.512+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1743432816216505
+[2025-05-20T10:42:39.516+0000] {logging_mixin.py:190} INFO - Downloaded video 1743432816216505 to data/1743432816216505.mp3
+[2025-05-20T10:42:39.860+0000] {python.py:240} INFO - Done. Returned value was: [{'video_id': '1768643370215621', 'file_path': 'data/1768643370215621.mp3'}, {'video_id': '1243201096942193', 'file_path': 'data/1243201096942193.mp3'}, {'video_id': '1258541055210747', 'file_path': 'data/1258541055210747.mp3'}, {'video_id': '882271069764412', 'file_path': 'data/882271069764412.mp3'}, {'video_id': '957022549309488', 'file_path': 'data/957022549309488.mp3'}, {'video_id': '1078903316453206', 'file_path': 'data/1078903316453206.mp3'}, {'video_id': '687193679852872', 'file_path': 'data/687193679852872.mp3'}, {'video_id': '1875168249544727', 'file_path': 'data/1875168249544727.mp3'}, {'video_id': '678975881114550', 'file_path': 'data/678975881114550.mp3'}, {'video_id': '989088639327161', 'file_path': 'data/989088639327161.mp3'}, {'video_id': '8681365398626622', 'file_path': 'data/8681365398626622.mp3'}, {'video_id': '353446540380226', 'file_path': 'data/353446540380226.mp3'}, {'video_id': '736549631273388', 'file_path': 'data/736549631273388.mp3'}, {'video_id': '353186830452446', 'file_path': 'data/353186830452446.mp3'}, {'video_id': '1081038476576989', 'file_path': 'data/1081038476576989.mp3'}, {'video_id': '7570412633087549', 'file_path': 'data/7570412633087549.mp3'}, {'video_id': '1315382265841478', 'file_path': 'data/1315382265841478.mp3'}, {'video_id': '238605299165895', 'file_path': 'data/238605299165895.mp3'}, {'video_id': '644476217421927', 'file_path': 'data/644476217421927.mp3'}, {'video_id': '427905726805954', 'file_path': 'data/427905726805954.mp3'}, {'video_id': '1498659011015943', 'file_path': 'data/1498659011015943.mp3'}, {'video_id': '806106551064720', 'file_path': 'data/806106551064720.mp3'}, {'video_id': '1687828848289908', 'file_path': 'data/1687828848289908.mp3'}, {'video_id': '452260924077822', 'file_path': 'data/452260924077822.mp3'}, {'video_id': '1720201351774691', 'file_path': 'data/1720201351774691.mp3'}, {'video_id': '700442321997916', 'file_path': 'data/700442321997916.mp3'}, {'video_id': '253344827740051', 'file_path': 'data/253344827740051.mp3'}, {'video_id': '746383310757322', 'file_path': 'data/746383310757322.mp3'}, {'video_id': '7645741612178822', 'file_path': 'data/7645741612178822.mp3'}, {'video_id': '1240720310291404', 'file_path': 'data/1240720310291404.mp3'}, {'video_id': '803213928056688', 'file_path': 'data/803213928056688.mp3'}, {'video_id': '345582778091499', 'file_path': 'data/345582778091499.mp3'}, {'video_id': '328465600178614', 'file_path': 'data/328465600178614.mp3'}, {'video_id': '1061020555163079', 'file_path': 'data/1061020555163079.mp3'}, {'video_id': '8681365398626622', 'file_path': 'data/8681365398626622.mp3'}, {'video_id': '8681365398626622', 'file_path': 'data/8681365398626622.mp3'}, {'video_id': '1707853956372784', 'file_path': 'data/1707853956372784.mp3'}, {'video_id': '261539360185903', 'file_path': 'data/261539360185903.mp3'}, {'video_id': '1196699494859306', 'file_path': 'data/1196699494859306.mp3'}, {'video_id': '1152902046026811', 'file_path': 'data/1152902046026811.mp3'}, {'video_id': '1113105849899605', 'file_path': 'data/1113105849899605.mp3'}, {'video_id': '1486781625568819', 'file_path': 'data/1486781625568819.mp3'}, {'video_id': '409978071713366', 'file_path': 'data/409978071713366.mp3'}, {'video_id': '878961347240177', 'file_path': 'data/878961347240177.mp3'}, {'video_id': '374761188336027', 'file_path': 'data/374761188336027.mp3'}, {'video_id': '1169875757589571', 'file_path': 'data/1169875757589571.mp3'}, {'video_id': '1743432816216505', 'file_path': 'data/1743432816216505.mp3'}]
+[2025-05-20T10:42:39.878+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-20T10:42:39.878+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=facebook_videos_scraper_dag, task_id=facebook_videos_scraper_task, run_id=manual__2025-05-20T10:40:26.082920+00:00, execution_date=20250520T104026, start_date=20250520T104027, end_date=20250520T104239
+[2025-05-20T10:42:39.916+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-20T10:42:39.930+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-20T10:42:39.932+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

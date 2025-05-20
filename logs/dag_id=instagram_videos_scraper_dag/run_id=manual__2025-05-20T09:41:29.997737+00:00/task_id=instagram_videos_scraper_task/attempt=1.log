@@ -1,0 +1,308 @@
+[2025-05-20T09:41:31.317+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-20T09:41:31.329+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.instagram_videos_scraper_task manual__2025-05-20T09:41:29.997737+00:00 [queued]>
+[2025-05-20T09:41:31.333+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.instagram_videos_scraper_task manual__2025-05-20T09:41:29.997737+00:00 [queued]>
+[2025-05-20T09:41:31.333+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-20T09:41:31.341+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): instagram_videos_scraper_task> on 2025-05-20 09:41:29.997737+00:00
+[2025-05-20T09:41:31.344+0000] {standard_task_runner.py:72} INFO - Started process 31535 to run task
+[2025-05-20T09:41:31.347+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'instagram_videos_scraper_dag', 'instagram_videos_scraper_task', 'manual__2025-05-20T09:41:29.997737+00:00', '--job-id', '6289', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_instagram.py', '--cfg-path', '/tmp/tmpytw8a5kc']
+[2025-05-20T09:41:31.349+0000] {standard_task_runner.py:105} INFO - Job 6289: Subtask instagram_videos_scraper_task
+[2025-05-20T09:41:31.386+0000] {task_command.py:467} INFO - Running <TaskInstance: instagram_videos_scraper_dag.instagram_videos_scraper_task manual__2025-05-20T09:41:29.997737+00:00 [running]> on host 05534d39966d
+[2025-05-20T09:41:31.445+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='instagram_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='instagram_videos_scraper_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-20T09:41:29.997737+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-20T09:41:29.997737+00:00'
+[2025-05-20T09:41:31.446+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-20T09:41:31.530+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.94); currently, chromedriver 136.0.7103.94 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-20T09:41:35.756+0000] {logging_mixin.py:190} INFO - Step 1 of 2 - Loading profile page
+[2025-05-20T09:41:35.757+0000] {logging_mixin.py:190} INFO - Extracting videos...
+[2025-05-20T09:41:38.858+0000] {logging_mixin.py:190} INFO - Count: 1, Limit: 1
+[2025-05-20T09:41:38.872+0000] {logging_mixin.py:190} INFO - Found 46 video tags
+[2025-05-20T09:41:38.934+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DJmRU0zue0i/
+[2025-05-20T09:41:38.941+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DJRyQeGslC9/
+[2025-05-20T09:41:38.947+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DI_2OjSM_tD/
+[2025-05-20T09:41:38.974+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DIjN4__trTw/
+[2025-05-20T09:41:38.985+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DHOj889NIXc/
+[2025-05-20T09:41:38.992+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DGnnhjNJdbS/
+[2025-05-20T09:41:39.000+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DGlCiX-NUcI/
+[2025-05-20T09:41:39.007+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DGHDuXiSs-K/
+[2025-05-20T09:41:39.014+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DF8bjTzNg2j/
+[2025-05-20T09:41:39.020+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DF794ZItIFC/
+[2025-05-20T09:41:39.029+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DF4HckEM6Dj/
+[2025-05-20T09:41:39.036+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DFp7mdxNB_P/
+[2025-05-20T09:41:39.277+0000] {logging_mixin.py:190} INFO - Scrolled 1 iterations
+[2025-05-20T09:41:42.330+0000] {logging_mixin.py:190} INFO - Count: 2, Limit: 1
+[2025-05-20T09:41:42.332+0000] {logging_mixin.py:190} INFO - Scrolling stopped after 10 iterations
+[2025-05-20T09:41:42.333+0000] {logging_mixin.py:190} INFO - Extracted 12 video URLs
+[2025-05-20T09:41:42.333+0000] {logging_mixin.py:190} INFO - Step 2 of 2 - Downloading and saving videos
+[2025-05-20T09:41:42.334+0000] {logging_mixin.py:190} INFO - Don't close the app! Saving scraped data to database, it can take a while!
+[2025-05-20T09:41:42.351+0000] {warnings.py:109} WARNING - /opt/airflow/dags/app/core/database_utils.py:34: SAWarning: SELECT statement has a cartesian product between FROM element(s) "tiktok" and FROM element "instagram".  Apply join condition(s) between each element to resolve.
+  return db.query(Instagram).filter(Tiktok.status == TaskStatus.SUCCESS.value).all()
+
+[2025-05-20T09:41:42.353+0000] {logging_mixin.py:190} INFO - New videos to download: 12
+[2025-05-20T09:41:42.532+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T09:41:42.532+0000] {logging_mixin.py:190} INFO - Downloading video from DJmRU0zue0i...
+[2025-05-20T09:41:42.671+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/leomessi/reel/DJmRU0zue0i/
+[2025-05-20T09:41:42.673+0000] {logging_mixin.py:190} INFO - [Instagram] DJmRU0zue0i: Setting up session
+[2025-05-20T09:41:43.069+0000] {logging_mixin.py:190} INFO - [Instagram] DJmRU0zue0i: Downloading JSON metadata
+[2025-05-20T09:41:44.024+0000] {logging_mixin.py:190} INFO - [info] DJmRU0zue0i: Downloading 1 format(s): dash-682756401165794ad
+[2025-05-20T09:41:44.057+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DJmRU0zue0i
+[2025-05-20T09:41:44.058+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  499.29KiB at  392.80KiB/s ETA 00:01
+[2025-05-20T09:41:44.058+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  499.29KiB at  915.52KiB/s ETA 00:00
+[2025-05-20T09:41:44.059+0000] {logging_mixin.py:190} INFO - [download]   1.4% of  499.29KiB at    1.83MiB/s ETA 00:00
+[2025-05-20T09:41:44.059+0000] {logging_mixin.py:190} INFO - [download]   3.0% of  499.29KiB at    3.49MiB/s ETA 00:00
+[2025-05-20T09:41:44.062+0000] {logging_mixin.py:190} INFO - [download]   6.2% of  499.29KiB at    4.61MiB/s ETA 00:00
+[2025-05-20T09:41:44.064+0000] {logging_mixin.py:190} INFO - [download]  12.6% of  499.29KiB at    6.56MiB/s ETA 00:00
+[2025-05-20T09:41:44.071+0000] {logging_mixin.py:190} INFO - [download]  25.4% of  499.29KiB at    7.94MiB/s ETA 00:00
+[2025-05-20T09:41:44.088+0000] {logging_mixin.py:190} INFO - [download]  51.1% of  499.29KiB at    7.69MiB/s ETA 00:00
+[2025-05-20T09:41:44.125+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  499.29KiB at    7.03MiB/s ETA 00:00
+[2025-05-20T09:41:44.125+0000] {logging_mixin.py:190} INFO - [download] 100% of  499.29KiB in 00:00:00 at 5.02MiB/s   
+[2025-05-20T09:41:44.504+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DJmRU0zue0i"
+[2025-05-20T09:41:44.749+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DJmRU0zue0i.mp3
+[2025-05-20T09:41:45.495+0000] {logging_mixin.py:190} INFO - Deleting original file data/DJmRU0zue0i (pass -k to keep)
+[2025-05-20T09:41:45.501+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DJmRU0zue0i
+[2025-05-20T09:41:45.510+0000] {logging_mixin.py:190} INFO - Downloaded video DJmRU0zue0i to data/DJmRU0zue0i.mp3
+[2025-05-20T09:41:45.656+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T09:41:45.657+0000] {logging_mixin.py:190} INFO - Downloading video from DGHDuXiSs-K...
+[2025-05-20T09:41:45.691+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/leomessi/reel/DGHDuXiSs-K/
+[2025-05-20T09:41:45.691+0000] {logging_mixin.py:190} INFO - [Instagram] DGHDuXiSs-K: Setting up session
+[2025-05-20T09:41:46.049+0000] {logging_mixin.py:190} INFO - [Instagram] DGHDuXiSs-K: Downloading JSON metadata
+[2025-05-20T09:41:46.808+0000] {logging_mixin.py:190} INFO - [info] DGHDuXiSs-K: Downloading 1 format(s): dash-1685547882362045ad
+[2025-05-20T09:41:46.848+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DGHDuXiSs-K
+[2025-05-20T09:41:46.849+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  304.07KiB at  664.50KiB/s ETA 00:00
+[2025-05-20T09:41:46.849+0000] {logging_mixin.py:190} INFO - [download]   1.0% of  304.07KiB at    1.38MiB/s ETA 00:00
+[2025-05-20T09:41:46.850+0000] {logging_mixin.py:190} INFO - [download]   2.3% of  304.07KiB at    2.30MiB/s ETA 00:00
+[2025-05-20T09:41:46.851+0000] {logging_mixin.py:190} INFO - [download]   4.9% of  304.07KiB at    3.96MiB/s ETA 00:00
+[2025-05-20T09:41:46.853+0000] {logging_mixin.py:190} INFO - [download]  10.2% of  304.07KiB at    5.78MiB/s ETA 00:00
+[2025-05-20T09:41:46.855+0000] {logging_mixin.py:190} INFO - [download]  20.7% of  304.07KiB at    7.64MiB/s ETA 00:00
+[2025-05-20T09:41:46.863+0000] {logging_mixin.py:190} INFO - [download]  41.8% of  304.07KiB at    8.10MiB/s ETA 00:00
+[2025-05-20T09:41:46.875+0000] {logging_mixin.py:190} INFO - [download]  83.9% of  304.07KiB at    9.01MiB/s ETA 00:00
+[2025-05-20T09:41:46.880+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  304.07KiB at    9.04MiB/s ETA 00:00
+[2025-05-20T09:41:46.881+0000] {logging_mixin.py:190} INFO - [download] 100% of  304.07KiB in 00:00:00 at 4.30MiB/s   
+[2025-05-20T09:41:46.883+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DGHDuXiSs-K"
+[2025-05-20T09:41:47.020+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DGHDuXiSs-K.mp3
+[2025-05-20T09:41:47.401+0000] {logging_mixin.py:190} INFO - Deleting original file data/DGHDuXiSs-K (pass -k to keep)
+[2025-05-20T09:41:47.404+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DGHDuXiSs-K
+[2025-05-20T09:41:47.411+0000] {logging_mixin.py:190} INFO - Downloaded video DGHDuXiSs-K to data/DGHDuXiSs-K.mp3
+[2025-05-20T09:41:47.537+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T09:41:47.537+0000] {logging_mixin.py:190} INFO - Downloading video from DGlCiX-NUcI...
+[2025-05-20T09:41:47.568+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/leomessi/reel/DGlCiX-NUcI/
+[2025-05-20T09:41:47.568+0000] {logging_mixin.py:190} INFO - [Instagram] DGlCiX-NUcI: Setting up session
+[2025-05-20T09:41:48.075+0000] {logging_mixin.py:190} INFO - [Instagram] DGlCiX-NUcI: Downloading JSON metadata
+[2025-05-20T09:41:48.574+0000] {logging_mixin.py:190} INFO - [info] DGlCiX-NUcI: Downloading 1 format(s): dash-1136522191108554ad
+[2025-05-20T09:41:48.614+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DGlCiX-NUcI
+[2025-05-20T09:41:48.615+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.13MiB at  589.83KiB/s ETA 00:01
+[2025-05-20T09:41:48.615+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    1.13MiB at    1.30MiB/s ETA 00:00
+[2025-05-20T09:41:48.616+0000] {logging_mixin.py:190} INFO - [download]   0.6% of    1.13MiB at    2.38MiB/s ETA 00:00
+[2025-05-20T09:41:48.619+0000] {logging_mixin.py:190} INFO - [download]   1.3% of    1.13MiB at    2.57MiB/s ETA 00:00
+[2025-05-20T09:41:48.621+0000] {logging_mixin.py:190} INFO - [download]   2.7% of    1.13MiB at    3.81MiB/s ETA 00:00
+[2025-05-20T09:41:48.626+0000] {logging_mixin.py:190} INFO - [download]   5.5% of    1.13MiB at    4.87MiB/s ETA 00:00
+[2025-05-20T09:41:48.633+0000] {logging_mixin.py:190} INFO - [download]  11.0% of    1.13MiB at    6.31MiB/s ETA 00:00
+[2025-05-20T09:41:48.645+0000] {logging_mixin.py:190} INFO - [download]  22.1% of    1.13MiB at    7.79MiB/s ETA 00:00
+[2025-05-20T09:41:48.670+0000] {logging_mixin.py:190} INFO - [download]  44.3% of    1.13MiB at    8.77MiB/s ETA 00:00
+[2025-05-20T09:41:48.726+0000] {logging_mixin.py:190} INFO - [download]  88.8% of    1.13MiB at    8.88MiB/s ETA 00:00
+[2025-05-20T09:41:48.739+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.13MiB at    8.97MiB/s ETA 00:00
+[2025-05-20T09:41:48.740+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.13MiB in 00:00:00 at 6.93MiB/s   
+[2025-05-20T09:41:48.742+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DGlCiX-NUcI"
+[2025-05-20T09:41:48.848+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DGlCiX-NUcI.mp3
+[2025-05-20T09:41:47.822+0000] {logging_mixin.py:190} INFO - Deleting original file data/DGlCiX-NUcI (pass -k to keep)
+[2025-05-20T09:41:47.827+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DGlCiX-NUcI
+[2025-05-20T09:41:47.840+0000] {logging_mixin.py:190} INFO - Downloaded video DGlCiX-NUcI to data/DGlCiX-NUcI.mp3
+[2025-05-20T09:41:47.971+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T09:41:47.972+0000] {logging_mixin.py:190} INFO - Downloading video from DJRyQeGslC9...
+[2025-05-20T09:41:48.005+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/leomessi/reel/DJRyQeGslC9/
+[2025-05-20T09:41:48.006+0000] {logging_mixin.py:190} INFO - [Instagram] DJRyQeGslC9: Setting up session
+[2025-05-20T09:41:48.512+0000] {logging_mixin.py:190} INFO - [Instagram] DJRyQeGslC9: Downloading JSON metadata
+[2025-05-20T09:42:03.463+0000] {logging_mixin.py:190} INFO - [info] DJRyQeGslC9: Downloading 1 format(s): dash-1238045851011559ad
+[2025-05-20T09:42:03.510+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DJRyQeGslC9
+[2025-05-20T09:42:03.510+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  145.08KiB at  642.81KiB/s ETA 00:00
+[2025-05-20T09:42:03.510+0000] {logging_mixin.py:190} INFO - [download]   2.1% of  145.08KiB at    1.40MiB/s ETA 00:00
+[2025-05-20T09:42:03.511+0000] {logging_mixin.py:190} INFO - [download]   4.8% of  145.08KiB at    2.65MiB/s ETA 00:00
+[2025-05-20T09:42:03.512+0000] {logging_mixin.py:190} INFO - [download]  10.3% of  145.08KiB at    4.18MiB/s ETA 00:00
+[2025-05-20T09:42:03.513+0000] {logging_mixin.py:190} INFO - [download]  21.4% of  145.08KiB at    6.27MiB/s ETA 00:00
+[2025-05-20T09:42:03.516+0000] {logging_mixin.py:190} INFO - [download]  43.4% of  145.08KiB at    7.96MiB/s ETA 00:00
+[2025-05-20T09:42:03.523+0000] {logging_mixin.py:190} INFO - [download]  87.5% of  145.08KiB at    8.41MiB/s ETA 00:00
+[2025-05-20T09:42:03.525+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  145.08KiB at    8.67MiB/s ETA 00:00
+[2025-05-20T09:42:03.525+0000] {logging_mixin.py:190} INFO - [download] 100% of  145.08KiB in 00:00:00 at 2.45MiB/s   
+[2025-05-20T09:42:03.527+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DJRyQeGslC9"
+[2025-05-20T09:42:03.878+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DJRyQeGslC9.mp3
+[2025-05-20T09:42:04.053+0000] {logging_mixin.py:190} INFO - Deleting original file data/DJRyQeGslC9 (pass -k to keep)
+[2025-05-20T09:42:04.057+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DJRyQeGslC9
+[2025-05-20T09:42:04.172+0000] {logging_mixin.py:190} INFO - Downloaded video DJRyQeGslC9 to data/DJRyQeGslC9.mp3
+[2025-05-20T09:42:04.478+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T09:42:04.478+0000] {logging_mixin.py:190} INFO - Downloading video from DIjN4__trTw...
+[2025-05-20T09:42:04.509+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/leomessi/reel/DIjN4__trTw/
+[2025-05-20T09:42:04.510+0000] {logging_mixin.py:190} INFO - [Instagram] DIjN4__trTw: Setting up session
+[2025-05-20T09:42:04.943+0000] {logging_mixin.py:190} INFO - [Instagram] DIjN4__trTw: Downloading JSON metadata
+[2025-05-20T09:42:05.568+0000] {logging_mixin.py:190} INFO - [info] DIjN4__trTw: Downloading 1 format(s): dash-557636114036349ad
+[2025-05-20T09:42:05.604+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DIjN4__trTw
+[2025-05-20T09:42:05.604+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  288.10KiB at  354.55KiB/s ETA 00:00
+[2025-05-20T09:42:05.605+0000] {logging_mixin.py:190} INFO - [download]   1.0% of  288.10KiB at  864.86KiB/s ETA 00:00
+[2025-05-20T09:42:05.605+0000] {logging_mixin.py:190} INFO - [download]   2.4% of  288.10KiB at    1.69MiB/s ETA 00:00
+[2025-05-20T09:42:05.606+0000] {logging_mixin.py:190} INFO - [download]   5.2% of  288.10KiB at    3.12MiB/s ETA 00:00
+[2025-05-20T09:42:05.607+0000] {logging_mixin.py:190} INFO - [download]  10.8% of  288.10KiB at    5.45MiB/s ETA 00:00
+[2025-05-20T09:42:05.611+0000] {logging_mixin.py:190} INFO - [download]  21.9% of  288.10KiB at    6.91MiB/s ETA 00:00
+[2025-05-20T09:42:05.617+0000] {logging_mixin.py:190} INFO - [download]  44.1% of  288.10KiB at    8.26MiB/s ETA 00:00
+[2025-05-20T09:42:05.629+0000] {logging_mixin.py:190} INFO - [download]  88.5% of  288.10KiB at    9.05MiB/s ETA 00:00
+[2025-05-20T09:42:05.633+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  288.10KiB at    9.19MiB/s ETA 00:00
+[2025-05-20T09:42:05.634+0000] {logging_mixin.py:190} INFO - [download] 100% of  288.10KiB in 00:00:00 at 4.48MiB/s   
+[2025-05-20T09:42:05.636+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DIjN4__trTw"
+[2025-05-20T09:42:05.807+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DIjN4__trTw.mp3
+[2025-05-20T09:42:06.233+0000] {logging_mixin.py:190} INFO - Deleting original file data/DIjN4__trTw (pass -k to keep)
+[2025-05-20T09:42:06.236+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DIjN4__trTw
+[2025-05-20T09:42:06.241+0000] {logging_mixin.py:190} INFO - Downloaded video DIjN4__trTw to data/DIjN4__trTw.mp3
+[2025-05-20T09:42:06.378+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T09:42:06.378+0000] {logging_mixin.py:190} INFO - Downloading video from DF794ZItIFC...
+[2025-05-20T09:42:06.414+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/leomessi/reel/DF794ZItIFC/
+[2025-05-20T09:42:06.414+0000] {logging_mixin.py:190} INFO - [Instagram] DF794ZItIFC: Setting up session
+[2025-05-20T09:42:06.757+0000] {logging_mixin.py:190} INFO - [Instagram] DF794ZItIFC: Downloading JSON metadata
+[2025-05-20T09:42:07.287+0000] {logging_mixin.py:190} INFO - [info] DF794ZItIFC: Downloading 1 format(s): dash-1854244411983428ad
+[2025-05-20T09:42:07.313+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DF794ZItIFC
+[2025-05-20T09:42:07.313+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  269.23KiB at  854.93KiB/s ETA 00:00
+[2025-05-20T09:42:07.314+0000] {logging_mixin.py:190} INFO - [download]   1.1% of  269.23KiB at    1.69MiB/s ETA 00:00
+[2025-05-20T09:42:07.314+0000] {logging_mixin.py:190} INFO - [download]   2.6% of  269.23KiB at    2.76MiB/s ETA 00:00
+[2025-05-20T09:42:07.315+0000] {logging_mixin.py:190} INFO - [download]   5.6% of  269.23KiB at    4.66MiB/s ETA 00:00
+[2025-05-20T09:42:07.317+0000] {logging_mixin.py:190} INFO - [download]  11.5% of  269.23KiB at    6.38MiB/s ETA 00:00
+[2025-05-20T09:42:07.320+0000] {logging_mixin.py:190} INFO - [download]  23.4% of  269.23KiB at    8.15MiB/s ETA 00:00
+[2025-05-20T09:42:07.326+0000] {logging_mixin.py:190} INFO - [download]  47.2% of  269.23KiB at    8.99MiB/s ETA 00:00
+[2025-05-20T09:42:07.338+0000] {logging_mixin.py:190} INFO - [download]  94.7% of  269.23KiB at    9.53MiB/s ETA 00:00
+[2025-05-20T09:42:07.339+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  269.23KiB at    9.60MiB/s ETA 00:00
+[2025-05-20T09:42:07.340+0000] {logging_mixin.py:190} INFO - [download] 100% of  269.23KiB in 00:00:00 at 5.25MiB/s   
+[2025-05-20T09:42:07.342+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DF794ZItIFC"
+[2025-05-20T09:42:07.449+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DF794ZItIFC.mp3
+[2025-05-20T09:42:07.839+0000] {logging_mixin.py:190} INFO - Deleting original file data/DF794ZItIFC (pass -k to keep)
+[2025-05-20T09:42:07.842+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DF794ZItIFC
+[2025-05-20T09:42:07.950+0000] {logging_mixin.py:190} INFO - Downloaded video DF794ZItIFC to data/DF794ZItIFC.mp3
+[2025-05-20T09:42:08.082+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T09:42:08.082+0000] {logging_mixin.py:190} INFO - Downloading video from DGnnhjNJdbS...
+[2025-05-20T09:42:08.117+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/leomessi/reel/DGnnhjNJdbS/
+[2025-05-20T09:42:08.117+0000] {logging_mixin.py:190} INFO - [Instagram] DGnnhjNJdbS: Setting up session
+[2025-05-20T09:42:08.459+0000] {logging_mixin.py:190} INFO - [Instagram] DGnnhjNJdbS: Downloading JSON metadata
+[2025-05-20T09:42:14.688+0000] {logging_mixin.py:190} INFO - [info] DGnnhjNJdbS: Downloading 1 format(s): dash-2013535812490871ad
+[2025-05-20T09:42:14.871+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DGnnhjNJdbS
+[2025-05-20T09:42:14.872+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  446.39KiB at    8.32KiB/s ETA 00:53
+[2025-05-20T09:42:14.873+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  446.39KiB at   24.65KiB/s ETA 00:17
+[2025-05-20T09:42:14.874+0000] {logging_mixin.py:190} INFO - [download]   1.6% of  446.39KiB at   57.07KiB/s ETA 00:07
+[2025-05-20T09:42:14.875+0000] {logging_mixin.py:190} INFO - [download]   3.4% of  446.39KiB at  121.40KiB/s ETA 00:03
+[2025-05-20T09:42:14.876+0000] {logging_mixin.py:190} INFO - [download]   6.9% of  446.39KiB at  249.33KiB/s ETA 00:01
+[2025-05-20T09:42:14.877+0000] {logging_mixin.py:190} INFO - [download]  14.1% of  446.39KiB at  503.20KiB/s ETA 00:00
+[2025-05-20T09:42:14.913+0000] {logging_mixin.py:190} INFO - [download]  28.5% of  446.39KiB at  787.77KiB/s ETA 00:00
+[2025-05-20T09:42:14.961+0000] {logging_mixin.py:190} INFO - [download]  57.1% of  446.39KiB at    1.19MiB/s ETA 00:00
+[2025-05-20T09:42:15.015+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  446.39KiB at    1.65MiB/s ETA 00:00
+[2025-05-20T09:42:15.016+0000] {logging_mixin.py:190} INFO - [download] 100% of  446.39KiB in 00:00:00 at 1.34MiB/s   
+[2025-05-20T09:42:15.017+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DGnnhjNJdbS"
+[2025-05-20T09:42:15.803+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DGnnhjNJdbS.mp3
+[2025-05-20T09:42:16.395+0000] {logging_mixin.py:190} INFO - Deleting original file data/DGnnhjNJdbS (pass -k to keep)
+[2025-05-20T09:42:16.398+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DGnnhjNJdbS
+[2025-05-20T09:42:17.622+0000] {logging_mixin.py:190} INFO - Downloaded video DGnnhjNJdbS to data/DGnnhjNJdbS.mp3
+[2025-05-20T09:42:17.973+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T09:42:17.974+0000] {logging_mixin.py:190} INFO - Downloading video from DI_2OjSM_tD...
+[2025-05-20T09:42:18.004+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/leomessi/reel/DI_2OjSM_tD/
+[2025-05-20T09:42:18.004+0000] {logging_mixin.py:190} INFO - [Instagram] DI_2OjSM_tD: Setting up session
+[2025-05-20T09:42:18.339+0000] {logging_mixin.py:190} INFO - [Instagram] DI_2OjSM_tD: Downloading JSON metadata
+[2025-05-20T09:42:18.904+0000] {logging_mixin.py:190} WARNING - ERROR: [Instagram] DI_2OjSM_tD: Restricted Video: You must be 18 years old or over to see this video. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies
+[2025-05-20T09:42:18.906+0000] {logging_mixin.py:190} INFO - 
+Error downloading video using yt-dlp: ERROR: [Instagram] DI_2OjSM_tD: Restricted Video: You must be 18 years old or over to see this video. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies
+[2025-05-20T09:42:19.725+0000] {logging_mixin.py:190} INFO - Downloaded video DI_2OjSM_tD to data/DI_2OjSM_tD.mp3
+[2025-05-20T09:42:19.869+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T09:42:19.871+0000] {logging_mixin.py:190} INFO - Downloading video from DF4HckEM6Dj...
+[2025-05-20T09:42:19.901+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/leomessi/reel/DF4HckEM6Dj/
+[2025-05-20T09:42:19.901+0000] {logging_mixin.py:190} INFO - [Instagram] DF4HckEM6Dj: Setting up session
+[2025-05-20T09:42:17.465+0000] {logging_mixin.py:190} INFO - [Instagram] DF4HckEM6Dj: Downloading JSON metadata
+[2025-05-20T09:42:26.599+0000] {logging_mixin.py:190} INFO - [info] DF4HckEM6Dj: Downloading 1 format(s): dash-593760016892485ad
+[2025-05-20T09:42:26.648+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DF4HckEM6Dj
+[2025-05-20T09:42:26.649+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  459.41KiB at  637.82KiB/s ETA 00:00
+[2025-05-20T09:42:26.649+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  459.41KiB at    1.25MiB/s ETA 00:00
+[2025-05-20T09:42:26.650+0000] {logging_mixin.py:190} INFO - [download]   1.5% of  459.41KiB at    2.37MiB/s ETA 00:00
+[2025-05-20T09:42:26.650+0000] {logging_mixin.py:190} INFO - [download]   3.3% of  459.41KiB at    4.38MiB/s ETA 00:00
+[2025-05-20T09:42:26.652+0000] {logging_mixin.py:190} INFO - [download]   6.7% of  459.41KiB at    6.42MiB/s ETA 00:00
+[2025-05-20T09:42:26.655+0000] {logging_mixin.py:190} INFO - [download]  13.7% of  459.41KiB at    7.93MiB/s ETA 00:00
+[2025-05-20T09:42:26.661+0000] {logging_mixin.py:190} INFO - [download]  27.6% of  459.41KiB at    8.88MiB/s ETA 00:00
+[2025-05-20T09:42:26.673+0000] {logging_mixin.py:190} INFO - [download]  55.5% of  459.41KiB at    9.45MiB/s ETA 00:00
+[2025-05-20T09:42:26.694+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  459.41KiB at    9.63MiB/s ETA 00:00
+[2025-05-20T09:42:26.695+0000] {logging_mixin.py:190} INFO - [download] 100% of  459.41KiB in 00:00:00 at 4.95MiB/s   
+[2025-05-20T09:42:26.696+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DF4HckEM6Dj"
+[2025-05-20T09:42:27.068+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DF4HckEM6Dj.mp3
+[2025-05-20T09:42:27.466+0000] {logging_mixin.py:190} INFO - Deleting original file data/DF4HckEM6Dj (pass -k to keep)
+[2025-05-20T09:42:27.469+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DF4HckEM6Dj
+[2025-05-20T09:42:27.474+0000] {logging_mixin.py:190} INFO - Downloaded video DF4HckEM6Dj to data/DF4HckEM6Dj.mp3
+[2025-05-20T09:42:27.615+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T09:42:27.615+0000] {logging_mixin.py:190} INFO - Downloading video from DFp7mdxNB_P...
+[2025-05-20T09:42:27.648+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/leomessi/reel/DFp7mdxNB_P/
+[2025-05-20T09:42:27.648+0000] {logging_mixin.py:190} INFO - [Instagram] DFp7mdxNB_P: Setting up session
+[2025-05-20T09:42:27.983+0000] {logging_mixin.py:190} INFO - [Instagram] DFp7mdxNB_P: Downloading JSON metadata
+[2025-05-20T09:42:28.524+0000] {logging_mixin.py:190} INFO - [info] DFp7mdxNB_P: Downloading 1 format(s): dash-984470166890991ad
+[2025-05-20T09:42:28.562+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DFp7mdxNB_P
+[2025-05-20T09:42:28.562+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  276.66KiB at  649.37KiB/s ETA 00:00
+[2025-05-20T09:42:28.563+0000] {logging_mixin.py:190} INFO - [download]   1.1% of  276.66KiB at    1.35MiB/s ETA 00:00
+[2025-05-20T09:42:28.563+0000] {logging_mixin.py:190} INFO - [download]   2.5% of  276.66KiB at    2.61MiB/s ETA 00:00
+[2025-05-20T09:42:28.566+0000] {logging_mixin.py:190} INFO - [download]   5.4% of  276.66KiB at    2.63MiB/s ETA 00:00
+[2025-05-20T09:42:28.567+0000] {logging_mixin.py:190} INFO - [download]  11.2% of  276.66KiB at    4.57MiB/s ETA 00:00
+[2025-05-20T09:42:28.571+0000] {logging_mixin.py:190} INFO - [download]  22.8% of  276.66KiB at    6.06MiB/s ETA 00:00
+[2025-05-20T09:42:28.577+0000] {logging_mixin.py:190} INFO - [download]  45.9% of  276.66KiB at    7.52MiB/s ETA 00:00
+[2025-05-20T09:42:28.589+0000] {logging_mixin.py:190} INFO - [download]  92.2% of  276.66KiB at    8.63MiB/s ETA 00:00
+[2025-05-20T09:42:28.591+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  276.66KiB at    8.78MiB/s ETA 00:00
+[2025-05-20T09:42:28.592+0000] {logging_mixin.py:190} INFO - [download] 100% of  276.66KiB in 00:00:00 at 4.18MiB/s   
+[2025-05-20T09:42:28.594+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DFp7mdxNB_P"
+[2025-05-20T09:42:28.682+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DFp7mdxNB_P.mp3
+[2025-05-20T09:42:29.016+0000] {logging_mixin.py:190} INFO - Deleting original file data/DFp7mdxNB_P (pass -k to keep)
+[2025-05-20T09:42:29.020+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DFp7mdxNB_P
+[2025-05-20T09:42:29.026+0000] {logging_mixin.py:190} INFO - Downloaded video DFp7mdxNB_P to data/DFp7mdxNB_P.mp3
+[2025-05-20T09:42:29.161+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T09:42:29.161+0000] {logging_mixin.py:190} INFO - Downloading video from DF8bjTzNg2j...
+[2025-05-20T09:42:29.191+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/leomessi/reel/DF8bjTzNg2j/
+[2025-05-20T09:42:29.192+0000] {logging_mixin.py:190} INFO - [Instagram] DF8bjTzNg2j: Setting up session
+[2025-05-20T09:42:29.491+0000] {logging_mixin.py:190} INFO - [Instagram] DF8bjTzNg2j: Downloading JSON metadata
+[2025-05-20T09:42:29.922+0000] {logging_mixin.py:190} INFO - [info] DF8bjTzNg2j: Downloading 1 format(s): dash-484930917792983ad
+[2025-05-20T09:42:29.963+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DF8bjTzNg2j
+[2025-05-20T09:42:29.963+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.28MiB at  Unknown B/s ETA Unknown
+[2025-05-20T09:42:29.964+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.28MiB at    2.07MiB/s ETA 00:00  
+[2025-05-20T09:42:29.968+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    1.28MiB at    1.17MiB/s ETA 00:01
+[2025-05-20T09:42:29.969+0000] {logging_mixin.py:190} INFO - [download]   1.1% of    1.28MiB at    2.27MiB/s ETA 00:00
+[2025-05-20T09:42:29.970+0000] {logging_mixin.py:190} INFO - [download]   2.4% of    1.28MiB at    3.81MiB/s ETA 00:00
+[2025-05-20T09:42:29.974+0000] {logging_mixin.py:190} INFO - [download]   4.8% of    1.28MiB at    5.21MiB/s ETA 00:00
+[2025-05-20T09:42:29.980+0000] {logging_mixin.py:190} INFO - [download]   9.7% of    1.28MiB at    6.89MiB/s ETA 00:00
+[2025-05-20T09:42:29.993+0000] {logging_mixin.py:190} INFO - [download]  19.4% of    1.28MiB at    8.20MiB/s ETA 00:00
+[2025-05-20T09:42:30.021+0000] {logging_mixin.py:190} INFO - [download]  38.9% of    1.28MiB at    8.58MiB/s ETA 00:00
+[2025-05-20T09:42:30.074+0000] {logging_mixin.py:190} INFO - [download]  77.9% of    1.28MiB at    9.01MiB/s ETA 00:00
+[2025-05-20T09:42:30.120+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.28MiB at    8.16MiB/s ETA 00:00
+[2025-05-20T09:42:30.121+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.28MiB in 00:00:00 at 6.51MiB/s   
+[2025-05-20T09:42:30.122+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DF8bjTzNg2j"
+[2025-05-20T09:42:30.218+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DF8bjTzNg2j.mp3
+[2025-05-20T09:42:31.558+0000] {logging_mixin.py:190} INFO - Deleting original file data/DF8bjTzNg2j (pass -k to keep)
+[2025-05-20T09:42:31.560+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DF8bjTzNg2j
+[2025-05-20T09:42:31.568+0000] {logging_mixin.py:190} INFO - Downloaded video DF8bjTzNg2j to data/DF8bjTzNg2j.mp3
+[2025-05-20T09:42:31.704+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-20T09:42:31.704+0000] {logging_mixin.py:190} INFO - Downloading video from DHOj889NIXc...
+[2025-05-20T09:42:31.739+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/leomessi/reel/DHOj889NIXc/
+[2025-05-20T09:42:31.739+0000] {logging_mixin.py:190} INFO - [Instagram] DHOj889NIXc: Setting up session
+[2025-05-20T09:42:32.031+0000] {logging_mixin.py:190} INFO - [Instagram] DHOj889NIXc: Downloading JSON metadata
+[2025-05-20T09:42:32.492+0000] {logging_mixin.py:190} INFO - [info] DHOj889NIXc: Downloading 1 format(s): dash-2295900964136485ad
+[2025-05-20T09:42:32.531+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DHOj889NIXc
+[2025-05-20T09:42:32.531+0000] {logging_mixin.py:190} INFO - [download]   0.9% of  113.93KiB at  586.70KiB/s ETA 00:00
+[2025-05-20T09:42:32.532+0000] {logging_mixin.py:190} INFO - [download]   2.6% of  113.93KiB at    1.35MiB/s ETA 00:00
+[2025-05-20T09:42:32.532+0000] {logging_mixin.py:190} INFO - [download]   6.1% of  113.93KiB at    2.67MiB/s ETA 00:00
+[2025-05-20T09:42:32.532+0000] {logging_mixin.py:190} INFO - [download]  13.2% of  113.93KiB at    4.96MiB/s ETA 00:00
+[2025-05-20T09:42:32.534+0000] {logging_mixin.py:190} INFO - [download]  27.2% of  113.93KiB at    6.11MiB/s ETA 00:00
+[2025-05-20T09:42:32.537+0000] {logging_mixin.py:190} INFO - [download]  55.3% of  113.93KiB at    7.88MiB/s ETA 00:00
+[2025-05-20T09:42:32.542+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  113.93KiB at    8.75MiB/s ETA 00:00
+[2025-05-20T09:42:32.543+0000] {logging_mixin.py:190} INFO - [download] 100% of  113.93KiB in 00:00:00 at 2.31MiB/s   
+[2025-05-20T09:42:32.544+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DHOj889NIXc"
+[2025-05-20T09:42:32.719+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DHOj889NIXc.mp3
+[2025-05-20T09:42:32.885+0000] {logging_mixin.py:190} INFO - Deleting original file data/DHOj889NIXc (pass -k to keep)
+[2025-05-20T09:42:32.888+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DHOj889NIXc
+[2025-05-20T09:42:32.893+0000] {logging_mixin.py:190} INFO - Downloaded video DHOj889NIXc to data/DHOj889NIXc.mp3
+[2025-05-20T09:42:32.893+0000] {logging_mixin.py:190} INFO - Downloaded 12 new videos.
+[2025-05-20T09:42:33.149+0000] {python.py:240} INFO - Done. Returned value was: [{'video_id': 'DJmRU0zue0i', 'file_path': 'data/DJmRU0zue0i.mp3'}, {'video_id': 'DGHDuXiSs-K', 'file_path': 'data/DGHDuXiSs-K.mp3'}, {'video_id': 'DGlCiX-NUcI', 'file_path': 'data/DGlCiX-NUcI.mp3'}, {'video_id': 'DJRyQeGslC9', 'file_path': 'data/DJRyQeGslC9.mp3'}, {'video_id': 'DIjN4__trTw', 'file_path': 'data/DIjN4__trTw.mp3'}, {'video_id': 'DF794ZItIFC', 'file_path': 'data/DF794ZItIFC.mp3'}, {'video_id': 'DGnnhjNJdbS', 'file_path': 'data/DGnnhjNJdbS.mp3'}, {'video_id': 'DI_2OjSM_tD', 'file_path': 'data/DI_2OjSM_tD.mp3'}, {'video_id': 'DF4HckEM6Dj', 'file_path': 'data/DF4HckEM6Dj.mp3'}, {'video_id': 'DFp7mdxNB_P', 'file_path': 'data/DFp7mdxNB_P.mp3'}, {'video_id': 'DF8bjTzNg2j', 'file_path': 'data/DF8bjTzNg2j.mp3'}, {'video_id': 'DHOj889NIXc', 'file_path': 'data/DHOj889NIXc.mp3'}]
+[2025-05-20T09:42:33.172+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-20T09:42:33.172+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instagram_videos_scraper_dag, task_id=instagram_videos_scraper_task, run_id=manual__2025-05-20T09:41:29.997737+00:00, execution_date=20250520T094129, start_date=20250520T094131, end_date=20250520T094233
+[2025-05-20T09:42:33.210+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-20T09:42:33.224+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-20T09:42:33.226+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

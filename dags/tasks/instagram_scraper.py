@@ -14,5 +14,5 @@ def instagram_videos_scraper(id = "baukrysie",INSTAGRAM_FILE_PATH="", download_d
         download_directory (str): Directory to save the downloaded videos.
     """
     scraper = ProfileScraper(id)
-    return scraper.pipeline_videos(scrolls=scrolls)
+    return scraper.pipeline_videos(id, scrolls=scrolls)
     # batch_download_from_file(INSTAGRAM_FILE_PATH, download_directory, tiktok=False)

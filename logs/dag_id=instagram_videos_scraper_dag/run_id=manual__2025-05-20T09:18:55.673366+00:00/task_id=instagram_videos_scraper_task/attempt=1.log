@@ -1,0 +1,149 @@
+[2025-05-20T09:18:56.132+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-20T09:18:56.144+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.instagram_videos_scraper_task manual__2025-05-20T09:18:55.673366+00:00 [queued]>
+[2025-05-20T09:18:56.149+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.instagram_videos_scraper_task manual__2025-05-20T09:18:55.673366+00:00 [queued]>
+[2025-05-20T09:18:56.149+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-20T09:18:56.158+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): instagram_videos_scraper_task> on 2025-05-20 09:18:55.673366+00:00
+[2025-05-20T09:18:56.161+0000] {standard_task_runner.py:72} INFO - Started process 25238 to run task
+[2025-05-20T09:18:56.163+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'instagram_videos_scraper_dag', 'instagram_videos_scraper_task', 'manual__2025-05-20T09:18:55.673366+00:00', '--job-id', '6283', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_instagram.py', '--cfg-path', '/tmp/tmpu9nt6vnx']
+[2025-05-20T09:18:56.165+0000] {standard_task_runner.py:105} INFO - Job 6283: Subtask instagram_videos_scraper_task
+[2025-05-20T09:18:56.202+0000] {task_command.py:467} INFO - Running <TaskInstance: instagram_videos_scraper_dag.instagram_videos_scraper_task manual__2025-05-20T09:18:55.673366+00:00 [running]> on host 05534d39966d
+[2025-05-20T09:18:56.259+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='instagram_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='instagram_videos_scraper_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-20T09:18:55.673366+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-20T09:18:55.673366+00:00'
+[2025-05-20T09:18:56.260+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-20T09:19:19.598+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.94); currently, chromedriver 136.0.7103.94 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-20T09:19:23.298+0000] {logging_mixin.py:190} INFO - Step 1 of 2 - Loading profile page
+[2025-05-20T09:19:23.298+0000] {logging_mixin.py:190} INFO - Extracting videos...
+[2025-05-20T09:19:26.368+0000] {logging_mixin.py:190} INFO - Count: 1, Limit: 5
+[2025-05-20T09:19:26.379+0000] {logging_mixin.py:190} INFO - Found 46 video tags
+[2025-05-20T09:19:26.435+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DJmRU0zue0i/
+[2025-05-20T09:19:26.441+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DJRyQeGslC9/
+[2025-05-20T09:19:26.447+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DI_2OjSM_tD/
+[2025-05-20T09:19:26.452+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DIjN4__trTw/
+[2025-05-20T09:19:26.458+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DHOj889NIXc/
+[2025-05-20T09:19:26.463+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DGnnhjNJdbS/
+[2025-05-20T09:19:26.469+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DGlCiX-NUcI/
+[2025-05-20T09:19:26.475+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DGHDuXiSs-K/
+[2025-05-20T09:19:26.480+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DF8bjTzNg2j/
+[2025-05-20T09:19:26.486+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DF794ZItIFC/
+[2025-05-20T09:19:26.492+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DF4HckEM6Dj/
+[2025-05-20T09:19:26.498+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DFp7mdxNB_P/
+[2025-05-20T09:19:26.693+0000] {logging_mixin.py:190} INFO - Scrolled 1 iterations
+[2025-05-20T09:19:29.723+0000] {logging_mixin.py:190} INFO - Count: 2, Limit: 5
+[2025-05-20T09:19:29.731+0000] {logging_mixin.py:190} INFO - Found 58 video tags
+[2025-05-20T09:19:29.865+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DFiMzzaNjbs/
+[2025-05-20T09:19:29.871+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DFOBSIbNfEO/
+[2025-05-20T09:19:29.876+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DFAuE_ztqWy/
+[2025-05-20T09:19:29.883+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DEh07XYNzZP/
+[2025-05-20T09:19:29.889+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DEC6_4ctW0i/
+[2025-05-20T09:19:29.894+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DDzlzvqNyS-/
+[2025-05-20T09:19:29.901+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DDpuvqMtXwX/
+[2025-05-20T09:19:29.906+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DDhW5iLRaTP/
+[2025-05-20T09:19:29.911+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DDfbvStN6rM/
+[2025-05-20T09:19:29.917+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DCrRP4cNg1n/
+[2025-05-20T09:19:29.922+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DCos59oPrzm/
+[2025-05-20T09:19:29.927+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DCZILL4Ryko/
+[2025-05-20T09:19:30.075+0000] {logging_mixin.py:190} INFO - Scrolled 2 iterations
+[2025-05-20T09:19:33.113+0000] {logging_mixin.py:190} INFO - Count: 3, Limit: 5
+[2025-05-20T09:19:33.124+0000] {logging_mixin.py:190} INFO - Found 58 video tags
+[2025-05-20T09:19:33.423+0000] {logging_mixin.py:190} INFO - Scrolled 3 iterations
+[2025-05-20T09:19:37.480+0000] {logging_mixin.py:190} INFO - Count: 4, Limit: 5
+[2025-05-20T09:19:37.811+0000] {logging_mixin.py:190} INFO - Found 66 video tags
+[2025-05-20T09:19:38.090+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DBqzIdcRqqx/
+[2025-05-20T09:19:38.096+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DBgfJ3bxkLi/
+[2025-05-20T09:19:38.102+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DBY4QnPNACk/
+[2025-05-20T09:19:38.109+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DBWMlwXuNZy/
+[2025-05-20T09:19:38.115+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DA9TQK6t-1w/
+[2025-05-20T09:19:38.121+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DA3nLdNNM73/
+[2025-05-20T09:19:38.127+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DAyP6sPIf9Z/
+[2025-05-20T09:19:38.133+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DAq9RdFt0hO/
+[2025-05-20T09:19:38.139+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DAG0gVzNLdU/
+[2025-05-20T09:19:38.145+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/C__IRmENL68/
+[2025-05-20T09:19:38.151+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/C_3w8y6NqNR/
+[2025-05-20T09:19:38.157+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/C_20jMutH6I/
+[2025-05-20T09:19:38.316+0000] {logging_mixin.py:190} INFO - Scrolled 4 iterations
+[2025-05-20T09:19:38.316+0000] {logging_mixin.py:190} INFO - Extracted 36 video URLs
+[2025-05-20T09:19:38.317+0000] {logging_mixin.py:190} INFO - Step 2 of 2 - Downloading and saving videos
+[2025-05-20T09:19:38.317+0000] {logging_mixin.py:190} INFO - Don't close the app! Saving scraped data to database, it can take a while!
+[2025-05-20T09:19:38.342+0000] {warnings.py:109} WARNING - /opt/airflow/dags/app/core/database_utils.py:38: SAWarning: SELECT statement has a cartesian product between FROM element(s) "facebook" and FROM element "tiktok".  Apply join condition(s) between each element to resolve.
+  return db.query(Facebook).filter(Tiktok.status == TaskStatus.SUCCESS.value).all()
+
+[2025-05-20T09:19:38.346+0000] {logging_mixin.py:190} INFO - New videos to download: 36
+[2025-05-20T09:19:38.348+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DFiMzzaNjbs/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.348+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DGHDuXiSs-K/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.349+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DDzlzvqNyS-/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.350+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DBY4QnPNACk/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.350+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DGnnhjNJdbS/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.350+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DBWMlwXuNZy/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.351+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DEh07XYNzZP/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.352+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DFAuE_ztqWy/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.353+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DF4HckEM6Dj/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.354+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DFp7mdxNB_P/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.354+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DJmRU0zue0i/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.355+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DCos59oPrzm/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.356+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DI_2OjSM_tD/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.356+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DA9TQK6t-1w/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.357+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DF8bjTzNg2j/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.357+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/C_20jMutH6I/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.358+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DF794ZItIFC/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.358+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DGlCiX-NUcI/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.359+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DJRyQeGslC9/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.359+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DIjN4__trTw/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.359+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DDhW5iLRaTP/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.360+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DA3nLdNNM73/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.360+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DAq9RdFt0hO/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.361+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DCZILL4Ryko/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.361+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DDpuvqMtXwX/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.362+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/C__IRmENL68/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.362+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DEC6_4ctW0i/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.363+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DBgfJ3bxkLi/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.363+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DAG0gVzNLdU/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.364+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DDfbvStN6rM/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.364+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DAyP6sPIf9Z/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.365+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DBqzIdcRqqx/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.365+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DCrRP4cNg1n/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.365+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DFOBSIbNfEO/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.366+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/C_3w8y6NqNR/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.366+0000] {logging_mixin.py:190} INFO - Error downloading video https://www.instagram.com/leomessi/reel/DHOj889NIXc/: 
+create_pending_video() missing 1 required positional argument: 'url'
+[2025-05-20T09:19:38.366+0000] {logging_mixin.py:190} INFO - Downloaded 0 new videos.
+[2025-05-20T09:19:38.646+0000] {python.py:240} INFO - Done. Returned value was: []
+[2025-05-20T09:19:38.669+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-20T09:19:38.670+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instagram_videos_scraper_dag, task_id=instagram_videos_scraper_task, run_id=manual__2025-05-20T09:18:55.673366+00:00, execution_date=20250520T091855, start_date=20250520T091856, end_date=20250520T091938
+[2025-05-20T09:19:38.702+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-20T09:19:38.718+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-20T09:19:38.722+0000] {standard_task_runner.py:217} INFO - Process not found (most likely exited), stop collecting metrics
+[2025-05-20T09:19:38.726+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

@@ -47,7 +47,7 @@ def x_videos_scraper(id = "elonmusk",scrolls = 5):
             if set(hrefs) == old_links:
                 break
                     
-        results = get_all_videos_from_db()
+        results = get_all_videos_from_db(platform="x")
         for result in results:
             if result.url in hrefs:
                 hrefs.remove(result.url)
@@ -62,7 +62,7 @@ def x_videos_scraper(id = "elonmusk",scrolls = 5):
         for link in new_links:
             try:
                 video_id = extract_id(link)
-                task_id = create_pending_video(video_id, link, platform="x")
+                task_id = create_pending_video(video_id, id, link, platform="x")
                 file_path = download_video(link, Config.DOWNLOAD_DIRECTORY)
                 if file_path:
                     update_video_status(video_id, TaskStatus.PROCESSING.value, platform="x")

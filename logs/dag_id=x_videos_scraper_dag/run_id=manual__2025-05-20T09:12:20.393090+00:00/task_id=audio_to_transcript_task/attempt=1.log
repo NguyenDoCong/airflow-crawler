@@ -1,0 +1,22 @@
+[2025-05-20T09:13:02.552+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-20T09:13:02.563+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: x_videos_scraper_dag.audio_to_transcript_task manual__2025-05-20T09:12:20.393090+00:00 [queued]>
+[2025-05-20T09:13:02.568+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: x_videos_scraper_dag.audio_to_transcript_task manual__2025-05-20T09:12:20.393090+00:00 [queued]>
+[2025-05-20T09:13:02.568+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-20T09:13:02.575+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): audio_to_transcript_task> on 2025-05-20 09:12:20.393090+00:00
+[2025-05-20T09:13:02.578+0000] {standard_task_runner.py:72} INFO - Started process 24906 to run task
+[2025-05-20T09:13:02.581+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'x_videos_scraper_dag', 'audio_to_transcript_task', 'manual__2025-05-20T09:12:20.393090+00:00', '--job-id', '6280', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_x.py', '--cfg-path', '/tmp/tmpwb11ax_5']
+[2025-05-20T09:13:02.582+0000] {standard_task_runner.py:105} INFO - Job 6280: Subtask audio_to_transcript_task
+[2025-05-20T09:13:02.616+0000] {task_command.py:467} INFO - Running <TaskInstance: x_videos_scraper_dag.audio_to_transcript_task manual__2025-05-20T09:12:20.393090+00:00 [running]> on host 05534d39966d
+[2025-05-20T09:13:02.672+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='x_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='audio_to_transcript_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-20T09:12:20.393090+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-20T09:12:20.393090+00:00'
+[2025-05-20T09:13:02.673+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-20T09:13:02.920+0000] {get_transcript.py:39} INFO - Number of downloads to process: 1
+[2025-05-20T09:13:02.920+0000] {get_transcript.py:44} INFO - Processing audio file: data/1906948011667698146.mp3
+[2025-05-20T09:13:04.052+0000] {transcribe.py:839} INFO - Processing audio with duration 04:14.328
+[2025-05-20T09:13:04.603+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.99
+[2025-05-20T09:13:04.606+0000] {get_transcript.py:54} INFO - Detected language 'en' with probability 0.9947910308837891
+[2025-05-20T09:13:09.147+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-05-20T09:13:09.155+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-20T09:13:09.155+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=x_videos_scraper_dag, task_id=audio_to_transcript_task, run_id=manual__2025-05-20T09:12:20.393090+00:00, execution_date=20250520T091220, start_date=20250520T091302, end_date=20250520T091309
+[2025-05-20T09:13:09.210+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-20T09:13:09.222+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-20T09:13:09.237+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
