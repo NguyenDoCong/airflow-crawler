@@ -57,34 +57,37 @@ def x_videos_scraper(id = "elonmusk",scrolls = 5):
 
         print(f"New videos: {len(new_links)}")
 
-        results = []
-
-        for link in new_links:
-            try:
-                video_id = extract_id(link)
-                task_id = create_pending_video(video_id, id, link, platform="x")
-                file_path = download_video(link, Config.DOWNLOAD_DIRECTORY)
-                if file_path:
-                    update_video_status(video_id, TaskStatus.PROCESSING.value, platform="x")
-                    result = {
-                        "video_id": video_id,
-                        "file_path": file_path,
-                    }
-                    print(f"Downloaded video {result['video_id']} to {result['file_path']}")
-                    results.append(result)                    
-                    
-                else:
-                    update_video_status(video_id, TaskStatus.FAILURE.value, platform="x", logs="Error downloading video")
-            except Exception as e:
-                print(f"Error downloading video {link}: {e}")
-                # update_video_status(video_id, TaskStatus.FAILURE.value, platform="x", logs="Error downloading video")
-                continue
-            
-        print(f"Downloaded {len(results)} new videos.")
-
         context.close()
         browser.close()
 
-        return results
+        return {'id': id, 'new_links': new_links}
+
+        # results = []
+
+        # for link in new_links:
+        #     try:
+        #         video_id = extract_id(link)
+        #         task_id = create_pending_video(video_id, id, link, platform="x")
+        #         file_path = download_video(link, Config.DOWNLOAD_DIRECTORY)
+        #         if file_path:
+        #             update_video_status(video_id, TaskStatus.PROCESSING.value, platform="x")
+        #             result = {
+        #                 "video_id": video_id,
+        #                 "file_path": file_path,
+        #             }
+        #             print(f"Downloaded video {result['video_id']} to {result['file_path']}")
+        #             results.append(result)                    
+                    
+        #         else:
+        #             update_video_status(video_id, TaskStatus.FAILURE.value, platform="x", logs="Error downloading video")
+        #     except Exception as e:
+        #         print(f"Error downloading video {link}: {e}")
+        #         # update_video_status(video_id, TaskStatus.FAILURE.value, platform="x", logs="Error downloading video")
+        #         continue
+            
+        # print(f"Downloaded {len(results)} new videos.")
+
+
+
 
     # batch_download_from_file(Config.X_FILE_PATH, Config.DOWNLOAD_DIRECTORY, platform="x")

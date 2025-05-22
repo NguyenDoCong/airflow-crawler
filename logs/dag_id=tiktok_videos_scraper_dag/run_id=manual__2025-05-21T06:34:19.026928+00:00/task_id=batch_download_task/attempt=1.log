@@ -1,0 +1,482 @@
+[2025-05-21T06:34:30.876+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-21T06:34:30.886+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.batch_download_task manual__2025-05-21T06:34:19.026928+00:00 [queued]>
+[2025-05-21T06:34:30.891+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.batch_download_task manual__2025-05-21T06:34:19.026928+00:00 [queued]>
+[2025-05-21T06:34:30.891+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-21T06:34:30.899+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): batch_download_task> on 2025-05-21 06:34:19.026928+00:00
+[2025-05-21T06:34:30.904+0000] {standard_task_runner.py:72} INFO - Started process 726670 to run task
+[2025-05-21T06:34:30.906+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'batch_download_task', 'manual__2025-05-21T06:34:19.026928+00:00', '--job-id', '6398', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpwz00d99_']
+[2025-05-21T06:34:30.908+0000] {standard_task_runner.py:105} INFO - Job 6398: Subtask batch_download_task
+[2025-05-21T06:34:30.950+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.batch_download_task manual__2025-05-21T06:34:19.026928+00:00 [running]> on host ac13676b83f9
+[2025-05-21T06:34:31.005+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='batch_download_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-21T06:34:19.026928+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-21T06:34:19.026928+00:00'
+[2025-05-21T06:34:31.006+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-21T06:34:31.008+0000] {logging_mixin.py:190} INFO - Starting batch download...
+[2025-05-21T06:34:31.169+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T06:34:31.169+0000] {logging_mixin.py:190} INFO - Downloading video from 7505137896332987681...
+[2025-05-21T06:34:31.461+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@cartoonnetworkuk/video/7505137896332987681
+[2025-05-21T06:34:31.462+0000] {logging_mixin.py:190} INFO - [TikTok] 7505137896332987681: Downloading webpage
+[2025-05-21T06:34:32.103+0000] {logging_mixin.py:190} INFO - [info] 7505137896332987681: Downloading 1 format(s): bytevc1_1080p_463521-1
+[2025-05-21T06:34:32.281+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7505137896332987681
+[2025-05-21T06:34:32.281+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    3.03MiB at  Unknown B/s ETA Unknown
+[2025-05-21T06:34:32.282+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    3.03MiB at    1.93MiB/s ETA 00:01  
+[2025-05-21T06:34:32.282+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    3.03MiB at    3.23MiB/s ETA 00:00
+[2025-05-21T06:34:32.284+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    3.03MiB at    3.67MiB/s ETA 00:00
+[2025-05-21T06:34:32.287+0000] {logging_mixin.py:190} INFO - [download]   1.0% of    3.03MiB at    4.83MiB/s ETA 00:00
+[2025-05-21T06:34:32.328+0000] {logging_mixin.py:190} INFO - [download]   2.0% of    3.03MiB at    1.30MiB/s ETA 00:02
+[2025-05-21T06:34:32.371+0000] {logging_mixin.py:190} INFO - [download]   4.1% of    3.03MiB at    1.38MiB/s ETA 00:02
+[2025-05-21T06:34:32.402+0000] {logging_mixin.py:190} INFO - [download]   8.2% of    3.03MiB at    2.05MiB/s ETA 00:01
+[2025-05-21T06:34:32.453+0000] {logging_mixin.py:190} INFO - [download]  16.5% of    3.03MiB at    2.90MiB/s ETA 00:00
+[2025-05-21T06:34:32.511+0000] {logging_mixin.py:190} INFO - [download]  33.0% of    3.03MiB at    4.33MiB/s ETA 00:00
+[2025-05-21T06:34:32.808+0000] {logging_mixin.py:190} INFO - [download]  66.0% of    3.03MiB at    3.79MiB/s ETA 00:00
+[2025-05-21T06:34:32.834+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    3.03MiB at    5.47MiB/s ETA 00:00
+[2025-05-21T06:34:32.836+0000] {logging_mixin.py:190} INFO - [download] 100% of    3.03MiB in 00:00:00 at 4.16MiB/s   
+[2025-05-21T06:34:32.971+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7505137896332987681.mp3
+[2025-05-21T06:34:31.091+0000] {logging_mixin.py:190} INFO - Deleting original file data/7505137896332987681 (pass -k to keep)
+[2025-05-21T06:34:31.095+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7505137896332987681
+[2025-05-21T06:34:31.109+0000] {logging_mixin.py:190} INFO - Downloaded video 7505137896332987681 to data/7505137896332987681.mp3
+[2025-05-21T06:34:31.237+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T06:34:31.238+0000] {logging_mixin.py:190} INFO - Downloading video from 7501385258584100128...
+[2025-05-21T06:34:31.270+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@cartoonnetworkuk/video/7501385258584100128
+[2025-05-21T06:34:31.271+0000] {logging_mixin.py:190} INFO - [TikTok] 7501385258584100128: Downloading webpage
+[2025-05-21T06:34:32.026+0000] {logging_mixin.py:190} INFO - [info] 7501385258584100128: Downloading 1 format(s): bytevc1_1080p_422943-1
+[2025-05-21T06:34:32.212+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7501385258584100128
+[2025-05-21T06:34:32.213+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    3.24MiB at  539.53KiB/s ETA 00:06
+[2025-05-21T06:34:32.214+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    3.24MiB at    1.05MiB/s ETA 00:03
+[2025-05-21T06:34:32.215+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    3.24MiB at    1.99MiB/s ETA 00:01
+[2025-05-21T06:34:32.215+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    3.24MiB at    3.69MiB/s ETA 00:00
+[2025-05-21T06:34:32.217+0000] {logging_mixin.py:190} INFO - [download]   0.9% of    3.24MiB at    5.34MiB/s ETA 00:00
+[2025-05-21T06:34:32.263+0000] {logging_mixin.py:190} INFO - [download]   1.9% of    3.24MiB at    1.19MiB/s ETA 00:02
+[2025-05-21T06:34:32.314+0000] {logging_mixin.py:190} INFO - [download]   3.8% of    3.24MiB at    1.20MiB/s ETA 00:02
+[2025-05-21T06:34:32.360+0000] {logging_mixin.py:190} INFO - [download]   7.7% of    3.24MiB at    1.67MiB/s ETA 00:01
+[2025-05-21T06:34:32.421+0000] {logging_mixin.py:190} INFO - [download]  15.4% of    3.24MiB at    2.38MiB/s ETA 00:01
+[2025-05-21T06:34:32.479+0000] {logging_mixin.py:190} INFO - [download]  30.8% of    3.24MiB at    3.73MiB/s ETA 00:00
+[2025-05-21T06:34:32.644+0000] {logging_mixin.py:190} INFO - [download]  61.6% of    3.24MiB at    4.61MiB/s ETA 00:00
+[2025-05-21T06:34:32.701+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    3.24MiB at    6.62MiB/s ETA 00:00
+[2025-05-21T06:34:32.702+0000] {logging_mixin.py:190} INFO - [download] 100% of    3.24MiB in 00:00:00 at 4.83MiB/s   
+[2025-05-21T06:34:32.748+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7501385258584100128.mp3
+[2025-05-21T06:34:33.243+0000] {logging_mixin.py:190} INFO - Deleting original file data/7501385258584100128 (pass -k to keep)
+[2025-05-21T06:34:33.247+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7501385258584100128
+[2025-05-21T06:34:33.253+0000] {logging_mixin.py:190} INFO - Downloaded video 7501385258584100128 to data/7501385258584100128.mp3
+[2025-05-21T06:34:33.383+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T06:34:33.383+0000] {logging_mixin.py:190} INFO - Downloading video from 7497348675073559840...
+[2025-05-21T06:34:33.427+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@cartoonnetworkuk/video/7497348675073559840
+[2025-05-21T06:34:33.428+0000] {logging_mixin.py:190} INFO - [TikTok] 7497348675073559840: Downloading webpage
+[2025-05-21T06:34:34.049+0000] {logging_mixin.py:190} INFO - [info] 7497348675073559840: Downloading 1 format(s): bytevc1_1080p_552024-1
+[2025-05-21T06:34:34.230+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7497348675073559840
+[2025-05-21T06:34:34.231+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  983.36KiB at  Unknown B/s ETA Unknown
+[2025-05-21T06:34:34.231+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  983.36KiB at    1.97MiB/s ETA 00:00  
+[2025-05-21T06:34:34.232+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  983.36KiB at    3.60MiB/s ETA 00:00
+[2025-05-21T06:34:34.232+0000] {logging_mixin.py:190} INFO - [download]   1.5% of  983.36KiB at    6.16MiB/s ETA 00:00
+[2025-05-21T06:34:34.237+0000] {logging_mixin.py:190} INFO - [download]   3.2% of  983.36KiB at    4.16MiB/s ETA 00:00
+[2025-05-21T06:34:34.283+0000] {logging_mixin.py:190} INFO - [download]   6.4% of  983.36KiB at    1.17MiB/s ETA 00:00
+[2025-05-21T06:34:34.334+0000] {logging_mixin.py:190} INFO - [download]  12.9% of  983.36KiB at    1.20MiB/s ETA 00:00
+[2025-05-21T06:34:34.371+0000] {logging_mixin.py:190} INFO - [download]  25.9% of  983.36KiB at    1.77MiB/s ETA 00:00
+[2025-05-21T06:34:34.433+0000] {logging_mixin.py:190} INFO - [download]  52.0% of  983.36KiB at    2.46MiB/s ETA 00:00
+[2025-05-21T06:34:34.485+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  983.36KiB at    3.76MiB/s ETA 00:00
+[2025-05-21T06:34:34.486+0000] {logging_mixin.py:190} INFO - [download] 100% of  983.36KiB in 00:00:00 at 2.22MiB/s   
+[2025-05-21T06:34:34.531+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7497348675073559840.mp3
+[2025-05-21T06:34:34.723+0000] {logging_mixin.py:190} INFO - Deleting original file data/7497348675073559840 (pass -k to keep)
+[2025-05-21T06:34:34.727+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7497348675073559840
+[2025-05-21T06:34:34.731+0000] {logging_mixin.py:190} INFO - Downloaded video 7497348675073559840 to data/7497348675073559840.mp3
+[2025-05-21T06:34:34.859+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T06:34:34.860+0000] {logging_mixin.py:190} INFO - Downloading video from 7498071607529737504...
+[2025-05-21T06:34:34.894+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@cartoonnetworkuk/video/7498071607529737504
+[2025-05-21T06:34:34.895+0000] {logging_mixin.py:190} INFO - [TikTok] 7498071607529737504: Downloading webpage
+[2025-05-21T06:34:35.801+0000] {logging_mixin.py:190} INFO - [info] 7498071607529737504: Downloading 1 format(s): bytevc1_1080p_521659-1
+[2025-05-21T06:34:35.956+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7498071607529737504
+[2025-05-21T06:34:35.956+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  970.02KiB at  Unknown B/s ETA Unknown
+[2025-05-21T06:34:35.956+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  970.02KiB at    2.72MiB/s ETA 00:00  
+[2025-05-21T06:34:35.957+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  970.02KiB at    4.34MiB/s ETA 00:00
+[2025-05-21T06:34:35.958+0000] {logging_mixin.py:190} INFO - [download]   1.5% of  970.02KiB at    5.66MiB/s ETA 00:00
+[2025-05-21T06:34:35.962+0000] {logging_mixin.py:190} INFO - [download]   3.2% of  970.02KiB at    4.79MiB/s ETA 00:00
+[2025-05-21T06:34:36.002+0000] {logging_mixin.py:190} INFO - [download]   6.5% of  970.02KiB at    1.33MiB/s ETA 00:00
+[2025-05-21T06:34:36.046+0000] {logging_mixin.py:190} INFO - [download]  13.1% of  970.02KiB at    1.37MiB/s ETA 00:00
+[2025-05-21T06:34:36.075+0000] {logging_mixin.py:190} INFO - [download]  26.3% of  970.02KiB at    2.08MiB/s ETA 00:00
+[2025-05-21T06:34:36.127+0000] {logging_mixin.py:190} INFO - [download]  52.7% of  970.02KiB at    2.91MiB/s ETA 00:00
+[2025-05-21T06:34:36.175+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  970.02KiB at    4.32MiB/s ETA 00:00
+[2025-05-21T06:34:36.176+0000] {logging_mixin.py:190} INFO - [download] 100% of  970.02KiB in 00:00:00 at 2.56MiB/s   
+[2025-05-21T06:34:36.225+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7498071607529737504.mp3
+[2025-05-21T06:34:36.438+0000] {logging_mixin.py:190} INFO - Deleting original file data/7498071607529737504 (pass -k to keep)
+[2025-05-21T06:34:36.441+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7498071607529737504
+[2025-05-21T06:34:36.445+0000] {logging_mixin.py:190} INFO - Downloaded video 7498071607529737504 to data/7498071607529737504.mp3
+[2025-05-21T06:34:36.580+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T06:34:36.580+0000] {logging_mixin.py:190} INFO - Downloading video from 7499947330615938336...
+[2025-05-21T06:34:36.611+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@cartoonnetworkuk/video/7499947330615938336
+[2025-05-21T06:34:36.612+0000] {logging_mixin.py:190} INFO - [TikTok] 7499947330615938336: Downloading webpage
+[2025-05-21T06:34:37.263+0000] {logging_mixin.py:190} INFO - [info] 7499947330615938336: Downloading 1 format(s): bytevc1_1080p_524796-1
+[2025-05-21T06:34:37.419+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7499947330615938336
+[2025-05-21T06:34:37.420+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  904.75KiB at  917.19KiB/s ETA 00:00
+[2025-05-21T06:34:37.421+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  904.75KiB at    1.32MiB/s ETA 00:00
+[2025-05-21T06:34:37.421+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  904.75KiB at    2.15MiB/s ETA 00:00
+[2025-05-21T06:34:37.422+0000] {logging_mixin.py:190} INFO - [download]   1.7% of  904.75KiB at    3.55MiB/s ETA 00:00
+[2025-05-21T06:34:37.423+0000] {logging_mixin.py:190} INFO - [download]   3.4% of  904.75KiB at    6.32MiB/s ETA 00:00
+[2025-05-21T06:34:37.463+0000] {logging_mixin.py:190} INFO - [download]   7.0% of  904.75KiB at    1.38MiB/s ETA 00:00
+[2025-05-21T06:34:37.508+0000] {logging_mixin.py:190} INFO - [download]  14.0% of  904.75KiB at    1.40MiB/s ETA 00:00
+[2025-05-21T06:34:37.539+0000] {logging_mixin.py:190} INFO - [download]  28.2% of  904.75KiB at    2.06MiB/s ETA 00:00
+[2025-05-21T06:34:37.594+0000] {logging_mixin.py:190} INFO - [download]  56.5% of  904.75KiB at    2.84MiB/s ETA 00:00
+[2025-05-21T06:34:37.634+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  904.75KiB at    4.09MiB/s ETA 00:00
+[2025-05-21T06:34:37.635+0000] {logging_mixin.py:190} INFO - [download] 100% of  904.75KiB in 00:00:00 at 2.40MiB/s   
+[2025-05-21T06:34:37.680+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7499947330615938336.mp3
+[2025-05-21T06:34:37.816+0000] {logging_mixin.py:190} INFO - Deleting original file data/7499947330615938336 (pass -k to keep)
+[2025-05-21T06:34:37.820+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7499947330615938336
+[2025-05-21T06:34:37.828+0000] {logging_mixin.py:190} INFO - Downloaded video 7499947330615938336 to data/7499947330615938336.mp3
+[2025-05-21T06:34:37.963+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T06:34:37.963+0000] {logging_mixin.py:190} INFO - Downloading video from 7505855837378727200...
+[2025-05-21T06:34:37.996+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@cartoonnetworkuk/video/7505855837378727200
+[2025-05-21T06:34:37.996+0000] {logging_mixin.py:190} INFO - [TikTok] 7505855837378727200: Downloading webpage
+[2025-05-21T06:34:38.644+0000] {logging_mixin.py:190} INFO - [info] 7505855837378727200: Downloading 1 format(s): bytevc1_1080p_957920-1
+[2025-05-21T06:34:38.810+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7505855837378727200
+[2025-05-21T06:34:38.811+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    3.35MiB at  280.12KiB/s ETA 00:12
+[2025-05-21T06:34:38.811+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    3.35MiB at  711.26KiB/s ETA 00:04
+[2025-05-21T06:34:38.812+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    3.35MiB at    1.38MiB/s ETA 00:02
+[2025-05-21T06:34:38.813+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    3.35MiB at    2.61MiB/s ETA 00:01
+[2025-05-21T06:34:38.815+0000] {logging_mixin.py:190} INFO - [download]   0.9% of    3.35MiB at    4.07MiB/s ETA 00:00
+[2025-05-21T06:34:38.854+0000] {logging_mixin.py:190} INFO - [download]   1.8% of    3.35MiB at    1.32MiB/s ETA 00:02
+[2025-05-21T06:34:38.904+0000] {logging_mixin.py:190} INFO - [download]   3.7% of    3.35MiB at    1.29MiB/s ETA 00:02
+[2025-05-21T06:34:38.940+0000] {logging_mixin.py:190} INFO - [download]   7.4% of    3.35MiB at    1.88MiB/s ETA 00:01
+[2025-05-21T06:34:38.996+0000] {logging_mixin.py:190} INFO - [download]  14.9% of    3.35MiB at    2.64MiB/s ETA 00:01
+[2025-05-21T06:34:39.060+0000] {logging_mixin.py:190} INFO - [download]  29.8% of    3.35MiB at    3.95MiB/s ETA 00:00
+[2025-05-21T06:34:39.257+0000] {logging_mixin.py:190} INFO - [download]  59.7% of    3.35MiB at    4.44MiB/s ETA 00:00
+[2025-05-21T06:34:39.333+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    3.35MiB at    6.37MiB/s ETA 00:00
+[2025-05-21T06:34:39.334+0000] {logging_mixin.py:190} INFO - [download] 100% of    3.35MiB in 00:00:00 at 4.88MiB/s   
+[2025-05-21T06:34:39.380+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7505855837378727200.mp3
+[2025-05-21T06:34:39.743+0000] {logging_mixin.py:190} INFO - Deleting original file data/7505855837378727200 (pass -k to keep)
+[2025-05-21T06:34:39.747+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7505855837378727200
+[2025-05-21T06:34:39.763+0000] {logging_mixin.py:190} INFO - Downloaded video 7505855837378727200 to data/7505855837378727200.mp3
+[2025-05-21T06:34:39.894+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T06:34:39.895+0000] {logging_mixin.py:190} INFO - Downloading video from 7504401118559046944...
+[2025-05-21T06:34:39.927+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@cartoonnetworkuk/video/7504401118559046944
+[2025-05-21T06:34:39.927+0000] {logging_mixin.py:190} INFO - [TikTok] 7504401118559046944: Downloading webpage
+[2025-05-21T06:34:40.825+0000] {logging_mixin.py:190} INFO - [info] 7504401118559046944: Downloading 1 format(s): bytevc1_1080p_385843-1
+[2025-05-21T06:34:40.995+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7504401118559046944
+[2025-05-21T06:34:40.996+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.69MiB at  365.93KiB/s ETA 00:04
+[2025-05-21T06:34:40.996+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.69MiB at  877.59KiB/s ETA 00:01
+[2025-05-21T06:34:40.997+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    1.69MiB at    1.76MiB/s ETA 00:00
+[2025-05-21T06:34:40.997+0000] {logging_mixin.py:190} INFO - [download]   0.9% of    1.69MiB at    3.36MiB/s ETA 00:00
+[2025-05-21T06:34:40.999+0000] {logging_mixin.py:190} INFO - [download]   1.8% of    1.69MiB at    5.00MiB/s ETA 00:00
+[2025-05-21T06:34:41.042+0000] {logging_mixin.py:190} INFO - [download]   3.6% of    1.69MiB at    1.26MiB/s ETA 00:01
+[2025-05-21T06:34:41.086+0000] {logging_mixin.py:190} INFO - [download]   7.3% of    1.69MiB at    1.34MiB/s ETA 00:01
+[2025-05-21T06:34:41.123+0000] {logging_mixin.py:190} INFO - [download]  14.7% of    1.69MiB at    1.92MiB/s ETA 00:00
+[2025-05-21T06:34:41.177+0000] {logging_mixin.py:190} INFO - [download]  29.4% of    1.69MiB at    2.72MiB/s ETA 00:00
+[2025-05-21T06:34:41.239+0000] {logging_mixin.py:190} INFO - [download]  59.0% of    1.69MiB at    4.07MiB/s ETA 00:00
+[2025-05-21T06:34:41.376+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.69MiB at    4.43MiB/s ETA 00:00
+[2025-05-21T06:34:41.377+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.69MiB in 00:00:00 at 3.10MiB/s   
+[2025-05-21T06:34:41.421+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7504401118559046944.mp3
+[2025-05-21T06:34:41.720+0000] {logging_mixin.py:190} INFO - Deleting original file data/7504401118559046944 (pass -k to keep)
+[2025-05-21T06:34:41.724+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7504401118559046944
+[2025-05-21T06:34:41.730+0000] {logging_mixin.py:190} INFO - Downloaded video 7504401118559046944 to data/7504401118559046944.mp3
+[2025-05-21T06:34:41.850+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T06:34:41.855+0000] {logging_mixin.py:190} INFO - Downloading video from 7497669332282002720...
+[2025-05-21T06:34:41.887+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@cartoonnetworkuk/video/7497669332282002720
+[2025-05-21T06:34:41.887+0000] {logging_mixin.py:190} INFO - [TikTok] 7497669332282002720: Downloading webpage
+[2025-05-21T06:34:42.544+0000] {logging_mixin.py:190} INFO - [info] 7497669332282002720: Downloading 1 format(s): bytevc1_1080p_487175-1
+[2025-05-21T06:34:42.700+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7497669332282002720
+[2025-05-21T06:34:42.701+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    3.60MiB at  Unknown B/s ETA Unknown
+[2025-05-21T06:34:42.701+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    3.60MiB at    2.54MiB/s ETA 00:01  
+[2025-05-21T06:34:42.702+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    3.60MiB at    4.29MiB/s ETA 00:00
+[2025-05-21T06:34:42.704+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    3.60MiB at    3.39MiB/s ETA 00:01
+[2025-05-21T06:34:42.709+0000] {logging_mixin.py:190} INFO - [download]   0.8% of    3.60MiB at    3.44MiB/s ETA 00:01
+[2025-05-21T06:34:42.749+0000] {logging_mixin.py:190} INFO - [download]   1.7% of    3.60MiB at    1.26MiB/s ETA 00:02
+[2025-05-21T06:34:42.793+0000] {logging_mixin.py:190} INFO - [download]   3.4% of    3.60MiB at    1.34MiB/s ETA 00:02
+[2025-05-21T06:34:42.826+0000] {logging_mixin.py:190} INFO - [download]   6.9% of    3.60MiB at    1.99MiB/s ETA 00:01
+[2025-05-21T06:34:42.876+0000] {logging_mixin.py:190} INFO - [download]  13.9% of    3.60MiB at    2.84MiB/s ETA 00:01
+[2025-05-21T06:34:42.928+0000] {logging_mixin.py:190} INFO - [download]  27.7% of    3.60MiB at    4.39MiB/s ETA 00:00
+[2025-05-21T06:34:43.138+0000] {logging_mixin.py:190} INFO - [download]  55.5% of    3.60MiB at    4.56MiB/s ETA 00:00
+[2025-05-21T06:34:43.212+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    3.60MiB at    7.04MiB/s ETA 00:00
+[2025-05-21T06:34:43.213+0000] {logging_mixin.py:190} INFO - [download] 100% of    3.60MiB in 00:00:00 at 5.41MiB/s   
+[2025-05-21T06:34:43.262+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7497669332282002720.mp3
+[2025-05-21T06:34:43.915+0000] {logging_mixin.py:190} INFO - Deleting original file data/7497669332282002720 (pass -k to keep)
+[2025-05-21T06:34:43.919+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7497669332282002720
+[2025-05-21T06:34:43.936+0000] {logging_mixin.py:190} INFO - Downloaded video 7497669332282002720 to data/7497669332282002720.mp3
+[2025-05-21T06:34:44.053+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T06:34:44.053+0000] {logging_mixin.py:190} INFO - Downloading video from 7496603951408614689...
+[2025-05-21T06:34:44.085+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@cartoonnetworkuk/video/7496603951408614689
+[2025-05-21T06:34:44.086+0000] {logging_mixin.py:190} INFO - [TikTok] 7496603951408614689: Downloading webpage
+[2025-05-21T06:34:44.714+0000] {logging_mixin.py:190} INFO - [info] 7496603951408614689: Downloading 1 format(s): bytevc1_1080p_637956-1
+[2025-05-21T06:34:44.893+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7496603951408614689
+[2025-05-21T06:34:44.894+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.79MiB at  256.20KiB/s ETA 00:07
+[2025-05-21T06:34:44.894+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.79MiB at  671.27KiB/s ETA 00:02
+[2025-05-21T06:34:44.894+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    1.79MiB at    1.40MiB/s ETA 00:01
+[2025-05-21T06:34:44.895+0000] {logging_mixin.py:190} INFO - [download]   0.8% of    1.79MiB at    2.72MiB/s ETA 00:00
+[2025-05-21T06:34:44.896+0000] {logging_mixin.py:190} INFO - [download]   1.7% of    1.79MiB at    4.61MiB/s ETA 00:00
+[2025-05-21T06:34:44.943+0000] {logging_mixin.py:190} INFO - [download]   3.4% of    1.79MiB at    1.16MiB/s ETA 00:01
+[2025-05-21T06:34:44.994+0000] {logging_mixin.py:190} INFO - [download]   6.9% of    1.79MiB at    1.19MiB/s ETA 00:01
+[2025-05-21T06:34:45.033+0000] {logging_mixin.py:190} INFO - [download]  13.9% of    1.79MiB at    1.74MiB/s ETA 00:00
+[2025-05-21T06:34:45.096+0000] {logging_mixin.py:190} INFO - [download]  27.9% of    1.79MiB at    2.42MiB/s ETA 00:00
+[2025-05-21T06:34:45.148+0000] {logging_mixin.py:190} INFO - [download]  55.8% of    1.79MiB at    3.87MiB/s ETA 00:00
+[2025-05-21T06:34:45.293+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.79MiB at    4.44MiB/s ETA 00:00
+[2025-05-21T06:34:45.294+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.79MiB in 00:00:00 at 3.11MiB/s   
+[2025-05-21T06:34:45.341+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7496603951408614689.mp3
+[2025-05-21T06:34:45.640+0000] {logging_mixin.py:190} INFO - Deleting original file data/7496603951408614689 (pass -k to keep)
+[2025-05-21T06:34:45.644+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7496603951408614689
+[2025-05-21T06:34:45.649+0000] {logging_mixin.py:190} INFO - Downloaded video 7496603951408614689 to data/7496603951408614689.mp3
+[2025-05-21T06:34:45.773+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T06:34:45.773+0000] {logging_mixin.py:190} INFO - Downloading video from 7504725359221509408...
+[2025-05-21T06:34:45.809+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@cartoonnetworkuk/video/7504725359221509408
+[2025-05-21T06:34:45.810+0000] {logging_mixin.py:190} INFO - [TikTok] 7504725359221509408: Downloading webpage
+[2025-05-21T06:34:46.501+0000] {logging_mixin.py:190} INFO - [info] 7504725359221509408: Downloading 1 format(s): bytevc1_1080p_216112-1
+[2025-05-21T06:34:46.653+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7504725359221509408
+[2025-05-21T06:34:46.654+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    7.58MiB at  Unknown B/s ETA Unknown
+[2025-05-21T06:34:46.654+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    7.58MiB at    2.49MiB/s ETA 00:03  
+[2025-05-21T06:34:46.655+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    7.58MiB at    4.10MiB/s ETA 00:01
+[2025-05-21T06:34:46.655+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    7.58MiB at    6.95MiB/s ETA 00:01
+[2025-05-21T06:34:46.659+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    7.58MiB at    5.63MiB/s ETA 00:01
+[2025-05-21T06:34:46.701+0000] {logging_mixin.py:190} INFO - [download]   0.8% of    7.58MiB at    1.28MiB/s ETA 00:05
+[2025-05-21T06:34:46.743+0000] {logging_mixin.py:190} INFO - [download]   1.6% of    7.58MiB at    1.39MiB/s ETA 00:05
+[2025-05-21T06:34:46.776+0000] {logging_mixin.py:190} INFO - [download]   3.3% of    7.58MiB at    2.03MiB/s ETA 00:03
+[2025-05-21T06:34:46.825+0000] {logging_mixin.py:190} INFO - [download]   6.6% of    7.58MiB at    2.90MiB/s ETA 00:02
+[2025-05-21T06:34:46.897+0000] {logging_mixin.py:190} INFO - [download]  13.2% of    7.58MiB at    4.10MiB/s ETA 00:01
+[2025-05-21T06:34:47.047+0000] {logging_mixin.py:190} INFO - [download]  26.4% of    7.58MiB at    5.08MiB/s ETA 00:01
+[2025-05-21T06:34:47.308+0000] {logging_mixin.py:190} INFO - [download]  52.7% of    7.58MiB at    6.11MiB/s ETA 00:00
+[2025-05-21T06:34:47.639+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    7.58MiB at    7.69MiB/s ETA 00:00
+[2025-05-21T06:34:47.641+0000] {logging_mixin.py:190} INFO - [download] 100% of    7.58MiB in 00:00:01 at 6.67MiB/s   
+[2025-05-21T06:34:47.690+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7504725359221509408.mp3
+[2025-05-21T06:34:49.853+0000] {logging_mixin.py:190} INFO - Deleting original file data/7504725359221509408 (pass -k to keep)
+[2025-05-21T06:34:49.858+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7504725359221509408
+[2025-05-21T06:34:49.863+0000] {logging_mixin.py:190} INFO - Downloaded video 7504725359221509408 to data/7504725359221509408.mp3
+[2025-05-21T06:34:50.016+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T06:34:50.016+0000] {logging_mixin.py:190} INFO - Downloading video from 7496245759805885729...
+[2025-05-21T06:34:50.049+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@cartoonnetworkuk/video/7496245759805885729
+[2025-05-21T06:34:50.049+0000] {logging_mixin.py:190} INFO - [TikTok] 7496245759805885729: Downloading webpage
+[2025-05-21T06:34:50.737+0000] {logging_mixin.py:190} INFO - [info] 7496245759805885729: Downloading 1 format(s): bytevc1_1080p_460254-1
+[2025-05-21T06:34:50.890+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7496245759805885729
+[2025-05-21T06:34:50.891+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    2.20MiB at  Unknown B/s ETA Unknown
+[2025-05-21T06:34:50.891+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    2.20MiB at    2.54MiB/s ETA 00:00  
+[2025-05-21T06:34:50.891+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    2.20MiB at    4.25MiB/s ETA 00:00
+[2025-05-21T06:34:50.895+0000] {logging_mixin.py:190} INFO - [download]   0.7% of    2.20MiB at    3.16MiB/s ETA 00:00
+[2025-05-21T06:34:50.900+0000] {logging_mixin.py:190} INFO - [download]   1.4% of    2.20MiB at    3.18MiB/s ETA 00:00
+[2025-05-21T06:34:50.938+0000] {logging_mixin.py:190} INFO - [download]   2.8% of    2.20MiB at    1.29MiB/s ETA 00:01
+[2025-05-21T06:34:50.982+0000] {logging_mixin.py:190} INFO - [download]   5.6% of    2.20MiB at    1.35MiB/s ETA 00:01
+[2025-05-21T06:34:51.014+0000] {logging_mixin.py:190} INFO - [download]  11.3% of    2.20MiB at    2.01MiB/s ETA 00:00
+[2025-05-21T06:34:51.065+0000] {logging_mixin.py:190} INFO - [download]  22.7% of    2.20MiB at    2.86MiB/s ETA 00:00
+[2025-05-21T06:34:51.116+0000] {logging_mixin.py:190} INFO - [download]  45.4% of    2.20MiB at    4.42MiB/s ETA 00:00
+[2025-05-21T06:34:51.240+0000] {logging_mixin.py:190} INFO - [download]  90.9% of    2.20MiB at    5.72MiB/s ETA 00:00
+[2025-05-21T06:34:51.257+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    2.20MiB at    6.00MiB/s ETA 00:00
+[2025-05-21T06:34:51.258+0000] {logging_mixin.py:190} INFO - [download] 100% of    2.20MiB in 00:00:00 at 4.26MiB/s   
+[2025-05-21T06:34:51.306+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7496245759805885729.mp3
+[2025-05-21T06:34:51.630+0000] {logging_mixin.py:190} INFO - Deleting original file data/7496245759805885729 (pass -k to keep)
+[2025-05-21T06:34:51.634+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7496245759805885729
+[2025-05-21T06:34:51.638+0000] {logging_mixin.py:190} INFO - Downloaded video 7496245759805885729 to data/7496245759805885729.mp3
+[2025-05-21T06:34:51.753+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T06:34:51.754+0000] {logging_mixin.py:190} INFO - Downloading video from 7500272660954271009...
+[2025-05-21T06:34:51.786+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@cartoonnetworkuk/video/7500272660954271009
+[2025-05-21T06:34:51.786+0000] {logging_mixin.py:190} INFO - [TikTok] 7500272660954271009: Downloading webpage
+[2025-05-21T06:34:52.465+0000] {logging_mixin.py:190} INFO - [info] 7500272660954271009: Downloading 1 format(s): bytevc1_1080p_283930-1
+[2025-05-21T06:34:52.638+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7500272660954271009
+[2025-05-21T06:34:52.639+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    2.09MiB at  679.46KiB/s ETA 00:03
+[2025-05-21T06:34:52.640+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    2.09MiB at    1.19MiB/s ETA 00:01
+[2025-05-21T06:34:52.640+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    2.09MiB at    2.06MiB/s ETA 00:01
+[2025-05-21T06:34:52.641+0000] {logging_mixin.py:190} INFO - [download]   0.7% of    2.09MiB at    3.71MiB/s ETA 00:00
+[2025-05-21T06:34:52.643+0000] {logging_mixin.py:190} INFO - [download]   1.4% of    2.09MiB at    4.89MiB/s ETA 00:00
+[2025-05-21T06:34:52.683+0000] {logging_mixin.py:190} INFO - [download]   2.9% of    2.09MiB at    1.34MiB/s ETA 00:01
+[2025-05-21T06:34:52.726+0000] {logging_mixin.py:190} INFO - [download]   5.9% of    2.09MiB at    1.40MiB/s ETA 00:01
+[2025-05-21T06:34:52.760+0000] {logging_mixin.py:190} INFO - [download]  11.9% of    2.09MiB at    2.03MiB/s ETA 00:00
+[2025-05-21T06:34:52.818+0000] {logging_mixin.py:190} INFO - [download]  23.8% of    2.09MiB at    2.75MiB/s ETA 00:00
+[2025-05-21T06:34:52.870+0000] {logging_mixin.py:190} INFO - [download]  47.7% of    2.09MiB at    4.29MiB/s ETA 00:00
+[2025-05-21T06:34:53.019+0000] {logging_mixin.py:190} INFO - [download]  95.5% of    2.09MiB at    5.23MiB/s ETA 00:00
+[2025-05-21T06:34:53.031+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    2.09MiB at    5.31MiB/s ETA 00:00
+[2025-05-21T06:34:53.033+0000] {logging_mixin.py:190} INFO - [download] 100% of    2.09MiB in 00:00:00 at 3.71MiB/s   
+[2025-05-21T06:34:53.081+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7500272660954271009.mp3
+[2025-05-21T06:34:53.669+0000] {logging_mixin.py:190} INFO - Deleting original file data/7500272660954271009 (pass -k to keep)
+[2025-05-21T06:34:53.674+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7500272660954271009
+[2025-05-21T06:34:53.678+0000] {logging_mixin.py:190} INFO - Downloaded video 7500272660954271009 to data/7500272660954271009.mp3
+[2025-05-21T06:34:53.802+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T06:34:53.802+0000] {logging_mixin.py:190} INFO - Downloading video from 7487893447035161878...
+[2025-05-21T06:34:53.836+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@cartoonnetworkuk/video/7487893447035161878
+[2025-05-21T06:34:53.836+0000] {logging_mixin.py:190} INFO - [TikTok] 7487893447035161878: Downloading webpage
+[2025-05-21T06:34:54.567+0000] {logging_mixin.py:190} INFO - [info] 7487893447035161878: Downloading 1 format(s): bytevc1_720p_278487-1
+[2025-05-21T06:34:54.751+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7487893447035161878
+[2025-05-21T06:34:54.752+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    8.91MiB at  188.36KiB/s ETA 00:48
+[2025-05-21T06:34:54.753+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    8.91MiB at  498.95KiB/s ETA 00:18
+[2025-05-21T06:34:54.753+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    8.91MiB at    1.04MiB/s ETA 00:08
+[2025-05-21T06:34:54.754+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    8.91MiB at    2.07MiB/s ETA 00:04
+[2025-05-21T06:34:54.754+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    8.91MiB at    3.93MiB/s ETA 00:02
+[2025-05-21T06:34:54.801+0000] {logging_mixin.py:190} INFO - [download]   0.7% of    8.91MiB at    1.14MiB/s ETA 00:07
+[2025-05-21T06:34:54.854+0000] {logging_mixin.py:190} INFO - [download]   1.4% of    8.91MiB at    1.16MiB/s ETA 00:07
+[2025-05-21T06:34:54.893+0000] {logging_mixin.py:190} INFO - [download]   2.8% of    8.91MiB at    1.71MiB/s ETA 00:05
+[2025-05-21T06:34:54.955+0000] {logging_mixin.py:190} INFO - [download]   5.6% of    8.91MiB at    2.39MiB/s ETA 00:03
+[2025-05-21T06:34:55.010+0000] {logging_mixin.py:190} INFO - [download]  11.2% of    8.91MiB at    3.80MiB/s ETA 00:02
+[2025-05-21T06:34:55.314+0000] {logging_mixin.py:190} INFO - [download]  22.4% of    8.91MiB at    3.52MiB/s ETA 00:01
+[2025-05-21T06:34:55.390+0000] {logging_mixin.py:190} INFO - [download]  44.9% of    8.91MiB at    6.22MiB/s ETA 00:00
+[2025-05-21T06:34:55.846+0000] {logging_mixin.py:190} INFO - [download]  89.7% of    8.91MiB at    7.28MiB/s ETA 00:00
+[2025-05-21T06:34:55.954+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    8.91MiB at    7.38MiB/s ETA 00:00
+[2025-05-21T06:34:55.955+0000] {logging_mixin.py:190} INFO - [download] 100% of    8.91MiB in 00:00:01 at 6.44MiB/s   
+[2025-05-21T06:34:56.002+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7487893447035161878.mp3
+[2025-05-21T06:34:57.871+0000] {logging_mixin.py:190} INFO - Deleting original file data/7487893447035161878 (pass -k to keep)
+[2025-05-21T06:34:57.875+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7487893447035161878
+[2025-05-21T06:34:57.881+0000] {logging_mixin.py:190} INFO - Downloaded video 7487893447035161878 to data/7487893447035161878.mp3
+[2025-05-21T06:34:57.994+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T06:34:57.995+0000] {logging_mixin.py:190} INFO - Downloading video from 7501029044704529696...
+[2025-05-21T06:34:58.025+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@cartoonnetworkuk/video/7501029044704529696
+[2025-05-21T06:34:58.025+0000] {logging_mixin.py:190} INFO - [TikTok] 7501029044704529696: Downloading webpage
+[2025-05-21T06:34:58.673+0000] {logging_mixin.py:190} INFO - [info] 7501029044704529696: Downloading 1 format(s): bytevc1_1080p_651647-1
+[2025-05-21T06:34:58.832+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7501029044704529696
+[2025-05-21T06:34:58.832+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.26MiB at  Unknown B/s ETA Unknown
+[2025-05-21T06:34:58.833+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.26MiB at    2.65MiB/s ETA 00:00  
+[2025-05-21T06:34:58.833+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    1.26MiB at    4.45MiB/s ETA 00:00
+[2025-05-21T06:34:58.833+0000] {logging_mixin.py:190} INFO - [download]   1.2% of    1.26MiB at    7.52MiB/s ETA 00:00
+[2025-05-21T06:34:58.837+0000] {logging_mixin.py:190} INFO - [download]   2.4% of    1.26MiB at    6.03MiB/s ETA 00:00
+[2025-05-21T06:34:58.880+0000] {logging_mixin.py:190} INFO - [download]   4.9% of    1.26MiB at    1.27MiB/s ETA 00:00
+[2025-05-21T06:34:58.925+0000] {logging_mixin.py:190} INFO - [download]   9.9% of    1.26MiB at    1.33MiB/s ETA 00:00
+[2025-05-21T06:34:58.957+0000] {logging_mixin.py:190} INFO - [download]  19.8% of    1.26MiB at    1.98MiB/s ETA 00:00
+[2025-05-21T06:34:59.008+0000] {logging_mixin.py:190} INFO - [download]  39.7% of    1.26MiB at    2.82MiB/s ETA 00:00
+[2025-05-21T06:34:59.059+0000] {logging_mixin.py:190} INFO - [download]  79.5% of    1.26MiB at    4.39MiB/s ETA 00:00
+[2025-05-21T06:34:59.083+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.26MiB at    5.00MiB/s ETA 00:00
+[2025-05-21T06:34:59.084+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.26MiB in 00:00:00 at 3.09MiB/s   
+[2025-05-21T06:34:59.129+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7501029044704529696.mp3
+[2025-05-21T06:34:59.282+0000] {logging_mixin.py:190} INFO - Deleting original file data/7501029044704529696 (pass -k to keep)
+[2025-05-21T06:34:59.286+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7501029044704529696
+[2025-05-21T06:34:59.290+0000] {logging_mixin.py:190} INFO - Downloaded video 7501029044704529696 to data/7501029044704529696.mp3
+[2025-05-21T06:34:59.419+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T06:34:59.419+0000] {logging_mixin.py:190} INFO - Downloading video from 7503985060601728289...
+[2025-05-21T06:34:59.452+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@cartoonnetworkuk/video/7503985060601728289
+[2025-05-21T06:34:59.453+0000] {logging_mixin.py:190} INFO - [TikTok] 7503985060601728289: Downloading webpage
+[2025-05-21T06:35:00.099+0000] {logging_mixin.py:190} INFO - [info] 7503985060601728289: Downloading 1 format(s): bytevc1_1080p_501847-1
+[2025-05-21T06:35:00.261+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7503985060601728289
+[2025-05-21T06:35:00.261+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    4.91MiB at  Unknown B/s ETA Unknown
+[2025-05-21T06:35:00.262+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    4.91MiB at    2.58MiB/s ETA 00:01  
+[2025-05-21T06:35:00.262+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    4.91MiB at    4.33MiB/s ETA 00:01
+[2025-05-21T06:35:00.263+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    4.91MiB at    6.72MiB/s ETA 00:00
+[2025-05-21T06:35:00.268+0000] {logging_mixin.py:190} INFO - [download]   0.6% of    4.91MiB at    4.28MiB/s ETA 00:01
+[2025-05-21T06:35:00.310+0000] {logging_mixin.py:190} INFO - [download]   1.3% of    4.91MiB at    1.25MiB/s ETA 00:03
+[2025-05-21T06:35:00.354+0000] {logging_mixin.py:190} INFO - [download]   2.5% of    4.91MiB at    1.34MiB/s ETA 00:03
+[2025-05-21T06:35:00.387+0000] {logging_mixin.py:190} INFO - [download]   5.1% of    4.91MiB at    1.98MiB/s ETA 00:02
+[2025-05-21T06:35:00.437+0000] {logging_mixin.py:190} INFO - [download]  10.2% of    4.91MiB at    2.83MiB/s ETA 00:01
+[2025-05-21T06:35:00.487+0000] {logging_mixin.py:190} INFO - [download]  20.3% of    4.91MiB at    4.41MiB/s ETA 00:00
+[2025-05-21T06:35:00.845+0000] {logging_mixin.py:190} INFO - [download]  40.7% of    4.91MiB at    3.42MiB/s ETA 00:00
+[2025-05-21T06:35:00.857+0000] {logging_mixin.py:190} INFO - [download]  81.4% of    4.91MiB at    6.71MiB/s ETA 00:00
+[2025-05-21T06:35:00.940+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    4.91MiB at    7.24MiB/s ETA 00:00
+[2025-05-21T06:35:00.941+0000] {logging_mixin.py:190} INFO - [download] 100% of    4.91MiB in 00:00:00 at 5.86MiB/s   
+[2025-05-21T06:35:00.989+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7503985060601728289.mp3
+[2025-05-21T06:35:01.610+0000] {logging_mixin.py:190} INFO - Deleting original file data/7503985060601728289 (pass -k to keep)
+[2025-05-21T06:35:01.615+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7503985060601728289
+[2025-05-21T06:35:01.621+0000] {logging_mixin.py:190} INFO - Downloaded video 7503985060601728289 to data/7503985060601728289.mp3
+[2025-05-21T06:35:01.737+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T06:35:01.738+0000] {logging_mixin.py:190} INFO - Downloading video from 7501801049947245856...
+[2025-05-21T06:35:01.771+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@cartoonnetworkuk/video/7501801049947245856
+[2025-05-21T06:35:01.772+0000] {logging_mixin.py:190} INFO - [TikTok] 7501801049947245856: Downloading webpage
+[2025-05-21T06:35:02.381+0000] {logging_mixin.py:190} INFO - [info] 7501801049947245856: Downloading 1 format(s): bytevc1_1080p_352001-1
+[2025-05-21T06:35:02.552+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7501801049947245856
+[2025-05-21T06:35:02.553+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.63MiB at  Unknown B/s ETA Unknown
+[2025-05-21T06:35:02.553+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.63MiB at    1.93MiB/s ETA 00:00  
+[2025-05-21T06:35:02.554+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    1.63MiB at    3.44MiB/s ETA 00:00
+[2025-05-21T06:35:02.555+0000] {logging_mixin.py:190} INFO - [download]   0.9% of    1.63MiB at    3.74MiB/s ETA 00:00
+[2025-05-21T06:35:02.560+0000] {logging_mixin.py:190} INFO - [download]   1.9% of    1.63MiB at    3.48MiB/s ETA 00:00
+[2025-05-21T06:35:02.599+0000] {logging_mixin.py:190} INFO - [download]   3.8% of    1.63MiB at    1.29MiB/s ETA 00:01
+[2025-05-21T06:35:02.642+0000] {logging_mixin.py:190} INFO - [download]   7.6% of    1.63MiB at    1.37MiB/s ETA 00:01
+[2025-05-21T06:35:02.674+0000] {logging_mixin.py:190} INFO - [download]  15.3% of    1.63MiB at    2.03MiB/s ETA 00:00
+[2025-05-21T06:35:02.724+0000] {logging_mixin.py:190} INFO - [download]  30.7% of    1.63MiB at    2.90MiB/s ETA 00:00
+[2025-05-21T06:35:02.776+0000] {logging_mixin.py:190} INFO - [download]  61.4% of    1.63MiB at    4.46MiB/s ETA 00:00
+[2025-05-21T06:35:02.914+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.63MiB at    4.49MiB/s ETA 00:00
+[2025-05-21T06:35:02.915+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.63MiB in 00:00:00 at 3.07MiB/s   
+[2025-05-21T06:35:02.967+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7501801049947245856.mp3
+[2025-05-21T06:35:00.821+0000] {logging_mixin.py:190} INFO - Deleting original file data/7501801049947245856 (pass -k to keep)
+[2025-05-21T06:35:00.825+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7501801049947245856
+[2025-05-21T06:35:00.830+0000] {logging_mixin.py:190} INFO - Downloaded video 7501801049947245856 to data/7501801049947245856.mp3
+[2025-05-21T06:35:00.986+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T06:35:00.986+0000] {logging_mixin.py:190} INFO - Downloading video from 7503266879117610272...
+[2025-05-21T06:35:01.017+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@cartoonnetworkuk/video/7503266879117610272
+[2025-05-21T06:35:01.018+0000] {logging_mixin.py:190} INFO - [TikTok] 7503266879117610272: Downloading webpage
+[2025-05-21T06:35:01.742+0000] {logging_mixin.py:190} INFO - [info] 7503266879117610272: Downloading 1 format(s): bytevc1_1080p_475506-1
+[2025-05-21T06:35:01.964+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7503266879117610272
+[2025-05-21T06:35:01.965+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    2.38MiB at  485.90KiB/s ETA 00:05
+[2025-05-21T06:35:01.968+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    2.38MiB at  636.85KiB/s ETA 00:03
+[2025-05-21T06:35:01.968+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    2.38MiB at    1.28MiB/s ETA 00:01
+[2025-05-21T06:35:01.977+0000] {logging_mixin.py:190} INFO - [download]   0.6% of    2.38MiB at    1.04MiB/s ETA 00:02
+[2025-05-21T06:35:02.029+0000] {logging_mixin.py:190} INFO - [download]   1.3% of    2.38MiB at  471.44KiB/s ETA 00:05
+[2025-05-21T06:35:02.029+0000] {logging_mixin.py:190} INFO - [download]   2.6% of    2.38MiB at  946.19KiB/s ETA 00:02
+[2025-05-21T06:35:02.091+0000] {logging_mixin.py:190} INFO - [download]   5.2% of    2.38MiB at  994.75KiB/s ETA 00:02
+[2025-05-21T06:35:02.157+0000] {logging_mixin.py:190} INFO - [download]  10.5% of    2.38MiB at    1.28MiB/s ETA 00:01
+[2025-05-21T06:35:02.210+0000] {logging_mixin.py:190} INFO - [download]  21.0% of    2.38MiB at    2.02MiB/s ETA 00:00
+[2025-05-21T06:35:02.262+0000] {logging_mixin.py:190} INFO - [download]  42.0% of    2.38MiB at    3.34MiB/s ETA 00:00
+[2025-05-21T06:35:02.390+0000] {logging_mixin.py:190} INFO - [download]  84.0% of    2.38MiB at    4.68MiB/s ETA 00:00
+[2025-05-21T06:35:02.411+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    2.38MiB at    5.31MiB/s ETA 00:00
+[2025-05-21T06:35:02.412+0000] {logging_mixin.py:190} INFO - [download] 100% of    2.38MiB in 00:00:00 at 3.58MiB/s   
+[2025-05-21T06:35:02.458+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7503266879117610272.mp3
+[2025-05-21T06:35:02.951+0000] {logging_mixin.py:190} INFO - Deleting original file data/7503266879117610272 (pass -k to keep)
+[2025-05-21T06:35:02.955+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7503266879117610272
+[2025-05-21T06:35:02.960+0000] {logging_mixin.py:190} INFO - Downloaded video 7503266879117610272 to data/7503266879117610272.mp3
+[2025-05-21T06:35:03.075+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T06:35:03.075+0000] {logging_mixin.py:190} INFO - Downloading video from 7500664344703667489...
+[2025-05-21T06:35:03.108+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@cartoonnetworkuk/video/7500664344703667489
+[2025-05-21T06:35:03.109+0000] {logging_mixin.py:190} INFO - [TikTok] 7500664344703667489: Downloading webpage
+[2025-05-21T06:35:03.727+0000] {logging_mixin.py:190} INFO - [info] 7500664344703667489: Downloading 1 format(s): bytevc1_1080p_601071-1
+[2025-05-21T06:35:03.731+0000] {logging_mixin.py:190} INFO - [download] Resuming download at byte 1047552
+[2025-05-21T06:35:03.886+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7500664344703667489
+[2025-05-21T06:35:03.886+0000] {logging_mixin.py:190} INFO - [download]  49.7% of    2.01MiB at  244.32KiB/s ETA 00:04
+[2025-05-21T06:35:03.887+0000] {logging_mixin.py:190} INFO - [download]  49.8% of    2.01MiB at  630.22KiB/s ETA 00:01
+[2025-05-21T06:35:03.887+0000] {logging_mixin.py:190} INFO - [download]  50.0% of    2.01MiB at    1.31MiB/s ETA 00:00
+[2025-05-21T06:35:03.888+0000] {logging_mixin.py:190} INFO - [download]  50.4% of    2.01MiB at    2.51MiB/s ETA 00:00
+[2025-05-21T06:35:03.888+0000] {logging_mixin.py:190} INFO - [download]  51.2% of    2.01MiB at    4.79MiB/s ETA 00:00
+[2025-05-21T06:35:03.926+0000] {logging_mixin.py:190} INFO - [download]  52.7% of    2.01MiB at    1.39MiB/s ETA 00:00
+[2025-05-21T06:35:03.971+0000] {logging_mixin.py:190} INFO - [download]  55.8% of    2.01MiB at    1.40MiB/s ETA 00:00
+[2025-05-21T06:35:04.004+0000] {logging_mixin.py:190} INFO - [download]  62.0% of    2.01MiB at    2.05MiB/s ETA 00:00
+[2025-05-21T06:35:04.058+0000] {logging_mixin.py:190} INFO - [download]  74.5% of    2.01MiB at    2.84MiB/s ETA 00:00
+[2025-05-21T06:35:04.109+0000] {logging_mixin.py:190} INFO - [download]  99.3% of    2.01MiB at    4.40MiB/s ETA 00:00
+[2025-05-21T06:35:04.110+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    2.01MiB at    4.44MiB/s ETA 00:00
+[2025-05-21T06:35:04.111+0000] {logging_mixin.py:190} INFO - [download] 100% of    2.01MiB in 00:00:00 at 5.29MiB/s   
+[2025-05-21T06:35:04.156+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7500664344703667489.mp3
+[2025-05-21T06:35:04.406+0000] {logging_mixin.py:190} INFO - Deleting original file data/7500664344703667489 (pass -k to keep)
+[2025-05-21T06:35:04.410+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7500664344703667489
+[2025-05-21T06:35:04.415+0000] {logging_mixin.py:190} INFO - Downloaded video 7500664344703667489 to data/7500664344703667489.mp3
+[2025-05-21T06:35:04.536+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T06:35:04.537+0000] {logging_mixin.py:190} INFO - Downloading video from 7505037231783038230...
+[2025-05-21T06:35:04.571+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@cartoonnetworkuk/video/7505037231783038230
+[2025-05-21T06:35:04.571+0000] {logging_mixin.py:190} INFO - [TikTok] 7505037231783038230: Downloading webpage
+[2025-05-21T06:35:05.258+0000] {logging_mixin.py:190} INFO - [info] 7505037231783038230: Downloading 1 format(s): bytevc1_1080p_309562-1
+[2025-05-21T06:35:06.191+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7505037231783038230
+[2025-05-21T06:35:06.192+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   66.39MiB at  764.97KiB/s ETA 01:29
+[2025-05-21T06:35:06.193+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   66.39MiB at    1.17MiB/s ETA 00:57
+[2025-05-21T06:35:06.194+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   66.39MiB at    2.03MiB/s ETA 00:32
+[2025-05-21T06:35:06.195+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   66.39MiB at    3.65MiB/s ETA 00:18
+[2025-05-21T06:35:06.195+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   66.39MiB at    6.16MiB/s ETA 00:10
+[2025-05-21T06:35:06.250+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   66.39MiB at    1.04MiB/s ETA 01:03
+[2025-05-21T06:35:06.300+0000] {logging_mixin.py:190} INFO - [download]   0.2% of   66.39MiB at    1.14MiB/s ETA 00:58
+[2025-05-21T06:35:06.336+0000] {logging_mixin.py:190} INFO - [download]   0.4% of   66.39MiB at    1.72MiB/s ETA 00:38
+[2025-05-21T06:35:06.396+0000] {logging_mixin.py:190} INFO - [download]   0.8% of   66.39MiB at    2.43MiB/s ETA 00:27
+[2025-05-21T06:35:06.450+0000] {logging_mixin.py:190} INFO - [download]   1.5% of   66.39MiB at    3.85MiB/s ETA 00:16
+[2025-05-21T06:35:06.780+0000] {logging_mixin.py:190} INFO - [download]   3.0% of   66.39MiB at    3.39MiB/s ETA 00:18
+[2025-05-21T06:35:06.812+0000] {logging_mixin.py:190} INFO - [download]   6.0% of   66.39MiB at    6.43MiB/s ETA 00:09
+[2025-05-21T06:35:07.196+0000] {logging_mixin.py:190} INFO - [download]  12.0% of   66.39MiB at    7.96MiB/s ETA 00:07
+[2025-05-21T06:35:07.664+0000] {logging_mixin.py:190} INFO - [download]  18.1% of   66.39MiB at    8.14MiB/s ETA 00:06
+[2025-05-21T06:35:08.072+0000] {logging_mixin.py:190} INFO - [download]  24.1% of   66.39MiB at    8.51MiB/s ETA 00:05
+[2025-05-21T06:35:08.543+0000] {logging_mixin.py:190} INFO - [download]  30.1% of   66.39MiB at    8.50MiB/s ETA 00:05
+[2025-05-21T06:35:08.910+0000] {logging_mixin.py:190} INFO - [download]  36.1% of   66.39MiB at    8.83MiB/s ETA 00:04
+[2025-05-21T06:35:09.332+0000] {logging_mixin.py:190} INFO - [download]  42.2% of   66.39MiB at    8.91MiB/s ETA 00:04
+[2025-05-21T06:35:09.736+0000] {logging_mixin.py:190} INFO - [download]  48.2% of   66.39MiB at    9.02MiB/s ETA 00:03
+[2025-05-21T06:35:10.141+0000] {logging_mixin.py:190} INFO - [download]  54.2% of   66.39MiB at    9.11MiB/s ETA 00:03
+[2025-05-21T06:35:10.578+0000] {logging_mixin.py:190} INFO - [download]  60.2% of   66.39MiB at    9.12MiB/s ETA 00:02
+[2025-05-21T06:35:10.999+0000] {logging_mixin.py:190} INFO - [download]  66.3% of   66.39MiB at    9.15MiB/s ETA 00:02
+[2025-05-21T06:35:11.406+0000] {logging_mixin.py:190} INFO - [download]  72.3% of   66.39MiB at    9.20MiB/s ETA 00:01
+[2025-05-21T06:35:11.818+0000] {logging_mixin.py:190} INFO - [download]  78.3% of   66.39MiB at    9.24MiB/s ETA 00:01
+[2025-05-21T06:35:12.221+0000] {logging_mixin.py:190} INFO - [download]  84.4% of   66.39MiB at    9.29MiB/s ETA 00:01
+[2025-05-21T06:35:12.641+0000] {logging_mixin.py:190} INFO - [download]  90.4% of   66.39MiB at    9.30MiB/s ETA 00:00
+[2025-05-21T06:35:13.063+0000] {logging_mixin.py:190} INFO - [download]  96.4% of   66.39MiB at    9.31MiB/s ETA 00:00
+[2025-05-21T06:35:13.300+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   66.39MiB at    9.34MiB/s ETA 00:00
+[2025-05-21T06:35:13.311+0000] {logging_mixin.py:190} INFO - [download] 100% of   66.39MiB in 00:00:08 at 8.25MiB/s   
+[2025-05-21T06:35:13.366+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7505037231783038230.mp3
+[2025-05-21T06:35:16.151+0000] {local_task_job_runner.py:341} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-05-21T06:35:16.153+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2025-05-21T06:35:16.153+0000] {process_utils.py:132} INFO - Sending 15 to group 726670. PIDs of all processes in the group: [726797, 726670]
+[2025-05-21T06:35:16.154+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 726670
+[2025-05-21T06:35:16.154+0000] {taskinstance.py:3083} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-05-21T06:35:16.171+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-21T06:35:16.182+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=726670, status='terminated', exitcode=0, started='06:34:30') (726670) terminated with exit code 0
+[2025-05-21T06:35:16.182+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=726797, status='terminated', started='06:35:18') (726797) terminated with exit code None

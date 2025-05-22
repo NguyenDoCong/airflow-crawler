@@ -1,0 +1,144 @@
+[2025-05-22T02:16:55.345+0000] {processor.py:186} INFO - Started process (PID=40) to work on /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:16:55.346+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_x.py for tasks to queue
+[2025-05-22T02:16:55.348+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:16:55.347+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:16:55.377+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:16:55.376+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/pipeline_x.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_x.py", line 3, in <module>
+    from tasks.get_transcript import audio_to_transcript
+  File "/opt/airflow/dags/tasks/get_transcript.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+[2025-05-22T02:16:55.377+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:16:55.391+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_x.py took 0.055 seconds
+[2025-05-22T02:17:25.744+0000] {processor.py:186} INFO - Started process (PID=61) to work on /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:17:25.745+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_x.py for tasks to queue
+[2025-05-22T02:17:25.746+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:17:25.745+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:17:25.755+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:17:25.754+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/pipeline_x.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_x.py", line 3, in <module>
+    from tasks.get_transcript import audio_to_transcript
+  File "/opt/airflow/dags/tasks/get_transcript.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+[2025-05-22T02:17:25.755+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:17:25.768+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_x.py took 0.028 seconds
+[2025-05-22T02:17:56.918+0000] {processor.py:186} INFO - Started process (PID=81) to work on /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:17:56.918+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_x.py for tasks to queue
+[2025-05-22T02:17:56.919+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:17:56.919+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:17:56.928+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:17:56.928+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/pipeline_x.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_x.py", line 3, in <module>
+    from tasks.get_transcript import audio_to_transcript
+  File "/opt/airflow/dags/tasks/get_transcript.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+[2025-05-22T02:17:56.928+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:17:56.940+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_x.py took 0.026 seconds
+[2025-05-22T02:18:28.009+0000] {processor.py:186} INFO - Started process (PID=101) to work on /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:18:28.010+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_x.py for tasks to queue
+[2025-05-22T02:18:28.011+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:18:28.010+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:18:28.020+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:18:28.019+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/pipeline_x.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_x.py", line 3, in <module>
+    from tasks.get_transcript import audio_to_transcript
+  File "/opt/airflow/dags/tasks/get_transcript.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+[2025-05-22T02:18:28.020+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:18:28.033+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_x.py took 0.029 seconds
+[2025-05-22T02:18:58.955+0000] {processor.py:186} INFO - Started process (PID=127) to work on /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:18:58.955+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_x.py for tasks to queue
+[2025-05-22T02:18:58.957+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:18:58.956+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:18:58.972+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:18:58.971+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/pipeline_x.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_x.py", line 3, in <module>
+    from tasks.get_transcript import audio_to_transcript
+  File "/opt/airflow/dags/tasks/get_transcript.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+[2025-05-22T02:18:58.973+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:18:58.995+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_x.py took 0.045 seconds
+[2025-05-22T02:19:29.999+0000] {processor.py:186} INFO - Started process (PID=147) to work on /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:19:30.000+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_x.py for tasks to queue
+[2025-05-22T02:19:30.001+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:19:30.000+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:19:30.012+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:19:30.012+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/pipeline_x.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_x.py", line 3, in <module>
+    from tasks.get_transcript import audio_to_transcript
+  File "/opt/airflow/dags/tasks/get_transcript.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+[2025-05-22T02:19:30.012+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:19:30.024+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_x.py took 0.029 seconds
+[2025-05-22T02:20:00.986+0000] {processor.py:186} INFO - Started process (PID=167) to work on /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:20:00.987+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_x.py for tasks to queue
+[2025-05-22T02:20:00.989+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:20:00.988+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:20:01.000+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:20:01.000+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/pipeline_x.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_x.py", line 3, in <module>
+    from tasks.get_transcript import audio_to_transcript
+  File "/opt/airflow/dags/tasks/get_transcript.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+[2025-05-22T02:20:01.000+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:20:01.016+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_x.py took 0.034 seconds
+[2025-05-22T02:20:32.278+0000] {processor.py:186} INFO - Started process (PID=187) to work on /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:20:32.279+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_x.py for tasks to queue
+[2025-05-22T02:20:32.280+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:20:32.280+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:20:32.458+0000] {processor.py:925} INFO - DAG(s) 'x_login_dag', 'x_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:20:32.527+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:20:32.526+0000] {dag.py:3211} INFO - Sync 2 DAGs
+[2025-05-22T02:20:32.534+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:20:32.533+0000] {dag.py:4138} INFO - Setting next_dagrun for x_login_dag to None, run_after=None
+[2025-05-22T02:20:32.535+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:20:32.535+0000] {dag.py:4138} INFO - Setting next_dagrun for x_videos_scraper_dag to None, run_after=None
+[2025-05-22T02:20:32.563+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_x.py took 0.290 seconds
+[2025-05-22T02:21:08.926+0000] {processor.py:186} INFO - Started process (PID=206) to work on /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:21:08.926+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_x.py for tasks to queue
+[2025-05-22T02:21:08.927+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:08.927+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:21:03.742+0000] {processor.py:925} INFO - DAG(s) 'x_videos_scraper_dag', 'x_login_dag' retrieved from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:21:03.760+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:03.759+0000] {dag.py:3211} INFO - Sync 2 DAGs
+[2025-05-22T02:21:03.767+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:03.767+0000] {dag.py:4138} INFO - Setting next_dagrun for x_login_dag to None, run_after=None
+[2025-05-22T02:21:03.769+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:03.769+0000] {dag.py:4138} INFO - Setting next_dagrun for x_videos_scraper_dag to None, run_after=None
+[2025-05-22T02:21:03.786+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_x.py took 0.213 seconds
+[2025-05-22T02:21:34.635+0000] {processor.py:186} INFO - Started process (PID=225) to work on /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:21:34.649+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_x.py for tasks to queue
+[2025-05-22T02:21:34.650+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:34.650+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:21:34.815+0000] {processor.py:925} INFO - DAG(s) 'x_login_dag', 'x_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:21:34.834+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:34.834+0000] {dag.py:3211} INFO - Sync 2 DAGs
+[2025-05-22T02:21:34.842+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:34.842+0000] {dag.py:4138} INFO - Setting next_dagrun for x_login_dag to None, run_after=None
+[2025-05-22T02:21:34.845+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:34.844+0000] {dag.py:4138} INFO - Setting next_dagrun for x_videos_scraper_dag to None, run_after=None
+[2025-05-22T02:21:34.858+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_x.py took 0.227 seconds
+[2025-05-22T02:21:58.067+0000] {processor.py:186} INFO - Started process (PID=242) to work on /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:21:58.068+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_x.py for tasks to queue
+[2025-05-22T02:21:58.070+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:58.070+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:21:58.255+0000] {processor.py:925} INFO - DAG(s) 'x_videos_scraper_dag', 'x_login_dag' retrieved from /opt/airflow/dags/pipeline_x.py
+[2025-05-22T02:21:58.272+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:58.272+0000] {dag.py:3211} INFO - Sync 2 DAGs
+[2025-05-22T02:21:58.279+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:58.279+0000] {dag.py:4138} INFO - Setting next_dagrun for x_login_dag to None, run_after=None
+[2025-05-22T02:21:58.281+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:58.281+0000] {dag.py:4138} INFO - Setting next_dagrun for x_videos_scraper_dag to None, run_after=None
+[2025-05-22T02:21:58.291+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_x.py took 0.228 seconds

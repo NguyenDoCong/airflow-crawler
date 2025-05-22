@@ -29,6 +29,8 @@ USER airflow
 # Install Python dependencies
 RUN pip install --no-cache-dir -r /opt/airflow/requirements.txt \
     && pip install --no-cache-dir playwright>=1.52
+    
+# RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
 # Switch back to root for system configurations
 USER root
@@ -45,14 +47,6 @@ RUN mkdir -p ${PLAYWRIGHT_BROWSERS_PATH} \
 RUN mkdir -p /opt/airflow/dags /opt/airflow/logs /opt/airflow/plugins /opt/airflow/data \
     && chown -R airflow:root /opt/airflow \
     && chmod -R 775 /opt/airflow
-
-# RUN apt update && apt install -y \
-#     build-essential \
-#     cmake \
-#     git \
-#     curl \
-#     libssl-dev \
-#     ca-certificates
 
 # Set working directory
 WORKDIR /opt/airflow

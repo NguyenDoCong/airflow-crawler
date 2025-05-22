@@ -1,0 +1,55 @@
+[2025-05-22T02:16:55.409+0000] {processor.py:186} INFO - Started process (PID=41) to work on /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:16:55.409+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/x_videos_scraper.py for tasks to queue
+[2025-05-22T02:16:55.411+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:16:55.411+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:16:55.621+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:16:55.630+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/x_videos_scraper.py took 0.225 seconds
+[2025-05-22T02:17:25.754+0000] {processor.py:186} INFO - Started process (PID=62) to work on /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:17:25.755+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/x_videos_scraper.py for tasks to queue
+[2025-05-22T02:17:25.756+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:17:25.756+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:17:25.907+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:17:25.915+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/x_videos_scraper.py took 0.164 seconds
+[2025-05-22T02:17:56.928+0000] {processor.py:186} INFO - Started process (PID=82) to work on /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:17:56.928+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/x_videos_scraper.py for tasks to queue
+[2025-05-22T02:17:56.929+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:17:56.929+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:17:57.079+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:17:57.089+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/x_videos_scraper.py took 0.165 seconds
+[2025-05-22T02:18:28.024+0000] {processor.py:186} INFO - Started process (PID=102) to work on /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:18:28.024+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/x_videos_scraper.py for tasks to queue
+[2025-05-22T02:18:28.025+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:18:28.025+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:18:33.520+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:18:33.529+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/x_videos_scraper.py took 0.165 seconds
+[2025-05-22T02:19:04.419+0000] {processor.py:186} INFO - Started process (PID=136) to work on /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:19:04.421+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/x_videos_scraper.py for tasks to queue
+[2025-05-22T02:19:04.422+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:19:04.421+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:19:04.624+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:19:04.632+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/x_videos_scraper.py took 0.220 seconds
+[2025-05-22T02:19:38.740+0000] {processor.py:186} INFO - Started process (PID=156) to work on /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:19:38.740+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/x_videos_scraper.py for tasks to queue
+[2025-05-22T02:19:38.741+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:19:38.741+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:19:33.546+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:19:33.564+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/x_videos_scraper.py took 0.173 seconds
+[2025-05-22T02:20:08.747+0000] {processor.py:186} INFO - Started process (PID=176) to work on /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:20:08.749+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/x_videos_scraper.py for tasks to queue
+[2025-05-22T02:20:08.749+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:20:08.749+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:20:03.574+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:20:03.587+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/x_videos_scraper.py took 0.188 seconds
+[2025-05-22T02:20:33.932+0000] {processor.py:186} INFO - Started process (PID=195) to work on /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:20:33.933+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/x_videos_scraper.py for tasks to queue
+[2025-05-22T02:20:33.934+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:20:33.934+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:20:34.083+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:20:34.093+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/x_videos_scraper.py took 0.165 seconds
+[2025-05-22T02:21:08.929+0000] {processor.py:186} INFO - Started process (PID=207) to work on /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:21:08.930+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/x_videos_scraper.py for tasks to queue
+[2025-05-22T02:21:08.930+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:08.930+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:21:03.742+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:21:03.751+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/x_videos_scraper.py took 0.174 seconds
+[2025-05-22T02:21:34.640+0000] {processor.py:186} INFO - Started process (PID=226) to work on /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:21:34.649+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/x_videos_scraper.py for tasks to queue
+[2025-05-22T02:21:34.649+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:34.649+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:21:34.816+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:21:34.825+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/x_videos_scraper.py took 0.190 seconds
+[2025-05-22T02:22:05.342+0000] {processor.py:186} INFO - Started process (PID=245) to work on /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:22:05.353+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/x_videos_scraper.py for tasks to queue
+[2025-05-22T02:22:05.354+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:22:05.354+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:22:05.538+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/x_videos_scraper.py
+[2025-05-22T02:22:05.549+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/x_videos_scraper.py took 0.212 seconds

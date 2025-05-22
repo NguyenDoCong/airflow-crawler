@@ -1,0 +1,161 @@
+[2025-05-21T04:21:08.995+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-21T04:21:09.010+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.batch_download_task manual__2025-05-21T04:20:59.580686+00:00 [queued]>
+[2025-05-21T04:21:09.016+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.batch_download_task manual__2025-05-21T04:20:59.580686+00:00 [queued]>
+[2025-05-21T04:21:09.016+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-21T04:21:09.025+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): batch_download_task> on 2025-05-21 04:20:59.580686+00:00
+[2025-05-21T04:21:09.028+0000] {standard_task_runner.py:72} INFO - Started process 15437 to run task
+[2025-05-21T04:21:09.031+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'batch_download_task', 'manual__2025-05-21T04:20:59.580686+00:00', '--job-id', '6381', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpilhe8med']
+[2025-05-21T04:21:09.032+0000] {standard_task_runner.py:105} INFO - Job 6381: Subtask batch_download_task
+[2025-05-21T04:21:09.071+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.batch_download_task manual__2025-05-21T04:20:59.580686+00:00 [running]> on host 05534d39966d
+[2025-05-21T04:21:09.130+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='batch_download_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-21T04:20:59.580686+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-21T04:20:59.580686+00:00'
+[2025-05-21T04:21:09.131+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-21T04:21:09.133+0000] {logging_mixin.py:190} INFO - Starting batch download...
+[2025-05-21T04:21:09.304+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T04:21:09.305+0000] {logging_mixin.py:190} INFO - Downloading video from 7506467362997112072...
+[2025-05-21T04:21:09.913+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@tiin.vn/video/7506467362997112072
+[2025-05-21T04:21:09.914+0000] {logging_mixin.py:190} INFO - [TikTok] 7506467362997112072: Downloading webpage
+[2025-05-21T04:21:10.568+0000] {logging_mixin.py:190} INFO - [info] 7506467362997112072: Downloading 1 format(s): bytevc1_540p_350987-1
+[2025-05-21T04:21:10.774+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7506467362997112072
+[2025-05-21T04:21:10.775+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    6.42MiB at  739.08KiB/s ETA 00:08
+[2025-05-21T04:21:10.775+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    6.42MiB at    1.25MiB/s ETA 00:05
+[2025-05-21T04:21:10.776+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    6.42MiB at    2.44MiB/s ETA 00:02
+[2025-05-21T04:21:10.776+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    6.42MiB at    4.52MiB/s ETA 00:01
+[2025-05-21T04:21:10.780+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    6.42MiB at    4.05MiB/s ETA 00:01
+[2025-05-21T04:21:10.827+0000] {logging_mixin.py:190} INFO - [download]   1.0% of    6.42MiB at    1.15MiB/s ETA 00:05
+[2025-05-21T04:21:10.877+0000] {logging_mixin.py:190} INFO - [download]   1.9% of    6.42MiB at    1.20MiB/s ETA 00:05
+[2025-05-21T04:21:10.918+0000] {logging_mixin.py:190} INFO - [download]   3.9% of    6.42MiB at    1.73MiB/s ETA 00:03
+[2025-05-21T04:21:10.979+0000] {logging_mixin.py:190} INFO - [download]   7.8% of    6.42MiB at    2.43MiB/s ETA 00:02
+[2025-05-21T04:21:11.047+0000] {logging_mixin.py:190} INFO - [download]  15.6% of    6.42MiB at    3.65MiB/s ETA 00:01
+[2025-05-21T04:21:11.213+0000] {logging_mixin.py:190} INFO - [download]  31.1% of    6.42MiB at    4.55MiB/s ETA 00:00
+[2025-05-21T04:21:11.514+0000] {logging_mixin.py:190} INFO - [download]  62.3% of    6.42MiB at    5.40MiB/s ETA 00:00
+[2025-05-21T04:21:11.736+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    6.42MiB at    6.67MiB/s ETA 00:00
+[2025-05-21T04:21:11.737+0000] {logging_mixin.py:190} INFO - [download] 100% of    6.42MiB in 00:00:01 at 5.51MiB/s   
+[2025-05-21T04:21:12.111+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7506467362997112072.mp3
+[2025-05-21T04:21:13.811+0000] {logging_mixin.py:190} INFO - Deleting original file data/7506467362997112072 (pass -k to keep)
+[2025-05-21T04:21:13.814+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7506467362997112072
+[2025-05-21T04:21:13.833+0000] {logging_mixin.py:190} INFO - Downloaded video 7506467362997112072 to data/7506467362997112072.mp3
+[2025-05-21T04:21:13.978+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T04:21:13.978+0000] {logging_mixin.py:190} INFO - Downloading video from 7506364668156382471...
+[2025-05-21T04:21:14.012+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@tiin.vn/video/7506364668156382471
+[2025-05-21T04:21:14.012+0000] {logging_mixin.py:190} INFO - [TikTok] 7506364668156382471: Downloading webpage
+[2025-05-21T04:21:14.695+0000] {logging_mixin.py:190} INFO - [info] 7506364668156382471: Downloading 1 format(s): bytevc1_540p_301169-1
+[2025-05-21T04:21:14.877+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7506364668156382471
+[2025-05-21T04:21:14.877+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    2.48MiB at  724.15KiB/s ETA 00:03
+[2025-05-21T04:21:14.878+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    2.48MiB at    1.35MiB/s ETA 00:01
+[2025-05-21T04:21:14.878+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    2.48MiB at    2.51MiB/s ETA 00:00
+[2025-05-21T04:21:14.882+0000] {logging_mixin.py:190} INFO - [download]   0.6% of    2.48MiB at    2.29MiB/s ETA 00:01
+[2025-05-21T04:21:14.889+0000] {logging_mixin.py:190} INFO - [download]   1.2% of    2.48MiB at    2.39MiB/s ETA 00:01
+[2025-05-21T04:21:14.935+0000] {logging_mixin.py:190} INFO - [download]   2.5% of    2.48MiB at    1.04MiB/s ETA 00:02
+[2025-05-21T04:21:14.991+0000] {logging_mixin.py:190} INFO - [download]   5.0% of    2.48MiB at    1.08MiB/s ETA 00:02
+[2025-05-21T04:21:15.030+0000] {logging_mixin.py:190} INFO - [download]  10.0% of    2.48MiB at    1.62MiB/s ETA 00:01
+[2025-05-21T04:21:15.193+0000] {logging_mixin.py:190} INFO - [download]  20.1% of    2.48MiB at    1.57MiB/s ETA 00:01
+[2025-05-21T04:21:15.229+0000] {logging_mixin.py:190} INFO - [download]  40.2% of    2.48MiB at    2.83MiB/s ETA 00:00
+[2025-05-21T04:21:15.331+0000] {logging_mixin.py:190} INFO - [download]  80.5% of    2.48MiB at    4.39MiB/s ETA 00:00
+[2025-05-21T04:21:15.418+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    2.48MiB at    4.58MiB/s ETA 00:00
+[2025-05-21T04:21:15.420+0000] {logging_mixin.py:190} INFO - [download] 100% of    2.48MiB in 00:00:00 at 3.44MiB/s   
+[2025-05-21T04:21:15.492+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7506364668156382471.mp3
+[2025-05-21T04:21:16.304+0000] {logging_mixin.py:190} INFO - Deleting original file data/7506364668156382471 (pass -k to keep)
+[2025-05-21T04:21:16.307+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7506364668156382471
+[2025-05-21T04:21:16.331+0000] {logging_mixin.py:190} INFO - Downloaded video 7506364668156382471 to data/7506364668156382471.mp3
+[2025-05-21T04:21:16.460+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T04:21:16.460+0000] {logging_mixin.py:190} INFO - Downloading video from 7506408019966610706...
+[2025-05-21T04:21:16.494+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@tiin.vn/video/7506408019966610706
+[2025-05-21T04:21:16.494+0000] {logging_mixin.py:190} INFO - [TikTok] 7506408019966610706: Downloading webpage
+[2025-05-21T04:21:17.230+0000] {logging_mixin.py:190} INFO - [info] 7506408019966610706: Downloading 1 format(s): bytevc1_540p_315470-1
+[2025-05-21T04:21:17.450+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7506408019966610706
+[2025-05-21T04:21:17.450+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    2.46MiB at  Unknown B/s ETA Unknown
+[2025-05-21T04:21:17.451+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    2.46MiB at    2.84MiB/s ETA 00:00  
+[2025-05-21T04:21:17.451+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    2.46MiB at    4.78MiB/s ETA 00:00
+[2025-05-21T04:21:17.453+0000] {logging_mixin.py:190} INFO - [download]   0.6% of    2.46MiB at    4.95MiB/s ETA 00:00
+[2025-05-21T04:21:17.460+0000] {logging_mixin.py:190} INFO - [download]   1.2% of    2.46MiB at    3.07MiB/s ETA 00:00
+[2025-05-21T04:21:17.508+0000] {logging_mixin.py:190} INFO - [download]   2.5% of    2.46MiB at    1.05MiB/s ETA 00:02
+[2025-05-21T04:21:17.676+0000] {logging_mixin.py:190} INFO - [download]   5.0% of    2.46MiB at  561.88KiB/s ETA 00:04
+[2025-05-21T04:21:17.714+0000] {logging_mixin.py:190} INFO - [download]  10.1% of    2.46MiB at  966.24KiB/s ETA 00:02
+[2025-05-21T04:21:17.772+0000] {logging_mixin.py:190} INFO - [download]  20.3% of    2.46MiB at    1.55MiB/s ETA 00:01
+[2025-05-21T04:21:18.037+0000] {logging_mixin.py:190} INFO - [download]  40.6% of    2.46MiB at    1.70MiB/s ETA 00:00
+[2025-05-21T04:21:18.379+0000] {logging_mixin.py:190} INFO - [download]  81.3% of    2.46MiB at    2.15MiB/s ETA 00:00
+[2025-05-21T04:21:18.399+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    2.46MiB at    2.59MiB/s ETA 00:00
+[2025-05-21T04:21:18.400+0000] {logging_mixin.py:190} INFO - [download] 100% of    2.46MiB in 00:00:01 at 2.11MiB/s   
+[2025-05-21T04:21:18.522+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7506408019966610706.mp3
+[2025-05-21T04:21:19.130+0000] {local_task_job_runner.py:341} WARNING - State of this instance has been externally set to restarting. Terminating instance.
+[2025-05-21T04:21:19.131+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2025-05-21T04:21:19.133+0000] {process_utils.py:132} INFO - Sending 15 to group 15437. PIDs of all processes in the group: [15651, 15437]
+[2025-05-21T04:21:19.133+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 15437
+[2025-05-21T04:21:19.133+0000] {taskinstance.py:3083} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-05-21T04:21:19.138+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=15651, status='terminated', started='04:21:18') (15651) terminated with exit code None
+[2025-05-21T04:21:19.146+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/tasks/batch_download.py", line 32, in batch_download
+    file_path = download_video(link, Config.DOWNLOAD_DIRECTORY)
+  File "/opt/airflow/dags/utils/downloader.py", line 175, in download_video
+    ydl.download([url])
+  File "/home/airflow/.local/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 3634, in download
+    self.__download_wrapper(self.extract_info)(
+  File "/home/airflow/.local/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 3607, in wrapper
+    res = func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 1642, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+  File "/home/airflow/.local/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 1653, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 1809, in __extract_info
+    return self.process_ie_result(ie_result, download, extra_info)
+  File "/home/airflow/.local/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 1868, in process_ie_result
+    ie_result = self.process_video_result(ie_result, download=download)
+  File "/home/airflow/.local/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 3040, in process_video_result
+    self.process_info(new_info)
+  File "/home/airflow/.local/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 185, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 3586, in process_info
+    replace_info_dict(self.post_process(dl_filename, info_dict, files_to_move))
+  File "/home/airflow/.local/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 3770, in post_process
+    info = self.run_all_pps('post_process', info, additional_pps=info.get('__postprocessors'))
+  File "/home/airflow/.local/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 3752, in run_all_pps
+    info = self.run_pp(pp, info)
+  File "/home/airflow/.local/lib/python3.10/site-packages/yt_dlp/YoutubeDL.py", line 3730, in run_pp
+    files_to_delete, infodict = pp.run(infodict)
+  File "/home/airflow/.local/lib/python3.10/site-packages/yt_dlp/postprocessor/common.py", line 23, in run
+    ret = func(self, info, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/yt_dlp/postprocessor/common.py", line 128, in wrapper
+    return func(self, info)
+  File "/home/airflow/.local/lib/python3.10/site-packages/yt_dlp/postprocessor/ffmpeg.py", line 530, in run
+    self.run_ffmpeg(path, temp_path, acodec, more_opts)
+  File "/home/airflow/.local/lib/python3.10/site-packages/yt_dlp/postprocessor/ffmpeg.py", line 479, in run_ffmpeg
+    FFmpegPostProcessor.run_ffmpeg(self, path, out_path, opts)
+  File "/home/airflow/.local/lib/python3.10/site-packages/yt_dlp/postprocessor/ffmpeg.py", line 374, in run_ffmpeg
+    return self.run_ffmpeg_multiple_files([path], out_path, opts, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/yt_dlp/postprocessor/ffmpeg.py", line 329, in run_ffmpeg_multiple_files
+    return self.real_run_ffmpeg(
+  File "/home/airflow/.local/lib/python3.10/site-packages/yt_dlp/postprocessor/ffmpeg.py", line 363, in real_run_ffmpeg
+    _, stderr, returncode = Popen.run(
+  File "/home/airflow/.local/lib/python3.10/site-packages/yt_dlp/utils/_utils.py", line 911, in run
+    stdout, stderr = proc.communicate_or_kill(timeout=timeout)
+  File "/home/airflow/.local/lib/python3.10/site-packages/yt_dlp/utils/_utils.py", line 897, in communicate_or_kill
+    return self.communicate(*args, **kwargs)
+  File "/usr/local/lib/python3.10/subprocess.py", line 1154, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+  File "/usr/local/lib/python3.10/subprocess.py", line 2021, in _communicate
+    ready = selector.select(timeout)
+  File "/usr/local/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3085, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2025-05-21T04:21:19.157+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=tiktok_videos_scraper_dag, task_id=batch_download_task, run_id=manual__2025-05-21T04:20:59.580686+00:00, execution_date=20250521T042059, start_date=20250521T042109, end_date=20250521T042119
+[2025-05-21T04:21:19.172+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-21T04:21:19.191+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=15437, status='terminated', exitcode=2, started='04:21:08') (15437) terminated with exit code 2

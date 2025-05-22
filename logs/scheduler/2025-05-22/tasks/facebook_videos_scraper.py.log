@@ -1,0 +1,55 @@
+[2025-05-22T02:16:55.753+0000] {processor.py:186} INFO - Started process (PID=45) to work on /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:16:55.754+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/facebook_videos_scraper.py for tasks to queue
+[2025-05-22T02:16:55.756+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:16:55.756+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:16:56.090+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:16:56.101+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/facebook_videos_scraper.py took 0.365 seconds
+[2025-05-22T02:17:26.118+0000] {processor.py:186} INFO - Started process (PID=66) to work on /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:17:26.133+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/facebook_videos_scraper.py for tasks to queue
+[2025-05-22T02:17:26.134+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:17:26.134+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:17:26.293+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:17:26.301+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/facebook_videos_scraper.py took 0.187 seconds
+[2025-05-22T02:17:57.148+0000] {processor.py:186} INFO - Started process (PID=86) to work on /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:17:57.148+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/facebook_videos_scraper.py for tasks to queue
+[2025-05-22T02:17:57.149+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:17:57.149+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:17:57.314+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:17:57.324+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/facebook_videos_scraper.py took 0.180 seconds
+[2025-05-22T02:18:33.593+0000] {processor.py:186} INFO - Started process (PID=112) to work on /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:18:33.594+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/facebook_videos_scraper.py for tasks to queue
+[2025-05-22T02:18:33.595+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:18:33.595+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:18:28.419+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:18:28.427+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/facebook_videos_scraper.py took 0.185 seconds
+[2025-05-22T02:18:59.016+0000] {processor.py:186} INFO - Started process (PID=129) to work on /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:18:59.017+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/facebook_videos_scraper.py for tasks to queue
+[2025-05-22T02:18:59.018+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:18:59.018+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:18:59.205+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:18:59.214+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/facebook_videos_scraper.py took 0.203 seconds
+[2025-05-22T02:19:30.041+0000] {processor.py:186} INFO - Started process (PID=149) to work on /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:19:30.042+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/facebook_videos_scraper.py for tasks to queue
+[2025-05-22T02:19:30.042+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:19:30.042+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:19:30.213+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:19:30.221+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/facebook_videos_scraper.py took 0.185 seconds
+[2025-05-22T02:20:01.035+0000] {processor.py:186} INFO - Started process (PID=169) to work on /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:20:01.035+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/facebook_videos_scraper.py for tasks to queue
+[2025-05-22T02:20:01.036+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:20:01.036+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:20:01.227+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:20:01.236+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/facebook_videos_scraper.py took 0.205 seconds
+[2025-05-22T02:20:32.586+0000] {processor.py:186} INFO - Started process (PID=189) to work on /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:20:32.587+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/facebook_videos_scraper.py for tasks to queue
+[2025-05-22T02:20:32.588+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:20:32.588+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:20:32.769+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:20:32.779+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/facebook_videos_scraper.py took 0.196 seconds
+[2025-05-22T02:21:03.972+0000] {processor.py:186} INFO - Started process (PID=211) to work on /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:21:03.973+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/facebook_videos_scraper.py for tasks to queue
+[2025-05-22T02:21:03.973+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:03.973+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:21:04.151+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:21:04.160+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/facebook_videos_scraper.py took 0.192 seconds
+[2025-05-22T02:21:35.084+0000] {processor.py:186} INFO - Started process (PID=230) to work on /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:21:35.085+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/facebook_videos_scraper.py for tasks to queue
+[2025-05-22T02:21:35.086+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:35.085+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:21:35.263+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:21:35.271+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/facebook_videos_scraper.py took 0.192 seconds
+[2025-05-22T02:22:05.791+0000] {processor.py:186} INFO - Started process (PID=249) to work on /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:22:05.792+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/tasks/facebook_videos_scraper.py for tasks to queue
+[2025-05-22T02:22:05.793+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:22:05.792+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:22:05.996+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/tasks/facebook_videos_scraper.py
+[2025-05-22T02:22:06.013+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/tasks/facebook_videos_scraper.py took 0.227 seconds

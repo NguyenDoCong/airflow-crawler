@@ -1,0 +1,53 @@
+[2025-05-21T03:38:01.402+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-21T03:38:01.413+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-21T03:38:00.144680+00:00 [queued]>
+[2025-05-21T03:38:01.418+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-21T03:38:00.144680+00:00 [queued]>
+[2025-05-21T03:38:01.418+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-21T03:38:01.425+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): tiktok_videos_scraper_task> on 2025-05-21 03:38:00.144680+00:00
+[2025-05-21T03:38:01.428+0000] {standard_task_runner.py:72} INFO - Started process 9285 to run task
+[2025-05-21T03:38:01.430+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'tiktok_videos_scraper_task', 'manual__2025-05-21T03:38:00.144680+00:00', '--job-id', '6370', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpk4u3ogjh']
+[2025-05-21T03:38:01.432+0000] {standard_task_runner.py:105} INFO - Job 6370: Subtask tiktok_videos_scraper_task
+[2025-05-21T03:38:01.466+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-21T03:38:00.144680+00:00 [running]> on host 05534d39966d
+[2025-05-21T03:38:01.517+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='tiktok_videos_scraper_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-21T03:38:00.144680+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-21T03:38:00.144680+00:00'
+[2025-05-21T03:38:01.518+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-21T03:38:10.531+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7198967775388486918
+[2025-05-21T03:38:10.531+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7498030097560227077
+[2025-05-21T03:38:10.531+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7497677779564121350
+[2025-05-21T03:38:10.531+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7489921647617510711
+[2025-05-21T03:38:10.531+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7474290575089437958
+[2025-05-21T03:38:10.532+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7450513502747479301
+[2025-05-21T03:38:10.532+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7432488254294854917
+[2025-05-21T03:38:10.532+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7418337357230836999
+[2025-05-21T03:38:10.532+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7403869875162172677
+[2025-05-21T03:38:10.532+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7399041417428995334
+[2025-05-21T03:38:10.532+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7393419947306683654
+[2025-05-21T03:38:10.532+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7390420373096975622
+[2025-05-21T03:38:10.532+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7372275303940476165
+[2025-05-21T03:38:10.533+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7367129935892335878
+[2025-05-21T03:38:10.533+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7363370057130396933
+[2025-05-21T03:38:10.533+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7354847906672725254
+[2025-05-21T03:38:10.533+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7352554126435273989
+[2025-05-21T03:38:10.533+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7347400706913012998
+[2025-05-21T03:38:10.533+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7343740129917553926
+[2025-05-21T03:38:10.533+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7340392906244590854
+[2025-05-21T03:38:10.533+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7322956248507354373
+[2025-05-21T03:38:10.534+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7315886039774530822
+[2025-05-21T03:38:10.534+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7299903764561956101
+[2025-05-21T03:38:10.534+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7288784089572838661
+[2025-05-21T03:38:10.534+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7273589471331896581
+[2025-05-21T03:38:10.534+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7272833092396633349
+[2025-05-21T03:38:10.534+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7251676498262854917
+[2025-05-21T03:38:10.534+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7239439621183114502
+[2025-05-21T03:38:10.534+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7230151157568507141
+[2025-05-21T03:38:10.535+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7220054401745014021
+[2025-05-21T03:38:10.535+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7213833877675134213
+[2025-05-21T03:38:10.535+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7210804398325271814
+[2025-05-21T03:38:10.535+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7185307299983019270
+[2025-05-21T03:38:10.535+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7179658697751219461
+[2025-05-21T03:38:10.535+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@markcannatarofilms/video/7169371119865154822
+[2025-05-21T03:38:10.547+0000] {logging_mixin.py:190} INFO - New videos: 35
+[2025-05-21T03:38:10.768+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'markcannatarofilms', 'new_links': ('https://www.tiktok.com/@markcannatarofilms/video/7347400706913012998', 'https://www.tiktok.com/@markcannatarofilms/video/7179658697751219461', 'https://www.tiktok.com/@markcannatarofilms/video/7474290575089437958', 'https://www.tiktok.com/@markcannatarofilms/video/7403869875162172677', 'https://www.tiktok.com/@markcannatarofilms/video/7399041417428995334', 'https://www.tiktok.com/@markcannatarofilms/video/7272833092396633349', 'https://www.tiktok.com/@markcannatarofilms/video/7372275303940476165', 'https://www.tiktok.com/@markcannatarofilms/video/7432488254294854917', 'https://www.tiktok.com/@markcannatarofilms/video/7213833877675134213', 'https://www.tiktok.com/@markcannatarofilms/video/7210804398325271814', 'https://www.tiktok.com/@markcannatarofilms/video/7390420373096975622', 'https://www.tiktok.com/@markcannatarofilms/video/7363370057130396933', 'https://www.tiktok.com/@markcannatarofilms/video/7169371119865154822', 'https://www.tiktok.com/@markcannatarofilms/video/7299903764561956101', 'https://www.tiktok.com/@markcannatarofilms/video/7343740129917553926', 'https://www.tiktok.com/@markcannatarofilms/video/7418337357230836999', 'https://www.tiktok.com/@markcannatarofilms/video/7393419947306683654', 'https://www.tiktok.com/@markcannatarofilms/video/7273589471331896581', 'https://www.tiktok.com/@markcannatarofilms/video/7450513502747479301', 'https://www.tiktok.com/@markcannatarofilms/video/7367129935892335878', 'https://www.tiktok.com/@markcannatarofilms/video/7239439621183114502', 'https://www.tiktok.com/@markcannatarofilms/video/7352554126435273989', 'https://www.tiktok.com/@markcannatarofilms/video/7489921647617510711', 'https://www.tiktok.com/@markcannatarofilms/video/7185307299983019270', 'https://www.tiktok.com/@markcannatarofilms/video/7288784089572838661', 'https://www.tiktok.com/@markcannatarofilms/video/7198967775388486918', 'https://www.tiktok.com/@markcannatarofilms/video/7251676498262854917', 'https://www.tiktok.com/@markcannatarofilms/video/7340392906244590854', 'https://www.tiktok.com/@markcannatarofilms/video/7230151157568507141', 'https://www.tiktok.com/@markcannatarofilms/video/7315886039774530822', 'https://www.tiktok.com/@markcannatarofilms/video/7354847906672725254', 'https://www.tiktok.com/@markcannatarofilms/video/7220054401745014021', 'https://www.tiktok.com/@markcannatarofilms/video/7497677779564121350', 'https://www.tiktok.com/@markcannatarofilms/video/7322956248507354373', 'https://www.tiktok.com/@markcannatarofilms/video/7498030097560227077')}
+[2025-05-21T03:38:10.788+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-21T03:38:10.788+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tiktok_videos_scraper_dag, task_id=tiktok_videos_scraper_task, run_id=manual__2025-05-21T03:38:00.144680+00:00, execution_date=20250521T033800, start_date=20250521T033801, end_date=20250521T033810
+[2025-05-21T03:38:10.802+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-21T03:38:10.819+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-21T03:38:10.821+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

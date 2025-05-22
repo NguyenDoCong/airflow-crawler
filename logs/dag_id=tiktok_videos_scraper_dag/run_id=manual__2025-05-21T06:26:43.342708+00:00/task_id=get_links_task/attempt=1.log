@@ -1,0 +1,56 @@
+[2025-05-21T06:26:45.506+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-21T06:26:45.517+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-21T06:26:43.342708+00:00 [queued]>
+[2025-05-21T06:26:45.522+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-21T06:26:43.342708+00:00 [queued]>
+[2025-05-21T06:26:45.522+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-21T06:26:45.530+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-21 06:26:43.342708+00:00
+[2025-05-21T06:26:45.534+0000] {standard_task_runner.py:72} INFO - Started process 101 to run task
+[2025-05-21T06:26:45.538+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'get_links_task', 'manual__2025-05-21T06:26:43.342708+00:00', '--job-id', '6392', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpp6s39up2']
+[2025-05-21T06:26:45.539+0000] {standard_task_runner.py:105} INFO - Job 6392: Subtask get_links_task
+[2025-05-21T06:26:45.576+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-21T06:26:43.342708+00:00 [running]> on host ac13676b83f9
+[2025-05-21T06:26:45.643+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-21T06:26:43.342708+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-21T06:26:43.342708+00:00'
+[2025-05-21T06:26:45.644+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-21T06:26:57.332+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/6730931320102456577
+[2025-05-21T06:26:57.333+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7245694058973138182
+[2025-05-21T06:26:57.333+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7162781231690681626
+[2025-05-21T06:26:57.333+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7505031134619749650
+[2025-05-21T06:26:57.333+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7502018828231036168
+[2025-05-21T06:26:57.333+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7501219436808899858
+[2025-05-21T06:26:57.333+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7495010541358845192
+[2025-05-21T06:26:57.333+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7494849141432962312
+[2025-05-21T06:26:57.334+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7493164324509240583
+[2025-05-21T06:26:57.334+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7490899162419006738
+[2025-05-21T06:26:57.334+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7489677053504015621
+[2025-05-21T06:26:57.334+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7488694581580844343
+[2025-05-21T06:26:57.334+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7487203983719714053
+[2025-05-21T06:26:57.334+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7479432616563838216
+[2025-05-21T06:26:57.334+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7479372742320573714
+[2025-05-21T06:26:57.334+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7479066448162196754
+[2025-05-21T06:26:57.334+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7478151782955371794
+[2025-05-21T06:26:57.334+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7477873572459859208
+[2025-05-21T06:26:57.334+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7477203145135869192
+[2025-05-21T06:26:57.335+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7477179000138353928
+[2025-05-21T06:26:57.335+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7476763541631012103
+[2025-05-21T06:26:57.335+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7474965398106967314
+[2025-05-21T06:26:57.335+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7474577587159731474
+[2025-05-21T06:26:57.335+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7473466584787324167
+[2025-05-21T06:26:57.335+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7473095440406236423
+[2025-05-21T06:26:57.335+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7472615893726432530
+[2025-05-21T06:26:57.336+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7472235455816240402
+[2025-05-21T06:26:57.336+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7471176768238439687
+[2025-05-21T06:26:57.336+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7470170889749859591
+[2025-05-21T06:26:57.336+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7469777485073304850
+[2025-05-21T06:26:57.336+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7469267018009840904
+[2025-05-21T06:26:57.336+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7468511646449765639
+[2025-05-21T06:26:57.336+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7467045950893149458
+[2025-05-21T06:26:57.336+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7465615948544822546
+[2025-05-21T06:26:57.337+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7465596954005769479
+[2025-05-21T06:26:57.337+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7464472177363012872
+[2025-05-21T06:26:57.337+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7463767623197674759
+[2025-05-21T06:26:57.337+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@ngokienhuyofficial/video/7458629121220840721
+[2025-05-21T06:26:57.351+0000] {logging_mixin.py:190} INFO - New videos: 38
+[2025-05-21T06:26:57.566+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'ngokienhuyofficial', 'new_links': ('https://www.tiktok.com/@ngokienhuyofficial/video/7477203145135869192', 'https://www.tiktok.com/@ngokienhuyofficial/video/7464472177363012872', 'https://www.tiktok.com/@ngokienhuyofficial/video/7505031134619749650', 'https://www.tiktok.com/@ngokienhuyofficial/video/7162781231690681626', 'https://www.tiktok.com/@ngokienhuyofficial/video/7463767623197674759', 'https://www.tiktok.com/@ngokienhuyofficial/video/7479432616563838216', 'https://www.tiktok.com/@ngokienhuyofficial/video/7489677053504015621', 'https://www.tiktok.com/@ngokienhuyofficial/video/7472235455816240402', 'https://www.tiktok.com/@ngokienhuyofficial/video/7468511646449765639', 'https://www.tiktok.com/@ngokienhuyofficial/video/7471176768238439687', 'https://www.tiktok.com/@ngokienhuyofficial/video/7490899162419006738', 'https://www.tiktok.com/@ngokienhuyofficial/video/7479066448162196754', 'https://www.tiktok.com/@ngokienhuyofficial/video/7465596954005769479', 'https://www.tiktok.com/@ngokienhuyofficial/video/7478151782955371794', 'https://www.tiktok.com/@ngokienhuyofficial/video/7469267018009840904', 'https://www.tiktok.com/@ngokienhuyofficial/video/7494849141432962312', 'https://www.tiktok.com/@ngokienhuyofficial/video/7502018828231036168', 'https://www.tiktok.com/@ngokienhuyofficial/video/7477873572459859208', 'https://www.tiktok.com/@ngokienhuyofficial/video/7458629121220840721', 'https://www.tiktok.com/@ngokienhuyofficial/video/7501219436808899858', 'https://www.tiktok.com/@ngokienhuyofficial/video/7474577587159731474', 'https://www.tiktok.com/@ngokienhuyofficial/video/7473095440406236423', 'https://www.tiktok.com/@ngokienhuyofficial/video/7474965398106967314', 'https://www.tiktok.com/@ngokienhuyofficial/video/7488694581580844343', 'https://www.tiktok.com/@ngokienhuyofficial/video/7467045950893149458', 'https://www.tiktok.com/@ngokienhuyofficial/video/7465615948544822546', 'https://www.tiktok.com/@ngokienhuyofficial/video/7487203983719714053', 'https://www.tiktok.com/@ngokienhuyofficial/video/7470170889749859591', 'https://www.tiktok.com/@ngokienhuyofficial/video/7245694058973138182', 'https://www.tiktok.com/@ngokienhuyofficial/video/7473466584787324167', 'https://www.tiktok.com/@ngokienhuyofficial/video/7477179000138353928', 'https://www.tiktok.com/@ngokienhuyofficial/video/7479372742320573714', 'https://www.tiktok.com/@ngokienhuyofficial/video/7472615893726432530', 'https://www.tiktok.com/@ngokienhuyofficial/video/7493164324509240583', 'https://www.tiktok.com/@ngokienhuyofficial/video/7495010541358845192', 'https://www.tiktok.com/@ngokienhuyofficial/video/7476763541631012103', 'https://www.tiktok.com/@ngokienhuyofficial/video/6730931320102456577', 'https://www.tiktok.com/@ngokienhuyofficial/video/7469777485073304850')}
+[2025-05-21T06:26:57.590+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-21T06:26:57.591+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tiktok_videos_scraper_dag, task_id=get_links_task, run_id=manual__2025-05-21T06:26:43.342708+00:00, execution_date=20250521T062643, start_date=20250521T062645, end_date=20250521T062657
+[2025-05-21T06:26:57.616+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-21T06:26:57.635+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-21T06:26:57.637+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

@@ -1,0 +1,288 @@
+[2025-05-21T09:04:13.770+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-21T09:04:13.782+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.batch_download_task manual__2025-05-21T09:03:52.511235+00:00 [queued]>
+[2025-05-21T09:04:13.788+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.batch_download_task manual__2025-05-21T09:03:52.511235+00:00 [queued]>
+[2025-05-21T09:04:13.788+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-21T09:04:13.797+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): batch_download_task> on 2025-05-21 09:03:52.511235+00:00
+[2025-05-21T09:04:13.801+0000] {standard_task_runner.py:72} INFO - Started process 326152 to run task
+[2025-05-21T09:04:13.805+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'instagram_videos_scraper_dag', 'batch_download_task', 'manual__2025-05-21T09:03:52.511235+00:00', '--job-id', '6450', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_instagram.py', '--cfg-path', '/tmp/tmpps620viu']
+[2025-05-21T09:04:13.808+0000] {standard_task_runner.py:105} INFO - Job 6450: Subtask batch_download_task
+[2025-05-21T09:04:13.862+0000] {task_command.py:467} INFO - Running <TaskInstance: instagram_videos_scraper_dag.batch_download_task manual__2025-05-21T09:03:52.511235+00:00 [running]> on host 40367d170eab
+[2025-05-21T09:04:13.919+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='instagram_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='batch_download_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-21T09:03:52.511235+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-21T09:03:52.511235+00:00'
+[2025-05-21T09:04:13.920+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-21T09:04:13.922+0000] {logging_mixin.py:190} INFO - Starting batch download...
+[2025-05-21T09:04:14.084+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T09:04:14.084+0000] {logging_mixin.py:190} INFO - Downloading video from DJ443cdMUe5...
+[2025-05-21T09:04:14.217+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/manchesterunited/reel/DJ443cdMUe5/
+[2025-05-21T09:04:14.218+0000] {logging_mixin.py:190} INFO - [Instagram] DJ443cdMUe5: Setting up session
+[2025-05-21T09:04:14.575+0000] {logging_mixin.py:190} INFO - [Instagram] DJ443cdMUe5: Downloading JSON metadata
+[2025-05-21T09:04:15.335+0000] {logging_mixin.py:190} INFO - [info] DJ443cdMUe5: Downloading 1 format(s): dash-628308106899504ad
+[2025-05-21T09:04:15.385+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DJ443cdMUe5
+[2025-05-21T09:04:15.386+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  591.87KiB at  666.71KiB/s ETA 00:00
+[2025-05-21T09:04:15.386+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  591.87KiB at    1.33MiB/s ETA 00:00
+[2025-05-21T09:04:15.387+0000] {logging_mixin.py:190} INFO - [download]   1.2% of  591.87KiB at    2.57MiB/s ETA 00:00
+[2025-05-21T09:04:15.387+0000] {logging_mixin.py:190} INFO - [download]   2.5% of  591.87KiB at    4.74MiB/s ETA 00:00
+[2025-05-21T09:04:15.389+0000] {logging_mixin.py:190} INFO - [download]   5.2% of  591.87KiB at    6.57MiB/s ETA 00:00
+[2025-05-21T09:04:15.392+0000] {logging_mixin.py:190} INFO - [download]  10.6% of  591.87KiB at    7.95MiB/s ETA 00:00
+[2025-05-21T09:04:15.398+0000] {logging_mixin.py:190} INFO - [download]  21.5% of  591.87KiB at    8.89MiB/s ETA 00:00
+[2025-05-21T09:04:15.410+0000] {logging_mixin.py:190} INFO - [download]  43.1% of  591.87KiB at    9.49MiB/s ETA 00:00
+[2025-05-21T09:04:15.435+0000] {logging_mixin.py:190} INFO - [download]  86.3% of  591.87KiB at    9.77MiB/s ETA 00:00
+[2025-05-21T09:04:15.443+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  591.87KiB at    9.90MiB/s ETA 00:00
+[2025-05-21T09:04:15.443+0000] {logging_mixin.py:190} INFO - [download] 100% of  591.87KiB in 00:00:00 at 5.55MiB/s   
+[2025-05-21T09:04:15.672+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DJ443cdMUe5"
+[2025-05-21T09:04:13.339+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DJ443cdMUe5.mp3
+[2025-05-21T09:04:14.013+0000] {logging_mixin.py:190} INFO - Deleting original file data/DJ443cdMUe5 (pass -k to keep)
+[2025-05-21T09:04:14.016+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DJ443cdMUe5
+[2025-05-21T09:04:14.026+0000] {logging_mixin.py:190} INFO - Downloaded video DJ443cdMUe5 to data/DJ443cdMUe5.mp3
+[2025-05-21T09:04:14.145+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T09:04:14.145+0000] {logging_mixin.py:190} INFO - Downloading video from DJ4abSWMa5p...
+[2025-05-21T09:04:14.176+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/manchesterunited/reel/DJ4abSWMa5p/
+[2025-05-21T09:04:14.177+0000] {logging_mixin.py:190} INFO - [Instagram] DJ4abSWMa5p: Setting up session
+[2025-05-21T09:04:14.511+0000] {logging_mixin.py:190} INFO - [Instagram] DJ4abSWMa5p: Downloading JSON metadata
+[2025-05-21T09:04:15.159+0000] {logging_mixin.py:190} INFO - [info] DJ4abSWMa5p: Downloading 1 format(s): dash-687444710597159ad
+[2025-05-21T09:04:15.192+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DJ4abSWMa5p
+[2025-05-21T09:04:15.192+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.07MiB at  824.51KiB/s ETA 00:01
+[2025-05-21T09:04:15.193+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    1.07MiB at    1.63MiB/s ETA 00:00
+[2025-05-21T09:04:15.194+0000] {logging_mixin.py:190} INFO - [download]   0.6% of    1.07MiB at    2.54MiB/s ETA 00:00
+[2025-05-21T09:04:15.194+0000] {logging_mixin.py:190} INFO - [download]   1.4% of    1.07MiB at    4.40MiB/s ETA 00:00
+[2025-05-21T09:04:15.196+0000] {logging_mixin.py:190} INFO - [download]   2.8% of    1.07MiB at    6.21MiB/s ETA 00:00
+[2025-05-21T09:04:15.199+0000] {logging_mixin.py:190} INFO - [download]   5.7% of    1.07MiB at    7.98MiB/s ETA 00:00
+[2025-05-21T09:04:15.205+0000] {logging_mixin.py:190} INFO - [download]  11.6% of    1.07MiB at    8.96MiB/s ETA 00:00
+[2025-05-21T09:04:15.219+0000] {logging_mixin.py:190} INFO - [download]  23.2% of    1.07MiB at    9.00MiB/s ETA 00:00
+[2025-05-21T09:04:15.247+0000] {logging_mixin.py:190} INFO - [download]  46.5% of    1.07MiB at    8.95MiB/s ETA 00:00
+[2025-05-21T09:04:15.298+0000] {logging_mixin.py:190} INFO - [download]  93.2% of    1.07MiB at    9.30MiB/s ETA 00:00
+[2025-05-21T09:04:15.305+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.07MiB at    9.41MiB/s ETA 00:00
+[2025-05-21T09:04:15.306+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.07MiB in 00:00:00 at 7.45MiB/s   
+[2025-05-21T09:04:15.307+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DJ4abSWMa5p"
+[2025-05-21T09:04:15.398+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DJ4abSWMa5p.mp3
+[2025-05-21T09:04:16.715+0000] {logging_mixin.py:190} INFO - Deleting original file data/DJ4abSWMa5p (pass -k to keep)
+[2025-05-21T09:04:16.718+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DJ4abSWMa5p
+[2025-05-21T09:04:16.732+0000] {logging_mixin.py:190} INFO - Downloaded video DJ4abSWMa5p to data/DJ4abSWMa5p.mp3
+[2025-05-21T09:04:16.860+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T09:04:16.861+0000] {logging_mixin.py:190} INFO - Downloading video from DJ4meX6tBdV...
+[2025-05-21T09:04:16.890+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/manchesterunited/reel/DJ4meX6tBdV/
+[2025-05-21T09:04:16.891+0000] {logging_mixin.py:190} INFO - [Instagram] DJ4meX6tBdV: Setting up session
+[2025-05-21T09:04:17.263+0000] {logging_mixin.py:190} INFO - [Instagram] DJ4meX6tBdV: Downloading JSON metadata
+[2025-05-21T09:04:17.784+0000] {logging_mixin.py:190} INFO - [info] DJ4meX6tBdV: Downloading 1 format(s): dash-1017987033838189ad
+[2025-05-21T09:04:17.821+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DJ4meX6tBdV
+[2025-05-21T09:04:17.821+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  155.15KiB at  372.17KiB/s ETA 00:00
+[2025-05-21T09:04:17.822+0000] {logging_mixin.py:190} INFO - [download]   1.9% of  155.15KiB at  880.97KiB/s ETA 00:00
+[2025-05-21T09:04:17.822+0000] {logging_mixin.py:190} INFO - [download]   4.5% of  155.15KiB at    1.76MiB/s ETA 00:00
+[2025-05-21T09:04:17.823+0000] {logging_mixin.py:190} INFO - [download]   9.7% of  155.15KiB at    3.28MiB/s ETA 00:00
+[2025-05-21T09:04:17.825+0000] {logging_mixin.py:190} INFO - [download]  20.0% of  155.15KiB at    4.28MiB/s ETA 00:00
+[2025-05-21T09:04:17.828+0000] {logging_mixin.py:190} INFO - [download]  40.6% of  155.15KiB at    6.26MiB/s ETA 00:00
+[2025-05-21T09:04:17.834+0000] {logging_mixin.py:190} INFO - [download]  81.9% of  155.15KiB at    7.74MiB/s ETA 00:00
+[2025-05-21T09:04:17.837+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  155.15KiB at    8.06MiB/s ETA 00:00
+[2025-05-21T09:04:17.838+0000] {logging_mixin.py:190} INFO - [download] 100% of  155.15KiB in 00:00:00 at 3.06MiB/s   
+[2025-05-21T09:04:17.839+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DJ4meX6tBdV"
+[2025-05-21T09:04:17.926+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DJ4meX6tBdV.mp3
+[2025-05-21T09:04:18.150+0000] {logging_mixin.py:190} INFO - Deleting original file data/DJ4meX6tBdV (pass -k to keep)
+[2025-05-21T09:04:18.153+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DJ4meX6tBdV
+[2025-05-21T09:04:18.172+0000] {logging_mixin.py:190} INFO - Downloaded video DJ4meX6tBdV to data/DJ4meX6tBdV.mp3
+[2025-05-21T09:04:18.286+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T09:04:18.287+0000] {logging_mixin.py:190} INFO - Downloading video from DJ4JPKmIqxn...
+[2025-05-21T09:04:18.322+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/manchesterunited/reel/DJ4JPKmIqxn/
+[2025-05-21T09:04:18.323+0000] {logging_mixin.py:190} INFO - [Instagram] DJ4JPKmIqxn: Setting up session
+[2025-05-21T09:04:18.651+0000] {logging_mixin.py:190} INFO - [Instagram] DJ4JPKmIqxn: Downloading JSON metadata
+[2025-05-21T09:04:19.259+0000] {logging_mixin.py:190} INFO - [info] DJ4JPKmIqxn: Downloading 1 format(s): dash-659604166904004ad
+[2025-05-21T09:04:19.295+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DJ4JPKmIqxn
+[2025-05-21T09:04:19.296+0000] {logging_mixin.py:190} INFO - [download]   1.0% of  102.15KiB at  888.62KiB/s ETA 00:00
+[2025-05-21T09:04:19.296+0000] {logging_mixin.py:190} INFO - [download]   2.9% of  102.15KiB at    1.48MiB/s ETA 00:00
+[2025-05-21T09:04:19.297+0000] {logging_mixin.py:190} INFO - [download]   6.9% of  102.15KiB at    2.68MiB/s ETA 00:00
+[2025-05-21T09:04:19.298+0000] {logging_mixin.py:190} INFO - [download]  14.7% of  102.15KiB at    4.40MiB/s ETA 00:00
+[2025-05-21T09:04:19.300+0000] {logging_mixin.py:190} INFO - [download]  30.3% of  102.15KiB at    5.75MiB/s ETA 00:00
+[2025-05-21T09:04:19.303+0000] {logging_mixin.py:190} INFO - [download]  61.7% of  102.15KiB at    7.37MiB/s ETA 00:00
+[2025-05-21T09:04:19.306+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  102.15KiB at    8.32MiB/s ETA 00:00
+[2025-05-21T09:04:19.307+0000] {logging_mixin.py:190} INFO - [download] 100% of  102.15KiB in 00:00:00 at 2.19MiB/s   
+[2025-05-21T09:04:19.308+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DJ4JPKmIqxn"
+[2025-05-21T09:04:19.396+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DJ4JPKmIqxn.mp3
+[2025-05-21T09:04:19.561+0000] {logging_mixin.py:190} INFO - Deleting original file data/DJ4JPKmIqxn (pass -k to keep)
+[2025-05-21T09:04:19.564+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DJ4JPKmIqxn
+[2025-05-21T09:04:19.569+0000] {logging_mixin.py:190} INFO - Downloaded video DJ4JPKmIqxn to data/DJ4JPKmIqxn.mp3
+[2025-05-21T09:04:19.688+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T09:04:19.688+0000] {logging_mixin.py:190} INFO - Downloading video from DJ11Vr0NwHd...
+[2025-05-21T09:04:19.720+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/manchesterunited/reel/DJ11Vr0NwHd/
+[2025-05-21T09:04:19.720+0000] {logging_mixin.py:190} INFO - [Instagram] DJ11Vr0NwHd: Setting up session
+[2025-05-21T09:04:20.012+0000] {logging_mixin.py:190} INFO - [Instagram] DJ11Vr0NwHd: Downloading JSON metadata
+[2025-05-21T09:04:20.468+0000] {logging_mixin.py:190} INFO - [info] DJ11Vr0NwHd: Downloading 1 format(s): dash-563685046424704ad
+[2025-05-21T09:04:20.506+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DJ11Vr0NwHd
+[2025-05-21T09:04:20.506+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  277.72KiB at  585.96KiB/s ETA 00:00
+[2025-05-21T09:04:20.507+0000] {logging_mixin.py:190} INFO - [download]   1.1% of  277.72KiB at    1.30MiB/s ETA 00:00
+[2025-05-21T09:04:20.507+0000] {logging_mixin.py:190} INFO - [download]   2.5% of  277.72KiB at    2.39MiB/s ETA 00:00
+[2025-05-21T09:04:20.509+0000] {logging_mixin.py:190} INFO - [download]   5.4% of  277.72KiB at    3.70MiB/s ETA 00:00
+[2025-05-21T09:04:20.511+0000] {logging_mixin.py:190} INFO - [download]  11.2% of  277.72KiB at    4.59MiB/s ETA 00:00
+[2025-05-21T09:04:20.515+0000] {logging_mixin.py:190} INFO - [download]  22.7% of  277.72KiB at    6.00MiB/s ETA 00:00
+[2025-05-21T09:04:20.521+0000] {logging_mixin.py:190} INFO - [download]  45.7% of  277.72KiB at    7.64MiB/s ETA 00:00
+[2025-05-21T09:04:20.534+0000] {logging_mixin.py:190} INFO - [download]  91.8% of  277.72KiB at    8.59MiB/s ETA 00:00
+[2025-05-21T09:04:20.535+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  277.72KiB at    8.79MiB/s ETA 00:00
+[2025-05-21T09:04:20.536+0000] {logging_mixin.py:190} INFO - [download] 100% of  277.72KiB in 00:00:00 at 4.25MiB/s   
+[2025-05-21T09:04:20.538+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DJ11Vr0NwHd"
+[2025-05-21T09:04:20.626+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DJ11Vr0NwHd.mp3
+[2025-05-21T09:04:20.993+0000] {logging_mixin.py:190} INFO - Deleting original file data/DJ11Vr0NwHd (pass -k to keep)
+[2025-05-21T09:04:20.996+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DJ11Vr0NwHd
+[2025-05-21T09:04:21.010+0000] {logging_mixin.py:190} INFO - Downloaded video DJ11Vr0NwHd to data/DJ11Vr0NwHd.mp3
+[2025-05-21T09:04:21.124+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T09:04:21.125+0000] {logging_mixin.py:190} INFO - Downloading video from DJ6G21SMNO-...
+[2025-05-21T09:04:21.158+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/manchesterunited/reel/DJ6G21SMNO-/
+[2025-05-21T09:04:21.159+0000] {logging_mixin.py:190} INFO - [Instagram] DJ6G21SMNO-: Setting up session
+[2025-05-21T09:04:21.484+0000] {logging_mixin.py:190} INFO - [Instagram] DJ6G21SMNO-: Downloading JSON metadata
+[2025-05-21T09:04:22.106+0000] {logging_mixin.py:190} INFO - [info] DJ6G21SMNO-: Downloading 1 format(s): dash-24057275447192312ad
+[2025-05-21T09:04:22.136+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DJ6G21SMNO-
+[2025-05-21T09:04:22.137+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  120.30KiB at  Unknown B/s ETA Unknown
+[2025-05-21T09:04:22.153+0000] {logging_mixin.py:190} INFO - [download]   2.5% of  120.30KiB at  179.44KiB/s ETA 00:00  
+[2025-05-21T09:04:22.154+0000] {logging_mixin.py:190} INFO - [download]   5.8% of  120.30KiB at  401.46KiB/s ETA 00:00
+[2025-05-21T09:04:22.154+0000] {logging_mixin.py:190} INFO - [download]  12.5% of  120.30KiB at  839.85KiB/s ETA 00:00
+[2025-05-21T09:04:22.155+0000] {logging_mixin.py:190} INFO - [download]  25.8% of  120.30KiB at    1.59MiB/s ETA 00:00
+[2025-05-21T09:04:22.158+0000] {logging_mixin.py:190} INFO - [download]  52.4% of  120.30KiB at    2.78MiB/s ETA 00:00
+[2025-05-21T09:04:22.164+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  120.30KiB at    4.30MiB/s ETA 00:00
+[2025-05-21T09:04:22.164+0000] {logging_mixin.py:190} INFO - [download] 100% of  120.30KiB in 00:00:00 at 2.14MiB/s   
+[2025-05-21T09:04:22.166+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DJ6G21SMNO-"
+[2025-05-21T09:04:22.252+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DJ6G21SMNO-.mp3
+[2025-05-21T09:04:22.450+0000] {logging_mixin.py:190} INFO - Deleting original file data/DJ6G21SMNO- (pass -k to keep)
+[2025-05-21T09:04:22.453+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DJ6G21SMNO-
+[2025-05-21T09:04:22.471+0000] {logging_mixin.py:190} INFO - Downloaded video DJ6G21SMNO- to data/DJ6G21SMNO-.mp3
+[2025-05-21T09:04:22.598+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T09:04:22.598+0000] {logging_mixin.py:190} INFO - Downloading video from DJ2JtFTiALJ...
+[2025-05-21T09:04:22.627+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/manchesterunited/reel/DJ2JtFTiALJ/
+[2025-05-21T09:04:22.628+0000] {logging_mixin.py:190} INFO - [Instagram] DJ2JtFTiALJ: Setting up session
+[2025-05-21T09:04:22.961+0000] {logging_mixin.py:190} INFO - [Instagram] DJ2JtFTiALJ: Downloading JSON metadata
+[2025-05-21T09:04:23.426+0000] {logging_mixin.py:190} INFO - [info] DJ2JtFTiALJ: Downloading 1 format(s): dash-1288347886189043ad
+[2025-05-21T09:04:23.452+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DJ2JtFTiALJ
+[2025-05-21T09:04:23.453+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.64MiB at  Unknown B/s ETA Unknown
+[2025-05-21T09:04:23.453+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.64MiB at    2.75MiB/s ETA 00:00  
+[2025-05-21T09:04:23.454+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    1.64MiB at    4.33MiB/s ETA 00:00
+[2025-05-21T09:04:23.455+0000] {logging_mixin.py:190} INFO - [download]   0.9% of    1.64MiB at    5.31MiB/s ETA 00:00
+[2025-05-21T09:04:23.457+0000] {logging_mixin.py:190} INFO - [download]   1.8% of    1.64MiB at    7.00MiB/s ETA 00:00
+[2025-05-21T09:04:23.460+0000] {logging_mixin.py:190} INFO - [download]   3.8% of    1.64MiB at    8.08MiB/s ETA 00:00
+[2025-05-21T09:04:23.466+0000] {logging_mixin.py:190} INFO - [download]   7.6% of    1.64MiB at    9.07MiB/s ETA 00:00
+[2025-05-21T09:04:23.478+0000] {logging_mixin.py:190} INFO - [download]  15.2% of    1.64MiB at    9.60MiB/s ETA 00:00
+[2025-05-21T09:04:23.504+0000] {logging_mixin.py:190} INFO - [download]  30.4% of    1.64MiB at    9.61MiB/s ETA 00:00
+[2025-05-21T09:04:23.555+0000] {logging_mixin.py:190} INFO - [download]  60.9% of    1.64MiB at    9.75MiB/s ETA 00:00
+[2025-05-21T09:04:23.620+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.64MiB at    9.76MiB/s ETA 00:00
+[2025-05-21T09:04:23.621+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.64MiB in 00:00:00 at 8.55MiB/s   
+[2025-05-21T09:04:23.623+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DJ2JtFTiALJ"
+[2025-05-21T09:04:23.717+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DJ2JtFTiALJ.mp3
+[2025-05-21T09:04:26.046+0000] {logging_mixin.py:190} INFO - Deleting original file data/DJ2JtFTiALJ (pass -k to keep)
+[2025-05-21T09:04:26.050+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DJ2JtFTiALJ
+[2025-05-21T09:04:26.068+0000] {logging_mixin.py:190} INFO - Downloaded video DJ2JtFTiALJ to data/DJ2JtFTiALJ.mp3
+[2025-05-21T09:04:26.196+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T09:04:26.196+0000] {logging_mixin.py:190} INFO - Downloading video from DJ33enNNxgL...
+[2025-05-21T09:04:26.228+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/manchesterunited/reel/DJ33enNNxgL/
+[2025-05-21T09:04:26.228+0000] {logging_mixin.py:190} INFO - [Instagram] DJ33enNNxgL: Setting up session
+[2025-05-21T09:04:26.587+0000] {logging_mixin.py:190} INFO - [Instagram] DJ33enNNxgL: Downloading JSON metadata
+[2025-05-21T09:04:27.055+0000] {logging_mixin.py:190} INFO - [info] DJ33enNNxgL: Downloading 1 format(s): dash-656861967340901ad
+[2025-05-21T09:04:27.083+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DJ33enNNxgL
+[2025-05-21T09:04:27.084+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  170.72KiB at  Unknown B/s ETA Unknown
+[2025-05-21T09:04:27.084+0000] {logging_mixin.py:190} INFO - [download]   1.8% of  170.72KiB at    1.87MiB/s ETA 00:00  
+[2025-05-21T09:04:27.085+0000] {logging_mixin.py:190} INFO - [download]   4.1% of  170.72KiB at    3.42MiB/s ETA 00:00
+[2025-05-21T09:04:27.086+0000] {logging_mixin.py:190} INFO - [download]   8.8% of  170.72KiB at    4.54MiB/s ETA 00:00
+[2025-05-21T09:04:27.089+0000] {logging_mixin.py:190} INFO - [download]  18.2% of  170.72KiB at    4.62MiB/s ETA 00:00
+[2025-05-21T09:04:27.091+0000] {logging_mixin.py:190} INFO - [download]  36.9% of  170.72KiB at    7.69MiB/s ETA 00:00
+[2025-05-21T09:04:27.098+0000] {logging_mixin.py:190} INFO - [download]  74.4% of  170.72KiB at    8.39MiB/s ETA 00:00
+[2025-05-21T09:04:27.102+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  170.72KiB at    8.84MiB/s ETA 00:00
+[2025-05-21T09:04:27.102+0000] {logging_mixin.py:190} INFO - [download] 100% of  170.72KiB in 00:00:00 at 3.80MiB/s   
+[2025-05-21T09:04:27.104+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DJ33enNNxgL"
+[2025-05-21T09:04:27.195+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DJ33enNNxgL.mp3
+[2025-05-21T09:04:27.468+0000] {logging_mixin.py:190} INFO - Deleting original file data/DJ33enNNxgL (pass -k to keep)
+[2025-05-21T09:04:27.471+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DJ33enNNxgL
+[2025-05-21T09:04:27.484+0000] {logging_mixin.py:190} INFO - Downloaded video DJ33enNNxgL to data/DJ33enNNxgL.mp3
+[2025-05-21T09:04:27.602+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T09:04:27.603+0000] {logging_mixin.py:190} INFO - Downloading video from DJ4fCe2sUiN...
+[2025-05-21T09:04:27.633+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/manchesterunited/reel/DJ4fCe2sUiN/
+[2025-05-21T09:04:27.634+0000] {logging_mixin.py:190} INFO - [Instagram] DJ4fCe2sUiN: Setting up session
+[2025-05-21T09:04:27.997+0000] {logging_mixin.py:190} INFO - [Instagram] DJ4fCe2sUiN: Downloading JSON metadata
+[2025-05-21T09:04:28.595+0000] {logging_mixin.py:190} INFO - [info] DJ4fCe2sUiN: Downloading 1 format(s): dash-671768782345181ad
+[2025-05-21T09:04:28.620+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DJ4fCe2sUiN
+[2025-05-21T09:04:28.621+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  156.39KiB at  777.59KiB/s ETA 00:00
+[2025-05-21T09:04:28.621+0000] {logging_mixin.py:190} INFO - [download]   1.9% of  156.39KiB at    1.61MiB/s ETA 00:00
+[2025-05-21T09:04:28.622+0000] {logging_mixin.py:190} INFO - [download]   4.5% of  156.39KiB at    2.14MiB/s ETA 00:00
+[2025-05-21T09:04:28.623+0000] {logging_mixin.py:190} INFO - [download]   9.6% of  156.39KiB at    3.80MiB/s ETA 00:00
+[2025-05-21T09:04:28.625+0000] {logging_mixin.py:190} INFO - [download]  19.8% of  156.39KiB at    5.69MiB/s ETA 00:00
+[2025-05-21T09:04:28.627+0000] {logging_mixin.py:190} INFO - [download]  40.3% of  156.39KiB at    7.56MiB/s ETA 00:00
+[2025-05-21T09:04:28.634+0000] {logging_mixin.py:190} INFO - [download]  81.2% of  156.39KiB at    8.70MiB/s ETA 00:00
+[2025-05-21T09:04:28.636+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  156.39KiB at    9.06MiB/s ETA 00:00
+[2025-05-21T09:04:28.637+0000] {logging_mixin.py:190} INFO - [download] 100% of  156.39KiB in 00:00:00 at 3.95MiB/s   
+[2025-05-21T09:04:28.639+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DJ4fCe2sUiN"
+[2025-05-21T09:04:28.726+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DJ4fCe2sUiN.mp3
+[2025-05-21T09:04:28.959+0000] {logging_mixin.py:190} INFO - Deleting original file data/DJ4fCe2sUiN (pass -k to keep)
+[2025-05-21T09:04:28.962+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DJ4fCe2sUiN
+[2025-05-21T09:04:28.978+0000] {logging_mixin.py:190} INFO - Downloaded video DJ4fCe2sUiN to data/DJ4fCe2sUiN.mp3
+[2025-05-21T09:04:29.098+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T09:04:29.098+0000] {logging_mixin.py:190} INFO - Downloading video from DJ3nvGDNbgH...
+[2025-05-21T09:04:29.130+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/manchesterunited/reel/DJ3nvGDNbgH/
+[2025-05-21T09:04:29.130+0000] {logging_mixin.py:190} INFO - [Instagram] DJ3nvGDNbgH: Setting up session
+[2025-05-21T09:04:29.476+0000] {logging_mixin.py:190} INFO - [Instagram] DJ3nvGDNbgH: Downloading JSON metadata
+[2025-05-21T09:04:30.170+0000] {logging_mixin.py:190} INFO - [info] DJ3nvGDNbgH: Downloading 1 format(s): dash-721662050239659ad
+[2025-05-21T09:04:30.233+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DJ3nvGDNbgH
+[2025-05-21T09:04:30.234+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  216.13KiB at  Unknown B/s ETA Unknown
+[2025-05-21T09:04:30.235+0000] {logging_mixin.py:190} INFO - [download]   1.4% of  216.13KiB at    1.10MiB/s ETA 00:00  
+[2025-05-21T09:04:30.236+0000] {logging_mixin.py:190} INFO - [download]   3.2% of  216.13KiB at    2.00MiB/s ETA 00:00
+[2025-05-21T09:04:30.246+0000] {logging_mixin.py:190} INFO - [download]   6.9% of  216.13KiB at    1.08MiB/s ETA 00:00
+[2025-05-21T09:04:30.250+0000] {logging_mixin.py:190} INFO - [download]  14.3% of  216.13KiB at    1.78MiB/s ETA 00:00
+[2025-05-21T09:04:30.257+0000] {logging_mixin.py:190} INFO - [download]  29.1% of  216.13KiB at    2.49MiB/s ETA 00:00
+[2025-05-21T09:04:30.264+0000] {logging_mixin.py:190} INFO - [download]  58.8% of  216.13KiB at    4.02MiB/s ETA 00:00
+[2025-05-21T09:04:30.272+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  216.13KiB at    5.37MiB/s ETA 00:00
+[2025-05-21T09:04:30.273+0000] {logging_mixin.py:190} INFO - [download] 100% of  216.13KiB in 00:00:00 at 2.14MiB/s   
+[2025-05-21T09:04:30.275+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DJ3nvGDNbgH"
+[2025-05-21T09:04:30.362+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DJ3nvGDNbgH.mp3
+[2025-05-21T09:04:30.661+0000] {logging_mixin.py:190} INFO - Deleting original file data/DJ3nvGDNbgH (pass -k to keep)
+[2025-05-21T09:04:30.665+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DJ3nvGDNbgH
+[2025-05-21T09:04:30.669+0000] {logging_mixin.py:190} INFO - Downloaded video DJ3nvGDNbgH to data/DJ3nvGDNbgH.mp3
+[2025-05-21T09:04:30.797+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T09:04:30.797+0000] {logging_mixin.py:190} INFO - Downloading video from DJ34NGZNnfW...
+[2025-05-21T09:04:30.829+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/manchesterunited/reel/DJ34NGZNnfW/
+[2025-05-21T09:04:30.829+0000] {logging_mixin.py:190} INFO - [Instagram] DJ34NGZNnfW: Setting up session
+[2025-05-21T09:04:31.168+0000] {logging_mixin.py:190} INFO - [Instagram] DJ34NGZNnfW: Downloading JSON metadata
+[2025-05-21T09:04:31.689+0000] {logging_mixin.py:190} INFO - [info] DJ34NGZNnfW: Downloading 1 format(s): dash-689644616771531ad
+[2025-05-21T09:04:31.714+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DJ34NGZNnfW
+[2025-05-21T09:04:31.714+0000] {logging_mixin.py:190} INFO - [download]   0.9% of  109.82KiB at  Unknown B/s ETA Unknown
+[2025-05-21T09:04:31.715+0000] {logging_mixin.py:190} INFO - [download]   2.7% of  109.82KiB at    1.97MiB/s ETA 00:00  
+[2025-05-21T09:04:31.716+0000] {logging_mixin.py:190} INFO - [download]   6.4% of  109.82KiB at    2.68MiB/s ETA 00:00
+[2025-05-21T09:04:31.717+0000] {logging_mixin.py:190} INFO - [download]  13.7% of  109.82KiB at    4.44MiB/s ETA 00:00
+[2025-05-21T09:04:31.718+0000] {logging_mixin.py:190} INFO - [download]  28.2% of  109.82KiB at    6.39MiB/s ETA 00:00
+[2025-05-21T09:04:31.721+0000] {logging_mixin.py:190} INFO - [download]  57.4% of  109.82KiB at    8.12MiB/s ETA 00:00
+[2025-05-21T09:04:31.726+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  109.82KiB at    8.98MiB/s ETA 00:00
+[2025-05-21T09:04:31.726+0000] {logging_mixin.py:190} INFO - [download] 100% of  109.82KiB in 00:00:00 at 3.22MiB/s   
+[2025-05-21T09:04:31.728+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DJ34NGZNnfW"
+[2025-05-21T09:04:31.816+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DJ34NGZNnfW.mp3
+[2025-05-21T09:04:31.983+0000] {logging_mixin.py:190} INFO - Deleting original file data/DJ34NGZNnfW (pass -k to keep)
+[2025-05-21T09:04:31.987+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DJ34NGZNnfW
+[2025-05-21T09:04:31.999+0000] {logging_mixin.py:190} INFO - Downloaded video DJ34NGZNnfW to data/DJ34NGZNnfW.mp3
+[2025-05-21T09:04:32.122+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T09:04:32.123+0000] {logging_mixin.py:190} INFO - Downloading video from DJ4Z17gM2tT...
+[2025-05-21T09:04:32.154+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/manchesterunited/reel/DJ4Z17gM2tT/
+[2025-05-21T09:04:32.154+0000] {logging_mixin.py:190} INFO - [Instagram] DJ4Z17gM2tT: Setting up session
+[2025-05-21T09:04:32.461+0000] {logging_mixin.py:190} INFO - [Instagram] DJ4Z17gM2tT: Downloading JSON metadata
+[2025-05-21T09:04:32.917+0000] {logging_mixin.py:190} INFO - [info] DJ4Z17gM2tT: Downloading 1 format(s): dash-2174832849704099ad
+[2025-05-21T09:04:32.952+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DJ4Z17gM2tT
+[2025-05-21T09:04:32.953+0000] {logging_mixin.py:190} INFO - [download]   1.1% of   88.87KiB at  390.02KiB/s ETA 00:00
+[2025-05-21T09:04:32.955+0000] {logging_mixin.py:190} INFO - [download]   3.4% of   88.87KiB at  761.49KiB/s ETA 00:00
+[2025-05-21T09:04:32.955+0000] {logging_mixin.py:190} INFO - [download]   7.9% of   88.87KiB at    1.35MiB/s ETA 00:00
+[2025-05-21T09:04:32.957+0000] {logging_mixin.py:190} INFO - [download]  16.9% of   88.87KiB at    2.30MiB/s ETA 00:00
+[2025-05-21T09:04:32.958+0000] {logging_mixin.py:190} INFO - [download]  34.9% of   88.87KiB at    3.86MiB/s ETA 00:00
+[2025-05-21T09:04:32.962+0000] {logging_mixin.py:190} INFO - [download]  70.9% of   88.87KiB at    5.46MiB/s ETA 00:00
+[2025-05-21T09:04:32.964+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   88.87KiB at    6.36MiB/s ETA 00:00
+[2025-05-21T09:04:32.964+0000] {logging_mixin.py:190} INFO - [download] 100% of   88.87KiB in 00:00:00 at 1.99MiB/s   
+[2025-05-21T09:04:32.966+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DJ4Z17gM2tT"
+[2025-05-21T09:04:33.052+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DJ4Z17gM2tT.mp3
+[2025-05-21T09:04:33.218+0000] {logging_mixin.py:190} INFO - Deleting original file data/DJ4Z17gM2tT (pass -k to keep)
+[2025-05-21T09:04:33.221+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DJ4Z17gM2tT
+[2025-05-21T09:04:33.236+0000] {logging_mixin.py:190} INFO - Downloaded video DJ4Z17gM2tT to data/DJ4Z17gM2tT.mp3
+[2025-05-21T09:04:33.236+0000] {logging_mixin.py:190} INFO - Downloaded 12 new videos.
+[2025-05-21T09:04:33.236+0000] {python.py:240} INFO - Done. Returned value was: [{'video_id': 'DJ443cdMUe5', 'file_path': 'data/DJ443cdMUe5.mp3'}, {'video_id': 'DJ4abSWMa5p', 'file_path': 'data/DJ4abSWMa5p.mp3'}, {'video_id': 'DJ4meX6tBdV', 'file_path': 'data/DJ4meX6tBdV.mp3'}, {'video_id': 'DJ4JPKmIqxn', 'file_path': 'data/DJ4JPKmIqxn.mp3'}, {'video_id': 'DJ11Vr0NwHd', 'file_path': 'data/DJ11Vr0NwHd.mp3'}, {'video_id': 'DJ6G21SMNO-', 'file_path': 'data/DJ6G21SMNO-.mp3'}, {'video_id': 'DJ2JtFTiALJ', 'file_path': 'data/DJ2JtFTiALJ.mp3'}, {'video_id': 'DJ33enNNxgL', 'file_path': 'data/DJ33enNNxgL.mp3'}, {'video_id': 'DJ4fCe2sUiN', 'file_path': 'data/DJ4fCe2sUiN.mp3'}, {'video_id': 'DJ3nvGDNbgH', 'file_path': 'data/DJ3nvGDNbgH.mp3'}, {'video_id': 'DJ34NGZNnfW', 'file_path': 'data/DJ34NGZNnfW.mp3'}, {'video_id': 'DJ4Z17gM2tT', 'file_path': 'data/DJ4Z17gM2tT.mp3'}]
+[2025-05-21T09:04:33.255+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-21T09:04:33.255+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instagram_videos_scraper_dag, task_id=batch_download_task, run_id=manual__2025-05-21T09:03:52.511235+00:00, execution_date=20250521T090352, start_date=20250521T090413, end_date=20250521T090433
+[2025-05-21T09:04:33.286+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-21T09:04:33.300+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-21T09:04:33.316+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

@@ -1,0 +1,53 @@
+[2025-05-21T06:37:50.073+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-21T06:37:50.083+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-21T06:37:48.120383+00:00 [queued]>
+[2025-05-21T06:37:50.087+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-21T06:37:48.120383+00:00 [queued]>
+[2025-05-21T06:37:50.087+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-21T06:37:50.095+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-21 06:37:48.120383+00:00
+[2025-05-21T06:37:50.099+0000] {standard_task_runner.py:72} INFO - Started process 726838 to run task
+[2025-05-21T06:37:50.102+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'get_links_task', 'manual__2025-05-21T06:37:48.120383+00:00', '--job-id', '6399', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpc1njrbap']
+[2025-05-21T06:37:50.104+0000] {standard_task_runner.py:105} INFO - Job 6399: Subtask get_links_task
+[2025-05-21T06:37:50.139+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-21T06:37:48.120383+00:00 [running]> on host ac13676b83f9
+[2025-05-21T06:37:50.191+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-21T06:37:48.120383+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-21T06:37:48.120383+00:00'
+[2025-05-21T06:37:50.192+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-21T06:37:57.776+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7506137888069815584
+[2025-05-21T06:37:57.777+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7504725359221509408
+[2025-05-21T06:37:57.777+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7506638191013727520
+[2025-05-21T06:37:57.777+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7505037231783038230
+[2025-05-21T06:37:57.777+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7505855837378727200
+[2025-05-21T06:37:57.777+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7505209606847597857
+[2025-05-21T06:37:57.777+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7505137896332987681
+[2025-05-21T06:37:57.778+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7505096385545375008
+[2025-05-21T06:37:57.778+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7496832016525036822
+[2025-05-21T06:37:57.778+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7504401118559046944
+[2025-05-21T06:37:57.778+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7504364303961591073
+[2025-05-21T06:37:57.778+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7503985060601728289
+[2025-05-21T06:37:57.778+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7503624535611165985
+[2025-05-21T06:37:57.778+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7503266879117610272
+[2025-05-21T06:37:57.778+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7502869576393198881
+[2025-05-21T06:37:57.778+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7502544838810750240
+[2025-05-21T06:37:57.778+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7496830463068179734
+[2025-05-21T06:37:57.778+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7501801049947245856
+[2025-05-21T06:37:57.779+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7501385258584100128
+[2025-05-21T06:37:57.779+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7501029044704529696
+[2025-05-21T06:37:57.779+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7500670724957277473
+[2025-05-21T06:37:57.779+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7500664344703667489
+[2025-05-21T06:37:57.779+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7500272660954271009
+[2025-05-21T06:37:57.779+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7499947330615938336
+[2025-05-21T06:37:57.780+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7497198326870330646
+[2025-05-21T06:37:57.780+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7499206428020722977
+[2025-05-21T06:37:57.780+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7498795650230914337
+[2025-05-21T06:37:57.780+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7498425852967800097
+[2025-05-21T06:37:57.780+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7498071607529737504
+[2025-05-21T06:37:57.780+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7498066079965547809
+[2025-05-21T06:37:57.781+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7497669332282002720
+[2025-05-21T06:37:57.781+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7497348675073559840
+[2025-05-21T06:37:57.781+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7487893447035161878
+[2025-05-21T06:37:57.781+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7496603951408614689
+[2025-05-21T06:37:57.781+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@cartoonnetworkuk/video/7496245759805885729
+[2025-05-21T06:37:57.797+0000] {logging_mixin.py:190} INFO - New videos: 35
+[2025-05-21T06:37:57.945+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'cartoonnetworkuk', 'new_links': ('https://www.tiktok.com/@cartoonnetworkuk/video/7505137896332987681', 'https://www.tiktok.com/@cartoonnetworkuk/video/7501385258584100128', 'https://www.tiktok.com/@cartoonnetworkuk/video/7497348675073559840', 'https://www.tiktok.com/@cartoonnetworkuk/video/7498071607529737504', 'https://www.tiktok.com/@cartoonnetworkuk/video/7499947330615938336', 'https://www.tiktok.com/@cartoonnetworkuk/video/7505855837378727200', 'https://www.tiktok.com/@cartoonnetworkuk/video/7504401118559046944', 'https://www.tiktok.com/@cartoonnetworkuk/video/7497669332282002720', 'https://www.tiktok.com/@cartoonnetworkuk/video/7496603951408614689', 'https://www.tiktok.com/@cartoonnetworkuk/video/7504725359221509408', 'https://www.tiktok.com/@cartoonnetworkuk/video/7496245759805885729', 'https://www.tiktok.com/@cartoonnetworkuk/video/7500272660954271009', 'https://www.tiktok.com/@cartoonnetworkuk/video/7487893447035161878', 'https://www.tiktok.com/@cartoonnetworkuk/video/7501029044704529696', 'https://www.tiktok.com/@cartoonnetworkuk/video/7503985060601728289', 'https://www.tiktok.com/@cartoonnetworkuk/video/7501801049947245856', 'https://www.tiktok.com/@cartoonnetworkuk/video/7503266879117610272', 'https://www.tiktok.com/@cartoonnetworkuk/video/7500664344703667489', 'https://www.tiktok.com/@cartoonnetworkuk/video/7505037231783038230', 'https://www.tiktok.com/@cartoonnetworkuk/video/7498425852967800097', 'https://www.tiktok.com/@cartoonnetworkuk/video/7496830463068179734', 'https://www.tiktok.com/@cartoonnetworkuk/video/7498066079965547809', 'https://www.tiktok.com/@cartoonnetworkuk/video/7498795650230914337', 'https://www.tiktok.com/@cartoonnetworkuk/video/7504364303961591073', 'https://www.tiktok.com/@cartoonnetworkuk/video/7505096385545375008', 'https://www.tiktok.com/@cartoonnetworkuk/video/7502869576393198881', 'https://www.tiktok.com/@cartoonnetworkuk/video/7506137888069815584', 'https://www.tiktok.com/@cartoonnetworkuk/video/7506638191013727520', 'https://www.tiktok.com/@cartoonnetworkuk/video/7499206428020722977', 'https://www.tiktok.com/@cartoonnetworkuk/video/7497198326870330646', 'https://www.tiktok.com/@cartoonnetworkuk/video/7503624535611165985', 'https://www.tiktok.com/@cartoonnetworkuk/video/7505209606847597857', 'https://www.tiktok.com/@cartoonnetworkuk/video/7500670724957277473', 'https://www.tiktok.com/@cartoonnetworkuk/video/7496832016525036822', 'https://www.tiktok.com/@cartoonnetworkuk/video/7502544838810750240')}
+[2025-05-21T06:37:57.964+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-21T06:37:57.965+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tiktok_videos_scraper_dag, task_id=get_links_task, run_id=manual__2025-05-21T06:37:48.120383+00:00, execution_date=20250521T063748, start_date=20250521T063750, end_date=20250521T063757
+[2025-05-21T06:37:57.985+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-21T06:37:58.003+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-21T06:37:58.005+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

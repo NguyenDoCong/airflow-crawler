@@ -1,0 +1,26 @@
+[2025-05-21T09:23:05.202+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-21T09:23:05.214+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.facebook_videos_scraper_task manual__2025-05-21T09:23:03.098684+00:00 [queued]>
+[2025-05-21T09:23:05.219+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.facebook_videos_scraper_task manual__2025-05-21T09:23:03.098684+00:00 [queued]>
+[2025-05-21T09:23:05.219+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-21T09:23:05.229+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): facebook_videos_scraper_task> on 2025-05-21 09:23:03.098684+00:00
+[2025-05-21T09:23:05.234+0000] {standard_task_runner.py:72} INFO - Started process 548885 to run task
+[2025-05-21T09:23:05.237+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'facebook_videos_scraper_task', 'manual__2025-05-21T09:23:03.098684+00:00', '--job-id', '6454', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_fb.py', '--cfg-path', '/tmp/tmpcfmwq_w3']
+[2025-05-21T09:23:05.239+0000] {standard_task_runner.py:105} INFO - Job 6454: Subtask facebook_videos_scraper_task
+[2025-05-21T09:23:05.276+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.facebook_videos_scraper_task manual__2025-05-21T09:23:03.098684+00:00 [running]> on host 40367d170eab
+[2025-05-21T09:23:05.333+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='facebook_videos_scraper_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-21T09:23:03.098684+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-21T09:23:03.098684+00:00'
+[2025-05-21T09:23:05.334+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-21T09:23:05.352+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.94); currently, chromedriver 136.0.7103.94 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-21T09:23:06.832+0000] {logging_mixin.py:190} INFO - Step 1 of 3 - Load cookies
+[2025-05-21T09:23:14.308+0000] {logging_mixin.py:190} INFO - Step 2 of 3 - Scrolling page
+[2025-05-21T09:23:14.308+0000] {logging_mixin.py:190} INFO - Scrolling 10 iterations...
+[2025-05-21T09:23:17.323+0000] {logging_mixin.py:190} INFO - Scrolled 1 iterations
+[2025-05-21T09:23:17.323+0000] {logging_mixin.py:190} INFO - Step 3 of 3 - Extract videos urls
+[2025-05-21T09:23:17.332+0000] {logging_mixin.py:190} INFO - Found 28 a tags
+[2025-05-21T09:23:17.514+0000] {logging_mixin.py:190} INFO - Found 0 href elements
+[2025-05-21T09:23:17.515+0000] {logging_mixin.py:190} INFO -  No data found
+[2025-05-21T09:23:17.641+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'hoaminzy_hoadambut', 'new_links': []}
+[2025-05-21T09:23:17.662+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-21T09:23:17.662+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=facebook_videos_scraper_dag, task_id=facebook_videos_scraper_task, run_id=manual__2025-05-21T09:23:03.098684+00:00, execution_date=20250521T092303, start_date=20250521T092305, end_date=20250521T092317
+[2025-05-21T09:23:17.681+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-21T09:23:17.699+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-21T09:23:17.701+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

@@ -13,3 +13,7 @@ ffmpeg
 asyncpg
 faster-whisper==1.1.1
 # sqlalchemy>=2.0.0,<3.0
+# torch
+# torchvision
+# torchaudio
+

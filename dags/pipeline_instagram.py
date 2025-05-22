@@ -2,6 +2,7 @@ from airflow import DAG
 from airflow.utils.dates import days_ago
 from dags.tasks.instagram_scraper import instagram_videos_scraper
 from tasks.get_transcript import audio_to_transcript
+from tasks.batch_download import batch_download
 from config import Config
 from airflow.operators.python import PythonOperator
 
@@ -9,7 +10,7 @@ from airflow.operators.python import PythonOperator
        
 def run_instagram_videos_scraper(**context):
     conf = context["dag_run"].conf or {}
-    id = conf.get("id", "hoaminzy_hoadambut")
+    id = conf.get("id", "cristiano")
     scrolls = conf.get("count", 10)
     return instagram_videos_scraper(
         id=id,
@@ -23,10 +24,17 @@ with DAG(
     catchup=False,
 ) as dag:
 
-    downloads = PythonOperator(
-        task_id="instagram_videos_scraper_task",
+    urls = PythonOperator(
+        task_id="get_links_task",
         provide_context=True,
         python_callable=run_instagram_videos_scraper,
+    )
+
+    downloads = PythonOperator(
+        task_id="batch_download_task",
+        python_callable=batch_download,
+        provide_context=True,
+        op_kwargs={"platform": "instagram"},
     )
 
     transcript = PythonOperator(
@@ -36,6 +44,6 @@ with DAG(
         op_kwargs={"platform": "instagram"},
     )
 
-    downloads >> transcript
+    urls >> downloads >> transcript
 
 

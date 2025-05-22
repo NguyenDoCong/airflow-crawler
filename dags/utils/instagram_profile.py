@@ -78,7 +78,7 @@ class ProfileScraper(BaseInstagramScraper):
             list: List of downloaded video results
             list: Empty list if no new videos or error occurs
         """
-        results = []
+        # results = []
         try:
             rprint(f"[bold]Step 1 of 2 - Loading profile page[/bold]")
             video_urls = self.extract_videos(scrolls=scrolls)
@@ -86,7 +86,7 @@ class ProfileScraper(BaseInstagramScraper):
             if not video_urls:
                 print_no_data_info()
                 self.success = False
-                return []
+                return {'id': id, 'new_links': []}
                 
             rprint(f"[bold]Step 2 of 2 - Downloading and saving videos [/bold]")
             rprint("[bold red]Don't close the app![/bold red] Saving scraped data to database, it can take a while!")
@@ -98,33 +98,33 @@ class ProfileScraper(BaseInstagramScraper):
                     video_urls.remove(video.url)
             
             new_links = set(video_urls)
-            print(f"New videos to download: {len(new_links)}")
+            print(f"New videos: {len(new_links)}")
 
             if not new_links:
                 self.success = True
-                return []
+                return {'id': id, 'new_links': []}
 
-            for link in new_links:
-                try:
-                    video_id = extract_id(link)
-                    task_id = create_pending_video(video_id, id, link, platform='instagram')
-                    file_path = download_video(link, Config.DOWNLOAD_DIRECTORY)
+            # for link in new_links:
+            #     try:
+            #         video_id = extract_id(link)
+            #         task_id = create_pending_video(video_id, id, link, platform='instagram')
+            #         file_path = download_video(link, Config.DOWNLOAD_DIRECTORY)
                     
-                    if file_path:
-                        update_video_status(video_id, TaskStatus.PROCESSING.value, platform="instagram")
-                        result = {
-                            "video_id": video_id,
-                            "file_path": file_path,
-                        }
-                        print(f"Downloaded video {result['video_id']} to {result['file_path']}")
-                        results.append(result)
-                    else:
-                        update_video_status(video_id, TaskStatus.FAILURE.value, platform="instagram", logs="Error downloading video")
-                except Exception as e:
-                    rprint(f"Error downloading video {link}: {str(e)}")
-                    continue
+            #         if file_path:
+            #             update_video_status(video_id, TaskStatus.PROCESSING.value, platform="instagram")
+            #             result = {
+            #                 "video_id": video_id,
+            #                 "file_path": file_path,
+            #             }
+            #             print(f"Downloaded video {result['video_id']} to {result['file_path']}")
+            #             results.append(result)
+            #         else:
+            #             update_video_status(video_id, TaskStatus.FAILURE.value, platform="instagram", logs="Error downloading video")
+            #     except Exception as e:
+            #         rprint(f"Error downloading video {link}: {str(e)}")
+            #         continue
 
-            print(f"Downloaded {len(results)} new videos.")
+            # print(f"Downloaded {len(results)} new videos.")
             self.success = True
 
         except Exception as e:
@@ -138,4 +138,4 @@ class ProfileScraper(BaseInstagramScraper):
                 except:
                     pass
 
-        return results  # Always return results list, even if empty
+        return {'id': id, 'new_links': new_links}

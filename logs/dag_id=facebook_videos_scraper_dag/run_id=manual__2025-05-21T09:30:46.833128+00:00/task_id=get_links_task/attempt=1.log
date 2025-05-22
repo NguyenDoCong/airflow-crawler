@@ -1,0 +1,129 @@
+[2025-05-21T09:30:48.479+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-21T09:30:48.491+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.get_links_task manual__2025-05-21T09:30:46.833128+00:00 [queued]>
+[2025-05-21T09:30:48.495+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.get_links_task manual__2025-05-21T09:30:46.833128+00:00 [queued]>
+[2025-05-21T09:30:48.496+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-21T09:30:48.503+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-21 09:30:46.833128+00:00
+[2025-05-21T09:30:48.508+0000] {standard_task_runner.py:72} INFO - Started process 549352 to run task
+[2025-05-21T09:30:48.511+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'get_links_task', 'manual__2025-05-21T09:30:46.833128+00:00', '--job-id', '6459', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_fb.py', '--cfg-path', '/tmp/tmphktrn_xf']
+[2025-05-21T09:30:48.512+0000] {standard_task_runner.py:105} INFO - Job 6459: Subtask get_links_task
+[2025-05-21T09:30:48.549+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.get_links_task manual__2025-05-21T09:30:46.833128+00:00 [running]> on host 40367d170eab
+[2025-05-21T09:30:48.602+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-21T09:30:46.833128+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-21T09:30:46.833128+00:00'
+[2025-05-21T09:30:48.603+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-21T09:30:48.640+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.94); currently, chromedriver 136.0.7103.94 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-21T09:30:50.990+0000] {logging_mixin.py:190} INFO - Step 1 of 3 - Load cookies
+[2025-05-21T09:30:51.704+0000] {logging_mixin.py:190} INFO - Step 2 of 3 - Scrolling page
+[2025-05-21T09:30:51.704+0000] {logging_mixin.py:190} INFO - Scrolling 1 iterations...
+[2025-05-21T09:31:02.427+0000] {logging_mixin.py:190} INFO - Scrolling stopped after 2 iterations
+[2025-05-21T09:31:02.429+0000] {logging_mixin.py:190} INFO - Scrolled 2 iterations
+[2025-05-21T09:31:02.429+0000] {logging_mixin.py:190} INFO - Step 3 of 3 - Extract videos urls
+[2025-05-21T09:31:02.445+0000] {logging_mixin.py:190} INFO - Found 133 a tags
+[2025-05-21T09:31:02.654+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/100044296486382/videos/1997228630685659
+[2025-05-21T09:31:02.675+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1997228630685659/?comment_id=1005421465035827&__tn__=R]
+[2025-05-21T09:31:02.681+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1997228630685659/
+[2025-05-21T09:31:02.694+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/674924271811786/
+[2025-05-21T09:31:02.706+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1024593736262875/
+[2025-05-21T09:31:02.720+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/688789503677491/
+[2025-05-21T09:31:02.734+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1208140004080231/
+[2025-05-21T09:31:02.746+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1879333049588928/
+[2025-05-21T09:31:02.759+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1196438518577544/
+[2025-05-21T09:31:02.771+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/9827700780586152/
+[2025-05-21T09:31:02.782+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1816178135842447/
+[2025-05-21T09:31:02.793+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/527640300344671/
+[2025-05-21T09:31:02.802+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/523300897451556/
+[2025-05-21T09:31:02.812+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1151995439906255/
+[2025-05-21T09:31:02.823+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/963802882477645/
+[2025-05-21T09:31:02.834+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/898428242453133/
+[2025-05-21T09:31:02.846+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1249270299522588/
+[2025-05-21T09:31:02.858+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/9820479977978926/
+[2025-05-21T09:31:02.870+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1100419042099429/
+[2025-05-21T09:31:02.881+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mrbeast/videos/980013393965157/
+[2025-05-21T09:31:02.891+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1270659154270254/
+[2025-05-21T09:31:02.902+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/538980555687742/
+[2025-05-21T09:31:02.913+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1164949147928304/
+[2025-05-21T09:31:02.925+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1222941998905824/
+[2025-05-21T09:31:02.935+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1466029057431774/
+[2025-05-21T09:31:02.945+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/535950725451342/
+[2025-05-21T09:31:02.957+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/446902741685585/
+[2025-05-21T09:31:02.968+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/850346460063365/
+[2025-05-21T09:31:02.978+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1168270047721916/
+[2025-05-21T09:31:02.989+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/3441316972757461/
+[2025-05-21T09:31:02.999+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/398955763130468/
+[2025-05-21T09:31:03.015+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1829761540870002/
+[2025-05-21T09:31:03.026+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1471997206734280/
+[2025-05-21T09:31:03.037+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/358907080069233/
+[2025-05-21T09:31:03.047+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/358726033363404/
+[2025-05-21T09:31:03.057+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/961047662398869/
+[2025-05-21T09:31:03.069+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/416895970990958/
+[2025-05-21T09:31:03.081+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/304223182477429/
+[2025-05-21T09:31:03.095+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1572810920207154/
+[2025-05-21T09:31:03.106+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1497748104416415/
+[2025-05-21T09:31:03.117+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1402114920478428/
+[2025-05-21T09:31:03.127+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/7135790613206285/
+[2025-05-21T09:31:03.137+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1137769474050377/
+[2025-05-21T09:31:03.147+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/855171396382348/
+[2025-05-21T09:31:03.163+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1000426667600304/
+[2025-05-21T09:31:03.174+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/361426836571466/
+[2025-05-21T09:31:03.184+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1447067379561586/
+[2025-05-21T09:31:03.190+0000] {logging_mixin.py:190} INFO - Found 47 href elements
+[2025-05-21T09:31:03.191+0000] {logging_mixin.py:190} INFO -  Scraped data:
+[2025-05-21T09:31:03.191+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/100044296486382/videos/1997228630685659
+[2025-05-21T09:31:03.191+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/Cristiano/videos/1997228630685659/?comment_id=100542146
+5035827&__tn__=R]
+[2025-05-21T09:31:03.192+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1997228630685659/
+[2025-05-21T09:31:03.192+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/674924271811786/
+[2025-05-21T09:31:03.192+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1024593736262875/
+[2025-05-21T09:31:03.193+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/688789503677491/
+[2025-05-21T09:31:03.193+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1208140004080231/
+[2025-05-21T09:31:03.193+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1879333049588928/
+[2025-05-21T09:31:03.193+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1196438518577544/
+[2025-05-21T09:31:03.194+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/9827700780586152/
+[2025-05-21T09:31:03.194+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1816178135842447/
+[2025-05-21T09:31:03.194+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/527640300344671/
+[2025-05-21T09:31:03.194+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/523300897451556/
+[2025-05-21T09:31:03.195+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1151995439906255/
+[2025-05-21T09:31:03.195+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/963802882477645/
+[2025-05-21T09:31:03.195+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/898428242453133/
+[2025-05-21T09:31:03.195+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1249270299522588/
+[2025-05-21T09:31:03.196+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/9820479977978926/
+[2025-05-21T09:31:03.196+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1100419042099429/
+[2025-05-21T09:31:03.196+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mrbeast/videos/980013393965157/
+[2025-05-21T09:31:03.197+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1270659154270254/
+[2025-05-21T09:31:03.197+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/538980555687742/
+[2025-05-21T09:31:03.197+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1164949147928304/
+[2025-05-21T09:31:03.198+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1222941998905824/
+[2025-05-21T09:31:03.198+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1466029057431774/
+[2025-05-21T09:31:03.198+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/535950725451342/
+[2025-05-21T09:31:03.198+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/446902741685585/
+[2025-05-21T09:31:03.199+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/850346460063365/
+[2025-05-21T09:31:03.199+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1168270047721916/
+[2025-05-21T09:31:03.199+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/3441316972757461/
+[2025-05-21T09:31:03.199+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/398955763130468/
+[2025-05-21T09:31:03.200+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1829761540870002/
+[2025-05-21T09:31:03.200+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1471997206734280/
+[2025-05-21T09:31:03.200+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/358907080069233/
+[2025-05-21T09:31:03.200+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/358726033363404/
+[2025-05-21T09:31:03.201+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/961047662398869/
+[2025-05-21T09:31:03.201+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/416895970990958/
+[2025-05-21T09:31:03.201+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/304223182477429/
+[2025-05-21T09:31:03.202+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1572810920207154/
+[2025-05-21T09:31:03.202+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1497748104416415/
+[2025-05-21T09:31:03.202+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1402114920478428/
+[2025-05-21T09:31:03.202+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/7135790613206285/
+[2025-05-21T09:31:03.203+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1137769474050377/
+[2025-05-21T09:31:03.203+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/855171396382348/
+[2025-05-21T09:31:03.203+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1000426667600304/
+[2025-05-21T09:31:03.204+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/361426836571466/
+[2025-05-21T09:31:03.204+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1447067379561586/
+[2025-05-21T09:31:03.204+0000] {logging_mixin.py:190} INFO - Don't close the app! Saving scraped data to database, it can take a while!
+[2025-05-21T09:31:03.214+0000] {warnings.py:109} WARNING - /opt/airflow/dags/app/core/database_utils.py:38: SAWarning: SELECT statement has a cartesian product between FROM element(s) "tiktok" and FROM element "facebook".  Apply join condition(s) between each element to resolve.
+  return db.query(Facebook).filter(Tiktok.status == TaskStatus.SUCCESS.value).all()
+
+[2025-05-21T09:31:03.536+0000] {logging_mixin.py:190} INFO - Remaining new videos: 8
+[2025-05-21T09:31:03.537+0000] {logging_mixin.py:190} INFO - New videos: 8
+[2025-05-21T09:31:03.777+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'Cristiano', 'new_links': ('https://www.facebook.com/Cristiano/videos/1997228630685659/', 'https://www.facebook.com/Cristiano/videos/1137769474050377/', 'https://www.facebook.com/Cristiano/videos/7135790613206285/', 'https://www.facebook.com/Cristiano/videos/1997228630685659/?comment_id=1005421465035827&__tn__=R]', 'https://www.facebook.com/Cristiano/videos/1447067379561586/', 'https://www.facebook.com/Cristiano/videos/1000426667600304/', 'https://www.facebook.com/Cristiano/videos/361426836571466/', 'https://www.facebook.com/Cristiano/videos/855171396382348/')}
+[2025-05-21T09:31:03.796+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-21T09:31:03.797+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=facebook_videos_scraper_dag, task_id=get_links_task, run_id=manual__2025-05-21T09:30:46.833128+00:00, execution_date=20250521T093046, start_date=20250521T093048, end_date=20250521T093103
+[2025-05-21T09:31:03.827+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-21T09:31:03.844+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-21T09:31:03.846+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

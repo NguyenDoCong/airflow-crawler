@@ -105,45 +105,6 @@ def ensure_internet_connection():
 #         counter += 1
 #     return filename
 
-# def batch_download_from_file(file_path, download_directory, platform=None):
-#     """Read URLs from a text file and download them concurrently."""
-#     print(f"Reading URLs from {file_path}...")
-
-#     import asyncio
-#     from tqdm.asyncio import tqdm_asyncio
-#     from .download_tiktok import main as download_tiktok
-
-#     # Ensure the download directory exists
-#     if not os.path.exists(file_path):
-#         os.makedirs(os.path.dirname(file_path), exist_ok=True)                
-
-#     # Read all lines and clean up empty lines
-#     with open(file_path, "r") as file:
-#         urls = [line.strip() for line in file.readlines() if line.strip()]
-
-#     if not urls:
-#         print("No URLs found in the file.")
-#         return
-
-#     print("Starting batch download...")
-
-#     if platform == "tiktok":
-
-#         # async with TikTokApi() as api:
-#         #     await api.create_sessions(ms_tokens=ms_tokens, num_sessions=1, sleep_after=3, browser=os.getenv("TIKTOK_BROWSER", "chromium"))
-#         tasks = [download_tiktok(url) for url in urls]
-#         tqdm_asyncio.gather(*tasks, desc="Facebook/Youtube/Tiktok/Instagram Batch")
-#     else:
-#         with ThreadPoolExecutor() as executor:
-#             list(
-#                 tqdm(
-#                     executor.map(partial(download_video, download_directory=download_directory), urls),
-#                     total=len(urls),
-#                     desc="Facebook/Youtube/Tiktok/Instagram Batch",
-#                 )
-#             )
-
-#     print("Download complete.")
 
 # def extract_id(url):
     

@@ -1,0 +1,56 @@
+[2025-05-21T03:42:24.029+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-21T03:42:24.040+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-21T03:42:22.890168+00:00 [queued]>
+[2025-05-21T03:42:24.045+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-21T03:42:22.890168+00:00 [queued]>
+[2025-05-21T03:42:24.046+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-21T03:42:24.055+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): tiktok_videos_scraper_task> on 2025-05-21 03:42:22.890168+00:00
+[2025-05-21T03:42:24.058+0000] {standard_task_runner.py:72} INFO - Started process 11097 to run task
+[2025-05-21T03:42:24.061+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'tiktok_videos_scraper_task', 'manual__2025-05-21T03:42:22.890168+00:00', '--job-id', '6373', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpcx048fhg']
+[2025-05-21T03:42:24.062+0000] {standard_task_runner.py:105} INFO - Job 6373: Subtask tiktok_videos_scraper_task
+[2025-05-21T03:42:24.100+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.tiktok_videos_scraper_task manual__2025-05-21T03:42:22.890168+00:00 [running]> on host 05534d39966d
+[2025-05-21T03:42:24.162+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='tiktok_videos_scraper_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-21T03:42:22.890168+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-21T03:42:22.890168+00:00'
+[2025-05-21T03:42:24.163+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-21T03:42:30.171+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7503785799134072071
+[2025-05-21T03:42:30.171+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7499861166949190919
+[2025-05-21T03:42:30.171+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7497540084518948112
+[2025-05-21T03:42:30.171+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506724898811677960
+[2025-05-21T03:42:30.172+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506733660381465864
+[2025-05-21T03:42:30.172+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506729952302091528
+[2025-05-21T03:42:30.172+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506726169073503496
+[2025-05-21T03:42:30.172+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506722746110364946
+[2025-05-21T03:42:30.172+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506718858355412231
+[2025-05-21T03:42:30.172+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506715940025912594
+[2025-05-21T03:42:30.172+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506550462569647376
+[2025-05-21T03:42:30.172+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506518649008704784
+[2025-05-21T03:42:30.172+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506455906419363079
+[2025-05-21T03:42:30.172+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506507543510895889
+[2025-05-21T03:42:30.173+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506464279885925650
+[2025-05-21T03:42:30.173+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506495747819425041
+[2025-05-21T03:42:30.173+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506486828397071623
+[2025-05-21T03:42:30.173+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506458737792781576
+[2025-05-21T03:42:30.173+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506454837140229383
+[2025-05-21T03:42:30.173+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506449831825804551
+[2025-05-21T03:42:30.173+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506447040696634631
+[2025-05-21T03:42:30.173+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506434091961650450
+[2025-05-21T03:42:30.174+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506428389113351432
+[2025-05-21T03:42:30.174+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506425673435892999
+[2025-05-21T03:42:30.174+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506423569455385864
+[2025-05-21T03:42:30.174+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506373720752196872
+[2025-05-21T03:42:30.174+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506364785957620999
+[2025-05-21T03:42:30.174+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506358331393494290
+[2025-05-21T03:42:30.174+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506353118502784264
+[2025-05-21T03:42:30.174+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506169685138738450
+[2025-05-21T03:42:30.174+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506151752748584210
+[2025-05-21T03:42:30.174+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506146972768685330
+[2025-05-21T03:42:30.174+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506143961656888583
+[2025-05-21T03:42:30.174+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506137110676622610
+[2025-05-21T03:42:30.174+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506131346826267911
+[2025-05-21T03:42:30.174+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506117950345497864
+[2025-05-21T03:42:30.174+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506102333001059591
+[2025-05-21T03:42:30.175+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@hanoinews.theanh28/video/7506091673454152978
+[2025-05-21T03:42:30.186+0000] {logging_mixin.py:190} INFO - New videos: 38
+[2025-05-21T03:42:30.424+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'hanoinews.theanh28', 'new_links': ('https://www.tiktok.com/@hanoinews.theanh28/video/7506715940025912594', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506454837140229383', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506449831825804551', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506146972768685330', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506143961656888583', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506102333001059591', 'https://www.tiktok.com/@hanoinews.theanh28/video/7497540084518948112', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506718858355412231', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506464279885925650', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506423569455385864', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506364785957620999', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506722746110364946', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506358331393494290', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506518649008704784', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506733660381465864', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506091673454152978', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506428389113351432', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506169685138738450', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506507543510895889', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506729952302091528', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506726169073503496', 'https://www.tiktok.com/@hanoinews.theanh28/video/7499861166949190919', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506131346826267911', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506425673435892999', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506117950345497864', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506458737792781576', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506353118502784264', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506434091961650450', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506137110676622610', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506724898811677960', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506486828397071623', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506447040696634631', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506151752748584210', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506550462569647376', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506495747819425041', 'https://www.tiktok.com/@hanoinews.theanh28/video/7503785799134072071', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506373720752196872', 'https://www.tiktok.com/@hanoinews.theanh28/video/7506455906419363079')}
+[2025-05-21T03:42:30.442+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-21T03:42:30.442+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tiktok_videos_scraper_dag, task_id=tiktok_videos_scraper_task, run_id=manual__2025-05-21T03:42:22.890168+00:00, execution_date=20250521T034222, start_date=20250521T034224, end_date=20250521T034230
+[2025-05-21T03:42:30.467+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-21T03:42:30.483+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-21T03:42:30.485+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

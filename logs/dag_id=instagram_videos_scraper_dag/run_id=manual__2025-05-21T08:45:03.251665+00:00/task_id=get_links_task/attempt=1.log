@@ -1,0 +1,155 @@
+[2025-05-21T08:45:05.158+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-21T08:45:05.171+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.get_links_task manual__2025-05-21T08:45:03.251665+00:00 [queued]>
+[2025-05-21T08:45:05.176+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.get_links_task manual__2025-05-21T08:45:03.251665+00:00 [queued]>
+[2025-05-21T08:45:05.176+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-21T08:45:05.184+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-21 08:45:03.251665+00:00
+[2025-05-21T08:45:05.189+0000] {standard_task_runner.py:72} INFO - Started process 257366 to run task
+[2025-05-21T08:45:05.192+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'instagram_videos_scraper_dag', 'get_links_task', 'manual__2025-05-21T08:45:03.251665+00:00', '--job-id', '6437', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_instagram.py', '--cfg-path', '/tmp/tmp_53z96mh']
+[2025-05-21T08:45:05.194+0000] {standard_task_runner.py:105} INFO - Job 6437: Subtask get_links_task
+[2025-05-21T08:45:05.233+0000] {task_command.py:467} INFO - Running <TaskInstance: instagram_videos_scraper_dag.get_links_task manual__2025-05-21T08:45:03.251665+00:00 [running]> on host 40367d170eab
+[2025-05-21T08:45:05.288+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='instagram_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-21T08:45:03.251665+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-21T08:45:03.251665+00:00'
+[2025-05-21T08:45:05.290+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-21T08:45:05.382+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.94); currently, chromedriver 136.0.7103.94 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-21T08:45:09.703+0000] {logging_mixin.py:190} INFO - Step 1 of 2 - Loading profile page
+[2025-05-21T08:45:09.703+0000] {logging_mixin.py:190} INFO - Extracting videos...
+[2025-05-21T08:45:12.769+0000] {logging_mixin.py:190} INFO - Count: 1, Limit: 1
+[2025-05-21T08:45:12.781+0000] {logging_mixin.py:190} INFO - Found 45 video tags
+[2025-05-21T08:45:12.837+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DJ4FVI4sgzj/
+[2025-05-21T08:45:12.843+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DJmRU0zue0i/
+[2025-05-21T08:45:12.849+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DJRyQeGslC9/
+[2025-05-21T08:45:12.856+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DI_2OjSM_tD/
+[2025-05-21T08:45:12.864+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DIjN4__trTw/
+[2025-05-21T08:45:12.870+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DHOj889NIXc/
+[2025-05-21T08:45:12.876+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DGnnhjNJdbS/
+[2025-05-21T08:45:12.882+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DGlCiX-NUcI/
+[2025-05-21T08:45:12.888+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DGHDuXiSs-K/
+[2025-05-21T08:45:12.895+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DF8bjTzNg2j/
+[2025-05-21T08:45:12.900+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DF794ZItIFC/
+[2025-05-21T08:45:12.906+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/leomessi/reel/DF4HckEM6Dj/
+[2025-05-21T08:45:13.224+0000] {logging_mixin.py:190} INFO - Scrolled 1 iterations
+[2025-05-21T08:45:14.052+0000] {logging_mixin.py:190} INFO - Count: 2, Limit: 1
+[2025-05-21T08:45:14.067+0000] {logging_mixin.py:190} INFO - Scrolling stopped after 10 iterations
+[2025-05-21T08:45:14.067+0000] {logging_mixin.py:190} INFO - Extracted 12 video URLs
+[2025-05-21T08:45:14.067+0000] {logging_mixin.py:190} INFO - Step 2 of 2 - Downloading and saving videos
+[2025-05-21T08:45:14.068+0000] {logging_mixin.py:190} INFO - Don't close the app! Saving scraped data to database, it can take a while!
+[2025-05-21T08:45:22.297+0000] {job.py:229} INFO - Heartbeat recovered after 12.03 seconds
+[2025-05-21T08:47:33.743+0000] {warnings.py:109} WARNING - /opt/airflow/dags/app/core/database_utils.py:34: SAWarning: SELECT statement has a cartesian product between FROM element(s) "instagram" and FROM element "tiktok".  Apply join condition(s) between each element to resolve.
+  return db.query(Instagram).filter(Tiktok.status == TaskStatus.SUCCESS.value).all()
+
+[2025-05-21T08:47:33.909+0000] {logging_mixin.py:190} INFO - New videos to download: 1
+[2025-05-21T08:46:28.167+0000] {job.py:239} ERROR - Job heartbeat failed with error
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "***" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/jobs/job.py", line 233, in heartbeat
+    heartbeat_callback(session)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/jobs/local_task_job_runner.py", line 279, in heartbeat_callback
+    self.task_instance.refresh_from_db()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 2349, in refresh_from_db
+    _refresh_from_db(task_instance=self, session=session, lock_for_update=lock_for_update)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 872, in _refresh_from_db
+    ti = TaskInstance.get_task_instance(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/api_internal/internal_api_call.py", line 139, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 2335, in get_task_instance
+    return query.one_or_none()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2850, in one_or_none
+    return self._iter().one_or_none()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2916, in _iter
+    result = self.session.execute(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "***" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2025-05-21T08:47:34.024+0000] {job.py:254} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2025-05-21T08:47:35.795+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'leomessi', 'new_links': ('https://www.instagram.com/leomessi/reel/DJ4FVI4sgzj/',)}
+[2025-05-21T08:47:35.859+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-21T08:47:35.860+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instagram_videos_scraper_dag, task_id=get_links_task, run_id=manual__2025-05-21T08:45:03.251665+00:00, execution_date=20250521T084503, start_date=20250521T084505, end_date=20250521T084735
+[2025-05-21T08:47:35.926+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-21T08:47:35.964+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-21T08:47:35.970+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

@@ -1,0 +1,135 @@
+[2025-05-21T07:07:37.220+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-21T07:07:37.231+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.batch_download_task manual__2025-05-21T07:07:22.097132+00:00 [queued]>
+[2025-05-21T07:07:37.237+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.batch_download_task manual__2025-05-21T07:07:22.097132+00:00 [queued]>
+[2025-05-21T07:07:37.237+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-21T07:07:37.246+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): batch_download_task> on 2025-05-21 07:07:22.097132+00:00
+[2025-05-21T07:07:37.251+0000] {standard_task_runner.py:72} INFO - Started process 1463136 to run task
+[2025-05-21T07:07:37.254+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'batch_download_task', 'manual__2025-05-21T07:07:22.097132+00:00', '--job-id', '6412', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpprqcupao']
+[2025-05-21T07:07:37.256+0000] {standard_task_runner.py:105} INFO - Job 6412: Subtask batch_download_task
+[2025-05-21T07:07:37.293+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.batch_download_task manual__2025-05-21T07:07:22.097132+00:00 [running]> on host 40367d170eab
+[2025-05-21T07:07:37.361+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='batch_download_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-21T07:07:22.097132+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-21T07:07:22.097132+00:00'
+[2025-05-21T07:07:37.362+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-21T07:07:37.364+0000] {logging_mixin.py:190} INFO - Starting batch download...
+[2025-05-21T07:07:37.544+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T07:07:37.544+0000] {logging_mixin.py:190} INFO - Downloading video from 7498293918275095826...
+[2025-05-21T07:07:37.862+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@soobin.hoangson_official/video/7498293918275095826
+[2025-05-21T07:07:37.863+0000] {logging_mixin.py:190} INFO - [TikTok] 7498293918275095826: Downloading webpage
+[2025-05-21T07:07:38.529+0000] {logging_mixin.py:190} INFO - [info] 7498293918275095826: Downloading 1 format(s): bytevc1_1080p_725330-1
+[2025-05-21T07:07:38.767+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7498293918275095826
+[2025-05-21T07:07:38.768+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    2.24MiB at  654.64KiB/s ETA 00:03
+[2025-05-21T07:07:38.768+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    2.24MiB at    1.29MiB/s ETA 00:01
+[2025-05-21T07:07:38.769+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    2.24MiB at    2.41MiB/s ETA 00:00
+[2025-05-21T07:07:38.769+0000] {logging_mixin.py:190} INFO - [download]   0.7% of    2.24MiB at    4.41MiB/s ETA 00:00
+[2025-05-21T07:07:38.774+0000] {logging_mixin.py:190} INFO - [download]   1.4% of    2.24MiB at    3.69MiB/s ETA 00:00
+[2025-05-21T07:07:38.824+0000] {logging_mixin.py:190} INFO - [download]   2.7% of    2.24MiB at    1.07MiB/s ETA 00:02
+[2025-05-21T07:07:38.870+0000] {logging_mixin.py:190} INFO - [download]   5.5% of    2.24MiB at    1.19MiB/s ETA 00:01
+[2025-05-21T07:07:38.910+0000] {logging_mixin.py:190} INFO - [download]  11.1% of    2.24MiB at    1.73MiB/s ETA 00:01
+[2025-05-21T07:07:38.970+0000] {logging_mixin.py:190} INFO - [download]  22.3% of    2.24MiB at    2.45MiB/s ETA 00:00
+[2025-05-21T07:07:39.028+0000] {logging_mixin.py:190} INFO - [download]  44.6% of    2.24MiB at    3.82MiB/s ETA 00:00
+[2025-05-21T07:07:39.153+0000] {logging_mixin.py:190} INFO - [download]  89.3% of    2.24MiB at    5.16MiB/s ETA 00:00
+[2025-05-21T07:07:39.170+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    2.24MiB at    5.54MiB/s ETA 00:00
+[2025-05-21T07:07:39.171+0000] {logging_mixin.py:190} INFO - [download] 100% of    2.24MiB in 00:00:00 at 3.51MiB/s   
+[2025-05-21T07:07:39.531+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7498293918275095826.mp3
+[2025-05-21T07:07:39.872+0000] {logging_mixin.py:190} INFO - Deleting original file data/7498293918275095826 (pass -k to keep)
+[2025-05-21T07:07:39.876+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7498293918275095826
+[2025-05-21T07:07:39.882+0000] {logging_mixin.py:190} INFO - Downloaded video 7498293918275095826 to data/7498293918275095826.mp3
+[2025-05-21T07:07:40.004+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T07:07:40.005+0000] {logging_mixin.py:190} INFO - Downloading video from 7427827016944127239...
+[2025-05-21T07:07:40.036+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@soobin.hoangson_official/video/7427827016944127239
+[2025-05-21T07:07:40.036+0000] {logging_mixin.py:190} INFO - [TikTok] 7427827016944127239: Downloading webpage
+[2025-05-21T07:07:40.668+0000] {logging_mixin.py:190} INFO - [info] 7427827016944127239: Downloading 1 format(s): bytevc1_1080p_1489194-1
+[2025-05-21T07:07:40.902+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7427827016944127239
+[2025-05-21T07:07:40.903+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   12.05MiB at  Unknown B/s ETA Unknown
+[2025-05-21T07:07:40.903+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   12.05MiB at    2.26MiB/s ETA 00:05  
+[2025-05-21T07:07:40.904+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   12.05MiB at    3.83MiB/s ETA 00:03
+[2025-05-21T07:07:40.905+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   12.05MiB at    6.22MiB/s ETA 00:01
+[2025-05-21T07:07:40.905+0000] {logging_mixin.py:190} INFO - [download]   0.3% of   12.05MiB at   10.77MiB/s ETA 00:01
+[2025-05-21T07:07:40.963+0000] {logging_mixin.py:190} INFO - [download]   0.5% of   12.05MiB at    1.01MiB/s ETA 00:11
+[2025-05-21T07:07:41.089+0000] {logging_mixin.py:190} INFO - [download]   1.0% of   12.05MiB at  679.13KiB/s ETA 00:17
+[2025-05-21T07:07:41.093+0000] {logging_mixin.py:190} INFO - [download]   2.1% of   12.05MiB at    1.31MiB/s ETA 00:09
+[2025-05-21T07:07:41.173+0000] {logging_mixin.py:190} INFO - [download]   4.1% of   12.05MiB at    1.85MiB/s ETA 00:06
+[2025-05-21T07:07:41.283+0000] {logging_mixin.py:190} INFO - [download]   8.3% of   12.05MiB at    2.62MiB/s ETA 00:04
+[2025-05-21T07:07:41.463+0000] {logging_mixin.py:190} INFO - [download]  16.6% of   12.05MiB at    3.57MiB/s ETA 00:02
+[2025-05-21T07:07:41.753+0000] {logging_mixin.py:190} INFO - [download]  33.2% of   12.05MiB at    4.70MiB/s ETA 00:01
+[2025-05-21T07:07:42.066+0000] {logging_mixin.py:190} INFO - [download]  66.4% of   12.05MiB at    6.88MiB/s ETA 00:00
+[2025-05-21T07:07:42.468+0000] {logging_mixin.py:190} INFO - [download]  99.6% of   12.05MiB at    7.66MiB/s ETA 00:00
+[2025-05-21T07:07:42.470+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   12.05MiB at    7.69MiB/s ETA 00:00
+[2025-05-21T07:07:42.471+0000] {logging_mixin.py:190} INFO - [download] 100% of   12.05MiB in 00:00:01 at 6.70MiB/s   
+[2025-05-21T07:07:42.518+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7427827016944127239.mp3
+[2025-05-21T07:07:43.337+0000] {logging_mixin.py:190} INFO - Deleting original file data/7427827016944127239 (pass -k to keep)
+[2025-05-21T07:07:43.341+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7427827016944127239
+[2025-05-21T07:07:43.347+0000] {logging_mixin.py:190} INFO - Downloaded video 7427827016944127239 to data/7427827016944127239.mp3
+[2025-05-21T07:07:43.474+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T07:07:43.474+0000] {logging_mixin.py:190} INFO - Downloading video from 7506164182140669191...
+[2025-05-21T07:07:43.506+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@soobin.hoangson_official/video/7506164182140669191
+[2025-05-21T07:07:43.507+0000] {logging_mixin.py:190} INFO - [TikTok] 7506164182140669191: Downloading webpage
+[2025-05-21T07:07:44.152+0000] {logging_mixin.py:190} INFO - [info] 7506164182140669191: Downloading 1 format(s): bytevc1_1080p_833385-1
+[2025-05-21T07:07:44.395+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7506164182140669191
+[2025-05-21T07:07:44.396+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    7.83MiB at  Unknown B/s ETA Unknown
+[2025-05-21T07:07:44.397+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    7.83MiB at    2.31MiB/s ETA 00:03  
+[2025-05-21T07:07:44.397+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    7.83MiB at    3.84MiB/s ETA 00:02
+[2025-05-21T07:07:44.398+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    7.83MiB at    5.54MiB/s ETA 00:01
+[2025-05-21T07:07:44.401+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    7.83MiB at    5.41MiB/s ETA 00:01
+[2025-05-21T07:07:44.441+0000] {logging_mixin.py:190} INFO - [download]   0.8% of    7.83MiB at    1.35MiB/s ETA 00:05
+[2025-05-21T07:07:44.484+0000] {logging_mixin.py:190} INFO - [download]   1.6% of    7.83MiB at    1.40MiB/s ETA 00:05
+[2025-05-21T07:07:44.517+0000] {logging_mixin.py:190} INFO - [download]   3.2% of    7.83MiB at    2.06MiB/s ETA 00:03
+[2025-05-21T07:07:44.569+0000] {logging_mixin.py:190} INFO - [download]   6.4% of    7.83MiB at    2.88MiB/s ETA 00:02
+[2025-05-21T07:07:44.621+0000] {logging_mixin.py:190} INFO - [download]  12.8% of    7.83MiB at    4.43MiB/s ETA 00:01
+[2025-05-21T07:07:44.774+0000] {logging_mixin.py:190} INFO - [download]  25.5% of    7.83MiB at    5.28MiB/s ETA 00:01
+[2025-05-21T07:07:45.002+0000] {logging_mixin.py:190} INFO - [download]  51.1% of    7.83MiB at    6.59MiB/s ETA 00:00
+[2025-05-21T07:07:45.340+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    7.83MiB at    8.29MiB/s ETA 00:00
+[2025-05-21T07:07:45.341+0000] {logging_mixin.py:190} INFO - [download] 100% of    7.83MiB in 00:00:01 at 6.60MiB/s   
+[2025-05-21T07:07:45.390+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7506164182140669191.mp3
+[2025-05-21T07:07:43.810+0000] {logging_mixin.py:190} INFO - Deleting original file data/7506164182140669191 (pass -k to keep)
+[2025-05-21T07:07:43.814+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7506164182140669191
+[2025-05-21T07:07:43.818+0000] {logging_mixin.py:190} INFO - Downloaded video 7506164182140669191 to data/7506164182140669191.mp3
+[2025-05-21T07:07:43.956+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T07:07:43.956+0000] {logging_mixin.py:190} INFO - Downloading video from 7498581790269918471...
+[2025-05-21T07:07:43.999+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@soobin.hoangson_official/video/7498581790269918471
+[2025-05-21T07:07:43.999+0000] {logging_mixin.py:190} INFO - [TikTok] 7498581790269918471: Downloading webpage
+[2025-05-21T07:07:44.731+0000] {logging_mixin.py:190} INFO - [info] 7498581790269918471: Downloading 1 format(s): bytevc1_1080p_1192174-1
+[2025-05-21T07:07:44.924+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7498581790269918471
+[2025-05-21T07:07:44.924+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    4.15MiB at  Unknown B/s ETA Unknown
+[2025-05-21T07:07:44.925+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    4.15MiB at    2.57MiB/s ETA 00:01  
+[2025-05-21T07:07:44.925+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    4.15MiB at    4.17MiB/s ETA 00:00
+[2025-05-21T07:07:44.926+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    4.15MiB at    5.82MiB/s ETA 00:00
+[2025-05-21T07:07:44.930+0000] {logging_mixin.py:190} INFO - [download]   0.7% of    4.15MiB at    4.85MiB/s ETA 00:00
+[2025-05-21T07:07:44.969+0000] {logging_mixin.py:190} INFO - [download]   1.5% of    4.15MiB at    1.37MiB/s ETA 00:02
+[2025-05-21T07:07:45.013+0000] {logging_mixin.py:190} INFO - [download]   3.0% of    4.15MiB at    1.39MiB/s ETA 00:02
+[2025-05-21T07:07:45.047+0000] {logging_mixin.py:190} INFO - [download]   6.0% of    4.15MiB at    2.03MiB/s ETA 00:01
+[2025-05-21T07:07:45.101+0000] {logging_mixin.py:190} INFO - [download]  12.0% of    4.15MiB at    2.82MiB/s ETA 00:01
+[2025-05-21T07:07:45.151+0000] {logging_mixin.py:190} INFO - [download]  24.1% of    4.15MiB at    4.41MiB/s ETA 00:00
+[2025-05-21T07:07:45.438+0000] {logging_mixin.py:190} INFO - [download]  48.2% of    4.15MiB at    3.89MiB/s ETA 00:00
+[2025-05-21T07:07:45.463+0000] {logging_mixin.py:190} INFO - [download]  96.4% of    4.15MiB at    7.42MiB/s ETA 00:00
+[2025-05-21T07:07:45.469+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    4.15MiB at    7.62MiB/s ETA 00:00
+[2025-05-21T07:07:45.470+0000] {logging_mixin.py:190} INFO - [download] 100% of    4.15MiB in 00:00:00 at 5.65MiB/s   
+[2025-05-21T07:07:45.514+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7498581790269918471.mp3
+[2025-05-21T07:07:45.848+0000] {logging_mixin.py:190} INFO - Deleting original file data/7498581790269918471 (pass -k to keep)
+[2025-05-21T07:07:45.851+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7498581790269918471
+[2025-05-21T07:07:45.871+0000] {logging_mixin.py:190} INFO - Downloaded video 7498581790269918471 to data/7498581790269918471.mp3
+[2025-05-21T07:07:46.076+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T07:07:46.077+0000] {logging_mixin.py:190} INFO - Downloading video from 7498569186038304008...
+[2025-05-21T07:07:46.108+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@soobin.hoangson_official/video/7498569186038304008
+[2025-05-21T07:07:46.108+0000] {logging_mixin.py:190} INFO - [TikTok] 7498569186038304008: Downloading webpage
+[2025-05-21T07:07:46.734+0000] {logging_mixin.py:190} INFO - [info] 7498569186038304008: Downloading 1 format(s): bytevc1_1080p_1263399-1
+[2025-05-21T07:07:47.100+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7498569186038304008
+[2025-05-21T07:07:47.102+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    2.27MiB at  571.43KiB/s ETA 00:04
+[2025-05-21T07:07:47.104+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    2.27MiB at  766.50KiB/s ETA 00:03
+[2025-05-21T07:07:47.105+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    2.27MiB at    1.34MiB/s ETA 00:01
+[2025-05-21T07:07:47.106+0000] {logging_mixin.py:190} INFO - [download]   0.6% of    2.27MiB at    2.48MiB/s ETA 00:00
+[2025-05-21T07:07:47.107+0000] {logging_mixin.py:190} INFO - [download]   1.3% of    2.27MiB at    4.51MiB/s ETA 00:00
+[2025-05-21T07:07:47.152+0000] {logging_mixin.py:190} INFO - [download]   2.7% of    2.27MiB at    1.18MiB/s ETA 00:01
+[2025-05-21T07:07:47.208+0000] {logging_mixin.py:190} INFO - [download]   5.5% of    2.27MiB at    1.15MiB/s ETA 00:01
+[2025-05-21T07:07:47.244+0000] {logging_mixin.py:190} INFO - [download]  11.0% of    2.27MiB at    1.72MiB/s ETA 00:01
+[2025-05-21T07:07:47.305+0000] {logging_mixin.py:190} INFO - [download]  22.0% of    2.27MiB at    2.44MiB/s ETA 00:00
+[2025-05-21T07:07:47.310+0000] {local_task_job_runner.py:341} WARNING - State of this instance has been externally set to upstream_failed. Terminating instance.
+[2025-05-21T07:07:47.311+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2025-05-21T07:07:47.312+0000] {process_utils.py:132} INFO - Sending 15 to group 1463136. PIDs of all processes in the group: [1463136]
+[2025-05-21T07:07:47.312+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 1463136
+[2025-05-21T07:07:47.312+0000] {taskinstance.py:3083} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-05-21T07:07:47.326+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-21T07:07:47.340+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=1463136, status='terminated', exitcode=0, started='07:07:37') (1463136) terminated with exit code 0

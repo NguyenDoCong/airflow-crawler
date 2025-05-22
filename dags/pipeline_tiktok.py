@@ -1,6 +1,7 @@
 from airflow import DAG
 from airflow.utils.dates import days_ago
 from tasks.tiktok_videos_scraper import tiktok_videos_scraper
+from tasks.batch_download import batch_download
 from tasks.get_transcript import audio_to_transcript
 from config import Config
 from airflow.operators.python import PythonOperator
@@ -29,21 +30,24 @@ with DAG(
     catchup=False,
 ) as dag:
 
-    downloads = PythonOperator(
-        task_id="tiktok_videos_scraper_task",
-        # python_callable=tiktok_videos_scraper,
-        # op_args=["hoaminzy_hoadambut", 10, Config.MS_TOKENS, Config.DOWNLOAD_DIRECTORY],
+    urls = PythonOperator(
+        task_id="get_links_task",
         provide_context=True,
         python_callable=run_tiktok_videos_scraper,
     )
 
-    # transcript = audio_to_transcript(downloads, platform="tiktok")
-    transcript = PythonOperator(
-        task_id="audio_to_transcript_task",
-        python_callable=audio_to_transcript,
-        # op_args=[downloads.output],
+    downloads = PythonOperator(
+        task_id="batch_download_task",
+        python_callable=batch_download,
         provide_context=True,
         op_kwargs={"platform": "tiktok"},
     )
 
-    downloads >> transcript
+    transcript = PythonOperator(
+        task_id="audio_to_transcript_task",
+        python_callable=audio_to_transcript,
+        provide_context=True,
+        op_kwargs={"platform": "tiktok"},
+    )
+
+    urls >> downloads >> transcript

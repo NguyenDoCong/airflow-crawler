@@ -1,0 +1,140 @@
+[2025-05-22T02:16:55.021+0000] {processor.py:186} INFO - Started process (PID=39) to work on /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:16:55.022+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_instagram.py for tasks to queue
+[2025-05-22T02:16:55.023+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:16:55.023+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:16:55.344+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:16:55.343+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/pipeline_instagram.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_instagram.py", line 4, in <module>
+    from tasks.get_transcript import audio_to_transcript
+  File "/opt/airflow/dags/tasks/get_transcript.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+[2025-05-22T02:16:55.344+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:16:55.400+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_instagram.py took 0.380 seconds
+[2025-05-22T02:17:25.522+0000] {processor.py:186} INFO - Started process (PID=60) to work on /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:17:25.530+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_instagram.py for tasks to queue
+[2025-05-22T02:17:25.531+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:17:25.531+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:17:25.725+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:17:25.724+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/pipeline_instagram.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_instagram.py", line 4, in <module>
+    from tasks.get_transcript import audio_to_transcript
+  File "/opt/airflow/dags/tasks/get_transcript.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+[2025-05-22T02:17:25.725+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:17:25.736+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_instagram.py took 0.218 seconds
+[2025-05-22T02:17:56.675+0000] {processor.py:186} INFO - Started process (PID=80) to work on /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:17:56.676+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_instagram.py for tasks to queue
+[2025-05-22T02:17:56.677+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:17:56.676+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:17:56.897+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:17:56.897+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/pipeline_instagram.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_instagram.py", line 4, in <module>
+    from tasks.get_transcript import audio_to_transcript
+  File "/opt/airflow/dags/tasks/get_transcript.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+[2025-05-22T02:17:56.897+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:17:56.909+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_instagram.py took 0.239 seconds
+[2025-05-22T02:18:27.679+0000] {processor.py:186} INFO - Started process (PID=100) to work on /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:18:27.680+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_instagram.py for tasks to queue
+[2025-05-22T02:18:27.681+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:18:27.681+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:18:27.965+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:18:27.964+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/pipeline_instagram.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_instagram.py", line 4, in <module>
+    from tasks.get_transcript import audio_to_transcript
+  File "/opt/airflow/dags/tasks/get_transcript.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+[2025-05-22T02:18:27.965+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:18:27.990+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_instagram.py took 0.315 seconds
+[2025-05-22T02:18:58.736+0000] {processor.py:186} INFO - Started process (PID=126) to work on /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:18:58.737+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_instagram.py for tasks to queue
+[2025-05-22T02:18:58.738+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:18:58.737+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:18:58.930+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:18:58.929+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/pipeline_instagram.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_instagram.py", line 4, in <module>
+    from tasks.get_transcript import audio_to_transcript
+  File "/opt/airflow/dags/tasks/get_transcript.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+[2025-05-22T02:18:58.930+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:18:58.942+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_instagram.py took 0.209 seconds
+[2025-05-22T02:19:29.774+0000] {processor.py:186} INFO - Started process (PID=146) to work on /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:19:29.784+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_instagram.py for tasks to queue
+[2025-05-22T02:19:29.785+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:19:29.785+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:19:29.990+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:19:29.990+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/pipeline_instagram.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_instagram.py", line 4, in <module>
+    from tasks.get_transcript import audio_to_transcript
+  File "/opt/airflow/dags/tasks/get_transcript.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+[2025-05-22T02:19:29.991+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:19:30.002+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_instagram.py took 0.232 seconds
+[2025-05-22T02:20:00.748+0000] {processor.py:186} INFO - Started process (PID=166) to work on /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:20:00.748+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_instagram.py for tasks to queue
+[2025-05-22T02:20:00.749+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:20:00.749+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:20:00.951+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:20:00.951+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/pipeline_instagram.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/pipeline_instagram.py", line 4, in <module>
+    from tasks.get_transcript import audio_to_transcript
+  File "/opt/airflow/dags/tasks/get_transcript.py", line 4, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+[2025-05-22T02:20:00.952+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:20:00.974+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_instagram.py took 0.231 seconds
+[2025-05-22T02:20:31.782+0000] {processor.py:186} INFO - Started process (PID=186) to work on /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:20:31.783+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_instagram.py for tasks to queue
+[2025-05-22T02:20:31.784+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:20:31.784+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:20:32.042+0000] {processor.py:925} INFO - DAG(s) 'instagram_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:20:32.237+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:20:32.237+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-22T02:20:32.247+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:20:32.247+0000] {dag.py:4138} INFO - Setting next_dagrun for instagram_videos_scraper_dag to None, run_after=None
+[2025-05-22T02:20:32.261+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_instagram.py took 0.484 seconds
+[2025-05-22T02:21:02.321+0000] {processor.py:186} INFO - Started process (PID=205) to work on /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:21:02.331+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_instagram.py for tasks to queue
+[2025-05-22T02:21:02.332+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:02.331+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:21:02.530+0000] {processor.py:925} INFO - DAG(s) 'instagram_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:21:02.544+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:02.544+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-22T02:21:02.551+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:02.551+0000] {dag.py:4138} INFO - Setting next_dagrun for instagram_videos_scraper_dag to None, run_after=None
+[2025-05-22T02:21:02.561+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_instagram.py took 0.244 seconds
+[2025-05-22T02:21:33.354+0000] {processor.py:186} INFO - Started process (PID=224) to work on /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:21:33.359+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_instagram.py for tasks to queue
+[2025-05-22T02:21:33.360+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:33.360+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:21:33.584+0000] {processor.py:925} INFO - DAG(s) 'instagram_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:21:33.600+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:33.600+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-22T02:21:33.607+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:21:33.607+0000] {dag.py:4138} INFO - Setting next_dagrun for instagram_videos_scraper_dag to None, run_after=None
+[2025-05-22T02:21:33.617+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_instagram.py took 0.269 seconds
+[2025-05-22T02:22:04.122+0000] {processor.py:186} INFO - Started process (PID=244) to work on /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:22:04.122+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/pipeline_instagram.py for tasks to queue
+[2025-05-22T02:22:04.123+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:22:04.123+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:22:04.321+0000] {processor.py:925} INFO - DAG(s) 'instagram_videos_scraper_dag' retrieved from /opt/airflow/dags/pipeline_instagram.py
+[2025-05-22T02:22:04.336+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:22:04.336+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2025-05-22T02:22:04.344+0000] {logging_mixin.py:190} INFO - [2025-05-22T02:22:04.344+0000] {dag.py:4138} INFO - Setting next_dagrun for instagram_videos_scraper_dag to None, run_after=None
+[2025-05-22T02:22:04.354+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/pipeline_instagram.py took 0.237 seconds

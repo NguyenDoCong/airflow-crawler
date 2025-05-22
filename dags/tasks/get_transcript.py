@@ -24,10 +24,10 @@ def audio_to_transcript(**context):
     from faster_whisper import WhisperModel #type: ignore[import]
     
     platform = context.get("platform", "tiktok")
-    task_ids = context.get("task_ids", f"{platform}_videos_scraper_task")
+    # task_ids = context.get("task_ids", f"{platform}_videos_scraper_task")
 
     ti = context["ti"]
-    downloads = ti.xcom_pull(task_ids=task_ids)
+    downloads = ti.xcom_pull(task_ids="batch_download_task")
     if not downloads:
         logging.info("No downloads to process.")
         return
@@ -42,11 +42,10 @@ def audio_to_transcript(**context):
                 id = download["video_id"]
                 audio_path = download["file_path"]
                 logging.info(f"Processing audio file: {audio_path}")
-                
                 # Initialize model
+
                 model_size = "tiny"
-                # model = WhisperModel("large-v3", device="cpu", compute_type="int8")
-                model = WhisperModel(model_size, device="cpu", compute_type="int8")
+                model = WhisperModel(model_size, device=device, compute_type="int8")
                 
                 # Transcribe audio
                 segments, info = model.transcribe(audio_path, beam_size=5)

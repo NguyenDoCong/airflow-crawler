@@ -1,0 +1,995 @@
+[2025-05-21T02:20:18.873+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-21T02:20:18.884+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.facebook_videos_scraper_task manual__2025-05-21T02:20:17.735061+00:00 [queued]>
+[2025-05-21T02:20:18.889+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.facebook_videos_scraper_task manual__2025-05-21T02:20:17.735061+00:00 [queued]>
+[2025-05-21T02:20:18.890+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-21T02:20:18.896+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): facebook_videos_scraper_task> on 2025-05-21 02:20:17.735061+00:00
+[2025-05-21T02:20:18.899+0000] {standard_task_runner.py:72} INFO - Started process 2181 to run task
+[2025-05-21T02:20:18.901+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'facebook_videos_scraper_task', 'manual__2025-05-21T02:20:17.735061+00:00', '--job-id', '6350', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_fb.py', '--cfg-path', '/tmp/tmplcj1sb83']
+[2025-05-21T02:20:18.903+0000] {standard_task_runner.py:105} INFO - Job 6350: Subtask facebook_videos_scraper_task
+[2025-05-21T02:20:18.936+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.facebook_videos_scraper_task manual__2025-05-21T02:20:17.735061+00:00 [running]> on host 05534d39966d
+[2025-05-21T02:20:18.985+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='facebook_videos_scraper_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-21T02:20:17.735061+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-21T02:20:17.735061+00:00'
+[2025-05-21T02:20:18.986+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-21T02:20:19.003+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.94); currently, chromedriver 136.0.7103.94 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-21T02:20:20.980+0000] {logging_mixin.py:190} INFO - Step 1 of 3 - Load cookies
+[2025-05-21T02:20:24.472+0000] {logging_mixin.py:190} INFO - Step 2 of 3 - Scrolling page
+[2025-05-21T02:20:24.472+0000] {logging_mixin.py:190} INFO - Scrolling 1 iterations...
+[2025-05-21T02:20:30.499+0000] {logging_mixin.py:190} INFO - Scrolling stopped after 2 iterations
+[2025-05-21T02:20:30.499+0000] {logging_mixin.py:190} INFO - Scrolled 2 iterations
+[2025-05-21T02:20:30.500+0000] {logging_mixin.py:190} INFO - Step 3 of 3 - Extract videos urls
+[2025-05-21T02:20:30.515+0000] {logging_mixin.py:190} INFO - Found 121 a tags
+[2025-05-21T02:20:30.740+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/100044296486382/videos/1997228630685659
+[2025-05-21T02:20:30.754+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1997228630685659/?comment_id=1005421465035827&__tn__=R]
+[2025-05-21T02:20:30.759+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1997228630685659/
+[2025-05-21T02:20:30.768+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/674924271811786/
+[2025-05-21T02:20:30.777+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1024593736262875/
+[2025-05-21T02:20:30.787+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/688789503677491/
+[2025-05-21T02:20:30.796+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1208140004080231/
+[2025-05-21T02:20:30.807+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1879333049588928/
+[2025-05-21T02:20:30.817+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1196438518577544/
+[2025-05-21T02:20:30.826+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/9827700780586152/
+[2025-05-21T02:20:30.838+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1816178135842447/
+[2025-05-21T02:20:30.851+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/527640300344671/
+[2025-05-21T02:20:30.862+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/523300897451556/
+[2025-05-21T02:20:30.872+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1151995439906255/
+[2025-05-21T02:20:30.882+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/963802882477645/
+[2025-05-21T02:20:30.893+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/898428242453133/
+[2025-05-21T02:20:30.904+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1249270299522588/
+[2025-05-21T02:20:30.914+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/9820479977978926/
+[2025-05-21T02:20:30.925+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1100419042099429/
+[2025-05-21T02:20:30.935+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mrbeast/videos/980013393965157/
+[2025-05-21T02:20:30.945+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1270659154270254/
+[2025-05-21T02:20:30.955+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/538980555687742/
+[2025-05-21T02:20:30.966+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1164949147928304/
+[2025-05-21T02:20:30.976+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1222941998905824/
+[2025-05-21T02:20:30.986+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1466029057431774/
+[2025-05-21T02:20:30.995+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/535950725451342/
+[2025-05-21T02:20:31.006+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/446902741685585/
+[2025-05-21T02:20:31.016+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/850346460063365/
+[2025-05-21T02:20:31.027+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1168270047721916/
+[2025-05-21T02:20:31.037+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/3441316972757461/
+[2025-05-21T02:20:31.048+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/398955763130468/
+[2025-05-21T02:20:31.062+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1829761540870002/
+[2025-05-21T02:20:31.074+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1471997206734280/
+[2025-05-21T02:20:31.088+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/358907080069233/
+[2025-05-21T02:20:31.099+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/358726033363404/
+[2025-05-21T02:20:31.111+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/961047662398869/
+[2025-05-21T02:20:31.122+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/416895970990958/
+[2025-05-21T02:20:31.146+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/304223182477429/
+[2025-05-21T02:20:31.177+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1572810920207154/
+[2025-05-21T02:20:31.190+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1497748104416415/
+[2025-05-21T02:20:31.201+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/Cristiano/videos/1402114920478428/
+[2025-05-21T02:20:31.206+0000] {logging_mixin.py:190} INFO - Found 41 href elements
+[2025-05-21T02:20:31.207+0000] {logging_mixin.py:190} INFO -  Scraped data:
+[2025-05-21T02:20:31.207+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/100044296486382/videos/1997228630685659
+[2025-05-21T02:20:31.208+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/Cristiano/videos/1997228630685659/?comment_id=100542146
+5035827&__tn__=R]
+[2025-05-21T02:20:31.208+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1997228630685659/
+[2025-05-21T02:20:31.208+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/674924271811786/
+[2025-05-21T02:20:31.208+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1024593736262875/
+[2025-05-21T02:20:31.209+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/688789503677491/
+[2025-05-21T02:20:31.209+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1208140004080231/
+[2025-05-21T02:20:31.209+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1879333049588928/
+[2025-05-21T02:20:31.210+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1196438518577544/
+[2025-05-21T02:20:31.210+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/9827700780586152/
+[2025-05-21T02:20:31.210+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1816178135842447/
+[2025-05-21T02:20:31.210+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/527640300344671/
+[2025-05-21T02:20:31.211+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/523300897451556/
+[2025-05-21T02:20:31.211+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1151995439906255/
+[2025-05-21T02:20:31.211+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/963802882477645/
+[2025-05-21T02:20:31.211+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/898428242453133/
+[2025-05-21T02:20:31.212+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1249270299522588/
+[2025-05-21T02:20:31.212+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/9820479977978926/
+[2025-05-21T02:20:31.213+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1100419042099429/
+[2025-05-21T02:20:31.213+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mrbeast/videos/980013393965157/
+[2025-05-21T02:20:31.213+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1270659154270254/
+[2025-05-21T02:20:31.214+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/538980555687742/
+[2025-05-21T02:20:31.214+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1164949147928304/
+[2025-05-21T02:20:31.214+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1222941998905824/
+[2025-05-21T02:20:31.215+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1466029057431774/
+[2025-05-21T02:20:31.215+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/535950725451342/
+[2025-05-21T02:20:31.215+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/446902741685585/
+[2025-05-21T02:20:31.216+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/850346460063365/
+[2025-05-21T02:20:31.216+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1168270047721916/
+[2025-05-21T02:20:31.216+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/3441316972757461/
+[2025-05-21T02:20:31.216+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/398955763130468/
+[2025-05-21T02:20:31.217+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1829761540870002/
+[2025-05-21T02:20:31.217+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1471997206734280/
+[2025-05-21T02:20:31.217+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/358907080069233/
+[2025-05-21T02:20:31.217+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/358726033363404/
+[2025-05-21T02:20:31.218+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/961047662398869/
+[2025-05-21T02:20:31.218+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/416895970990958/
+[2025-05-21T02:20:31.218+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/304223182477429/
+[2025-05-21T02:20:31.219+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1572810920207154/
+[2025-05-21T02:20:31.219+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1497748104416415/
+[2025-05-21T02:20:31.219+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/Cristiano/videos/1402114920478428/
+[2025-05-21T02:20:31.220+0000] {logging_mixin.py:190} INFO - Don't close the app! Saving scraped data to database, it can take a while!
+[2025-05-21T02:20:31.231+0000] {warnings.py:109} WARNING - /opt/airflow/dags/app/core/database_utils.py:38: SAWarning: SELECT statement has a cartesian product between FROM element(s) "facebook" and FROM element "tiktok".  Apply join condition(s) between each element to resolve.
+  return db.query(Facebook).filter(Tiktok.status == TaskStatus.SUCCESS.value).all()
+
+[2025-05-21T02:20:31.254+0000] {logging_mixin.py:190} INFO - Remaining new videos: 41
+[2025-05-21T02:20:31.254+0000] {logging_mixin.py:190} INFO - New videos: 41
+[2025-05-21T02:20:31.409+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:20:31.409+0000] {logging_mixin.py:190} INFO - Downloading video from 1997228630685659...
+[2025-05-21T02:20:31.642+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/100044296486382/videos/1997228630685659
+[2025-05-21T02:20:31.643+0000] {logging_mixin.py:190} INFO - [facebook] 1997228630685659: Downloading webpage
+[2025-05-21T02:20:32.705+0000] {logging_mixin.py:190} INFO - [info] 1997228630685659: Downloading 1 format(s): 2128676450934187a
+[2025-05-21T02:20:32.821+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1997228630685659
+[2025-05-21T02:20:32.822+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  190.72KiB at  Unknown B/s ETA Unknown
+[2025-05-21T02:20:32.825+0000] {logging_mixin.py:190} INFO - [download]   1.6% of  190.72KiB at  829.51KiB/s ETA 00:00  
+[2025-05-21T02:20:32.825+0000] {logging_mixin.py:190} INFO - [download]   3.7% of  190.72KiB at    1.60MiB/s ETA 00:00
+[2025-05-21T02:20:32.826+0000] {logging_mixin.py:190} INFO - [download]   7.9% of  190.72KiB at    3.09MiB/s ETA 00:00
+[2025-05-21T02:20:32.826+0000] {logging_mixin.py:190} INFO - [download]  16.3% of  190.72KiB at    5.87MiB/s ETA 00:00
+[2025-05-21T02:20:32.829+0000] {logging_mixin.py:190} INFO - [download]  33.0% of  190.72KiB at    7.93MiB/s ETA 00:00
+[2025-05-21T02:20:32.835+0000] {logging_mixin.py:190} INFO - [download]  66.6% of  190.72KiB at    9.27MiB/s ETA 00:00
+[2025-05-21T02:20:32.840+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  190.72KiB at    9.89MiB/s ETA 00:00
+[2025-05-21T02:20:32.841+0000] {logging_mixin.py:190} INFO - [download] 100% of  190.72KiB in 00:00:00 at 1.41MiB/s   
+[2025-05-21T02:20:32.905+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1997228630685659"
+[2025-05-21T02:20:33.036+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1997228630685659.mp3
+[2025-05-21T02:20:33.325+0000] {logging_mixin.py:190} INFO - Deleting original file data/1997228630685659 (pass -k to keep)
+[2025-05-21T02:20:33.329+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1997228630685659
+[2025-05-21T02:20:33.336+0000] {logging_mixin.py:190} INFO - Downloaded video 1997228630685659 to data/1997228630685659.mp3
+[2025-05-21T02:20:33.494+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:20:33.494+0000] {logging_mixin.py:190} INFO - Downloading video from 688789503677491...
+[2025-05-21T02:20:33.525+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/688789503677491/
+[2025-05-21T02:20:33.525+0000] {logging_mixin.py:190} INFO - [facebook] 688789503677491: Downloading webpage
+[2025-05-21T02:20:35.362+0000] {logging_mixin.py:190} INFO - [info] 688789503677491: Downloading 1 format(s): 1783409568893403a
+[2025-05-21T02:20:35.424+0000] {logging_mixin.py:190} INFO - [download] Destination: data/688789503677491
+[2025-05-21T02:20:35.425+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  284.53KiB at  425.08KiB/s ETA 00:00
+[2025-05-21T02:20:35.428+0000] {logging_mixin.py:190} INFO - [download]   1.1% of  284.53KiB at  531.42KiB/s ETA 00:00
+[2025-05-21T02:20:35.429+0000] {logging_mixin.py:190} INFO - [download]   2.5% of  284.53KiB at    1.11MiB/s ETA 00:00
+[2025-05-21T02:20:35.429+0000] {logging_mixin.py:190} INFO - [download]   5.3% of  284.53KiB at    2.23MiB/s ETA 00:00
+[2025-05-21T02:20:35.434+0000] {logging_mixin.py:190} INFO - [download]  10.9% of  284.53KiB at    2.57MiB/s ETA 00:00
+[2025-05-21T02:20:35.440+0000] {logging_mixin.py:190} INFO - [download]  22.1% of  284.53KiB at    3.47MiB/s ETA 00:00
+[2025-05-21T02:20:35.455+0000] {logging_mixin.py:190} INFO - [download]  44.6% of  284.53KiB at    3.79MiB/s ETA 00:00
+[2025-05-21T02:20:35.489+0000] {logging_mixin.py:190} INFO - [download]  89.6% of  284.53KiB at    3.73MiB/s ETA 00:00
+[2025-05-21T02:20:35.492+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  284.53KiB at    3.99MiB/s ETA 00:00
+[2025-05-21T02:20:35.493+0000] {logging_mixin.py:190} INFO - [download] 100% of  284.53KiB in 00:00:00 at 2.20MiB/s   
+[2025-05-21T02:20:35.495+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/688789503677491"
+[2025-05-21T02:20:35.606+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/688789503677491.mp3
+[2025-05-21T02:20:35.989+0000] {logging_mixin.py:190} INFO - Deleting original file data/688789503677491 (pass -k to keep)
+[2025-05-21T02:20:35.994+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 688789503677491
+[2025-05-21T02:20:36.011+0000] {logging_mixin.py:190} INFO - Downloaded video 688789503677491 to data/688789503677491.mp3
+[2025-05-21T02:20:36.156+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:20:36.156+0000] {logging_mixin.py:190} INFO - Downloading video from 1879333049588928...
+[2025-05-21T02:20:36.187+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/1879333049588928/
+[2025-05-21T02:20:36.187+0000] {logging_mixin.py:190} INFO - [facebook] 1879333049588928: Downloading webpage
+[2025-05-21T02:20:39.089+0000] {logging_mixin.py:190} INFO - [info] 1879333049588928: Downloading 1 format(s): 1370091877598330a
+[2025-05-21T02:20:39.120+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1879333049588928
+[2025-05-21T02:20:39.120+0000] {logging_mixin.py:190} INFO - [download]   1.3% of   79.39KiB at  488.90KiB/s ETA 00:00
+[2025-05-21T02:20:39.121+0000] {logging_mixin.py:190} INFO - [download]   3.8% of   79.39KiB at    1.01MiB/s ETA 00:00
+[2025-05-21T02:20:39.121+0000] {logging_mixin.py:190} INFO - [download]   8.8% of   79.39KiB at    2.01MiB/s ETA 00:00
+[2025-05-21T02:20:39.122+0000] {logging_mixin.py:190} INFO - [download]  18.9% of   79.39KiB at    3.88MiB/s ETA 00:00
+[2025-05-21T02:20:39.123+0000] {logging_mixin.py:190} INFO - [download]  39.0% of   79.39KiB at    5.62MiB/s ETA 00:00
+[2025-05-21T02:20:39.126+0000] {logging_mixin.py:190} INFO - [download]  79.4% of   79.39KiB at    7.36MiB/s ETA 00:00
+[2025-05-21T02:20:39.128+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   79.39KiB at    7.74MiB/s ETA 00:00
+[2025-05-21T02:20:39.128+0000] {logging_mixin.py:190} INFO - [download] 100% of   79.39KiB in 00:00:00 at 2.14MiB/s   
+[2025-05-21T02:20:39.130+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1879333049588928"
+[2025-05-21T02:20:39.218+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1879333049588928.mp3
+[2025-05-21T02:20:39.353+0000] {logging_mixin.py:190} INFO - Deleting original file data/1879333049588928 (pass -k to keep)
+[2025-05-21T02:20:39.356+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1879333049588928
+[2025-05-21T02:20:39.360+0000] {logging_mixin.py:190} INFO - Downloaded video 1879333049588928 to data/1879333049588928.mp3
+[2025-05-21T02:20:39.484+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:20:39.485+0000] {logging_mixin.py:190} INFO - Downloading video from 527640300344671...
+[2025-05-21T02:20:39.515+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/527640300344671/
+[2025-05-21T02:20:39.515+0000] {logging_mixin.py:190} INFO - [facebook] 527640300344671: Downloading webpage
+[2025-05-21T02:20:40.652+0000] {logging_mixin.py:190} INFO - [info] 527640300344671: Downloading 1 format(s): 1814869422603337a
+[2025-05-21T02:20:40.915+0000] {logging_mixin.py:190} INFO - [download] Destination: data/527640300344671
+[2025-05-21T02:20:40.915+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  244.64KiB at    5.24KiB/s ETA 00:46
+[2025-05-21T02:20:40.916+0000] {logging_mixin.py:190} INFO - [download]   1.2% of  244.64KiB at   15.66KiB/s ETA 00:15
+[2025-05-21T02:20:40.916+0000] {logging_mixin.py:190} INFO - [download]   2.9% of  244.64KiB at   36.46KiB/s ETA 00:06
+[2025-05-21T02:20:40.917+0000] {logging_mixin.py:190} INFO - [download]   6.1% of  244.64KiB at   77.96KiB/s ETA 00:02
+[2025-05-21T02:20:40.919+0000] {logging_mixin.py:190} INFO - [download]  12.7% of  244.64KiB at  159.30KiB/s ETA 00:01
+[2025-05-21T02:20:40.922+0000] {logging_mixin.py:190} INFO - [download]  25.8% of  244.64KiB at  318.85KiB/s ETA 00:00
+[2025-05-21T02:20:40.928+0000] {logging_mixin.py:190} INFO - [download]  51.9% of  244.64KiB at  623.86KiB/s ETA 00:00
+[2025-05-21T02:20:40.938+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  244.64KiB at    1.12MiB/s ETA 00:00
+[2025-05-21T02:20:40.938+0000] {logging_mixin.py:190} INFO - [download] 100% of  244.64KiB in 00:00:00 at 862.73KiB/s 
+[2025-05-21T02:20:40.940+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/527640300344671"
+[2025-05-21T02:20:41.022+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/527640300344671.mp3
+[2025-05-21T02:20:41.340+0000] {logging_mixin.py:190} INFO - Deleting original file data/527640300344671 (pass -k to keep)
+[2025-05-21T02:20:41.343+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 527640300344671
+[2025-05-21T02:20:41.350+0000] {logging_mixin.py:190} INFO - Downloaded video 527640300344671 to data/527640300344671.mp3
+[2025-05-21T02:20:41.485+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:20:41.485+0000] {logging_mixin.py:190} INFO - Downloading video from 1164949147928304...
+[2025-05-21T02:20:41.515+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/1164949147928304/
+[2025-05-21T02:20:41.516+0000] {logging_mixin.py:190} INFO - [facebook] 1164949147928304: Downloading webpage
+[2025-05-21T02:20:42.917+0000] {logging_mixin.py:190} INFO - [info] 1164949147928304: Downloading 1 format(s): 506429525588459a
+[2025-05-21T02:20:42.989+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1164949147928304
+[2025-05-21T02:20:42.990+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  384.66KiB at  911.41KiB/s ETA 00:00
+[2025-05-21T02:20:42.992+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  384.66KiB at    1.29MiB/s ETA 00:00
+[2025-05-21T02:20:42.993+0000] {logging_mixin.py:190} INFO - [download]   1.8% of  384.66KiB at    1.99MiB/s ETA 00:00
+[2025-05-21T02:20:42.993+0000] {logging_mixin.py:190} INFO - [download]   3.9% of  384.66KiB at    3.40MiB/s ETA 00:00
+[2025-05-21T02:20:42.994+0000] {logging_mixin.py:190} INFO - [download]   8.1% of  384.66KiB at    6.06MiB/s ETA 00:00
+[2025-05-21T02:20:42.997+0000] {logging_mixin.py:190} INFO - [download]  16.4% of  384.66KiB at    8.20MiB/s ETA 00:00
+[2025-05-21T02:20:43.185+0000] {logging_mixin.py:190} INFO - [download]  33.0% of  384.66KiB at  648.53KiB/s ETA 00:00
+[2025-05-21T02:20:43.343+0000] {logging_mixin.py:190} INFO - [download]  66.3% of  384.66KiB at  720.25KiB/s ETA 00:00
+[2025-05-21T02:20:43.356+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  384.66KiB at    1.03MiB/s ETA 00:00
+[2025-05-21T02:20:43.356+0000] {logging_mixin.py:190} INFO - [download] 100% of  384.66KiB in 00:00:00 at 881.66KiB/s 
+[2025-05-21T02:20:43.358+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1164949147928304"
+[2025-05-21T02:20:43.452+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1164949147928304.mp3
+[2025-05-21T02:20:43.821+0000] {logging_mixin.py:190} INFO - Deleting original file data/1164949147928304 (pass -k to keep)
+[2025-05-21T02:20:43.824+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1164949147928304
+[2025-05-21T02:20:43.830+0000] {logging_mixin.py:190} INFO - Downloaded video 1164949147928304 to data/1164949147928304.mp3
+[2025-05-21T02:20:43.951+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:20:43.951+0000] {logging_mixin.py:190} INFO - Downloading video from 1402114920478428...
+[2025-05-21T02:20:43.982+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/1402114920478428/
+[2025-05-21T02:20:43.983+0000] {logging_mixin.py:190} INFO - [facebook] 1402114920478428: Downloading webpage
+[2025-05-21T02:20:45.974+0000] {logging_mixin.py:190} INFO - [info] 1402114920478428: Downloading 1 format(s): 1028843568702621a
+[2025-05-21T02:20:46.221+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1402114920478428
+[2025-05-21T02:20:46.222+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  165.87KiB at  519.23KiB/s ETA 00:00
+[2025-05-21T02:20:46.223+0000] {logging_mixin.py:190} INFO - [download]   1.8% of  165.87KiB at  852.44KiB/s ETA 00:00
+[2025-05-21T02:20:46.224+0000] {logging_mixin.py:190} INFO - [download]   4.2% of  165.87KiB at    1.49MiB/s ETA 00:00
+[2025-05-21T02:20:46.225+0000] {logging_mixin.py:190} INFO - [download]   9.0% of  165.87KiB at    2.71MiB/s ETA 00:00
+[2025-05-21T02:20:46.226+0000] {logging_mixin.py:190} INFO - [download]  18.7% of  165.87KiB at    4.89MiB/s ETA 00:00
+[2025-05-21T02:20:46.226+0000] {logging_mixin.py:190} INFO - [download]  38.0% of  165.87KiB at    8.91MiB/s ETA 00:00
+[2025-05-21T02:20:46.233+0000] {logging_mixin.py:190} INFO - [download]  76.6% of  165.87KiB at    9.47MiB/s ETA 00:00
+[2025-05-21T02:20:46.236+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  165.87KiB at    9.74MiB/s ETA 00:00
+[2025-05-21T02:20:46.237+0000] {logging_mixin.py:190} INFO - [download] 100% of  165.87KiB in 00:00:00 at 639.34KiB/s 
+[2025-05-21T02:20:46.239+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1402114920478428"
+[2025-05-21T02:20:46.322+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1402114920478428.mp3
+[2025-05-21T02:20:46.571+0000] {logging_mixin.py:190} INFO - Deleting original file data/1402114920478428 (pass -k to keep)
+[2025-05-21T02:20:46.575+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1402114920478428
+[2025-05-21T02:20:46.584+0000] {logging_mixin.py:190} INFO - Downloaded video 1402114920478428 to data/1402114920478428.mp3
+[2025-05-21T02:20:46.696+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:20:46.697+0000] {logging_mixin.py:190} INFO - Downloading video from 358726033363404...
+[2025-05-21T02:20:46.728+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/358726033363404/
+[2025-05-21T02:20:46.728+0000] {logging_mixin.py:190} INFO - [facebook] 358726033363404: Downloading webpage
+[2025-05-21T02:20:48.011+0000] {logging_mixin.py:190} INFO - [info] 358726033363404: Downloading 1 format(s): 664206509700702a
+[2025-05-21T02:20:48.043+0000] {logging_mixin.py:190} INFO - [download] Destination: data/358726033363404
+[2025-05-21T02:20:48.044+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  181.23KiB at  Unknown B/s ETA Unknown
+[2025-05-21T02:20:48.046+0000] {logging_mixin.py:190} INFO - [download]   1.7% of  181.23KiB at    1.05MiB/s ETA 00:00  
+[2025-05-21T02:20:48.046+0000] {logging_mixin.py:190} INFO - [download]   3.9% of  181.23KiB at    2.10MiB/s ETA 00:00
+[2025-05-21T02:20:48.047+0000] {logging_mixin.py:190} INFO - [download]   8.3% of  181.23KiB at    4.01MiB/s ETA 00:00
+[2025-05-21T02:20:48.047+0000] {logging_mixin.py:190} INFO - [download]  17.1% of  181.23KiB at    7.12MiB/s ETA 00:00
+[2025-05-21T02:20:48.050+0000] {logging_mixin.py:190} INFO - [download]  34.8% of  181.23KiB at    8.56MiB/s ETA 00:00
+[2025-05-21T02:20:48.056+0000] {logging_mixin.py:190} INFO - [download]  70.1% of  181.23KiB at    9.29MiB/s ETA 00:00
+[2025-05-21T02:20:48.061+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  181.23KiB at    9.71MiB/s ETA 00:00
+[2025-05-21T02:20:48.062+0000] {logging_mixin.py:190} INFO - [download] 100% of  181.23KiB in 00:00:00 at 3.75MiB/s   
+[2025-05-21T02:20:48.063+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/358726033363404"
+[2025-05-21T02:20:48.152+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/358726033363404.mp3
+[2025-05-21T02:20:48.415+0000] {logging_mixin.py:190} INFO - Deleting original file data/358726033363404 (pass -k to keep)
+[2025-05-21T02:20:48.418+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 358726033363404
+[2025-05-21T02:20:48.422+0000] {logging_mixin.py:190} INFO - Downloaded video 358726033363404 to data/358726033363404.mp3
+[2025-05-21T02:20:48.534+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:20:48.534+0000] {logging_mixin.py:190} INFO - Downloading video from 850346460063365...
+[2025-05-21T02:20:48.563+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/850346460063365/
+[2025-05-21T02:20:48.564+0000] {logging_mixin.py:190} INFO - [facebook] 850346460063365: Downloading webpage
+[2025-05-21T02:20:50.320+0000] {logging_mixin.py:190} INFO - [info] 850346460063365: Downloading 1 format(s): 1079081314030308a
+[2025-05-21T02:20:50.374+0000] {logging_mixin.py:190} INFO - [download] Destination: data/850346460063365
+[2025-05-21T02:20:50.375+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  281.95KiB at  733.40KiB/s ETA 00:00
+[2025-05-21T02:20:50.375+0000] {logging_mixin.py:190} INFO - [download]   1.1% of  281.95KiB at    1.54MiB/s ETA 00:00
+[2025-05-21T02:20:50.376+0000] {logging_mixin.py:190} INFO - [download]   2.5% of  281.95KiB at    2.89MiB/s ETA 00:00
+[2025-05-21T02:20:50.376+0000] {logging_mixin.py:190} INFO - [download]   5.3% of  281.95KiB at    4.82MiB/s ETA 00:00
+[2025-05-21T02:20:50.379+0000] {logging_mixin.py:190} INFO - [download]  11.0% of  281.95KiB at    5.48MiB/s ETA 00:00
+[2025-05-21T02:20:50.382+0000] {logging_mixin.py:190} INFO - [download]  22.3% of  281.95KiB at    7.36MiB/s ETA 00:00
+[2025-05-21T02:20:50.595+0000] {logging_mixin.py:190} INFO - [download]  45.0% of  281.95KiB at  574.04KiB/s ETA 00:00
+[2025-05-21T02:20:50.718+0000] {logging_mixin.py:190} INFO - [download]  90.4% of  281.95KiB at  740.91KiB/s ETA 00:00
+[2025-05-21T02:20:50.720+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  281.95KiB at  813.95KiB/s ETA 00:00
+[2025-05-21T02:20:50.721+0000] {logging_mixin.py:190} INFO - [download] 100% of  281.95KiB in 00:00:00 at 709.57KiB/s 
+[2025-05-21T02:20:50.723+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/850346460063365"
+[2025-05-21T02:20:50.816+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/850346460063365.mp3
+[2025-05-21T02:20:51.225+0000] {logging_mixin.py:190} INFO - Deleting original file data/850346460063365 (pass -k to keep)
+[2025-05-21T02:20:51.229+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 850346460063365
+[2025-05-21T02:20:51.235+0000] {logging_mixin.py:190} INFO - Downloaded video 850346460063365 to data/850346460063365.mp3
+[2025-05-21T02:20:51.363+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:20:51.363+0000] {logging_mixin.py:190} INFO - Downloading video from 1222941998905824...
+[2025-05-21T02:20:51.393+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/1222941998905824/
+[2025-05-21T02:20:51.394+0000] {logging_mixin.py:190} INFO - [facebook] 1222941998905824: Downloading webpage
+[2025-05-21T02:20:53.437+0000] {logging_mixin.py:190} INFO - [info] 1222941998905824: Downloading 1 format(s): 685692930671545a
+[2025-05-21T02:20:53.468+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1222941998905824
+[2025-05-21T02:20:53.468+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  220.32KiB at  Unknown B/s ETA Unknown
+[2025-05-21T02:20:53.470+0000] {logging_mixin.py:190} INFO - [download]   1.4% of  220.32KiB at    1.21MiB/s ETA 00:00  
+[2025-05-21T02:20:53.470+0000] {logging_mixin.py:190} INFO - [download]   3.2% of  220.32KiB at    2.31MiB/s ETA 00:00
+[2025-05-21T02:20:53.471+0000] {logging_mixin.py:190} INFO - [download]   6.8% of  220.32KiB at    4.28MiB/s ETA 00:00
+[2025-05-21T02:20:53.471+0000] {logging_mixin.py:190} INFO - [download]  14.1% of  220.32KiB at    7.54MiB/s ETA 00:00
+[2025-05-21T02:20:53.475+0000] {logging_mixin.py:190} INFO - [download]  28.6% of  220.32KiB at    8.67MiB/s ETA 00:00
+[2025-05-21T02:20:53.502+0000] {logging_mixin.py:190} INFO - [download]  57.6% of  220.32KiB at    3.58MiB/s ETA 00:00
+[2025-05-21T02:20:53.512+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  220.32KiB at    4.91MiB/s ETA 00:00
+[2025-05-21T02:20:53.512+0000] {logging_mixin.py:190} INFO - [download] 100% of  220.32KiB in 00:00:00 at 2.97MiB/s   
+[2025-05-21T02:20:53.514+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1222941998905824"
+[2025-05-21T02:20:53.614+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1222941998905824.mp3
+[2025-05-21T02:20:51.833+0000] {logging_mixin.py:190} INFO - Deleting original file data/1222941998905824 (pass -k to keep)
+[2025-05-21T02:20:51.836+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1222941998905824
+[2025-05-21T02:20:51.841+0000] {logging_mixin.py:190} INFO - Downloaded video 1222941998905824 to data/1222941998905824.mp3
+[2025-05-21T02:20:51.959+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:20:51.959+0000] {logging_mixin.py:190} INFO - Downloading video from 980013393965157...
+[2025-05-21T02:20:51.993+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/mrbeast/videos/980013393965157/
+[2025-05-21T02:20:51.993+0000] {logging_mixin.py:190} INFO - [facebook] 980013393965157: Downloading webpage
+[2025-05-21T02:20:52.651+0000] {logging_mixin.py:190} INFO - [facebook] 980013393965157: Downloading webpage
+[2025-05-21T02:20:52.843+0000] {logging_mixin.py:190} WARNING - ERROR: [facebook] 980013393965157: Cannot parse data; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+[2025-05-21T02:20:52.844+0000] {logging_mixin.py:190} INFO - 
+Error downloading video using yt-dlp: ERROR: [facebook] 980013393965157: Cannot parse data; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+[2025-05-21T02:20:54.706+0000] {logging_mixin.py:190} INFO - Downloaded video 980013393965157 to data/980013393965157.mp3
+[2025-05-21T02:20:54.828+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:20:54.829+0000] {logging_mixin.py:190} INFO - Downloading video from 1168270047721916...
+[2025-05-21T02:20:54.858+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/1168270047721916/
+[2025-05-21T02:20:54.858+0000] {logging_mixin.py:190} INFO - [facebook] 1168270047721916: Downloading webpage
+[2025-05-21T02:20:57.369+0000] {logging_mixin.py:190} INFO - [info] 1168270047721916: Downloading 1 format(s): 2023134411509531a
+[2025-05-21T02:20:57.400+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1168270047721916
+[2025-05-21T02:20:57.400+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  127.87KiB at  Unknown B/s ETA Unknown
+[2025-05-21T02:20:57.402+0000] {logging_mixin.py:190} INFO - [download]   2.3% of  127.87KiB at    1.27MiB/s ETA 00:00  
+[2025-05-21T02:20:57.402+0000] {logging_mixin.py:190} INFO - [download]   5.5% of  127.87KiB at    2.39MiB/s ETA 00:00
+[2025-05-21T02:20:57.403+0000] {logging_mixin.py:190} INFO - [download]  11.7% of  127.87KiB at    4.30MiB/s ETA 00:00
+[2025-05-21T02:20:57.403+0000] {logging_mixin.py:190} INFO - [download]  24.2% of  127.87KiB at    7.44MiB/s ETA 00:00
+[2025-05-21T02:20:57.407+0000] {logging_mixin.py:190} INFO - [download]  49.3% of  127.87KiB at    8.72MiB/s ETA 00:00
+[2025-05-21T02:20:57.413+0000] {logging_mixin.py:190} INFO - [download]  99.3% of  127.87KiB at    9.41MiB/s ETA 00:00
+[2025-05-21T02:20:57.414+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  127.87KiB at    8.84MiB/s ETA 00:00
+[2025-05-21T02:20:57.414+0000] {logging_mixin.py:190} INFO - [download] 100% of  127.87KiB in 00:00:00 at 3.01MiB/s   
+[2025-05-21T02:20:57.416+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1168270047721916"
+[2025-05-21T02:20:57.519+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1168270047721916.mp3
+[2025-05-21T02:20:57.715+0000] {logging_mixin.py:190} INFO - Deleting original file data/1168270047721916 (pass -k to keep)
+[2025-05-21T02:20:57.718+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1168270047721916
+[2025-05-21T02:20:57.730+0000] {logging_mixin.py:190} INFO - Downloaded video 1168270047721916 to data/1168270047721916.mp3
+[2025-05-21T02:20:57.844+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:20:57.845+0000] {logging_mixin.py:190} INFO - Downloading video from 398955763130468...
+[2025-05-21T02:20:57.876+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/398955763130468/
+[2025-05-21T02:20:57.877+0000] {logging_mixin.py:190} INFO - [facebook] 398955763130468: Downloading webpage
+[2025-05-21T02:21:00.785+0000] {logging_mixin.py:190} INFO - [info] 398955763130468: Downloading 1 format(s): 3909347279381143a
+[2025-05-21T02:21:01.182+0000] {logging_mixin.py:190} INFO - [download] Destination: data/398955763130468
+[2025-05-21T02:21:01.183+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  134.38KiB at  917.79KiB/s ETA 00:00
+[2025-05-21T02:21:01.184+0000] {logging_mixin.py:190} INFO - [download]   2.2% of  134.38KiB at    1.35MiB/s ETA 00:00
+[2025-05-21T02:21:01.185+0000] {logging_mixin.py:190} INFO - [download]   5.2% of  134.38KiB at    2.27MiB/s ETA 00:00
+[2025-05-21T02:21:01.186+0000] {logging_mixin.py:190} INFO - [download]  11.2% of  134.38KiB at    3.90MiB/s ETA 00:00
+[2025-05-21T02:21:01.186+0000] {logging_mixin.py:190} INFO - [download]  23.1% of  134.38KiB at    6.96MiB/s ETA 00:00
+[2025-05-21T02:21:01.187+0000] {logging_mixin.py:190} INFO - [download]  46.9% of  134.38KiB at   11.17MiB/s ETA 00:00
+[2025-05-21T02:21:01.194+0000] {logging_mixin.py:190} INFO - [download]  94.5% of  134.38KiB at    9.87MiB/s ETA 00:00
+[2025-05-21T02:21:01.195+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  134.38KiB at    9.95MiB/s ETA 00:00
+[2025-05-21T02:21:01.196+0000] {logging_mixin.py:190} INFO - [download] 100% of  134.38KiB in 00:00:00 at 329.79KiB/s 
+[2025-05-21T02:21:01.197+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/398955763130468"
+[2025-05-21T02:21:01.285+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/398955763130468.mp3
+[2025-05-21T02:21:01.505+0000] {logging_mixin.py:190} INFO - Deleting original file data/398955763130468 (pass -k to keep)
+[2025-05-21T02:21:01.508+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 398955763130468
+[2025-05-21T02:21:01.514+0000] {logging_mixin.py:190} INFO - Downloaded video 398955763130468 to data/398955763130468.mp3
+[2025-05-21T02:21:01.631+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:21:01.631+0000] {logging_mixin.py:190} INFO - Downloading video from 538980555687742...
+[2025-05-21T02:21:01.661+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/538980555687742/
+[2025-05-21T02:21:01.661+0000] {logging_mixin.py:190} INFO - [facebook] 538980555687742: Downloading webpage
+[2025-05-21T02:21:03.752+0000] {logging_mixin.py:190} INFO - [info] 538980555687742: Downloading 1 format(s): 1801433390675675a
+[2025-05-21T02:21:03.807+0000] {logging_mixin.py:190} INFO - [download] Destination: data/538980555687742
+[2025-05-21T02:21:03.807+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  541.81KiB at  Unknown B/s ETA Unknown
+[2025-05-21T02:21:03.807+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  541.81KiB at    2.18MiB/s ETA 00:00  
+[2025-05-21T02:21:03.808+0000] {logging_mixin.py:190} INFO - [download]   1.3% of  541.81KiB at    3.78MiB/s ETA 00:00
+[2025-05-21T02:21:03.810+0000] {logging_mixin.py:190} INFO - [download]   2.8% of  541.81KiB at    4.26MiB/s ETA 00:00
+[2025-05-21T02:21:03.811+0000] {logging_mixin.py:190} INFO - [download]   5.7% of  541.81KiB at    6.07MiB/s ETA 00:00
+[2025-05-21T02:21:03.814+0000] {logging_mixin.py:190} INFO - [download]  11.6% of  541.81KiB at    7.69MiB/s ETA 00:00
+[2025-05-21T02:21:03.950+0000] {logging_mixin.py:190} INFO - [download]  23.4% of  541.81KiB at  883.61KiB/s ETA 00:00
+[2025-05-21T02:21:03.963+0000] {logging_mixin.py:190} INFO - [download]  47.1% of  541.81KiB at    1.59MiB/s ETA 00:00
+[2025-05-21T02:21:03.987+0000] {logging_mixin.py:190} INFO - [download]  94.3% of  541.81KiB at    2.76MiB/s ETA 00:00
+[2025-05-21T02:21:03.990+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  541.81KiB at    2.88MiB/s ETA 00:00
+[2025-05-21T02:21:03.991+0000] {logging_mixin.py:190} INFO - [download] 100% of  541.81KiB in 00:00:00 at 2.25MiB/s   
+[2025-05-21T02:21:03.992+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/538980555687742"
+[2025-05-21T02:21:04.086+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/538980555687742.mp3
+[2025-05-21T02:21:04.753+0000] {logging_mixin.py:190} INFO - Deleting original file data/538980555687742 (pass -k to keep)
+[2025-05-21T02:21:04.756+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 538980555687742
+[2025-05-21T02:21:04.760+0000] {logging_mixin.py:190} INFO - Downloaded video 538980555687742 to data/538980555687742.mp3
+[2025-05-21T02:21:04.871+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:21:04.871+0000] {logging_mixin.py:190} INFO - Downloading video from 358907080069233...
+[2025-05-21T02:21:04.899+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/358907080069233/
+[2025-05-21T02:21:04.899+0000] {logging_mixin.py:190} INFO - [facebook] 358907080069233: Downloading webpage
+[2025-05-21T02:21:06.014+0000] {logging_mixin.py:190} INFO - [info] 358907080069233: Downloading 1 format(s): 1691144498197871a
+[2025-05-21T02:21:06.066+0000] {logging_mixin.py:190} INFO - [download] Destination: data/358907080069233
+[2025-05-21T02:21:06.066+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  269.65KiB at  600.22KiB/s ETA 00:00
+[2025-05-21T02:21:06.067+0000] {logging_mixin.py:190} INFO - [download]   1.1% of  269.65KiB at    1.29MiB/s ETA 00:00
+[2025-05-21T02:21:06.067+0000] {logging_mixin.py:190} INFO - [download]   2.6% of  269.65KiB at    2.54MiB/s ETA 00:00
+[2025-05-21T02:21:06.069+0000] {logging_mixin.py:190} INFO - [download]   5.6% of  269.65KiB at    2.99MiB/s ETA 00:00
+[2025-05-21T02:21:06.071+0000] {logging_mixin.py:190} INFO - [download]  11.5% of  269.65KiB at    4.39MiB/s ETA 00:00
+[2025-05-21T02:21:06.074+0000] {logging_mixin.py:190} INFO - [download]  23.4% of  269.65KiB at    6.23MiB/s ETA 00:00
+[2025-05-21T02:21:06.327+0000] {logging_mixin.py:190} INFO - [download]  47.1% of  269.65KiB at  484.14KiB/s ETA 00:00
+[2025-05-21T02:21:06.339+0000] {logging_mixin.py:190} INFO - [download]  94.6% of  269.65KiB at  928.22KiB/s ETA 00:00
+[2025-05-21T02:21:06.340+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  269.65KiB at  977.17KiB/s ETA 00:00
+[2025-05-21T02:21:06.341+0000] {logging_mixin.py:190} INFO - [download] 100% of  269.65KiB in 00:00:00 at 834.77KiB/s 
+[2025-05-21T02:21:06.343+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/358907080069233"
+[2025-05-21T02:21:06.428+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/358907080069233.mp3
+[2025-05-21T02:21:06.848+0000] {logging_mixin.py:190} INFO - Deleting original file data/358907080069233 (pass -k to keep)
+[2025-05-21T02:21:06.852+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 358907080069233
+[2025-05-21T02:21:06.858+0000] {logging_mixin.py:190} INFO - Downloaded video 358907080069233 to data/358907080069233.mp3
+[2025-05-21T02:21:06.977+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:21:06.978+0000] {logging_mixin.py:190} INFO - Downloading video from 3441316972757461...
+[2025-05-21T02:21:07.011+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/3441316972757461/
+[2025-05-21T02:21:07.012+0000] {logging_mixin.py:190} INFO - [facebook] 3441316972757461: Downloading webpage
+[2025-05-21T02:21:12.713+0000] {logging_mixin.py:190} INFO - [info] 3441316972757461: Downloading 1 format(s): 1006354141467850a
+[2025-05-21T02:21:12.764+0000] {logging_mixin.py:190} INFO - [download] Destination: data/3441316972757461
+[2025-05-21T02:21:12.764+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.16MiB at  Unknown B/s ETA Unknown
+[2025-05-21T02:21:12.765+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    1.16MiB at    2.31MiB/s ETA 00:00  
+[2025-05-21T02:21:12.765+0000] {logging_mixin.py:190} INFO - [download]   0.6% of    1.16MiB at    4.05MiB/s ETA 00:00
+[2025-05-21T02:21:12.769+0000] {logging_mixin.py:190} INFO - [download]   1.3% of    1.16MiB at    2.97MiB/s ETA 00:00
+[2025-05-21T02:21:12.770+0000] {logging_mixin.py:190} INFO - [download]   2.6% of    1.16MiB at    4.44MiB/s ETA 00:00
+[2025-05-21T02:21:12.774+0000] {logging_mixin.py:190} INFO - [download]   5.3% of    1.16MiB at    6.09MiB/s ETA 00:00
+[2025-05-21T02:21:12.779+0000] {logging_mixin.py:190} INFO - [download]  10.7% of    1.16MiB at    7.87MiB/s ETA 00:00
+[2025-05-21T02:21:13.011+0000] {logging_mixin.py:190} INFO - [download]  21.4% of    1.16MiB at    1.01MiB/s ETA 00:00
+[2025-05-21T02:21:13.038+0000] {logging_mixin.py:190} INFO - [download]  42.9% of    1.16MiB at    1.82MiB/s ETA 00:00
+[2025-05-21T02:21:13.091+0000] {logging_mixin.py:190} INFO - [download]  85.8% of    1.16MiB at    3.05MiB/s ETA 00:00
+[2025-05-21T02:21:13.106+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.16MiB at    3.40MiB/s ETA 00:00
+[2025-05-21T02:21:13.106+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.16MiB in 00:00:00 at 2.98MiB/s   
+[2025-05-21T02:21:13.108+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/3441316972757461"
+[2025-05-21T02:21:13.195+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/3441316972757461.mp3
+[2025-05-21T02:21:14.669+0000] {logging_mixin.py:190} INFO - Deleting original file data/3441316972757461 (pass -k to keep)
+[2025-05-21T02:21:14.672+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 3441316972757461
+[2025-05-21T02:21:14.676+0000] {logging_mixin.py:190} INFO - Downloaded video 3441316972757461 to data/3441316972757461.mp3
+[2025-05-21T02:21:14.808+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:21:14.809+0000] {logging_mixin.py:190} INFO - Downloading video from 1208140004080231...
+[2025-05-21T02:21:14.839+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/1208140004080231/
+[2025-05-21T02:21:14.839+0000] {logging_mixin.py:190} INFO - [facebook] 1208140004080231: Downloading webpage
+[2025-05-21T02:21:15.924+0000] {logging_mixin.py:190} INFO - [info] 1208140004080231: Downloading 1 format(s): 2047559985743275a
+[2025-05-21T02:21:15.952+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1208140004080231
+[2025-05-21T02:21:15.952+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  532.03KiB at  Unknown B/s ETA Unknown
+[2025-05-21T02:21:15.954+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  532.03KiB at    1.30MiB/s ETA 00:00  
+[2025-05-21T02:21:15.954+0000] {logging_mixin.py:190} INFO - [download]   1.3% of  532.03KiB at    2.46MiB/s ETA 00:00
+[2025-05-21T02:21:15.955+0000] {logging_mixin.py:190} INFO - [download]   2.8% of  532.03KiB at    4.61MiB/s ETA 00:00
+[2025-05-21T02:21:15.956+0000] {logging_mixin.py:190} INFO - [download]   5.8% of  532.03KiB at    7.54MiB/s ETA 00:00
+[2025-05-21T02:21:15.962+0000] {logging_mixin.py:190} INFO - [download]  11.8% of  532.03KiB at    6.17MiB/s ETA 00:00
+[2025-05-21T02:21:15.968+0000] {logging_mixin.py:190} INFO - [download]  23.9% of  532.03KiB at    7.78MiB/s ETA 00:00
+[2025-05-21T02:21:16.181+0000] {logging_mixin.py:190} INFO - [download]  47.9% of  532.03KiB at    1.09MiB/s ETA 00:00
+[2025-05-21T02:21:16.206+0000] {logging_mixin.py:190} INFO - [download]  96.0% of  532.03KiB at    1.96MiB/s ETA 00:00
+[2025-05-21T02:21:16.207+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  532.03KiB at    2.03MiB/s ETA 00:00
+[2025-05-21T02:21:16.208+0000] {logging_mixin.py:190} INFO - [download] 100% of  532.03KiB in 00:00:00 at 1.85MiB/s   
+[2025-05-21T02:21:16.210+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1208140004080231"
+[2025-05-21T02:21:16.300+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1208140004080231.mp3
+[2025-05-21T02:21:17.012+0000] {logging_mixin.py:190} INFO - Deleting original file data/1208140004080231 (pass -k to keep)
+[2025-05-21T02:21:17.016+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1208140004080231
+[2025-05-21T02:21:17.024+0000] {logging_mixin.py:190} INFO - Downloaded video 1208140004080231 to data/1208140004080231.mp3
+[2025-05-21T02:21:17.525+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:21:17.525+0000] {logging_mixin.py:190} INFO - Downloading video from 1270659154270254...
+[2025-05-21T02:21:17.555+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/1270659154270254/
+[2025-05-21T02:21:17.555+0000] {logging_mixin.py:190} INFO - [facebook] 1270659154270254: Downloading webpage
+[2025-05-21T02:21:19.149+0000] {logging_mixin.py:190} INFO - [info] 1270659154270254: Downloading 1 format(s): 871221288429094a
+[2025-05-21T02:21:19.345+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1270659154270254
+[2025-05-21T02:21:19.345+0000] {logging_mixin.py:190} INFO - [download]   0.9% of  111.43KiB at  723.53KiB/s ETA 00:00
+[2025-05-21T02:21:19.346+0000] {logging_mixin.py:190} INFO - [download]   2.7% of  111.43KiB at    1.22MiB/s ETA 00:00
+[2025-05-21T02:21:19.347+0000] {logging_mixin.py:190} INFO - [download]   6.3% of  111.43KiB at    2.34MiB/s ETA 00:00
+[2025-05-21T02:21:19.347+0000] {logging_mixin.py:190} INFO - [download]  13.5% of  111.43KiB at    4.35MiB/s ETA 00:00
+[2025-05-21T02:21:19.349+0000] {logging_mixin.py:190} INFO - [download]  27.8% of  111.43KiB at    6.06MiB/s ETA 00:00
+[2025-05-21T02:21:19.352+0000] {logging_mixin.py:190} INFO - [download]  56.5% of  111.43KiB at    7.69MiB/s ETA 00:00
+[2025-05-21T02:21:19.356+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  111.43KiB at    8.77MiB/s ETA 00:00
+[2025-05-21T02:21:19.357+0000] {logging_mixin.py:190} INFO - [download] 100% of  111.43KiB in 00:00:00 at 545.72KiB/s 
+[2025-05-21T02:21:19.359+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1270659154270254"
+[2025-05-21T02:21:19.446+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1270659154270254.mp3
+[2025-05-21T02:21:19.638+0000] {logging_mixin.py:190} INFO - Deleting original file data/1270659154270254 (pass -k to keep)
+[2025-05-21T02:21:19.642+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1270659154270254
+[2025-05-21T02:21:19.647+0000] {logging_mixin.py:190} INFO - Downloaded video 1270659154270254 to data/1270659154270254.mp3
+[2025-05-21T02:21:19.767+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:21:19.768+0000] {logging_mixin.py:190} INFO - Downloading video from 1829761540870002...
+[2025-05-21T02:21:19.798+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/1829761540870002/
+[2025-05-21T02:21:19.799+0000] {logging_mixin.py:190} INFO - [facebook] 1829761540870002: Downloading webpage
+[2025-05-21T02:21:23.051+0000] {logging_mixin.py:190} INFO - [info] 1829761540870002: Downloading 1 format(s): 1020410562945126a
+[2025-05-21T02:21:23.102+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1829761540870002
+[2025-05-21T02:21:23.103+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  301.22KiB at  Unknown B/s ETA Unknown
+[2025-05-21T02:21:23.103+0000] {logging_mixin.py:190} INFO - [download]   1.0% of  301.22KiB at    2.70MiB/s ETA 00:00  
+[2025-05-21T02:21:23.103+0000] {logging_mixin.py:190} INFO - [download]   2.3% of  301.22KiB at    4.60MiB/s ETA 00:00
+[2025-05-21T02:21:23.105+0000] {logging_mixin.py:190} INFO - [download]   5.0% of  301.22KiB at    5.70MiB/s ETA 00:00
+[2025-05-21T02:21:23.107+0000] {logging_mixin.py:190} INFO - [download]  10.3% of  301.22KiB at    6.61MiB/s ETA 00:00
+[2025-05-21T02:21:23.110+0000] {logging_mixin.py:190} INFO - [download]  20.9% of  301.22KiB at    7.83MiB/s ETA 00:00
+[2025-05-21T02:21:23.307+0000] {logging_mixin.py:190} INFO - [download]  42.2% of  301.22KiB at  620.45KiB/s ETA 00:00
+[2025-05-21T02:21:23.401+0000] {logging_mixin.py:190} INFO - [download]  84.7% of  301.22KiB at  853.30KiB/s ETA 00:00
+[2025-05-21T02:21:23.405+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  301.22KiB at  993.90KiB/s ETA 00:00
+[2025-05-21T02:21:23.406+0000] {logging_mixin.py:190} INFO - [download] 100% of  301.22KiB in 00:00:00 at 858.42KiB/s 
+[2025-05-21T02:21:23.408+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1829761540870002"
+[2025-05-21T02:21:23.493+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1829761540870002.mp3
+[2025-05-21T02:21:23.920+0000] {logging_mixin.py:190} INFO - Deleting original file data/1829761540870002 (pass -k to keep)
+[2025-05-21T02:21:23.923+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1829761540870002
+[2025-05-21T02:21:23.928+0000] {logging_mixin.py:190} INFO - Downloaded video 1829761540870002 to data/1829761540870002.mp3
+[2025-05-21T02:21:24.043+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:21:24.044+0000] {logging_mixin.py:190} INFO - Downloading video from 1196438518577544...
+[2025-05-21T02:21:24.074+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/1196438518577544/
+[2025-05-21T02:21:24.074+0000] {logging_mixin.py:190} INFO - [facebook] 1196438518577544: Downloading webpage
+[2025-05-21T02:21:24.948+0000] {logging_mixin.py:190} INFO - [info] 1196438518577544: Downloading 1 format(s): 707155744973438a
+[2025-05-21T02:21:24.976+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1196438518577544
+[2025-05-21T02:21:24.977+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  461.66KiB at  Unknown B/s ETA Unknown
+[2025-05-21T02:21:24.978+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  461.66KiB at    1.21MiB/s ETA 00:00  
+[2025-05-21T02:21:24.979+0000] {logging_mixin.py:190} INFO - [download]   1.5% of  461.66KiB at    2.35MiB/s ETA 00:00
+[2025-05-21T02:21:24.979+0000] {logging_mixin.py:190} INFO - [download]   3.2% of  461.66KiB at    4.44MiB/s ETA 00:00
+[2025-05-21T02:21:24.980+0000] {logging_mixin.py:190} INFO - [download]   6.7% of  461.66KiB at    7.27MiB/s ETA 00:00
+[2025-05-21T02:21:24.983+0000] {logging_mixin.py:190} INFO - [download]  13.6% of  461.66KiB at    8.35MiB/s ETA 00:00
+[2025-05-21T02:21:24.989+0000] {logging_mixin.py:190} INFO - [download]  27.5% of  461.66KiB at    9.22MiB/s ETA 00:00
+[2025-05-21T02:21:25.017+0000] {logging_mixin.py:190} INFO - [download]  55.2% of  461.66KiB at    6.00MiB/s ETA 00:00
+[2025-05-21T02:21:25.220+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  461.66KiB at    1.85MiB/s ETA 00:00
+[2025-05-21T02:21:25.221+0000] {logging_mixin.py:190} INFO - [download] 100% of  461.66KiB in 00:00:00 at 1.68MiB/s   
+[2025-05-21T02:21:25.223+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1196438518577544"
+[2025-05-21T02:21:25.316+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1196438518577544.mp3
+[2025-05-21T02:21:25.954+0000] {logging_mixin.py:190} INFO - Deleting original file data/1196438518577544 (pass -k to keep)
+[2025-05-21T02:21:25.958+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1196438518577544
+[2025-05-21T02:21:25.963+0000] {logging_mixin.py:190} INFO - Downloaded video 1196438518577544 to data/1196438518577544.mp3
+[2025-05-21T02:21:26.077+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:21:26.078+0000] {logging_mixin.py:190} INFO - Downloading video from 9827700780586152...
+[2025-05-21T02:21:26.108+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/9827700780586152/
+[2025-05-21T02:21:26.109+0000] {logging_mixin.py:190} INFO - [facebook] 9827700780586152: Downloading webpage
+[2025-05-21T02:21:27.434+0000] {logging_mixin.py:190} INFO - [info] 9827700780586152: Downloading 1 format(s): 2673910112777891a
+[2025-05-21T02:21:27.489+0000] {logging_mixin.py:190} INFO - [download] Destination: data/9827700780586152
+[2025-05-21T02:21:27.489+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  512.09KiB at  323.43KiB/s ETA 00:01
+[2025-05-21T02:21:27.490+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  512.09KiB at  725.49KiB/s ETA 00:00
+[2025-05-21T02:21:27.491+0000] {logging_mixin.py:190} INFO - [download]   1.4% of  512.09KiB at    1.41MiB/s ETA 00:00
+[2025-05-21T02:21:27.492+0000] {logging_mixin.py:190} INFO - [download]   2.9% of  512.09KiB at    2.66MiB/s ETA 00:00
+[2025-05-21T02:21:27.493+0000] {logging_mixin.py:190} INFO - [download]   6.1% of  512.09KiB at    4.13MiB/s ETA 00:00
+[2025-05-21T02:21:27.497+0000] {logging_mixin.py:190} INFO - [download]  12.3% of  512.09KiB at    5.63MiB/s ETA 00:00
+[2025-05-21T02:21:27.508+0000] {logging_mixin.py:190} INFO - [download]  24.8% of  512.09KiB at    5.69MiB/s ETA 00:00
+[2025-05-21T02:21:27.717+0000] {logging_mixin.py:190} INFO - [download]  49.8% of  512.09KiB at    1.08MiB/s ETA 00:00
+[2025-05-21T02:21:27.745+0000] {logging_mixin.py:190} INFO - [download]  99.8% of  512.09KiB at    1.93MiB/s ETA 00:00
+[2025-05-21T02:21:27.746+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  512.09KiB at    1.93MiB/s ETA 00:00
+[2025-05-21T02:21:27.746+0000] {logging_mixin.py:190} INFO - [download] 100% of  512.09KiB in 00:00:00 at 1.62MiB/s   
+[2025-05-21T02:21:27.749+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/9827700780586152"
+[2025-05-21T02:21:27.835+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/9827700780586152.mp3
+[2025-05-21T02:21:28.494+0000] {logging_mixin.py:190} INFO - Deleting original file data/9827700780586152 (pass -k to keep)
+[2025-05-21T02:21:28.498+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 9827700780586152
+[2025-05-21T02:21:28.502+0000] {logging_mixin.py:190} INFO - Downloaded video 9827700780586152 to data/9827700780586152.mp3
+[2025-05-21T02:21:28.628+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:21:28.629+0000] {logging_mixin.py:190} INFO - Downloading video from 961047662398869...
+[2025-05-21T02:21:28.657+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/961047662398869/
+[2025-05-21T02:21:28.657+0000] {logging_mixin.py:190} INFO - [facebook] 961047662398869: Downloading webpage
+[2025-05-21T02:21:32.253+0000] {logging_mixin.py:190} INFO - [info] 961047662398869: Downloading 1 format(s): 474236402378919a
+[2025-05-21T02:21:32.625+0000] {logging_mixin.py:190} INFO - [download] Destination: data/961047662398869
+[2025-05-21T02:21:32.626+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  256.48KiB at  Unknown B/s ETA Unknown
+[2025-05-21T02:21:32.626+0000] {logging_mixin.py:190} INFO - [download]   1.2% of  256.48KiB at    2.84MiB/s ETA 00:00  
+[2025-05-21T02:21:32.627+0000] {logging_mixin.py:190} INFO - [download]   2.7% of  256.48KiB at    4.78MiB/s ETA 00:00
+[2025-05-21T02:21:32.629+0000] {logging_mixin.py:190} INFO - [download]   5.8% of  256.48KiB at    4.47MiB/s ETA 00:00
+[2025-05-21T02:21:32.630+0000] {logging_mixin.py:190} INFO - [download]  12.1% of  256.48KiB at    7.01MiB/s ETA 00:00
+[2025-05-21T02:21:32.633+0000] {logging_mixin.py:190} INFO - [download]  24.6% of  256.48KiB at    8.11MiB/s ETA 00:00
+[2025-05-21T02:21:32.639+0000] {logging_mixin.py:190} INFO - [download]  49.5% of  256.48KiB at    9.00MiB/s ETA 00:00
+[2025-05-21T02:21:32.652+0000] {logging_mixin.py:190} INFO - [download]  99.4% of  256.48KiB at    9.49MiB/s ETA 00:00
+[2025-05-21T02:21:32.652+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  256.48KiB at    9.32MiB/s ETA 00:00
+[2025-05-21T02:21:32.653+0000] {logging_mixin.py:190} INFO - [download] 100% of  256.48KiB in 00:00:00 at 646.36KiB/s 
+[2025-05-21T02:21:32.654+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/961047662398869"
+[2025-05-21T02:21:32.740+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/961047662398869.mp3
+[2025-05-21T02:21:33.128+0000] {logging_mixin.py:190} INFO - Deleting original file data/961047662398869 (pass -k to keep)
+[2025-05-21T02:21:33.132+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 961047662398869
+[2025-05-21T02:21:33.137+0000] {logging_mixin.py:190} INFO - Downloaded video 961047662398869 to data/961047662398869.mp3
+[2025-05-21T02:21:33.266+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:21:33.267+0000] {logging_mixin.py:190} INFO - Downloading video from 304223182477429...
+[2025-05-21T02:21:33.297+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/304223182477429/
+[2025-05-21T02:21:33.298+0000] {logging_mixin.py:190} INFO - [facebook] 304223182477429: Downloading webpage
+[2025-05-21T02:21:36.162+0000] {logging_mixin.py:190} INFO - [info] 304223182477429: Downloading 1 format(s): 1407349486971698a
+[2025-05-21T02:21:36.507+0000] {logging_mixin.py:190} INFO - [download] Destination: data/304223182477429
+[2025-05-21T02:21:36.509+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  130.95KiB at  575.03KiB/s ETA 00:00
+[2025-05-21T02:21:36.510+0000] {logging_mixin.py:190} INFO - [download]   2.3% of  130.95KiB at  858.20KiB/s ETA 00:00
+[2025-05-21T02:21:36.511+0000] {logging_mixin.py:190} INFO - [download]   5.3% of  130.95KiB at    1.46MiB/s ETA 00:00
+[2025-05-21T02:21:36.512+0000] {logging_mixin.py:190} INFO - [download]  11.5% of  130.95KiB at    2.80MiB/s ETA 00:00
+[2025-05-21T02:21:36.512+0000] {logging_mixin.py:190} INFO - [download]  23.7% of  130.95KiB at    5.35MiB/s ETA 00:00
+[2025-05-21T02:21:36.513+0000] {logging_mixin.py:190} INFO - [download]  48.1% of  130.95KiB at   10.06MiB/s ETA 00:00
+[2025-05-21T02:21:36.520+0000] {logging_mixin.py:190} INFO - [download]  97.0% of  130.95KiB at    9.64MiB/s ETA 00:00
+[2025-05-21T02:21:36.520+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  130.95KiB at    9.58MiB/s ETA 00:00
+[2025-05-21T02:21:36.521+0000] {logging_mixin.py:190} INFO - [download] 100% of  130.95KiB in 00:00:00 at 369.14KiB/s 
+[2025-05-21T02:21:36.522+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/304223182477429"
+[2025-05-21T02:21:36.612+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/304223182477429.mp3
+[2025-05-21T02:21:36.832+0000] {logging_mixin.py:190} INFO - Deleting original file data/304223182477429 (pass -k to keep)
+[2025-05-21T02:21:36.835+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 304223182477429
+[2025-05-21T02:21:36.840+0000] {logging_mixin.py:190} INFO - Downloaded video 304223182477429 to data/304223182477429.mp3
+[2025-05-21T02:21:36.965+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:21:36.965+0000] {logging_mixin.py:190} INFO - Downloading video from 898428242453133...
+[2025-05-21T02:21:36.994+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/898428242453133/
+[2025-05-21T02:21:36.994+0000] {logging_mixin.py:190} INFO - [facebook] 898428242453133: Downloading webpage
+[2025-05-21T02:21:38.400+0000] {logging_mixin.py:190} INFO - [info] 898428242453133: Downloading 1 format(s): 828275842673167a
+[2025-05-21T02:21:38.457+0000] {logging_mixin.py:190} INFO - [download] Destination: data/898428242453133
+[2025-05-21T02:21:38.457+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  202.33KiB at  Unknown B/s ETA Unknown
+[2025-05-21T02:21:38.457+0000] {logging_mixin.py:190} INFO - [download]   1.5% of  202.33KiB at    2.03MiB/s ETA 00:00  
+[2025-05-21T02:21:38.458+0000] {logging_mixin.py:190} INFO - [download]   3.5% of  202.33KiB at    3.50MiB/s ETA 00:00
+[2025-05-21T02:21:38.459+0000] {logging_mixin.py:190} INFO - [download]   7.4% of  202.33KiB at    5.57MiB/s ETA 00:00
+[2025-05-21T02:21:38.460+0000] {logging_mixin.py:190} INFO - [download]  15.3% of  202.33KiB at    7.42MiB/s ETA 00:00
+[2025-05-21T02:21:38.463+0000] {logging_mixin.py:190} INFO - [download]  31.1% of  202.33KiB at    8.48MiB/s ETA 00:00
+[2025-05-21T02:21:38.602+0000] {logging_mixin.py:190} INFO - [download]  62.8% of  202.33KiB at  872.13KiB/s ETA 00:00
+[2025-05-21T02:21:38.609+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  202.33KiB at    1.29MiB/s ETA 00:00
+[2025-05-21T02:21:38.609+0000] {logging_mixin.py:190} INFO - [download] 100% of  202.33KiB in 00:00:00 at 978.16KiB/s 
+[2025-05-21T02:21:38.611+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/898428242453133"
+[2025-05-21T02:21:38.705+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/898428242453133.mp3
+[2025-05-21T02:21:38.979+0000] {logging_mixin.py:190} INFO - Deleting original file data/898428242453133 (pass -k to keep)
+[2025-05-21T02:21:38.982+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 898428242453133
+[2025-05-21T02:21:38.993+0000] {logging_mixin.py:190} INFO - Downloaded video 898428242453133 to data/898428242453133.mp3
+[2025-05-21T02:21:39.107+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:21:39.107+0000] {logging_mixin.py:190} INFO - Downloading video from 1100419042099429...
+[2025-05-21T02:21:39.139+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/1100419042099429/
+[2025-05-21T02:21:39.139+0000] {logging_mixin.py:190} INFO - [facebook] 1100419042099429: Downloading webpage
+[2025-05-21T02:21:40.277+0000] {logging_mixin.py:190} INFO - [info] 1100419042099429: Downloading 1 format(s): 500276856371127a
+[2025-05-21T02:21:40.334+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1100419042099429
+[2025-05-21T02:21:40.335+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  294.67KiB at  805.98KiB/s ETA 00:00
+[2025-05-21T02:21:40.335+0000] {logging_mixin.py:190} INFO - [download]   1.0% of  294.67KiB at    1.46MiB/s ETA 00:00
+[2025-05-21T02:21:40.336+0000] {logging_mixin.py:190} INFO - [download]   2.4% of  294.67KiB at    2.68MiB/s ETA 00:00
+[2025-05-21T02:21:40.337+0000] {logging_mixin.py:190} INFO - [download]   5.1% of  294.67KiB at    4.27MiB/s ETA 00:00
+[2025-05-21T02:21:40.338+0000] {logging_mixin.py:190} INFO - [download]  10.5% of  294.67KiB at    6.27MiB/s ETA 00:00
+[2025-05-21T02:21:40.341+0000] {logging_mixin.py:190} INFO - [download]  21.4% of  294.67KiB at    7.79MiB/s ETA 00:00
+[2025-05-21T02:21:40.529+0000] {logging_mixin.py:190} INFO - [download]  43.1% of  294.67KiB at  650.22KiB/s ETA 00:00
+[2025-05-21T02:21:40.541+0000] {logging_mixin.py:190} INFO - [download]  86.5% of  294.67KiB at    1.20MiB/s ETA 00:00
+[2025-05-21T02:21:40.545+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  294.67KiB at    1.36MiB/s ETA 00:00
+[2025-05-21T02:21:40.546+0000] {logging_mixin.py:190} INFO - [download] 100% of  294.67KiB in 00:00:00 at 1.08MiB/s   
+[2025-05-21T02:21:40.548+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1100419042099429"
+[2025-05-21T02:21:40.641+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1100419042099429.mp3
+[2025-05-21T02:21:41.016+0000] {logging_mixin.py:190} INFO - Deleting original file data/1100419042099429 (pass -k to keep)
+[2025-05-21T02:21:41.019+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1100419042099429
+[2025-05-21T02:21:41.024+0000] {logging_mixin.py:190} INFO - Downloaded video 1100419042099429 to data/1100419042099429.mp3
+[2025-05-21T02:21:41.152+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:21:41.152+0000] {logging_mixin.py:190} INFO - Downloading video from 1572810920207154...
+[2025-05-21T02:21:41.184+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/1572810920207154/
+[2025-05-21T02:21:41.185+0000] {logging_mixin.py:190} INFO - [facebook] 1572810920207154: Downloading webpage
+[2025-05-21T02:21:44.662+0000] {logging_mixin.py:190} INFO - [info] 1572810920207154: Downloading 1 format(s): 1611714106210607a
+[2025-05-21T02:21:45.071+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1572810920207154
+[2025-05-21T02:21:45.072+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  208.90KiB at  Unknown B/s ETA Unknown
+[2025-05-21T02:21:45.072+0000] {logging_mixin.py:190} INFO - [download]   1.4% of  208.90KiB at    2.44MiB/s ETA 00:00  
+[2025-05-21T02:21:45.072+0000] {logging_mixin.py:190} INFO - [download]   3.4% of  208.90KiB at    4.33MiB/s ETA 00:00
+[2025-05-21T02:21:45.074+0000] {logging_mixin.py:190} INFO - [download]   7.2% of  208.90KiB at    4.21MiB/s ETA 00:00
+[2025-05-21T02:21:45.075+0000] {logging_mixin.py:190} INFO - [download]  14.8% of  208.90KiB at    7.36MiB/s ETA 00:00
+[2025-05-21T02:21:45.078+0000] {logging_mixin.py:190} INFO - [download]  30.2% of  208.90KiB at    8.67MiB/s ETA 00:00
+[2025-05-21T02:21:45.084+0000] {logging_mixin.py:190} INFO - [download]  60.8% of  208.90KiB at    9.36MiB/s ETA 00:00
+[2025-05-21T02:21:45.092+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  208.90KiB at    9.76MiB/s ETA 00:00
+[2025-05-21T02:21:45.093+0000] {logging_mixin.py:190} INFO - [download] 100% of  208.90KiB in 00:00:00 at 489.24KiB/s 
+[2025-05-21T02:21:45.094+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1572810920207154"
+[2025-05-21T02:21:45.186+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1572810920207154.mp3
+[2025-05-21T02:21:45.528+0000] {logging_mixin.py:190} INFO - Deleting original file data/1572810920207154 (pass -k to keep)
+[2025-05-21T02:21:45.531+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1572810920207154
+[2025-05-21T02:21:45.539+0000] {logging_mixin.py:190} INFO - Downloaded video 1572810920207154 to data/1572810920207154.mp3
+[2025-05-21T02:21:45.696+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:21:45.697+0000] {logging_mixin.py:190} INFO - Downloading video from 523300897451556...
+[2025-05-21T02:21:45.737+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/523300897451556/
+[2025-05-21T02:21:45.737+0000] {logging_mixin.py:190} INFO - [facebook] 523300897451556: Downloading webpage
+[2025-05-21T02:21:46.760+0000] {logging_mixin.py:190} INFO - [info] 523300897451556: Downloading 1 format(s): 932812281967559a
+[2025-05-21T02:21:46.824+0000] {logging_mixin.py:190} INFO - [download] Destination: data/523300897451556
+[2025-05-21T02:21:46.825+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  197.94KiB at  230.51KiB/s ETA 00:00
+[2025-05-21T02:21:46.825+0000] {logging_mixin.py:190} INFO - [download]   1.5% of  197.94KiB at  579.96KiB/s ETA 00:00
+[2025-05-21T02:21:46.826+0000] {logging_mixin.py:190} INFO - [download]   3.5% of  197.94KiB at    1.21MiB/s ETA 00:00
+[2025-05-21T02:21:46.826+0000] {logging_mixin.py:190} INFO - [download]   7.6% of  197.94KiB at    2.42MiB/s ETA 00:00
+[2025-05-21T02:21:46.831+0000] {logging_mixin.py:190} INFO - [download]  15.7% of  197.94KiB at    2.74MiB/s ETA 00:00
+[2025-05-21T02:21:46.841+0000] {logging_mixin.py:190} INFO - [download]  31.8% of  197.94KiB at    2.97MiB/s ETA 00:00
+[2025-05-21T02:21:46.975+0000] {logging_mixin.py:190} INFO - [download]  64.2% of  197.94KiB at  819.41KiB/s ETA 00:00
+[2025-05-21T02:21:46.990+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  197.94KiB at    1.14MiB/s ETA 00:00
+[2025-05-21T02:21:46.990+0000] {logging_mixin.py:190} INFO - [download] 100% of  197.94KiB in 00:00:00 at 870.17KiB/s 
+[2025-05-21T02:21:46.992+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/523300897451556"
+[2025-05-21T02:21:47.079+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/523300897451556.mp3
+[2025-05-21T02:21:47.330+0000] {logging_mixin.py:190} INFO - Deleting original file data/523300897451556 (pass -k to keep)
+[2025-05-21T02:21:47.333+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 523300897451556
+[2025-05-21T02:21:47.338+0000] {logging_mixin.py:190} INFO - Downloaded video 523300897451556 to data/523300897451556.mp3
+[2025-05-21T02:21:48.538+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:21:48.539+0000] {logging_mixin.py:190} INFO - Downloading video from 1997228630685659...
+[2025-05-21T02:21:48.569+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/1997228630685659/
+[2025-05-21T02:21:48.570+0000] {logging_mixin.py:190} INFO - [facebook] 1997228630685659: Downloading webpage
+[2025-05-21T02:21:49.437+0000] {logging_mixin.py:190} INFO - [info] 1997228630685659: Downloading 1 format(s): 2128676450934187a
+[2025-05-21T02:21:49.465+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1997228630685659
+[2025-05-21T02:21:49.466+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  190.72KiB at  Unknown B/s ETA Unknown
+[2025-05-21T02:21:49.468+0000] {logging_mixin.py:190} INFO - [download]   1.6% of  190.72KiB at    1.08MiB/s ETA 00:00  
+[2025-05-21T02:21:49.468+0000] {logging_mixin.py:190} INFO - [download]   3.7% of  190.72KiB at    2.18MiB/s ETA 00:00
+[2025-05-21T02:21:49.468+0000] {logging_mixin.py:190} INFO - [download]   7.9% of  190.72KiB at    4.19MiB/s ETA 00:00
+[2025-05-21T02:21:49.469+0000] {logging_mixin.py:190} INFO - [download]  16.3% of  190.72KiB at    7.04MiB/s ETA 00:00
+[2025-05-21T02:21:49.472+0000] {logging_mixin.py:190} INFO - [download]  33.0% of  190.72KiB at    8.71MiB/s ETA 00:00
+[2025-05-21T02:21:49.478+0000] {logging_mixin.py:190} INFO - [download]  66.6% of  190.72KiB at    9.41MiB/s ETA 00:00
+[2025-05-21T02:21:49.484+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  190.72KiB at    9.73MiB/s ETA 00:00
+[2025-05-21T02:21:49.485+0000] {logging_mixin.py:190} INFO - [download] 100% of  190.72KiB in 00:00:00 at 4.26MiB/s   
+[2025-05-21T02:21:49.487+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1997228630685659"
+[2025-05-21T02:21:49.572+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1997228630685659.mp3
+[2025-05-21T02:21:49.852+0000] {logging_mixin.py:190} INFO - Deleting original file data/1997228630685659 (pass -k to keep)
+[2025-05-21T02:21:49.855+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1997228630685659
+[2025-05-21T02:21:49.859+0000] {logging_mixin.py:190} INFO - Downloaded video 1997228630685659 to data/1997228630685659.mp3
+[2025-05-21T02:21:49.976+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:21:49.976+0000] {logging_mixin.py:190} INFO - Downloading video from 1471997206734280...
+[2025-05-21T02:21:50.005+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/1471997206734280/
+[2025-05-21T02:21:50.006+0000] {logging_mixin.py:190} INFO - [facebook] 1471997206734280: Downloading webpage
+[2025-05-21T02:21:52.957+0000] {logging_mixin.py:190} INFO - [info] 1471997206734280: Downloading 1 format(s): 574179288486680a
+[2025-05-21T02:21:53.156+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1471997206734280
+[2025-05-21T02:21:53.157+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  375.26KiB at  770.16KiB/s ETA 00:00
+[2025-05-21T02:21:53.157+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  375.26KiB at    1.57MiB/s ETA 00:00
+[2025-05-21T02:21:53.158+0000] {logging_mixin.py:190} INFO - [download]   1.9% of  375.26KiB at    2.97MiB/s ETA 00:00
+[2025-05-21T02:21:53.158+0000] {logging_mixin.py:190} INFO - [download]   4.0% of  375.26KiB at    5.33MiB/s ETA 00:00
+[2025-05-21T02:21:53.160+0000] {logging_mixin.py:190} INFO - [download]   8.3% of  375.26KiB at    7.06MiB/s ETA 00:00
+[2025-05-21T02:21:53.163+0000] {logging_mixin.py:190} INFO - [download]  16.8% of  375.26KiB at    8.40MiB/s ETA 00:00
+[2025-05-21T02:21:53.169+0000] {logging_mixin.py:190} INFO - [download]  33.8% of  375.26KiB at    9.26MiB/s ETA 00:00
+[2025-05-21T02:21:53.268+0000] {logging_mixin.py:190} INFO - [download]  68.0% of  375.26KiB at    2.21MiB/s ETA 00:00
+[2025-05-21T02:21:53.280+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  375.26KiB at    2.96MiB/s ETA 00:00
+[2025-05-21T02:21:53.280+0000] {logging_mixin.py:190} INFO - [download] 100% of  375.26KiB in 00:00:00 at 1.15MiB/s   
+[2025-05-21T02:21:53.282+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1471997206734280"
+[2025-05-21T02:21:53.380+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1471997206734280.mp3
+[2025-05-21T02:21:53.913+0000] {logging_mixin.py:190} INFO - Deleting original file data/1471997206734280 (pass -k to keep)
+[2025-05-21T02:21:53.917+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1471997206734280
+[2025-05-21T02:21:53.921+0000] {logging_mixin.py:190} INFO - Downloaded video 1471997206734280 to data/1471997206734280.mp3
+[2025-05-21T02:21:54.036+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:21:54.036+0000] {logging_mixin.py:190} INFO - Downloading video from 9820479977978926...
+[2025-05-21T02:21:54.067+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/9820479977978926/
+[2025-05-21T02:21:54.067+0000] {logging_mixin.py:190} INFO - [facebook] 9820479977978926: Downloading webpage
+[2025-05-21T02:21:53.090+0000] {logging_mixin.py:190} INFO - [info] 9820479977978926: Downloading 1 format(s): 887797316885389a
+[2025-05-21T02:21:53.356+0000] {logging_mixin.py:190} INFO - [download] Destination: data/9820479977978926
+[2025-05-21T02:21:53.357+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  908.66KiB at  685.46KiB/s ETA 00:01
+[2025-05-21T02:21:53.358+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  908.66KiB at    1.42MiB/s ETA 00:00
+[2025-05-21T02:21:53.358+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  908.66KiB at    2.68MiB/s ETA 00:00
+[2025-05-21T02:21:53.358+0000] {logging_mixin.py:190} INFO - [download]   1.7% of  908.66KiB at    4.90MiB/s ETA 00:00
+[2025-05-21T02:21:53.360+0000] {logging_mixin.py:190} INFO - [download]   3.4% of  908.66KiB at    6.29MiB/s ETA 00:00
+[2025-05-21T02:21:53.364+0000] {logging_mixin.py:190} INFO - [download]   6.9% of  908.66KiB at    7.17MiB/s ETA 00:00
+[2025-05-21T02:21:53.371+0000] {logging_mixin.py:190} INFO - [download]  14.0% of  908.66KiB at    8.23MiB/s ETA 00:00
+[2025-05-21T02:21:53.384+0000] {logging_mixin.py:190} INFO - [download]  28.1% of  908.66KiB at    8.74MiB/s ETA 00:00
+[2025-05-21T02:21:53.412+0000] {logging_mixin.py:190} INFO - [download]  56.2% of  908.66KiB at    8.91MiB/s ETA 00:00
+[2025-05-21T02:21:53.452+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  908.66KiB at    9.23MiB/s ETA 00:00
+[2025-05-21T02:21:53.452+0000] {logging_mixin.py:190} INFO - [download] 100% of  908.66KiB in 00:00:00 at 2.48MiB/s   
+[2025-05-21T02:21:53.455+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/9820479977978926"
+[2025-05-21T02:21:53.546+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/9820479977978926.mp3
+[2025-05-21T02:21:54.558+0000] {logging_mixin.py:190} INFO - Deleting original file data/9820479977978926 (pass -k to keep)
+[2025-05-21T02:21:54.562+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 9820479977978926
+[2025-05-21T02:21:54.566+0000] {logging_mixin.py:190} INFO - Downloaded video 9820479977978926 to data/9820479977978926.mp3
+[2025-05-21T02:21:54.697+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:21:54.697+0000] {logging_mixin.py:190} INFO - Downloading video from 1151995439906255...
+[2025-05-21T02:21:54.728+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/1151995439906255/
+[2025-05-21T02:21:54.728+0000] {logging_mixin.py:190} INFO - [facebook] 1151995439906255: Downloading webpage
+[2025-05-21T02:21:55.908+0000] {logging_mixin.py:190} INFO - [info] 1151995439906255: Downloading 1 format(s): 9513538522057123a
+[2025-05-21T02:21:56.174+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1151995439906255
+[2025-05-21T02:21:56.175+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  397.91KiB at  365.33KiB/s ETA 00:01
+[2025-05-21T02:21:56.175+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  397.91KiB at  921.22KiB/s ETA 00:00
+[2025-05-21T02:21:56.175+0000] {logging_mixin.py:190} INFO - [download]   1.8% of  397.91KiB at    1.86MiB/s ETA 00:00
+[2025-05-21T02:21:56.176+0000] {logging_mixin.py:190} INFO - [download]   3.8% of  397.91KiB at    3.60MiB/s ETA 00:00
+[2025-05-21T02:21:56.178+0000] {logging_mixin.py:190} INFO - [download]   7.8% of  397.91KiB at    5.13MiB/s ETA 00:00
+[2025-05-21T02:21:56.181+0000] {logging_mixin.py:190} INFO - [download]  15.8% of  397.91KiB at    6.91MiB/s ETA 00:00
+[2025-05-21T02:21:56.187+0000] {logging_mixin.py:190} INFO - [download]  31.9% of  397.91KiB at    8.26MiB/s ETA 00:00
+[2025-05-21T02:21:56.199+0000] {logging_mixin.py:190} INFO - [download]  64.1% of  397.91KiB at    9.11MiB/s ETA 00:00
+[2025-05-21T02:21:56.213+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  397.91KiB at    9.52MiB/s ETA 00:00
+[2025-05-21T02:21:56.213+0000] {logging_mixin.py:190} INFO - [download] 100% of  397.91KiB in 00:00:00 at 1.29MiB/s   
+[2025-05-21T02:21:56.215+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1151995439906255"
+[2025-05-21T02:21:56.304+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1151995439906255.mp3
+[2025-05-21T02:21:56.777+0000] {logging_mixin.py:190} INFO - Deleting original file data/1151995439906255 (pass -k to keep)
+[2025-05-21T02:21:56.780+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1151995439906255
+[2025-05-21T02:21:56.809+0000] {logging_mixin.py:190} INFO - Downloaded video 1151995439906255 to data/1151995439906255.mp3
+[2025-05-21T02:21:56.940+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:21:56.940+0000] {logging_mixin.py:190} INFO - Downloading video from 535950725451342...
+[2025-05-21T02:21:56.970+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/535950725451342/
+[2025-05-21T02:21:56.970+0000] {logging_mixin.py:190} INFO - [facebook] 535950725451342: Downloading webpage
+[2025-05-21T02:22:02.101+0000] {logging_mixin.py:190} INFO - [info] 535950725451342: Downloading 1 format(s): 1025042012431755a
+[2025-05-21T02:22:02.366+0000] {logging_mixin.py:190} INFO - [download] Destination: data/535950725451342
+[2025-05-21T02:22:02.367+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  993.73KiB at  261.52KiB/s ETA 00:03
+[2025-05-21T02:22:02.367+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  993.73KiB at  666.29KiB/s ETA 00:01
+[2025-05-21T02:22:02.367+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  993.73KiB at    1.39MiB/s ETA 00:00
+[2025-05-21T02:22:02.368+0000] {logging_mixin.py:190} INFO - [download]   1.5% of  993.73KiB at    2.73MiB/s ETA 00:00
+[2025-05-21T02:22:02.370+0000] {logging_mixin.py:190} INFO - [download]   3.1% of  993.73KiB at    4.32MiB/s ETA 00:00
+[2025-05-21T02:22:02.373+0000] {logging_mixin.py:190} INFO - [download]   6.3% of  993.73KiB at    6.16MiB/s ETA 00:00
+[2025-05-21T02:22:02.379+0000] {logging_mixin.py:190} INFO - [download]  12.8% of  993.73KiB at    7.58MiB/s ETA 00:00
+[2025-05-21T02:22:02.511+0000] {logging_mixin.py:190} INFO - [download]  25.7% of  993.73KiB at    1.68MiB/s ETA 00:00
+[2025-05-21T02:22:02.536+0000] {logging_mixin.py:190} INFO - [download]  51.4% of  993.73KiB at    2.89MiB/s ETA 00:00
+[2025-05-21T02:22:02.582+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  993.73KiB at    4.42MiB/s ETA 00:00
+[2025-05-21T02:22:02.583+0000] {logging_mixin.py:190} INFO - [download] 100% of  993.73KiB in 00:00:00 at 2.02MiB/s   
+[2025-05-21T02:22:02.585+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/535950725451342"
+[2025-05-21T02:22:02.677+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/535950725451342.mp3
+[2025-05-21T02:22:03.922+0000] {logging_mixin.py:190} INFO - Deleting original file data/535950725451342 (pass -k to keep)
+[2025-05-21T02:22:03.925+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 535950725451342
+[2025-05-21T02:22:03.933+0000] {logging_mixin.py:190} INFO - Downloaded video 535950725451342 to data/535950725451342.mp3
+[2025-05-21T02:22:04.062+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:22:04.063+0000] {logging_mixin.py:190} INFO - Downloading video from 446902741685585...
+[2025-05-21T02:22:04.095+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/446902741685585/
+[2025-05-21T02:22:04.096+0000] {logging_mixin.py:190} INFO - [facebook] 446902741685585: Downloading webpage
+[2025-05-21T02:22:08.105+0000] {logging_mixin.py:190} INFO - [info] 446902741685585: Downloading 1 format(s): 3062150037266134a
+[2025-05-21T02:22:08.356+0000] {logging_mixin.py:190} INFO - [download] Destination: data/446902741685585
+[2025-05-21T02:22:08.356+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  218.92KiB at  422.47KiB/s ETA 00:00
+[2025-05-21T02:22:08.357+0000] {logging_mixin.py:190} INFO - [download]   1.4% of  218.92KiB at  966.43KiB/s ETA 00:00
+[2025-05-21T02:22:08.357+0000] {logging_mixin.py:190} INFO - [download]   3.2% of  218.92KiB at    1.91MiB/s ETA 00:00
+[2025-05-21T02:22:08.358+0000] {logging_mixin.py:190} INFO - [download]   6.9% of  218.92KiB at    3.69MiB/s ETA 00:00
+[2025-05-21T02:22:08.359+0000] {logging_mixin.py:190} INFO - [download]  14.2% of  218.92KiB at    5.86MiB/s ETA 00:00
+[2025-05-21T02:22:08.362+0000] {logging_mixin.py:190} INFO - [download]  28.8% of  218.92KiB at    7.71MiB/s ETA 00:00
+[2025-05-21T02:22:08.368+0000] {logging_mixin.py:190} INFO - [download]  58.0% of  218.92KiB at    8.64MiB/s ETA 00:00
+[2025-05-21T02:22:08.377+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  218.92KiB at    9.26MiB/s ETA 00:00
+[2025-05-21T02:22:08.378+0000] {logging_mixin.py:190} INFO - [download] 100% of  218.92KiB in 00:00:00 at 813.17KiB/s 
+[2025-05-21T02:22:08.379+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/446902741685585"
+[2025-05-21T02:22:08.484+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/446902741685585.mp3
+[2025-05-21T02:22:08.835+0000] {logging_mixin.py:190} INFO - Deleting original file data/446902741685585 (pass -k to keep)
+[2025-05-21T02:22:08.838+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 446902741685585
+[2025-05-21T02:22:08.843+0000] {logging_mixin.py:190} INFO - Downloaded video 446902741685585 to data/446902741685585.mp3
+[2025-05-21T02:22:08.978+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:22:08.978+0000] {logging_mixin.py:190} INFO - Downloading video from 963802882477645...
+[2025-05-21T02:22:09.008+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/963802882477645/
+[2025-05-21T02:22:09.009+0000] {logging_mixin.py:190} INFO - [facebook] 963802882477645: Downloading webpage
+[2025-05-21T02:22:10.578+0000] {logging_mixin.py:190} INFO - [info] 963802882477645: Downloading 1 format(s): 1291520551972216a
+[2025-05-21T02:22:10.773+0000] {logging_mixin.py:190} INFO - [download] Destination: data/963802882477645
+[2025-05-21T02:22:10.774+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  224.17KiB at    6.98KiB/s ETA 00:31
+[2025-05-21T02:22:10.775+0000] {logging_mixin.py:190} INFO - [download]   1.3% of  224.17KiB at   20.81KiB/s ETA 00:10
+[2025-05-21T02:22:10.776+0000] {logging_mixin.py:190} INFO - [download]   3.1% of  224.17KiB at   48.37KiB/s ETA 00:04
+[2025-05-21T02:22:10.776+0000] {logging_mixin.py:190} INFO - [download]   6.7% of  224.17KiB at  103.24KiB/s ETA 00:02
+[2025-05-21T02:22:10.777+0000] {logging_mixin.py:190} INFO - [download]  13.8% of  224.17KiB at  212.55KiB/s ETA 00:00
+[2025-05-21T02:22:10.779+0000] {logging_mixin.py:190} INFO - [download]  28.1% of  224.17KiB at  424.13KiB/s ETA 00:00
+[2025-05-21T02:22:10.785+0000] {logging_mixin.py:190} INFO - [download]  56.7% of  224.17KiB at  821.13KiB/s ETA 00:00
+[2025-05-21T02:22:10.795+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  224.17KiB at    1.34MiB/s ETA 00:00
+[2025-05-21T02:22:10.795+0000] {logging_mixin.py:190} INFO - [download] 100% of  224.17KiB in 00:00:00 at 1.02MiB/s   
+[2025-05-21T02:22:10.797+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/963802882477645"
+[2025-05-21T02:22:10.882+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/963802882477645.mp3
+[2025-05-21T02:22:11.159+0000] {logging_mixin.py:190} INFO - Deleting original file data/963802882477645 (pass -k to keep)
+[2025-05-21T02:22:11.162+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 963802882477645
+[2025-05-21T02:22:11.170+0000] {logging_mixin.py:190} INFO - Downloaded video 963802882477645 to data/963802882477645.mp3
+[2025-05-21T02:22:11.291+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:22:11.291+0000] {logging_mixin.py:190} INFO - Downloading video from 1997228630685659...
+[2025-05-21T02:22:11.322+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/1997228630685659/?comment_id=1005421465035827&__tn__=R]
+[2025-05-21T02:22:11.322+0000] {logging_mixin.py:190} INFO - [facebook] 1997228630685659: Downloading webpage
+[2025-05-21T02:22:12.091+0000] {logging_mixin.py:190} INFO - [info] 1997228630685659: Downloading 1 format(s): 2128676450934187a
+[2025-05-21T02:22:12.121+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1997228630685659
+[2025-05-21T02:22:12.121+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  190.72KiB at  Unknown B/s ETA Unknown
+[2025-05-21T02:22:12.123+0000] {logging_mixin.py:190} INFO - [download]   1.6% of  190.72KiB at    1.32MiB/s ETA 00:00  
+[2025-05-21T02:22:12.123+0000] {logging_mixin.py:190} INFO - [download]   3.7% of  190.72KiB at    2.58MiB/s ETA 00:00
+[2025-05-21T02:22:12.124+0000] {logging_mixin.py:190} INFO - [download]   7.9% of  190.72KiB at    4.80MiB/s ETA 00:00
+[2025-05-21T02:22:12.124+0000] {logging_mixin.py:190} INFO - [download]  16.3% of  190.72KiB at    7.72MiB/s ETA 00:00
+[2025-05-21T02:22:12.128+0000] {logging_mixin.py:190} INFO - [download]  33.0% of  190.72KiB at    8.73MiB/s ETA 00:00
+[2025-05-21T02:22:12.134+0000] {logging_mixin.py:190} INFO - [download]  66.6% of  190.72KiB at    9.43MiB/s ETA 00:00
+[2025-05-21T02:22:12.140+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  190.72KiB at    9.78MiB/s ETA 00:00
+[2025-05-21T02:22:12.140+0000] {logging_mixin.py:190} INFO - [download] 100% of  190.72KiB in 00:00:00 at 4.16MiB/s   
+[2025-05-21T02:22:12.142+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1997228630685659"
+[2025-05-21T02:22:12.233+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1997228630685659.mp3
+[2025-05-21T02:22:12.519+0000] {logging_mixin.py:190} INFO - Deleting original file data/1997228630685659 (pass -k to keep)
+[2025-05-21T02:22:12.523+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1997228630685659
+[2025-05-21T02:22:12.528+0000] {logging_mixin.py:190} INFO - Downloaded video 1997228630685659 to data/1997228630685659.mp3
+[2025-05-21T02:22:12.642+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:22:12.642+0000] {logging_mixin.py:190} INFO - Downloading video from 1497748104416415...
+[2025-05-21T02:22:12.672+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/1497748104416415/
+[2025-05-21T02:22:12.672+0000] {logging_mixin.py:190} INFO - [facebook] 1497748104416415: Downloading webpage
+[2025-05-21T02:22:14.556+0000] {logging_mixin.py:190} INFO - [info] 1497748104416415: Downloading 1 format(s): 1077227274241657a
+[2025-05-21T02:22:15.043+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1497748104416415
+[2025-05-21T02:22:15.043+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  270.97KiB at   12.25KiB/s ETA 00:22
+[2025-05-21T02:22:15.044+0000] {logging_mixin.py:190} INFO - [download]   1.1% of  270.97KiB at   36.44KiB/s ETA 00:07
+[2025-05-21T02:22:15.044+0000] {logging_mixin.py:190} INFO - [download]   2.6% of  270.97KiB at   84.61KiB/s ETA 00:03
+[2025-05-21T02:22:15.045+0000] {logging_mixin.py:190} INFO - [download]   5.5% of  270.97KiB at  180.33KiB/s ETA 00:01
+[2025-05-21T02:22:15.046+0000] {logging_mixin.py:190} INFO - [download]  11.4% of  270.97KiB at  365.36KiB/s ETA 00:00
+[2025-05-21T02:22:15.050+0000] {logging_mixin.py:190} INFO - [download]  23.2% of  270.97KiB at  716.58KiB/s ETA 00:00
+[2025-05-21T02:22:15.056+0000] {logging_mixin.py:190} INFO - [download]  46.9% of  270.97KiB at    1.32MiB/s ETA 00:00
+[2025-05-21T02:22:15.070+0000] {logging_mixin.py:190} INFO - [download]  94.1% of  270.97KiB at    2.30MiB/s ETA 00:00
+[2025-05-21T02:22:15.071+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  270.97KiB at    2.41MiB/s ETA 00:00
+[2025-05-21T02:22:15.072+0000] {logging_mixin.py:190} INFO - [download] 100% of  270.97KiB in 00:00:00 at 529.25KiB/s 
+[2025-05-21T02:22:15.074+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1497748104416415"
+[2025-05-21T02:22:15.163+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1497748104416415.mp3
+[2025-05-21T02:22:15.610+0000] {logging_mixin.py:190} INFO - Deleting original file data/1497748104416415 (pass -k to keep)
+[2025-05-21T02:22:15.615+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1497748104416415
+[2025-05-21T02:22:15.622+0000] {logging_mixin.py:190} INFO - Downloaded video 1497748104416415 to data/1497748104416415.mp3
+[2025-05-21T02:22:15.740+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:22:15.740+0000] {logging_mixin.py:190} INFO - Downloading video from 1816178135842447...
+[2025-05-21T02:22:15.770+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/1816178135842447/
+[2025-05-21T02:22:15.771+0000] {logging_mixin.py:190} INFO - [facebook] 1816178135842447: Downloading webpage
+[2025-05-21T02:22:17.022+0000] {logging_mixin.py:190} INFO - [info] 1816178135842447: Downloading 1 format(s): 1415104589868522a
+[2025-05-21T02:22:17.082+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1816178135842447
+[2025-05-21T02:22:17.083+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  379.22KiB at  Unknown B/s ETA Unknown
+[2025-05-21T02:22:17.084+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  379.22KiB at    1.66MiB/s ETA 00:00  
+[2025-05-21T02:22:17.084+0000] {logging_mixin.py:190} INFO - [download]   1.8% of  379.22KiB at    2.65MiB/s ETA 00:00
+[2025-05-21T02:22:17.085+0000] {logging_mixin.py:190} INFO - [download]   4.0% of  379.22KiB at    4.34MiB/s ETA 00:00
+[2025-05-21T02:22:17.087+0000] {logging_mixin.py:190} INFO - [download]   8.2% of  379.22KiB at    5.38MiB/s ETA 00:00
+[2025-05-21T02:22:17.090+0000] {logging_mixin.py:190} INFO - [download]  16.6% of  379.22KiB at    7.25MiB/s ETA 00:00
+[2025-05-21T02:22:17.097+0000] {logging_mixin.py:190} INFO - [download]  33.5% of  379.22KiB at    8.36MiB/s ETA 00:00
+[2025-05-21T02:22:17.109+0000] {logging_mixin.py:190} INFO - [download]  67.2% of  379.22KiB at    9.14MiB/s ETA 00:00
+[2025-05-21T02:22:17.297+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  379.22KiB at    1.72MiB/s ETA 00:00
+[2025-05-21T02:22:17.298+0000] {logging_mixin.py:190} INFO - [download] 100% of  379.22KiB in 00:00:00 at 1.36MiB/s   
+[2025-05-21T02:22:17.299+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1816178135842447"
+[2025-05-21T02:22:17.387+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1816178135842447.mp3
+[2025-05-21T02:22:17.928+0000] {logging_mixin.py:190} INFO - Deleting original file data/1816178135842447 (pass -k to keep)
+[2025-05-21T02:22:17.931+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1816178135842447
+[2025-05-21T02:22:17.936+0000] {logging_mixin.py:190} INFO - Downloaded video 1816178135842447 to data/1816178135842447.mp3
+[2025-05-21T02:22:18.071+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:22:18.072+0000] {logging_mixin.py:190} INFO - Downloading video from 674924271811786...
+[2025-05-21T02:22:18.101+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/674924271811786/
+[2025-05-21T02:22:18.102+0000] {logging_mixin.py:190} INFO - [facebook] 674924271811786: Downloading webpage
+[2025-05-21T02:22:19.227+0000] {logging_mixin.py:190} INFO - [info] 674924271811786: Downloading 1 format(s): 699780869414998a
+[2025-05-21T02:22:19.258+0000] {logging_mixin.py:190} INFO - [download] Destination: data/674924271811786
+[2025-05-21T02:22:19.259+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  236.83KiB at  486.92KiB/s ETA 00:00
+[2025-05-21T02:22:19.259+0000] {logging_mixin.py:190} INFO - [download]   1.3% of  236.83KiB at  975.57KiB/s ETA 00:00
+[2025-05-21T02:22:19.260+0000] {logging_mixin.py:190} INFO - [download]   3.0% of  236.83KiB at    1.93MiB/s ETA 00:00
+[2025-05-21T02:22:19.260+0000] {logging_mixin.py:190} INFO - [download]   6.3% of  236.83KiB at    3.70MiB/s ETA 00:00
+[2025-05-21T02:22:19.262+0000] {logging_mixin.py:190} INFO - [download]  13.1% of  236.83KiB at    4.93MiB/s ETA 00:00
+[2025-05-21T02:22:19.268+0000] {logging_mixin.py:190} INFO - [download]  26.6% of  236.83KiB at    5.16MiB/s ETA 00:00
+[2025-05-21T02:22:19.278+0000] {logging_mixin.py:190} INFO - [download]  53.6% of  236.83KiB at    5.81MiB/s ETA 00:00
+[2025-05-21T02:22:19.292+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  236.83KiB at    6.41MiB/s ETA 00:00
+[2025-05-21T02:22:19.293+0000] {logging_mixin.py:190} INFO - [download] 100% of  236.83KiB in 00:00:00 at 3.65MiB/s   
+[2025-05-21T02:22:19.295+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/674924271811786"
+[2025-05-21T02:22:19.385+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/674924271811786.mp3
+[2025-05-21T02:22:19.737+0000] {logging_mixin.py:190} INFO - Deleting original file data/674924271811786 (pass -k to keep)
+[2025-05-21T02:22:19.739+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 674924271811786
+[2025-05-21T02:22:19.744+0000] {logging_mixin.py:190} INFO - Downloaded video 674924271811786 to data/674924271811786.mp3
+[2025-05-21T02:22:19.868+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:22:19.869+0000] {logging_mixin.py:190} INFO - Downloading video from 1466029057431774...
+[2025-05-21T02:22:19.899+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/1466029057431774/
+[2025-05-21T02:22:19.900+0000] {logging_mixin.py:190} INFO - [facebook] 1466029057431774: Downloading webpage
+[2025-05-21T02:22:23.939+0000] {logging_mixin.py:190} INFO - [info] 1466029057431774: Downloading 1 format(s): 661586396671016a
+[2025-05-21T02:22:24.287+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1466029057431774
+[2025-05-21T02:22:24.288+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  189.88KiB at  Unknown B/s ETA Unknown
+[2025-05-21T02:22:24.288+0000] {logging_mixin.py:190} INFO - [download]   1.6% of  189.88KiB at    2.55MiB/s ETA 00:00  
+[2025-05-21T02:22:24.288+0000] {logging_mixin.py:190} INFO - [download]   3.7% of  189.88KiB at    4.28MiB/s ETA 00:00
+[2025-05-21T02:22:24.289+0000] {logging_mixin.py:190} INFO - [download]   7.9% of  189.88KiB at    7.31MiB/s ETA 00:00
+[2025-05-21T02:22:24.292+0000] {logging_mixin.py:190} INFO - [download]  16.3% of  189.88KiB at    6.27MiB/s ETA 00:00
+[2025-05-21T02:22:24.295+0000] {logging_mixin.py:190} INFO - [download]  33.2% of  189.88KiB at    7.73MiB/s ETA 00:00
+[2025-05-21T02:22:24.301+0000] {logging_mixin.py:190} INFO - [download]  66.9% of  189.88KiB at    8.80MiB/s ETA 00:00
+[2025-05-21T02:22:24.307+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  189.88KiB at    9.30MiB/s ETA 00:00
+[2025-05-21T02:22:24.308+0000] {logging_mixin.py:190} INFO - [download] 100% of  189.88KiB in 00:00:00 at 519.86KiB/s 
+[2025-05-21T02:22:24.309+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1466029057431774"
+[2025-05-21T02:22:22.047+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1466029057431774.mp3
+[2025-05-21T02:22:22.421+0000] {logging_mixin.py:190} INFO - Deleting original file data/1466029057431774 (pass -k to keep)
+[2025-05-21T02:22:22.424+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1466029057431774
+[2025-05-21T02:22:22.429+0000] {logging_mixin.py:190} INFO - Downloaded video 1466029057431774 to data/1466029057431774.mp3
+[2025-05-21T02:22:22.548+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:22:22.548+0000] {logging_mixin.py:190} INFO - Downloading video from 1249270299522588...
+[2025-05-21T02:22:22.577+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/1249270299522588/
+[2025-05-21T02:22:22.578+0000] {logging_mixin.py:190} INFO - [facebook] 1249270299522588: Downloading webpage
+[2025-05-21T02:22:24.239+0000] {logging_mixin.py:190} INFO - [info] 1249270299522588: Downloading 1 format(s): 552522120922748a
+[2025-05-21T02:22:24.481+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1249270299522588
+[2025-05-21T02:22:24.482+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  848.66KiB at    5.28KiB/s ETA 02:40
+[2025-05-21T02:22:24.482+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  848.66KiB at   15.79KiB/s ETA 00:53
+[2025-05-21T02:22:24.483+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  848.66KiB at   36.77KiB/s ETA 00:22
+[2025-05-21T02:22:24.483+0000] {logging_mixin.py:190} INFO - [download]   1.8% of  848.66KiB at   78.60KiB/s ETA 00:10
+[2025-05-21T02:22:24.485+0000] {logging_mixin.py:190} INFO - [download]   3.7% of  848.66KiB at  160.93KiB/s ETA 00:05
+[2025-05-21T02:22:24.488+0000] {logging_mixin.py:190} INFO - [download]   7.4% of  848.66KiB at  321.94KiB/s ETA 00:02
+[2025-05-21T02:22:24.494+0000] {logging_mixin.py:190} INFO - [download]  15.0% of  848.66KiB at  629.24KiB/s ETA 00:01
+[2025-05-21T02:22:24.507+0000] {logging_mixin.py:190} INFO - [download]  30.0% of  848.66KiB at    1.16MiB/s ETA 00:00
+[2025-05-21T02:22:24.575+0000] {logging_mixin.py:190} INFO - [download]  60.2% of  848.66KiB at    1.77MiB/s ETA 00:00
+[2025-05-21T02:22:24.607+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  848.66KiB at    2.64MiB/s ETA 00:00
+[2025-05-21T02:22:24.608+0000] {logging_mixin.py:190} INFO - [download] 100% of  848.66KiB in 00:00:00 at 2.27MiB/s   
+[2025-05-21T02:22:24.610+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1249270299522588"
+[2025-05-21T02:22:24.701+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1249270299522588.mp3
+[2025-05-21T02:22:25.642+0000] {logging_mixin.py:190} INFO - Deleting original file data/1249270299522588 (pass -k to keep)
+[2025-05-21T02:22:25.646+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1249270299522588
+[2025-05-21T02:22:25.659+0000] {logging_mixin.py:190} INFO - Downloaded video 1249270299522588 to data/1249270299522588.mp3
+[2025-05-21T02:22:25.786+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:22:25.787+0000] {logging_mixin.py:190} INFO - Downloading video from 1024593736262875...
+[2025-05-21T02:22:25.817+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/1024593736262875/
+[2025-05-21T02:22:25.818+0000] {logging_mixin.py:190} INFO - [facebook] 1024593736262875: Downloading webpage
+[2025-05-21T02:22:26.687+0000] {logging_mixin.py:190} INFO - [info] 1024593736262875: Downloading 1 format(s): 882466790675874a
+[2025-05-21T02:22:26.724+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1024593736262875
+[2025-05-21T02:22:26.724+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  576.65KiB at  Unknown B/s ETA Unknown
+[2025-05-21T02:22:26.728+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  576.65KiB at  806.70KiB/s ETA 00:00  
+[2025-05-21T02:22:26.728+0000] {logging_mixin.py:190} INFO - [download]   1.2% of  576.65KiB at    1.64MiB/s ETA 00:00
+[2025-05-21T02:22:26.728+0000] {logging_mixin.py:190} INFO - [download]   2.6% of  576.65KiB at    3.24MiB/s ETA 00:00
+[2025-05-21T02:22:26.730+0000] {logging_mixin.py:190} INFO - [download]   5.4% of  576.65KiB at    4.63MiB/s ETA 00:00
+[2025-05-21T02:22:26.735+0000] {logging_mixin.py:190} INFO - [download]  10.9% of  576.65KiB at    5.60MiB/s ETA 00:00
+[2025-05-21T02:22:26.752+0000] {logging_mixin.py:190} INFO - [download]  22.0% of  576.65KiB at    4.45MiB/s ETA 00:00
+[2025-05-21T02:22:26.768+0000] {logging_mixin.py:190} INFO - [download]  44.2% of  576.65KiB at    5.68MiB/s ETA 00:00
+[2025-05-21T02:22:26.987+0000] {logging_mixin.py:190} INFO - [download]  88.6% of  576.65KiB at    1.90MiB/s ETA 00:00
+[2025-05-21T02:22:26.993+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  576.65KiB at    2.10MiB/s ETA 00:00
+[2025-05-21T02:22:26.993+0000] {logging_mixin.py:190} INFO - [download] 100% of  576.65KiB in 00:00:00 at 1.86MiB/s   
+[2025-05-21T02:22:26.995+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1024593736262875"
+[2025-05-21T02:22:27.083+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1024593736262875.mp3
+[2025-05-21T02:22:27.828+0000] {logging_mixin.py:190} INFO - Deleting original file data/1024593736262875 (pass -k to keep)
+[2025-05-21T02:22:27.832+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1024593736262875
+[2025-05-21T02:22:27.854+0000] {logging_mixin.py:190} INFO - Downloaded video 1024593736262875 to data/1024593736262875.mp3
+[2025-05-21T02:22:27.971+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-21T02:22:27.971+0000] {logging_mixin.py:190} INFO - Downloading video from 416895970990958...
+[2025-05-21T02:22:28.001+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/Cristiano/videos/416895970990958/
+[2025-05-21T02:22:28.001+0000] {logging_mixin.py:190} INFO - [facebook] 416895970990958: Downloading webpage
+[2025-05-21T02:22:30.620+0000] {logging_mixin.py:190} INFO - [info] 416895970990958: Downloading 1 format(s): 1233210008178424a
+[2025-05-21T02:22:30.962+0000] {logging_mixin.py:190} INFO - [download] Destination: data/416895970990958
+[2025-05-21T02:22:30.963+0000] {logging_mixin.py:190} INFO - [download]   0.1% of 1017.19KiB at  808.00KiB/s ETA 00:01
+[2025-05-21T02:22:30.964+0000] {logging_mixin.py:190} INFO - [download]   0.3% of 1017.19KiB at    1.15MiB/s ETA 00:00
+[2025-05-21T02:22:30.965+0000] {logging_mixin.py:190} INFO - [download]   0.7% of 1017.19KiB at    1.94MiB/s ETA 00:00
+[2025-05-21T02:22:30.966+0000] {logging_mixin.py:190} INFO - [download]   1.5% of 1017.19KiB at    3.30MiB/s ETA 00:00
+[2025-05-21T02:22:30.966+0000] {logging_mixin.py:190} INFO - [download]   3.0% of 1017.19KiB at    5.86MiB/s ETA 00:00
+[2025-05-21T02:22:30.967+0000] {logging_mixin.py:190} INFO - [download]   6.2% of 1017.19KiB at   10.71MiB/s ETA 00:00
+[2025-05-21T02:22:30.973+0000] {logging_mixin.py:190} INFO - [download]  12.5% of 1017.19KiB at   10.29MiB/s ETA 00:00
+[2025-05-21T02:22:30.986+0000] {logging_mixin.py:190} INFO - [download]  25.1% of 1017.19KiB at   10.19MiB/s ETA 00:00
+[2025-05-21T02:22:31.010+0000] {logging_mixin.py:190} INFO - [download]  50.2% of 1017.19KiB at   10.19MiB/s ETA 00:00
+[2025-05-21T02:22:31.059+0000] {logging_mixin.py:190} INFO - [download] 100.0% of 1017.19KiB at   10.19MiB/s ETA 00:00
+[2025-05-21T02:22:31.059+0000] {logging_mixin.py:190} INFO - [download] 100% of 1017.19KiB in 00:00:00 at 2.28MiB/s   
+[2025-05-21T02:22:31.061+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/416895970990958"
+[2025-05-21T02:22:31.151+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/416895970990958.mp3
+[2025-05-21T02:22:32.477+0000] {logging_mixin.py:190} INFO - Deleting original file data/416895970990958 (pass -k to keep)
+[2025-05-21T02:22:32.480+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 416895970990958
+[2025-05-21T02:22:32.485+0000] {logging_mixin.py:190} INFO - Downloaded video 416895970990958 to data/416895970990958.mp3
+[2025-05-21T02:22:32.654+0000] {python.py:240} INFO - Done. Returned value was: [{'video_id': '1997228630685659', 'file_path': 'data/1997228630685659.mp3'}, {'video_id': '688789503677491', 'file_path': 'data/688789503677491.mp3'}, {'video_id': '1879333049588928', 'file_path': 'data/1879333049588928.mp3'}, {'video_id': '527640300344671', 'file_path': 'data/527640300344671.mp3'}, {'video_id': '1164949147928304', 'file_path': 'data/1164949147928304.mp3'}, {'video_id': '1402114920478428', 'file_path': 'data/1402114920478428.mp3'}, {'video_id': '358726033363404', 'file_path': 'data/358726033363404.mp3'}, {'video_id': '850346460063365', 'file_path': 'data/850346460063365.mp3'}, {'video_id': '1222941998905824', 'file_path': 'data/1222941998905824.mp3'}, {'video_id': '980013393965157', 'file_path': 'data/980013393965157.mp3'}, {'video_id': '1168270047721916', 'file_path': 'data/1168270047721916.mp3'}, {'video_id': '398955763130468', 'file_path': 'data/398955763130468.mp3'}, {'video_id': '538980555687742', 'file_path': 'data/538980555687742.mp3'}, {'video_id': '358907080069233', 'file_path': 'data/358907080069233.mp3'}, {'video_id': '3441316972757461', 'file_path': 'data/3441316972757461.mp3'}, {'video_id': '1208140004080231', 'file_path': 'data/1208140004080231.mp3'}, {'video_id': '1270659154270254', 'file_path': 'data/1270659154270254.mp3'}, {'video_id': '1829761540870002', 'file_path': 'data/1829761540870002.mp3'}, {'video_id': '1196438518577544', 'file_path': 'data/1196438518577544.mp3'}, {'video_id': '9827700780586152', 'file_path': 'data/9827700780586152.mp3'}, {'video_id': '961047662398869', 'file_path': 'data/961047662398869.mp3'}, {'video_id': '304223182477429', 'file_path': 'data/304223182477429.mp3'}, {'video_id': '898428242453133', 'file_path': 'data/898428242453133.mp3'}, {'video_id': '1100419042099429', 'file_path': 'data/1100419042099429.mp3'}, {'video_id': '1572810920207154', 'file_path': 'data/1572810920207154.mp3'}, {'video_id': '523300897451556', 'file_path': 'data/523300897451556.mp3'}, {'video_id': '1997228630685659', 'file_path': 'data/1997228630685659.mp3'}, {'video_id': '1471997206734280', 'file_path': 'data/1471997206734280.mp3'}, {'video_id': '9820479977978926', 'file_path': 'data/9820479977978926.mp3'}, {'video_id': '1151995439906255', 'file_path': 'data/1151995439906255.mp3'}, {'video_id': '535950725451342', 'file_path': 'data/535950725451342.mp3'}, {'video_id': '446902741685585', 'file_path': 'data/446902741685585.mp3'}, {'video_id': '963802882477645', 'file_path': 'data/963802882477645.mp3'}, {'video_id': '1997228630685659', 'file_path': 'data/1997228630685659.mp3'}, {'video_id': '1497748104416415', 'file_path': 'data/1497748104416415.mp3'}, {'video_id': '1816178135842447', 'file_path': 'data/1816178135842447.mp3'}, {'video_id': '674924271811786', 'file_path': 'data/674924271811786.mp3'}, {'video_id': '1466029057431774', 'file_path': 'data/1466029057431774.mp3'}, {'video_id': '1249270299522588', 'file_path': 'data/1249270299522588.mp3'}, {'video_id': '1024593736262875', 'file_path': 'data/1024593736262875.mp3'}, {'video_id': '416895970990958', 'file_path': 'data/416895970990958.mp3'}]
+[2025-05-21T02:22:32.673+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-21T02:22:32.673+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=facebook_videos_scraper_dag, task_id=facebook_videos_scraper_task, run_id=manual__2025-05-21T02:20:17.735061+00:00, execution_date=20250521T022017, start_date=20250521T022018, end_date=20250521T022232
+[2025-05-21T02:22:32.706+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-21T02:22:32.731+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-21T02:22:32.733+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

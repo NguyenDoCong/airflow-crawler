@@ -1,0 +1,70 @@
+[2025-05-21T08:10:10.773+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-21T08:10:10.784+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: x_videos_scraper_dag.get_links_task manual__2025-05-21T08:10:08.768543+00:00 [queued]>
+[2025-05-21T08:10:10.789+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: x_videos_scraper_dag.get_links_task manual__2025-05-21T08:10:08.768543+00:00 [queued]>
+[2025-05-21T08:10:10.790+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-21T08:10:10.797+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-21 08:10:08.768543+00:00
+[2025-05-21T08:10:10.802+0000] {standard_task_runner.py:72} INFO - Started process 205065 to run task
+[2025-05-21T08:10:10.805+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'x_videos_scraper_dag', 'get_links_task', 'manual__2025-05-21T08:10:08.768543+00:00', '--job-id', '6427', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_x.py', '--cfg-path', '/tmp/tmpi8s2cqnn']
+[2025-05-21T08:10:10.807+0000] {standard_task_runner.py:105} INFO - Job 6427: Subtask get_links_task
+[2025-05-21T08:10:10.842+0000] {task_command.py:467} INFO - Running <TaskInstance: x_videos_scraper_dag.get_links_task manual__2025-05-21T08:10:08.768543+00:00 [running]> on host 40367d170eab
+[2025-05-21T08:10:10.896+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='x_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-21T08:10:08.768543+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-21T08:10:08.768543+00:00'
+[2025-05-21T08:10:10.897+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-21T08:10:16.141+0000] {logging_mixin.py:190} INFO - Scrolling down... 0
+[2025-05-21T08:10:21.349+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1924859108865323121/video/1
+[2025-05-21T08:10:21.353+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1922957070048874841/video/1
+[2025-05-21T08:10:21.360+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1921191243482087932/video/1
+[2025-05-21T08:10:21.367+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1919453517518872985/video/1
+[2025-05-21T08:10:21.388+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1915409532924158248/video/1
+[2025-05-21T08:10:21.392+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1914982579465281859/video/1
+[2025-05-21T08:10:21.406+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1911763830826230166/video/1
+[2025-05-21T08:10:21.414+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1910588895051329799/video/1
+[2025-05-21T08:10:21.418+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1910363097774108906/video/1
+[2025-05-21T08:10:21.425+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1910008061856526695/video/1
+[2025-05-21T08:10:21.432+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1908867553469800598/video/1
+[2025-05-21T08:10:21.441+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1906775463282044998/video/1
+[2025-05-21T08:10:21.451+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1904942189102182598/video/1
+[2025-05-21T08:10:21.478+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1900187027783487915/video/1
+[2025-05-21T08:10:21.514+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1892168362454925445/video/1
+[2025-05-21T08:10:21.518+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1890718523917250585/video/1
+[2025-05-21T08:10:21.566+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1885704622615961799/video/1
+[2025-05-21T08:10:21.613+0000] {logging_mixin.py:190} INFO - Scrolling down... 1
+[2025-05-21T08:10:26.848+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1876607629738561773/video/1
+[2025-05-21T08:10:26.859+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1873734671189844232/video/1
+[2025-05-21T08:10:26.872+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1871630842487075284/video/1
+[2025-05-21T08:10:26.885+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1868628327843639361/video/1
+[2025-05-21T08:10:26.892+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1867936397770027247/video/1
+[2025-05-21T08:10:26.900+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1866942431989756322/video/1
+[2025-05-21T08:10:26.911+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1866775071252959617/video/1
+[2025-05-21T08:10:26.919+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1864703375771566463/video/1
+[2025-05-21T08:10:26.986+0000] {logging_mixin.py:190} INFO - Scrolling down... 2
+[2025-05-21T08:10:32.184+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1859599097818235186/video/1
+[2025-05-21T08:10:32.188+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1859518319172206981/video/1
+[2025-05-21T08:10:32.203+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1856782977641886117/video/1
+[2025-05-21T08:10:32.237+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1849833769445790200/video/1
+[2025-05-21T08:10:32.249+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1847002524395417915/video/1
+[2025-05-21T08:10:32.320+0000] {logging_mixin.py:190} INFO - Scrolling down... 3
+[2025-05-21T08:10:37.519+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1837556864315187418/video/1
+[2025-05-21T08:10:37.536+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1831822844378104206/video/1
+[2025-05-21T08:10:37.546+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1829582400394821762/video/1
+[2025-05-21T08:10:37.552+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1828781500449599649/video/1
+[2025-05-21T08:10:37.556+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1828696498999029761/video/1
+[2025-05-21T08:10:37.562+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1828091181424664710/video/1
+[2025-05-21T08:10:37.572+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1826383235166945404/video/1
+[2025-05-21T08:10:37.576+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1826247569732981142/video/1
+[2025-05-21T08:10:37.579+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1824068531119440154/video/1
+[2025-05-21T08:10:37.598+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1816810387289022934/video/1
+[2025-05-21T08:10:37.666+0000] {logging_mixin.py:190} INFO - Scrolling down... 4
+[2025-05-21T08:10:40.995+0000] {local_task_job_runner.py:341} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-05-21T08:10:40.997+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2025-05-21T08:10:40.998+0000] {process_utils.py:132} INFO - Sending 15 to group 205065. PIDs of all processes in the group: [205067, 205079, 205081, 205082, 205103, 205137, 205148, 205065]
+[2025-05-21T08:10:40.998+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 205065
+[2025-05-21T08:10:40.998+0000] {taskinstance.py:3083} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-05-21T08:10:41.052+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=205137, status='terminated', started='08:10:11') (205137) terminated with exit code None
+[2025-05-21T08:10:41.053+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=205148, status='terminated', started='08:10:11') (205148) terminated with exit code None
+[2025-05-21T08:10:41.053+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=205081, status='terminated', started='08:10:11') (205081) terminated with exit code None
+[2025-05-21T08:10:41.053+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=205079, status='terminated', started='08:10:11') (205079) terminated with exit code None
+[2025-05-21T08:10:41.054+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=205082, status='terminated', started='08:10:11') (205082) terminated with exit code None
+[2025-05-21T08:10:41.054+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=205103, status='terminated', started='08:10:11') (205103) terminated with exit code None
+[2025-05-21T08:10:41.090+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-21T08:10:41.109+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=205065, status='terminated', exitcode=0, started='08:10:10') (205065) terminated with exit code 0
+[2025-05-21T08:10:41.109+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=205067, status='terminated', started='08:10:10') (205067) terminated with exit code None

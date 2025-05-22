@@ -1,0 +1,55 @@
+[2025-05-21T04:21:00.150+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-21T04:21:00.164+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-21T04:20:59.580686+00:00 [queued]>
+[2025-05-21T04:21:00.170+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-21T04:20:59.580686+00:00 [queued]>
+[2025-05-21T04:21:00.170+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-21T04:21:00.178+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-21 04:20:59.580686+00:00
+[2025-05-21T04:21:00.181+0000] {standard_task_runner.py:72} INFO - Started process 15247 to run task
+[2025-05-21T04:21:00.184+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'get_links_task', 'manual__2025-05-21T04:20:59.580686+00:00', '--job-id', '6380', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpqip2p03k']
+[2025-05-21T04:21:00.185+0000] {standard_task_runner.py:105} INFO - Job 6380: Subtask get_links_task
+[2025-05-21T04:21:00.218+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-21T04:20:59.580686+00:00 [running]> on host 05534d39966d
+[2025-05-21T04:21:00.270+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-21T04:20:59.580686+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-21T04:20:59.580686+00:00'
+[2025-05-21T04:21:00.271+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-21T04:21:08.009+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7456185096626834689
+[2025-05-21T04:21:08.010+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7179250673870064923
+[2025-05-21T04:21:08.010+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7506595517774695688
+[2025-05-21T04:21:08.010+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7506589437862710546
+[2025-05-21T04:21:08.010+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7506477215811472658
+[2025-05-21T04:21:08.010+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7506467362997112072
+[2025-05-21T04:21:08.010+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7506430413615795474
+[2025-05-21T04:21:08.010+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7506423945260748039
+[2025-05-21T04:21:08.010+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7506408019966610706
+[2025-05-21T04:21:08.010+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7506364668156382471
+[2025-05-21T04:21:08.010+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7506353251533458695
+[2025-05-21T04:21:08.010+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7506342209868942610
+[2025-05-21T04:21:08.010+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7506334612700794130
+[2025-05-21T04:21:08.011+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7506154270127901970
+[2025-05-21T04:21:08.011+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7506137124811459847
+[2025-05-21T04:21:08.011+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7506126824003472658
+[2025-05-21T04:21:08.011+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7506110900953238802
+[2025-05-21T04:21:08.011+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7506102415884553490
+[2025-05-21T04:21:08.011+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7506098235685997831
+[2025-05-21T04:21:08.011+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7506066591021305106
+[2025-05-21T04:21:08.011+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7506045506594884882
+[2025-05-21T04:21:08.011+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7506010693150608647
+[2025-05-21T04:21:08.011+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7505990254365510919
+[2025-05-21T04:21:08.011+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7505786190365363464
+[2025-05-21T04:21:08.011+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7505684692763528456
+[2025-05-21T04:21:08.011+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7505465976696098066
+[2025-05-21T04:21:08.012+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7505458278051106066
+[2025-05-21T04:21:08.012+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7505398984718945554
+[2025-05-21T04:21:08.012+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7505352175707639058
+[2025-05-21T04:21:08.012+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7505350519272099080
+[2025-05-21T04:21:08.012+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7505109671900925192
+[2025-05-21T04:21:08.012+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7504989210730908936
+[2025-05-21T04:21:08.012+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7504993477676043527
+[2025-05-21T04:21:08.012+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7504982284634836231
+[2025-05-21T04:21:08.012+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7504959112795442440
+[2025-05-21T04:21:08.012+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7504950361514462471
+[2025-05-21T04:21:08.012+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@tiin.vn/video/7504941932699798792
+[2025-05-21T04:21:08.027+0000] {logging_mixin.py:190} INFO - New videos: 37
+[2025-05-21T04:21:08.162+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'tiin.vn', 'new_links': ('https://www.tiktok.com/@tiin.vn/video/7506467362997112072', 'https://www.tiktok.com/@tiin.vn/video/7506364668156382471', 'https://www.tiktok.com/@tiin.vn/video/7506408019966610706', 'https://www.tiktok.com/@tiin.vn/video/7506126824003472658', 'https://www.tiktok.com/@tiin.vn/video/7506353251533458695', 'https://www.tiktok.com/@tiin.vn/video/7506098235685997831', 'https://www.tiktok.com/@tiin.vn/video/7506110900953238802', 'https://www.tiktok.com/@tiin.vn/video/7505684692763528456', 'https://www.tiktok.com/@tiin.vn/video/7505465976696098066', 'https://www.tiktok.com/@tiin.vn/video/7504993477676043527', 'https://www.tiktok.com/@tiin.vn/video/7504950361514462471', 'https://www.tiktok.com/@tiin.vn/video/7506430413615795474', 'https://www.tiktok.com/@tiin.vn/video/7506589437862710546', 'https://www.tiktok.com/@tiin.vn/video/7506066591021305106', 'https://www.tiktok.com/@tiin.vn/video/7505109671900925192', 'https://www.tiktok.com/@tiin.vn/video/7506595517774695688', 'https://www.tiktok.com/@tiin.vn/video/7506154270127901970', 'https://www.tiktok.com/@tiin.vn/video/7505458278051106066', 'https://www.tiktok.com/@tiin.vn/video/7506334612700794130', 'https://www.tiktok.com/@tiin.vn/video/7504959112795442440', 'https://www.tiktok.com/@tiin.vn/video/7505352175707639058', 'https://www.tiktok.com/@tiin.vn/video/7506423945260748039', 'https://www.tiktok.com/@tiin.vn/video/7506010693150608647', 'https://www.tiktok.com/@tiin.vn/video/7506342209868942610', 'https://www.tiktok.com/@tiin.vn/video/7506102415884553490', 'https://www.tiktok.com/@tiin.vn/video/7505350519272099080', 'https://www.tiktok.com/@tiin.vn/video/7456185096626834689', 'https://www.tiktok.com/@tiin.vn/video/7504989210730908936', 'https://www.tiktok.com/@tiin.vn/video/7179250673870064923', 'https://www.tiktok.com/@tiin.vn/video/7505786190365363464', 'https://www.tiktok.com/@tiin.vn/video/7505990254365510919', 'https://www.tiktok.com/@tiin.vn/video/7506137124811459847', 'https://www.tiktok.com/@tiin.vn/video/7506045506594884882', 'https://www.tiktok.com/@tiin.vn/video/7504982284634836231', 'https://www.tiktok.com/@tiin.vn/video/7505398984718945554', 'https://www.tiktok.com/@tiin.vn/video/7504941932699798792', 'https://www.tiktok.com/@tiin.vn/video/7506477215811472658')}
+[2025-05-21T04:21:08.180+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-21T04:21:08.181+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tiktok_videos_scraper_dag, task_id=get_links_task, run_id=manual__2025-05-21T04:20:59.580686+00:00, execution_date=20250521T042059, start_date=20250521T042100, end_date=20250521T042108
+[2025-05-21T04:21:10.244+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-21T04:21:10.258+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-21T04:21:10.260+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

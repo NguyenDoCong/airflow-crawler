@@ -1,0 +1,56 @@
+[2025-05-21T07:07:23.749+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-21T07:07:23.759+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-21T07:07:22.097132+00:00 [queued]>
+[2025-05-21T07:07:23.764+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-21T07:07:22.097132+00:00 [queued]>
+[2025-05-21T07:07:23.765+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-21T07:07:23.773+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-21 07:07:22.097132+00:00
+[2025-05-21T07:07:23.777+0000] {standard_task_runner.py:72} INFO - Started process 1462950 to run task
+[2025-05-21T07:07:23.780+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'get_links_task', 'manual__2025-05-21T07:07:22.097132+00:00', '--job-id', '6411', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmppx_jq4pv']
+[2025-05-21T07:07:23.782+0000] {standard_task_runner.py:105} INFO - Job 6411: Subtask get_links_task
+[2025-05-21T07:07:23.817+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-21T07:07:22.097132+00:00 [running]> on host 40367d170eab
+[2025-05-21T07:07:23.867+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-21T07:07:22.097132+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-21T07:07:22.097132+00:00'
+[2025-05-21T07:07:23.868+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-21T07:07:34.705+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7481983041515146504
+[2025-05-21T07:07:34.706+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7465991247379893512
+[2025-05-21T07:07:34.706+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7427827016944127239
+[2025-05-21T07:07:34.706+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7506547767012117778
+[2025-05-21T07:07:34.706+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7506489241497652487
+[2025-05-21T07:07:34.706+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7506164182140669191
+[2025-05-21T07:07:34.707+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7505672857632935169
+[2025-05-21T07:07:34.707+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7505264231206407425
+[2025-05-21T07:07:34.707+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7503572685947997457
+[2025-05-21T07:07:34.707+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7502821715660066055
+[2025-05-21T07:07:34.707+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7502453840793390341
+[2025-05-21T07:07:34.707+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7502001342571891975
+[2025-05-21T07:07:34.707+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7501738554834373889
+[2025-05-21T07:07:34.707+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7501332163141422353
+[2025-05-21T07:07:34.707+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7501278539723869448
+[2025-05-21T07:07:34.707+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7500485362637147393
+[2025-05-21T07:07:34.707+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7500197551975517457
+[2025-05-21T07:07:34.708+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7499537740380278033
+[2025-05-21T07:07:34.708+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7498969706087419143
+[2025-05-21T07:07:34.708+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7498581790269918471
+[2025-05-21T07:07:34.708+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7498569186038304008
+[2025-05-21T07:07:34.708+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7498293918275095826
+[2025-05-21T07:07:34.708+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7497896727123430674
+[2025-05-21T07:07:34.708+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7497947331069824264
+[2025-05-21T07:07:34.708+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7497585313276087607
+[2025-05-21T07:07:34.708+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7497534424288988434
+[2025-05-21T07:07:34.708+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7496462359691676946
+[2025-05-21T07:07:34.708+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7496118246035246344
+[2025-05-21T07:07:34.708+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7495328422961450248
+[2025-05-21T07:07:34.708+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7495038618801655047
+[2025-05-21T07:07:34.708+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7493825988166438150
+[2025-05-21T07:07:34.709+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7491645383857278215
+[2025-05-21T07:07:34.709+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7491284476996144402
+[2025-05-21T07:07:34.709+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7490947579643989255
+[2025-05-21T07:07:34.709+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7490895490989509896
+[2025-05-21T07:07:34.709+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7490556430781631752
+[2025-05-21T07:07:34.709+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7490167270258330886
+[2025-05-21T07:07:34.709+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@soobin.hoangson_official/video/7487930807449931026
+[2025-05-21T07:07:34.729+0000] {logging_mixin.py:190} INFO - New videos: 38
+[2025-05-21T07:07:34.931+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'soobin.hoangson_official', 'new_links': ('https://www.tiktok.com/@soobin.hoangson_official/video/7498293918275095826', 'https://www.tiktok.com/@soobin.hoangson_official/video/7427827016944127239', 'https://www.tiktok.com/@soobin.hoangson_official/video/7506164182140669191', 'https://www.tiktok.com/@soobin.hoangson_official/video/7498581790269918471', 'https://www.tiktok.com/@soobin.hoangson_official/video/7498569186038304008', 'https://www.tiktok.com/@soobin.hoangson_official/video/7501332163141422353', 'https://www.tiktok.com/@soobin.hoangson_official/video/7505264231206407425', 'https://www.tiktok.com/@soobin.hoangson_official/video/7487930807449931026', 'https://www.tiktok.com/@soobin.hoangson_official/video/7497534424288988434', 'https://www.tiktok.com/@soobin.hoangson_official/video/7502001342571891975', 'https://www.tiktok.com/@soobin.hoangson_official/video/7497896727123430674', 'https://www.tiktok.com/@soobin.hoangson_official/video/7501278539723869448', 'https://www.tiktok.com/@soobin.hoangson_official/video/7500197551975517457', 'https://www.tiktok.com/@soobin.hoangson_official/video/7495038618801655047', 'https://www.tiktok.com/@soobin.hoangson_official/video/7496462359691676946', 'https://www.tiktok.com/@soobin.hoangson_official/video/7506489241497652487', 'https://www.tiktok.com/@soobin.hoangson_official/video/7505672857632935169', 'https://www.tiktok.com/@soobin.hoangson_official/video/7506547767012117778', 'https://www.tiktok.com/@soobin.hoangson_official/video/7499537740380278033', 'https://www.tiktok.com/@soobin.hoangson_official/video/7496118246035246344', 'https://www.tiktok.com/@soobin.hoangson_official/video/7497947331069824264', 'https://www.tiktok.com/@soobin.hoangson_official/video/7501738554834373889', 'https://www.tiktok.com/@soobin.hoangson_official/video/7495328422961450248', 'https://www.tiktok.com/@soobin.hoangson_official/video/7490895490989509896', 'https://www.tiktok.com/@soobin.hoangson_official/video/7490167270258330886', 'https://www.tiktok.com/@soobin.hoangson_official/video/7465991247379893512', 'https://www.tiktok.com/@soobin.hoangson_official/video/7493825988166438150', 'https://www.tiktok.com/@soobin.hoangson_official/video/7491284476996144402', 'https://www.tiktok.com/@soobin.hoangson_official/video/7500485362637147393', 'https://www.tiktok.com/@soobin.hoangson_official/video/7490947579643989255', 'https://www.tiktok.com/@soobin.hoangson_official/video/7490556430781631752', 'https://www.tiktok.com/@soobin.hoangson_official/video/7502453840793390341', 'https://www.tiktok.com/@soobin.hoangson_official/video/7491645383857278215', 'https://www.tiktok.com/@soobin.hoangson_official/video/7502821715660066055', 'https://www.tiktok.com/@soobin.hoangson_official/video/7497585313276087607', 'https://www.tiktok.com/@soobin.hoangson_official/video/7498969706087419143', 'https://www.tiktok.com/@soobin.hoangson_official/video/7503572685947997457', 'https://www.tiktok.com/@soobin.hoangson_official/video/7481983041515146504')}
+[2025-05-21T07:07:34.952+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-21T07:07:34.952+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tiktok_videos_scraper_dag, task_id=get_links_task, run_id=manual__2025-05-21T07:07:22.097132+00:00, execution_date=20250521T070722, start_date=20250521T070723, end_date=20250521T070734
+[2025-05-21T07:07:35.012+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-21T07:07:35.035+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-21T07:07:35.039+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
