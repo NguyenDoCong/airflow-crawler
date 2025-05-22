@@ -1,0 +1,38 @@
+[2025-05-22T03:29:01.284+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-22T03:29:01.295+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.audio_to_transcript_task manual__2025-05-22T03:28:20.645652+00:00 [queued]>
+[2025-05-22T03:29:01.301+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.audio_to_transcript_task manual__2025-05-22T03:28:20.645652+00:00 [queued]>
+[2025-05-22T03:29:01.301+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-22T03:29:01.309+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): audio_to_transcript_task> on 2025-05-22 03:28:20.645652+00:00
+[2025-05-22T03:29:01.311+0000] {standard_task_runner.py:72} INFO - Started process 3219370 to run task
+[2025-05-22T03:29:01.314+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'instagram_videos_scraper_dag', 'audio_to_transcript_task', 'manual__2025-05-22T03:28:20.645652+00:00', '--job-id', '6486', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_instagram.py', '--cfg-path', '/tmp/tmpv0wt0v9g']
+[2025-05-22T03:29:01.316+0000] {standard_task_runner.py:105} INFO - Job 6486: Subtask audio_to_transcript_task
+[2025-05-22T03:29:01.354+0000] {task_command.py:467} INFO - Running <TaskInstance: instagram_videos_scraper_dag.audio_to_transcript_task manual__2025-05-22T03:28:20.645652+00:00 [running]> on host 3fefd5aad5e2
+[2025-05-22T03:29:01.408+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='instagram_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='audio_to_transcript_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-22T03:28:20.645652+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-22T03:28:20.645652+00:00'
+[2025-05-22T03:29:01.409+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-22T03:29:01.558+0000] {get_transcript.py:39} INFO - Number of downloads to process: 5
+[2025-05-22T03:29:01.558+0000] {get_transcript.py:44} INFO - Processing audio file: data/DJ6-mmUMFiG.mp3
+[2025-05-22T03:29:03.001+0000] {transcribe.py:839} INFO - Processing audio with duration 00:15.139
+[2025-05-22T03:29:03.299+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.80
+[2025-05-22T03:29:03.301+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.7963544130325317
+[2025-05-22T03:29:05.554+0000] {get_transcript.py:44} INFO - Processing audio file: data/DJ7Nifju9C-.mp3
+[2025-05-22T03:29:06.118+0000] {transcribe.py:839} INFO - Processing audio with duration 00:09.845
+[2025-05-22T03:29:06.353+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.47
+[2025-05-22T03:29:06.354+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.46685904264450073
+[2025-05-22T03:29:06.649+0000] {get_transcript.py:44} INFO - Processing audio file: data/DJ7BwA3IbKl.mp3
+[2025-05-22T03:29:07.741+0000] {transcribe.py:839} INFO - Processing audio with duration 01:28.607
+[2025-05-22T03:29:07.996+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.47
+[2025-05-22T03:29:07.997+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.4701130986213684
+[2025-05-22T03:29:22.025+0000] {get_transcript.py:44} INFO - Processing audio file: data/DJ7L2RSNvR1.mp3
+[2025-05-22T03:29:23.055+0000] {transcribe.py:839} INFO - Processing audio with duration 00:30.279
+[2025-05-22T03:29:20.810+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.23
+[2025-05-22T03:29:20.811+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.22653979063034058
+[2025-05-22T03:29:22.760+0000] {get_transcript.py:44} INFO - Processing audio file: data/DJ7PMpdMwr5.mp3
+[2025-05-22T03:29:23.336+0000] {transcribe.py:839} INFO - Processing audio with duration 00:58.654
+[2025-05-22T03:29:23.574+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.88
+[2025-05-22T03:29:23.575+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.8842824101448059
+[2025-05-22T03:29:28.102+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-05-22T03:29:28.110+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-22T03:29:28.111+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instagram_videos_scraper_dag, task_id=audio_to_transcript_task, run_id=manual__2025-05-22T03:28:20.645652+00:00, execution_date=20250522T032820, start_date=20250522T032901, end_date=20250522T032928
+[2025-05-22T03:29:28.131+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-22T03:29:28.142+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-22T03:29:28.144+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

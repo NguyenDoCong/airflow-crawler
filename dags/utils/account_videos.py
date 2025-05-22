@@ -3,16 +3,14 @@ from typing import List
 from rich import print as rprint
 from selenium.webdriver.common.by import By
 
-from dags.app.worker.schema import TaskStatus
-from dags.utils.downloader import download_video
+
 from .facebook_base import BaseFacebookScraper
 from .scroll import scroll_page
 # from ...logs import Logs
 from utils import output
 from config import Config
 
-from app.core.database_utils import create_pending_video, get_all_videos_from_db, update_video_status
-from dags.utils.get_id import extract_id, extract_user_id
+from app.core.database_utils import get_all_videos_from_db
 
 # logs = Logs()
 

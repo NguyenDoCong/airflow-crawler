@@ -45,7 +45,7 @@ def audio_to_transcript(**context):
                 # Initialize model
 
                 model_size = "tiny"
-                model = WhisperModel(model_size, device=device, compute_type="int8")
+                model = WhisperModel(model_size, device="cpu", compute_type="int8")
                 
                 # Transcribe audio
                 segments, info = model.transcribe(audio_path, beam_size=5)

@@ -33,7 +33,7 @@ x-airflow-common:
     POSTGRES_DB: ${POSTGRES_DB:-postgres}
     POSTGRES_USER: ${POSTGRES_USER:-postgres}
     POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
-
+    HOST_DATABASE: postgres  
     DATA_DIR: /opt/airflow/data
   volumes:
     - ./dags:/opt/airflow/dags
@@ -42,7 +42,7 @@ x-airflow-common:
     - ./plugins:/opt/airflow/plugins
     - ./data:/opt/airflow/data 
     - ./dags/utils:/opt/airflow/dags/utils
-    - ./data/scraped_data:/opt/airflow/scraped_data
+    # - ./data/scraped_data:/opt/airflow/scraped_data
 
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
@@ -87,8 +87,6 @@ services:
   airflow-scheduler:
     <<: *airflow-common
     command: scheduler
-
-
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:8974/health"]
       interval: 30s
@@ -211,6 +209,8 @@ services:
       - bash
       - -c
       - airflow
+
+  
 
   flower:
     <<: *airflow-common

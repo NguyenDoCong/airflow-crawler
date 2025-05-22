@@ -1,0 +1,117 @@
+[2025-05-22T03:30:56.223+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-22T03:30:56.234+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.get_links_task manual__2025-05-22T03:30:54.964480+00:00 [queued]>
+[2025-05-22T03:30:56.239+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.get_links_task manual__2025-05-22T03:30:54.964480+00:00 [queued]>
+[2025-05-22T03:30:56.239+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-22T03:30:56.247+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-22 03:30:54.964480+00:00
+[2025-05-22T03:30:56.250+0000] {standard_task_runner.py:72} INFO - Started process 3326962 to run task
+[2025-05-22T03:30:56.253+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'get_links_task', 'manual__2025-05-22T03:30:54.964480+00:00', '--job-id', '6487', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_fb.py', '--cfg-path', '/tmp/tmpwy13sf6k']
+[2025-05-22T03:30:56.255+0000] {standard_task_runner.py:105} INFO - Job 6487: Subtask get_links_task
+[2025-05-22T03:30:56.291+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.get_links_task manual__2025-05-22T03:30:54.964480+00:00 [running]> on host 3fefd5aad5e2
+[2025-05-22T03:30:56.346+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-22T03:30:54.964480+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-22T03:30:54.964480+00:00'
+[2025-05-22T03:30:56.347+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-22T03:30:56.385+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.113); currently, chromedriver 136.0.7103.113 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-22T03:30:59.162+0000] {logging_mixin.py:190} INFO - Step 1 of 3 - Load cookies
+[2025-05-22T03:31:03.436+0000] {logging_mixin.py:190} INFO - Step 2 of 3 - Scrolling page
+[2025-05-22T03:31:03.436+0000] {logging_mixin.py:190} INFO - Scrolling 1 iterations...
+[2025-05-22T03:31:09.472+0000] {logging_mixin.py:190} INFO - Scrolling stopped after 2 iterations
+[2025-05-22T03:31:09.472+0000] {logging_mixin.py:190} INFO - Scrolled 2 iterations
+[2025-05-22T03:31:09.473+0000] {logging_mixin.py:190} INFO - Step 3 of 3 - Extract videos urls
+[2025-05-22T03:31:09.493+0000] {logging_mixin.py:190} INFO - Found 148 a tags
+[2025-05-22T03:31:09.749+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/100044296156511/videos/1362494931698063
+[2025-05-22T03:31:09.765+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1362494931698063/?comment_id=1801202197123560&__tn__=R]
+[2025-05-22T03:31:09.771+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1760397254561973/
+[2025-05-22T03:31:09.782+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1362494931698063/
+[2025-05-22T03:31:09.793+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/694643923451384/
+[2025-05-22T03:31:09.809+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1909441793191388/
+[2025-05-22T03:31:09.825+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/982409090722070/
+[2025-05-22T03:31:09.835+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1773022476944052/
+[2025-05-22T03:31:09.863+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/8274229069266765/
+[2025-05-22T03:31:09.873+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/556226863742204/
+[2025-05-22T03:31:09.884+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1041336940536570/
+[2025-05-22T03:31:09.896+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/529340563294260/
+[2025-05-22T03:31:09.910+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1276522580331422/
+[2025-05-22T03:31:09.921+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/882764287377874/
+[2025-05-22T03:31:10.011+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1224491469029211/
+[2025-05-22T03:31:10.021+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1382642382862628/
+[2025-05-22T03:31:10.036+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1036340441761267/
+[2025-05-22T03:31:10.052+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1732823114334576/
+[2025-05-22T03:31:10.065+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1060728405963374/
+[2025-05-22T03:31:10.078+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/585960207199512/
+[2025-05-22T03:31:10.090+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/656884980546031/
+[2025-05-22T03:31:10.102+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/708154504977360/
+[2025-05-22T03:31:10.114+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/549543607852382/
+[2025-05-22T03:31:10.125+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1098363302098361/
+[2025-05-22T03:31:10.136+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/630843533284430/
+[2025-05-22T03:31:10.146+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/670698715660708/
+[2025-05-22T03:31:10.163+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1524027855224342/
+[2025-05-22T03:31:10.174+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1190062166120574/
+[2025-05-22T03:31:10.189+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1815873059208157/
+[2025-05-22T03:31:10.201+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/712907761084756/
+[2025-05-22T03:31:10.217+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/3029630467191422/
+[2025-05-22T03:31:10.229+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1769184690305703/
+[2025-05-22T03:31:10.242+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1356004988974021/
+[2025-05-22T03:31:10.257+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1714593262803189/
+[2025-05-22T03:31:10.286+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/29292281887084616/
+[2025-05-22T03:31:10.324+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1102701414956372/
+[2025-05-22T03:31:10.340+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1000009215557053/
+[2025-05-22T03:31:10.355+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1167294368037743/
+[2025-05-22T03:31:10.366+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/2158323417933631/
+[2025-05-22T03:31:10.377+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1165652401453375/
+[2025-05-22T03:31:10.393+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/1222232559317315/
+[2025-05-22T03:31:10.399+0000] {logging_mixin.py:190} INFO - Found 41 href elements
+[2025-05-22T03:31:10.400+0000] {logging_mixin.py:190} INFO -  Scraped data:
+[2025-05-22T03:31:10.400+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/100044296156511/videos/1362494931698063
+[2025-05-22T03:31:10.400+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/manchesterunited/videos/1362494931698063/?comment_id=18
+01202197123560&__tn__=R]
+[2025-05-22T03:31:10.401+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1760397254561973/
+[2025-05-22T03:31:10.401+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1362494931698063/
+[2025-05-22T03:31:10.401+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/694643923451384/
+[2025-05-22T03:31:10.402+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1909441793191388/
+[2025-05-22T03:31:10.402+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/982409090722070/
+[2025-05-22T03:31:10.402+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1773022476944052/
+[2025-05-22T03:31:10.402+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/8274229069266765/
+[2025-05-22T03:31:10.403+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/556226863742204/
+[2025-05-22T03:31:10.403+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1041336940536570/
+[2025-05-22T03:31:10.403+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/529340563294260/
+[2025-05-22T03:31:10.403+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1276522580331422/
+[2025-05-22T03:31:10.404+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/882764287377874/
+[2025-05-22T03:31:10.404+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1224491469029211/
+[2025-05-22T03:31:10.404+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1382642382862628/
+[2025-05-22T03:31:10.404+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1036340441761267/
+[2025-05-22T03:31:10.405+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1732823114334576/
+[2025-05-22T03:31:10.405+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1060728405963374/
+[2025-05-22T03:31:10.405+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/585960207199512/
+[2025-05-22T03:31:10.405+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/656884980546031/
+[2025-05-22T03:31:10.405+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/708154504977360/
+[2025-05-22T03:31:10.406+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/549543607852382/
+[2025-05-22T03:31:10.406+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1098363302098361/
+[2025-05-22T03:31:10.406+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/630843533284430/
+[2025-05-22T03:31:10.406+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/670698715660708/
+[2025-05-22T03:31:10.407+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1524027855224342/
+[2025-05-22T03:31:10.407+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1190062166120574/
+[2025-05-22T03:31:10.407+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1815873059208157/
+[2025-05-22T03:31:10.407+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/712907761084756/
+[2025-05-22T03:31:10.408+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/3029630467191422/
+[2025-05-22T03:31:10.408+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1769184690305703/
+[2025-05-22T03:31:10.408+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1356004988974021/
+[2025-05-22T03:31:10.408+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1714593262803189/
+[2025-05-22T03:31:10.409+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/29292281887084616/
+[2025-05-22T03:31:10.409+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1102701414956372/
+[2025-05-22T03:31:10.409+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1000009215557053/
+[2025-05-22T03:31:10.410+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1167294368037743/
+[2025-05-22T03:31:10.410+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/2158323417933631/
+[2025-05-22T03:31:10.410+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1165652401453375/
+[2025-05-22T03:31:10.410+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/manchesterunited/videos/1222232559317315/
+[2025-05-22T03:31:10.411+0000] {logging_mixin.py:190} INFO - Don't close the app! Saving scraped data to database, it can take a while!
+[2025-05-22T03:31:10.432+0000] {warnings.py:109} WARNING - /opt/airflow/dags/app/core/database_utils.py:38: SAWarning: SELECT statement has a cartesian product between FROM element(s) "facebook" and FROM element "tiktok".  Apply join condition(s) between each element to resolve.
+  return db.query(Facebook).filter(Tiktok.status == TaskStatus.SUCCESS.value).all()
+
+[2025-05-22T03:31:11.082+0000] {logging_mixin.py:190} INFO - Remaining new videos: 41
+[2025-05-22T03:31:11.082+0000] {logging_mixin.py:190} INFO - New videos: 41
+[2025-05-22T03:31:11.218+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'manchesterunited', 'new_links': ('https://www.facebook.com/manchesterunited/videos/882764287377874/', 'https://www.facebook.com/manchesterunited/videos/1224491469029211/', 'https://www.facebook.com/manchesterunited/videos/556226863742204/', 'https://www.facebook.com/manchesterunited/videos/1222232559317315/', 'https://www.facebook.com/manchesterunited/videos/2158323417933631/', 'https://www.facebook.com/manchesterunited/videos/1760397254561973/', 'https://www.facebook.com/manchesterunited/videos/1041336940536570/', 'https://www.facebook.com/manchesterunited/videos/529340563294260/', 'https://www.facebook.com/manchesterunited/videos/694643923451384/', 'https://www.facebook.com/manchesterunited/videos/1524027855224342/', 'https://www.facebook.com/manchesterunited/videos/8274229069266765/', 'https://www.facebook.com/manchesterunited/videos/1382642382862628/', 'https://www.facebook.com/manchesterunited/videos/1098363302098361/', 'https://www.facebook.com/manchesterunited/videos/1190062166120574/', 'https://www.facebook.com/manchesterunited/videos/1362494931698063/', 'https://www.facebook.com/manchesterunited/videos/3029630467191422/', 'https://www.facebook.com/manchesterunited/videos/549543607852382/', 'https://www.facebook.com/manchesterunited/videos/708154504977360/', 'https://www.facebook.com/manchesterunited/videos/1000009215557053/', 'https://www.facebook.com/manchesterunited/videos/670698715660708/', 'https://www.facebook.com/manchesterunited/videos/1362494931698063/?comment_id=1801202197123560&__tn__=R]', 'https://www.facebook.com/manchesterunited/videos/1036340441761267/', 'https://www.facebook.com/manchesterunited/videos/585960207199512/', 'https://www.facebook.com/manchesterunited/videos/1815873059208157/', 'https://www.facebook.com/manchesterunited/videos/712907761084756/', 'https://www.facebook.com/manchesterunited/videos/982409090722070/', 'https://www.facebook.com/manchesterunited/videos/656884980546031/', 'https://www.facebook.com/manchesterunited/videos/29292281887084616/', 'https://www.facebook.com/manchesterunited/videos/1102701414956372/', 'https://www.facebook.com/manchesterunited/videos/1167294368037743/', 'https://www.facebook.com/manchesterunited/videos/1714593262803189/', 'https://www.facebook.com/manchesterunited/videos/1769184690305703/', 'https://www.facebook.com/manchesterunited/videos/1356004988974021/', 'https://www.facebook.com/manchesterunited/videos/630843533284430/', 'https://www.facebook.com/100044296156511/videos/1362494931698063', 'https://www.facebook.com/manchesterunited/videos/1909441793191388/', 'https://www.facebook.com/manchesterunited/videos/1773022476944052/', 'https://www.facebook.com/manchesterunited/videos/1732823114334576/', 'https://www.facebook.com/manchesterunited/videos/1060728405963374/', 'https://www.facebook.com/manchesterunited/videos/1276522580331422/', 'https://www.facebook.com/manchesterunited/videos/1165652401453375/')}
+[2025-05-22T03:31:11.235+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-22T03:31:11.235+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=facebook_videos_scraper_dag, task_id=get_links_task, run_id=manual__2025-05-22T03:30:54.964480+00:00, execution_date=20250522T033054, start_date=20250522T033056, end_date=20250522T033111
+[2025-05-22T03:31:11.281+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-22T03:31:11.299+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-22T03:31:11.301+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

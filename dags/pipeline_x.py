@@ -6,6 +6,7 @@ from tasks.x_login import x_login
 from tasks.batch_download import batch_download
 from config import Config
 from airflow.operators.python import PythonOperator
+import math
 
 import sys
 sys.path.append('/opt/airflow/dags')
@@ -25,7 +26,7 @@ with DAG(
 def run_x_videos_scraper(**context):
     conf = context["dag_run"].conf or {}
     id = conf.get("id", "Cristiano")
-    scrolls = conf.get("count", 20)
+    scrolls = math.ceil(conf.get("count", 20)/20)
     return x_videos_scraper(
         id=id,
         scrolls=scrolls,

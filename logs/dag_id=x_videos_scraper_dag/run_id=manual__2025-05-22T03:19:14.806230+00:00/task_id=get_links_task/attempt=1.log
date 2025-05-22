@@ -1,0 +1,52 @@
+[2025-05-22T03:19:16.044+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-22T03:19:16.054+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: x_videos_scraper_dag.get_links_task manual__2025-05-22T03:19:14.806230+00:00 [queued]>
+[2025-05-22T03:19:16.060+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: x_videos_scraper_dag.get_links_task manual__2025-05-22T03:19:14.806230+00:00 [queued]>
+[2025-05-22T03:19:16.060+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-22T03:19:16.068+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-22 03:19:14.806230+00:00
+[2025-05-22T03:19:16.071+0000] {standard_task_runner.py:72} INFO - Started process 3078968 to run task
+[2025-05-22T03:19:16.074+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'x_videos_scraper_dag', 'get_links_task', 'manual__2025-05-22T03:19:14.806230+00:00', '--job-id', '6478', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_x.py', '--cfg-path', '/tmp/tmpjxgoymlz']
+[2025-05-22T03:19:16.076+0000] {standard_task_runner.py:105} INFO - Job 6478: Subtask get_links_task
+[2025-05-22T03:19:16.110+0000] {task_command.py:467} INFO - Running <TaskInstance: x_videos_scraper_dag.get_links_task manual__2025-05-22T03:19:14.806230+00:00 [running]> on host 3fefd5aad5e2
+[2025-05-22T03:19:16.163+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='x_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-22T03:19:14.806230+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-22T03:19:14.806230+00:00'
+[2025-05-22T03:19:16.163+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-22T03:19:21.328+0000] {logging_mixin.py:190} INFO - Scrolling down... 0
+[2025-05-22T03:19:26.476+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925382653299089706/video/1
+[2025-05-22T03:19:26.481+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925381098336391374/video/1
+[2025-05-22T03:19:26.485+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925379361273675869/video/1
+[2025-05-22T03:19:26.490+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925378584329310276/video/1
+[2025-05-22T03:19:26.494+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925376065293164740/video/1
+[2025-05-22T03:19:26.502+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925373548794728880/video/1
+[2025-05-22T03:19:26.510+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925372290671210950/video/1
+[2025-05-22T03:19:26.522+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925369860713791621/video/1
+[2025-05-22T03:19:26.532+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925365998892261565/video/1
+[2025-05-22T03:19:26.536+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925364740852793608/video/1
+[2025-05-22T03:19:26.546+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925358449279242397/video/1
+[2025-05-22T03:19:26.554+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925352157857054993/video/1
+[2025-05-22T03:19:26.557+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925350899460845583/video/1
+[2025-05-22T03:19:26.568+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925348384925523996/video/1
+[2025-05-22T03:19:26.572+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925347124478427283/video/1
+[2025-05-22T03:19:26.586+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925338316632895529/video/1
+[2025-05-22T03:19:26.594+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925335800150978648/video/1
+[2025-05-22T03:19:26.604+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925329508975992866/video/1
+[2025-05-22T03:19:26.608+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925328250093674580/video/1
+[2025-05-22T03:19:26.628+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925315667399471303/video/1
+[2025-05-22T03:19:26.642+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925305678643831198/video/1
+[2025-05-22T03:19:26.645+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925304343349403982/video/1
+[2025-05-22T03:19:26.649+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925303084731047947/video/1
+[2025-05-22T03:19:26.658+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925299310947963265/video/1
+[2025-05-22T03:19:26.665+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925298051423318244/video/1
+[2025-05-22T03:19:26.668+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925295535788802257/video/1
+[2025-05-22T03:19:26.678+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925290501390979242/video/1
+[2025-05-22T03:19:26.682+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925287985601253510/video/1
+[2025-05-22T03:19:26.685+0000] {logging_mixin.py:190} INFO - https://x.com/MarioNawfal/status/1925285468704215498/video/1
+[2025-05-22T03:19:26.758+0000] {warnings.py:109} WARNING - /opt/airflow/dags/app/core/database_utils.py:30: SAWarning: SELECT statement has a cartesian product between FROM element(s) "tiktok" and FROM element "x".  Apply join condition(s) between each element to resolve.
+  return db.query(X).filter(Tiktok.status == TaskStatus.SUCCESS.value).all()
+
+[2025-05-22T03:19:27.252+0000] {logging_mixin.py:190} INFO - Remaining new videos: 6
+[2025-05-22T03:19:27.252+0000] {logging_mixin.py:190} INFO - New videos: 6
+[2025-05-22T03:19:27.343+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'MarioNawfal', 'new_links': ('https://x.com/MarioNawfal/status/1925376065293164740/video/1', 'https://x.com/MarioNawfal/status/1925379361273675869/video/1', 'https://x.com/MarioNawfal/status/1925373548794728880/video/1', 'https://x.com/MarioNawfal/status/1925382653299089706/video/1', 'https://x.com/MarioNawfal/status/1925381098336391374/video/1', 'https://x.com/MarioNawfal/status/1925378584329310276/video/1')}
+[2025-05-22T03:19:27.361+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-22T03:19:27.361+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=x_videos_scraper_dag, task_id=get_links_task, run_id=manual__2025-05-22T03:19:14.806230+00:00, execution_date=20250522T031914, start_date=20250522T031916, end_date=20250522T031927
+[2025-05-22T03:19:27.391+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-22T03:19:27.409+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-22T03:19:27.411+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

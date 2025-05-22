@@ -5,13 +5,14 @@ from tasks.get_transcript import audio_to_transcript
 from tasks.batch_download import batch_download
 from config import Config
 from airflow.operators.python import PythonOperator
+import math
 
 # Define the DAG
        
 def run_instagram_videos_scraper(**context):
     conf = context["dag_run"].conf or {}
     id = conf.get("id", "cristiano")
-    scrolls = conf.get("count", 10)
+    scrolls = math.ceil(conf.get("count", 20)/20)
     return instagram_videos_scraper(
         id=id,
         scrolls=scrolls,

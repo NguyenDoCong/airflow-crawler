@@ -1,17 +1,18 @@
 from airflow import DAG
 from airflow.utils.dates import days_ago
-from tasks.facebook_videos_scraper import facebook_videos_scraper
+from dags.tasks.facebook_videos_scraper import facebook_videos_scraper
 from tasks.get_transcript import audio_to_transcript
 from tasks.batch_download import batch_download
 from config import Config
 from airflow.operators.python import PythonOperator
+import math
 
 # Define the DAG
        
 def run_facebook_videos_scraper(**context):
     conf = context["dag_run"].conf or {}
     id = conf.get("id", "hoaminzy_hoadambut")
-    scrolls = conf.get("count", 10)
+    scrolls = math.ceil(conf.get("count", 20)/20)
     return facebook_videos_scraper(
         id=id,
         scrolls=scrolls,
