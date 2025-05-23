@@ -10,7 +10,7 @@ from .scroll import scroll_page
 from utils import output
 from config import Config
 
-from app.core.database_utils import get_all_videos_from_db
+from app.core.database_utils import get_info_by_user_id
 
 # logs = Logs()
 
@@ -94,7 +94,7 @@ class AccountVideo(BaseFacebookScraper):
             self.success = False
             return {'id': id, 'new_links': []}
          
-        db_videos = get_all_videos_from_db(platform="facebook")
+        db_videos = get_info_by_user_id(platform="facebook", user_id=id)
         for video in db_videos:
             if video.url in videos:
                 videos.remove(video.url)

@@ -1,4 +1,4 @@
-version: '3.8'
+# version: '3.8'
  
 services:
 
@@ -13,11 +13,11 @@ services:
         depends_on:
             - airflow-webserver
         volumes:
-            - .:/opt/airflow/data  # Nếu cần truy cập dữ liệu
+            - ./logs:/home/docon/projects/airflow-docker/logs   # Mount logs vào đúng đường dẫn
         environment:
             - USER_DATABASE=postgres
             - PASSWORD_DATABASE=postgres
-            - HOST_DATABASE=localhost
+            - HOST_DATABASE=postgres
             - PORT_DATABASE=5432
             - NAME_DATABASE=postgres
             - AIRFLOW_API_URL=http://airflow-webserver:8080  # Nếu app cần gọi API Airflow

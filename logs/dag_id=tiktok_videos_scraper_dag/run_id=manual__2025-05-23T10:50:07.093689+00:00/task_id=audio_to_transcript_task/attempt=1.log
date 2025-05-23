@@ -1,0 +1,34 @@
+[2025-05-23T10:50:32.687+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-23T10:50:32.698+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.audio_to_transcript_task manual__2025-05-23T10:50:07.093689+00:00 [queued]>
+[2025-05-23T10:50:32.702+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.audio_to_transcript_task manual__2025-05-23T10:50:07.093689+00:00 [queued]>
+[2025-05-23T10:50:32.702+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-23T10:50:32.710+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): audio_to_transcript_task> on 2025-05-23 10:50:07.093689+00:00
+[2025-05-23T10:50:32.712+0000] {standard_task_runner.py:72} INFO - Started process 588 to run task
+[2025-05-23T10:50:32.715+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'audio_to_transcript_task', 'manual__2025-05-23T10:50:07.093689+00:00', '--job-id', '6712', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmppi3tz1o3']
+[2025-05-23T10:50:32.716+0000] {standard_task_runner.py:105} INFO - Job 6712: Subtask audio_to_transcript_task
+[2025-05-23T10:50:32.750+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.audio_to_transcript_task manual__2025-05-23T10:50:07.093689+00:00 [running]> on host 94ec89f221a0
+[2025-05-23T10:50:32.807+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='audio_to_transcript_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-23T10:50:07.093689+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-23T10:50:07.093689+00:00'
+[2025-05-23T10:50:32.808+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-23T10:50:32.872+0000] {get_transcript.py:39} INFO - Number of downloads to process: 4
+[2025-05-23T10:50:32.872+0000] {get_transcript.py:44} INFO - Processing audio file: data/7506758982984404245.mp3
+[2025-05-23T10:50:41.023+0000] {transcribe.py:839} INFO - Processing audio with duration 01:18.672
+[2025-05-23T10:50:41.283+0000] {transcribe.py:906} INFO - Detected language 'th' with probability 0.50
+[2025-05-23T10:50:41.286+0000] {get_transcript.py:53} INFO - Detected language 'th' with probability 0.5030863881111145
+[2025-05-23T10:51:41.487+0000] {get_transcript.py:44} INFO - Processing audio file: data/7506886137437392146.mp3
+[2025-05-23T10:51:42.177+0000] {transcribe.py:839} INFO - Processing audio with duration 03:43.750
+[2025-05-23T10:51:42.714+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.96
+[2025-05-23T10:51:42.727+0000] {get_transcript.py:53} INFO - Detected language 'vi' with probability 0.9558911323547363
+[2025-05-23T10:53:49.723+0000] {get_transcript.py:44} INFO - Processing audio file: data/7507252896841452808.mp3
+[2025-05-23T10:53:50.293+0000] {transcribe.py:839} INFO - Processing audio with duration 00:37.340
+[2025-05-23T10:53:50.511+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.98
+[2025-05-23T10:53:50.512+0000] {get_transcript.py:53} INFO - Detected language 'vi' with probability 0.9847036004066467
+[2025-05-23T10:54:18.478+0000] {get_transcript.py:44} INFO - Processing audio file: data/7507152017014459655.mp3
+[2025-05-23T10:54:19.620+0000] {transcribe.py:839} INFO - Processing audio with duration 01:48.068
+[2025-05-23T10:54:19.857+0000] {transcribe.py:906} INFO - Detected language 'vi' with probability 0.99
+[2025-05-23T10:54:19.859+0000] {get_transcript.py:53} INFO - Detected language 'vi' with probability 0.9922303557395935
+[2025-05-23T10:55:12.555+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-05-23T10:55:12.562+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-23T10:55:12.563+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tiktok_videos_scraper_dag, task_id=audio_to_transcript_task, run_id=manual__2025-05-23T10:50:07.093689+00:00, execution_date=20250523T105007, start_date=20250523T105032, end_date=20250523T105512
+[2025-05-23T10:55:12.609+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-23T10:55:12.623+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-23T10:55:12.627+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

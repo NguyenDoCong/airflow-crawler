@@ -12,14 +12,21 @@ import sys
 sys.path.append('/opt/airflow/dags')
 # Define the DAG
 
-with DAG(
-    dag_id="x_login_dag",
-    schedule_interval=None,  # Set your desired schedule
-    start_date=days_ago(1),
-    catchup=False,
-) as dag:
-    x_login_task = x_login(X_PASSWORD=Config.X_PASSWORD,
-                            X_USERNAME=Config.X_USERNAME)
+# with DAG(
+#     dag_id="x_login_dag",
+#     schedule_interval=None,  # Set your desired schedule
+#     start_date=days_ago(1),
+#     catchup=False,
+# ) as dag:
+#     login = PythonOperator(
+#         task_id="x_login_task",
+#         python_callable=x_login,
+#         provide_context=True,
+#         op_kwargs={
+#             "X_USERNAME": Config.X_USERNAME,
+#             "X_PASSWORD": Config.X_PASSWORD,
+#         },
+#     )
     
 #scraper    
 
@@ -32,12 +39,25 @@ def run_x_videos_scraper(**context):
         scrolls=scrolls,
     )
 
+def login_x(**context):
+    conf = context["dag_run"].conf or {}
+    X_USERNAME = conf.get("X_USERNAME", Config.X_USERNAME)
+    X_PASSWORD = conf.get("X_PASSWORD", Config.X_PASSWORD)
+    return x_login(X_PASSWORD=X_PASSWORD,
+                            X_USERNAME=X_USERNAME)
+
 with DAG(
     dag_id="x_videos_scraper_dag",
     schedule_interval=None,  # Set your desired schedule
     start_date=days_ago(1),
     catchup=False,
 ) as dag:
+    
+    login = PythonOperator(
+        task_id="x_login_task",
+        provide_context=True,
+        python_callable=login_x,
+    )
 
     urls = PythonOperator(
         task_id="get_links_task",
@@ -59,4 +79,4 @@ with DAG(
         op_kwargs={"platform": "x"},
     )
 
-    urls >> downloads >> transcript
+    login >> urls >> downloads >> transcript

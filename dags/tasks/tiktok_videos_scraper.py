@@ -6,7 +6,7 @@ from config import Config
 import sys
 sys.path.append('/opt/airflow/dags')
 
-from app.core.database_utils import create_pending_video, get_all_videos_from_db, update_video_status
+from app.core.database_utils import get_info_by_user_id
 # from dags.utils.get_id import extract_id
 
 # @task.virtualenv(
@@ -38,7 +38,7 @@ def tiktok_videos_scraper(id = "therock",count = 10, ms_tokens=None, DOWNLOAD_DI
                     print(f"https://www.tiktok.com/@{id}/video/"+video.as_dict['id'])
                     videos.append(f"https://www.tiktok.com/@{id}/video/"+video.as_dict['id'])     
 
-                results = get_all_videos_from_db(platform="tiktok")
+                results = get_info_by_user_id(platform="tiktok", user_id=id)
                 for result in results:
                     if result.url in videos:
                         videos.remove(result.url)

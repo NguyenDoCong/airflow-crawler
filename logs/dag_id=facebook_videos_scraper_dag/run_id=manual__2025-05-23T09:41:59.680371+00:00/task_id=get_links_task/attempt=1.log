@@ -1,0 +1,87 @@
+[2025-05-23T09:42:00.592+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-23T09:42:00.604+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.get_links_task manual__2025-05-23T09:41:59.680371+00:00 [queued]>
+[2025-05-23T09:42:00.610+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.get_links_task manual__2025-05-23T09:41:59.680371+00:00 [queued]>
+[2025-05-23T09:42:00.611+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-23T09:42:00.620+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-23 09:41:59.680371+00:00
+[2025-05-23T09:42:00.623+0000] {standard_task_runner.py:72} INFO - Started process 415457 to run task
+[2025-05-23T09:42:00.626+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'get_links_task', 'manual__2025-05-23T09:41:59.680371+00:00', '--job-id', '6667', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_fb.py', '--cfg-path', '/tmp/tmp_f441d54']
+[2025-05-23T09:42:00.627+0000] {standard_task_runner.py:105} INFO - Job 6667: Subtask get_links_task
+[2025-05-23T09:42:00.664+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.get_links_task manual__2025-05-23T09:41:59.680371+00:00 [running]> on host f3ad03241d5f
+[2025-05-23T09:42:00.727+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-23T09:41:59.680371+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-23T09:41:59.680371+00:00'
+[2025-05-23T09:42:00.728+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-23T09:42:00.766+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.113); currently, chromedriver 136.0.7103.113 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-23T09:42:03.066+0000] {logging_mixin.py:190} INFO - Step 1 of 3 - Load cookies
+[2025-05-23T09:42:04.861+0000] {logging_mixin.py:190} INFO - Step 2 of 3 - Scrolling page
+[2025-05-23T09:42:04.861+0000] {logging_mixin.py:190} INFO - Scrolling 1 iterations...
+[2025-05-23T09:42:09.043+0000] {logging_mixin.py:190} INFO - Scrolled 1 iterations
+[2025-05-23T09:42:09.044+0000] {logging_mixin.py:190} INFO - Step 3 of 3 - Extract videos urls
+[2025-05-23T09:42:09.053+0000] {logging_mixin.py:190} INFO - Found 64 a tags
+[2025-05-23T09:42:09.138+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/100044296156511/videos/1362494931698063
+[2025-05-23T09:42:09.143+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/spine-tinglinguefa-europa-league-/1362494931698063/
+[2025-05-23T09:42:09.163+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/precision-drives-performance-apollo-tyres/694643923451384/
+[2025-05-23T09:42:09.179+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/rest-and-reset-%EF%B8%8F-dhl-watch-more-here-httpsbitly44ed467/1909441793191388/
+[2025-05-23T09:42:09.205+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/rubens-bilbao-bound-reds-man-utd-4-1-athletic-club-highlights/982409090722070/
+[2025-05-23T09:42:09.216+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/-bringing-it-back-to-old-trafford-%EF%B8%8Fget-your-jersey-httpsbitly4dbabmz/1224491469029211/
+[2025-05-23T09:42:09.235+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/zirkzee-debut-goal-%EF%B8%8F-man-utd-1-0-fulham-highlights/8274229069266765/
+[2025-05-23T09:42:09.246+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/winning-on-the-road-%EF%B8%8F-southampton-0-3-man-utd/556226863742204/
+[2025-05-23T09:42:09.256+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/seventh-heaven-%EF%B8%8F-man-utd-7-0-barnsley/1041336940536570/
+[2025-05-23T09:42:09.266+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/maguire-rescues-a-point-in-portugal-porto-3-3-man-utd-highlights/529340563294260/
+[2025-05-23T09:42:09.276+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/highlights-united-2-paok-0/1066133645052549/
+[2025-05-23T09:42:09.285+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/five-star-reds-thrash-foxes-%EF%B8%8F-man-utd-5-2-leicester-highlights/882764287377874/
+[2025-05-23T09:42:09.362+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/a-strong-grip-is-all-important-/1382642382862628/
+[2025-05-23T09:42:09.376+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/behind-the-scenes-with-red-a-limited-edition-merchandise-collection-as-well-as-m/1036340441761267/
+[2025-05-23T09:42:09.391+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/manchesterunited/videos/here-are-five-facts-about-our-opponents-athletic-club-%EF%B8%8F/1732823114334576/
+[2025-05-23T09:42:09.402+0000] {logging_mixin.py:190} INFO - Found 15 href elements
+[2025-05-23T09:42:09.403+0000] {logging_mixin.py:190} INFO -  Scraped data:
+[2025-05-23T09:42:09.404+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/100044296156511/videos/1362494931698063
+[2025-05-23T09:42:09.404+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/manchesterunited/videos/spine-tinglinguefa-europa-leagu
+e-/1362494931698063/
+[2025-05-23T09:42:09.404+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/manchesterunited/videos/precision-drives-performance-ap
+ollo-tyres/694643923451384/
+[2025-05-23T09:42:09.405+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/manchesterunited/videos/rest-and-reset-%EF%B8%8F-dhl-wa
+tch-more-here-httpsbitly44ed467/1909441793191388/
+[2025-05-23T09:42:09.405+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/manchesterunited/videos/rubens-bilbao-bound-reds-man-ut
+d-4-1-athletic-club-highlights/982409090722070/
+[2025-05-23T09:42:09.405+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/manchesterunited/videos/-bringing-it-back-to-old-traffo
+rd-%EF%B8%8Fget-your-jersey-httpsbitly4dbabmz/1224491469029211/
+[2025-05-23T09:42:09.406+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/manchesterunited/videos/zirkzee-debut-goal-%EF%B8%8F-ma
+n-utd-1-0-fulham-highlights/8274229069266765/
+[2025-05-23T09:42:09.406+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/manchesterunited/videos/winning-on-the-road-%EF%B8%8F-s
+outhampton-0-3-man-utd/556226863742204/
+[2025-05-23T09:42:09.406+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/manchesterunited/videos/seventh-heaven-%EF%B8%8F-man-ut
+d-7-0-barnsley/1041336940536570/
+[2025-05-23T09:42:09.407+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/manchesterunited/videos/maguire-rescues-a-point-in-port
+ugal-porto-3-3-man-utd-highlights/529340563294260/
+[2025-05-23T09:42:09.407+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/manchesterunited/videos/highlights-united-2-paok-0/1066
+133645052549/
+[2025-05-23T09:42:09.407+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/manchesterunited/videos/five-star-reds-thrash-foxes-%EF
+%B8%8F-man-utd-5-2-leicester-highlights/882764287377874/
+[2025-05-23T09:42:09.408+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/manchesterunited/videos/a-strong-grip-is-all-important-
+/1382642382862628/
+[2025-05-23T09:42:09.408+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/manchesterunited/videos/behind-the-scenes-with-red-a-li
+mited-edition-merchandise-collection-as-well-as-m/1036340441761267/
+[2025-05-23T09:42:09.409+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/manchesterunited/videos/here-are-five-facts-about-our-o
+pponents-athletic-club-%EF%B8%8F/1732823114334576/
+[2025-05-23T09:42:09.409+0000] {logging_mixin.py:190} INFO - Don't close the app! Saving scraped data to database, it can take a while!
+[2025-05-23T09:42:09.425+0000] {logging_mixin.py:190} INFO - Remaining new videos: 15
+[2025-05-23T09:42:09.425+0000] {logging_mixin.py:190} INFO - New videos: 15
+[2025-05-23T09:42:09.543+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'manchesterunited', 'new_links': ('https://www.facebook.com/manchesterunited/videos/here-are-five-facts-about-our-opponents-athletic-club-%EF%B8%8F/1732823114334576/', 'https://www.facebook.com/manchesterunited/videos/highlights-united-2-paok-0/1066133645052549/', 'https://www.facebook.com/manchesterunited/videos/five-star-reds-thrash-foxes-%EF%B8%8F-man-utd-5-2-leicester-highlights/882764287377874/', 'https://www.facebook.com/100044296156511/videos/1362494931698063', 'https://www.facebook.com/manchesterunited/videos/zirkzee-debut-goal-%EF%B8%8F-man-utd-1-0-fulham-highlights/8274229069266765/', 'https://www.facebook.com/manchesterunited/videos/maguire-rescues-a-point-in-portugal-porto-3-3-man-utd-highlights/529340563294260/', 'https://www.facebook.com/manchesterunited/videos/a-strong-grip-is-all-important-/1382642382862628/', 'https://www.facebook.com/manchesterunited/videos/rubens-bilbao-bound-reds-man-utd-4-1-athletic-club-highlights/982409090722070/', 'https://www.facebook.com/manchesterunited/videos/rest-and-reset-%EF%B8%8F-dhl-watch-more-here-httpsbitly44ed467/1909441793191388/', 'https://www.facebook.com/manchesterunited/videos/winning-on-the-road-%EF%B8%8F-southampton-0-3-man-utd/556226863742204/', 'https://www.facebook.com/manchesterunited/videos/behind-the-scenes-with-red-a-limited-edition-merchandise-collection-as-well-as-m/1036340441761267/', 'https://www.facebook.com/manchesterunited/videos/seventh-heaven-%EF%B8%8F-man-utd-7-0-barnsley/1041336940536570/', 'https://www.facebook.com/manchesterunited/videos/spine-tinglinguefa-europa-league-/1362494931698063/', 'https://www.facebook.com/manchesterunited/videos/-bringing-it-back-to-old-trafford-%EF%B8%8Fget-your-jersey-httpsbitly4dbabmz/1224491469029211/', 'https://www.facebook.com/manchesterunited/videos/precision-drives-performance-apollo-tyres/694643923451384/')}
+[2025-05-23T09:42:09.572+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-23T09:42:09.572+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=facebook_videos_scraper_dag, task_id=get_links_task, run_id=manual__2025-05-23T09:41:59.680371+00:00, execution_date=20250523T094159, start_date=20250523T094200, end_date=20250523T094209
+[2025-05-23T09:42:09.606+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-23T09:42:09.623+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-23T09:42:09.632+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

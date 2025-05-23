@@ -7,7 +7,7 @@ import json
 import sys
 sys.path.append('/opt/airflow/dags')
 
-from app.core.database_utils import create_pending_video, get_all_videos_from_db, update_video_status
+from app.core.database_utils import create_pending_video, update_video_status, get_info_by_user_id
 from app.worker.schema import TaskStatus
 from dags.utils.get_id import extract_id
 
@@ -47,7 +47,7 @@ def x_videos_scraper(id = "elonmusk",scrolls = 5):
             if set(hrefs) == old_links:
                 break
                     
-        results = get_all_videos_from_db(platform="x")
+        results = get_info_by_user_id(platform="x", user_id=id)
         for result in results:
             if result.url in hrefs:
                 hrefs.remove(result.url)

@@ -69,8 +69,6 @@ services:
   airflow-webserver:
     <<: *airflow-common
     command: webserver
-
-
     ports:
       - "${AIRFLOW_WEBSERVER_PORT:-8080}:8080"
     healthcheck:

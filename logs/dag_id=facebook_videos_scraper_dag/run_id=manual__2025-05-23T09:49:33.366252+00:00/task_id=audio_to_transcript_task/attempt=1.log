@@ -1,0 +1,80 @@
+[2025-05-23T09:51:54.668+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-23T09:51:54.681+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.audio_to_transcript_task manual__2025-05-23T09:49:33.366252+00:00 [queued]>
+[2025-05-23T09:51:54.688+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.audio_to_transcript_task manual__2025-05-23T09:49:33.366252+00:00 [queued]>
+[2025-05-23T09:51:54.689+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-23T09:51:54.700+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): audio_to_transcript_task> on 2025-05-23 09:49:33.366252+00:00
+[2025-05-23T09:51:54.704+0000] {standard_task_runner.py:72} INFO - Started process 52 to run task
+[2025-05-23T09:51:54.707+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'audio_to_transcript_task', 'manual__2025-05-23T09:49:33.366252+00:00', '--job-id', '6675', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_fb.py', '--cfg-path', '/tmp/tmphi3h210i']
+[2025-05-23T09:51:54.708+0000] {standard_task_runner.py:105} INFO - Job 6675: Subtask audio_to_transcript_task
+[2025-05-23T09:51:54.747+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.audio_to_transcript_task manual__2025-05-23T09:49:33.366252+00:00 [running]> on host 4f04010670b8
+[2025-05-23T09:51:54.812+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='audio_to_transcript_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-23T09:49:33.366252+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-23T09:49:33.366252+00:00'
+[2025-05-23T09:51:54.813+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-23T09:51:55.086+0000] {get_transcript.py:39} INFO - Number of downloads to process: 17
+[2025-05-23T09:51:55.086+0000] {get_transcript.py:44} INFO - Processing audio file: data/1362494931698063.mp3
+[2025-05-23T09:52:06.163+0000] {transcribe.py:839} INFO - Processing audio with duration 03:27.872
+[2025-05-23T09:52:06.695+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.88
+[2025-05-23T09:52:06.705+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.8772619962692261
+[2025-05-23T09:52:19.701+0000] {get_transcript.py:44} INFO - Processing audio file: data/1732823114334576.mp3
+[2025-05-23T09:52:20.867+0000] {transcribe.py:839} INFO - Processing audio with duration 01:25.675
+[2025-05-23T09:52:21.127+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.93
+[2025-05-23T09:52:21.128+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.9288420081138611
+[2025-05-23T09:52:28.340+0000] {get_transcript.py:44} INFO - Processing audio file: data/882764287377874.mp3
+[2025-05-23T09:52:29.511+0000] {transcribe.py:839} INFO - Processing audio with duration 02:22.763
+[2025-05-23T09:52:29.836+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.94
+[2025-05-23T09:52:29.856+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.9372310638427734
+[2025-05-23T09:52:55.958+0000] {get_transcript.py:44} INFO - Processing audio file: data/1036340441761267.mp3
+[2025-05-23T09:52:56.587+0000] {transcribe.py:839} INFO - Processing audio with duration 00:52.907
+[2025-05-23T09:52:56.900+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.69
+[2025-05-23T09:52:56.901+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.6868678331375122
+[2025-05-23T09:53:01.082+0000] {get_transcript.py:44} INFO - Processing audio file: data/694643923451384.mp3
+[2025-05-23T09:53:01.638+0000] {transcribe.py:839} INFO - Processing audio with duration 00:31.189
+[2025-05-23T09:53:01.894+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.51
+[2025-05-23T09:53:01.895+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.5103890299797058
+[2025-05-23T09:53:02.459+0000] {get_transcript.py:44} INFO - Processing audio file: data/556226863742204.mp3
+[2025-05-23T09:53:00.584+0000] {transcribe.py:839} INFO - Processing audio with duration 01:59.893
+[2025-05-23T09:53:00.891+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.90
+[2025-05-23T09:53:00.892+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.8975022435188293
+[2025-05-23T09:53:13.358+0000] {get_transcript.py:44} INFO - Processing audio file: data/1041336940536570.mp3
+[2025-05-23T09:53:14.061+0000] {transcribe.py:839} INFO - Processing audio with duration 02:19.691
+[2025-05-23T09:53:14.337+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.93
+[2025-05-23T09:53:14.338+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.9303267002105713
+[2025-05-23T09:53:23.228+0000] {get_transcript.py:44} INFO - Processing audio file: data/982409090722070.mp3
+[2025-05-23T09:53:23.934+0000] {transcribe.py:839} INFO - Processing audio with duration 01:59.040
+[2025-05-23T09:53:24.269+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.92
+[2025-05-23T09:53:24.289+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.9197966456413269
+[2025-05-23T09:53:33.135+0000] {get_transcript.py:44} INFO - Processing audio file: data/1362494931698063.mp3
+[2025-05-23T09:53:33.872+0000] {transcribe.py:839} INFO - Processing audio with duration 03:27.872
+[2025-05-23T09:53:34.215+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.88
+[2025-05-23T09:53:34.227+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.8772619962692261
+[2025-05-23T09:53:51.383+0000] {get_transcript.py:44} INFO - Processing audio file: data/1773022476944052.mp3
+[2025-05-23T09:53:51.822+0000] {get_transcript.py:67} ERROR - Error transcripting video from 1773022476944052: [Errno 1094995529] Invalid data found when processing input: 'data/1773022476944052.mp3'
+[2025-05-23T09:53:51.826+0000] {get_transcript.py:44} INFO - Processing audio file: data/8274229069266765.mp3
+[2025-05-23T09:53:52.932+0000] {transcribe.py:839} INFO - Processing audio with duration 01:58.190
+[2025-05-23T09:53:53.247+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.96
+[2025-05-23T09:53:53.248+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.9606654047966003
+[2025-05-23T09:54:02.583+0000] {get_transcript.py:44} INFO - Processing audio file: data/1362494931698063.mp3
+[2025-05-23T09:54:03.329+0000] {transcribe.py:839} INFO - Processing audio with duration 03:27.872
+[2025-05-23T09:54:03.669+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.88
+[2025-05-23T09:54:03.670+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.8772619962692261
+[2025-05-23T09:54:20.542+0000] {get_transcript.py:44} INFO - Processing audio file: data/1714593262803189.mp3
+[2025-05-23T09:54:21.007+0000] {get_transcript.py:67} ERROR - Error transcripting video from 1714593262803189: [Errno 1094995529] Invalid data found when processing input: 'data/1714593262803189.mp3'
+[2025-05-23T09:54:21.011+0000] {get_transcript.py:44} INFO - Processing audio file: data/1382642382862628.mp3
+[2025-05-23T09:54:22.026+0000] {transcribe.py:839} INFO - Processing audio with duration 00:19.029
+[2025-05-23T09:54:22.248+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.68
+[2025-05-23T09:54:22.249+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.6763495802879333
+[2025-05-23T09:54:26.800+0000] {get_transcript.py:44} INFO - Processing audio file: data/1165652401453375.mp3
+[2025-05-23T09:54:27.244+0000] {get_transcript.py:67} ERROR - Error transcripting video from 1165652401453375: [Errno 1094995529] Invalid data found when processing input: 'data/1165652401453375.mp3'
+[2025-05-23T09:54:27.247+0000] {get_transcript.py:44} INFO - Processing audio file: data/1224491469029211.mp3
+[2025-05-23T09:54:27.881+0000] {transcribe.py:839} INFO - Processing audio with duration 00:17.109
+[2025-05-23T09:54:28.102+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.83
+[2025-05-23T09:54:28.103+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.8285826444625854
+[2025-05-23T09:54:30.107+0000] {get_transcript.py:44} INFO - Processing audio file: data/529340563294260.mp3
+[2025-05-23T09:54:30.738+0000] {transcribe.py:839} INFO - Processing audio with duration 01:59.509
+[2025-05-23T09:54:31.007+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.87
+[2025-05-23T09:54:31.009+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.8656443357467651
+[2025-05-23T09:54:35.829+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-05-23T09:54:35.838+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-23T09:54:35.838+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=facebook_videos_scraper_dag, task_id=audio_to_transcript_task, run_id=manual__2025-05-23T09:49:33.366252+00:00, execution_date=20250523T094933, start_date=20250523T095154, end_date=20250523T095435
+[2025-05-23T09:54:35.868+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-23T09:54:35.879+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-23T09:54:35.881+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

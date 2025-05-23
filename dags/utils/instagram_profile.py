@@ -12,7 +12,7 @@ from config import Config
 
 # logs = Logs()
 
-from app.core.database_utils import create_pending_video, get_all_videos_from_db, update_video_status
+from app.core.database_utils import get_info_by_user_id
 from dags.utils.get_id import extract_id
 
 class ProfileScraper(BaseInstagramScraper):
@@ -92,7 +92,7 @@ class ProfileScraper(BaseInstagramScraper):
             rprint("[bold red]Don't close the app![/bold red] Saving scraped data to database, it can take a while!")
 
             # Filter existing videos
-            db_videos = get_all_videos_from_db(platform="instagram")
+            db_videos = get_info_by_user_id(platform="instagram", user_id=id)
             for video in db_videos:
                 if video.url in video_urls:
                     video_urls.remove(video.url)

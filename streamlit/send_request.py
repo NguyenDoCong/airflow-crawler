@@ -8,7 +8,7 @@ def send_request(id="hoaminzy_hoadambut",count=20, platform="tiktok"):
     # URL for the Airflow API endpoint
     # Replace with your Airflow instance URL if not running locally
     # Example: url = "http://your-airflow-instance:8080/api/v1/dags/tiktok_videos_scraper_dag/dagRuns"
-    url = f"http://localhost:8080/api/v1/dags/{platform}_videos_scraper_dag/dagRuns"
+    url = f"http://airflow-webserver:8080/api/v1/dags/{platform}_videos_scraper_dag/dagRuns"
     payload = {
         "conf": {
             "id": id,
@@ -33,7 +33,7 @@ def send_request(id="hoaminzy_hoadambut",count=20, platform="tiktok"):
         return False, f"Lỗi kết nối: {str(e)}", ""
     
 def stop_dag(dag_id, dag_run_id):
-    airflow_url = "http://localhost:8080"
+    airflow_url = "http://airflow-webserver:8080"
     endpoint = f"/api/v1/dags/{dag_id}/dagRuns/{dag_run_id}"
     url = airflow_url + endpoint
 

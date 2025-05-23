@@ -1,0 +1,85 @@
+[2025-05-23T08:16:35.508+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-23T08:16:35.518+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.batch_download_task manual__2025-05-23T08:16:18.870618+00:00 [queued]>
+[2025-05-23T08:16:35.524+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.batch_download_task manual__2025-05-23T08:16:18.870618+00:00 [queued]>
+[2025-05-23T08:16:35.524+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-23T08:16:35.532+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): batch_download_task> on 2025-05-23 08:16:18.870618+00:00
+[2025-05-23T08:16:35.534+0000] {standard_task_runner.py:72} INFO - Started process 174961 to run task
+[2025-05-23T08:16:35.537+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'batch_download_task', 'manual__2025-05-23T08:16:18.870618+00:00', '--job-id', '6617', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_fb.py', '--cfg-path', '/tmp/tmpnt_3n3gr']
+[2025-05-23T08:16:35.539+0000] {standard_task_runner.py:105} INFO - Job 6617: Subtask batch_download_task
+[2025-05-23T08:16:35.575+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.batch_download_task manual__2025-05-23T08:16:18.870618+00:00 [running]> on host 6b828e7d8d04
+[2025-05-23T08:16:35.629+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='batch_download_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-23T08:16:18.870618+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-23T08:16:18.870618+00:00'
+[2025-05-23T08:16:35.630+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-23T08:16:35.632+0000] {logging_mixin.py:190} INFO - Starting batch download...
+[2025-05-23T08:16:35.791+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-23T08:16:35.791+0000] {logging_mixin.py:190} INFO - Downloading video from 1362494931698063...
+[2025-05-23T08:16:36.032+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/manchesterunited/videos/1362494931698063/?comment_id=1801202197123560&__tn__=R]
+[2025-05-23T08:16:36.032+0000] {logging_mixin.py:190} INFO - [facebook] 1362494931698063: Downloading webpage
+[2025-05-23T08:16:37.651+0000] {logging_mixin.py:190} INFO - [info] 1362494931698063: Downloading 1 format(s): 973771284647934a
+[2025-05-23T08:16:37.686+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1362494931698063
+[2025-05-23T08:16:37.686+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.64MiB at  Unknown B/s ETA Unknown
+[2025-05-23T08:16:37.688+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.64MiB at    1.08MiB/s ETA 00:01  
+[2025-05-23T08:16:37.688+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    1.64MiB at    2.13MiB/s ETA 00:00
+[2025-05-23T08:16:37.689+0000] {logging_mixin.py:190} INFO - [download]   0.9% of    1.64MiB at    4.08MiB/s ETA 00:00
+[2025-05-23T08:16:37.691+0000] {logging_mixin.py:190} INFO - [download]   1.8% of    1.64MiB at    5.86MiB/s ETA 00:00
+[2025-05-23T08:16:37.693+0000] {logging_mixin.py:190} INFO - [download]   3.8% of    1.64MiB at    7.71MiB/s ETA 00:00
+[2025-05-23T08:16:37.700+0000] {logging_mixin.py:190} INFO - [download]   7.6% of    1.64MiB at    8.78MiB/s ETA 00:00
+[2025-05-23T08:16:37.712+0000] {logging_mixin.py:190} INFO - [download]  15.2% of    1.64MiB at    9.39MiB/s ETA 00:00
+[2025-05-23T08:16:37.737+0000] {logging_mixin.py:190} INFO - [download]  30.4% of    1.64MiB at    9.70MiB/s ETA 00:00
+[2025-05-23T08:16:37.787+0000] {logging_mixin.py:190} INFO - [download]  60.9% of    1.64MiB at    9.87MiB/s ETA 00:00
+[2025-05-23T08:16:37.850+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.64MiB at    9.94MiB/s ETA 00:00
+[2025-05-23T08:16:37.852+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.64MiB in 00:00:00 at 8.35MiB/s   
+[2025-05-23T08:16:38.099+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1362494931698063"
+[2025-05-23T08:16:38.254+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1362494931698063.mp3
+[2025-05-23T08:16:38.064+0000] {logging_mixin.py:190} INFO - Deleting original file data/1362494931698063 (pass -k to keep)
+[2025-05-23T08:16:38.068+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1362494931698063
+[2025-05-23T08:16:38.081+0000] {logging_mixin.py:190} INFO - Downloaded video 1362494931698063 to data/1362494931698063.mp3
+[2025-05-23T08:16:38.229+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-23T08:16:38.229+0000] {logging_mixin.py:190} INFO - Downloading video from 1773022476944052...
+[2025-05-23T08:16:38.259+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/manchesterunited/videos/1773022476944052/
+[2025-05-23T08:16:38.260+0000] {logging_mixin.py:190} INFO - [facebook] 1773022476944052: Downloading webpage
+[2025-05-23T08:16:39.392+0000] {logging_mixin.py:190} INFO - [facebook] 1773022476944052: Downloading webpage
+[2025-05-23T08:16:39.611+0000] {logging_mixin.py:190} WARNING - ERROR: [facebook] 1773022476944052: Cannot parse data; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+[2025-05-23T08:16:39.614+0000] {logging_mixin.py:190} INFO - 
+Error downloading video using yt-dlp: ERROR: [facebook] 1773022476944052: Cannot parse data; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+[2025-05-23T08:16:41.412+0000] {logging_mixin.py:190} INFO - Downloaded video 1773022476944052 to data/1773022476944052.mp3
+[2025-05-23T08:16:41.542+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-23T08:16:41.543+0000] {logging_mixin.py:190} INFO - Downloading video from 1714593262803189...
+[2025-05-23T08:16:41.572+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/manchesterunited/videos/1714593262803189/
+[2025-05-23T08:16:41.573+0000] {logging_mixin.py:190} INFO - [facebook] 1714593262803189: Downloading webpage
+[2025-05-23T08:16:42.778+0000] {logging_mixin.py:190} INFO - [facebook] 1714593262803189: Downloading webpage
+[2025-05-23T08:16:43.016+0000] {logging_mixin.py:190} WARNING - ERROR: [facebook] 1714593262803189: Cannot parse data; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+[2025-05-23T08:16:43.018+0000] {logging_mixin.py:190} INFO - 
+Error downloading video using yt-dlp: ERROR: [facebook] 1714593262803189: Cannot parse data; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+[2025-05-23T08:16:44.771+0000] {logging_mixin.py:190} INFO - Downloaded video 1714593262803189 to data/1714593262803189.mp3
+[2025-05-23T08:16:44.900+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-23T08:16:44.900+0000] {logging_mixin.py:190} INFO - Downloading video from 1362494931698063...
+[2025-05-23T08:16:44.931+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/100044296156511/videos/1362494931698063
+[2025-05-23T08:16:44.931+0000] {logging_mixin.py:190} INFO - [facebook] 1362494931698063: Downloading webpage
+[2025-05-23T08:16:46.187+0000] {logging_mixin.py:190} INFO - [info] 1362494931698063: Downloading 1 format(s): 973771284647934a
+[2025-05-23T08:16:46.226+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1362494931698063
+[2025-05-23T08:16:46.227+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.64MiB at  Unknown B/s ETA Unknown
+[2025-05-23T08:16:46.233+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.64MiB at  442.13KiB/s ETA 00:03  
+[2025-05-23T08:16:46.234+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    1.64MiB at  936.89KiB/s ETA 00:01
+[2025-05-23T08:16:46.234+0000] {logging_mixin.py:190} INFO - [download]   0.9% of    1.64MiB at    1.83MiB/s ETA 00:00
+[2025-05-23T08:16:46.238+0000] {logging_mixin.py:190} INFO - [download]   1.8% of    1.64MiB at    2.61MiB/s ETA 00:00
+[2025-05-23T08:16:46.245+0000] {logging_mixin.py:190} INFO - [download]   3.8% of    1.64MiB at    3.29MiB/s ETA 00:00
+[2025-05-23T08:16:46.257+0000] {logging_mixin.py:190} INFO - [download]   7.6% of    1.64MiB at    4.01MiB/s ETA 00:00
+[2025-05-23T08:16:46.282+0000] {logging_mixin.py:190} INFO - [download]  15.2% of    1.64MiB at    4.49MiB/s ETA 00:00
+[2025-05-23T08:16:46.321+0000] {logging_mixin.py:190} INFO - [download]  30.4% of    1.64MiB at    5.28MiB/s ETA 00:00
+[2025-05-23T08:16:46.371+0000] {logging_mixin.py:190} INFO - [download]  60.9% of    1.64MiB at    6.93MiB/s ETA 00:00
+[2025-05-23T08:16:46.433+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.64MiB at    7.93MiB/s ETA 00:00
+[2025-05-23T08:16:46.434+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.64MiB in 00:00:00 at 6.73MiB/s   
+[2025-05-23T08:16:46.436+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1362494931698063"
+[2025-05-23T08:16:46.532+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1362494931698063.mp3
+[2025-05-23T08:16:48.842+0000] {logging_mixin.py:190} INFO - Deleting original file data/1362494931698063 (pass -k to keep)
+[2025-05-23T08:16:48.846+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1362494931698063
+[2025-05-23T08:16:48.857+0000] {logging_mixin.py:190} INFO - Downloaded video 1362494931698063 to data/1362494931698063.mp3
+[2025-05-23T08:16:48.857+0000] {logging_mixin.py:190} INFO - Downloaded 4 new videos.
+[2025-05-23T08:16:48.857+0000] {python.py:240} INFO - Done. Returned value was: [{'video_id': '1362494931698063', 'file_path': 'data/1362494931698063.mp3'}, {'video_id': '1773022476944052', 'file_path': 'data/1773022476944052.mp3'}, {'video_id': '1714593262803189', 'file_path': 'data/1714593262803189.mp3'}, {'video_id': '1362494931698063', 'file_path': 'data/1362494931698063.mp3'}]
+[2025-05-23T08:16:48.875+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-23T08:16:48.875+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=facebook_videos_scraper_dag, task_id=batch_download_task, run_id=manual__2025-05-23T08:16:18.870618+00:00, execution_date=20250523T081618, start_date=20250523T081635, end_date=20250523T081648
+[2025-05-23T08:16:48.931+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-23T08:16:48.946+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-23T08:16:48.948+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

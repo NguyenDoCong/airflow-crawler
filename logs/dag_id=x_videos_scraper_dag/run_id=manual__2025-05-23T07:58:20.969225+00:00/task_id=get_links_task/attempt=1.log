@@ -1,0 +1,34 @@
+[2025-05-23T07:58:21.727+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-23T07:58:21.738+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: x_videos_scraper_dag.get_links_task manual__2025-05-23T07:58:20.969225+00:00 [queued]>
+[2025-05-23T07:58:21.743+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: x_videos_scraper_dag.get_links_task manual__2025-05-23T07:58:20.969225+00:00 [queued]>
+[2025-05-23T07:58:21.744+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-23T07:58:21.751+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-23 07:58:20.969225+00:00
+[2025-05-23T07:58:21.754+0000] {standard_task_runner.py:72} INFO - Started process 172 to run task
+[2025-05-23T07:58:21.757+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'x_videos_scraper_dag', 'get_links_task', 'manual__2025-05-23T07:58:20.969225+00:00', '--job-id', '6606', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_x.py', '--cfg-path', '/tmp/tmp9h_2igj8']
+[2025-05-23T07:58:21.759+0000] {standard_task_runner.py:105} INFO - Job 6606: Subtask get_links_task
+[2025-05-23T07:58:21.795+0000] {task_command.py:467} INFO - Running <TaskInstance: x_videos_scraper_dag.get_links_task manual__2025-05-23T07:58:20.969225+00:00 [running]> on host 3aec976f4c6e
+[2025-05-23T07:58:21.847+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='x_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-23T07:58:20.969225+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-23T07:58:20.969225+00:00'
+[2025-05-23T07:58:21.848+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-23T07:58:29.305+0000] {logging_mixin.py:190} INFO - Scrolling down... 0
+[2025-05-23T07:58:34.450+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1924859108865323121/video/1
+[2025-05-23T07:58:34.458+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1922957070048874841/video/1
+[2025-05-23T07:58:34.468+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1921191243482087932/video/1
+[2025-05-23T07:58:34.475+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1919453517518872985/video/1
+[2025-05-23T07:58:34.504+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1915409532924158248/video/1
+[2025-05-23T07:58:34.509+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1914982579465281859/video/1
+[2025-05-23T07:58:34.525+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1911763830826230166/video/1
+[2025-05-23T07:58:34.533+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1910588895051329799/video/1
+[2025-05-23T07:58:34.537+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1910363097774108906/video/1
+[2025-05-23T07:58:34.544+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1910008061856526695/video/1
+[2025-05-23T07:58:34.552+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1908867553469800598/video/1
+[2025-05-23T07:58:34.567+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1906775463282044998/video/1
+[2025-05-23T07:58:34.579+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1904942189102182598/video/1
+[2025-05-23T07:58:34.608+0000] {logging_mixin.py:190} INFO - https://x.com/Cristiano/status/1900187027783487915/video/1
+[2025-05-23T07:58:34.745+0000] {logging_mixin.py:190} INFO - Remaining new videos: 14
+[2025-05-23T07:58:34.745+0000] {logging_mixin.py:190} INFO - New videos: 14
+[2025-05-23T07:58:34.834+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'Cristiano', 'new_links': ('https://x.com/Cristiano/status/1900187027783487915/video/1', 'https://x.com/Cristiano/status/1914982579465281859/video/1', 'https://x.com/Cristiano/status/1911763830826230166/video/1', 'https://x.com/Cristiano/status/1910008061856526695/video/1', 'https://x.com/Cristiano/status/1908867553469800598/video/1', 'https://x.com/Cristiano/status/1915409532924158248/video/1', 'https://x.com/Cristiano/status/1904942189102182598/video/1', 'https://x.com/Cristiano/status/1906775463282044998/video/1', 'https://x.com/Cristiano/status/1922957070048874841/video/1', 'https://x.com/Cristiano/status/1924859108865323121/video/1', 'https://x.com/Cristiano/status/1919453517518872985/video/1', 'https://x.com/Cristiano/status/1910588895051329799/video/1', 'https://x.com/Cristiano/status/1910363097774108906/video/1', 'https://x.com/Cristiano/status/1921191243482087932/video/1')}
+[2025-05-23T07:58:34.854+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-23T07:58:34.855+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=x_videos_scraper_dag, task_id=get_links_task, run_id=manual__2025-05-23T07:58:20.969225+00:00, execution_date=20250523T075820, start_date=20250523T075821, end_date=20250523T075834
+[2025-05-23T07:58:34.875+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-23T07:58:34.893+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-23T07:58:34.895+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

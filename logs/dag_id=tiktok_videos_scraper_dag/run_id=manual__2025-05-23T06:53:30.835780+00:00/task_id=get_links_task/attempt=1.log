@@ -1,0 +1,25 @@
+[2025-05-23T06:53:32.037+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-23T06:53:32.053+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-23T06:53:30.835780+00:00 [queued]>
+[2025-05-23T06:53:32.059+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-23T06:53:30.835780+00:00 [queued]>
+[2025-05-23T06:53:32.059+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-23T06:53:32.069+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-23 06:53:30.835780+00:00
+[2025-05-23T06:53:32.072+0000] {standard_task_runner.py:72} INFO - Started process 123337 to run task
+[2025-05-23T06:53:32.075+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'get_links_task', 'manual__2025-05-23T06:53:30.835780+00:00', '--job-id', '6581', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpiycv6hcw']
+[2025-05-23T06:53:32.077+0000] {standard_task_runner.py:105} INFO - Job 6581: Subtask get_links_task
+[2025-05-23T06:53:32.119+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-23T06:53:30.835780+00:00 [running]> on host d48b22c1eeec
+[2025-05-23T06:53:32.185+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-23T06:53:30.835780+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-23T06:53:30.835780+00:00'
+[2025-05-23T06:53:32.185+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-23T07:08:19.876+0000] {local_task_job_runner.py:341} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-05-23T07:08:19.878+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2025-05-23T07:08:19.879+0000] {process_utils.py:132} INFO - Sending 15 to group 123337. PIDs of all processes in the group: [123340, 123352, 123359, 123360, 123388, 123396, 123441, 123442, 123483, 123535, 123337]
+[2025-05-23T07:08:19.880+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 123337
+[2025-05-23T07:08:19.880+0000] {taskinstance.py:3083} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-05-23T07:08:19.888+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=123442, status='terminated', started='06:53:34') (123442) terminated with exit code None
+[2025-05-23T07:08:19.944+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=123388, status='terminated', started='06:53:34') (123388) terminated with exit code None
+[2025-05-23T07:08:19.944+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=123535, status='terminated', started='06:56:34') (123535) terminated with exit code None
+[2025-05-23T07:08:19.944+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=123352, status='terminated', started='06:53:33') (123352) terminated with exit code None
+[2025-05-23T07:08:20.039+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=123396, status='terminated', started='06:53:34') (123396) terminated with exit code None
+[2025-05-23T07:08:20.039+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=123483, status='terminated', started='06:53:34') (123483) terminated with exit code None
+[2025-05-23T07:08:20.039+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=123359, status='terminated', started='06:53:33') (123359) terminated with exit code None
+[2025-05-23T07:08:20.140+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=123441, status='terminated', started='06:53:34') (123441) terminated with exit code None
+[2025-05-23T07:08:20.142+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=123360, status='terminated', started='06:53:33') (123360) terminated with exit code None

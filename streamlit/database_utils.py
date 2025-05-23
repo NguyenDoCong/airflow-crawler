@@ -11,9 +11,11 @@ logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
+
 def get_distinct_user_ids_from_db(platform=None):
     """Get distinct user IDs from database"""
     db = get_db()
+
     try:
         if platform == "X":
             return db.query(X.user_id).distinct().all()
@@ -31,49 +33,59 @@ def get_distinct_user_ids_from_db(platform=None):
     finally:
         db.close()
 
-def get_all_videos_from_db(platform=None):
-    """Get all data from database"""
+# def get_all_videos_from_db(db, platform=None):
+#     """Get all data from database"""
+#     try:
+#         if platform == "X":
+#             return db.query(X).all()
+#         elif platform == "tiktok":
+#             return db.query(Tiktok).all()
+#         elif platform == "instagram":
+#             return db.query(Instagram).all()
+#         else:
+#             # Default to Facebook if no platform is specified
+#             # or if the platform is not recognized
+#             return db.query(Facebook).all()
+#     except SQLAlchemyError as e:
+#         logger.error(f"Error when query database: {str(e)}")
+#         return None
+#     finally:
+#         db.close()
+
+def get_info_by_user_id(user_id="", platform=None):
+    """Get all data from database, sorted by newest first"""
     db = get_db()
+
     try:
         if platform == "X":
-            return db.query(X).all()
+            return db.query(X).filter(
+                X.user_id == user_id, X.status == "SUCCESS"
+            ).order_by(X.created_at.desc()).all()
         elif platform == "tiktok":
-            return db.query(Tiktok).all()
+            return db.query(Tiktok).filter(
+                Tiktok.user_id == user_id, Tiktok.status == 'SUCCESS'
+            ).order_by(Tiktok.created_at.desc()).all()
         elif platform == "instagram":
-            return db.query(Instagram).all()
+            return db.query(Instagram).filter(
+                Instagram.user_id == user_id, Instagram.status == 'SUCCESS'
+            ).order_by(Instagram.created_at.desc()).all()
         else:
             # Default to Facebook if no platform is specified
             # or if the platform is not recognized
-            return db.query(Facebook).all()
+            return db.query(Facebook).filter(
+                Facebook.user_id == user_id, Facebook.status == 'SUCCESS'
+            ).order_by(Facebook.created_at.desc()).all()
     except SQLAlchemyError as e:
         logger.error(f"Error when query database: {str(e)}")
         return None
     finally:
         db.close()
 
-def get_info_by_user_id(user_id, platform=None):
-    """Get all data from database"""
-    db = get_db()
-    try:
-        if platform == "X":
-            return db.query(X).filter(X.user_id == user_id, X.status=="SUCCESS").all()
-        elif platform == "tiktok":
-            return db.query(Tiktok).filter(Tiktok.user_id == user_id, Tiktok.status=='SUCCESS').all()
-        elif platform == "instagram":
-            return db.query(Instagram).filter(Instagram.user_id == user_id, Instagram.status=='SUCCESS').all()
-        else:
-            # Default to Facebook if no platform is specified
-            # or if the platform is not recognized
-            return db.query(Facebook).filter(Facebook.user_id == user_id, Facebook.status=='SUCCESS').all()
-    except SQLAlchemyError as e:
-        logger.error(f"Error when query database: {str(e)}")
-        return None
-    finally:
-        db.close()
 
-def delete_user_by_id(user_id, platform=None):
+def delete_user_by_id(user_id="", platform=None):
     """Delete user by ID from database"""
     db = get_db()
+
     try:
         if platform == "X":
             db.query(X).filter(X.user_id == user_id).delete()
@@ -90,4 +102,4 @@ def delete_user_by_id(user_id, platform=None):
         logger.error(f"Error when delete user: {str(e)}")
         db.rollback()
     finally:
-        db.close()        
+        db.close()

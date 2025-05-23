@@ -1,0 +1,27 @@
+[2025-05-23T10:26:36.746+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-23T10:26:36.757+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: x_videos_scraper_dag.get_links_task manual__2025-05-23T10:26:26.716385+00:00 [queued]>
+[2025-05-23T10:26:36.762+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: x_videos_scraper_dag.get_links_task manual__2025-05-23T10:26:26.716385+00:00 [queued]>
+[2025-05-23T10:26:36.762+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-23T10:26:36.769+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-23 10:26:26.716385+00:00
+[2025-05-23T10:26:36.772+0000] {standard_task_runner.py:72} INFO - Started process 178 to run task
+[2025-05-23T10:26:36.775+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'x_videos_scraper_dag', 'get_links_task', 'manual__2025-05-23T10:26:26.716385+00:00', '--job-id', '6695', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_x.py', '--cfg-path', '/tmp/tmpl0t_ti0j']
+[2025-05-23T10:26:36.776+0000] {standard_task_runner.py:105} INFO - Job 6695: Subtask get_links_task
+[2025-05-23T10:26:36.809+0000] {task_command.py:467} INFO - Running <TaskInstance: x_videos_scraper_dag.get_links_task manual__2025-05-23T10:26:26.716385+00:00 [running]> on host ef47dfc686f8
+[2025-05-23T10:26:36.861+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='x_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-23T10:26:26.716385+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-23T10:26:26.716385+00:00'
+[2025-05-23T10:26:36.862+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-23T10:26:44.085+0000] {logging_mixin.py:190} INFO - Scrolling down... 0
+[2025-05-23T10:26:49.236+0000] {logging_mixin.py:190} INFO - https://x.com/ManUtd/status/1925251151848771938/video/1
+[2025-05-23T10:26:49.247+0000] {logging_mixin.py:190} INFO - https://x.com/ManUtd/status/1925228260117426432/video/1
+[2025-05-23T10:26:49.250+0000] {logging_mixin.py:190} INFO - https://x.com/ManUtd/status/1925224362329677876/video/1
+[2025-05-23T10:26:49.257+0000] {logging_mixin.py:190} INFO - https://x.com/ManUtd/status/1925207989285220682/video/1
+[2025-05-23T10:26:49.282+0000] {logging_mixin.py:190} INFO - https://x.com/ManUtd/status/1925086909589528946/video/1
+[2025-05-23T10:26:49.304+0000] {logging_mixin.py:190} INFO - https://x.com/ManUtd/status/1924901688986497308/video/1
+[2025-05-23T10:26:49.309+0000] {logging_mixin.py:190} INFO - https://x.com/ManUtd/status/1924881924297834732/video/1
+[2025-05-23T10:26:49.384+0000] {logging_mixin.py:190} INFO - Remaining new videos: 7
+[2025-05-23T10:26:49.384+0000] {logging_mixin.py:190} INFO - New videos: 7
+[2025-05-23T10:26:49.450+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'ManUtd', 'new_links': ('https://x.com/ManUtd/status/1924881924297834732/video/1', 'https://x.com/ManUtd/status/1925251151848771938/video/1', 'https://x.com/ManUtd/status/1925224362329677876/video/1', 'https://x.com/ManUtd/status/1925228260117426432/video/1', 'https://x.com/ManUtd/status/1925086909589528946/video/1', 'https://x.com/ManUtd/status/1924901688986497308/video/1', 'https://x.com/ManUtd/status/1925207989285220682/video/1')}
+[2025-05-23T10:26:49.467+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-23T10:26:49.467+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=x_videos_scraper_dag, task_id=get_links_task, run_id=manual__2025-05-23T10:26:26.716385+00:00, execution_date=20250523T102626, start_date=20250523T102636, end_date=20250523T102649
+[2025-05-23T10:26:49.510+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-23T10:26:49.525+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-23T10:26:49.527+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

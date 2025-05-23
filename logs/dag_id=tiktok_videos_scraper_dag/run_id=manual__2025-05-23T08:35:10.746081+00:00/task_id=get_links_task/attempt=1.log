@@ -1,0 +1,47 @@
+[2025-05-23T08:35:11.791+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-23T08:35:11.802+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-23T08:35:10.746081+00:00 [queued]>
+[2025-05-23T08:35:11.807+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-23T08:35:10.746081+00:00 [queued]>
+[2025-05-23T08:35:11.807+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-23T08:35:11.814+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-23 08:35:10.746081+00:00
+[2025-05-23T08:35:11.817+0000] {standard_task_runner.py:72} INFO - Started process 235 to run task
+[2025-05-23T08:35:11.819+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'get_links_task', 'manual__2025-05-23T08:35:10.746081+00:00', '--job-id', '6624', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpdm27j8za']
+[2025-05-23T08:35:11.821+0000] {standard_task_runner.py:105} INFO - Job 6624: Subtask get_links_task
+[2025-05-23T08:35:11.860+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-23T08:35:10.746081+00:00 [running]> on host 8604b80c7e6e
+[2025-05-23T08:35:11.923+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-23T08:35:10.746081+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-23T08:35:10.746081+00:00'
+[2025-05-23T08:35:11.924+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-23T08:35:20.553+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7476084663191096598
+[2025-05-23T08:35:20.553+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7437220758293646625
+[2025-05-23T08:35:20.554+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7411927435731619105
+[2025-05-23T08:35:20.554+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7506963422882368791
+[2025-05-23T08:35:20.554+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7506934440501857558
+[2025-05-23T08:35:20.554+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7506611129108548886
+[2025-05-23T08:35:20.554+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7506587517609708822
+[2025-05-23T08:35:20.554+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7506480999329500438
+[2025-05-23T08:35:20.554+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7506240238633618710
+[2025-05-23T08:35:20.554+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7506126139346193686
+[2025-05-23T08:35:20.554+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7505095998612704514
+[2025-05-23T08:35:20.555+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7504996759555362070
+[2025-05-23T08:35:20.555+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7504983637079624982
+[2025-05-23T08:35:20.555+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7504680345229413654
+[2025-05-23T08:35:20.555+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7504614504559349014
+[2025-05-23T08:35:20.555+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7502908287302520086
+[2025-05-23T08:35:20.555+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7502818898635410710
+[2025-05-23T08:35:20.555+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7502780142318538006
+[2025-05-23T08:35:20.555+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7502697970492591382
+[2025-05-23T08:35:20.555+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7502587447855844630
+[2025-05-23T08:35:20.555+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7502208109721537814
+[2025-05-23T08:35:20.555+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7502183433788017942
+[2025-05-23T08:35:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7502139529365671190
+[2025-05-23T08:35:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7502101249353895190
+[2025-05-23T08:35:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7501704680976698646
+[2025-05-23T08:35:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7501594316930911510
+[2025-05-23T08:35:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7501236253145287958
+[2025-05-23T08:35:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7500956701537897750
+[2025-05-23T08:35:20.556+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@manutd/video/7499843625870806294
+[2025-05-23T08:35:20.566+0000] {logging_mixin.py:190} INFO - New videos: 0
+[2025-05-23T08:35:20.753+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'manutd', 'new_links': ()}
+[2025-05-23T08:35:20.773+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-23T08:35:20.773+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tiktok_videos_scraper_dag, task_id=get_links_task, run_id=manual__2025-05-23T08:35:10.746081+00:00, execution_date=20250523T083510, start_date=20250523T083511, end_date=20250523T083520
+[2025-05-23T08:35:20.795+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-23T08:35:20.812+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-23T08:35:20.814+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

@@ -1,0 +1,56 @@
+[2025-05-23T10:50:07.459+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-23T10:50:07.468+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-23T10:50:07.093689+00:00 [queued]>
+[2025-05-23T10:50:07.473+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-23T10:50:07.093689+00:00 [queued]>
+[2025-05-23T10:50:07.473+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-23T10:50:07.480+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-23 10:50:07.093689+00:00
+[2025-05-23T10:50:07.483+0000] {standard_task_runner.py:72} INFO - Started process 405 to run task
+[2025-05-23T10:50:07.485+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'get_links_task', 'manual__2025-05-23T10:50:07.093689+00:00', '--job-id', '6710', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpxn7y04hs']
+[2025-05-23T10:50:07.487+0000] {standard_task_runner.py:105} INFO - Job 6710: Subtask get_links_task
+[2025-05-23T10:50:07.523+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-23T10:50:07.093689+00:00 [running]> on host 94ec89f221a0
+[2025-05-23T10:50:07.575+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-23T10:50:07.093689+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-23T10:50:07.093689+00:00'
+[2025-05-23T10:50:07.576+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-23T10:50:15.463+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7498705001024474386
+[2025-05-23T10:50:15.463+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7498705317186850066
+[2025-05-23T10:50:15.464+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7498996018965613831
+[2025-05-23T10:50:15.464+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7507252896841452808
+[2025-05-23T10:50:15.464+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7507152017014459655
+[2025-05-23T10:50:15.464+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7506886137437392146
+[2025-05-23T10:50:15.464+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7506758982984404245
+[2025-05-23T10:50:15.464+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7506433959543360776
+[2025-05-23T10:50:15.464+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7506135842830699784
+[2025-05-23T10:50:15.464+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7505854662143216903
+[2025-05-23T10:50:15.464+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7505774710660123912
+[2025-05-23T10:50:15.464+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7505113877638663431
+[2025-05-23T10:50:15.464+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7504992142029262088
+[2025-05-23T10:50:15.465+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7504731326382181639
+[2025-05-23T10:50:15.465+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7504662641667869960
+[2025-05-23T10:50:15.465+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7504353366839987463
+[2025-05-23T10:50:15.465+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7504285580432362770
+[2025-05-23T10:50:15.465+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7504162793424293127
+[2025-05-23T10:50:15.465+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7503927468781358357
+[2025-05-23T10:50:15.465+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7503784081667247378
+[2025-05-23T10:50:15.465+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7503548936053902613
+[2025-05-23T10:50:15.465+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7503172277333282055
+[2025-05-23T10:50:15.465+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7502122410489941266
+[2025-05-23T10:50:15.465+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7502119661249580296
+[2025-05-23T10:50:15.465+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7502117258118827272
+[2025-05-23T10:50:15.466+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7502045572585803015
+[2025-05-23T10:50:15.466+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7501937816675323143
+[2025-05-23T10:50:15.466+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7501647231590632712
+[2025-05-23T10:50:15.466+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7501367639546072327
+[2025-05-23T10:50:15.466+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7501316050516987154
+[2025-05-23T10:50:15.466+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7501196505018060050
+[2025-05-23T10:50:15.466+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7500934431830543624
+[2025-05-23T10:50:15.466+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7500828189653077266
+[2025-05-23T10:50:15.466+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7500115040968690952
+[2025-05-23T10:50:15.466+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7500113194057501970
+[2025-05-23T10:50:15.466+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7500113921177586962
+[2025-05-23T10:50:15.467+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7499827261349039367
+[2025-05-23T10:50:15.467+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@schannelvn/video/7499826730023046407
+[2025-05-23T10:50:15.478+0000] {logging_mixin.py:190} INFO - New videos: 4
+[2025-05-23T10:50:15.584+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'schannelvn', 'new_links': ('https://www.tiktok.com/@schannelvn/video/7506758982984404245', 'https://www.tiktok.com/@schannelvn/video/7506886137437392146', 'https://www.tiktok.com/@schannelvn/video/7507252896841452808', 'https://www.tiktok.com/@schannelvn/video/7507152017014459655')}
+[2025-05-23T10:50:15.600+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-23T10:50:15.600+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tiktok_videos_scraper_dag, task_id=get_links_task, run_id=manual__2025-05-23T10:50:07.093689+00:00, execution_date=20250523T105007, start_date=20250523T105007, end_date=20250523T105015
+[2025-05-23T10:50:15.619+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-23T10:50:15.633+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-23T10:50:15.634+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
