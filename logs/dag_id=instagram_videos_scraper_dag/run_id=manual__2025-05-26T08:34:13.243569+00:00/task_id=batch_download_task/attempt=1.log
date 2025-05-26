@@ -1,0 +1,42 @@
+[2025-05-26T08:34:47.477+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-26T08:34:47.489+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.batch_download_task manual__2025-05-26T08:34:13.243569+00:00 [queued]>
+[2025-05-26T08:34:47.496+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.batch_download_task manual__2025-05-26T08:34:13.243569+00:00 [queued]>
+[2025-05-26T08:34:47.496+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 6
+[2025-05-26T08:34:47.506+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): batch_download_task> on 2025-05-26 08:34:13.243569+00:00
+[2025-05-26T08:34:47.510+0000] {standard_task_runner.py:72} INFO - Started process 53794 to run task
+[2025-05-26T08:34:47.513+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'instagram_videos_scraper_dag', 'batch_download_task', 'manual__2025-05-26T08:34:13.243569+00:00', '--job-id', '6788', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_instagram.py', '--cfg-path', '/tmp/tmplg203hgg']
+[2025-05-26T08:34:47.516+0000] {standard_task_runner.py:105} INFO - Job 6788: Subtask batch_download_task
+[2025-05-26T08:34:47.554+0000] {task_command.py:467} INFO - Running <TaskInstance: instagram_videos_scraper_dag.batch_download_task manual__2025-05-26T08:34:13.243569+00:00 [running]> on host f541e6bad3a5
+[2025-05-26T08:34:47.615+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='instagram_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='batch_download_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-26T08:34:13.243569+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-26T08:34:13.243569+00:00'
+[2025-05-26T08:34:47.616+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-26T08:34:47.618+0000] {logging_mixin.py:190} INFO - Starting batch download...
+[2025-05-26T08:34:47.790+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T08:34:47.790+0000] {logging_mixin.py:190} INFO - Downloading video from DKHAzbwuni3...
+[2025-05-26T08:34:47.932+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/mancity/reel/DKHAzbwuni3/
+[2025-05-26T08:34:47.933+0000] {logging_mixin.py:190} INFO - [Instagram] DKHAzbwuni3: Setting up session
+[2025-05-26T08:34:48.238+0000] {logging_mixin.py:190} INFO - [Instagram] DKHAzbwuni3: Downloading JSON metadata
+[2025-05-26T08:34:49.020+0000] {logging_mixin.py:190} INFO - [info] DKHAzbwuni3: Downloading 1 format(s): dash-1404762347514219ad
+[2025-05-26T08:34:49.071+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DKHAzbwuni3
+[2025-05-26T08:34:49.072+0000] {logging_mixin.py:190} INFO - [download]   1.1% of   91.81KiB at  308.45KiB/s ETA 00:00
+[2025-05-26T08:34:49.073+0000] {logging_mixin.py:190} INFO - [download]   3.3% of   91.81KiB at  751.58KiB/s ETA 00:00
+[2025-05-26T08:34:49.074+0000] {logging_mixin.py:190} INFO - [download]   7.6% of   91.81KiB at    1.20MiB/s ETA 00:00
+[2025-05-26T08:34:49.075+0000] {logging_mixin.py:190} INFO - [download]  16.3% of   91.81KiB at    2.31MiB/s ETA 00:00
+[2025-05-26T08:34:49.076+0000] {logging_mixin.py:190} INFO - [download]  33.8% of   91.81KiB at    3.90MiB/s ETA 00:00
+[2025-05-26T08:34:49.079+0000] {logging_mixin.py:190} INFO - [download]  68.6% of   91.81KiB at    5.69MiB/s ETA 00:00
+[2025-05-26T08:34:49.082+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   91.81KiB at    6.66MiB/s ETA 00:00
+[2025-05-26T08:34:49.083+0000] {logging_mixin.py:190} INFO - [download] 100% of   91.81KiB in 00:00:00 at 1.89MiB/s   
+[2025-05-26T08:34:49.290+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DKHAzbwuni3"
+[2025-05-26T08:34:49.433+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DKHAzbwuni3.mp3
+[2025-05-26T08:34:49.645+0000] {logging_mixin.py:190} INFO - Deleting original file data/DKHAzbwuni3 (pass -k to keep)
+[2025-05-26T08:34:49.649+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DKHAzbwuni3
+[2025-05-26T08:34:49.657+0000] {logging_mixin.py:190} INFO - Downloaded video DKHAzbwuni3 to data/DKHAzbwuni3.mp3
+[2025-05-26T08:34:49.657+0000] {logging_mixin.py:190} INFO - Downloaded 1 new videos.
+[2025-05-26T08:34:49.658+0000] {python.py:240} INFO - Done. Returned value was: [{'video_id': 'DKHAzbwuni3', 'file_path': 'data/DKHAzbwuni3.mp3'}]
+[2025-05-26T08:34:49.678+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-26T08:34:49.678+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instagram_videos_scraper_dag, task_id=batch_download_task, run_id=manual__2025-05-26T08:34:13.243569+00:00, execution_date=20250526T083413, start_date=20250526T083447, end_date=20250526T083449
+[2025-05-26T08:34:49.679+0000] {taskinstance.py:1554} INFO - Executing <lambda> callback
+[2025-05-26T08:34:49.679+0000] {pipeline_instagram.py:29} INFO - DAG runs successfully
+[2025-05-26T08:34:49.732+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-26T08:34:49.752+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-26T08:34:49.754+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

@@ -1,0 +1,144 @@
+[2025-05-26T10:11:24.192+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-26T10:11:24.202+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.get_links_task manual__2025-05-26T10:11:23.557732+00:00 [queued]>
+[2025-05-26T10:11:24.208+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.get_links_task manual__2025-05-26T10:11:23.557732+00:00 [queued]>
+[2025-05-26T10:11:24.208+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 6
+[2025-05-26T10:11:24.217+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-26 10:11:23.557732+00:00
+[2025-05-26T10:11:24.220+0000] {standard_task_runner.py:72} INFO - Started process 4006010 to run task
+[2025-05-26T10:11:24.222+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'get_links_task', 'manual__2025-05-26T10:11:23.557732+00:00', '--job-id', '6830', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_fb.py', '--cfg-path', '/tmp/tmp74dteeev']
+[2025-05-26T10:11:24.224+0000] {standard_task_runner.py:105} INFO - Job 6830: Subtask get_links_task
+[2025-05-26T10:11:24.258+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.get_links_task manual__2025-05-26T10:11:23.557732+00:00 [running]> on host 3d8e4ce8d08f
+[2025-05-26T10:11:24.312+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-26T10:11:23.557732+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-26T10:11:23.557732+00:00'
+[2025-05-26T10:11:24.313+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-26T10:11:24.352+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.113); currently, chromedriver 136.0.7103.113 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-26T10:11:28.756+0000] {logging_mixin.py:190} INFO - Step 1 of 3 - Load cookies
+[2025-05-26T10:11:36.870+0000] {logging_mixin.py:190} INFO - Step 2 of 3 - Scrolling page
+[2025-05-26T10:11:36.871+0000] {logging_mixin.py:190} INFO - Scrolling 1 iterations...
+[2025-05-26T10:11:43.858+0000] {logging_mixin.py:190} INFO - Scrolling stopped after 2 iterations
+[2025-05-26T10:11:43.859+0000] {logging_mixin.py:190} INFO - Scrolled 2 iterations
+[2025-05-26T10:11:43.859+0000] {logging_mixin.py:190} INFO - Step 3 of 3 - Extract videos urls
+[2025-05-26T10:11:43.892+0000] {logging_mixin.py:190} INFO - Found 165 a tags
+[2025-05-26T10:11:44.091+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/100044395330646/videos/1036408544741830
+[2025-05-26T10:11:44.109+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1036408544741830/?comment_id=1040192994884098&__tn__=R]
+[2025-05-26T10:11:44.114+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/10062134173850670/
+[2025-05-26T10:11:44.125+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1399466454719929/
+[2025-05-26T10:11:44.137+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/683736207909384/
+[2025-05-26T10:11:44.147+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/2195626774209817/
+[2025-05-26T10:11:44.159+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1655863035089913/
+[2025-05-26T10:11:44.171+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1199624244953543/
+[2025-05-26T10:11:44.198+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/733413702050701/
+[2025-05-26T10:11:44.210+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/621705626724246/
+[2025-05-26T10:11:44.222+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/225242407128930/
+[2025-05-26T10:11:44.299+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/204723742550792/
+[2025-05-26T10:11:44.311+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1251288208842600/
+[2025-05-26T10:11:44.324+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/6696711287013741/
+[2025-05-26T10:11:44.342+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/588644173298398/
+[2025-05-26T10:11:44.355+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1337221616850958/
+[2025-05-26T10:11:44.379+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/7964154380295735/
+[2025-05-26T10:11:44.392+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/990353809098270/
+[2025-05-26T10:11:44.405+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/2058050411241040/
+[2025-05-26T10:11:44.421+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/371226899058666/
+[2025-05-26T10:11:44.437+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/769267788014838/
+[2025-05-26T10:11:44.462+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1133196954710516/
+[2025-05-26T10:11:44.495+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/3023016677964423/
+[2025-05-26T10:11:44.601+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/803417697117685/
+[2025-05-26T10:11:44.611+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1115355955934951/
+[2025-05-26T10:11:44.623+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1288220121689439/
+[2025-05-26T10:11:44.634+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/443649147470466/
+[2025-05-26T10:11:44.645+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/253562006865687/
+[2025-05-26T10:11:44.730+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/626846423732168/
+[2025-05-26T10:11:44.744+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/2080300145800217/
+[2025-05-26T10:11:44.757+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1250061696550758/
+[2025-05-26T10:11:44.769+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1269821158086362/
+[2025-05-26T10:11:44.782+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1043265987186594/
+[2025-05-26T10:11:44.801+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1036408544741830/
+[2025-05-26T10:11:44.815+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1360494521842055/
+[2025-05-26T10:11:44.831+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/998183722385313/
+[2025-05-26T10:11:44.853+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1235229514611079/
+[2025-05-26T10:11:44.882+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1588876581804879/
+[2025-05-26T10:11:44.898+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/698954252784548/
+[2025-05-26T10:11:44.932+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1382224349762720/
+[2025-05-26T10:11:44.950+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1802547773646891/
+[2025-05-26T10:11:44.961+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/718745760585216/
+[2025-05-26T10:11:44.973+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1246331226878673/
+[2025-05-26T10:11:44.984+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1397694697902397/
+[2025-05-26T10:11:45.009+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1033764938274863/
+[2025-05-26T10:11:42.524+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/996978185936363/
+[2025-05-26T10:11:42.534+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/541614385481414/
+[2025-05-26T10:11:42.545+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1836727593791495/
+[2025-05-26T10:11:42.557+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1752988118587662/
+[2025-05-26T10:11:42.567+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1215606803360634/
+[2025-05-26T10:11:42.577+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/928764839273486/
+[2025-05-26T10:11:42.589+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/729046889715573/
+[2025-05-26T10:11:42.600+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/9731450276971786/
+[2025-05-26T10:11:42.610+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1593930927948649/
+[2025-05-26T10:11:42.622+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/mancity/videos/1824320451485170/
+[2025-05-26T10:11:42.627+0000] {logging_mixin.py:190} INFO - Found 55 href elements
+[2025-05-26T10:11:42.628+0000] {logging_mixin.py:190} INFO -  Scraped data:
+[2025-05-26T10:11:42.628+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/100044395330646/videos/1036408544741830
+[2025-05-26T10:11:42.629+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/mancity/videos/1036408544741830/?comment_id=10401929948
+84098&__tn__=R]
+[2025-05-26T10:11:42.629+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/10062134173850670/
+[2025-05-26T10:11:42.629+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1399466454719929/
+[2025-05-26T10:11:42.630+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/683736207909384/
+[2025-05-26T10:11:42.630+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/2195626774209817/
+[2025-05-26T10:11:42.630+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1655863035089913/
+[2025-05-26T10:11:42.630+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1199624244953543/
+[2025-05-26T10:11:42.631+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/733413702050701/
+[2025-05-26T10:11:42.631+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/621705626724246/
+[2025-05-26T10:11:42.631+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/225242407128930/
+[2025-05-26T10:11:42.631+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/204723742550792/
+[2025-05-26T10:11:42.632+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1251288208842600/
+[2025-05-26T10:11:42.632+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/6696711287013741/
+[2025-05-26T10:11:42.632+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/588644173298398/
+[2025-05-26T10:11:42.632+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1337221616850958/
+[2025-05-26T10:11:42.633+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/7964154380295735/
+[2025-05-26T10:11:42.633+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/990353809098270/
+[2025-05-26T10:11:42.633+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/2058050411241040/
+[2025-05-26T10:11:42.633+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/371226899058666/
+[2025-05-26T10:11:42.634+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/769267788014838/
+[2025-05-26T10:11:42.634+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1133196954710516/
+[2025-05-26T10:11:42.634+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/3023016677964423/
+[2025-05-26T10:11:42.634+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/803417697117685/
+[2025-05-26T10:11:42.634+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1115355955934951/
+[2025-05-26T10:11:42.635+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1288220121689439/
+[2025-05-26T10:11:42.635+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/443649147470466/
+[2025-05-26T10:11:42.635+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/253562006865687/
+[2025-05-26T10:11:42.635+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/626846423732168/
+[2025-05-26T10:11:42.635+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/2080300145800217/
+[2025-05-26T10:11:42.636+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1250061696550758/
+[2025-05-26T10:11:42.636+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1269821158086362/
+[2025-05-26T10:11:42.636+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1043265987186594/
+[2025-05-26T10:11:42.637+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1036408544741830/
+[2025-05-26T10:11:42.637+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1360494521842055/
+[2025-05-26T10:11:42.637+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/998183722385313/
+[2025-05-26T10:11:42.638+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1235229514611079/
+[2025-05-26T10:11:42.638+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1588876581804879/
+[2025-05-26T10:11:42.638+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/698954252784548/
+[2025-05-26T10:11:42.639+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1382224349762720/
+[2025-05-26T10:11:42.639+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1802547773646891/
+[2025-05-26T10:11:42.639+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/718745760585216/
+[2025-05-26T10:11:42.640+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1246331226878673/
+[2025-05-26T10:11:42.640+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1397694697902397/
+[2025-05-26T10:11:42.640+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1033764938274863/
+[2025-05-26T10:11:42.641+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/996978185936363/
+[2025-05-26T10:11:42.641+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/541614385481414/
+[2025-05-26T10:11:42.641+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1836727593791495/
+[2025-05-26T10:11:42.641+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1752988118587662/
+[2025-05-26T10:11:42.642+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1215606803360634/
+[2025-05-26T10:11:42.642+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/928764839273486/
+[2025-05-26T10:11:42.642+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/729046889715573/
+[2025-05-26T10:11:42.642+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/9731450276971786/
+[2025-05-26T10:11:42.643+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1593930927948649/
+[2025-05-26T10:11:42.643+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/mancity/videos/1824320451485170/
+[2025-05-26T10:11:42.644+0000] {logging_mixin.py:190} INFO - Don't close the app! Saving scraped data to database, it can take a while!
+[2025-05-26T10:11:42.656+0000] {logging_mixin.py:190} INFO - Remaining new videos: 54
+[2025-05-26T10:11:42.656+0000] {logging_mixin.py:190} INFO - New videos: 5
+[2025-05-26T10:11:42.824+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'mancity', 'new_links': ('https://www.facebook.com/mancity/videos/1036408544741830/?comment_id=1040192994884098&__tn__=R]', 'https://www.facebook.com/mancity/videos/1399466454719929/', 'https://www.facebook.com/mancity/videos/2195626774209817/', 'https://www.facebook.com/mancity/videos/10062134173850670/', 'https://www.facebook.com/mancity/videos/683736207909384/')}
+[2025-05-26T10:11:42.843+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-26T10:11:42.843+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=facebook_videos_scraper_dag, task_id=get_links_task, run_id=manual__2025-05-26T10:11:23.557732+00:00, execution_date=20250526T101123, start_date=20250526T101124, end_date=20250526T101142
+[2025-05-26T10:11:42.843+0000] {taskinstance.py:1554} INFO - Executing <lambda> callback
+[2025-05-26T10:11:42.844+0000] {pipeline_fb.py:40} INFO - DAG runs successfully
+[2025-05-26T10:11:42.872+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-26T10:11:42.890+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-26T10:11:42.908+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

@@ -12,7 +12,7 @@ from app.worker.schema import TaskStatus
 from dags.utils.get_id import extract_id
 
 # @task
-def x_videos_scraper(id = "elonmusk",scrolls = 5):
+def x_videos_scraper(id = "elonmusk",downloads = 5):
     from playwright.sync_api import sync_playwright
 
     with sync_playwright() as playwright:
@@ -30,7 +30,7 @@ def x_videos_scraper(id = "elonmusk",scrolls = 5):
         results = get_info_by_user_id(platform="x", user_id=id)
 
         # Cuộn xuống để tải thêm tweets
-        while len(hrefs) < scrolls+len(results):
+        while len(hrefs) < downloads:
         # for i in range(scrolls):
             # print(f"Scrolling down... {i}")
             old_links = set(hrefs)
@@ -56,7 +56,7 @@ def x_videos_scraper(id = "elonmusk",scrolls = 5):
                 hrefs.remove(result.url)
         print(f"Remaining new videos: {len(hrefs)}")
 
-        hrefs = hrefs[:scrolls]  # Giới hạn số lượng video mới lấy về
+        hrefs = hrefs[:downloads]  # Giới hạn số lượng video mới lấy về
         print(f"Total new videos to process: {len(hrefs)}")
 
         new_links = set(hrefs)
@@ -68,32 +68,4 @@ def x_videos_scraper(id = "elonmusk",scrolls = 5):
 
         return {'id': id, 'new_links': new_links}
 
-        # results = []
-
-        # for link in new_links:
-        #     try:
-        #         video_id = extract_id(link)
-        #         task_id = create_pending_video(video_id, id, link, platform="x")
-        #         file_path = download_video(link, Config.DOWNLOAD_DIRECTORY)
-        #         if file_path:
-        #             update_video_status(video_id, TaskStatus.PROCESSING.value, platform="x")
-        #             result = {
-        #                 "video_id": video_id,
-        #                 "file_path": file_path,
-        #             }
-        #             print(f"Downloaded video {result['video_id']} to {result['file_path']}")
-        #             results.append(result)                    
-                    
-        #         else:
-        #             update_video_status(video_id, TaskStatus.FAILURE.value, platform="x", logs="Error downloading video")
-        #     except Exception as e:
-        #         print(f"Error downloading video {link}: {e}")
-        #         # update_video_status(video_id, TaskStatus.FAILURE.value, platform="x", logs="Error downloading video")
-        #         continue
-            
-        # print(f"Downloaded {len(results)} new videos.")
-
-
-
-
-    # batch_download_from_file(Config.X_FILE_PATH, Config.DOWNLOAD_DIRECTORY, platform="x")
+ 

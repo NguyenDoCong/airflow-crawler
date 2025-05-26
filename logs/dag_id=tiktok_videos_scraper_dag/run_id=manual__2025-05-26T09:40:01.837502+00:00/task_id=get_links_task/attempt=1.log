@@ -1,0 +1,91 @@
+[2025-05-26T09:40:03.284+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-26T09:40:03.297+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-26T09:40:01.837502+00:00 [queued]>
+[2025-05-26T09:40:03.302+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-26T09:40:01.837502+00:00 [queued]>
+[2025-05-26T09:40:03.302+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 6
+[2025-05-26T09:40:03.310+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-26 09:40:01.837502+00:00
+[2025-05-26T09:40:03.313+0000] {standard_task_runner.py:72} INFO - Started process 198 to run task
+[2025-05-26T09:40:03.316+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'get_links_task', 'manual__2025-05-26T09:40:01.837502+00:00', '--job-id', '6820', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmppo8m51m_']
+[2025-05-26T09:40:03.318+0000] {standard_task_runner.py:105} INFO - Job 6820: Subtask get_links_task
+[2025-05-26T09:40:03.353+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-26T09:40:01.837502+00:00 [running]> on host 3d8e4ce8d08f
+[2025-05-26T09:40:03.415+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-26T09:40:01.837502+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-26T09:40:01.837502+00:00'
+[2025-05-26T09:40:03.416+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-26T09:40:12.838+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508464730550324502
+[2025-05-26T09:40:12.838+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508679861565787414
+[2025-05-26T09:40:12.839+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508654487783968022
+[2025-05-26T09:40:12.839+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508490884967566614
+[2025-05-26T09:40:12.839+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508527298748976406
+[2025-05-26T09:40:12.839+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508527067751894294
+[2025-05-26T09:40:12.839+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508502451952061718
+[2025-05-26T09:40:12.839+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508498775216885014
+[2025-05-26T09:40:12.839+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508491065687624982
+[2025-05-26T09:40:12.839+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508483635398446358
+[2025-05-26T09:40:12.839+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508479228103494935
+[2025-05-26T09:40:12.839+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508459130307480855
+[2025-05-26T09:40:12.839+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508456827676347670
+[2025-05-26T09:40:12.840+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508450997073710358
+[2025-05-26T09:40:12.840+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508448073526414614
+[2025-05-26T09:40:12.840+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508445810112187670
+[2025-05-26T09:40:12.840+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508438049185991958
+[2025-05-26T09:40:12.840+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508436950504705302
+[2025-05-26T09:40:12.840+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508400151296265494
+[2025-05-26T09:40:12.840+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508398140224032022
+[2025-05-26T09:40:12.840+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508394932860751126
+[2025-05-26T09:40:12.840+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508392744222543126
+[2025-05-26T09:40:12.840+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508389421960547606
+[2025-05-26T09:40:12.841+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508379111954402582
+[2025-05-26T09:40:12.841+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508377378943503638
+[2025-05-26T09:40:12.841+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508350178953334038
+[2025-05-26T09:40:12.841+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7506930802005904662
+[2025-05-26T09:40:12.841+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7507970863153646870
+[2025-05-26T09:40:12.841+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508154677133839639
+[2025-05-26T09:40:12.841+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7507939182866730262
+[2025-05-26T09:40:12.841+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508081368115531030
+[2025-05-26T09:40:12.841+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508073723602324758
+[2025-05-26T09:40:12.841+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508067907306310934
+[2025-05-26T09:40:12.841+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508046924558175510
+[2025-05-26T09:40:12.841+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508042565770284310
+[2025-05-26T09:40:13.714+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508039071126654230
+[2025-05-26T09:40:13.714+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508032971467689238
+[2025-05-26T09:40:13.714+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508027146581839126
+[2025-05-26T09:40:13.715+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508023340968217858
+[2025-05-26T09:40:13.715+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7508019578547571990
+[2025-05-26T09:40:13.715+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7507996044874075414
+[2025-05-26T09:40:13.715+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7507995226154208534
+[2025-05-26T09:40:13.715+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7507980831990779158
+[2025-05-26T09:40:13.715+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7507973302632107286
+[2025-05-26T09:40:13.715+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7507964248723623190
+[2025-05-26T09:40:13.715+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7507949968674540822
+[2025-05-26T09:40:13.715+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7506930554667928854
+[2025-05-26T09:40:13.715+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7507726071853354262
+[2025-05-26T09:40:13.715+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7507718861177867542
+[2025-05-26T09:40:13.715+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7507709245937159446
+[2025-05-26T09:40:13.715+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7507688497885531414
+[2025-05-26T09:40:13.715+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7507616766995025174
+[2025-05-26T09:40:13.716+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7507430426584321303
+[2025-05-26T09:40:13.716+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7507427069580578050
+[2025-05-26T09:40:13.716+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7506930269912370454
+[2025-05-26T09:40:13.716+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7506930064861269270
+[2025-05-26T09:40:13.716+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7506929832077413654
+[2025-05-26T09:40:13.716+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7506908659989990678
+[2025-05-26T09:40:13.716+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7506933778279927062
+[2025-05-26T09:40:13.716+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7506852229802904854
+[2025-05-26T09:40:13.716+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7506550922118466838
+[2025-05-26T09:40:13.716+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7506498145442893078
+[2025-05-26T09:40:13.717+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7506466056127515926
+[2025-05-26T09:40:13.717+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7506266052767026454
+[2025-05-26T09:40:13.717+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7506265044477283606
+[2025-05-26T09:40:13.717+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7506274519473016086
+[2025-05-26T09:40:13.717+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7506235948716412182
+[2025-05-26T09:40:13.717+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7506233315045805334
+[2025-05-26T09:40:13.717+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7506232768511085846
+[2025-05-26T09:40:13.717+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@liverpoolfc/video/7506226383237008662
+[2025-05-26T09:40:13.717+0000] {logging_mixin.py:190} INFO - Total videos found: 70
+[2025-05-26T09:40:13.734+0000] {logging_mixin.py:190} INFO - New videos: 50
+[2025-05-26T09:40:13.896+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'liverpoolfc', 'new_links': ('https://www.tiktok.com/@liverpoolfc/video/7508450997073710358', 'https://www.tiktok.com/@liverpoolfc/video/7508039071126654230', 'https://www.tiktok.com/@liverpoolfc/video/7507964248723623190', 'https://www.tiktok.com/@liverpoolfc/video/7507996044874075414', 'https://www.tiktok.com/@liverpoolfc/video/7507970863153646870', 'https://www.tiktok.com/@liverpoolfc/video/7508436950504705302', 'https://www.tiktok.com/@liverpoolfc/video/7508464730550324502', 'https://www.tiktok.com/@liverpoolfc/video/7508445810112187670', 'https://www.tiktok.com/@liverpoolfc/video/7508081368115531030', 'https://www.tiktok.com/@liverpoolfc/video/7508379111954402582', 'https://www.tiktok.com/@liverpoolfc/video/7508019578547571990', 'https://www.tiktok.com/@liverpoolfc/video/7508490884967566614', 'https://www.tiktok.com/@liverpoolfc/video/7508394932860751126', 'https://www.tiktok.com/@liverpoolfc/video/7507718861177867542', 'https://www.tiktok.com/@liverpoolfc/video/7508154677133839639', 'https://www.tiktok.com/@liverpoolfc/video/7508046924558175510', 'https://www.tiktok.com/@liverpoolfc/video/7507980831990779158', 'https://www.tiktok.com/@liverpoolfc/video/7508527298748976406', 'https://www.tiktok.com/@liverpoolfc/video/7508456827676347670', 'https://www.tiktok.com/@liverpoolfc/video/7507995226154208534', 'https://www.tiktok.com/@liverpoolfc/video/7507949968674540822', 'https://www.tiktok.com/@liverpoolfc/video/7508350178953334038', 'https://www.tiktok.com/@liverpoolfc/video/7508400151296265494', 'https://www.tiktok.com/@liverpoolfc/video/7508459130307480855', 'https://www.tiktok.com/@liverpoolfc/video/7508073723602324758', 'https://www.tiktok.com/@liverpoolfc/video/7508479228103494935', 'https://www.tiktok.com/@liverpoolfc/video/7508483635398446358', 'https://www.tiktok.com/@liverpoolfc/video/7508498775216885014', 'https://www.tiktok.com/@liverpoolfc/video/7508448073526414614', 'https://www.tiktok.com/@liverpoolfc/video/7508392744222543126', 'https://www.tiktok.com/@liverpoolfc/video/7507709245937159446', 'https://www.tiktok.com/@liverpoolfc/video/7508679861565787414', 'https://www.tiktok.com/@liverpoolfc/video/7508502451952061718', 'https://www.tiktok.com/@liverpoolfc/video/7508491065687624982', 'https://www.tiktok.com/@liverpoolfc/video/7508042565770284310', 'https://www.tiktok.com/@liverpoolfc/video/7506930554667928854', 'https://www.tiktok.com/@liverpoolfc/video/7508032971467689238', 'https://www.tiktok.com/@liverpoolfc/video/7508027146581839126', 'https://www.tiktok.com/@liverpoolfc/video/7508377378943503638', 'https://www.tiktok.com/@liverpoolfc/video/7508023340968217858', 'https://www.tiktok.com/@liverpoolfc/video/7508527067751894294', 'https://www.tiktok.com/@liverpoolfc/video/7506930802005904662', 'https://www.tiktok.com/@liverpoolfc/video/7508438049185991958', 'https://www.tiktok.com/@liverpoolfc/video/7508389421960547606', 'https://www.tiktok.com/@liverpoolfc/video/7508654487783968022', 'https://www.tiktok.com/@liverpoolfc/video/7508398140224032022', 'https://www.tiktok.com/@liverpoolfc/video/7507939182866730262', 'https://www.tiktok.com/@liverpoolfc/video/7508067907306310934', 'https://www.tiktok.com/@liverpoolfc/video/7507973302632107286', 'https://www.tiktok.com/@liverpoolfc/video/7507726071853354262')}
+[2025-05-26T09:40:13.918+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-26T09:40:13.919+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tiktok_videos_scraper_dag, task_id=get_links_task, run_id=manual__2025-05-26T09:40:01.837502+00:00, execution_date=20250526T094001, start_date=20250526T094003, end_date=20250526T094013
+[2025-05-26T09:40:13.919+0000] {taskinstance.py:1554} INFO - Executing <lambda> callback
+[2025-05-26T09:40:13.919+0000] {pipeline_tiktok.py:40} INFO - DAG runs successfully
+[2025-05-26T09:40:13.970+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-26T09:40:13.989+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-26T09:40:13.991+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

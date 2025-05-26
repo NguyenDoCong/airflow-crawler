@@ -1,0 +1,34 @@
+[2025-05-26T08:16:18.026+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-26T08:16:18.038+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.get_links_task scheduled__2025-05-25T00:00:00+00:00 [queued]>
+[2025-05-26T08:16:18.045+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.get_links_task scheduled__2025-05-25T00:00:00+00:00 [queued]>
+[2025-05-26T08:16:18.045+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 6
+[2025-05-26T08:16:18.054+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-25 00:00:00+00:00
+[2025-05-26T08:16:18.056+0000] {standard_task_runner.py:72} INFO - Started process 88 to run task
+[2025-05-26T08:16:18.059+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'get_links_task', 'scheduled__2025-05-25T00:00:00+00:00', '--job-id', '6770', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_fb.py', '--cfg-path', '/tmp/tmpo4y0ymqg']
+[2025-05-26T08:16:18.061+0000] {standard_task_runner.py:105} INFO - Job 6770: Subtask get_links_task
+[2025-05-26T08:16:18.096+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.get_links_task scheduled__2025-05-25T00:00:00+00:00 [running]> on host 6bc766836e0a
+[2025-05-26T08:16:18.162+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-25T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-05-25T00:00:00+00:00'
+[2025-05-26T08:16:18.163+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-26T08:16:45.382+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.113); currently, chromedriver 136.0.7103.113 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-26T08:16:47.287+0000] {logging_mixin.py:190} INFO - Step 1 of 3 - Load cookies
+[2025-05-26T08:16:50.288+0000] {logging_mixin.py:190} INFO - Step 2 of 3 - Scrolling page
+[2025-05-26T08:16:50.288+0000] {logging_mixin.py:190} INFO - Scrolling 1 iterations...
+[2025-05-26T08:16:53.311+0000] {logging_mixin.py:190} INFO - Scrolled 1 iterations
+[2025-05-26T08:16:53.312+0000] {logging_mixin.py:190} INFO - Step 3 of 3 - Extract videos urls
+[2025-05-26T08:16:53.323+0000] {logging_mixin.py:190} INFO - Found 24 a tags
+[2025-05-26T08:16:53.455+0000] {logging_mixin.py:190} INFO - Found 0 href elements
+[2025-05-26T08:16:53.456+0000] {logging_mixin.py:190} INFO -  No data found
+[2025-05-26T08:16:53.593+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'hoaminzy_hoadambut', 'new_links': []}
+[2025-05-26T08:16:53.612+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-26T08:16:53.612+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=facebook_videos_scraper_dag, task_id=get_links_task, run_id=scheduled__2025-05-25T00:00:00+00:00, execution_date=20250525T000000, start_date=20250526T081618, end_date=20250526T081653
+[2025-05-26T08:16:53.612+0000] {taskinstance.py:1554} INFO - Executing on_success_callback callback
+[2025-05-26T08:16:53.612+0000] {taskinstance.py:1558} ERROR - Error when executing on_success_callback callback
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 1556, in _run_finished_callback
+    callback(context)
+  File "/opt/airflow/dags/pipeline_fb.py", line 23, in on_success_callback
+    logging("DAG runs successfully")
+TypeError: 'module' object is not callable
+[2025-05-26T08:16:53.651+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-26T08:16:53.679+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-26T08:16:53.681+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

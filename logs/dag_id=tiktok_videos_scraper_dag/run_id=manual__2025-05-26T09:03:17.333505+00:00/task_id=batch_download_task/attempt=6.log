@@ -1,0 +1,77 @@
+[2025-05-26T09:28:57.987+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-26T09:28:57.998+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.batch_download_task manual__2025-05-26T09:03:17.333505+00:00 [queued]>
+[2025-05-26T09:28:58.003+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.batch_download_task manual__2025-05-26T09:03:17.333505+00:00 [queued]>
+[2025-05-26T09:28:58.004+0000] {taskinstance.py:2856} INFO - Starting attempt 6 of 6
+[2025-05-26T09:28:58.011+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): batch_download_task> on 2025-05-26 09:03:17.333505+00:00
+[2025-05-26T09:28:58.014+0000] {standard_task_runner.py:72} INFO - Started process 1477071 to run task
+[2025-05-26T09:28:58.017+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'batch_download_task', 'manual__2025-05-26T09:03:17.333505+00:00', '--job-id', '6817', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmp7gt3xjqb']
+[2025-05-26T09:28:58.018+0000] {standard_task_runner.py:105} INFO - Job 6817: Subtask batch_download_task
+[2025-05-26T09:28:58.054+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.batch_download_task manual__2025-05-26T09:03:17.333505+00:00 [running]> on host f541e6bad3a5
+[2025-05-26T09:28:58.116+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='batch_download_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-26T09:03:17.333505+00:00' AIRFLOW_CTX_TRY_NUMBER='6' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-26T09:03:17.333505+00:00'
+[2025-05-26T09:28:58.117+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-26T09:28:58.118+0000] {logging_mixin.py:190} INFO - Starting batch download...
+[2025-05-26T09:28:58.126+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/tasks/batch_download.py", line 21, in batch_download
+    id, urls = ti.xcom_pull(task_ids="get_links_task").values()
+AttributeError: 'list' object has no attribute 'values'
+[2025-05-26T09:28:58.132+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=tiktok_videos_scraper_dag, task_id=batch_download_task, run_id=manual__2025-05-26T09:03:17.333505+00:00, execution_date=20250526T090317, start_date=20250526T092857, end_date=20250526T092858
+[2025-05-26T09:28:58.140+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-26T09:28:58.140+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 6817 for task batch_download_task ('list' object has no attribute 'values'; 1477071)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/opt/airflow/dags/tasks/batch_download.py", line 21, in batch_download
+    id, urls = ti.xcom_pull(task_ids="get_links_task").values()
+AttributeError: 'list' object has no attribute 'values'
+[2025-05-26T09:28:58.150+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 1
+[2025-05-26T09:28:58.166+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-26T09:28:58.170+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

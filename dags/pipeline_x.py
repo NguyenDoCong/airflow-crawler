@@ -7,37 +7,20 @@ from tasks.batch_download import batch_download
 from config import Config
 from airflow.operators.python import PythonOperator
 import math
-from datetime import datetime
+from datetime import datetime, timedelta
+import logging
 
 import sys
 sys.path.append('/opt/airflow/dags')
 # Define the DAG
 
-# with DAG(
-#     dag_id="x_login_dag",
-#     schedule_interval=None,  # Set your desired schedule
-#     start_date=days_ago(1),
-#     catchup=False,
-# ) as dag:
-#     login = PythonOperator(
-#         task_id="x_login_task",
-#         python_callable=x_login,
-#         provide_context=True,
-#         op_kwargs={
-#             "X_USERNAME": Config.X_USERNAME,
-#             "X_PASSWORD": Config.X_PASSWORD,
-#         },
-#     )
-    
-#scraper    
-
 def run_x_videos_scraper(**context):
     conf = context["dag_run"].conf or {}
     id = conf.get("id", "Cristiano")
-    scrolls = math.ceil(conf.get("count", 20)/20)
+    downloads = conf.get("count", 20)
     return x_videos_scraper(
         id=id,
-        scrolls=scrolls,
+        downloads=downloads,
     )
 
 def login_x(**context):
@@ -46,11 +29,25 @@ def login_x(**context):
     X_PASSWORD = conf.get("X_PASSWORD", Config.X_PASSWORD)
     return x_login(X_PASSWORD=X_PASSWORD,
                             X_USERNAME=X_USERNAME)
+def log_retry(context):
+    try_number = context['ti'].try_number
+    max_tries = context['ti'].max_tries
+    task_id = context['ti'].task_id
+    logging.info(f"Retrying task {task_id}: attempt {try_number} of {max_tries + 1}")
 
 with DAG(
+    default_args={
+        "depends_on_past": False,
+        "retries": 5,
+        "retry_delay": timedelta(minutes=5),
+        # 'execution_timeout': timedelta(seconds=90),
+        'on_success_callback': lambda context: logging.info("DAG runs successfully"),
+        'on_retry_callback': log_retry,
+        'on_failure_callback': lambda context: logging.error("DAG failed"),        
+    },
     dag_id="x_videos_scraper_dag",
     schedule="@daily",
-    start_date=datetime.now(),
+    start_date=days_ago(0),
     catchup=False,
 ) as dag:
     
@@ -64,6 +61,7 @@ with DAG(
         task_id="get_links_task",
         provide_context=True,
         python_callable=run_x_videos_scraper,
+        execution_timeout=timedelta(seconds=90)          
     )
 
     downloads = PythonOperator(

@@ -89,7 +89,9 @@ def get_task_status_from_log(log_file_path):
                         new_videos = 0
                         downloaded = 0
             return new_videos, downloaded, "thành công"
-        elif "Task is not able to be run" in content or "Error" in content:
+        elif "Retrying" in content:
+            return "", "", "đang thứ lại"
+        elif "Task is not able to be run" in content or "DAG failed" in content:
             return "", "", "thất bại"
         elif "Downloading" in content or "Processing" in content or "https://" in content:
             if "Starting batch download..." in content:
@@ -112,8 +114,8 @@ def track_dag_status_ui(dag_id, dag_run_id, user_id, get_info_by_user_id, show_u
 
     st.title("Theo dõi trạng thái DAG và Task")
     status_placeholder = st.empty()
-    start_time = time.time()
-    timeout = 90
+    # start_time = time.time()
+    # timeout = 90
 
     def get_status_list():
         get_links_log_file_path = f"/home/docon/projects/airflow-docker/logs/dag_id={dag_id}/run_id={dag_run_id}/task_id=get_links_task/attempt=1.log"
@@ -135,18 +137,18 @@ def track_dag_status_ui(dag_id, dag_run_id, user_id, get_info_by_user_id, show_u
     while not check_task_status():
         task_status_list = get_status_list()
         status_placeholder.table(task_status_list)
-        if task_status_list[0]["Trạng thái"] == "chưa chạy()":
-            elapsed = time.time() - start_time
-            if elapsed > timeout:
-                stop_dag_result, stop_dag_message = stop_dag_func(dag_id, dag_run_id)
-                if stop_dag_result:
-                    st.success(stop_dag_message)
-                else:
-                    st.error(stop_dag_message)
-                st.error("Task chưa chạy sau 1 phút. Đã gửi yêu cầu dừng DAG.")
-                break
-        else:
-            start_time = time.time()
+        # if task_status_list[0]["Trạng thái"] == "chưa chạy()":
+        #     elapsed = time.time() - start_time
+        #     if elapsed > timeout:
+        #         stop_dag_result, stop_dag_message = stop_dag_func(dag_id, dag_run_id)
+        #         if stop_dag_result:
+        #             st.success(stop_dag_message)
+        #         else:
+        #             st.error(stop_dag_message)
+        #         st.error("Task chưa chạy sau 1 phút. Đã gửi yêu cầu dừng DAG.")
+        #         break
+        # else:
+        #     start_time = time.time()
         time.sleep(1)
 
     task_status_list = get_status_list()

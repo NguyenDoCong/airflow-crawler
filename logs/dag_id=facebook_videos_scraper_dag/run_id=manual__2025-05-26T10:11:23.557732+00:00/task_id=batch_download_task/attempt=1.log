@@ -1,0 +1,158 @@
+[2025-05-26T10:11:44.183+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-26T10:11:44.199+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.batch_download_task manual__2025-05-26T10:11:23.557732+00:00 [queued]>
+[2025-05-26T10:11:44.206+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.batch_download_task manual__2025-05-26T10:11:23.557732+00:00 [queued]>
+[2025-05-26T10:11:44.206+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 6
+[2025-05-26T10:11:44.215+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): batch_download_task> on 2025-05-26 10:11:23.557732+00:00
+[2025-05-26T10:11:44.218+0000] {standard_task_runner.py:72} INFO - Started process 4006231 to run task
+[2025-05-26T10:11:44.221+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'batch_download_task', 'manual__2025-05-26T10:11:23.557732+00:00', '--job-id', '6831', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_fb.py', '--cfg-path', '/tmp/tmp_cwkhz1q']
+[2025-05-26T10:11:44.223+0000] {standard_task_runner.py:105} INFO - Job 6831: Subtask batch_download_task
+[2025-05-26T10:11:44.261+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.batch_download_task manual__2025-05-26T10:11:23.557732+00:00 [running]> on host 3d8e4ce8d08f
+[2025-05-26T10:11:44.328+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='batch_download_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-26T10:11:23.557732+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-26T10:11:23.557732+00:00'
+[2025-05-26T10:11:44.329+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-26T10:11:44.331+0000] {logging_mixin.py:190} INFO - Starting batch download...
+[2025-05-26T10:11:44.487+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T10:11:44.487+0000] {logging_mixin.py:190} INFO - Downloading video from 1036408544741830...
+[2025-05-26T10:11:44.766+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/mancity/videos/1036408544741830/?comment_id=1040192994884098&__tn__=R]
+[2025-05-26T10:11:44.767+0000] {logging_mixin.py:190} INFO - [facebook] 1036408544741830: Downloading webpage
+[2025-05-26T10:11:46.353+0000] {logging_mixin.py:190} INFO - [info] 1036408544741830: Downloading 1 format(s): 1367909837803352a
+[2025-05-26T10:11:46.388+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1036408544741830
+[2025-05-26T10:11:46.388+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  643.12KiB at  Unknown B/s ETA Unknown
+[2025-05-26T10:11:46.390+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  643.12KiB at    1.15MiB/s ETA 00:00  
+[2025-05-26T10:11:46.390+0000] {logging_mixin.py:190} INFO - [download]   1.1% of  643.12KiB at    2.29MiB/s ETA 00:00
+[2025-05-26T10:11:46.391+0000] {logging_mixin.py:190} INFO - [download]   2.3% of  643.12KiB at    4.18MiB/s ETA 00:00
+[2025-05-26T10:11:46.392+0000] {logging_mixin.py:190} INFO - [download]   4.8% of  643.12KiB at    7.23MiB/s ETA 00:00
+[2025-05-26T10:11:46.395+0000] {logging_mixin.py:190} INFO - [download]   9.8% of  643.12KiB at    8.50MiB/s ETA 00:00
+[2025-05-26T10:11:46.401+0000] {logging_mixin.py:190} INFO - [download]  19.7% of  643.12KiB at    9.38MiB/s ETA 00:00
+[2025-05-26T10:11:46.414+0000] {logging_mixin.py:190} INFO - [download]  39.7% of  643.12KiB at    9.55MiB/s ETA 00:00
+[2025-05-26T10:11:46.438+0000] {logging_mixin.py:190} INFO - [download]  79.5% of  643.12KiB at    9.84MiB/s ETA 00:00
+[2025-05-26T10:11:46.451+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  643.12KiB at    9.93MiB/s ETA 00:00
+[2025-05-26T10:11:46.452+0000] {logging_mixin.py:190} INFO - [download] 100% of  643.12KiB in 00:00:00 at 6.69MiB/s   
+[2025-05-26T10:11:46.572+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1036408544741830"
+[2025-05-26T10:11:46.712+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1036408544741830.mp3
+[2025-05-26T10:11:47.622+0000] {logging_mixin.py:190} INFO - Deleting original file data/1036408544741830 (pass -k to keep)
+[2025-05-26T10:11:47.626+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1036408544741830
+[2025-05-26T10:11:47.640+0000] {logging_mixin.py:190} INFO - Downloaded video 1036408544741830 to data/1036408544741830.mp3
+[2025-05-26T10:11:47.775+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T10:11:47.775+0000] {logging_mixin.py:190} INFO - Downloading video from 1399466454719929...
+[2025-05-26T10:11:47.809+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/mancity/videos/1399466454719929/
+[2025-05-26T10:11:47.810+0000] {logging_mixin.py:190} INFO - [facebook] 1399466454719929: Downloading webpage
+[2025-05-26T10:11:49.502+0000] {logging_mixin.py:190} INFO - [info] 1399466454719929: Downloading 1 format(s): 1459518002080514a
+[2025-05-26T10:11:49.558+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1399466454719929
+[2025-05-26T10:11:49.559+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   76.28MiB at  499.62KiB/s ETA 02:37
+[2025-05-26T10:11:49.560+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   76.28MiB at  960.16KiB/s ETA 01:21
+[2025-05-26T10:11:49.560+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   76.28MiB at    1.86MiB/s ETA 00:41
+[2025-05-26T10:11:49.561+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   76.28MiB at    3.56MiB/s ETA 00:21
+[2025-05-26T10:11:49.562+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   76.28MiB at    5.29MiB/s ETA 00:14
+[2025-05-26T10:11:49.566+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   76.28MiB at    6.47MiB/s ETA 00:11
+[2025-05-26T10:11:49.572+0000] {logging_mixin.py:190} INFO - [download]   0.2% of   76.28MiB at    7.93MiB/s ETA 00:09
+[2025-05-26T10:11:49.585+0000] {logging_mixin.py:190} INFO - [download]   0.3% of   76.28MiB at    8.90MiB/s ETA 00:08
+[2025-05-26T10:11:49.791+0000] {logging_mixin.py:190} INFO - [download]   0.7% of   76.28MiB at    2.13MiB/s ETA 00:35
+[2025-05-26T10:11:49.842+0000] {logging_mixin.py:190} INFO - [download]   1.3% of   76.28MiB at    3.50MiB/s ETA 00:21
+[2025-05-26T10:11:49.947+0000] {logging_mixin.py:190} INFO - [download]   2.6% of   76.28MiB at    5.12MiB/s ETA 00:14
+[2025-05-26T10:11:50.159+0000] {logging_mixin.py:190} INFO - [download]   5.2% of   76.28MiB at    6.64MiB/s ETA 00:10
+[2025-05-26T10:11:50.575+0000] {logging_mixin.py:190} INFO - [download]  10.5% of   76.28MiB at    7.85MiB/s ETA 00:08
+[2025-05-26T10:11:50.994+0000] {logging_mixin.py:190} INFO - [download]  15.7% of   76.28MiB at    8.35MiB/s ETA 00:07
+[2025-05-26T10:11:51.412+0000] {logging_mixin.py:190} INFO - [download]  21.0% of   76.28MiB at    8.62MiB/s ETA 00:06
+[2025-05-26T10:11:51.877+0000] {logging_mixin.py:190} INFO - [download]  26.2% of   76.28MiB at    8.62MiB/s ETA 00:06
+[2025-05-26T10:11:52.295+0000] {logging_mixin.py:190} INFO - [download]  31.5% of   76.28MiB at    8.76MiB/s ETA 00:05
+[2025-05-26T10:11:52.713+0000] {logging_mixin.py:190} INFO - [download]  36.7% of   76.28MiB at    8.87MiB/s ETA 00:05
+[2025-05-26T10:11:53.139+0000] {logging_mixin.py:190} INFO - [download]  41.9% of   76.28MiB at    8.93MiB/s ETA 00:04
+[2025-05-26T10:11:53.600+0000] {logging_mixin.py:190} INFO - [download]  47.2% of   76.28MiB at    8.90MiB/s ETA 00:04
+[2025-05-26T10:11:54.043+0000] {logging_mixin.py:190} INFO - [download]  52.4% of   76.28MiB at    8.92MiB/s ETA 00:04
+[2025-05-26T10:11:54.459+0000] {logging_mixin.py:190} INFO - [download]  57.7% of   76.28MiB at    8.97MiB/s ETA 00:03
+[2025-05-26T10:11:54.876+0000] {logging_mixin.py:190} INFO - [download]  62.9% of   76.28MiB at    9.02MiB/s ETA 00:03
+[2025-05-26T10:11:55.295+0000] {logging_mixin.py:190} INFO - [download]  68.2% of   76.28MiB at    9.06MiB/s ETA 00:02
+[2025-05-26T10:11:55.716+0000] {logging_mixin.py:190} INFO - [download]  73.4% of   76.28MiB at    9.09MiB/s ETA 00:02
+[2025-05-26T10:11:56.160+0000] {logging_mixin.py:190} INFO - [download]  78.7% of   76.28MiB at    9.09MiB/s ETA 00:01
+[2025-05-26T10:11:56.647+0000] {logging_mixin.py:190} INFO - [download]  83.9% of   76.28MiB at    9.03MiB/s ETA 00:01
+[2025-05-26T10:11:57.259+0000] {logging_mixin.py:190} INFO - [download]  89.1% of   76.28MiB at    8.83MiB/s ETA 00:00
+[2025-05-26T10:11:57.856+0000] {logging_mixin.py:190} INFO - [download]  94.4% of   76.28MiB at    8.68MiB/s ETA 00:00
+[2025-05-26T10:11:58.530+0000] {logging_mixin.py:190} INFO - [download]  99.6% of   76.28MiB at    8.47MiB/s ETA 00:00
+[2025-05-26T10:11:58.564+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   76.28MiB at    8.47MiB/s ETA 00:00
+[2025-05-26T10:11:58.570+0000] {logging_mixin.py:190} INFO - [download] 100% of   76.28MiB in 00:00:09 at 8.41MiB/s   
+[2025-05-26T10:11:58.572+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1399466454719929"
+[2025-05-26T10:11:59.025+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1399466454719929.mp3
+[2025-05-26T10:13:27.071+0000] {logging_mixin.py:190} INFO - Deleting original file data/1399466454719929 (pass -k to keep)
+[2025-05-26T10:13:27.079+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1399466454719929
+[2025-05-26T10:13:27.091+0000] {logging_mixin.py:190} INFO - Downloaded video 1399466454719929 to data/1399466454719929.mp3
+[2025-05-26T10:13:27.219+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T10:13:27.219+0000] {logging_mixin.py:190} INFO - Downloading video from 2195626774209817...
+[2025-05-26T10:13:27.252+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/mancity/videos/2195626774209817/
+[2025-05-26T10:13:27.252+0000] {logging_mixin.py:190} INFO - [facebook] 2195626774209817: Downloading webpage
+[2025-05-26T10:13:28.830+0000] {logging_mixin.py:190} INFO - [info] 2195626774209817: Downloading 1 format(s): 1010731581040796a
+[2025-05-26T10:13:28.856+0000] {logging_mixin.py:190} INFO - [download] Destination: data/2195626774209817
+[2025-05-26T10:13:28.857+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  763.55KiB at  Unknown B/s ETA Unknown
+[2025-05-26T10:13:28.859+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  763.55KiB at  923.52KiB/s ETA 00:00  
+[2025-05-26T10:13:28.860+0000] {logging_mixin.py:190} INFO - [download]   0.9% of  763.55KiB at    1.77MiB/s ETA 00:00
+[2025-05-26T10:13:28.860+0000] {logging_mixin.py:190} INFO - [download]   2.0% of  763.55KiB at    3.40MiB/s ETA 00:00
+[2025-05-26T10:13:28.861+0000] {logging_mixin.py:190} INFO - [download]   4.1% of  763.55KiB at    6.32MiB/s ETA 00:00
+[2025-05-26T10:13:28.864+0000] {logging_mixin.py:190} INFO - [download]   8.3% of  763.55KiB at    7.84MiB/s ETA 00:00
+[2025-05-26T10:13:28.870+0000] {logging_mixin.py:190} INFO - [download]  16.6% of  763.55KiB at    8.91MiB/s ETA 00:00
+[2025-05-26T10:13:28.882+0000] {logging_mixin.py:190} INFO - [download]  33.4% of  763.55KiB at    9.47MiB/s ETA 00:00
+[2025-05-26T10:13:29.207+0000] {logging_mixin.py:190} INFO - [download]  66.9% of  763.55KiB at    1.42MiB/s ETA 00:00
+[2025-05-26T10:13:29.232+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  763.55KiB at    1.98MiB/s ETA 00:00
+[2025-05-26T10:13:29.233+0000] {logging_mixin.py:190} INFO - [download] 100% of  763.55KiB in 00:00:00 at 1.87MiB/s   
+[2025-05-26T10:13:29.235+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/2195626774209817"
+[2025-05-26T10:13:29.335+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/2195626774209817.mp3
+[2025-05-26T10:13:30.462+0000] {logging_mixin.py:190} INFO - Deleting original file data/2195626774209817 (pass -k to keep)
+[2025-05-26T10:13:30.466+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 2195626774209817
+[2025-05-26T10:13:30.471+0000] {logging_mixin.py:190} INFO - Downloaded video 2195626774209817 to data/2195626774209817.mp3
+[2025-05-26T10:13:30.588+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T10:13:30.589+0000] {logging_mixin.py:190} INFO - Downloading video from 10062134173850670...
+[2025-05-26T10:13:30.625+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/mancity/videos/10062134173850670/
+[2025-05-26T10:13:30.626+0000] {logging_mixin.py:190} INFO - [facebook] 10062134173850670: Downloading webpage
+[2025-05-26T10:13:32.404+0000] {logging_mixin.py:190} INFO - [info] 10062134173850670: Downloading 1 format(s): 709461204818836a
+[2025-05-26T10:13:32.432+0000] {logging_mixin.py:190} INFO - [download] Destination: data/10062134173850670
+[2025-05-26T10:13:32.432+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  686.99KiB at  Unknown B/s ETA Unknown
+[2025-05-26T10:13:32.435+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  686.99KiB at  895.71KiB/s ETA 00:00  
+[2025-05-26T10:13:32.435+0000] {logging_mixin.py:190} INFO - [download]   1.0% of  686.99KiB at    1.75MiB/s ETA 00:00
+[2025-05-26T10:13:32.436+0000] {logging_mixin.py:190} INFO - [download]   2.2% of  686.99KiB at    3.39MiB/s ETA 00:00
+[2025-05-26T10:13:32.436+0000] {logging_mixin.py:190} INFO - [download]   4.5% of  686.99KiB at    6.12MiB/s ETA 00:00
+[2025-05-26T10:13:32.439+0000] {logging_mixin.py:190} INFO - [download]   9.2% of  686.99KiB at    7.95MiB/s ETA 00:00
+[2025-05-26T10:13:32.446+0000] {logging_mixin.py:190} INFO - [download]  18.5% of  686.99KiB at    8.31MiB/s ETA 00:00
+[2025-05-26T10:13:32.459+0000] {logging_mixin.py:190} INFO - [download]  37.1% of  686.99KiB at    8.88MiB/s ETA 00:00
+[2025-05-26T10:13:32.485+0000] {logging_mixin.py:190} INFO - [download]  74.4% of  686.99KiB at    9.34MiB/s ETA 00:00
+[2025-05-26T10:13:32.503+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  686.99KiB at    9.41MiB/s ETA 00:00
+[2025-05-26T10:13:32.503+0000] {logging_mixin.py:190} INFO - [download] 100% of  686.99KiB in 00:00:00 at 7.04MiB/s   
+[2025-05-26T10:13:32.506+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/10062134173850670"
+[2025-05-26T10:13:32.597+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/10062134173850670.mp3
+[2025-05-26T10:13:33.486+0000] {logging_mixin.py:190} INFO - Deleting original file data/10062134173850670 (pass -k to keep)
+[2025-05-26T10:13:33.490+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 10062134173850670
+[2025-05-26T10:13:33.496+0000] {logging_mixin.py:190} INFO - Downloaded video 10062134173850670 to data/10062134173850670.mp3
+[2025-05-26T10:13:33.619+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T10:13:33.620+0000] {logging_mixin.py:190} INFO - Downloading video from 683736207909384...
+[2025-05-26T10:13:33.649+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/mancity/videos/683736207909384/
+[2025-05-26T10:13:33.650+0000] {logging_mixin.py:190} INFO - [facebook] 683736207909384: Downloading webpage
+[2025-05-26T10:13:35.176+0000] {logging_mixin.py:190} INFO - [info] 683736207909384: Downloading 1 format(s): 2830148650524246a
+[2025-05-26T10:13:35.214+0000] {logging_mixin.py:190} INFO - [download] Destination: data/683736207909384
+[2025-05-26T10:13:35.214+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.38MiB at  511.31KiB/s ETA 00:02
+[2025-05-26T10:13:35.215+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.38MiB at  983.58KiB/s ETA 00:01
+[2025-05-26T10:13:35.216+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    1.38MiB at    1.98MiB/s ETA 00:00
+[2025-05-26T10:13:35.216+0000] {logging_mixin.py:190} INFO - [download]   1.1% of    1.38MiB at    3.77MiB/s ETA 00:00
+[2025-05-26T10:13:35.217+0000] {logging_mixin.py:190} INFO - [download]   2.2% of    1.38MiB at    6.24MiB/s ETA 00:00
+[2025-05-26T10:13:35.220+0000] {logging_mixin.py:190} INFO - [download]   4.5% of    1.38MiB at    7.91MiB/s ETA 00:00
+[2025-05-26T10:13:35.226+0000] {logging_mixin.py:190} INFO - [download]   9.0% of    1.38MiB at    8.93MiB/s ETA 00:00
+[2025-05-26T10:13:35.239+0000] {logging_mixin.py:190} INFO - [download]  18.1% of    1.38MiB at    9.44MiB/s ETA 00:00
+[2025-05-26T10:13:35.265+0000] {logging_mixin.py:190} INFO - [download]  36.2% of    1.38MiB at    9.58MiB/s ETA 00:00
+[2025-05-26T10:13:35.316+0000] {logging_mixin.py:190} INFO - [download]  72.5% of    1.38MiB at    9.61MiB/s ETA 00:00
+[2025-05-26T10:13:35.355+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.38MiB at    9.64MiB/s ETA 00:00
+[2025-05-26T10:13:35.356+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.38MiB in 00:00:00 at 7.80MiB/s   
+[2025-05-26T10:13:35.358+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/683736207909384"
+[2025-05-26T10:13:35.449+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/683736207909384.mp3
+[2025-05-26T10:13:37.534+0000] {logging_mixin.py:190} INFO - Deleting original file data/683736207909384 (pass -k to keep)
+[2025-05-26T10:13:37.537+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 683736207909384
+[2025-05-26T10:13:37.541+0000] {logging_mixin.py:190} INFO - Downloaded video 683736207909384 to data/683736207909384.mp3
+[2025-05-26T10:13:37.542+0000] {logging_mixin.py:190} INFO - Downloaded 5 new videos.
+[2025-05-26T10:13:37.542+0000] {python.py:240} INFO - Done. Returned value was: [{'video_id': '1036408544741830', 'file_path': 'data/1036408544741830.mp3'}, {'video_id': '1399466454719929', 'file_path': 'data/1399466454719929.mp3'}, {'video_id': '2195626774209817', 'file_path': 'data/2195626774209817.mp3'}, {'video_id': '10062134173850670', 'file_path': 'data/10062134173850670.mp3'}, {'video_id': '683736207909384', 'file_path': 'data/683736207909384.mp3'}]
+[2025-05-26T10:13:37.558+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-26T10:13:37.559+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=facebook_videos_scraper_dag, task_id=batch_download_task, run_id=manual__2025-05-26T10:11:23.557732+00:00, execution_date=20250526T101123, start_date=20250526T101144, end_date=20250526T101337
+[2025-05-26T10:13:37.559+0000] {taskinstance.py:1554} INFO - Executing <lambda> callback
+[2025-05-26T10:13:37.559+0000] {pipeline_fb.py:40} INFO - DAG runs successfully
+[2025-05-26T10:13:37.588+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-26T10:13:37.602+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-26T10:13:37.604+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

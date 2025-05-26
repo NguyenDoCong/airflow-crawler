@@ -1,0 +1,43 @@
+[2025-05-26T10:10:24.748+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-26T10:10:24.760+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.get_links_task manual__2025-05-26T10:10:24.341899+00:00 [queued]>
+[2025-05-26T10:10:24.767+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.get_links_task manual__2025-05-26T10:10:24.341899+00:00 [queued]>
+[2025-05-26T10:10:24.767+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 6
+[2025-05-26T10:10:24.776+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-26 10:10:24.341899+00:00
+[2025-05-26T10:10:24.778+0000] {standard_task_runner.py:72} INFO - Started process 4005740 to run task
+[2025-05-26T10:10:24.781+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'instagram_videos_scraper_dag', 'get_links_task', 'manual__2025-05-26T10:10:24.341899+00:00', '--job-id', '6827', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_instagram.py', '--cfg-path', '/tmp/tmppbv4cpl3']
+[2025-05-26T10:10:24.783+0000] {standard_task_runner.py:105} INFO - Job 6827: Subtask get_links_task
+[2025-05-26T10:10:24.815+0000] {task_command.py:467} INFO - Running <TaskInstance: instagram_videos_scraper_dag.get_links_task manual__2025-05-26T10:10:24.341899+00:00 [running]> on host 3d8e4ce8d08f
+[2025-05-26T10:10:24.866+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='instagram_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-26T10:10:24.341899+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-26T10:10:24.341899+00:00'
+[2025-05-26T10:10:24.867+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-26T10:10:50.959+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.113); currently, chromedriver 136.0.7103.113 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-26T10:10:54.183+0000] {logging_mixin.py:190} INFO - Step 1 of 2 - Loading profile page
+[2025-05-26T10:10:54.183+0000] {logging_mixin.py:190} INFO - Extracting videos...
+[2025-05-26T10:10:57.203+0000] {logging_mixin.py:190} INFO - Count: 1, Limit: 1
+[2025-05-26T10:10:57.239+0000] {logging_mixin.py:190} INFO - Found 46 video tags
+[2025-05-26T10:10:57.460+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/mancity/reel/DKHAzbwuni3/
+[2025-05-26T10:10:57.469+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/mancity/reel/DKF0vIOO-rj/
+[2025-05-26T10:10:57.476+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/mancity/reel/DKF0DScO6Zu/
+[2025-05-26T10:10:57.483+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/mancity/reel/DKFjtc5OxM2/
+[2025-05-26T10:10:57.490+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/mancity/reel/DKFeTXcMOKL/
+[2025-05-26T10:10:57.496+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/mancity/reel/DKFL6eWsX7o/
+[2025-05-26T10:10:57.503+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/mancity/reel/DKFKDtZsmYU/
+[2025-05-26T10:10:57.508+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/mancity/reel/DKFErXssX4U/
+[2025-05-26T10:10:57.514+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/mancity/reel/DKDBguAuWH0/
+[2025-05-26T10:10:57.521+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/mancity/reel/DKCJTJSs4BD/
+[2025-05-26T10:10:57.531+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/mancity/reel/DKCDqUGsAeK/
+[2025-05-26T10:10:57.538+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/mancity/reel/DKB9oX2CbLV/
+[2025-05-26T10:10:57.706+0000] {logging_mixin.py:190} INFO - Scrolled 1 iterations
+[2025-05-26T10:11:00.722+0000] {logging_mixin.py:190} INFO - Count: 2, Limit: 1
+[2025-05-26T10:11:00.723+0000] {logging_mixin.py:190} INFO - Scrolling stopped after 10 iterations
+[2025-05-26T10:11:00.723+0000] {logging_mixin.py:190} INFO - Extracted 12 video URLs
+[2025-05-26T10:11:00.724+0000] {logging_mixin.py:190} INFO - Step 2 of 2 - Downloading and saving videos
+[2025-05-26T10:11:00.724+0000] {logging_mixin.py:190} INFO - Don't close the app! Saving scraped data to database, it can take a while!
+[2025-05-26T10:11:00.752+0000] {logging_mixin.py:190} INFO - New videos: 0
+[2025-05-26T10:11:00.891+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'mancity', 'new_links': []}
+[2025-05-26T10:11:00.909+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-26T10:11:00.910+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instagram_videos_scraper_dag, task_id=get_links_task, run_id=manual__2025-05-26T10:10:24.341899+00:00, execution_date=20250526T101024, start_date=20250526T101024, end_date=20250526T101100
+[2025-05-26T10:11:00.910+0000] {taskinstance.py:1554} INFO - Executing <lambda> callback
+[2025-05-26T10:11:00.910+0000] {pipeline_instagram.py:33} INFO - DAG runs successfully
+[2025-05-26T10:11:00.949+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-26T10:11:00.967+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-26T10:11:00.981+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

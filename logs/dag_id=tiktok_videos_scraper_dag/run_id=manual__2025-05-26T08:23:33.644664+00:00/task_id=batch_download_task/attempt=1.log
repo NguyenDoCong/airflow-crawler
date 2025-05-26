@@ -1,0 +1,45 @@
+[2025-05-26T08:23:47.341+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-26T08:23:47.352+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.batch_download_task manual__2025-05-26T08:23:33.644664+00:00 [queued]>
+[2025-05-26T08:23:47.357+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.batch_download_task manual__2025-05-26T08:23:33.644664+00:00 [queued]>
+[2025-05-26T08:23:47.357+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 6
+[2025-05-26T08:23:47.365+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): batch_download_task> on 2025-05-26 08:23:33.644664+00:00
+[2025-05-26T08:23:47.368+0000] {standard_task_runner.py:72} INFO - Started process 268 to run task
+[2025-05-26T08:23:47.370+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'batch_download_task', 'manual__2025-05-26T08:23:33.644664+00:00', '--job-id', '6778', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmp72wmy0qm']
+[2025-05-26T08:23:47.372+0000] {standard_task_runner.py:105} INFO - Job 6778: Subtask batch_download_task
+[2025-05-26T08:23:47.409+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.batch_download_task manual__2025-05-26T08:23:33.644664+00:00 [running]> on host f541e6bad3a5
+[2025-05-26T08:23:47.468+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='batch_download_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-26T08:23:33.644664+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-26T08:23:33.644664+00:00'
+[2025-05-26T08:23:47.469+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-26T08:23:47.471+0000] {logging_mixin.py:190} INFO - Starting batch download...
+[2025-05-26T08:23:47.671+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T08:23:47.672+0000] {logging_mixin.py:190} INFO - Downloading video from 7508665162048638210...
+[2025-05-26T08:23:48.119+0000] {logging_mixin.py:190} INFO - [TikTok] Extracting URL: https://www.tiktok.com/@mancity/video/7508665162048638210
+[2025-05-26T08:23:48.120+0000] {logging_mixin.py:190} INFO - [TikTok] 7508665162048638210: Downloading webpage
+[2025-05-26T08:23:48.890+0000] {logging_mixin.py:190} INFO - [info] 7508665162048638210: Downloading 1 format(s): h264_540p_1486839-1
+[2025-05-26T08:23:49.317+0000] {logging_mixin.py:190} INFO - [download] Destination: data/7508665162048638210
+[2025-05-26T08:23:49.318+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    2.71MiB at   46.56KiB/s ETA 00:59
+[2025-05-26T08:23:49.319+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    2.71MiB at  128.12KiB/s ETA 00:21
+[2025-05-26T08:23:49.320+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    2.71MiB at  289.72KiB/s ETA 00:09
+[2025-05-26T08:23:49.321+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    2.71MiB at  604.70KiB/s ETA 00:04
+[2025-05-26T08:23:49.321+0000] {logging_mixin.py:190} INFO - [download]   1.1% of    2.71MiB at    1.19MiB/s ETA 00:02
+[2025-05-26T08:23:49.400+0000] {logging_mixin.py:190} INFO - [download]   2.3% of    2.71MiB at  607.04KiB/s ETA 00:04
+[2025-05-26T08:23:49.462+0000] {logging_mixin.py:190} INFO - [download]   4.6% of    2.71MiB at  764.59KiB/s ETA 00:03
+[2025-05-26T08:23:49.497+0000] {logging_mixin.py:190} INFO - [download]   9.2% of    2.71MiB at    1.24MiB/s ETA 00:01
+[2025-05-26T08:23:49.564+0000] {logging_mixin.py:190} INFO - [download]  18.4% of    2.71MiB at    1.86MiB/s ETA 00:01
+[2025-05-26T08:23:49.632+0000] {logging_mixin.py:190} INFO - [download]  36.9% of    2.71MiB at    2.97MiB/s ETA 00:00
+[2025-05-26T08:23:49.799+0000] {logging_mixin.py:190} INFO - [download]  73.9% of    2.71MiB at    3.97MiB/s ETA 00:00
+[2025-05-26T08:23:49.831+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    2.71MiB at    5.06MiB/s ETA 00:00
+[2025-05-26T08:23:49.832+0000] {logging_mixin.py:190} INFO - [download] 100% of    2.71MiB in 00:00:00 at 2.89MiB/s   
+[2025-05-26T08:23:50.186+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/7508665162048638210.mp3
+[2025-05-26T08:23:50.402+0000] {logging_mixin.py:190} INFO - Deleting original file data/7508665162048638210 (pass -k to keep)
+[2025-05-26T08:23:50.405+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 7508665162048638210
+[2025-05-26T08:23:50.411+0000] {logging_mixin.py:190} INFO - Downloaded video 7508665162048638210 to data/7508665162048638210.mp3
+[2025-05-26T08:23:50.411+0000] {logging_mixin.py:190} INFO - Downloaded 1 new videos.
+[2025-05-26T08:23:50.412+0000] {python.py:240} INFO - Done. Returned value was: [{'video_id': '7508665162048638210', 'file_path': 'data/7508665162048638210.mp3'}]
+[2025-05-26T08:23:50.430+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-26T08:23:50.430+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tiktok_videos_scraper_dag, task_id=batch_download_task, run_id=manual__2025-05-26T08:23:33.644664+00:00, execution_date=20250526T082333, start_date=20250526T082347, end_date=20250526T082350
+[2025-05-26T08:23:50.430+0000] {taskinstance.py:1554} INFO - Executing <lambda> callback
+[2025-05-26T08:23:50.430+0000] {pipeline_tiktok.py:34} INFO - DAG runs successfully
+[2025-05-26T08:23:50.480+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-26T08:23:50.497+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-26T08:23:50.507+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

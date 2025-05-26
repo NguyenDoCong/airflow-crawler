@@ -36,7 +36,9 @@ def tiktok_videos_scraper(id = "therock",count = 10, ms_tokens=None, DOWNLOAD_DI
                 user = api.user(f"{id}")
                 async for video in user.videos(count=count):
                     print(f"https://www.tiktok.com/@{id}/video/"+video.as_dict['id'])
-                    videos.append(f"https://www.tiktok.com/@{id}/video/"+video.as_dict['id'])     
+                    videos.append(f"https://www.tiktok.com/@{id}/video/"+video.as_dict['id'])  
+
+                print(f"Total videos found: {len(videos)}")
 
                 results = get_info_by_user_id(platform="tiktok", user_id=id)
                 for result in results:
@@ -52,31 +54,6 @@ def tiktok_videos_scraper(id = "therock",count = 10, ms_tokens=None, DOWNLOAD_DI
                 return {'id': id, 'new_links': new_links}
             except Exception as e:
                 print(f"Error in TikTok API: {e}")
-                return []
+                raise  # Thay vì return [], raise exception để Airflow nhận biết lỗi
             
-
-            # results = []
-
-            # for link in new_links:
-            #     video_id = extract_id(link)
-            #     # user_id = extract_user_id(link)
-            #     task_id = create_pending_video(video_id, id, link, platform="tiktok")
-            #     file_path = download_video(link, Config.DOWNLOAD_DIRECTORY)
-            #     if file_path:
-            #         update_video_status(video_id, TaskStatus.PROCESSING.value, platform="tiktok")
-            #         result = {
-            #             "video_id": video_id,
-            #             "file_path": file_path,
-            #         }
-            #         print(f"Downloaded video {result['video_id']} to {result['file_path']}")
-            #         results.append(result)                    
-                    
-            #     else:
-            #         update_video_status(video_id, TaskStatus.FAILURE.value, platform="tiktok", logs="Error downloading video")
-                
-            # print(f"Downloaded {len(results)} new videos.")
-            # return results
-    # asyncio.run(user_example())
-    # results = asyncio.run(user_template())
-    # return results  
     return asyncio.run(user_template())

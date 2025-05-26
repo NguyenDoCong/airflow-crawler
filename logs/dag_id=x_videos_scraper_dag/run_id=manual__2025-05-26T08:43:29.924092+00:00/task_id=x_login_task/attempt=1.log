@@ -1,0 +1,21 @@
+[2025-05-26T08:43:30.780+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-26T08:43:30.790+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: x_videos_scraper_dag.x_login_task manual__2025-05-26T08:43:29.924092+00:00 [queued]>
+[2025-05-26T08:43:30.795+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: x_videos_scraper_dag.x_login_task manual__2025-05-26T08:43:29.924092+00:00 [queued]>
+[2025-05-26T08:43:30.795+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 6
+[2025-05-26T08:43:30.804+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): x_login_task> on 2025-05-26 08:43:29.924092+00:00
+[2025-05-26T08:43:30.806+0000] {standard_task_runner.py:72} INFO - Started process 323310 to run task
+[2025-05-26T08:43:30.809+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'x_videos_scraper_dag', 'x_login_task', 'manual__2025-05-26T08:43:29.924092+00:00', '--job-id', '6803', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_x.py', '--cfg-path', '/tmp/tmpcj9y3uz7']
+[2025-05-26T08:43:30.811+0000] {standard_task_runner.py:105} INFO - Job 6803: Subtask x_login_task
+[2025-05-26T08:43:30.846+0000] {task_command.py:467} INFO - Running <TaskInstance: x_videos_scraper_dag.x_login_task manual__2025-05-26T08:43:29.924092+00:00 [running]> on host f541e6bad3a5
+[2025-05-26T08:43:30.903+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='x_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='x_login_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-26T08:43:29.924092+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-26T08:43:29.924092+00:00'
+[2025-05-26T08:43:30.904+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-26T08:43:37.968+0000] {logging_mixin.py:190} INFO - [INFO] Final URL: https://x.com/home
+[2025-05-26T08:43:38.068+0000] {logging_mixin.py:190} INFO - [INFO] Storage state saved successfully.
+[2025-05-26T08:43:38.132+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-05-26T08:43:38.139+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-26T08:43:38.139+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=x_videos_scraper_dag, task_id=x_login_task, run_id=manual__2025-05-26T08:43:29.924092+00:00, execution_date=20250526T084329, start_date=20250526T084330, end_date=20250526T084338
+[2025-05-26T08:43:38.140+0000] {taskinstance.py:1554} INFO - Executing <lambda> callback
+[2025-05-26T08:43:38.140+0000] {pipeline_x.py:39} INFO - DAG runs successfully
+[2025-05-26T08:43:38.155+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-26T08:43:38.173+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-26T08:43:38.175+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

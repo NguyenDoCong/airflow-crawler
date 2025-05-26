@@ -1,0 +1,133 @@
+[2025-05-26T08:36:43.681+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-26T08:36:43.692+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.batch_download_task manual__2025-05-26T08:36:32.383988+00:00 [queued]>
+[2025-05-26T08:36:43.697+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.batch_download_task manual__2025-05-26T08:36:32.383988+00:00 [queued]>
+[2025-05-26T08:36:43.697+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 6
+[2025-05-26T08:36:43.712+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): batch_download_task> on 2025-05-26 08:36:32.383988+00:00
+[2025-05-26T08:36:43.715+0000] {standard_task_runner.py:72} INFO - Started process 82027 to run task
+[2025-05-26T08:36:43.718+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'instagram_videos_scraper_dag', 'batch_download_task', 'manual__2025-05-26T08:36:32.383988+00:00', '--job-id', '6794', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_instagram.py', '--cfg-path', '/tmp/tmp17k8q780']
+[2025-05-26T08:36:43.719+0000] {standard_task_runner.py:105} INFO - Job 6794: Subtask batch_download_task
+[2025-05-26T08:36:43.756+0000] {task_command.py:467} INFO - Running <TaskInstance: instagram_videos_scraper_dag.batch_download_task manual__2025-05-26T08:36:32.383988+00:00 [running]> on host f541e6bad3a5
+[2025-05-26T08:36:43.809+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='instagram_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='batch_download_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-26T08:36:32.383988+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-26T08:36:32.383988+00:00'
+[2025-05-26T08:36:43.810+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-26T08:36:43.812+0000] {logging_mixin.py:190} INFO - Starting batch download...
+[2025-05-26T08:36:43.954+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T08:36:43.955+0000] {logging_mixin.py:190} INFO - Downloading video from DKFjtc5OxM2...
+[2025-05-26T08:36:44.072+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/mancity/reel/DKFjtc5OxM2/
+[2025-05-26T08:36:44.073+0000] {logging_mixin.py:190} INFO - [Instagram] DKFjtc5OxM2: Setting up session
+[2025-05-26T08:36:44.408+0000] {logging_mixin.py:190} INFO - [Instagram] DKFjtc5OxM2: Downloading JSON metadata
+[2025-05-26T08:36:45.124+0000] {logging_mixin.py:190} INFO - [info] DKFjtc5OxM2: Downloading 1 format(s): dash-1229929105335430ad
+[2025-05-26T08:36:45.168+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DKFjtc5OxM2
+[2025-05-26T08:36:45.168+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  202.24KiB at  693.73KiB/s ETA 00:00
+[2025-05-26T08:36:45.169+0000] {logging_mixin.py:190} INFO - [download]   1.5% of  202.24KiB at    1.27MiB/s ETA 00:00
+[2025-05-26T08:36:45.169+0000] {logging_mixin.py:190} INFO - [download]   3.5% of  202.24KiB at    2.43MiB/s ETA 00:00
+[2025-05-26T08:36:45.170+0000] {logging_mixin.py:190} INFO - [download]   7.4% of  202.24KiB at    4.40MiB/s ETA 00:00
+[2025-05-26T08:36:45.173+0000] {logging_mixin.py:190} INFO - [download]  15.3% of  202.24KiB at    4.89MiB/s ETA 00:00
+[2025-05-26T08:36:45.176+0000] {logging_mixin.py:190} INFO - [download]  31.2% of  202.24KiB at    6.41MiB/s ETA 00:00
+[2025-05-26T08:36:45.182+0000] {logging_mixin.py:190} INFO - [download]  62.8% of  202.24KiB at    7.86MiB/s ETA 00:00
+[2025-05-26T08:36:45.189+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  202.24KiB at    8.69MiB/s ETA 00:00
+[2025-05-26T08:36:45.190+0000] {logging_mixin.py:190} INFO - [download] 100% of  202.24KiB in 00:00:00 at 3.21MiB/s   
+[2025-05-26T08:36:45.246+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DKFjtc5OxM2"
+[2025-05-26T08:36:45.389+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DKFjtc5OxM2.mp3
+[2025-05-26T08:36:45.715+0000] {logging_mixin.py:190} INFO - Deleting original file data/DKFjtc5OxM2 (pass -k to keep)
+[2025-05-26T08:36:45.719+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DKFjtc5OxM2
+[2025-05-26T08:36:45.737+0000] {logging_mixin.py:190} INFO - Downloaded video DKFjtc5OxM2 to data/DKFjtc5OxM2.mp3
+[2025-05-26T08:36:45.855+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T08:36:45.856+0000] {logging_mixin.py:190} INFO - Downloading video from DKFeTXcMOKL...
+[2025-05-26T08:36:45.888+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/mancity/reel/DKFeTXcMOKL/
+[2025-05-26T08:36:45.888+0000] {logging_mixin.py:190} INFO - [Instagram] DKFeTXcMOKL: Setting up session
+[2025-05-26T08:36:46.191+0000] {logging_mixin.py:190} INFO - [Instagram] DKFeTXcMOKL: Downloading JSON metadata
+[2025-05-26T08:36:46.752+0000] {logging_mixin.py:190} INFO - [info] DKFeTXcMOKL: Downloading 1 format(s): dash-1238022551366974ad
+[2025-05-26T08:36:46.803+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DKFeTXcMOKL
+[2025-05-26T08:36:46.803+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  256.24KiB at  Unknown B/s ETA Unknown
+[2025-05-26T08:36:46.804+0000] {logging_mixin.py:190} INFO - [download]   1.2% of  256.24KiB at    1.56MiB/s ETA 00:00  
+[2025-05-26T08:36:46.805+0000] {logging_mixin.py:190} INFO - [download]   2.7% of  256.24KiB at    2.59MiB/s ETA 00:00
+[2025-05-26T08:36:46.806+0000] {logging_mixin.py:190} INFO - [download]   5.9% of  256.24KiB at    4.51MiB/s ETA 00:00
+[2025-05-26T08:36:46.807+0000] {logging_mixin.py:190} INFO - [download]  12.1% of  256.24KiB at    7.04MiB/s ETA 00:00
+[2025-05-26T08:36:46.810+0000] {logging_mixin.py:190} INFO - [download]  24.6% of  256.24KiB at    8.63MiB/s ETA 00:00
+[2025-05-26T08:36:46.817+0000] {logging_mixin.py:190} INFO - [download]  49.6% of  256.24KiB at    8.69MiB/s ETA 00:00
+[2025-05-26T08:36:46.829+0000] {logging_mixin.py:190} INFO - [download]  99.5% of  256.24KiB at    9.36MiB/s ETA 00:00
+[2025-05-26T08:36:46.830+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  256.24KiB at    9.17MiB/s ETA 00:00
+[2025-05-26T08:36:46.830+0000] {logging_mixin.py:190} INFO - [download] 100% of  256.24KiB in 00:00:00 at 3.32MiB/s   
+[2025-05-26T08:36:46.832+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DKFeTXcMOKL"
+[2025-05-26T08:36:46.924+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DKFeTXcMOKL.mp3
+[2025-05-26T08:36:47.314+0000] {logging_mixin.py:190} INFO - Deleting original file data/DKFeTXcMOKL (pass -k to keep)
+[2025-05-26T08:36:47.318+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DKFeTXcMOKL
+[2025-05-26T08:36:47.334+0000] {logging_mixin.py:190} INFO - Downloaded video DKFeTXcMOKL to data/DKFeTXcMOKL.mp3
+[2025-05-26T08:36:47.456+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T08:36:47.457+0000] {logging_mixin.py:190} INFO - Downloading video from DKFKDtZsmYU...
+[2025-05-26T08:36:47.487+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/mancity/reel/DKFKDtZsmYU/
+[2025-05-26T08:36:47.488+0000] {logging_mixin.py:190} INFO - [Instagram] DKFKDtZsmYU: Setting up session
+[2025-05-26T08:36:47.827+0000] {logging_mixin.py:190} INFO - [Instagram] DKFKDtZsmYU: Downloading JSON metadata
+[2025-05-26T08:36:48.280+0000] {logging_mixin.py:190} INFO - [info] DKFKDtZsmYU: Downloading 1 format(s): dash-3468171113317309ad
+[2025-05-26T08:36:48.309+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DKFKDtZsmYU
+[2025-05-26T08:36:48.310+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  230.28KiB at  819.68KiB/s ETA 00:00
+[2025-05-26T08:36:48.310+0000] {logging_mixin.py:190} INFO - [download]   1.3% of  230.28KiB at    1.62MiB/s ETA 00:00
+[2025-05-26T08:36:48.311+0000] {logging_mixin.py:190} INFO - [download]   3.0% of  230.28KiB at    2.75MiB/s ETA 00:00
+[2025-05-26T08:36:48.312+0000] {logging_mixin.py:190} INFO - [download]   6.5% of  230.28KiB at    4.46MiB/s ETA 00:00
+[2025-05-26T08:36:48.313+0000] {logging_mixin.py:190} INFO - [download]  13.5% of  230.28KiB at    6.40MiB/s ETA 00:00
+[2025-05-26T08:36:48.316+0000] {logging_mixin.py:190} INFO - [download]  27.4% of  230.28KiB at    8.11MiB/s ETA 00:00
+[2025-05-26T08:36:48.322+0000] {logging_mixin.py:190} INFO - [download]  55.2% of  230.28KiB at    9.03MiB/s ETA 00:00
+[2025-05-26T08:36:48.332+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  230.28KiB at    9.56MiB/s ETA 00:00
+[2025-05-26T08:36:48.333+0000] {logging_mixin.py:190} INFO - [download] 100% of  230.28KiB in 00:00:00 at 4.57MiB/s   
+[2025-05-26T08:36:48.335+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DKFKDtZsmYU"
+[2025-05-26T08:36:48.425+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DKFKDtZsmYU.mp3
+[2025-05-26T08:36:48.761+0000] {logging_mixin.py:190} INFO - Deleting original file data/DKFKDtZsmYU (pass -k to keep)
+[2025-05-26T08:36:48.764+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DKFKDtZsmYU
+[2025-05-26T08:36:48.769+0000] {logging_mixin.py:190} INFO - Downloaded video DKFKDtZsmYU to data/DKFKDtZsmYU.mp3
+[2025-05-26T08:36:48.893+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T08:36:48.894+0000] {logging_mixin.py:190} INFO - Downloading video from DKFL6eWsX7o...
+[2025-05-26T08:36:48.928+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/mancity/reel/DKFL6eWsX7o/
+[2025-05-26T08:36:48.929+0000] {logging_mixin.py:190} INFO - [Instagram] DKFL6eWsX7o: Setting up session
+[2025-05-26T08:36:49.224+0000] {logging_mixin.py:190} INFO - [Instagram] DKFL6eWsX7o: Downloading JSON metadata
+[2025-05-26T08:36:49.742+0000] {logging_mixin.py:190} INFO - [info] DKFL6eWsX7o: Downloading 1 format(s): dash-4048961258658010ad
+[2025-05-26T08:36:49.778+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DKFL6eWsX7o
+[2025-05-26T08:36:49.778+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  181.48KiB at  905.12KiB/s ETA 00:00
+[2025-05-26T08:36:49.779+0000] {logging_mixin.py:190} INFO - [download]   1.7% of  181.48KiB at    1.74MiB/s ETA 00:00
+[2025-05-26T08:36:49.779+0000] {logging_mixin.py:190} INFO - [download]   3.9% of  181.48KiB at    3.05MiB/s ETA 00:00
+[2025-05-26T08:36:49.780+0000] {logging_mixin.py:190} INFO - [download]   8.3% of  181.48KiB at    4.21MiB/s ETA 00:00
+[2025-05-26T08:36:49.782+0000] {logging_mixin.py:190} INFO - [download]  17.1% of  181.48KiB at    6.07MiB/s ETA 00:00
+[2025-05-26T08:36:49.785+0000] {logging_mixin.py:190} INFO - [download]  34.7% of  181.48KiB at    7.70MiB/s ETA 00:00
+[2025-05-26T08:36:49.791+0000] {logging_mixin.py:190} INFO - [download]  70.0% of  181.48KiB at    8.82MiB/s ETA 00:00
+[2025-05-26T08:36:49.796+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  181.48KiB at    9.27MiB/s ETA 00:00
+[2025-05-26T08:36:49.797+0000] {logging_mixin.py:190} INFO - [download] 100% of  181.48KiB in 00:00:00 at 3.52MiB/s   
+[2025-05-26T08:36:49.798+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DKFL6eWsX7o"
+[2025-05-26T08:36:49.889+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DKFL6eWsX7o.mp3
+[2025-05-26T08:36:50.156+0000] {logging_mixin.py:190} INFO - Deleting original file data/DKFL6eWsX7o (pass -k to keep)
+[2025-05-26T08:36:50.159+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DKFL6eWsX7o
+[2025-05-26T08:36:50.178+0000] {logging_mixin.py:190} INFO - Downloaded video DKFL6eWsX7o to data/DKFL6eWsX7o.mp3
+[2025-05-26T08:36:50.317+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T08:36:50.317+0000] {logging_mixin.py:190} INFO - Downloading video from DKFErXssX4U...
+[2025-05-26T08:36:50.346+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/mancity/reel/DKFErXssX4U/
+[2025-05-26T08:36:50.347+0000] {logging_mixin.py:190} INFO - [Instagram] DKFErXssX4U: Setting up session
+[2025-05-26T08:36:50.650+0000] {logging_mixin.py:190} INFO - [Instagram] DKFErXssX4U: Downloading JSON metadata
+[2025-05-26T08:36:51.314+0000] {logging_mixin.py:190} INFO - [info] DKFErXssX4U: Downloading 1 format(s): dash-682030741210328ad
+[2025-05-26T08:36:51.346+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DKFErXssX4U
+[2025-05-26T08:36:51.346+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  364.95KiB at  690.53KiB/s ETA 00:00
+[2025-05-26T08:36:51.347+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  364.95KiB at    1.45MiB/s ETA 00:00
+[2025-05-26T08:36:51.348+0000] {logging_mixin.py:190} INFO - [download]   1.9% of  364.95KiB at    2.08MiB/s ETA 00:00
+[2025-05-26T08:36:51.349+0000] {logging_mixin.py:190} INFO - [download]   4.1% of  364.95KiB at    3.85MiB/s ETA 00:00
+[2025-05-26T08:36:51.350+0000] {logging_mixin.py:190} INFO - [download]   8.5% of  364.95KiB at    5.57MiB/s ETA 00:00
+[2025-05-26T08:36:51.354+0000] {logging_mixin.py:190} INFO - [download]  17.3% of  364.95KiB at    6.90MiB/s ETA 00:00
+[2025-05-26T08:36:51.360+0000] {logging_mixin.py:190} INFO - [download]  34.8% of  364.95KiB at    8.21MiB/s ETA 00:00
+[2025-05-26T08:36:51.372+0000] {logging_mixin.py:190} INFO - [download]  69.9% of  364.95KiB at    9.10MiB/s ETA 00:00
+[2025-05-26T08:36:51.382+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  364.95KiB at    9.48MiB/s ETA 00:00
+[2025-05-26T08:36:51.383+0000] {logging_mixin.py:190} INFO - [download] 100% of  364.95KiB in 00:00:00 at 5.49MiB/s   
+[2025-05-26T08:36:51.385+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DKFErXssX4U"
+[2025-05-26T08:36:51.476+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DKFErXssX4U.mp3
+[2025-05-26T08:36:51.882+0000] {logging_mixin.py:190} INFO - Deleting original file data/DKFErXssX4U (pass -k to keep)
+[2025-05-26T08:36:51.887+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DKFErXssX4U
+[2025-05-26T08:36:51.893+0000] {logging_mixin.py:190} INFO - Downloaded video DKFErXssX4U to data/DKFErXssX4U.mp3
+[2025-05-26T08:36:51.894+0000] {logging_mixin.py:190} INFO - Downloaded 5 new videos.
+[2025-05-26T08:36:51.894+0000] {python.py:240} INFO - Done. Returned value was: [{'video_id': 'DKFjtc5OxM2', 'file_path': 'data/DKFjtc5OxM2.mp3'}, {'video_id': 'DKFeTXcMOKL', 'file_path': 'data/DKFeTXcMOKL.mp3'}, {'video_id': 'DKFKDtZsmYU', 'file_path': 'data/DKFKDtZsmYU.mp3'}, {'video_id': 'DKFL6eWsX7o', 'file_path': 'data/DKFL6eWsX7o.mp3'}, {'video_id': 'DKFErXssX4U', 'file_path': 'data/DKFErXssX4U.mp3'}]
+[2025-05-26T08:36:51.914+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-26T08:36:51.914+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instagram_videos_scraper_dag, task_id=batch_download_task, run_id=manual__2025-05-26T08:36:32.383988+00:00, execution_date=20250526T083632, start_date=20250526T083643, end_date=20250526T083651
+[2025-05-26T08:36:51.915+0000] {taskinstance.py:1554} INFO - Executing <lambda> callback
+[2025-05-26T08:36:51.915+0000] {pipeline_instagram.py:29} INFO - DAG runs successfully
+[2025-05-26T08:36:51.934+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-26T08:36:51.949+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-26T08:36:51.951+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
