@@ -1,0 +1,276 @@
+[2025-05-26T02:23:52.825+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-26T02:23:52.843+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.batch_download_task manual__2025-05-26T02:23:40.226361+00:00 [queued]>
+[2025-05-26T02:23:52.850+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.batch_download_task manual__2025-05-26T02:23:40.226361+00:00 [queued]>
+[2025-05-26T02:23:52.851+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-26T02:23:52.861+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): batch_download_task> on 2025-05-26 02:23:40.226361+00:00
+[2025-05-26T02:23:52.864+0000] {standard_task_runner.py:72} INFO - Started process 892 to run task
+[2025-05-26T02:23:52.867+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'instagram_videos_scraper_dag', 'batch_download_task', 'manual__2025-05-26T02:23:40.226361+00:00', '--job-id', '6718', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_instagram.py', '--cfg-path', '/tmp/tmp_d1lxjt3']
+[2025-05-26T02:23:52.868+0000] {standard_task_runner.py:105} INFO - Job 6718: Subtask batch_download_task
+[2025-05-26T02:23:50.397+0000] {task_command.py:467} INFO - Running <TaskInstance: instagram_videos_scraper_dag.batch_download_task manual__2025-05-26T02:23:40.226361+00:00 [running]> on host 9e147d34972d
+[2025-05-26T02:23:50.455+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='instagram_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='batch_download_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-26T02:23:40.226361+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-26T02:23:40.226361+00:00'
+[2025-05-26T02:23:50.456+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-26T02:23:50.459+0000] {logging_mixin.py:190} INFO - Starting batch download...
+[2025-05-26T02:23:50.648+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:23:50.648+0000] {logging_mixin.py:190} INFO - Downloading video from DKFnhLeObd9...
+[2025-05-26T02:23:50.843+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/fcbarcelona/reel/DKFnhLeObd9/
+[2025-05-26T02:23:50.844+0000] {logging_mixin.py:190} INFO - [Instagram] DKFnhLeObd9: Setting up session
+[2025-05-26T02:23:51.296+0000] {logging_mixin.py:190} INFO - [Instagram] DKFnhLeObd9: Downloading JSON metadata
+[2025-05-26T02:23:52.347+0000] {logging_mixin.py:190} INFO - [info] DKFnhLeObd9: Downloading 1 format(s): dash-1224820881827403ad
+[2025-05-26T02:23:52.402+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DKFnhLeObd9
+[2025-05-26T02:23:52.402+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  178.05KiB at  625.74KiB/s ETA 00:00
+[2025-05-26T02:23:52.403+0000] {logging_mixin.py:190} INFO - [download]   1.7% of  178.05KiB at    1.29MiB/s ETA 00:00
+[2025-05-26T02:23:52.404+0000] {logging_mixin.py:190} INFO - [download]   3.9% of  178.05KiB at    1.95MiB/s ETA 00:00
+[2025-05-26T02:23:52.409+0000] {logging_mixin.py:190} INFO - [download]   8.4% of  178.05KiB at    1.75MiB/s ETA 00:00
+[2025-05-26T02:23:52.415+0000] {logging_mixin.py:190} INFO - [download]  17.4% of  178.05KiB at    2.12MiB/s ETA 00:00
+[2025-05-26T02:23:52.418+0000] {logging_mixin.py:190} INFO - [download]  35.4% of  178.05KiB at    3.58MiB/s ETA 00:00
+[2025-05-26T02:23:52.433+0000] {logging_mixin.py:190} INFO - [download]  71.3% of  178.05KiB at    3.81MiB/s ETA 00:00
+[2025-05-26T02:23:52.438+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  178.05KiB at    4.65MiB/s ETA 00:00
+[2025-05-26T02:23:52.439+0000] {logging_mixin.py:190} INFO - [download] 100% of  178.05KiB in 00:00:00 at 1.98MiB/s   
+[2025-05-26T02:23:52.480+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DKFnhLeObd9"
+[2025-05-26T02:23:52.614+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DKFnhLeObd9.mp3
+[2025-05-26T02:23:52.890+0000] {logging_mixin.py:190} INFO - Deleting original file data/DKFnhLeObd9 (pass -k to keep)
+[2025-05-26T02:23:52.893+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DKFnhLeObd9
+[2025-05-26T02:23:52.908+0000] {logging_mixin.py:190} INFO - Downloaded video DKFnhLeObd9 to data/DKFnhLeObd9.mp3
+[2025-05-26T02:23:53.032+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:23:53.032+0000] {logging_mixin.py:190} INFO - Downloading video from DJ_fAE2MY2L...
+[2025-05-26T02:23:53.061+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/fcbarcelona/reel/DJ_fAE2MY2L/
+[2025-05-26T02:23:53.062+0000] {logging_mixin.py:190} INFO - [Instagram] DJ_fAE2MY2L: Setting up session
+[2025-05-26T02:23:53.473+0000] {logging_mixin.py:190} INFO - [Instagram] DJ_fAE2MY2L: Downloading JSON metadata
+[2025-05-26T02:23:54.028+0000] {logging_mixin.py:190} INFO - [info] DJ_fAE2MY2L: Downloading 1 format(s): dash-2168467886915238ad
+[2025-05-26T02:23:54.067+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DJ_fAE2MY2L
+[2025-05-26T02:23:54.068+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  336.16KiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:23:54.068+0000] {logging_mixin.py:190} INFO - [download]   0.9% of  336.16KiB at    2.04MiB/s ETA 00:00  
+[2025-05-26T02:23:54.069+0000] {logging_mixin.py:190} INFO - [download]   2.1% of  336.16KiB at    2.56MiB/s ETA 00:00
+[2025-05-26T02:23:54.070+0000] {logging_mixin.py:190} INFO - [download]   4.5% of  336.16KiB at    4.07MiB/s ETA 00:00
+[2025-05-26T02:23:54.073+0000] {logging_mixin.py:190} INFO - [download]   9.2% of  336.16KiB at    5.06MiB/s ETA 00:00
+[2025-05-26T02:23:54.075+0000] {logging_mixin.py:190} INFO - [download]  18.7% of  336.16KiB at    6.97MiB/s ETA 00:00
+[2025-05-26T02:23:54.082+0000] {logging_mixin.py:190} INFO - [download]  37.8% of  336.16KiB at    8.27MiB/s ETA 00:00
+[2025-05-26T02:23:54.094+0000] {logging_mixin.py:190} INFO - [download]  75.9% of  336.16KiB at    9.21MiB/s ETA 00:00
+[2025-05-26T02:23:54.105+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  336.16KiB at    8.60MiB/s ETA 00:00
+[2025-05-26T02:23:54.105+0000] {logging_mixin.py:190} INFO - [download] 100% of  336.16KiB in 00:00:00 at 4.37MiB/s   
+[2025-05-26T02:23:54.107+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DJ_fAE2MY2L"
+[2025-05-26T02:23:54.195+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DJ_fAE2MY2L.mp3
+[2025-05-26T02:23:54.611+0000] {logging_mixin.py:190} INFO - Deleting original file data/DJ_fAE2MY2L (pass -k to keep)
+[2025-05-26T02:23:54.613+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DJ_fAE2MY2L
+[2025-05-26T02:23:54.628+0000] {logging_mixin.py:190} INFO - Downloaded video DJ_fAE2MY2L to data/DJ_fAE2MY2L.mp3
+[2025-05-26T02:23:54.775+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:23:54.775+0000] {logging_mixin.py:190} INFO - Downloading video from DKABZ3ksN4h...
+[2025-05-26T02:23:54.809+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/fcbarcelona/reel/DKABZ3ksN4h/
+[2025-05-26T02:23:54.809+0000] {logging_mixin.py:190} INFO - [Instagram] DKABZ3ksN4h: Setting up session
+[2025-05-26T02:23:55.134+0000] {logging_mixin.py:190} INFO - [Instagram] DKABZ3ksN4h: Downloading JSON metadata
+[2025-05-26T02:23:55.727+0000] {logging_mixin.py:190} INFO - [info] DKABZ3ksN4h: Downloading 1 format(s): dash-1063312659021627ad
+[2025-05-26T02:23:55.767+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DKABZ3ksN4h
+[2025-05-26T02:23:55.768+0000] {logging_mixin.py:190} INFO - [download]   1.8% of   54.94KiB at  773.57KiB/s ETA 00:00
+[2025-05-26T02:23:55.768+0000] {logging_mixin.py:190} INFO - [download]   5.5% of   54.94KiB at    1.62MiB/s ETA 00:00
+[2025-05-26T02:23:55.769+0000] {logging_mixin.py:190} INFO - [download]  12.7% of   54.94KiB at    2.96MiB/s ETA 00:00
+[2025-05-26T02:23:55.770+0000] {logging_mixin.py:190} INFO - [download]  27.3% of   54.94KiB at    4.92MiB/s ETA 00:00
+[2025-05-26T02:23:55.772+0000] {logging_mixin.py:190} INFO - [download]  56.4% of   54.94KiB at    5.33MiB/s ETA 00:00
+[2025-05-26T02:23:55.774+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   54.94KiB at    6.99MiB/s ETA 00:00
+[2025-05-26T02:23:55.775+0000] {logging_mixin.py:190} INFO - [download] 100% of   54.94KiB in 00:00:00 at 1.23MiB/s   
+[2025-05-26T02:23:55.777+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DKABZ3ksN4h"
+[2025-05-26T02:23:55.862+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DKABZ3ksN4h.mp3
+[2025-05-26T02:23:55.977+0000] {logging_mixin.py:190} INFO - Deleting original file data/DKABZ3ksN4h (pass -k to keep)
+[2025-05-26T02:23:55.981+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DKABZ3ksN4h
+[2025-05-26T02:23:56.007+0000] {logging_mixin.py:190} INFO - Downloaded video DKABZ3ksN4h to data/DKABZ3ksN4h.mp3
+[2025-05-26T02:23:56.140+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:23:56.140+0000] {logging_mixin.py:190} INFO - Downloading video from DKFK_WusWGY...
+[2025-05-26T02:23:56.169+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/fcbarcelona/reel/DKFK_WusWGY/
+[2025-05-26T02:23:56.170+0000] {logging_mixin.py:190} INFO - [Instagram] DKFK_WusWGY: Setting up session
+[2025-05-26T02:23:56.474+0000] {logging_mixin.py:190} INFO - [Instagram] DKFK_WusWGY: Downloading JSON metadata
+[2025-05-26T02:23:57.007+0000] {logging_mixin.py:190} INFO - [info] DKFK_WusWGY: Downloading 1 format(s): dash-2121112418410834ad
+[2025-05-26T02:23:57.047+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DKFK_WusWGY
+[2025-05-26T02:23:57.048+0000] {logging_mixin.py:190} INFO - [download]   1.2% of   86.61KiB at  729.57KiB/s ETA 00:00
+[2025-05-26T02:23:57.048+0000] {logging_mixin.py:190} INFO - [download]   3.5% of   86.61KiB at    1.44MiB/s ETA 00:00
+[2025-05-26T02:23:57.049+0000] {logging_mixin.py:190} INFO - [download]   8.1% of   86.61KiB at    2.70MiB/s ETA 00:00
+[2025-05-26T02:23:57.049+0000] {logging_mixin.py:190} INFO - [download]  17.3% of   86.61KiB at    4.80MiB/s ETA 00:00
+[2025-05-26T02:23:57.052+0000] {logging_mixin.py:190} INFO - [download]  35.8% of   86.61KiB at    5.54MiB/s ETA 00:00
+[2025-05-26T02:23:57.055+0000] {logging_mixin.py:190} INFO - [download]  72.7% of   86.61KiB at    7.09MiB/s ETA 00:00
+[2025-05-26T02:23:57.057+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   86.61KiB at    7.72MiB/s ETA 00:00
+[2025-05-26T02:23:57.058+0000] {logging_mixin.py:190} INFO - [download] 100% of   86.61KiB in 00:00:00 at 1.80MiB/s   
+[2025-05-26T02:23:57.062+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DKFK_WusWGY"
+[2025-05-26T02:23:57.180+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DKFK_WusWGY.mp3
+[2025-05-26T02:23:57.371+0000] {logging_mixin.py:190} INFO - Deleting original file data/DKFK_WusWGY (pass -k to keep)
+[2025-05-26T02:23:57.375+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DKFK_WusWGY
+[2025-05-26T02:23:57.380+0000] {logging_mixin.py:190} INFO - Downloaded video DKFK_WusWGY to data/DKFK_WusWGY.mp3
+[2025-05-26T02:23:57.497+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:23:57.497+0000] {logging_mixin.py:190} INFO - Downloading video from DJ_RVicuus0...
+[2025-05-26T02:23:57.528+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/fcbarcelona/reel/DJ_RVicuus0/
+[2025-05-26T02:23:57.528+0000] {logging_mixin.py:190} INFO - [Instagram] DJ_RVicuus0: Setting up session
+[2025-05-26T02:23:57.834+0000] {logging_mixin.py:190} INFO - [Instagram] DJ_RVicuus0: Downloading JSON metadata
+[2025-05-26T02:23:58.363+0000] {logging_mixin.py:190} INFO - [info] DJ_RVicuus0: Downloading 1 format(s): dash-987507773214663ad
+[2025-05-26T02:23:58.391+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DJ_RVicuus0
+[2025-05-26T02:23:58.392+0000] {logging_mixin.py:190} INFO - [download]   0.9% of  108.77KiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:23:58.392+0000] {logging_mixin.py:190} INFO - [download]   2.8% of  108.77KiB at    2.51MiB/s ETA 00:00  
+[2025-05-26T02:23:58.394+0000] {logging_mixin.py:190} INFO - [download]   6.4% of  108.77KiB at    2.39MiB/s ETA 00:00
+[2025-05-26T02:23:58.395+0000] {logging_mixin.py:190} INFO - [download]  13.8% of  108.77KiB at    3.92MiB/s ETA 00:00
+[2025-05-26T02:23:58.402+0000] {logging_mixin.py:190} INFO - [download]  28.5% of  108.77KiB at    2.70MiB/s ETA 00:00
+[2025-05-26T02:23:58.411+0000] {logging_mixin.py:190} INFO - [download]  57.9% of  108.77KiB at    3.14MiB/s ETA 00:00
+[2025-05-26T02:23:58.415+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  108.77KiB at    4.48MiB/s ETA 00:00
+[2025-05-26T02:23:58.415+0000] {logging_mixin.py:190} INFO - [download] 100% of  108.77KiB in 00:00:00 at 2.16MiB/s   
+[2025-05-26T02:23:58.417+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DJ_RVicuus0"
+[2025-05-26T02:23:58.508+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DJ_RVicuus0.mp3
+[2025-05-26T02:23:58.670+0000] {logging_mixin.py:190} INFO - Deleting original file data/DJ_RVicuus0 (pass -k to keep)
+[2025-05-26T02:23:58.673+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DJ_RVicuus0
+[2025-05-26T02:23:58.691+0000] {logging_mixin.py:190} INFO - Downloaded video DJ_RVicuus0 to data/DJ_RVicuus0.mp3
+[2025-05-26T02:23:58.848+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:23:58.848+0000] {logging_mixin.py:190} INFO - Downloading video from DKF37pUA1R1...
+[2025-05-26T02:23:58.882+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/fcbarcelona/reel/DKF37pUA1R1/
+[2025-05-26T02:23:58.883+0000] {logging_mixin.py:190} INFO - [Instagram] DKF37pUA1R1: Setting up session
+[2025-05-26T02:23:59.215+0000] {logging_mixin.py:190} INFO - [Instagram] DKF37pUA1R1: Downloading JSON metadata
+[2025-05-26T02:23:59.781+0000] {logging_mixin.py:190} INFO - [info] DKF37pUA1R1: Downloading 1 format(s): dash-1005304028461185ad
+[2025-05-26T02:23:59.812+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DKF37pUA1R1
+[2025-05-26T02:23:59.813+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  135.73KiB at  648.47KiB/s ETA 00:00
+[2025-05-26T02:23:59.813+0000] {logging_mixin.py:190} INFO - [download]   2.2% of  135.73KiB at    1.43MiB/s ETA 00:00
+[2025-05-26T02:23:59.815+0000] {logging_mixin.py:190} INFO - [download]   5.2% of  135.73KiB at    1.86MiB/s ETA 00:00
+[2025-05-26T02:23:59.816+0000] {logging_mixin.py:190} INFO - [download]  11.1% of  135.73KiB at    3.08MiB/s ETA 00:00
+[2025-05-26T02:23:59.818+0000] {logging_mixin.py:190} INFO - [download]  22.8% of  135.73KiB at    4.35MiB/s ETA 00:00
+[2025-05-26T02:23:59.821+0000] {logging_mixin.py:190} INFO - [download]  46.4% of  135.73KiB at    6.34MiB/s ETA 00:00
+[2025-05-26T02:23:59.845+0000] {logging_mixin.py:190} INFO - [download]  93.6% of  135.73KiB at    3.66MiB/s ETA 00:00
+[2025-05-26T02:23:59.846+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  135.73KiB at    3.84MiB/s ETA 00:00
+[2025-05-26T02:23:59.846+0000] {logging_mixin.py:190} INFO - [download] 100% of  135.73KiB in 00:00:00 at 2.13MiB/s   
+[2025-05-26T02:23:59.848+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DKF37pUA1R1"
+[2025-05-26T02:23:59.933+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DKF37pUA1R1.mp3
+[2025-05-26T02:24:00.155+0000] {logging_mixin.py:190} INFO - Deleting original file data/DKF37pUA1R1 (pass -k to keep)
+[2025-05-26T02:24:00.158+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DKF37pUA1R1
+[2025-05-26T02:24:00.175+0000] {logging_mixin.py:190} INFO - Downloaded video DKF37pUA1R1 to data/DKF37pUA1R1.mp3
+[2025-05-26T02:24:00.293+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:24:00.294+0000] {logging_mixin.py:190} INFO - Downloading video from DKFyEK2uyoC...
+[2025-05-26T02:24:00.324+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/fcbarcelona/reel/DKFyEK2uyoC/
+[2025-05-26T02:24:00.324+0000] {logging_mixin.py:190} INFO - [Instagram] DKFyEK2uyoC: Setting up session
+[2025-05-26T02:24:00.654+0000] {logging_mixin.py:190} INFO - [Instagram] DKFyEK2uyoC: Downloading JSON metadata
+[2025-05-26T02:24:01.144+0000] {logging_mixin.py:190} INFO - [info] DKFyEK2uyoC: Downloading 1 format(s): dash-1387065952533734ad
+[2025-05-26T02:24:01.178+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DKFyEK2uyoC
+[2025-05-26T02:24:01.179+0000] {logging_mixin.py:190} INFO - [download]   1.6% of   62.17KiB at  474.95KiB/s ETA 00:00
+[2025-05-26T02:24:01.179+0000] {logging_mixin.py:190} INFO - [download]   4.8% of   62.17KiB at    1.06MiB/s ETA 00:00
+[2025-05-26T02:24:01.180+0000] {logging_mixin.py:190} INFO - [download]  11.3% of   62.17KiB at    2.12MiB/s ETA 00:00
+[2025-05-26T02:24:01.180+0000] {logging_mixin.py:190} INFO - [download]  24.1% of   62.17KiB at    3.99MiB/s ETA 00:00
+[2025-05-26T02:24:01.183+0000] {logging_mixin.py:190} INFO - [download]  49.9% of   62.17KiB at    4.96MiB/s ETA 00:00
+[2025-05-26T02:24:01.185+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   62.17KiB at    6.84MiB/s ETA 00:00
+[2025-05-26T02:24:01.186+0000] {logging_mixin.py:190} INFO - [download] 100% of   62.17KiB in 00:00:00 at 1.53MiB/s   
+[2025-05-26T02:24:01.187+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DKFyEK2uyoC"
+[2025-05-26T02:24:01.270+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DKFyEK2uyoC.mp3
+[2025-05-26T02:24:01.387+0000] {logging_mixin.py:190} INFO - Deleting original file data/DKFyEK2uyoC (pass -k to keep)
+[2025-05-26T02:24:01.389+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DKFyEK2uyoC
+[2025-05-26T02:24:01.402+0000] {logging_mixin.py:190} INFO - Downloaded video DKFyEK2uyoC to data/DKFyEK2uyoC.mp3
+[2025-05-26T02:24:01.528+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:24:01.529+0000] {logging_mixin.py:190} INFO - Downloading video from DKFp4xVO84G...
+[2025-05-26T02:24:01.559+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/fcbarcelona/reel/DKFp4xVO84G/
+[2025-05-26T02:24:01.560+0000] {logging_mixin.py:190} INFO - [Instagram] DKFp4xVO84G: Setting up session
+[2025-05-26T02:24:01.883+0000] {logging_mixin.py:190} INFO - [Instagram] DKFp4xVO84G: Downloading JSON metadata
+[2025-05-26T02:24:02.480+0000] {logging_mixin.py:190} INFO - [info] DKFp4xVO84G: Downloading 1 format(s): dash-9832475480205783ad
+[2025-05-26T02:24:02.512+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DKFp4xVO84G
+[2025-05-26T02:24:02.512+0000] {logging_mixin.py:190} INFO - [download]   1.2% of   81.94KiB at  530.86KiB/s ETA 00:00
+[2025-05-26T02:24:02.513+0000] {logging_mixin.py:190} INFO - [download]   3.7% of   81.94KiB at    1.19MiB/s ETA 00:00
+[2025-05-26T02:24:02.513+0000] {logging_mixin.py:190} INFO - [download]   8.5% of   81.94KiB at    2.29MiB/s ETA 00:00
+[2025-05-26T02:24:02.514+0000] {logging_mixin.py:190} INFO - [download]  18.3% of   81.94KiB at    3.92MiB/s ETA 00:00
+[2025-05-26T02:24:02.517+0000] {logging_mixin.py:190} INFO - [download]  37.8% of   81.94KiB at    4.44MiB/s ETA 00:00
+[2025-05-26T02:24:02.520+0000] {logging_mixin.py:190} INFO - [download]  76.9% of   81.94KiB at    6.00MiB/s ETA 00:00
+[2025-05-26T02:24:02.522+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   81.94KiB at    6.66MiB/s ETA 00:00
+[2025-05-26T02:24:02.523+0000] {logging_mixin.py:190} INFO - [download] 100% of   81.94KiB in 00:00:00 at 2.03MiB/s   
+[2025-05-26T02:24:02.524+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DKFp4xVO84G"
+[2025-05-26T02:24:02.611+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DKFp4xVO84G.mp3
+[2025-05-26T02:24:02.762+0000] {logging_mixin.py:190} INFO - Deleting original file data/DKFp4xVO84G (pass -k to keep)
+[2025-05-26T02:24:02.765+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DKFp4xVO84G
+[2025-05-26T02:24:02.773+0000] {logging_mixin.py:190} INFO - Downloaded video DKFp4xVO84G to data/DKFp4xVO84G.mp3
+[2025-05-26T02:24:02.895+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:24:02.895+0000] {logging_mixin.py:190} INFO - Downloading video from DJ_3hRgMehQ...
+[2025-05-26T02:24:02.925+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/fcbarcelona/reel/DJ_3hRgMehQ/
+[2025-05-26T02:24:02.926+0000] {logging_mixin.py:190} INFO - [Instagram] DJ_3hRgMehQ: Setting up session
+[2025-05-26T02:24:03.234+0000] {logging_mixin.py:190} INFO - [Instagram] DJ_3hRgMehQ: Downloading JSON metadata
+[2025-05-26T02:24:03.807+0000] {logging_mixin.py:190} INFO - [info] DJ_3hRgMehQ: Downloading 1 format(s): dash-586680611132025ad
+[2025-05-26T02:24:03.907+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DJ_3hRgMehQ
+[2025-05-26T02:24:03.908+0000] {logging_mixin.py:190} INFO - [download]   0.8% of  132.90KiB at  416.51KiB/s ETA 00:00
+[2025-05-26T02:24:03.909+0000] {logging_mixin.py:190} INFO - [download]   2.3% of  132.90KiB at  902.91KiB/s ETA 00:00
+[2025-05-26T02:24:03.909+0000] {logging_mixin.py:190} INFO - [download]   5.3% of  132.90KiB at    1.76MiB/s ETA 00:00
+[2025-05-26T02:24:03.910+0000] {logging_mixin.py:190} INFO - [download]  11.3% of  132.90KiB at    3.36MiB/s ETA 00:00
+[2025-05-26T02:24:03.913+0000] {logging_mixin.py:190} INFO - [download]  23.3% of  132.90KiB at    4.12MiB/s ETA 00:00
+[2025-05-26T02:24:03.917+0000] {logging_mixin.py:190} INFO - [download]  47.4% of  132.90KiB at    5.58MiB/s ETA 00:00
+[2025-05-26T02:24:03.922+0000] {logging_mixin.py:190} INFO - [download]  95.6% of  132.90KiB at    7.37MiB/s ETA 00:00
+[2025-05-26T02:24:03.923+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  132.90KiB at    7.30MiB/s ETA 00:00
+[2025-05-26T02:24:03.924+0000] {logging_mixin.py:190} INFO - [download] 100% of  132.90KiB in 00:00:00 at 1.23MiB/s   
+[2025-05-26T02:24:03.926+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DJ_3hRgMehQ"
+[2025-05-26T02:24:04.022+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DJ_3hRgMehQ.mp3
+[2025-05-26T02:24:04.295+0000] {logging_mixin.py:190} INFO - Deleting original file data/DJ_3hRgMehQ (pass -k to keep)
+[2025-05-26T02:24:04.299+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DJ_3hRgMehQ
+[2025-05-26T02:24:04.304+0000] {logging_mixin.py:190} INFO - Downloaded video DJ_3hRgMehQ to data/DJ_3hRgMehQ.mp3
+[2025-05-26T02:24:04.422+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:24:04.423+0000] {logging_mixin.py:190} INFO - Downloading video from DKFzA_euYpR...
+[2025-05-26T02:24:04.454+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/fcbarcelona/reel/DKFzA_euYpR/
+[2025-05-26T02:24:04.454+0000] {logging_mixin.py:190} INFO - [Instagram] DKFzA_euYpR: Setting up session
+[2025-05-26T02:24:05.875+0000] {logging_mixin.py:190} INFO - [Instagram] DKFzA_euYpR: Downloading JSON metadata
+[2025-05-26T02:24:06.599+0000] {logging_mixin.py:190} INFO - [info] DKFzA_euYpR: Downloading 1 format(s): dash-703869759007777ad
+[2025-05-26T02:24:06.628+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DKFzA_euYpR
+[2025-05-26T02:24:06.628+0000] {logging_mixin.py:190} INFO - [download]   0.9% of  105.32KiB at  633.96KiB/s ETA 00:00
+[2025-05-26T02:24:06.629+0000] {logging_mixin.py:190} INFO - [download]   2.8% of  105.32KiB at    1.33MiB/s ETA 00:00
+[2025-05-26T02:24:06.629+0000] {logging_mixin.py:190} INFO - [download]   6.6% of  105.32KiB at    2.59MiB/s ETA 00:00
+[2025-05-26T02:24:06.631+0000] {logging_mixin.py:190} INFO - [download]  14.2% of  105.32KiB at    3.78MiB/s ETA 00:00
+[2025-05-26T02:24:06.633+0000] {logging_mixin.py:190} INFO - [download]  29.4% of  105.32KiB at    5.04MiB/s ETA 00:00
+[2025-05-26T02:24:06.635+0000] {logging_mixin.py:190} INFO - [download]  59.8% of  105.32KiB at    6.98MiB/s ETA 00:00
+[2025-05-26T02:24:06.640+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  105.32KiB at    7.70MiB/s ETA 00:00
+[2025-05-26T02:24:06.641+0000] {logging_mixin.py:190} INFO - [download] 100% of  105.32KiB in 00:00:00 at 2.69MiB/s   
+[2025-05-26T02:24:06.643+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DKFzA_euYpR"
+[2025-05-26T02:24:06.732+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DKFzA_euYpR.mp3
+[2025-05-26T02:24:06.904+0000] {logging_mixin.py:190} INFO - Deleting original file data/DKFzA_euYpR (pass -k to keep)
+[2025-05-26T02:24:06.907+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DKFzA_euYpR
+[2025-05-26T02:24:06.913+0000] {logging_mixin.py:190} INFO - Downloaded video DKFzA_euYpR to data/DKFzA_euYpR.mp3
+[2025-05-26T02:24:07.034+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:24:07.034+0000] {logging_mixin.py:190} INFO - Downloading video from DJ-Fth2Omv4...
+[2025-05-26T02:24:07.064+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/fcbarcelona/reel/DJ-Fth2Omv4/
+[2025-05-26T02:24:07.065+0000] {logging_mixin.py:190} INFO - [Instagram] DJ-Fth2Omv4: Setting up session
+[2025-05-26T02:24:07.377+0000] {logging_mixin.py:190} INFO - [Instagram] DJ-Fth2Omv4: Downloading JSON metadata
+[2025-05-26T02:24:08.027+0000] {logging_mixin.py:190} INFO - [info] DJ-Fth2Omv4: Downloading 1 format(s): dash-1774179406786170ad
+[2025-05-26T02:24:08.057+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DJ-Fth2Omv4
+[2025-05-26T02:24:08.058+0000] {logging_mixin.py:190} INFO - [download]   1.2% of   84.10KiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:24:08.058+0000] {logging_mixin.py:190} INFO - [download]   3.6% of   84.10KiB at    2.48MiB/s ETA 00:00  
+[2025-05-26T02:24:08.059+0000] {logging_mixin.py:190} INFO - [download]   8.3% of   84.10KiB at    3.09MiB/s ETA 00:00
+[2025-05-26T02:24:08.060+0000] {logging_mixin.py:190} INFO - [download]  17.8% of   84.10KiB at    5.08MiB/s ETA 00:00
+[2025-05-26T02:24:08.062+0000] {logging_mixin.py:190} INFO - [download]  36.9% of   84.10KiB at    5.90MiB/s ETA 00:00
+[2025-05-26T02:24:08.065+0000] {logging_mixin.py:190} INFO - [download]  74.9% of   84.10KiB at    7.59MiB/s ETA 00:00
+[2025-05-26T02:24:08.067+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   84.10KiB at    8.30MiB/s ETA 00:00
+[2025-05-26T02:24:08.068+0000] {logging_mixin.py:190} INFO - [download] 100% of   84.10KiB in 00:00:00 at 2.21MiB/s   
+[2025-05-26T02:24:08.070+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DJ-Fth2Omv4"
+[2025-05-26T02:24:08.157+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DJ-Fth2Omv4.mp3
+[2025-05-26T02:24:08.323+0000] {logging_mixin.py:190} INFO - Deleting original file data/DJ-Fth2Omv4 (pass -k to keep)
+[2025-05-26T02:24:08.327+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DJ-Fth2Omv4
+[2025-05-26T02:24:08.342+0000] {logging_mixin.py:190} INFO - Downloaded video DJ-Fth2Omv4 to data/DJ-Fth2Omv4.mp3
+[2025-05-26T02:24:08.465+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:24:08.465+0000] {logging_mixin.py:190} INFO - Downloading video from DJ94KmJumg0...
+[2025-05-26T02:24:08.495+0000] {logging_mixin.py:190} INFO - [Instagram] Extracting URL: https://www.instagram.com/fcbarcelona/reel/DJ94KmJumg0/
+[2025-05-26T02:24:08.496+0000] {logging_mixin.py:190} INFO - [Instagram] DJ94KmJumg0: Setting up session
+[2025-05-26T02:24:08.852+0000] {logging_mixin.py:190} INFO - [Instagram] DJ94KmJumg0: Downloading JSON metadata
+[2025-05-26T02:24:09.423+0000] {logging_mixin.py:190} INFO - [info] DJ94KmJumg0: Downloading 1 format(s): dash-3957972711124595ad
+[2025-05-26T02:24:09.454+0000] {logging_mixin.py:190} INFO - [download] Destination: data/DJ94KmJumg0
+[2025-05-26T02:24:09.454+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  448.90KiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:24:09.455+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  448.90KiB at    2.37MiB/s ETA 00:00  
+[2025-05-26T02:24:09.456+0000] {logging_mixin.py:190} INFO - [download]   1.6% of  448.90KiB at    2.80MiB/s ETA 00:00
+[2025-05-26T02:24:09.457+0000] {logging_mixin.py:190} INFO - [download]   3.3% of  448.90KiB at    4.32MiB/s ETA 00:00
+[2025-05-26T02:24:09.459+0000] {logging_mixin.py:190} INFO - [download]   6.9% of  448.90KiB at    5.51MiB/s ETA 00:00
+[2025-05-26T02:24:09.462+0000] {logging_mixin.py:190} INFO - [download]  14.0% of  448.90KiB at    7.30MiB/s ETA 00:00
+[2025-05-26T02:24:09.468+0000] {logging_mixin.py:190} INFO - [download]  28.3% of  448.90KiB at    8.52MiB/s ETA 00:00
+[2025-05-26T02:24:09.481+0000] {logging_mixin.py:190} INFO - [download]  56.8% of  448.90KiB at    9.16MiB/s ETA 00:00
+[2025-05-26T02:24:09.501+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  448.90KiB at    9.31MiB/s ETA 00:00
+[2025-05-26T02:24:09.501+0000] {logging_mixin.py:190} INFO - [download] 100% of  448.90KiB in 00:00:00 at 5.93MiB/s   
+[2025-05-26T02:24:09.503+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/DJ94KmJumg0"
+[2025-05-26T02:24:09.587+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/DJ94KmJumg0.mp3
+[2025-05-26T02:24:10.179+0000] {logging_mixin.py:190} INFO - Deleting original file data/DJ94KmJumg0 (pass -k to keep)
+[2025-05-26T02:24:10.183+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: DJ94KmJumg0
+[2025-05-26T02:24:10.197+0000] {logging_mixin.py:190} INFO - Downloaded video DJ94KmJumg0 to data/DJ94KmJumg0.mp3
+[2025-05-26T02:24:10.197+0000] {logging_mixin.py:190} INFO - Downloaded 12 new videos.
+[2025-05-26T02:24:10.197+0000] {python.py:240} INFO - Done. Returned value was: [{'video_id': 'DKFnhLeObd9', 'file_path': 'data/DKFnhLeObd9.mp3'}, {'video_id': 'DJ_fAE2MY2L', 'file_path': 'data/DJ_fAE2MY2L.mp3'}, {'video_id': 'DKABZ3ksN4h', 'file_path': 'data/DKABZ3ksN4h.mp3'}, {'video_id': 'DKFK_WusWGY', 'file_path': 'data/DKFK_WusWGY.mp3'}, {'video_id': 'DJ_RVicuus0', 'file_path': 'data/DJ_RVicuus0.mp3'}, {'video_id': 'DKF37pUA1R1', 'file_path': 'data/DKF37pUA1R1.mp3'}, {'video_id': 'DKFyEK2uyoC', 'file_path': 'data/DKFyEK2uyoC.mp3'}, {'video_id': 'DKFp4xVO84G', 'file_path': 'data/DKFp4xVO84G.mp3'}, {'video_id': 'DJ_3hRgMehQ', 'file_path': 'data/DJ_3hRgMehQ.mp3'}, {'video_id': 'DKFzA_euYpR', 'file_path': 'data/DKFzA_euYpR.mp3'}, {'video_id': 'DJ-Fth2Omv4', 'file_path': 'data/DJ-Fth2Omv4.mp3'}, {'video_id': 'DJ94KmJumg0', 'file_path': 'data/DJ94KmJumg0.mp3'}]
+[2025-05-26T02:24:10.212+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-26T02:24:10.213+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instagram_videos_scraper_dag, task_id=batch_download_task, run_id=manual__2025-05-26T02:23:40.226361+00:00, execution_date=20250526T022340, start_date=20250526T022352, end_date=20250526T022410
+[2025-05-26T02:24:10.236+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-26T02:24:10.249+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-26T02:24:10.251+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

@@ -1,0 +1,29 @@
+[2025-05-26T04:49:14.670+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-26T04:49:14.681+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: x_videos_scraper_dag.get_links_task manual__2025-05-26T04:49:04.903804+00:00 [queued]>
+[2025-05-26T04:49:14.686+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: x_videos_scraper_dag.get_links_task manual__2025-05-26T04:49:04.903804+00:00 [queued]>
+[2025-05-26T04:49:14.686+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-26T04:49:14.712+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-26 04:49:04.903804+00:00
+[2025-05-26T04:49:14.715+0000] {standard_task_runner.py:72} INFO - Started process 820 to run task
+[2025-05-26T04:49:14.718+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'x_videos_scraper_dag', 'get_links_task', 'manual__2025-05-26T04:49:04.903804+00:00', '--job-id', '6743', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_x.py', '--cfg-path', '/tmp/tmp60m60a5f']
+[2025-05-26T04:49:14.719+0000] {standard_task_runner.py:105} INFO - Job 6743: Subtask get_links_task
+[2025-05-26T04:49:14.756+0000] {task_command.py:467} INFO - Running <TaskInstance: x_videos_scraper_dag.get_links_task manual__2025-05-26T04:49:04.903804+00:00 [running]> on host bac6a915e19d
+[2025-05-26T04:49:14.810+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='x_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-26T04:49:04.903804+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-26T04:49:04.903804+00:00'
+[2025-05-26T04:49:14.811+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-26T04:49:30.212+0000] {logging_mixin.py:190} INFO - https://x.com/realmadriden/status/1926327801570791886/video/1
+[2025-05-26T04:49:30.218+0000] {logging_mixin.py:190} INFO - https://x.com/realmadriden/status/1926325398939357539/video/1
+[2025-05-26T04:49:30.222+0000] {logging_mixin.py:190} INFO - https://x.com/realmadriden/status/1926323531987431850/video/1
+[2025-05-26T04:49:30.226+0000] {logging_mixin.py:190} INFO - https://x.com/realmadriden/status/1926323154021929025/video/1
+[2025-05-26T04:49:30.229+0000] {logging_mixin.py:190} INFO - https://x.com/realmadriden/status/1926321537767907576/video/1
+[2025-05-26T04:49:30.264+0000] {logging_mixin.py:190} INFO - https://x.com/realmadriden/status/1926307392473464945/video/1
+[2025-05-26T04:49:30.289+0000] {logging_mixin.py:190} INFO - https://x.com/realmadriden/status/1926291513186648328/video/1
+[2025-05-26T04:49:30.351+0000] {logging_mixin.py:190} INFO - https://x.com/realmadriden/status/1926276719134065111/video/1
+[2025-05-26T04:49:30.366+0000] {logging_mixin.py:190} INFO - https://x.com/realmadriden/status/1926265674256548114/video/1
+[2025-05-26T04:49:30.412+0000] {logging_mixin.py:190} INFO - Remaining new videos: 9
+[2025-05-26T04:49:30.412+0000] {logging_mixin.py:190} INFO - Total new videos to process: 1
+[2025-05-26T04:49:30.412+0000] {logging_mixin.py:190} INFO - New videos: 1
+[2025-05-26T04:49:30.492+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'realmadriden', 'new_links': ('https://x.com/realmadriden/status/1926327801570791886/video/1',)}
+[2025-05-26T04:49:30.512+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-26T04:49:30.513+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=x_videos_scraper_dag, task_id=get_links_task, run_id=manual__2025-05-26T04:49:04.903804+00:00, execution_date=20250526T044904, start_date=20250526T044914, end_date=20250526T044930
+[2025-05-26T04:49:30.543+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-26T04:49:30.563+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-26T04:49:30.565+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

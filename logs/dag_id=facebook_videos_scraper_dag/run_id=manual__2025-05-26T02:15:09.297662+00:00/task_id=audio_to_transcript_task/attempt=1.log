@@ -1,0 +1,175 @@
+[2025-05-26T02:27:59.194+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-26T02:27:59.204+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.audio_to_transcript_task manual__2025-05-26T02:15:09.297662+00:00 [queued]>
+[2025-05-26T02:27:59.209+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.audio_to_transcript_task manual__2025-05-26T02:15:09.297662+00:00 [queued]>
+[2025-05-26T02:27:59.210+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-26T02:27:59.218+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): audio_to_transcript_task> on 2025-05-26 02:15:09.297662+00:00
+[2025-05-26T02:27:59.221+0000] {standard_task_runner.py:72} INFO - Started process 92369 to run task
+[2025-05-26T02:27:59.223+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'audio_to_transcript_task', 'manual__2025-05-26T02:15:09.297662+00:00', '--job-id', '6724', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_fb.py', '--cfg-path', '/tmp/tmp6l6tbi0m']
+[2025-05-26T02:27:59.225+0000] {standard_task_runner.py:105} INFO - Job 6724: Subtask audio_to_transcript_task
+[2025-05-26T02:27:59.261+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.audio_to_transcript_task manual__2025-05-26T02:15:09.297662+00:00 [running]> on host 9e147d34972d
+[2025-05-26T02:27:59.316+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='audio_to_transcript_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-26T02:15:09.297662+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-26T02:15:09.297662+00:00'
+[2025-05-26T02:27:59.317+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-26T02:27:59.562+0000] {get_transcript.py:39} INFO - Number of downloads to process: 52
+[2025-05-26T02:27:59.562+0000] {get_transcript.py:44} INFO - Processing audio file: data/340109543496083.mp3
+[2025-05-26T02:28:01.318+0000] {transcribe.py:839} INFO - Processing audio with duration 11:24.032
+[2025-05-26T02:28:02.582+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.95
+[2025-05-26T02:28:02.587+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.9482998251914978
+[2025-05-26T02:31:16.923+0000] {get_transcript.py:44} INFO - Processing audio file: data/1732547871011243.mp3
+[2025-05-26T02:31:20.473+0000] {transcribe.py:839} INFO - Processing audio with duration 01:18:36.672
+[2025-05-26T02:31:35.604+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.58
+[2025-05-26T02:31:35.787+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.5842492580413818
+[2025-05-26T02:42:45.865+0000] {get_transcript.py:44} INFO - Processing audio file: data/1859509068235762.mp3
+[2025-05-26T02:42:50.184+0000] {transcribe.py:839} INFO - Processing audio with duration 13:00.459
+[2025-05-26T02:42:50.873+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.64
+[2025-05-26T02:42:50.875+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.63648921251297
+[2025-05-26T02:43:46.837+0000] {get_transcript.py:44} INFO - Processing audio file: data/24538181259116167.mp3
+[2025-05-26T02:43:47.982+0000] {transcribe.py:839} INFO - Processing audio with duration 00:59.025
+[2025-05-26T02:43:48.345+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.80
+[2025-05-26T02:43:48.347+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.7950548529624939
+[2025-05-26T02:43:52.854+0000] {get_transcript.py:44} INFO - Processing audio file: data/517985985440934.mp3
+[2025-05-26T02:43:54.037+0000] {transcribe.py:839} INFO - Processing audio with duration 11:46.560
+[2025-05-26T02:43:54.581+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.98
+[2025-05-26T02:43:54.582+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.9757754802703857
+[2025-05-26T02:45:44.068+0000] {get_transcript.py:44} INFO - Processing audio file: data/2551774658431227.mp3
+[2025-05-26T02:45:45.945+0000] {transcribe.py:839} INFO - Processing audio with duration 11:02.741
+[2025-05-26T02:45:46.651+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.98
+[2025-05-26T02:45:46.654+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.9807665348052979
+[2025-05-26T02:47:04.836+0000] {get_transcript.py:44} INFO - Processing audio file: data/687439038759322.mp3
+[2025-05-26T02:47:05.805+0000] {transcribe.py:839} INFO - Processing audio with duration 06:30.997
+[2025-05-26T02:47:06.225+0000] {transcribe.py:906} INFO - Detected language 'ko' with probability 0.57
+[2025-05-26T02:47:06.226+0000] {get_transcript.py:53} INFO - Detected language 'ko' with probability 0.5747327208518982
+[2025-05-26T02:47:39.969+0000] {get_transcript.py:44} INFO - Processing audio file: data/1199728748139131.mp3
+[2025-05-26T02:47:40.721+0000] {transcribe.py:839} INFO - Processing audio with duration 03:55.008
+[2025-05-26T02:47:41.087+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.33
+[2025-05-26T02:47:41.088+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.3263031840324402
+[2025-05-26T02:48:03.185+0000] {get_transcript.py:44} INFO - Processing audio file: data/1029143837514002.mp3
+[2025-05-26T02:48:04.321+0000] {transcribe.py:839} INFO - Processing audio with duration 03:34.016
+[2025-05-26T02:48:04.633+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.91
+[2025-05-26T02:48:04.634+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.9148806929588318
+[2025-05-26T02:48:25.455+0000] {get_transcript.py:44} INFO - Processing audio file: data/1214537733485734.mp3
+[2025-05-26T02:48:25.892+0000] {get_transcript.py:67} ERROR - Error transcripting video from 1214537733485734: [Errno 1094995529] Invalid data found when processing input: 'data/1214537733485734.mp3'
+[2025-05-26T02:48:25.897+0000] {get_transcript.py:44} INFO - Processing audio file: data/266768487828041.mp3
+[2025-05-26T02:48:26.920+0000] {transcribe.py:839} INFO - Processing audio with duration 07:17.291
+[2025-05-26T02:48:27.360+0000] {transcribe.py:906} INFO - Detected language 'en' with probability 0.52
+[2025-05-26T02:48:27.362+0000] {get_transcript.py:53} INFO - Detected language 'en' with probability 0.5236417651176453
+[2025-05-26T02:48:49.982+0000] {get_transcript.py:44} INFO - Processing audio file: data/1214325173492633.mp3
+[2025-05-26T02:49:03.012+0000] {transcribe.py:839} INFO - Processing audio with duration 03:55:10.464
+[2025-05-26T02:49:39.307+0000] {job.py:229} INFO - Heartbeat recovered after 12.41 seconds
+[2025-05-26T02:50:07.111+0000] {job.py:229} INFO - Heartbeat recovered after 27.83 seconds
+[2025-05-26T02:50:19.955+0000] {job.py:229} INFO - Heartbeat recovered after 13.03 seconds
+[2025-05-26T02:50:47.232+0000] {job.py:239} ERROR - Job heartbeat failed with error
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "***" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/jobs/job.py", line 233, in heartbeat
+    heartbeat_callback(session)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/jobs/local_task_job_runner.py", line 279, in heartbeat_callback
+    self.task_instance.refresh_from_db()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 2349, in refresh_from_db
+    _refresh_from_db(task_instance=self, session=session, lock_for_update=lock_for_update)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 872, in _refresh_from_db
+    ti = TaskInstance.get_task_instance(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/api_internal/internal_api_call.py", line 139, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 2335, in get_task_instance
+    return query.one_or_none()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2850, in one_or_none
+    return self._iter().one_or_none()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/query.py", line 2916, in _iter
+    result = self.session.execute(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "***" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2025-05-26T02:52:16.981+0000] {job.py:254} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2025-05-26T02:52:24.973+0000] {job.py:229} INFO - Heartbeat recovered after 126.04 seconds
+[2025-05-26T02:57:36.490+0000] {job.py:229} INFO - Heartbeat recovered after 292.88 seconds
+[2025-05-26T02:58:28.586+0000] {job.py:229} INFO - Heartbeat recovered after 21.75 seconds
+[2025-05-26T02:58:28.619+0000] {local_task_job_runner.py:261} INFO - Task exited with return code -9For more information, see https://airflow.apache.org/docs/apache-airflow/stable/troubleshooting.html#LocalTaskJob-killed
+[2025-05-26T02:58:28.803+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-26T02:58:28.807+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

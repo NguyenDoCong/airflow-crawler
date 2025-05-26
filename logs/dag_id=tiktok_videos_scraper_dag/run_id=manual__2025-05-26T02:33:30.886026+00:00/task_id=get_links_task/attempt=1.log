@@ -1,0 +1,53 @@
+[2025-05-26T02:33:33.876+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-26T02:33:33.902+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-26T02:33:30.886026+00:00 [queued]>
+[2025-05-26T02:33:33.913+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-26T02:33:30.886026+00:00 [queued]>
+[2025-05-26T02:33:33.913+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-26T02:33:33.930+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-26 02:33:30.886026+00:00
+[2025-05-26T02:33:33.933+0000] {standard_task_runner.py:72} INFO - Started process 1745952 to run task
+[2025-05-26T02:33:33.936+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'get_links_task', 'manual__2025-05-26T02:33:30.886026+00:00', '--job-id', '6726', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpp6ig7dem']
+[2025-05-26T02:33:33.938+0000] {standard_task_runner.py:105} INFO - Job 6726: Subtask get_links_task
+[2025-05-26T02:33:33.982+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-26T02:33:30.886026+00:00 [running]> on host 9e147d34972d
+[2025-05-26T02:33:34.069+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-26T02:33:30.886026+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-26T02:33:30.886026+00:00'
+[2025-05-26T02:33:34.071+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-26T02:33:45.459+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7508517286995561750
+[2025-05-26T02:33:45.460+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7508500275586452758
+[2025-05-26T02:33:45.461+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7508494215811239190
+[2025-05-26T02:33:45.461+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7508486043914620182
+[2025-05-26T02:33:45.461+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7508478951140953366
+[2025-05-26T02:33:45.462+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7508468612391275798
+[2025-05-26T02:33:45.462+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7508464631933930774
+[2025-05-26T02:33:45.462+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7508439489254100226
+[2025-05-26T02:33:45.462+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7508378630611799318
+[2025-05-26T02:33:45.462+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7508307892278234390
+[2025-05-26T02:33:45.463+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7508017493231930646
+[2025-05-26T02:33:45.463+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7507991351561080086
+[2025-05-26T02:33:45.463+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7507737352765279510
+[2025-05-26T02:33:45.463+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7507656668268743958
+[2025-05-26T02:33:45.464+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7507604996901457174
+[2025-05-26T02:33:45.464+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7507548595067899158
+[2025-05-26T02:33:45.464+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7507377836584455446
+[2025-05-26T02:33:45.464+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7507337222031527190
+[2025-05-26T02:33:45.464+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7507331172498722070
+[2025-05-26T02:33:45.465+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7507325189407952150
+[2025-05-26T02:33:45.465+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7507262442334850326
+[2025-05-26T02:33:45.465+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7507009947150994710
+[2025-05-26T02:33:45.465+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7506989049702386966
+[2025-05-26T02:33:45.465+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7506976484033039638
+[2025-05-26T02:33:45.466+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7506957344346049814
+[2025-05-26T02:33:45.466+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7506868068753083670
+[2025-05-26T02:33:45.466+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7506828348518059286
+[2025-05-26T02:33:45.466+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7506651140134604054
+[2025-05-26T02:33:45.467+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7506632383668423958
+[2025-05-26T02:33:45.467+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7506530000934292758
+[2025-05-26T02:33:45.467+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7506293699584838934
+[2025-05-26T02:33:45.467+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7506315172978461974
+[2025-05-26T02:33:45.468+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7506275977920613654
+[2025-05-26T02:33:45.468+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7506250765917375766
+[2025-05-26T02:33:45.468+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@fcbarcelona/video/7506197123545713942
+[2025-05-26T02:33:45.483+0000] {logging_mixin.py:190} INFO - New videos: 35
+[2025-05-26T02:33:45.616+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'fcbarcelona', 'new_links': ('https://www.tiktok.com/@fcbarcelona/video/7506651140134604054', 'https://www.tiktok.com/@fcbarcelona/video/7507991351561080086', 'https://www.tiktok.com/@fcbarcelona/video/7507262442334850326', 'https://www.tiktok.com/@fcbarcelona/video/7507737352765279510', 'https://www.tiktok.com/@fcbarcelona/video/7508500275586452758', 'https://www.tiktok.com/@fcbarcelona/video/7508486043914620182', 'https://www.tiktok.com/@fcbarcelona/video/7506197123545713942', 'https://www.tiktok.com/@fcbarcelona/video/7508017493231930646', 'https://www.tiktok.com/@fcbarcelona/video/7507377836584455446', 'https://www.tiktok.com/@fcbarcelona/video/7506828348518059286', 'https://www.tiktok.com/@fcbarcelona/video/7507009947150994710', 'https://www.tiktok.com/@fcbarcelona/video/7508464631933930774', 'https://www.tiktok.com/@fcbarcelona/video/7506250765917375766', 'https://www.tiktok.com/@fcbarcelona/video/7506293699584838934', 'https://www.tiktok.com/@fcbarcelona/video/7508439489254100226', 'https://www.tiktok.com/@fcbarcelona/video/7506868068753083670', 'https://www.tiktok.com/@fcbarcelona/video/7507656668268743958', 'https://www.tiktok.com/@fcbarcelona/video/7508307892278234390', 'https://www.tiktok.com/@fcbarcelona/video/7506989049702386966', 'https://www.tiktok.com/@fcbarcelona/video/7508378630611799318', 'https://www.tiktok.com/@fcbarcelona/video/7506957344346049814', 'https://www.tiktok.com/@fcbarcelona/video/7506275977920613654', 'https://www.tiktok.com/@fcbarcelona/video/7506530000934292758', 'https://www.tiktok.com/@fcbarcelona/video/7507331172498722070', 'https://www.tiktok.com/@fcbarcelona/video/7508494215811239190', 'https://www.tiktok.com/@fcbarcelona/video/7508468612391275798', 'https://www.tiktok.com/@fcbarcelona/video/7507325189407952150', 'https://www.tiktok.com/@fcbarcelona/video/7508478951140953366', 'https://www.tiktok.com/@fcbarcelona/video/7507604996901457174', 'https://www.tiktok.com/@fcbarcelona/video/7506315172978461974', 'https://www.tiktok.com/@fcbarcelona/video/7506632383668423958', 'https://www.tiktok.com/@fcbarcelona/video/7508517286995561750', 'https://www.tiktok.com/@fcbarcelona/video/7507548595067899158', 'https://www.tiktok.com/@fcbarcelona/video/7506976484033039638', 'https://www.tiktok.com/@fcbarcelona/video/7507337222031527190')}
+[2025-05-26T02:33:45.640+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-26T02:33:45.640+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tiktok_videos_scraper_dag, task_id=get_links_task, run_id=manual__2025-05-26T02:33:30.886026+00:00, execution_date=20250526T023330, start_date=20250526T023333, end_date=20250526T023345
+[2025-05-26T02:33:45.663+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-26T02:33:45.686+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-26T02:33:45.691+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

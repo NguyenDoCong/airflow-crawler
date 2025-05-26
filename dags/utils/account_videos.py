@@ -58,7 +58,7 @@ class AccountVideo(BaseFacebookScraper):
 
         return href_elements
 
-    def save_video_urls_to_database_pipeline(self, scrolls=10, user_id="") -> None:
+    def save_video_urls_to_database_pipeline(self, downloads=10, user_id="") -> None:
         """Pipeline to save video url to database"""
         # results = []
         id = user_id
@@ -71,68 +71,45 @@ class AccountVideo(BaseFacebookScraper):
             return {'id': id, 'new_links': []}
 
         rprint("[bold]Step 2 of 3 - Scrolling page[/bold]")
+
+        scrolls = 1
         
-        scroll_page(self._driver, scrolls=scrolls)
+        videos = []
 
-        rprint("[bold]Step 3 of 3 - Extract videos urls[/bold]")
-        try:
-            videos = self.scrape_video_urls()
+        while len(videos) < downloads:
+            scroll_page(self._driver, scrolls=scrolls)
+            rprint("[bold]Step 3 of 3 - Extract videos urls[/bold]")
+            try:
+                videos = self.scrape_video_urls()
 
-            if not videos:
-                output.print_no_data_info()
+                if not videos:
+                    output.print_no_data_info()
+                    self._driver.quit()
+                    self.success = False
+                    return {'id': id, 'new_links': []}
+                else:
+                    output.print_list(videos)
+                    rprint(
+                        "[bold red]Don't close the app![/bold red] Saving scraped data to database, it can take a while!"
+                    )
+            except Exception as e:
+                rprint(f"[red]Error while scraping videos: {e}[/red]")
                 self._driver.quit()
                 self.success = False
                 return {'id': id, 'new_links': []}
-            else:
-                output.print_list(videos)
-                rprint(
-                    "[bold red]Don't close the app![/bold red] Saving scraped data to database, it can take a while!"
-                )
-        except Exception as e:
-            rprint(f"[red]Error while scraping videos: {e}[/red]")
-            self._driver.quit()
-            self.success = False
-            return {'id': id, 'new_links': []}
-         
-        db_videos = get_info_by_user_id(platform="facebook", user_id=id)
-        for video in db_videos:
-            if video.url in videos:
-                videos.remove(video.url)
-        print(f"Remaining new videos: {len(videos)}")
+            
+            db_videos = get_info_by_user_id(platform="facebook", user_id=id)
+            for video in db_videos:
+                if video.url in videos:
+                    videos.remove(video.url)
+            print(f"Remaining new videos: {len(videos)}")
+            scrolls += 1
+
+        videos = videos[:downloads]  # Limit the number of new videos to downloads
 
         new_links = set(videos)
 
         print(f"New videos: {len(new_links)}")
-
-        # for link in new_links:
-        #     try:
-        #         video_id = extract_id(link)
-        #         # user_id = extract_user_id(link)
-        #     except Exception as e:
-        #         rprint(f"[red]Error while extracting video ID: {e}[/red]")
-        #         self._driver.quit()
-        #         self.success = False
-        #         return []
-        #     task_id = create_pending_video(video_id, user_id, link)
-        #     try:
-        #         file_path = download_video(link, Config.DOWNLOAD_DIRECTORY)
-                
-        #         if file_path:
-        #             update_video_status(video_id, TaskStatus.PROCESSING.value, platform="facebook")
-        #             result = {
-        #                 "video_id": video_id,
-        #                 "file_path": file_path,
-        #             }
-        #             print(f"Downloaded video {result['video_id']} to {result['file_path']}")
-        #             results.append(result)
-        #         else:
-        #             update_video_status(video_id, TaskStatus.FAILURE.value, platform="facebook", logs="Error download video")
-        #     except Exception as e:
-        #         # logs.log_error(f"An error occurred: {e}")
-        #         rprint(f"[red]Error while saving videos to DB or downloading: {e}[/red]")
-        #         self._driver.quit()
-        #         self.success = False
-        #         return []
 
         self._driver.quit()
         self.success = True

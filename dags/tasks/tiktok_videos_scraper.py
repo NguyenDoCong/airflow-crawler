@@ -44,6 +44,8 @@ def tiktok_videos_scraper(id = "therock",count = 10, ms_tokens=None, DOWNLOAD_DI
                         videos.remove(result.url)
                 # print(f"Remaining new videos: {len(videos)}")
 
+                videos = videos[:count]  # Giới hạn số lượng video mới lấy về
+
                 new_links = set(videos)
 
                 print(f"New videos: {len(new_links)}")

@@ -33,23 +33,12 @@ class ProfileScraper(BaseInstagramScraper):
         """Load cookies and refresh driver"""
         self._driver.refresh()
     
-    def extract_videos(self, scrolls=10):
+    def extract_videos(self, downloads=10):
         extracted_video_urls = []
         print("Extracting videos...")
         try:
             def extract_callback(driver):
-                # Click to reels tab
-                # reels_tab = self._driver.find_element(
-                #     By.XPATH, "//a[contains(@href, '/reels/')]"
-                # )
-                # reels_tab.click()
-                # # Wait for the page to load
-                # self._wait.until(
-                #     EC.presence_of_all_elements_located(
-                #         (By.TAG_NAME, "a")
-                #     )
-                # )
-                # Find all video elements
+
                 video_elements = self._driver.find_elements(By.TAG_NAME, "a")
                 print(f"Found {len(video_elements)} video tags")
                 for video_element in video_elements:
@@ -57,8 +46,10 @@ class ProfileScraper(BaseInstagramScraper):
                     if src_attribute and src_attribute not in extracted_video_urls and "/reel/" in src_attribute:
                         rprint(f"Extracted video URL: {src_attribute}")
                         extracted_video_urls.append(src_attribute)
-
-            scroll_page_callback(self._driver, extract_callback, scrolls=scrolls)
+            scrolls =1
+            while len(extracted_video_urls) < downloads:
+                scroll_page_callback(self._driver, extract_callback, scrolls=scrolls)
+                scrolls += 1
 
         except Exception as e:
             # logs.log_error(f"An error occurred while extracting videos: {e}")
@@ -70,7 +61,7 @@ class ProfileScraper(BaseInstagramScraper):
 
   
 
-    def pipeline_videos(self, id, scrolls=10):
+    def pipeline_videos(self, id, downloads=10):
         """
         Pipeline to scrape videos
         
@@ -81,7 +72,7 @@ class ProfileScraper(BaseInstagramScraper):
         # results = []
         try:
             rprint(f"[bold]Step 1 of 2 - Loading profile page[/bold]")
-            video_urls = self.extract_videos(scrolls=scrolls)
+            video_urls = self.extract_videos(downloads=downloads)
 
             if not video_urls:
                 print_no_data_info()
@@ -97,6 +88,8 @@ class ProfileScraper(BaseInstagramScraper):
                 if video.url in video_urls:
                     video_urls.remove(video.url)
             
+            video_urls = video_urls[:downloads]  # Limit the number of new videos
+            
             new_links = set(video_urls)
             print(f"New videos: {len(new_links)}")
 
@@ -104,27 +97,6 @@ class ProfileScraper(BaseInstagramScraper):
                 self.success = True
                 return {'id': id, 'new_links': []}
 
-            # for link in new_links:
-            #     try:
-            #         video_id = extract_id(link)
-            #         task_id = create_pending_video(video_id, id, link, platform='instagram')
-            #         file_path = download_video(link, Config.DOWNLOAD_DIRECTORY)
-                    
-            #         if file_path:
-            #             update_video_status(video_id, TaskStatus.PROCESSING.value, platform="instagram")
-            #             result = {
-            #                 "video_id": video_id,
-            #                 "file_path": file_path,
-            #             }
-            #             print(f"Downloaded video {result['video_id']} to {result['file_path']}")
-            #             results.append(result)
-            #         else:
-            #             update_video_status(video_id, TaskStatus.FAILURE.value, platform="instagram", logs="Error downloading video")
-            #     except Exception as e:
-            #         rprint(f"Error downloading video {link}: {str(e)}")
-            #         continue
-
-            # print(f"Downloaded {len(results)} new videos.")
             self.success = True
 
         except Exception as e:

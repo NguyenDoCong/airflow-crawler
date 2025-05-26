@@ -1,0 +1,1270 @@
+[2025-05-26T02:15:49.071+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-26T02:15:49.090+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.batch_download_task manual__2025-05-26T02:15:09.297662+00:00 [queued]>
+[2025-05-26T02:15:49.099+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.batch_download_task manual__2025-05-26T02:15:09.297662+00:00 [queued]>
+[2025-05-26T02:15:49.100+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-26T02:15:49.114+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): batch_download_task> on 2025-05-26 02:15:09.297662+00:00
+[2025-05-26T02:15:49.118+0000] {standard_task_runner.py:72} INFO - Started process 313 to run task
+[2025-05-26T02:15:49.121+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'batch_download_task', 'manual__2025-05-26T02:15:09.297662+00:00', '--job-id', '6716', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_fb.py', '--cfg-path', '/tmp/tmpitprwbps']
+[2025-05-26T02:15:49.123+0000] {standard_task_runner.py:105} INFO - Job 6716: Subtask batch_download_task
+[2025-05-26T02:15:49.174+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.batch_download_task manual__2025-05-26T02:15:09.297662+00:00 [running]> on host 9e147d34972d
+[2025-05-26T02:15:49.255+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='batch_download_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-26T02:15:09.297662+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-26T02:15:09.297662+00:00'
+[2025-05-26T02:15:49.256+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-26T02:15:49.259+0000] {logging_mixin.py:190} INFO - Starting batch download...
+[2025-05-26T02:15:49.438+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:15:49.438+0000] {logging_mixin.py:190} INFO - Downloading video from 340109543496083...
+[2025-05-26T02:15:49.680+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/340109543496083/
+[2025-05-26T02:15:49.680+0000] {logging_mixin.py:190} INFO - [facebook] 340109543496083: Downloading webpage
+[2025-05-26T02:15:51.062+0000] {logging_mixin.py:190} INFO - [info] 340109543496083: Downloading 1 format(s): 327047926608588a
+[2025-05-26T02:15:51.662+0000] {logging_mixin.py:190} INFO - [download] Destination: data/340109543496083
+[2025-05-26T02:15:51.663+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    4.01MiB at  952.39KiB/s ETA 00:04
+[2025-05-26T02:15:51.663+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    4.01MiB at    1.73MiB/s ETA 00:02
+[2025-05-26T02:15:51.663+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    4.01MiB at    3.16MiB/s ETA 00:01
+[2025-05-26T02:15:51.664+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    4.01MiB at    5.68MiB/s ETA 00:00
+[2025-05-26T02:15:51.667+0000] {logging_mixin.py:190} INFO - [download]   0.8% of    4.01MiB at    5.65MiB/s ETA 00:00
+[2025-05-26T02:15:51.670+0000] {logging_mixin.py:190} INFO - [download]   1.5% of    4.01MiB at    7.13MiB/s ETA 00:00
+[2025-05-26T02:15:51.676+0000] {logging_mixin.py:190} INFO - [download]   3.1% of    4.01MiB at    8.31MiB/s ETA 00:00
+[2025-05-26T02:15:51.689+0000] {logging_mixin.py:190} INFO - [download]   6.2% of    4.01MiB at    9.16MiB/s ETA 00:00
+[2025-05-26T02:15:51.714+0000] {logging_mixin.py:190} INFO - [download]  12.4% of    4.01MiB at    9.49MiB/s ETA 00:00
+[2025-05-26T02:15:51.763+0000] {logging_mixin.py:190} INFO - [download]  24.9% of    4.01MiB at    9.80MiB/s ETA 00:00
+[2025-05-26T02:15:51.863+0000] {logging_mixin.py:190} INFO - [download]  49.8% of    4.01MiB at    9.93MiB/s ETA 00:00
+[2025-05-26T02:15:52.061+0000] {logging_mixin.py:190} INFO - [download]  99.7% of    4.01MiB at   10.02MiB/s ETA 00:00
+[2025-05-26T02:15:52.061+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    4.01MiB at   10.03MiB/s ETA 00:00
+[2025-05-26T02:15:52.062+0000] {logging_mixin.py:190} INFO - [download] 100% of    4.01MiB in 00:00:00 at 4.02MiB/s   
+[2025-05-26T02:15:52.303+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/340109543496083"
+[2025-05-26T02:15:52.480+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/340109543496083.mp3
+[2025-05-26T02:15:54.859+0000] {logging_mixin.py:190} INFO - Deleting original file data/340109543496083 (pass -k to keep)
+[2025-05-26T02:15:54.863+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 340109543496083
+[2025-05-26T02:15:54.886+0000] {logging_mixin.py:190} INFO - Downloaded video 340109543496083 to data/340109543496083.mp3
+[2025-05-26T02:15:55.010+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:15:55.010+0000] {logging_mixin.py:190} INFO - Downloading video from 1732547871011243...
+[2025-05-26T02:15:55.041+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/1732547871011243/
+[2025-05-26T02:15:55.042+0000] {logging_mixin.py:190} INFO - [facebook] 1732547871011243: Downloading webpage
+[2025-05-26T02:15:56.711+0000] {logging_mixin.py:190} INFO - [info] 1732547871011243: Downloading 1 format(s): 680834104811293a
+[2025-05-26T02:15:56.764+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1732547871011243
+[2025-05-26T02:15:56.764+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   36.66MiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:15:56.767+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   36.66MiB at  783.30KiB/s ETA 00:48  
+[2025-05-26T02:15:56.768+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   36.66MiB at    1.50MiB/s ETA 00:24
+[2025-05-26T02:15:56.769+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   36.66MiB at    2.80MiB/s ETA 00:13
+[2025-05-26T02:15:56.769+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   36.66MiB at    5.15MiB/s ETA 00:07
+[2025-05-26T02:15:56.772+0000] {logging_mixin.py:190} INFO - [download]   0.2% of   36.66MiB at    6.98MiB/s ETA 00:05
+[2025-05-26T02:15:56.778+0000] {logging_mixin.py:190} INFO - [download]   0.3% of   36.66MiB at    8.36MiB/s ETA 00:04
+[2025-05-26T02:15:56.797+0000] {logging_mixin.py:190} INFO - [download]   0.7% of   36.66MiB at    7.46MiB/s ETA 00:04
+[2025-05-26T02:15:57.002+0000] {logging_mixin.py:190} INFO - [download]   1.4% of   36.66MiB at    2.09MiB/s ETA 00:17
+[2025-05-26T02:15:57.051+0000] {logging_mixin.py:190} INFO - [download]   2.7% of   36.66MiB at    3.47MiB/s ETA 00:10
+[2025-05-26T02:15:57.439+0000] {logging_mixin.py:190} INFO - [download]   5.5% of   36.66MiB at    2.96MiB/s ETA 00:11
+[2025-05-26T02:15:57.639+0000] {logging_mixin.py:190} INFO - [download]  10.9% of   36.66MiB at    4.57MiB/s ETA 00:07
+[2025-05-26T02:15:58.076+0000] {logging_mixin.py:190} INFO - [download]  21.8% of   36.66MiB at    6.09MiB/s ETA 00:04
+[2025-05-26T02:15:58.517+0000] {logging_mixin.py:190} INFO - [download]  32.7% of   36.66MiB at    6.84MiB/s ETA 00:03
+[2025-05-26T02:15:58.918+0000] {logging_mixin.py:190} INFO - [download]  43.6% of   36.66MiB at    7.43MiB/s ETA 00:02
+[2025-05-26T02:15:59.327+0000] {logging_mixin.py:190} INFO - [download]  54.6% of   36.66MiB at    7.80MiB/s ETA 00:02
+[2025-05-26T02:15:59.720+0000] {logging_mixin.py:190} INFO - [download]  65.5% of   36.66MiB at    8.12MiB/s ETA 00:01
+[2025-05-26T02:16:00.116+0000] {logging_mixin.py:190} INFO - [download]  76.4% of   36.66MiB at    8.35MiB/s ETA 00:01
+[2025-05-26T02:16:00.547+0000] {logging_mixin.py:190} INFO - [download]  87.3% of   36.66MiB at    8.46MiB/s ETA 00:00
+[2025-05-26T02:16:00.940+0000] {logging_mixin.py:190} INFO - [download]  98.2% of   36.66MiB at    8.62MiB/s ETA 00:00
+[2025-05-26T02:16:01.003+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   36.66MiB at    8.65MiB/s ETA 00:00
+[2025-05-26T02:16:01.006+0000] {logging_mixin.py:190} INFO - [download] 100% of   36.66MiB in 00:00:04 at 8.54MiB/s   
+[2025-05-26T02:16:01.008+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1732547871011243"
+[2025-05-26T02:16:01.275+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1732547871011243.mp3
+[2025-05-26T02:16:36.583+0000] {logging_mixin.py:190} INFO - Deleting original file data/1732547871011243 (pass -k to keep)
+[2025-05-26T02:16:36.589+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1732547871011243
+[2025-05-26T02:16:36.596+0000] {logging_mixin.py:190} INFO - Downloaded video 1732547871011243 to data/1732547871011243.mp3
+[2025-05-26T02:16:36.719+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:16:36.719+0000] {logging_mixin.py:190} INFO - Downloading video from 1859509068235762...
+[2025-05-26T02:16:36.749+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/1859509068235762/
+[2025-05-26T02:16:36.749+0000] {logging_mixin.py:190} INFO - [facebook] 1859509068235762: Downloading webpage
+[2025-05-26T02:16:38.610+0000] {logging_mixin.py:190} INFO - [info] 1859509068235762: Downloading 1 format(s): 2257799398014508a
+[2025-05-26T02:16:38.870+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1859509068235762
+[2025-05-26T02:16:38.871+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    6.33MiB at  903.36KiB/s ETA 00:07
+[2025-05-26T02:16:38.871+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    6.33MiB at    1.77MiB/s ETA 00:03
+[2025-05-26T02:16:38.871+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    6.33MiB at    3.35MiB/s ETA 00:01
+[2025-05-26T02:16:38.872+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    6.33MiB at    5.86MiB/s ETA 00:01
+[2025-05-26T02:16:38.874+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    6.33MiB at    6.79MiB/s ETA 00:00
+[2025-05-26T02:16:38.877+0000] {logging_mixin.py:190} INFO - [download]   1.0% of    6.33MiB at    8.20MiB/s ETA 00:00
+[2025-05-26T02:16:38.883+0000] {logging_mixin.py:190} INFO - [download]   2.0% of    6.33MiB at    9.18MiB/s ETA 00:00
+[2025-05-26T02:16:38.896+0000] {logging_mixin.py:190} INFO - [download]   3.9% of    6.33MiB at    9.25MiB/s ETA 00:00
+[2025-05-26T02:16:38.921+0000] {logging_mixin.py:190} INFO - [download]   7.9% of    6.33MiB at    9.69MiB/s ETA 00:00
+[2025-05-26T02:16:39.185+0000] {logging_mixin.py:190} INFO - [download]  15.8% of    6.33MiB at    3.17MiB/s ETA 00:01
+[2025-05-26T02:16:39.285+0000] {logging_mixin.py:190} INFO - [download]  31.6% of    6.33MiB at    4.81MiB/s ETA 00:00
+[2025-05-26T02:16:39.554+0000] {logging_mixin.py:190} INFO - [download]  63.2% of    6.33MiB at    5.84MiB/s ETA 00:00
+[2025-05-26T02:16:39.832+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    6.33MiB at    6.57MiB/s ETA 00:00
+[2025-05-26T02:16:39.833+0000] {logging_mixin.py:190} INFO - [download] 100% of    6.33MiB in 00:00:01 at 5.19MiB/s   
+[2025-05-26T02:16:39.835+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1859509068235762"
+[2025-05-26T02:16:39.951+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1859509068235762.mp3
+[2025-05-26T02:16:48.071+0000] {logging_mixin.py:190} INFO - Deleting original file data/1859509068235762 (pass -k to keep)
+[2025-05-26T02:16:48.075+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1859509068235762
+[2025-05-26T02:16:48.080+0000] {logging_mixin.py:190} INFO - Downloaded video 1859509068235762 to data/1859509068235762.mp3
+[2025-05-26T02:16:48.208+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:16:48.209+0000] {logging_mixin.py:190} INFO - Downloading video from 24538181259116167...
+[2025-05-26T02:16:48.240+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/24538181259116167/
+[2025-05-26T02:16:48.240+0000] {logging_mixin.py:190} INFO - [facebook] 24538181259116167: Downloading webpage
+[2025-05-26T02:16:50.031+0000] {logging_mixin.py:190} INFO - [info] 24538181259116167: Downloading 1 format(s): 1804860576742731a
+[2025-05-26T02:16:50.086+0000] {logging_mixin.py:190} INFO - [download] Destination: data/24538181259116167
+[2025-05-26T02:16:50.087+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  497.72KiB at  717.10KiB/s ETA 00:00
+[2025-05-26T02:16:50.087+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  497.72KiB at    1.34MiB/s ETA 00:00
+[2025-05-26T02:16:50.088+0000] {logging_mixin.py:190} INFO - [download]   1.4% of  497.72KiB at    2.48MiB/s ETA 00:00
+[2025-05-26T02:16:50.089+0000] {logging_mixin.py:190} INFO - [download]   3.0% of  497.72KiB at    4.24MiB/s ETA 00:00
+[2025-05-26T02:16:50.092+0000] {logging_mixin.py:190} INFO - [download]   6.2% of  497.72KiB at    4.77MiB/s ETA 00:00
+[2025-05-26T02:16:50.095+0000] {logging_mixin.py:190} INFO - [download]  12.7% of  497.72KiB at    6.54MiB/s ETA 00:00
+[2025-05-26T02:16:50.103+0000] {logging_mixin.py:190} INFO - [download]  25.5% of  497.72KiB at    7.23MiB/s ETA 00:00
+[2025-05-26T02:16:50.115+0000] {logging_mixin.py:190} INFO - [download]  51.2% of  497.72KiB at    8.49MiB/s ETA 00:00
+[2025-05-26T02:16:50.138+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  497.72KiB at    9.20MiB/s ETA 00:00
+[2025-05-26T02:16:50.139+0000] {logging_mixin.py:190} INFO - [download] 100% of  497.72KiB in 00:00:00 at 4.63MiB/s   
+[2025-05-26T02:16:50.141+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/24538181259116167"
+[2025-05-26T02:16:50.239+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/24538181259116167.mp3
+[2025-05-26T02:16:50.925+0000] {logging_mixin.py:190} INFO - Deleting original file data/24538181259116167 (pass -k to keep)
+[2025-05-26T02:16:50.929+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 24538181259116167
+[2025-05-26T02:16:50.934+0000] {logging_mixin.py:190} INFO - Downloaded video 24538181259116167 to data/24538181259116167.mp3
+[2025-05-26T02:16:51.073+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:16:51.074+0000] {logging_mixin.py:190} INFO - Downloading video from 517985985440934...
+[2025-05-26T02:16:51.105+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/517985985440934/
+[2025-05-26T02:16:51.105+0000] {logging_mixin.py:190} INFO - [facebook] 517985985440934: Downloading webpage
+[2025-05-26T02:16:52.290+0000] {logging_mixin.py:190} INFO - [info] 517985985440934: Downloading 1 format(s): 777724474464062a
+[2025-05-26T02:16:52.527+0000] {logging_mixin.py:190} INFO - [download] Destination: data/517985985440934
+[2025-05-26T02:16:52.528+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    4.14MiB at  622.30KiB/s ETA 00:06
+[2025-05-26T02:16:52.530+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    4.14MiB at  866.53KiB/s ETA 00:04
+[2025-05-26T02:16:52.531+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    4.14MiB at    1.55MiB/s ETA 00:02
+[2025-05-26T02:16:52.531+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    4.14MiB at    2.81MiB/s ETA 00:01
+[2025-05-26T02:16:52.532+0000] {logging_mixin.py:190} INFO - [download]   0.7% of    4.14MiB at    5.16MiB/s ETA 00:00
+[2025-05-26T02:16:52.533+0000] {logging_mixin.py:190} INFO - [download]   1.5% of    4.14MiB at    9.50MiB/s ETA 00:00
+[2025-05-26T02:16:52.539+0000] {logging_mixin.py:190} INFO - [download]   3.0% of    4.14MiB at    9.30MiB/s ETA 00:00
+[2025-05-26T02:16:52.696+0000] {logging_mixin.py:190} INFO - [download]   6.0% of    4.14MiB at    1.46MiB/s ETA 00:02
+[2025-05-26T02:16:52.726+0000] {logging_mixin.py:190} INFO - [download]  12.0% of    4.14MiB at    2.50MiB/s ETA 00:01
+[2025-05-26T02:16:52.799+0000] {logging_mixin.py:190} INFO - [download]  24.1% of    4.14MiB at    3.67MiB/s ETA 00:00
+[2025-05-26T02:16:50.426+0000] {logging_mixin.py:190} INFO - [download]  48.2% of    4.14MiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:16:50.653+0000] {logging_mixin.py:190} INFO - [download]  96.5% of    4.14MiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:16:50.666+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    4.14MiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:16:50.667+0000] {logging_mixin.py:190} INFO - [download] 100% of    4.14MiB in -1:59:58 at N/A/s         
+[2025-05-26T02:16:50.669+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/517985985440934"
+[2025-05-26T02:16:50.777+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/517985985440934.mp3
+[2025-05-26T02:16:55.680+0000] {logging_mixin.py:190} INFO - Deleting original file data/517985985440934 (pass -k to keep)
+[2025-05-26T02:16:55.683+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 517985985440934
+[2025-05-26T02:16:55.689+0000] {logging_mixin.py:190} INFO - Downloaded video 517985985440934 to data/517985985440934.mp3
+[2025-05-26T02:16:55.823+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:16:55.823+0000] {logging_mixin.py:190} INFO - Downloading video from 2551774658431227...
+[2025-05-26T02:16:55.855+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/2551774658431227/
+[2025-05-26T02:16:55.855+0000] {logging_mixin.py:190} INFO - [facebook] 2551774658431227: Downloading webpage
+[2025-05-26T02:16:57.057+0000] {logging_mixin.py:190} INFO - [info] 2551774658431227: Downloading 1 format(s): 601690188769080a
+[2025-05-26T02:16:57.298+0000] {logging_mixin.py:190} INFO - [download] Destination: data/2551774658431227
+[2025-05-26T02:16:57.300+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    3.89MiB at  573.62KiB/s ETA 00:07
+[2025-05-26T02:16:57.301+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    3.89MiB at  922.43KiB/s ETA 00:04
+[2025-05-26T02:16:57.302+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    3.89MiB at    1.66MiB/s ETA 00:02
+[2025-05-26T02:16:57.303+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    3.89MiB at    3.02MiB/s ETA 00:01
+[2025-05-26T02:16:57.303+0000] {logging_mixin.py:190} INFO - [download]   0.8% of    3.89MiB at    5.46MiB/s ETA 00:00
+[2025-05-26T02:16:57.304+0000] {logging_mixin.py:190} INFO - [download]   1.6% of    3.89MiB at   10.01MiB/s ETA 00:00
+[2025-05-26T02:16:57.311+0000] {logging_mixin.py:190} INFO - [download]   3.2% of    3.89MiB at    9.42MiB/s ETA 00:00
+[2025-05-26T02:16:57.484+0000] {logging_mixin.py:190} INFO - [download]   6.4% of    3.89MiB at    1.34MiB/s ETA 00:02
+[2025-05-26T02:16:57.508+0000] {logging_mixin.py:190} INFO - [download]  12.8% of    3.89MiB at    2.37MiB/s ETA 00:01
+[2025-05-26T02:16:57.558+0000] {logging_mixin.py:190} INFO - [download]  25.7% of    3.89MiB at    3.84MiB/s ETA 00:00
+[2025-05-26T02:16:57.657+0000] {logging_mixin.py:190} INFO - [download]  51.4% of    3.89MiB at    5.57MiB/s ETA 00:00
+[2025-05-26T02:16:57.846+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    3.89MiB at    7.09MiB/s ETA 00:00
+[2025-05-26T02:16:57.847+0000] {logging_mixin.py:190} INFO - [download] 100% of    3.89MiB in 00:00:00 at 4.94MiB/s   
+[2025-05-26T02:16:57.849+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/2551774658431227"
+[2025-05-26T02:16:57.957+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/2551774658431227.mp3
+[2025-05-26T02:17:02.526+0000] {logging_mixin.py:190} INFO - Deleting original file data/2551774658431227 (pass -k to keep)
+[2025-05-26T02:17:02.529+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 2551774658431227
+[2025-05-26T02:17:02.534+0000] {logging_mixin.py:190} INFO - Downloaded video 2551774658431227 to data/2551774658431227.mp3
+[2025-05-26T02:17:02.682+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:17:02.683+0000] {logging_mixin.py:190} INFO - Downloading video from 687439038759322...
+[2025-05-26T02:17:02.713+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/687439038759322/
+[2025-05-26T02:17:02.713+0000] {logging_mixin.py:190} INFO - [facebook] 687439038759322: Downloading webpage
+[2025-05-26T02:17:04.103+0000] {logging_mixin.py:190} INFO - [info] 687439038759322: Downloading 1 format(s): 919304939612236a
+[2025-05-26T02:17:04.409+0000] {logging_mixin.py:190} INFO - [download] Destination: data/687439038759322
+[2025-05-26T02:17:04.410+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    2.30MiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:17:04.411+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    2.30MiB at    1.68MiB/s ETA 00:01  
+[2025-05-26T02:17:04.411+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    2.30MiB at    3.17MiB/s ETA 00:00
+[2025-05-26T02:17:04.412+0000] {logging_mixin.py:190} INFO - [download]   0.6% of    2.30MiB at    5.76MiB/s ETA 00:00
+[2025-05-26T02:17:04.414+0000] {logging_mixin.py:190} INFO - [download]   1.3% of    2.30MiB at    6.70MiB/s ETA 00:00
+[2025-05-26T02:17:04.417+0000] {logging_mixin.py:190} INFO - [download]   2.7% of    2.30MiB at    8.00MiB/s ETA 00:00
+[2025-05-26T02:17:04.423+0000] {logging_mixin.py:190} INFO - [download]   5.4% of    2.30MiB at    8.98MiB/s ETA 00:00
+[2025-05-26T02:17:04.436+0000] {logging_mixin.py:190} INFO - [download]  10.8% of    2.30MiB at    9.35MiB/s ETA 00:00
+[2025-05-26T02:17:04.460+0000] {logging_mixin.py:190} INFO - [download]  21.7% of    2.30MiB at    9.82MiB/s ETA 00:00
+[2025-05-26T02:17:04.510+0000] {logging_mixin.py:190} INFO - [download]  43.4% of    2.30MiB at    9.93MiB/s ETA 00:00
+[2025-05-26T02:17:04.612+0000] {logging_mixin.py:190} INFO - [download]  86.9% of    2.30MiB at    9.85MiB/s ETA 00:00
+[2025-05-26T02:17:04.641+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    2.30MiB at    9.90MiB/s ETA 00:00
+[2025-05-26T02:17:04.642+0000] {logging_mixin.py:190} INFO - [download] 100% of    2.30MiB in 00:00:00 at 4.29MiB/s   
+[2025-05-26T02:17:04.644+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/687439038759322"
+[2025-05-26T02:17:04.741+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/687439038759322.mp3
+[2025-05-26T02:17:09.091+0000] {logging_mixin.py:190} INFO - Deleting original file data/687439038759322 (pass -k to keep)
+[2025-05-26T02:17:09.094+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 687439038759322
+[2025-05-26T02:17:09.102+0000] {logging_mixin.py:190} INFO - Downloaded video 687439038759322 to data/687439038759322.mp3
+[2025-05-26T02:17:09.228+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:17:09.228+0000] {logging_mixin.py:190} INFO - Downloading video from 1199728748139131...
+[2025-05-26T02:17:09.258+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/1199728748139131/
+[2025-05-26T02:17:09.258+0000] {logging_mixin.py:190} INFO - [facebook] 1199728748139131: Downloading webpage
+[2025-05-26T02:17:11.190+0000] {logging_mixin.py:190} INFO - [info] 1199728748139131: Downloading 1 format(s): 677186261955533a
+[2025-05-26T02:17:11.228+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1199728748139131
+[2025-05-26T02:17:11.228+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.16MiB at  849.05KiB/s ETA 00:01
+[2025-05-26T02:17:11.231+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    1.16MiB at  740.17KiB/s ETA 00:01
+[2025-05-26T02:17:11.232+0000] {logging_mixin.py:190} INFO - [download]   0.6% of    1.16MiB at    1.48MiB/s ETA 00:00
+[2025-05-26T02:17:11.232+0000] {logging_mixin.py:190} INFO - [download]   1.3% of    1.16MiB at    2.90MiB/s ETA 00:00
+[2025-05-26T02:17:11.233+0000] {logging_mixin.py:190} INFO - [download]   2.6% of    1.16MiB at    5.37MiB/s ETA 00:00
+[2025-05-26T02:17:11.236+0000] {logging_mixin.py:190} INFO - [download]   5.3% of    1.16MiB at    6.65MiB/s ETA 00:00
+[2025-05-26T02:17:11.243+0000] {logging_mixin.py:190} INFO - [download]  10.7% of    1.16MiB at    8.06MiB/s ETA 00:00
+[2025-05-26T02:17:11.255+0000] {logging_mixin.py:190} INFO - [download]  21.5% of    1.16MiB at    9.06MiB/s ETA 00:00
+[2025-05-26T02:17:11.280+0000] {logging_mixin.py:190} INFO - [download]  43.1% of    1.16MiB at    9.48MiB/s ETA 00:00
+[2025-05-26T02:17:11.328+0000] {logging_mixin.py:190} INFO - [download]  86.2% of    1.16MiB at    9.91MiB/s ETA 00:00
+[2025-05-26T02:17:11.343+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.16MiB at   10.00MiB/s ETA 00:00
+[2025-05-26T02:17:11.344+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.16MiB in 00:00:00 at 7.73MiB/s   
+[2025-05-26T02:17:11.346+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1199728748139131"
+[2025-05-26T02:17:11.441+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1199728748139131.mp3
+[2025-05-26T02:17:13.103+0000] {logging_mixin.py:190} INFO - Deleting original file data/1199728748139131 (pass -k to keep)
+[2025-05-26T02:17:13.107+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1199728748139131
+[2025-05-26T02:17:13.112+0000] {logging_mixin.py:190} INFO - Downloaded video 1199728748139131 to data/1199728748139131.mp3
+[2025-05-26T02:17:13.248+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:17:13.249+0000] {logging_mixin.py:190} INFO - Downloading video from 1029143837514002...
+[2025-05-26T02:17:13.278+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/1029143837514002/
+[2025-05-26T02:17:13.278+0000] {logging_mixin.py:190} INFO - [facebook] 1029143837514002: Downloading webpage
+[2025-05-26T02:17:14.529+0000] {logging_mixin.py:190} INFO - [info] 1029143837514002: Downloading 1 format(s): 1400315788059632a
+[2025-05-26T02:17:14.774+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1029143837514002
+[2025-05-26T02:17:14.774+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.30MiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:17:14.775+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.30MiB at    2.43MiB/s ETA 00:00  
+[2025-05-26T02:17:14.775+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    1.30MiB at    4.23MiB/s ETA 00:00
+[2025-05-26T02:17:14.776+0000] {logging_mixin.py:190} INFO - [download]   1.1% of    1.30MiB at    7.25MiB/s ETA 00:00
+[2025-05-26T02:17:14.778+0000] {logging_mixin.py:190} INFO - [download]   2.3% of    1.30MiB at    7.70MiB/s ETA 00:00
+[2025-05-26T02:17:14.781+0000] {logging_mixin.py:190} INFO - [download]   4.7% of    1.30MiB at    8.68MiB/s ETA 00:00
+[2025-05-26T02:17:14.787+0000] {logging_mixin.py:190} INFO - [download]   9.6% of    1.30MiB at    9.32MiB/s ETA 00:00
+[2025-05-26T02:17:14.856+0000] {logging_mixin.py:190} INFO - [download]  19.2% of    1.30MiB at    3.03MiB/s ETA 00:00
+[2025-05-26T02:17:14.881+0000] {logging_mixin.py:190} INFO - [download]  38.5% of    1.30MiB at    4.67MiB/s ETA 00:00
+[2025-05-26T02:17:14.930+0000] {logging_mixin.py:190} INFO - [download]  77.1% of    1.30MiB at    6.38MiB/s ETA 00:00
+[2025-05-26T02:17:14.959+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.30MiB at    6.98MiB/s ETA 00:00
+[2025-05-26T02:17:14.960+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.30MiB in 00:00:00 at 3.02MiB/s   
+[2025-05-26T02:17:14.962+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1029143837514002"
+[2025-05-26T02:17:15.056+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1029143837514002.mp3
+[2025-05-26T02:17:16.640+0000] {logging_mixin.py:190} INFO - Deleting original file data/1029143837514002 (pass -k to keep)
+[2025-05-26T02:17:16.643+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1029143837514002
+[2025-05-26T02:17:16.648+0000] {logging_mixin.py:190} INFO - Downloaded video 1029143837514002 to data/1029143837514002.mp3
+[2025-05-26T02:17:16.770+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:17:16.771+0000] {logging_mixin.py:190} INFO - Downloading video from 1214537733485734...
+[2025-05-26T02:17:16.802+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/1214537733485734/
+[2025-05-26T02:17:16.802+0000] {logging_mixin.py:190} INFO - [facebook] 1214537733485734: Downloading webpage
+[2025-05-26T02:17:18.386+0000] {logging_mixin.py:190} INFO - [facebook] 1214537733485734: Downloading webpage
+[2025-05-26T02:17:18.615+0000] {logging_mixin.py:190} WARNING - ERROR: [facebook] 1214537733485734: Cannot parse data; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+[2025-05-26T02:17:18.617+0000] {logging_mixin.py:190} INFO - 
+Error downloading video using yt-dlp: ERROR: [facebook] 1214537733485734: Cannot parse data; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+[2025-05-26T02:17:20.836+0000] {logging_mixin.py:190} INFO - Downloaded video 1214537733485734 to data/1214537733485734.mp3
+[2025-05-26T02:17:20.964+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:17:20.965+0000] {logging_mixin.py:190} INFO - Downloading video from 266768487828041...
+[2025-05-26T02:17:21.018+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/266768487828041/
+[2025-05-26T02:17:21.018+0000] {logging_mixin.py:190} INFO - [facebook] 266768487828041: Downloading webpage
+[2025-05-26T02:17:22.274+0000] {logging_mixin.py:190} INFO - [info] 266768487828041: Downloading 1 format(s): 1025310539129812a
+[2025-05-26T02:17:22.464+0000] {logging_mixin.py:190} INFO - [download] Destination: data/266768487828041
+[2025-05-26T02:17:22.465+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    3.61MiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:17:22.465+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    3.61MiB at    1.77MiB/s ETA 00:02  
+[2025-05-26T02:17:22.466+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    3.61MiB at    3.09MiB/s ETA 00:01
+[2025-05-26T02:17:22.466+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    3.61MiB at    5.19MiB/s ETA 00:00
+[2025-05-26T02:17:22.468+0000] {logging_mixin.py:190} INFO - [download]   0.8% of    3.61MiB at    7.03MiB/s ETA 00:00
+[2025-05-26T02:17:22.472+0000] {logging_mixin.py:190} INFO - [download]   1.7% of    3.61MiB at    7.91MiB/s ETA 00:00
+[2025-05-26T02:17:22.477+0000] {logging_mixin.py:190} INFO - [download]   3.4% of    3.61MiB at    9.13MiB/s ETA 00:00
+[2025-05-26T02:17:22.490+0000] {logging_mixin.py:190} INFO - [download]   6.9% of    3.61MiB at    9.60MiB/s ETA 00:00
+[2025-05-26T02:17:22.594+0000] {logging_mixin.py:190} INFO - [download]  13.8% of    3.61MiB at    3.82MiB/s ETA 00:00
+[2025-05-26T02:17:22.643+0000] {logging_mixin.py:190} INFO - [download]  27.6% of    3.61MiB at    5.56MiB/s ETA 00:00
+[2025-05-26T02:17:22.744+0000] {logging_mixin.py:190} INFO - [download]  55.3% of    3.61MiB at    7.13MiB/s ETA 00:00
+[2025-05-26T02:17:20.403+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    3.61MiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:17:20.405+0000] {logging_mixin.py:190} INFO - [download] 100% of    3.61MiB in -1:59:58 at N/A/s         
+[2025-05-26T02:17:20.408+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/266768487828041"
+[2025-05-26T02:17:20.565+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/266768487828041.mp3
+[2025-05-26T02:17:25.423+0000] {logging_mixin.py:190} INFO - Deleting original file data/266768487828041 (pass -k to keep)
+[2025-05-26T02:17:25.426+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 266768487828041
+[2025-05-26T02:17:25.433+0000] {logging_mixin.py:190} INFO - Downloaded video 266768487828041 to data/266768487828041.mp3
+[2025-05-26T02:17:25.557+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:17:25.558+0000] {logging_mixin.py:190} INFO - Downloading video from 1214325173492633...
+[2025-05-26T02:17:25.588+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/1214325173492633/
+[2025-05-26T02:17:25.588+0000] {logging_mixin.py:190} INFO - [facebook] 1214325173492633: Downloading webpage
+[2025-05-26T02:17:27.357+0000] {logging_mixin.py:190} INFO - [info] 1214325173492633: Downloading 1 format(s): 1047667127425045a
+[2025-05-26T02:17:27.394+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1214325173492633
+[2025-05-26T02:17:27.394+0000] {logging_mixin.py:190} INFO - [download]   0.0% of  109.67MiB at  623.50KiB/s ETA 03:00
+[2025-05-26T02:17:27.397+0000] {logging_mixin.py:190} INFO - [download]   0.0% of  109.67MiB at  721.54KiB/s ETA 02:35
+[2025-05-26T02:17:27.397+0000] {logging_mixin.py:190} INFO - [download]   0.0% of  109.67MiB at    1.47MiB/s ETA 01:14
+[2025-05-26T02:17:27.398+0000] {logging_mixin.py:190} INFO - [download]   0.0% of  109.67MiB at    2.91MiB/s ETA 00:37
+[2025-05-26T02:17:27.400+0000] {logging_mixin.py:190} INFO - [download]   0.0% of  109.67MiB at    4.46MiB/s ETA 00:24
+[2025-05-26T02:17:27.404+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  109.67MiB at    5.29MiB/s ETA 00:20
+[2025-05-26T02:17:27.410+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  109.67MiB at    7.04MiB/s ETA 00:15
+[2025-05-26T02:17:27.423+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  109.67MiB at    8.23MiB/s ETA 00:13
+[2025-05-26T02:17:27.637+0000] {logging_mixin.py:190} INFO - [download]   0.5% of  109.67MiB at    2.05MiB/s ETA 00:53
+[2025-05-26T02:17:27.690+0000] {logging_mixin.py:190} INFO - [download]   0.9% of  109.67MiB at    3.36MiB/s ETA 00:32
+[2025-05-26T02:17:27.800+0000] {logging_mixin.py:190} INFO - [download]   1.8% of  109.67MiB at    4.90MiB/s ETA 00:21
+[2025-05-26T02:17:28.167+0000] {logging_mixin.py:190} INFO - [download]   3.6% of  109.67MiB at    5.17MiB/s ETA 00:20
+[2025-05-26T02:17:28.697+0000] {logging_mixin.py:190} INFO - [download]   7.3% of  109.67MiB at    6.14MiB/s ETA 00:16
+[2025-05-26T02:17:29.140+0000] {logging_mixin.py:190} INFO - [download]  10.9% of  109.67MiB at    6.87MiB/s ETA 00:14
+[2025-05-26T02:17:29.600+0000] {logging_mixin.py:190} INFO - [download]  14.6% of  109.67MiB at    7.25MiB/s ETA 00:12
+[2025-05-26T02:17:30.048+0000] {logging_mixin.py:190} INFO - [download]  18.2% of  109.67MiB at    7.53MiB/s ETA 00:11
+[2025-05-26T02:17:30.678+0000] {logging_mixin.py:190} INFO - [download]  21.9% of  109.67MiB at    7.31MiB/s ETA 00:11
+[2025-05-26T02:17:31.127+0000] {logging_mixin.py:190} INFO - [download]  25.5% of  109.67MiB at    7.50MiB/s ETA 00:10
+[2025-05-26T02:17:31.578+0000] {logging_mixin.py:190} INFO - [download]  29.2% of  109.67MiB at    7.65MiB/s ETA 00:10
+[2025-05-26T02:17:31.984+0000] {logging_mixin.py:190} INFO - [download]  32.8% of  109.67MiB at    7.84MiB/s ETA 00:09
+[2025-05-26T02:17:32.390+0000] {logging_mixin.py:190} INFO - [download]  36.5% of  109.67MiB at    8.00MiB/s ETA 00:08
+[2025-05-26T02:17:32.794+0000] {logging_mixin.py:190} INFO - [download]  40.1% of  109.67MiB at    8.15MiB/s ETA 00:08
+[2025-05-26T02:17:33.190+0000] {logging_mixin.py:190} INFO - [download]  43.8% of  109.67MiB at    8.28MiB/s ETA 00:07
+[2025-05-26T02:17:33.613+0000] {logging_mixin.py:190} INFO - [download]  47.4% of  109.67MiB at    8.36MiB/s ETA 00:06
+[2025-05-26T02:17:34.026+0000] {logging_mixin.py:190} INFO - [download]  51.1% of  109.67MiB at    8.44MiB/s ETA 00:06
+[2025-05-26T02:17:34.431+0000] {logging_mixin.py:190} INFO - [download]  54.7% of  109.67MiB at    8.53MiB/s ETA 00:05
+[2025-05-26T02:17:34.859+0000] {logging_mixin.py:190} INFO - [download]  58.4% of  109.67MiB at    8.57MiB/s ETA 00:05
+[2025-05-26T02:17:35.334+0000] {logging_mixin.py:190} INFO - [download]  62.0% of  109.67MiB at    8.56MiB/s ETA 00:04
+[2025-05-26T02:17:35.729+0000] {logging_mixin.py:190} INFO - [download]  65.7% of  109.67MiB at    8.64MiB/s ETA 00:04
+[2025-05-26T02:17:36.128+0000] {logging_mixin.py:190} INFO - [download]  69.3% of  109.67MiB at    8.70MiB/s ETA 00:03
+[2025-05-26T02:17:36.522+0000] {logging_mixin.py:190} INFO - [download]  72.9% of  109.67MiB at    8.76MiB/s ETA 00:03
+[2025-05-26T02:17:36.935+0000] {logging_mixin.py:190} INFO - [download]  76.6% of  109.67MiB at    8.80MiB/s ETA 00:02
+[2025-05-26T02:17:37.330+0000] {logging_mixin.py:190} INFO - [download]  80.2% of  109.67MiB at    8.86MiB/s ETA 00:02
+[2025-05-26T02:17:37.761+0000] {logging_mixin.py:190} INFO - [download]  83.9% of  109.67MiB at    8.87MiB/s ETA 00:01
+[2025-05-26T02:17:38.155+0000] {logging_mixin.py:190} INFO - [download]  87.5% of  109.67MiB at    8.92MiB/s ETA 00:01
+[2025-05-26T02:17:38.582+0000] {logging_mixin.py:190} INFO - [download]  91.2% of  109.67MiB at    8.94MiB/s ETA 00:01
+[2025-05-26T02:17:38.975+0000] {logging_mixin.py:190} INFO - [download]  94.8% of  109.67MiB at    8.98MiB/s ETA 00:00
+[2025-05-26T02:17:39.372+0000] {logging_mixin.py:190} INFO - [download]  98.5% of  109.67MiB at    9.02MiB/s ETA 00:00
+[2025-05-26T02:17:39.542+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  109.67MiB at    9.03MiB/s ETA 00:00
+[2025-05-26T02:17:39.555+0000] {logging_mixin.py:190} INFO - [download] 100% of  109.67MiB in 00:00:12 at 8.99MiB/s   
+[2025-05-26T02:17:39.557+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1214325173492633"
+[2025-05-26T02:17:40.242+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1214325173492633.mp3
+[2025-05-26T02:19:22.320+0000] {logging_mixin.py:190} INFO - Deleting original file data/1214325173492633 (pass -k to keep)
+[2025-05-26T02:19:22.330+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1214325173492633
+[2025-05-26T02:19:22.339+0000] {logging_mixin.py:190} INFO - Downloaded video 1214325173492633 to data/1214325173492633.mp3
+[2025-05-26T02:19:22.479+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:19:22.479+0000] {logging_mixin.py:190} INFO - Downloading video from 1487364068892348...
+[2025-05-26T02:19:22.509+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/1487364068892348/
+[2025-05-26T02:19:22.510+0000] {logging_mixin.py:190} INFO - [facebook] 1487364068892348: Downloading webpage
+[2025-05-26T02:19:24.321+0000] {logging_mixin.py:190} INFO - [info] 1487364068892348: Downloading 1 format(s): 987559083205374a
+[2025-05-26T02:19:24.353+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1487364068892348
+[2025-05-26T02:19:24.353+0000] {logging_mixin.py:190} INFO - [download]   1.0% of   99.56KiB at  593.25KiB/s ETA 00:00
+[2025-05-26T02:19:24.355+0000] {logging_mixin.py:190} INFO - [download]   3.0% of   99.56KiB at 1010.11KiB/s ETA 00:00
+[2025-05-26T02:19:24.355+0000] {logging_mixin.py:190} INFO - [download]   7.0% of   99.56KiB at    1.96MiB/s ETA 00:00
+[2025-05-26T02:19:24.355+0000] {logging_mixin.py:190} INFO - [download]  15.1% of   99.56KiB at    3.73MiB/s ETA 00:00
+[2025-05-26T02:19:24.357+0000] {logging_mixin.py:190} INFO - [download]  31.1% of   99.56KiB at    5.84MiB/s ETA 00:00
+[2025-05-26T02:19:24.360+0000] {logging_mixin.py:190} INFO - [download]  63.3% of   99.56KiB at    7.07MiB/s ETA 00:00
+[2025-05-26T02:19:24.364+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   99.56KiB at    8.12MiB/s ETA 00:00
+[2025-05-26T02:19:24.364+0000] {logging_mixin.py:190} INFO - [download] 100% of   99.56KiB in 00:00:00 at 2.49MiB/s   
+[2025-05-26T02:19:24.366+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1487364068892348"
+[2025-05-26T02:19:24.520+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1487364068892348.mp3
+[2025-05-26T02:19:24.681+0000] {logging_mixin.py:190} INFO - Deleting original file data/1487364068892348 (pass -k to keep)
+[2025-05-26T02:19:24.686+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1487364068892348
+[2025-05-26T02:19:24.691+0000] {logging_mixin.py:190} INFO - Downloaded video 1487364068892348 to data/1487364068892348.mp3
+[2025-05-26T02:19:24.817+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:19:24.817+0000] {logging_mixin.py:190} INFO - Downloading video from 1266379751712442...
+[2025-05-26T02:19:24.849+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/1266379751712442/
+[2025-05-26T02:19:24.849+0000] {logging_mixin.py:190} INFO - [facebook] 1266379751712442: Downloading webpage
+[2025-05-26T02:19:26.899+0000] {logging_mixin.py:190} INFO - [info] 1266379751712442: Downloading 1 format(s): 1819878038743763a
+[2025-05-26T02:19:26.941+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1266379751712442
+[2025-05-26T02:19:26.942+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   69.34MiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:19:26.943+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   69.34MiB at    1.29MiB/s ETA 00:53  
+[2025-05-26T02:19:26.944+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   69.34MiB at    2.28MiB/s ETA 00:30
+[2025-05-26T02:19:26.945+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   69.34MiB at    4.06MiB/s ETA 00:17
+[2025-05-26T02:19:26.946+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   69.34MiB at    6.13MiB/s ETA 00:11
+[2025-05-26T02:19:26.949+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   69.34MiB at    7.68MiB/s ETA 00:09
+[2025-05-26T02:19:26.955+0000] {logging_mixin.py:190} INFO - [download]   0.2% of   69.34MiB at    8.82MiB/s ETA 00:07
+[2025-05-26T02:19:26.973+0000] {logging_mixin.py:190} INFO - [download]   0.4% of   69.34MiB at    7.65MiB/s ETA 00:09
+[2025-05-26T02:19:27.166+0000] {logging_mixin.py:190} INFO - [download]   0.7% of   69.34MiB at    2.22MiB/s ETA 00:31
+[2025-05-26T02:19:27.225+0000] {logging_mixin.py:190} INFO - [download]   1.4% of   69.34MiB at    3.52MiB/s ETA 00:19
+[2025-05-26T02:19:27.436+0000] {logging_mixin.py:190} INFO - [download]   2.9% of   69.34MiB at    4.04MiB/s ETA 00:16
+[2025-05-26T02:19:27.660+0000] {logging_mixin.py:190} INFO - [download]   5.8% of   69.34MiB at    5.56MiB/s ETA 00:11
+[2025-05-26T02:19:28.076+0000] {logging_mixin.py:190} INFO - [download]  11.5% of   69.34MiB at    7.05MiB/s ETA 00:08
+[2025-05-26T02:19:28.475+0000] {logging_mixin.py:190} INFO - [download]  17.3% of   69.34MiB at    7.82MiB/s ETA 00:07
+[2025-05-26T02:19:28.871+0000] {logging_mixin.py:190} INFO - [download]  23.1% of   69.34MiB at    8.29MiB/s ETA 00:06
+[2025-05-26T02:19:29.273+0000] {logging_mixin.py:190} INFO - [download]  28.8% of   69.34MiB at    8.58MiB/s ETA 00:05
+[2025-05-26T02:19:29.674+0000] {logging_mixin.py:190} INFO - [download]  34.6% of   69.34MiB at    8.78MiB/s ETA 00:05
+[2025-05-26T02:19:30.083+0000] {logging_mixin.py:190} INFO - [download]  40.4% of   69.34MiB at    8.91MiB/s ETA 00:04
+[2025-05-26T02:19:30.491+0000] {logging_mixin.py:190} INFO - [download]  46.1% of   69.34MiB at    9.01MiB/s ETA 00:04
+[2025-05-26T02:19:30.906+0000] {logging_mixin.py:190} INFO - [download]  51.9% of   69.34MiB at    9.08MiB/s ETA 00:03
+[2025-05-26T02:19:31.304+0000] {logging_mixin.py:190} INFO - [download]  57.7% of   69.34MiB at    9.17MiB/s ETA 00:03
+[2025-05-26T02:19:31.729+0000] {logging_mixin.py:190} INFO - [download]  63.5% of   69.34MiB at    9.19MiB/s ETA 00:02
+[2025-05-26T02:19:32.135+0000] {logging_mixin.py:190} INFO - [download]  69.2% of   69.34MiB at    9.24MiB/s ETA 00:02
+[2025-05-26T02:19:32.534+0000] {logging_mixin.py:190} INFO - [download]  75.0% of   69.34MiB at    9.30MiB/s ETA 00:01
+[2025-05-26T02:19:32.931+0000] {logging_mixin.py:190} INFO - [download]  80.8% of   69.34MiB at    9.35MiB/s ETA 00:01
+[2025-05-26T02:19:33.326+0000] {logging_mixin.py:190} INFO - [download]  86.5% of   69.34MiB at    9.40MiB/s ETA 00:00
+[2025-05-26T02:19:33.726+0000] {logging_mixin.py:190} INFO - [download]  92.3% of   69.34MiB at    9.43MiB/s ETA 00:00
+[2025-05-26T02:19:34.121+0000] {logging_mixin.py:190} INFO - [download]  98.1% of   69.34MiB at    9.47MiB/s ETA 00:00
+[2025-05-26T02:19:34.252+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   69.34MiB at    9.49MiB/s ETA 00:00
+[2025-05-26T02:19:34.257+0000] {logging_mixin.py:190} INFO - [download] 100% of   69.34MiB in 00:00:07 at 9.43MiB/s   
+[2025-05-26T02:19:34.259+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1266379751712442"
+[2025-05-26T02:19:34.637+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1266379751712442.mp3
+[2025-05-26T02:20:39.748+0000] {logging_mixin.py:190} INFO - Deleting original file data/1266379751712442 (pass -k to keep)
+[2025-05-26T02:20:39.756+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1266379751712442
+[2025-05-26T02:20:39.763+0000] {logging_mixin.py:190} INFO - Downloaded video 1266379751712442 to data/1266379751712442.mp3
+[2025-05-26T02:20:39.887+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:20:39.888+0000] {logging_mixin.py:190} INFO - Downloading video from 919111281863729...
+[2025-05-26T02:20:39.922+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/919111281863729/
+[2025-05-26T02:20:39.922+0000] {logging_mixin.py:190} INFO - [facebook] 919111281863729: Downloading webpage
+[2025-05-26T02:20:41.283+0000] {logging_mixin.py:190} INFO - [info] 919111281863729: Downloading 1 format(s): 1229403842232998a
+[2025-05-26T02:20:41.490+0000] {logging_mixin.py:190} INFO - [download] Destination: data/919111281863729
+[2025-05-26T02:20:41.490+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    4.98MiB at  999.12KiB/s ETA 00:05
+[2025-05-26T02:20:41.491+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    4.98MiB at    1.67MiB/s ETA 00:02
+[2025-05-26T02:20:41.491+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    4.98MiB at    3.11MiB/s ETA 00:01
+[2025-05-26T02:20:41.493+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    4.98MiB at    3.75MiB/s ETA 00:01
+[2025-05-26T02:20:41.495+0000] {logging_mixin.py:190} INFO - [download]   0.6% of    4.98MiB at    5.02MiB/s ETA 00:00
+[2025-05-26T02:20:41.499+0000] {logging_mixin.py:190} INFO - [download]   1.2% of    4.98MiB at    6.04MiB/s ETA 00:00
+[2025-05-26T02:20:41.507+0000] {logging_mixin.py:190} INFO - [download]   2.5% of    4.98MiB at    7.02MiB/s ETA 00:00
+[2025-05-26T02:20:41.709+0000] {logging_mixin.py:190} INFO - [download]   5.0% of    4.98MiB at    1.13MiB/s ETA 00:04
+[2025-05-26T02:20:41.736+0000] {logging_mixin.py:190} INFO - [download]  10.0% of    4.98MiB at    2.02MiB/s ETA 00:02
+[2025-05-26T02:20:41.787+0000] {logging_mixin.py:190} INFO - [download]  20.1% of    4.98MiB at    3.36MiB/s ETA 00:01
+[2025-05-26T02:20:41.922+0000] {logging_mixin.py:190} INFO - [download]  40.2% of    4.98MiB at    4.62MiB/s ETA 00:00
+[2025-05-26T02:20:42.179+0000] {logging_mixin.py:190} INFO - [download]  80.4% of    4.98MiB at    5.79MiB/s ETA 00:00
+[2025-05-26T02:20:42.308+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    4.98MiB at    6.08MiB/s ETA 00:00
+[2025-05-26T02:20:42.310+0000] {logging_mixin.py:190} INFO - [download] 100% of    4.98MiB in 00:00:01 at 4.86MiB/s   
+[2025-05-26T02:20:42.311+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/919111281863729"
+[2025-05-26T02:20:42.420+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/919111281863729.mp3
+[2025-05-26T02:20:48.989+0000] {logging_mixin.py:190} INFO - Deleting original file data/919111281863729 (pass -k to keep)
+[2025-05-26T02:20:48.992+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 919111281863729
+[2025-05-26T02:20:48.999+0000] {logging_mixin.py:190} INFO - Downloaded video 919111281863729 to data/919111281863729.mp3
+[2025-05-26T02:20:49.139+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:20:49.140+0000] {logging_mixin.py:190} INFO - Downloading video from 702650360505070...
+[2025-05-26T02:20:49.168+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/702650360505070/
+[2025-05-26T02:20:49.168+0000] {logging_mixin.py:190} INFO - [facebook] 702650360505070: Downloading webpage
+[2025-05-26T02:20:50.364+0000] {logging_mixin.py:190} INFO - [info] 702650360505070: Downloading 1 format(s): 1443405923759312a
+[2025-05-26T02:20:50.727+0000] {logging_mixin.py:190} INFO - [download] Destination: data/702650360505070
+[2025-05-26T02:20:50.729+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.53MiB at  581.98KiB/s ETA 00:02
+[2025-05-26T02:20:50.730+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.53MiB at  832.75KiB/s ETA 00:01
+[2025-05-26T02:20:50.731+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    1.53MiB at    1.47MiB/s ETA 00:01
+[2025-05-26T02:20:50.731+0000] {logging_mixin.py:190} INFO - [download]   1.0% of    1.53MiB at    2.72MiB/s ETA 00:00
+[2025-05-26T02:20:50.732+0000] {logging_mixin.py:190} INFO - [download]   2.0% of    1.53MiB at    5.02MiB/s ETA 00:00
+[2025-05-26T02:20:50.733+0000] {logging_mixin.py:190} INFO - [download]   4.0% of    1.53MiB at    8.68MiB/s ETA 00:00
+[2025-05-26T02:20:50.741+0000] {logging_mixin.py:190} INFO - [download]   8.1% of    1.53MiB at    7.98MiB/s ETA 00:00
+[2025-05-26T02:20:50.758+0000] {logging_mixin.py:190} INFO - [download]  16.3% of    1.53MiB at    7.92MiB/s ETA 00:00
+[2025-05-26T02:20:50.793+0000] {logging_mixin.py:190} INFO - [download]  32.6% of    1.53MiB at    7.47MiB/s ETA 00:00
+[2025-05-26T02:20:50.880+0000] {logging_mixin.py:190} INFO - [download]  65.3% of    1.53MiB at    6.49MiB/s ETA 00:00
+[2025-05-26T02:20:50.966+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.53MiB at    6.38MiB/s ETA 00:00
+[2025-05-26T02:20:50.967+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.53MiB in 00:00:00 at 2.55MiB/s   
+[2025-05-26T02:20:50.969+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/702650360505070"
+[2025-05-26T02:20:51.064+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/702650360505070.mp3
+[2025-05-26T02:20:50.571+0000] {logging_mixin.py:190} INFO - Deleting original file data/702650360505070 (pass -k to keep)
+[2025-05-26T02:20:50.575+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 702650360505070
+[2025-05-26T02:20:50.583+0000] {logging_mixin.py:190} INFO - Downloaded video 702650360505070 to data/702650360505070.mp3
+[2025-05-26T02:20:50.710+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:20:50.711+0000] {logging_mixin.py:190} INFO - Downloading video from 9824612047616098...
+[2025-05-26T02:20:50.739+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/9824612047616098/
+[2025-05-26T02:20:50.739+0000] {logging_mixin.py:190} INFO - [facebook] 9824612047616098: Downloading webpage
+[2025-05-26T02:20:52.619+0000] {logging_mixin.py:190} INFO - [info] 9824612047616098: Downloading 1 format(s): 694151619867993a
+[2025-05-26T02:20:52.648+0000] {logging_mixin.py:190} INFO - [download] Destination: data/9824612047616098
+[2025-05-26T02:20:52.649+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  164.79KiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:20:52.651+0000] {logging_mixin.py:190} INFO - [download]   1.8% of  164.79KiB at    1.02MiB/s ETA 00:00  
+[2025-05-26T02:20:52.651+0000] {logging_mixin.py:190} INFO - [download]   4.2% of  164.79KiB at    2.03MiB/s ETA 00:00
+[2025-05-26T02:20:52.652+0000] {logging_mixin.py:190} INFO - [download]   9.1% of  164.79KiB at    3.90MiB/s ETA 00:00
+[2025-05-26T02:20:52.653+0000] {logging_mixin.py:190} INFO - [download]  18.8% of  164.79KiB at    5.96MiB/s ETA 00:00
+[2025-05-26T02:20:52.657+0000] {logging_mixin.py:190} INFO - [download]  38.2% of  164.79KiB at    6.99MiB/s ETA 00:00
+[2025-05-26T02:20:52.665+0000] {logging_mixin.py:190} INFO - [download]  77.1% of  164.79KiB at    7.41MiB/s ETA 00:00
+[2025-05-26T02:20:52.668+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  164.79KiB at    7.86MiB/s ETA 00:00
+[2025-05-26T02:20:52.669+0000] {logging_mixin.py:190} INFO - [download] 100% of  164.79KiB in 00:00:00 at 3.45MiB/s   
+[2025-05-26T02:20:52.671+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/9824612047616098"
+[2025-05-26T02:20:52.755+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/9824612047616098.mp3
+[2025-05-26T02:20:52.989+0000] {logging_mixin.py:190} INFO - Deleting original file data/9824612047616098 (pass -k to keep)
+[2025-05-26T02:20:52.992+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 9824612047616098
+[2025-05-26T02:20:52.998+0000] {logging_mixin.py:190} INFO - Downloaded video 9824612047616098 to data/9824612047616098.mp3
+[2025-05-26T02:20:53.125+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:20:53.126+0000] {logging_mixin.py:190} INFO - Downloading video from 1732495977377181...
+[2025-05-26T02:20:53.156+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/1732495977377181/
+[2025-05-26T02:20:53.156+0000] {logging_mixin.py:190} INFO - [facebook] 1732495977377181: Downloading webpage
+[2025-05-26T02:20:55.099+0000] {logging_mixin.py:190} INFO - [info] 1732495977377181: Downloading 1 format(s): 1001858772148949a
+[2025-05-26T02:20:55.129+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1732495977377181
+[2025-05-26T02:20:55.129+0000] {logging_mixin.py:190} INFO - [download]   3.3% of   30.00KiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:20:55.132+0000] {logging_mixin.py:190} INFO - [download]  10.0% of   30.00KiB at  914.72KiB/s ETA 00:00  
+[2025-05-26T02:20:55.132+0000] {logging_mixin.py:190} INFO - [download]  23.3% of   30.00KiB at    1.77MiB/s ETA 00:00
+[2025-05-26T02:20:55.133+0000] {logging_mixin.py:190} INFO - [download]  50.0% of   30.00KiB at    3.39MiB/s ETA 00:00
+[2025-05-26T02:20:55.133+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   30.00KiB at    6.15MiB/s ETA 00:00
+[2025-05-26T02:20:55.134+0000] {logging_mixin.py:190} INFO - [download] 100% of   30.00KiB in 00:00:00 at 974.63KiB/s 
+[2025-05-26T02:20:55.136+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1732495977377181"
+[2025-05-26T02:20:55.219+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1732495977377181.mp3
+[2025-05-26T02:20:55.298+0000] {logging_mixin.py:190} INFO - Deleting original file data/1732495977377181 (pass -k to keep)
+[2025-05-26T02:20:55.301+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1732495977377181
+[2025-05-26T02:20:55.306+0000] {logging_mixin.py:190} INFO - Downloaded video 1732495977377181 to data/1732495977377181.mp3
+[2025-05-26T02:20:55.442+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:20:55.442+0000] {logging_mixin.py:190} INFO - Downloading video from 589511808317976...
+[2025-05-26T02:20:55.470+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/589511808317976/
+[2025-05-26T02:20:55.471+0000] {logging_mixin.py:190} INFO - [facebook] 589511808317976: Downloading webpage
+[2025-05-26T02:20:56.575+0000] {logging_mixin.py:190} INFO - [info] 589511808317976: Downloading 1 format(s): sd
+[2025-05-26T02:20:57.150+0000] {logging_mixin.py:190} INFO - [download] Destination: data/589511808317976
+[2025-05-26T02:20:57.150+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    8.30MiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:20:57.151+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    8.30MiB at    2.18MiB/s ETA 00:03  
+[2025-05-26T02:20:57.151+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    8.30MiB at    3.87MiB/s ETA 00:02
+[2025-05-26T02:20:57.152+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    8.30MiB at    6.75MiB/s ETA 00:01
+[2025-05-26T02:20:57.155+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    8.30MiB at    5.68MiB/s ETA 00:01
+[2025-05-26T02:20:57.158+0000] {logging_mixin.py:190} INFO - [download]   0.7% of    8.30MiB at    7.36MiB/s ETA 00:01
+[2025-05-26T02:20:57.164+0000] {logging_mixin.py:190} INFO - [download]   1.5% of    8.30MiB at    8.56MiB/s ETA 00:00
+[2025-05-26T02:20:57.177+0000] {logging_mixin.py:190} INFO - [download]   3.0% of    8.30MiB at    9.23MiB/s ETA 00:00
+[2025-05-26T02:20:57.202+0000] {logging_mixin.py:190} INFO - [download]   6.0% of    8.30MiB at    9.48MiB/s ETA 00:00
+[2025-05-26T02:20:57.252+0000] {logging_mixin.py:190} INFO - [download]  12.0% of    8.30MiB at    9.74MiB/s ETA 00:00
+[2025-05-26T02:20:57.369+0000] {logging_mixin.py:190} INFO - [download]  24.1% of    8.30MiB at    9.11MiB/s ETA 00:00
+[2025-05-26T02:20:57.622+0000] {logging_mixin.py:190} INFO - [download]  48.2% of    8.30MiB at    8.47MiB/s ETA 00:00
+[2025-05-26T02:20:58.151+0000] {logging_mixin.py:190} INFO - [download]  96.4% of    8.30MiB at    7.99MiB/s ETA 00:00
+[2025-05-26T02:20:58.176+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    8.30MiB at    8.08MiB/s ETA 00:00
+[2025-05-26T02:20:58.177+0000] {logging_mixin.py:190} INFO - [download] 100% of    8.30MiB in 00:00:01 at 5.18MiB/s   
+[2025-05-26T02:20:58.227+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/589511808317976.mp3
+[2025-05-26T02:20:59.604+0000] {logging_mixin.py:190} INFO - Deleting original file data/589511808317976 (pass -k to keep)
+[2025-05-26T02:20:59.606+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 589511808317976
+[2025-05-26T02:20:59.611+0000] {logging_mixin.py:190} INFO - Downloaded video 589511808317976 to data/589511808317976.mp3
+[2025-05-26T02:20:59.733+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:20:59.734+0000] {logging_mixin.py:190} INFO - Downloading video from 630592586810466...
+[2025-05-26T02:20:59.764+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/630592586810466/
+[2025-05-26T02:20:59.764+0000] {logging_mixin.py:190} INFO - [facebook] 630592586810466: Downloading webpage
+[2025-05-26T02:21:01.678+0000] {logging_mixin.py:190} INFO - [info] 630592586810466: Downloading 1 format(s): 1734062717320190a
+[2025-05-26T02:21:01.718+0000] {logging_mixin.py:190} INFO - [download] Destination: data/630592586810466
+[2025-05-26T02:21:01.719+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    3.10MiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:21:01.721+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    3.10MiB at  870.61KiB/s ETA 00:03  
+[2025-05-26T02:21:01.722+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    3.10MiB at    1.78MiB/s ETA 00:01
+[2025-05-26T02:21:01.722+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    3.10MiB at    3.45MiB/s ETA 00:00
+[2025-05-26T02:21:01.723+0000] {logging_mixin.py:190} INFO - [download]   1.0% of    3.10MiB at    6.02MiB/s ETA 00:00
+[2025-05-26T02:21:01.726+0000] {logging_mixin.py:190} INFO - [download]   2.0% of    3.10MiB at    7.49MiB/s ETA 00:00
+[2025-05-26T02:21:01.732+0000] {logging_mixin.py:190} INFO - [download]   4.0% of    3.10MiB at    8.65MiB/s ETA 00:00
+[2025-05-26T02:21:01.745+0000] {logging_mixin.py:190} INFO - [download]   8.0% of    3.10MiB at    9.26MiB/s ETA 00:00
+[2025-05-26T02:21:01.769+0000] {logging_mixin.py:190} INFO - [download]  16.1% of    3.10MiB at    9.77MiB/s ETA 00:00
+[2025-05-26T02:21:01.818+0000] {logging_mixin.py:190} INFO - [download]  32.2% of    3.10MiB at    9.97MiB/s ETA 00:00
+[2025-05-26T02:21:02.171+0000] {logging_mixin.py:190} INFO - [download]  64.5% of    3.10MiB at    4.41MiB/s ETA 00:00
+[2025-05-26T02:21:02.281+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    3.10MiB at    5.51MiB/s ETA 00:00
+[2025-05-26T02:21:02.282+0000] {logging_mixin.py:190} INFO - [download] 100% of    3.10MiB in 00:00:00 at 5.16MiB/s   
+[2025-05-26T02:21:02.283+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/630592586810466"
+[2025-05-26T02:21:02.386+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/630592586810466.mp3
+[2025-05-26T02:21:06.242+0000] {logging_mixin.py:190} INFO - Deleting original file data/630592586810466 (pass -k to keep)
+[2025-05-26T02:21:06.245+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 630592586810466
+[2025-05-26T02:21:06.260+0000] {logging_mixin.py:190} INFO - Downloaded video 630592586810466 to data/630592586810466.mp3
+[2025-05-26T02:21:06.388+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:21:06.388+0000] {logging_mixin.py:190} INFO - Downloading video from 1260248339153879...
+[2025-05-26T02:21:06.418+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/1260248339153879/
+[2025-05-26T02:21:06.418+0000] {logging_mixin.py:190} INFO - [facebook] 1260248339153879: Downloading webpage
+[2025-05-26T02:21:08.297+0000] {logging_mixin.py:190} INFO - [info] 1260248339153879: Downloading 1 format(s): 1391227755240365a
+[2025-05-26T02:21:08.328+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1260248339153879
+[2025-05-26T02:21:08.329+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    9.17MiB at  892.03KiB/s ETA 00:10
+[2025-05-26T02:21:08.331+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    9.17MiB at    1.00MiB/s ETA 00:09
+[2025-05-26T02:21:08.331+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    9.17MiB at    1.97MiB/s ETA 00:04
+[2025-05-26T02:21:08.331+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    9.17MiB at    3.74MiB/s ETA 00:02
+[2025-05-26T02:21:08.333+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    9.17MiB at    5.27MiB/s ETA 00:01
+[2025-05-26T02:21:08.336+0000] {logging_mixin.py:190} INFO - [download]   0.7% of    9.17MiB at    7.33MiB/s ETA 00:01
+[2025-05-26T02:21:08.540+0000] {logging_mixin.py:190} INFO - [download]   1.4% of    9.17MiB at  597.94KiB/s ETA 00:15
+[2025-05-26T02:21:08.552+0000] {logging_mixin.py:190} INFO - [download]   2.7% of    9.17MiB at    1.11MiB/s ETA 00:08
+[2025-05-26T02:21:08.577+0000] {logging_mixin.py:190} INFO - [download]   5.4% of    9.17MiB at    2.00MiB/s ETA 00:04
+[2025-05-26T02:21:08.626+0000] {logging_mixin.py:190} INFO - [download]  10.9% of    9.17MiB at    3.35MiB/s ETA 00:02
+[2025-05-26T02:21:08.769+0000] {logging_mixin.py:190} INFO - [download]  21.8% of    9.17MiB at    4.53MiB/s ETA 00:01
+[2025-05-26T02:21:09.076+0000] {logging_mixin.py:190} INFO - [download]  43.6% of    9.17MiB at    5.35MiB/s ETA 00:00
+[2025-05-26T02:21:09.471+0000] {logging_mixin.py:190} INFO - [download]  87.2% of    9.17MiB at    7.00MiB/s ETA 00:00
+[2025-05-26T02:21:09.584+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    9.17MiB at    7.30MiB/s ETA 00:00
+[2025-05-26T02:21:09.603+0000] {logging_mixin.py:190} INFO - [download] 100% of    9.17MiB in 00:00:01 at 7.04MiB/s   
+[2025-05-26T02:21:09.605+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1260248339153879"
+[2025-05-26T02:21:09.737+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1260248339153879.mp3
+[2025-05-26T02:21:21.732+0000] {logging_mixin.py:190} INFO - Deleting original file data/1260248339153879 (pass -k to keep)
+[2025-05-26T02:21:21.736+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1260248339153879
+[2025-05-26T02:21:21.749+0000] {logging_mixin.py:190} INFO - Downloaded video 1260248339153879 to data/1260248339153879.mp3
+[2025-05-26T02:21:21.889+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:21:21.889+0000] {logging_mixin.py:190} INFO - Downloading video from 856262310056272...
+[2025-05-26T02:21:21.918+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/856262310056272/
+[2025-05-26T02:21:21.919+0000] {logging_mixin.py:190} INFO - [facebook] 856262310056272: Downloading webpage
+[2025-05-26T02:21:21.025+0000] {logging_mixin.py:190} INFO - [facebook] 856262310056272: Downloading webpage
+[2025-05-26T02:21:21.272+0000] {logging_mixin.py:190} WARNING - ERROR: [facebook] 856262310056272: Cannot parse data; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+[2025-05-26T02:21:21.274+0000] {logging_mixin.py:190} INFO - 
+Error downloading video using yt-dlp: ERROR: [facebook] 856262310056272: Cannot parse data; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+[2025-05-26T02:21:24.065+0000] {logging_mixin.py:190} INFO - Downloaded video 856262310056272 to data/856262310056272.mp3
+[2025-05-26T02:21:24.191+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:21:24.192+0000] {logging_mixin.py:190} INFO - Downloading video from 306433257087448...
+[2025-05-26T02:21:24.222+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/306433257087448/
+[2025-05-26T02:21:24.222+0000] {logging_mixin.py:190} INFO - [facebook] 306433257087448: Downloading webpage
+[2025-05-26T02:21:25.423+0000] {logging_mixin.py:190} INFO - [info] 306433257087448: Downloading 1 format(s): 724073115970921a
+[2025-05-26T02:21:25.688+0000] {logging_mixin.py:190} INFO - [download] Destination: data/306433257087448
+[2025-05-26T02:21:25.689+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.38MiB at  975.19KiB/s ETA 00:01
+[2025-05-26T02:21:25.690+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.38MiB at    1.49MiB/s ETA 00:00
+[2025-05-26T02:21:25.690+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    1.38MiB at    2.36MiB/s ETA 00:00
+[2025-05-26T02:21:25.691+0000] {logging_mixin.py:190} INFO - [download]   1.1% of    1.38MiB at    4.01MiB/s ETA 00:00
+[2025-05-26T02:21:25.692+0000] {logging_mixin.py:190} INFO - [download]   2.2% of    1.38MiB at    7.06MiB/s ETA 00:00
+[2025-05-26T02:21:25.695+0000] {logging_mixin.py:190} INFO - [download]   4.5% of    1.38MiB at    8.61MiB/s ETA 00:00
+[2025-05-26T02:21:25.701+0000] {logging_mixin.py:190} INFO - [download]   9.0% of    1.38MiB at    9.30MiB/s ETA 00:00
+[2025-05-26T02:21:25.794+0000] {logging_mixin.py:190} INFO - [download]  18.0% of    1.38MiB at    2.34MiB/s ETA 00:00
+[2025-05-26T02:21:25.818+0000] {logging_mixin.py:190} INFO - [download]  36.2% of    1.38MiB at    3.81MiB/s ETA 00:00
+[2025-05-26T02:21:25.868+0000] {logging_mixin.py:190} INFO - [download]  72.4% of    1.38MiB at    5.53MiB/s ETA 00:00
+[2025-05-26T02:21:25.905+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.38MiB at    6.33MiB/s ETA 00:00
+[2025-05-26T02:21:25.906+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.38MiB in 00:00:00 at 2.87MiB/s   
+[2025-05-26T02:21:25.908+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/306433257087448"
+[2025-05-26T02:21:25.999+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/306433257087448.mp3
+[2025-05-26T02:21:27.617+0000] {logging_mixin.py:190} INFO - Deleting original file data/306433257087448 (pass -k to keep)
+[2025-05-26T02:21:27.620+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 306433257087448
+[2025-05-26T02:21:27.638+0000] {logging_mixin.py:190} INFO - Downloaded video 306433257087448 to data/306433257087448.mp3
+[2025-05-26T02:21:27.766+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:21:27.766+0000] {logging_mixin.py:190} INFO - Downloading video from 1224752005897939...
+[2025-05-26T02:21:27.795+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/1224752005897939/
+[2025-05-26T02:21:27.795+0000] {logging_mixin.py:190} INFO - [facebook] 1224752005897939: Downloading webpage
+[2025-05-26T02:21:29.357+0000] {logging_mixin.py:190} INFO - [facebook] 1224752005897939: Downloading webpage
+[2025-05-26T02:21:29.591+0000] {logging_mixin.py:190} WARNING - ERROR: [facebook] 1224752005897939: Cannot parse data; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+[2025-05-26T02:21:29.592+0000] {logging_mixin.py:190} INFO - 
+Error downloading video using yt-dlp: ERROR: [facebook] 1224752005897939: Cannot parse data; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+[2025-05-26T02:21:33.539+0000] {logging_mixin.py:190} INFO - Downloaded video 1224752005897939 to data/1224752005897939.mp3
+[2025-05-26T02:21:33.658+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:21:33.658+0000] {logging_mixin.py:190} INFO - Downloading video from 226290145273627...
+[2025-05-26T02:21:33.689+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/226290145273627/
+[2025-05-26T02:21:33.689+0000] {logging_mixin.py:190} INFO - [facebook] 226290145273627: Downloading webpage
+[2025-05-26T02:21:34.935+0000] {logging_mixin.py:190} INFO - [info] 226290145273627: Downloading 1 format(s): 851474189690844a
+[2025-05-26T02:21:35.637+0000] {logging_mixin.py:190} INFO - [download] Destination: data/226290145273627
+[2025-05-26T02:21:35.639+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.83MiB at  674.65KiB/s ETA 00:02
+[2025-05-26T02:21:35.640+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.83MiB at  931.10KiB/s ETA 00:02
+[2025-05-26T02:21:35.641+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    1.83MiB at    1.63MiB/s ETA 00:01
+[2025-05-26T02:21:35.642+0000] {logging_mixin.py:190} INFO - [download]   0.8% of    1.83MiB at    2.93MiB/s ETA 00:00
+[2025-05-26T02:21:35.643+0000] {logging_mixin.py:190} INFO - [download]   1.7% of    1.83MiB at    5.30MiB/s ETA 00:00
+[2025-05-26T02:21:35.644+0000] {logging_mixin.py:190} INFO - [download]   3.4% of    1.83MiB at    8.18MiB/s ETA 00:00
+[2025-05-26T02:21:35.651+0000] {logging_mixin.py:190} INFO - [download]   6.8% of    1.83MiB at    8.68MiB/s ETA 00:00
+[2025-05-26T02:21:35.663+0000] {logging_mixin.py:190} INFO - [download]  13.6% of    1.83MiB at    9.39MiB/s ETA 00:00
+[2025-05-26T02:21:35.688+0000] {logging_mixin.py:190} INFO - [download]  27.3% of    1.83MiB at    9.74MiB/s ETA 00:00
+[2025-05-26T02:21:35.737+0000] {logging_mixin.py:190} INFO - [download]  54.7% of    1.83MiB at    9.94MiB/s ETA 00:00
+[2025-05-26T02:21:35.819+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.83MiB at   10.03MiB/s ETA 00:00
+[2025-05-26T02:21:35.820+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.83MiB in 00:00:00 at 2.07MiB/s   
+[2025-05-26T02:21:35.822+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/226290145273627"
+[2025-05-26T02:21:35.915+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/226290145273627.mp3
+[2025-05-26T02:21:38.095+0000] {logging_mixin.py:190} INFO - Deleting original file data/226290145273627 (pass -k to keep)
+[2025-05-26T02:21:38.099+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 226290145273627
+[2025-05-26T02:21:38.103+0000] {logging_mixin.py:190} INFO - Downloaded video 226290145273627 to data/226290145273627.mp3
+[2025-05-26T02:21:38.288+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:21:38.289+0000] {logging_mixin.py:190} INFO - Downloading video from 694586596766526...
+[2025-05-26T02:21:38.317+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/694586596766526/
+[2025-05-26T02:21:38.318+0000] {logging_mixin.py:190} INFO - [facebook] 694586596766526: Downloading webpage
+[2025-05-26T02:21:40.079+0000] {logging_mixin.py:190} INFO - [info] 694586596766526: Downloading 1 format(s): 3758227611136789a
+[2025-05-26T02:21:40.107+0000] {logging_mixin.py:190} INFO - [download] Destination: data/694586596766526
+[2025-05-26T02:21:40.107+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.59MiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:21:40.110+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.59MiB at  942.19KiB/s ETA 00:01  
+[2025-05-26T02:21:40.110+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    1.59MiB at    1.82MiB/s ETA 00:00
+[2025-05-26T02:21:40.111+0000] {logging_mixin.py:190} INFO - [download]   0.9% of    1.59MiB at    3.53MiB/s ETA 00:00
+[2025-05-26T02:21:40.111+0000] {logging_mixin.py:190} INFO - [download]   1.9% of    1.59MiB at    6.24MiB/s ETA 00:00
+[2025-05-26T02:21:40.115+0000] {logging_mixin.py:190} INFO - [download]   3.9% of    1.59MiB at    7.05MiB/s ETA 00:00
+[2025-05-26T02:21:40.121+0000] {logging_mixin.py:190} INFO - [download]   7.8% of    1.59MiB at    8.33MiB/s ETA 00:00
+[2025-05-26T02:21:40.134+0000] {logging_mixin.py:190} INFO - [download]  15.6% of    1.59MiB at    9.19MiB/s ETA 00:00
+[2025-05-26T02:21:40.158+0000] {logging_mixin.py:190} INFO - [download]  31.3% of    1.59MiB at    9.71MiB/s ETA 00:00
+[2025-05-26T02:21:40.208+0000] {logging_mixin.py:190} INFO - [download]  62.7% of    1.59MiB at    9.90MiB/s ETA 00:00
+[2025-05-26T02:21:40.267+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.59MiB at    9.94MiB/s ETA 00:00
+[2025-05-26T02:21:40.268+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.59MiB in 00:00:00 at 8.63MiB/s   
+[2025-05-26T02:21:40.270+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/694586596766526"
+[2025-05-26T02:21:40.364+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/694586596766526.mp3
+[2025-05-26T02:21:42.607+0000] {logging_mixin.py:190} INFO - Deleting original file data/694586596766526 (pass -k to keep)
+[2025-05-26T02:21:42.611+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 694586596766526
+[2025-05-26T02:21:42.616+0000] {logging_mixin.py:190} INFO - Downloaded video 694586596766526 to data/694586596766526.mp3
+[2025-05-26T02:21:42.759+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:21:42.760+0000] {logging_mixin.py:190} INFO - Downloading video from 1238232701337577...
+[2025-05-26T02:21:42.788+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/1238232701337577/
+[2025-05-26T02:21:42.789+0000] {logging_mixin.py:190} INFO - [facebook] 1238232701337577: Downloading webpage
+[2025-05-26T02:21:44.798+0000] {logging_mixin.py:190} INFO - [info] 1238232701337577: Downloading 1 format(s): 1742670712996833a
+[2025-05-26T02:21:44.828+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1238232701337577
+[2025-05-26T02:21:44.828+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.64MiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:21:44.831+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.64MiB at  861.78KiB/s ETA 00:01  
+[2025-05-26T02:21:44.831+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    1.64MiB at    1.74MiB/s ETA 00:00
+[2025-05-26T02:21:44.832+0000] {logging_mixin.py:190} INFO - [download]   0.9% of    1.64MiB at    3.40MiB/s ETA 00:00
+[2025-05-26T02:21:44.833+0000] {logging_mixin.py:190} INFO - [download]   1.8% of    1.64MiB at    5.55MiB/s ETA 00:00
+[2025-05-26T02:21:44.836+0000] {logging_mixin.py:190} INFO - [download]   3.7% of    1.64MiB at    7.11MiB/s ETA 00:00
+[2025-05-26T02:21:44.842+0000] {logging_mixin.py:190} INFO - [download]   7.6% of    1.64MiB at    8.43MiB/s ETA 00:00
+[2025-05-26T02:21:44.854+0000] {logging_mixin.py:190} INFO - [download]  15.2% of    1.64MiB at    9.24MiB/s ETA 00:00
+[2025-05-26T02:21:44.885+0000] {logging_mixin.py:190} INFO - [download]  30.4% of    1.64MiB at    8.62MiB/s ETA 00:00
+[2025-05-26T02:21:45.119+0000] {logging_mixin.py:190} INFO - [download]  60.8% of    1.64MiB at    3.43MiB/s ETA 00:00
+[2025-05-26T02:21:45.227+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.64MiB at    4.11MiB/s ETA 00:00
+[2025-05-26T02:21:45.228+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.64MiB in 00:00:00 at 3.85MiB/s   
+[2025-05-26T02:21:45.230+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1238232701337577"
+[2025-05-26T02:21:45.323+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1238232701337577.mp3
+[2025-05-26T02:21:47.582+0000] {logging_mixin.py:190} INFO - Deleting original file data/1238232701337577 (pass -k to keep)
+[2025-05-26T02:21:47.586+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1238232701337577
+[2025-05-26T02:21:47.594+0000] {logging_mixin.py:190} INFO - Downloaded video 1238232701337577 to data/1238232701337577.mp3
+[2025-05-26T02:21:47.730+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:21:47.730+0000] {logging_mixin.py:190} INFO - Downloading video from 4066501880266409...
+[2025-05-26T02:21:47.761+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/4066501880266409/
+[2025-05-26T02:21:47.762+0000] {logging_mixin.py:190} INFO - [facebook] 4066501880266409: Downloading webpage
+[2025-05-26T02:21:49.568+0000] {logging_mixin.py:190} INFO - [info] 4066501880266409: Downloading 1 format(s): 1211961117064135a
+[2025-05-26T02:21:49.622+0000] {logging_mixin.py:190} INFO - [download] Destination: data/4066501880266409
+[2025-05-26T02:21:49.623+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   85.36MiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:21:49.623+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   85.36MiB at    1.56MiB/s ETA 00:55  
+[2025-05-26T02:21:49.624+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   85.36MiB at    2.79MiB/s ETA 00:30
+[2025-05-26T02:21:49.624+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   85.36MiB at    5.06MiB/s ETA 00:16
+[2025-05-26T02:21:49.626+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   85.36MiB at    6.28MiB/s ETA 00:13
+[2025-05-26T02:21:49.630+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   85.36MiB at    7.58MiB/s ETA 00:11
+[2025-05-26T02:21:49.636+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   85.36MiB at    8.72MiB/s ETA 00:09
+[2025-05-26T02:21:49.842+0000] {logging_mixin.py:190} INFO - [download]   0.3% of   85.36MiB at    1.13MiB/s ETA 01:15
+[2025-05-26T02:21:49.876+0000] {logging_mixin.py:190} INFO - [download]   0.6% of   85.36MiB at    1.96MiB/s ETA 00:43
+[2025-05-26T02:21:49.944+0000] {logging_mixin.py:190} INFO - [download]   1.2% of   85.36MiB at    3.10MiB/s ETA 00:27
+[2025-05-26T02:21:50.056+0000] {logging_mixin.py:190} INFO - [download]   2.3% of   85.36MiB at    4.60MiB/s ETA 00:18
+[2025-05-26T02:21:50.253+0000] {logging_mixin.py:190} INFO - [download]   4.7% of   85.36MiB at    6.33MiB/s ETA 00:12
+[2025-05-26T02:21:50.649+0000] {logging_mixin.py:190} INFO - [download]   9.4% of   85.36MiB at    7.78MiB/s ETA 00:09
+[2025-05-26T02:21:51.042+0000] {logging_mixin.py:190} INFO - [download]  14.1% of   85.36MiB at    8.45MiB/s ETA 00:08
+[2025-05-26T02:21:51.619+0000] {logging_mixin.py:190} INFO - [download]  18.7% of   85.36MiB at    8.01MiB/s ETA 00:08
+[2025-05-26T02:21:52.038+0000] {logging_mixin.py:190} INFO - [download]  23.4% of   85.36MiB at    8.28MiB/s ETA 00:07
+[2025-05-26T02:21:52.530+0000] {logging_mixin.py:190} INFO - [download]  28.1% of   85.36MiB at    8.25MiB/s ETA 00:07
+[2025-05-26T02:21:50.503+0000] {logging_mixin.py:190} INFO - [download]  32.8% of   85.36MiB at   31.77MiB/s ETA 00:01
+[2025-05-26T02:21:50.898+0000] {logging_mixin.py:190} INFO - [download]  37.5% of   85.36MiB at   25.07MiB/s ETA 00:02
+[2025-05-26T02:21:51.291+0000] {logging_mixin.py:190} INFO - [download]  42.2% of   85.36MiB at   21.57MiB/s ETA 00:02
+[2025-05-26T02:21:51.684+0000] {logging_mixin.py:190} INFO - [download]  46.9% of   85.36MiB at   19.40MiB/s ETA 00:02
+[2025-05-26T02:21:52.082+0000] {logging_mixin.py:190} INFO - [download]  51.5% of   85.36MiB at   17.88MiB/s ETA 00:02
+[2025-05-26T02:21:52.479+0000] {logging_mixin.py:190} INFO - [download]  56.2% of   85.36MiB at   16.80MiB/s ETA 00:02
+[2025-05-26T02:21:52.875+0000] {logging_mixin.py:190} INFO - [download]  60.9% of   85.36MiB at   15.98MiB/s ETA 00:02
+[2025-05-26T02:21:53.273+0000] {logging_mixin.py:190} INFO - [download]  65.6% of   85.36MiB at   15.33MiB/s ETA 00:01
+[2025-05-26T02:21:53.668+0000] {logging_mixin.py:190} INFO - [download]  70.3% of   85.36MiB at   14.83MiB/s ETA 00:01
+[2025-05-26T02:21:54.109+0000] {logging_mixin.py:190} INFO - [download]  75.0% of   85.36MiB at   14.26MiB/s ETA 00:01
+[2025-05-26T02:21:54.588+0000] {logging_mixin.py:190} INFO - [download]  79.7% of   85.36MiB at   13.69MiB/s ETA 00:01
+[2025-05-26T02:21:55.127+0000] {logging_mixin.py:190} INFO - [download]  84.3% of   85.36MiB at   13.08MiB/s ETA 00:01
+[2025-05-26T02:21:55.607+0000] {logging_mixin.py:190} INFO - [download]  89.0% of   85.36MiB at   12.70MiB/s ETA 00:00
+[2025-05-26T02:21:56.026+0000] {logging_mixin.py:190} INFO - [download]  93.7% of   85.36MiB at   12.49MiB/s ETA 00:00
+[2025-05-26T02:21:56.565+0000] {logging_mixin.py:190} INFO - [download]  98.4% of   85.36MiB at   12.10MiB/s ETA 00:00
+[2025-05-26T02:21:57.275+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   85.36MiB at   11.15MiB/s ETA 00:00
+[2025-05-26T02:21:57.281+0000] {logging_mixin.py:190} INFO - [download] 100% of   85.36MiB in 00:00:07 at 11.07MiB/s  
+[2025-05-26T02:21:57.283+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/4066501880266409"
+[2025-05-26T02:21:57.751+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/4066501880266409.mp3
+[2025-05-26T02:23:21.661+0000] {logging_mixin.py:190} INFO - Deleting original file data/4066501880266409 (pass -k to keep)
+[2025-05-26T02:23:21.672+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 4066501880266409
+[2025-05-26T02:23:21.687+0000] {logging_mixin.py:190} INFO - Downloaded video 4066501880266409 to data/4066501880266409.mp3
+[2025-05-26T02:23:21.839+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:23:21.839+0000] {logging_mixin.py:190} INFO - Downloading video from 2619486498244685...
+[2025-05-26T02:23:21.871+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/2619486498244685/
+[2025-05-26T02:23:21.871+0000] {logging_mixin.py:190} INFO - [facebook] 2619486498244685: Downloading webpage
+[2025-05-26T02:23:21.406+0000] {logging_mixin.py:190} INFO - [info] 2619486498244685: Downloading 1 format(s): 1817842965442867a
+[2025-05-26T02:23:21.637+0000] {logging_mixin.py:190} INFO - [download] Destination: data/2619486498244685
+[2025-05-26T02:23:21.638+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  139.95KiB at  742.49KiB/s ETA 00:00
+[2025-05-26T02:23:21.639+0000] {logging_mixin.py:190} INFO - [download]   2.1% of  139.95KiB at    1.13MiB/s ETA 00:00
+[2025-05-26T02:23:21.640+0000] {logging_mixin.py:190} INFO - [download]   5.0% of  139.95KiB at    1.96MiB/s ETA 00:00
+[2025-05-26T02:23:21.641+0000] {logging_mixin.py:190} INFO - [download]  10.7% of  139.95KiB at    3.30MiB/s ETA 00:00
+[2025-05-26T02:23:21.641+0000] {logging_mixin.py:190} INFO - [download]  22.2% of  139.95KiB at    6.17MiB/s ETA 00:00
+[2025-05-26T02:23:21.645+0000] {logging_mixin.py:190} INFO - [download]  45.0% of  139.95KiB at    7.05MiB/s ETA 00:00
+[2025-05-26T02:23:21.651+0000] {logging_mixin.py:190} INFO - [download]  90.7% of  139.95KiB at    8.30MiB/s ETA 00:00
+[2025-05-26T02:23:21.652+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  139.95KiB at    8.54MiB/s ETA 00:00
+[2025-05-26T02:23:21.653+0000] {logging_mixin.py:190} INFO - [download] 100% of  139.95KiB in 00:00:00 at 575.68KiB/s 
+[2025-05-26T02:23:21.655+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/2619486498244685"
+[2025-05-26T02:23:21.744+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/2619486498244685.mp3
+[2025-05-26T02:23:21.955+0000] {logging_mixin.py:190} INFO - Deleting original file data/2619486498244685 (pass -k to keep)
+[2025-05-26T02:23:21.959+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 2619486498244685
+[2025-05-26T02:23:21.976+0000] {logging_mixin.py:190} INFO - Downloaded video 2619486498244685 to data/2619486498244685.mp3
+[2025-05-26T02:23:22.103+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:23:22.103+0000] {logging_mixin.py:190} INFO - Downloading video from 3457651407585093...
+[2025-05-26T02:23:22.134+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/3457651407585093/
+[2025-05-26T02:23:22.134+0000] {logging_mixin.py:190} INFO - [facebook] 3457651407585093: Downloading webpage
+[2025-05-26T02:23:23.339+0000] {logging_mixin.py:190} INFO - [info] 3457651407585093: Downloading 1 format(s): sd
+[2025-05-26T02:23:23.548+0000] {logging_mixin.py:190} INFO - [download] Destination: data/3457651407585093
+[2025-05-26T02:23:23.549+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   14.14MiB at  276.94KiB/s ETA 00:52
+[2025-05-26T02:23:23.549+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   14.14MiB at  700.41KiB/s ETA 00:20
+[2025-05-26T02:23:23.550+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   14.14MiB at    1.46MiB/s ETA 00:09
+[2025-05-26T02:23:23.550+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   14.14MiB at    2.89MiB/s ETA 00:04
+[2025-05-26T02:23:23.552+0000] {logging_mixin.py:190} INFO - [download]   0.2% of   14.14MiB at    4.26MiB/s ETA 00:03
+[2025-05-26T02:23:23.555+0000] {logging_mixin.py:190} INFO - [download]   0.4% of   14.14MiB at    5.93MiB/s ETA 00:02
+[2025-05-26T02:23:23.561+0000] {logging_mixin.py:190} INFO - [download]   0.9% of   14.14MiB at    7.53MiB/s ETA 00:01
+[2025-05-26T02:23:23.574+0000] {logging_mixin.py:190} INFO - [download]   1.8% of   14.14MiB at    8.67MiB/s ETA 00:01
+[2025-05-26T02:23:23.599+0000] {logging_mixin.py:190} INFO - [download]   3.5% of   14.14MiB at    9.21MiB/s ETA 00:01
+[2025-05-26T02:23:23.649+0000] {logging_mixin.py:190} INFO - [download]   7.1% of   14.14MiB at    9.65MiB/s ETA 00:01
+[2025-05-26T02:23:23.900+0000] {logging_mixin.py:190} INFO - [download]  14.1% of   14.14MiB at    5.64MiB/s ETA 00:02
+[2025-05-26T02:23:24.099+0000] {logging_mixin.py:190} INFO - [download]  28.3% of   14.14MiB at    7.22MiB/s ETA 00:01
+[2025-05-26T02:23:24.565+0000] {logging_mixin.py:190} INFO - [download]  56.6% of   14.14MiB at    7.84MiB/s ETA 00:00
+[2025-05-26T02:23:25.045+0000] {logging_mixin.py:190} INFO - [download]  84.8% of   14.14MiB at    8.00MiB/s ETA 00:00
+[2025-05-26T02:23:25.286+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   14.14MiB at    8.13MiB/s ETA 00:00
+[2025-05-26T02:23:25.288+0000] {logging_mixin.py:190} INFO - [download] 100% of   14.14MiB in 00:00:01 at 7.26MiB/s   
+[2025-05-26T02:23:25.336+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/3457651407585093.mp3
+[2025-05-26T02:23:27.427+0000] {logging_mixin.py:190} INFO - Deleting original file data/3457651407585093 (pass -k to keep)
+[2025-05-26T02:23:27.429+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 3457651407585093
+[2025-05-26T02:23:27.434+0000] {logging_mixin.py:190} INFO - Downloaded video 3457651407585093 to data/3457651407585093.mp3
+[2025-05-26T02:23:27.553+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:23:27.553+0000] {logging_mixin.py:190} INFO - Downloading video from 1440377574049342...
+[2025-05-26T02:23:27.582+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/1440377574049342/
+[2025-05-26T02:23:27.583+0000] {logging_mixin.py:190} INFO - [facebook] 1440377574049342: Downloading webpage
+[2025-05-26T02:23:29.160+0000] {logging_mixin.py:190} INFO - [facebook] 1440377574049342: Downloading webpage
+[2025-05-26T02:23:29.422+0000] {logging_mixin.py:190} WARNING - ERROR: [facebook] 1440377574049342: Cannot parse data; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+[2025-05-26T02:23:29.424+0000] {logging_mixin.py:190} INFO - 
+Error downloading video using yt-dlp: ERROR: [facebook] 1440377574049342: Cannot parse data; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+[2025-05-26T02:23:33.489+0000] {logging_mixin.py:190} INFO - Downloaded video 1440377574049342 to data/1440377574049342.mp3
+[2025-05-26T02:23:33.613+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:23:33.613+0000] {logging_mixin.py:190} INFO - Downloading video from 746202302618121...
+[2025-05-26T02:23:33.643+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/746202302618121/
+[2025-05-26T02:23:33.644+0000] {logging_mixin.py:190} INFO - [facebook] 746202302618121: Downloading webpage
+[2025-05-26T02:23:34.914+0000] {logging_mixin.py:190} INFO - [info] 746202302618121: Downloading 1 format(s): 1529176281209536a
+[2025-05-26T02:23:35.156+0000] {logging_mixin.py:190} INFO - [download] Destination: data/746202302618121
+[2025-05-26T02:23:35.174+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.32MiB at   56.47KiB/s ETA 00:23
+[2025-05-26T02:23:35.174+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.32MiB at  158.27KiB/s ETA 00:08
+[2025-05-26T02:23:35.175+0000] {logging_mixin.py:190} INFO - [download]   0.5% of    1.32MiB at  357.82KiB/s ETA 00:03
+[2025-05-26T02:23:35.176+0000] {logging_mixin.py:190} INFO - [download]   1.1% of    1.32MiB at  744.97KiB/s ETA 00:01
+[2025-05-26T02:23:35.176+0000] {logging_mixin.py:190} INFO - [download]   2.3% of    1.32MiB at    1.47MiB/s ETA 00:00
+[2025-05-26T02:23:35.177+0000] {logging_mixin.py:190} INFO - [download]   4.7% of    1.32MiB at    2.89MiB/s ETA 00:00
+[2025-05-26T02:23:35.183+0000] {logging_mixin.py:190} INFO - [download]   9.4% of    1.32MiB at    4.52MiB/s ETA 00:00
+[2025-05-26T02:23:35.291+0000] {logging_mixin.py:190} INFO - [download]  18.9% of    1.32MiB at    1.84MiB/s ETA 00:00
+[2025-05-26T02:23:35.324+0000] {logging_mixin.py:190} INFO - [download]  37.9% of    1.32MiB at    2.97MiB/s ETA 00:00
+[2025-05-26T02:23:35.367+0000] {logging_mixin.py:190} INFO - [download]  75.9% of    1.32MiB at    4.73MiB/s ETA 00:00
+[2025-05-26T02:23:35.396+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.32MiB at    5.48MiB/s ETA 00:00
+[2025-05-26T02:23:35.397+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.32MiB in 00:00:00 at 2.75MiB/s   
+[2025-05-26T02:23:35.399+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/746202302618121"
+[2025-05-26T02:23:35.507+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/746202302618121.mp3
+[2025-05-26T02:23:37.104+0000] {logging_mixin.py:190} INFO - Deleting original file data/746202302618121 (pass -k to keep)
+[2025-05-26T02:23:37.108+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 746202302618121
+[2025-05-26T02:23:37.115+0000] {logging_mixin.py:190} INFO - Downloaded video 746202302618121 to data/746202302618121.mp3
+[2025-05-26T02:23:37.247+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:23:37.248+0000] {logging_mixin.py:190} INFO - Downloading video from 317186215915827...
+[2025-05-26T02:23:37.278+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/317186215915827/
+[2025-05-26T02:23:37.278+0000] {logging_mixin.py:190} INFO - [facebook] 317186215915827: Downloading webpage
+[2025-05-26T02:23:38.365+0000] {logging_mixin.py:190} INFO - [info] 317186215915827: Downloading 1 format(s): 24163775809892528a
+[2025-05-26T02:23:38.770+0000] {logging_mixin.py:190} INFO - [download] Destination: data/317186215915827
+[2025-05-26T02:23:38.772+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    2.60MiB at  330.83KiB/s ETA 00:08
+[2025-05-26T02:23:38.773+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    2.60MiB at  738.65KiB/s ETA 00:03
+[2025-05-26T02:23:38.774+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    2.60MiB at    1.30MiB/s ETA 00:01
+[2025-05-26T02:23:38.774+0000] {logging_mixin.py:190} INFO - [download]   0.6% of    2.60MiB at    2.54MiB/s ETA 00:01
+[2025-05-26T02:23:38.774+0000] {logging_mixin.py:190} INFO - [download]   1.2% of    2.60MiB at    4.84MiB/s ETA 00:00
+[2025-05-26T02:23:38.777+0000] {logging_mixin.py:190} INFO - [download]   2.4% of    2.60MiB at    7.42MiB/s ETA 00:00
+[2025-05-26T02:23:38.783+0000] {logging_mixin.py:190} INFO - [download]   4.8% of    2.60MiB at    8.45MiB/s ETA 00:00
+[2025-05-26T02:23:38.795+0000] {logging_mixin.py:190} INFO - [download]   9.6% of    2.60MiB at    9.20MiB/s ETA 00:00
+[2025-05-26T02:23:38.877+0000] {logging_mixin.py:190} INFO - [download]  19.2% of    2.60MiB at    4.60MiB/s ETA 00:00
+[2025-05-26T02:23:38.926+0000] {logging_mixin.py:190} INFO - [download]  38.5% of    2.60MiB at    6.34MiB/s ETA 00:00
+[2025-05-26T02:23:39.031+0000] {logging_mixin.py:190} INFO - [download]  77.0% of    2.60MiB at    7.60MiB/s ETA 00:00
+[2025-05-26T02:23:39.089+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    2.60MiB at    8.09MiB/s ETA 00:00
+[2025-05-26T02:23:39.090+0000] {logging_mixin.py:190} INFO - [download] 100% of    2.60MiB in 00:00:00 at 3.59MiB/s   
+[2025-05-26T02:23:39.092+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/317186215915827"
+[2025-05-26T02:23:39.191+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/317186215915827.mp3
+[2025-05-26T02:23:42.557+0000] {logging_mixin.py:190} INFO - Deleting original file data/317186215915827 (pass -k to keep)
+[2025-05-26T02:23:42.560+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 317186215915827
+[2025-05-26T02:23:42.565+0000] {logging_mixin.py:190} INFO - Downloaded video 317186215915827 to data/317186215915827.mp3
+[2025-05-26T02:23:42.684+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:23:42.685+0000] {logging_mixin.py:190} INFO - Downloading video from 993650515888831...
+[2025-05-26T02:23:42.714+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/993650515888831/
+[2025-05-26T02:23:42.715+0000] {logging_mixin.py:190} INFO - [facebook] 993650515888831: Downloading webpage
+[2025-05-26T02:23:44.213+0000] {logging_mixin.py:190} INFO - [facebook] 993650515888831: Downloading webpage
+[2025-05-26T02:23:44.436+0000] {logging_mixin.py:190} WARNING - ERROR: [facebook] 993650515888831: Cannot parse data; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+[2025-05-26T02:23:44.438+0000] {logging_mixin.py:190} INFO - 
+Error downloading video using yt-dlp: ERROR: [facebook] 993650515888831: Cannot parse data; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+[2025-05-26T02:23:46.525+0000] {logging_mixin.py:190} INFO - Downloaded video 993650515888831 to data/993650515888831.mp3
+[2025-05-26T02:23:46.648+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:23:46.649+0000] {logging_mixin.py:190} INFO - Downloading video from 1118578480084308...
+[2025-05-26T02:23:46.679+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/1118578480084308/
+[2025-05-26T02:23:46.679+0000] {logging_mixin.py:190} INFO - [facebook] 1118578480084308: Downloading webpage
+[2025-05-26T02:23:48.476+0000] {logging_mixin.py:190} INFO - [info] 1118578480084308: Downloading 1 format(s): 1620219039368199a
+[2025-05-26T02:23:48.533+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1118578480084308
+[2025-05-26T02:23:48.533+0000] {logging_mixin.py:190} INFO - [download]   0.1% of  774.41KiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:23:48.534+0000] {logging_mixin.py:190} INFO - [download]   0.4% of  774.41KiB at    2.20MiB/s ETA 00:00  
+[2025-05-26T02:23:48.534+0000] {logging_mixin.py:190} INFO - [download]   0.9% of  774.41KiB at    3.87MiB/s ETA 00:00
+[2025-05-26T02:23:48.535+0000] {logging_mixin.py:190} INFO - [download]   1.9% of  774.41KiB at    5.66MiB/s ETA 00:00
+[2025-05-26T02:23:48.536+0000] {logging_mixin.py:190} INFO - [download]   4.0% of  774.41KiB at    7.62MiB/s ETA 00:00
+[2025-05-26T02:23:48.540+0000] {logging_mixin.py:190} INFO - [download]   8.1% of  774.41KiB at    8.16MiB/s ETA 00:00
+[2025-05-26T02:23:48.546+0000] {logging_mixin.py:190} INFO - [download]  16.4% of  774.41KiB at    9.06MiB/s ETA 00:00
+[2025-05-26T02:23:48.681+0000] {logging_mixin.py:190} INFO - [download]  32.9% of  774.41KiB at    1.68MiB/s ETA 00:00
+[2025-05-26T02:23:48.707+0000] {logging_mixin.py:190} INFO - [download]  66.0% of  774.41KiB at    2.86MiB/s ETA 00:00
+[2025-05-26T02:23:48.763+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  774.41KiB at    3.27MiB/s ETA 00:00
+[2025-05-26T02:23:48.764+0000] {logging_mixin.py:190} INFO - [download] 100% of  774.41KiB in 00:00:00 at 2.65MiB/s   
+[2025-05-26T02:23:48.766+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1118578480084308"
+[2025-05-26T02:23:48.894+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1118578480084308.mp3
+[2025-05-26T02:23:49.669+0000] {logging_mixin.py:190} INFO - Deleting original file data/1118578480084308 (pass -k to keep)
+[2025-05-26T02:23:49.672+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1118578480084308
+[2025-05-26T02:23:49.676+0000] {logging_mixin.py:190} INFO - Downloaded video 1118578480084308 to data/1118578480084308.mp3
+[2025-05-26T02:23:49.787+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:23:49.788+0000] {logging_mixin.py:190} INFO - Downloading video from 1069509791711256...
+[2025-05-26T02:23:49.819+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/1069509791711256/
+[2025-05-26T02:23:49.820+0000] {logging_mixin.py:190} INFO - [facebook] 1069509791711256: Downloading webpage
+[2025-05-26T02:23:51.668+0000] {logging_mixin.py:190} INFO - [info] 1069509791711256: Downloading 1 format(s): 692914113221020a
+[2025-05-26T02:23:51.903+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1069509791711256
+[2025-05-26T02:23:51.904+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  459.86KiB at    5.48KiB/s ETA 01:23
+[2025-05-26T02:23:51.904+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  459.86KiB at   16.39KiB/s ETA 00:27
+[2025-05-26T02:23:51.905+0000] {logging_mixin.py:190} INFO - [download]   1.5% of  459.86KiB at   38.13KiB/s ETA 00:11
+[2025-05-26T02:23:51.906+0000] {logging_mixin.py:190} INFO - [download]   3.3% of  459.86KiB at   81.49KiB/s ETA 00:05
+[2025-05-26T02:23:51.908+0000] {logging_mixin.py:190} INFO - [download]   6.7% of  459.86KiB at  166.18KiB/s ETA 00:02
+[2025-05-26T02:23:51.911+0000] {logging_mixin.py:190} INFO - [download]  13.7% of  459.86KiB at  332.12KiB/s ETA 00:01
+[2025-05-26T02:23:51.917+0000] {logging_mixin.py:190} INFO - [download]  27.6% of  459.86KiB at  648.73KiB/s ETA 00:00
+[2025-05-26T02:23:51.930+0000] {logging_mixin.py:190} INFO - [download]  55.5% of  459.86KiB at    1.20MiB/s ETA 00:00
+[2025-05-26T02:23:51.949+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  459.86KiB at    1.97MiB/s ETA 00:00
+[2025-05-26T02:23:51.950+0000] {logging_mixin.py:190} INFO - [download] 100% of  459.86KiB in 00:00:00 at 1.62MiB/s   
+[2025-05-26T02:23:51.952+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1069509791711256"
+[2025-05-26T02:23:52.064+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1069509791711256.mp3
+[2025-05-26T02:23:52.788+0000] {logging_mixin.py:190} INFO - Deleting original file data/1069509791711256 (pass -k to keep)
+[2025-05-26T02:23:52.792+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1069509791711256
+[2025-05-26T02:23:52.796+0000] {logging_mixin.py:190} INFO - Downloaded video 1069509791711256 to data/1069509791711256.mp3
+[2025-05-26T02:23:50.411+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:23:50.411+0000] {logging_mixin.py:190} INFO - Downloading video from 9824612047616098...
+[2025-05-26T02:23:50.442+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/100044160982875/videos/9824612047616098
+[2025-05-26T02:23:50.442+0000] {logging_mixin.py:190} INFO - [facebook] 9824612047616098: Downloading webpage
+[2025-05-26T02:23:52.351+0000] {logging_mixin.py:190} INFO - [info] 9824612047616098: Downloading 1 format(s): 694151619867993a
+[2025-05-26T02:23:52.393+0000] {logging_mixin.py:190} INFO - [download] Destination: data/9824612047616098
+[2025-05-26T02:23:52.393+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  164.79KiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:23:52.397+0000] {logging_mixin.py:190} INFO - [download]   1.8% of  164.79KiB at  679.50KiB/s ETA 00:00  
+[2025-05-26T02:23:52.398+0000] {logging_mixin.py:190} INFO - [download]   4.2% of  164.79KiB at    1.37MiB/s ETA 00:00
+[2025-05-26T02:23:52.398+0000] {logging_mixin.py:190} INFO - [download]   9.1% of  164.79KiB at    2.66MiB/s ETA 00:00
+[2025-05-26T02:23:52.399+0000] {logging_mixin.py:190} INFO - [download]  18.8% of  164.79KiB at    5.01MiB/s ETA 00:00
+[2025-05-26T02:23:52.403+0000] {logging_mixin.py:190} INFO - [download]  38.2% of  164.79KiB at    6.04MiB/s ETA 00:00
+[2025-05-26T02:23:52.411+0000] {logging_mixin.py:190} INFO - [download]  77.1% of  164.79KiB at    6.67MiB/s ETA 00:00
+[2025-05-26T02:23:52.415+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  164.79KiB at    7.35MiB/s ETA 00:00
+[2025-05-26T02:23:52.415+0000] {logging_mixin.py:190} INFO - [download] 100% of  164.79KiB in 00:00:00 at 2.63MiB/s   
+[2025-05-26T02:23:52.417+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/9824612047616098"
+[2025-05-26T02:23:52.502+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/9824612047616098.mp3
+[2025-05-26T02:23:52.734+0000] {logging_mixin.py:190} INFO - Deleting original file data/9824612047616098 (pass -k to keep)
+[2025-05-26T02:23:52.737+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 9824612047616098
+[2025-05-26T02:23:52.741+0000] {logging_mixin.py:190} INFO - Downloaded video 9824612047616098 to data/9824612047616098.mp3
+[2025-05-26T02:23:52.864+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:23:52.865+0000] {logging_mixin.py:190} INFO - Downloading video from 876791899473020...
+[2025-05-26T02:23:52.895+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/876791899473020/
+[2025-05-26T02:23:52.895+0000] {logging_mixin.py:190} INFO - [facebook] 876791899473020: Downloading webpage
+[2025-05-26T02:23:54.159+0000] {logging_mixin.py:190} INFO - [info] 876791899473020: Downloading 1 format(s): 359133750197368a
+[2025-05-26T02:23:54.720+0000] {logging_mixin.py:190} INFO - [download] Destination: data/876791899473020
+[2025-05-26T02:23:54.722+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.52MiB at  966.43KiB/s ETA 00:01
+[2025-05-26T02:23:54.722+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.52MiB at    1.27MiB/s ETA 00:01
+[2025-05-26T02:23:54.723+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    1.52MiB at    2.32MiB/s ETA 00:00
+[2025-05-26T02:23:54.724+0000] {logging_mixin.py:190} INFO - [download]   1.0% of    1.52MiB at    4.18MiB/s ETA 00:00
+[2025-05-26T02:23:54.725+0000] {logging_mixin.py:190} INFO - [download]   2.0% of    1.52MiB at    6.28MiB/s ETA 00:00
+[2025-05-26T02:23:54.728+0000] {logging_mixin.py:190} INFO - [download]   4.0% of    1.52MiB at    8.16MiB/s ETA 00:00
+[2025-05-26T02:23:54.734+0000] {logging_mixin.py:190} INFO - [download]   8.1% of    1.52MiB at    8.98MiB/s ETA 00:00
+[2025-05-26T02:23:54.746+0000] {logging_mixin.py:190} INFO - [download]  16.3% of    1.52MiB at    9.51MiB/s ETA 00:00
+[2025-05-26T02:23:54.771+0000] {logging_mixin.py:190} INFO - [download]  32.7% of    1.52MiB at    9.79MiB/s ETA 00:00
+[2025-05-26T02:23:54.821+0000] {logging_mixin.py:190} INFO - [download]  65.5% of    1.52MiB at    9.95MiB/s ETA 00:00
+[2025-05-26T02:23:54.872+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.52MiB at   10.04MiB/s ETA 00:00
+[2025-05-26T02:23:54.873+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.52MiB in 00:00:00 at 2.14MiB/s   
+[2025-05-26T02:23:54.875+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/876791899473020"
+[2025-05-26T02:23:54.969+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/876791899473020.mp3
+[2025-05-26T02:23:56.777+0000] {logging_mixin.py:190} INFO - Deleting original file data/876791899473020 (pass -k to keep)
+[2025-05-26T02:23:56.780+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 876791899473020
+[2025-05-26T02:23:56.800+0000] {logging_mixin.py:190} INFO - Downloaded video 876791899473020 to data/876791899473020.mp3
+[2025-05-26T02:23:56.926+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:23:56.926+0000] {logging_mixin.py:190} INFO - Downloading video from 918053198608159...
+[2025-05-26T02:23:56.956+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/918053198608159/
+[2025-05-26T02:23:56.956+0000] {logging_mixin.py:190} INFO - [facebook] 918053198608159: Downloading webpage
+[2025-05-26T02:23:58.373+0000] {logging_mixin.py:190} INFO - [info] 918053198608159: Downloading 1 format(s): 1728112337687278a
+[2025-05-26T02:23:58.565+0000] {logging_mixin.py:190} INFO - [download] Destination: data/918053198608159
+[2025-05-26T02:23:58.566+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    2.49MiB at  487.99KiB/s ETA 00:05
+[2025-05-26T02:23:58.566+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    2.49MiB at 1020.59KiB/s ETA 00:02
+[2025-05-26T02:23:58.567+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    2.49MiB at    1.94MiB/s ETA 00:01
+[2025-05-26T02:23:58.568+0000] {logging_mixin.py:190} INFO - [download]   0.6% of    2.49MiB at    3.55MiB/s ETA 00:00
+[2025-05-26T02:23:58.569+0000] {logging_mixin.py:190} INFO - [download]   1.2% of    2.49MiB at    5.79MiB/s ETA 00:00
+[2025-05-26T02:23:58.573+0000] {logging_mixin.py:190} INFO - [download]   2.5% of    2.49MiB at    6.69MiB/s ETA 00:00
+[2025-05-26T02:23:58.581+0000] {logging_mixin.py:190} INFO - [download]   5.0% of    2.49MiB at    7.16MiB/s ETA 00:00
+[2025-05-26T02:23:58.699+0000] {logging_mixin.py:190} INFO - [download]  10.0% of    2.49MiB at    1.84MiB/s ETA 00:01
+[2025-05-26T02:23:58.724+0000] {logging_mixin.py:190} INFO - [download]  20.0% of    2.49MiB at    3.12MiB/s ETA 00:00
+[2025-05-26T02:23:58.781+0000] {logging_mixin.py:190} INFO - [download]  40.0% of    2.49MiB at    4.60MiB/s ETA 00:00
+[2025-05-26T02:23:58.888+0000] {logging_mixin.py:190} INFO - [download]  80.1% of    2.49MiB at    6.16MiB/s ETA 00:00
+[2025-05-26T02:23:58.937+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    2.49MiB at    6.68MiB/s ETA 00:00
+[2025-05-26T02:23:58.938+0000] {logging_mixin.py:190} INFO - [download] 100% of    2.49MiB in 00:00:00 at 4.44MiB/s   
+[2025-05-26T02:23:58.940+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/918053198608159"
+[2025-05-26T02:23:59.039+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/918053198608159.mp3
+[2025-05-26T02:24:01.966+0000] {logging_mixin.py:190} INFO - Deleting original file data/918053198608159 (pass -k to keep)
+[2025-05-26T02:24:01.969+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 918053198608159
+[2025-05-26T02:24:01.989+0000] {logging_mixin.py:190} INFO - Downloaded video 918053198608159 to data/918053198608159.mp3
+[2025-05-26T02:24:02.110+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:24:02.111+0000] {logging_mixin.py:190} INFO - Downloading video from 1206445790641550...
+[2025-05-26T02:24:02.141+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/1206445790641550/
+[2025-05-26T02:24:02.141+0000] {logging_mixin.py:190} INFO - [facebook] 1206445790641550: Downloading webpage
+[2025-05-26T02:24:04.188+0000] {logging_mixin.py:190} INFO - [info] 1206445790641550: Downloading 1 format(s): 24523804473890952a
+[2025-05-26T02:24:04.241+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1206445790641550
+[2025-05-26T02:24:04.242+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  473.08KiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:24:04.246+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  473.08KiB at  643.10KiB/s ETA 00:00  
+[2025-05-26T02:24:04.247+0000] {logging_mixin.py:190} INFO - [download]   1.5% of  473.08KiB at    1.23MiB/s ETA 00:00
+[2025-05-26T02:24:04.247+0000] {logging_mixin.py:190} INFO - [download]   3.2% of  473.08KiB at    2.41MiB/s ETA 00:00
+[2025-05-26T02:24:04.248+0000] {logging_mixin.py:190} INFO - [download]   6.6% of  473.08KiB at    4.59MiB/s ETA 00:00
+[2025-05-26T02:24:04.251+0000] {logging_mixin.py:190} INFO - [download]  13.3% of  473.08KiB at    6.31MiB/s ETA 00:00
+[2025-05-26T02:24:04.267+0000] {logging_mixin.py:190} INFO - [download]  26.8% of  473.08KiB at    4.82MiB/s ETA 00:00
+[2025-05-26T02:24:04.461+0000] {logging_mixin.py:190} INFO - [download]  53.9% of  473.08KiB at    1.13MiB/s ETA 00:00
+[2025-05-26T02:24:04.483+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  473.08KiB at    1.91MiB/s ETA 00:00
+[2025-05-26T02:24:04.484+0000] {logging_mixin.py:190} INFO - [download] 100% of  473.08KiB in 00:00:00 at 1.59MiB/s   
+[2025-05-26T02:24:04.486+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1206445790641550"
+[2025-05-26T02:24:04.581+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1206445790641550.mp3
+[2025-05-26T02:24:05.272+0000] {logging_mixin.py:190} INFO - Deleting original file data/1206445790641550 (pass -k to keep)
+[2025-05-26T02:24:05.276+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1206445790641550
+[2025-05-26T02:24:05.293+0000] {logging_mixin.py:190} INFO - Downloaded video 1206445790641550 to data/1206445790641550.mp3
+[2025-05-26T02:24:05.418+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:24:05.418+0000] {logging_mixin.py:190} INFO - Downloading video from 9395705697197313...
+[2025-05-26T02:24:05.449+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/FCBfemeni/videos/9395705697197313/
+[2025-05-26T02:24:05.449+0000] {logging_mixin.py:190} INFO - [facebook] 9395705697197313: Downloading webpage
+[2025-05-26T02:24:06.548+0000] {logging_mixin.py:190} INFO - [info] 9395705697197313: Downloading 1 format(s): 1301156481444409a
+[2025-05-26T02:24:06.580+0000] {logging_mixin.py:190} INFO - [download] Destination: data/9395705697197313
+[2025-05-26T02:24:06.581+0000] {logging_mixin.py:190} INFO - [download]   0.3% of  317.70KiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:24:06.584+0000] {logging_mixin.py:190} INFO - [download]   0.9% of  317.70KiB at  814.53KiB/s ETA 00:00  
+[2025-05-26T02:24:06.584+0000] {logging_mixin.py:190} INFO - [download]   2.2% of  317.70KiB at    1.61MiB/s ETA 00:00
+[2025-05-26T02:24:06.584+0000] {logging_mixin.py:190} INFO - [download]   4.7% of  317.70KiB at    3.15MiB/s ETA 00:00
+[2025-05-26T02:24:06.585+0000] {logging_mixin.py:190} INFO - [download]   9.8% of  317.70KiB at    5.85MiB/s ETA 00:00
+[2025-05-26T02:24:06.589+0000] {logging_mixin.py:190} INFO - [download]  19.8% of  317.70KiB at    6.61MiB/s ETA 00:00
+[2025-05-26T02:24:06.596+0000] {logging_mixin.py:190} INFO - [download]  40.0% of  317.70KiB at    7.89MiB/s ETA 00:00
+[2025-05-26T02:24:06.608+0000] {logging_mixin.py:190} INFO - [download]  80.3% of  317.70KiB at    9.01MiB/s ETA 00:00
+[2025-05-26T02:24:06.795+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  317.70KiB at    1.44MiB/s ETA 00:00
+[2025-05-26T02:24:06.796+0000] {logging_mixin.py:190} INFO - [download] 100% of  317.70KiB in 00:00:00 at 1.27MiB/s   
+[2025-05-26T02:24:06.798+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/9395705697197313"
+[2025-05-26T02:24:06.889+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/9395705697197313.mp3
+[2025-05-26T02:24:07.341+0000] {logging_mixin.py:190} INFO - Deleting original file data/9395705697197313 (pass -k to keep)
+[2025-05-26T02:24:07.344+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 9395705697197313
+[2025-05-26T02:24:07.349+0000] {logging_mixin.py:190} INFO - Downloaded video 9395705697197313 to data/9395705697197313.mp3
+[2025-05-26T02:24:07.481+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:24:07.482+0000] {logging_mixin.py:190} INFO - Downloading video from 726094326749462...
+[2025-05-26T02:24:07.512+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/726094326749462/
+[2025-05-26T02:24:07.512+0000] {logging_mixin.py:190} INFO - [facebook] 726094326749462: Downloading webpage
+[2025-05-26T02:24:08.970+0000] {logging_mixin.py:190} INFO - [facebook] 726094326749462: Downloading webpage
+[2025-05-26T02:24:09.209+0000] {logging_mixin.py:190} WARNING - ERROR: [facebook] 726094326749462: Cannot parse data; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+[2025-05-26T02:24:09.212+0000] {logging_mixin.py:190} INFO - 
+Error downloading video using yt-dlp: ERROR: [facebook] 726094326749462: Cannot parse data; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+[2025-05-26T02:24:11.504+0000] {logging_mixin.py:190} INFO - Downloaded video 726094326749462 to data/726094326749462.mp3
+[2025-05-26T02:24:11.632+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:24:11.632+0000] {logging_mixin.py:190} INFO - Downloading video from 9824612047616098...
+[2025-05-26T02:24:11.661+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/9824612047616098/?comment_id=682840124376590&__tn__=R]
+[2025-05-26T02:24:11.662+0000] {logging_mixin.py:190} INFO - [facebook] 9824612047616098: Downloading webpage
+[2025-05-26T02:24:13.689+0000] {logging_mixin.py:190} INFO - [info] 9824612047616098: Downloading 1 format(s): 694151619867993a
+[2025-05-26T02:24:13.806+0000] {logging_mixin.py:190} INFO - [download] Destination: data/9824612047616098
+[2025-05-26T02:24:13.806+0000] {logging_mixin.py:190} INFO - [download]   0.6% of  164.79KiB at  925.69KiB/s ETA 00:00
+[2025-05-26T02:24:13.840+0000] {logging_mixin.py:190} INFO - [download]   1.8% of  164.79KiB at   86.26KiB/s ETA 00:01
+[2025-05-26T02:24:13.841+0000] {logging_mixin.py:190} INFO - [download]   4.2% of  164.79KiB at  196.70KiB/s ETA 00:00
+[2025-05-26T02:24:13.841+0000] {logging_mixin.py:190} INFO - [download]   9.1% of  164.79KiB at  415.21KiB/s ETA 00:00
+[2025-05-26T02:24:13.888+0000] {logging_mixin.py:190} INFO - [download]  18.8% of  164.79KiB at  374.28KiB/s ETA 00:00
+[2025-05-26T02:24:13.917+0000] {logging_mixin.py:190} INFO - [download]  38.2% of  164.79KiB at  562.99KiB/s ETA 00:00
+[2025-05-26T02:24:13.966+0000] {logging_mixin.py:190} INFO - [download]  77.1% of  164.79KiB at  791.10KiB/s ETA 00:00
+[2025-05-26T02:24:14.058+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  164.79KiB at  652.43KiB/s ETA 00:00
+[2025-05-26T02:24:14.059+0000] {logging_mixin.py:190} INFO - [download] 100% of  164.79KiB in 00:00:00 at 449.48KiB/s 
+[2025-05-26T02:24:14.061+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/9824612047616098"
+[2025-05-26T02:24:14.148+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/9824612047616098.mp3
+[2025-05-26T02:24:14.395+0000] {logging_mixin.py:190} INFO - Deleting original file data/9824612047616098 (pass -k to keep)
+[2025-05-26T02:24:14.398+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 9824612047616098
+[2025-05-26T02:24:14.410+0000] {logging_mixin.py:190} INFO - Downloaded video 9824612047616098 to data/9824612047616098.mp3
+[2025-05-26T02:24:14.613+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:24:14.614+0000] {logging_mixin.py:190} INFO - Downloading video from 1344756899966182...
+[2025-05-26T02:24:14.645+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/1344756899966182/
+[2025-05-26T02:24:14.645+0000] {logging_mixin.py:190} INFO - [facebook] 1344756899966182: Downloading webpage
+[2025-05-26T02:24:16.334+0000] {logging_mixin.py:190} INFO - [info] 1344756899966182: Downloading 1 format(s): 545353488455149a
+[2025-05-26T02:24:16.452+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1344756899966182
+[2025-05-26T02:24:16.453+0000] {logging_mixin.py:190} INFO - [download]   0.2% of  446.96KiB at  742.22KiB/s ETA 00:00
+[2025-05-26T02:24:16.453+0000] {logging_mixin.py:190} INFO - [download]   0.7% of  446.96KiB at    1.37MiB/s ETA 00:00
+[2025-05-26T02:24:16.455+0000] {logging_mixin.py:190} INFO - [download]   1.6% of  446.96KiB at    2.00MiB/s ETA 00:00
+[2025-05-26T02:24:16.473+0000] {logging_mixin.py:190} INFO - [download]   3.4% of  446.96KiB at  698.72KiB/s ETA 00:00
+[2025-05-26T02:24:16.483+0000] {logging_mixin.py:190} INFO - [download]   6.9% of  446.96KiB at  981.90KiB/s ETA 00:00
+[2025-05-26T02:24:16.512+0000] {logging_mixin.py:190} INFO - [download]  14.1% of  446.96KiB at    1.01MiB/s ETA 00:00
+[2025-05-26T02:24:16.542+0000] {logging_mixin.py:190} INFO - [download]  28.4% of  446.96KiB at    1.37MiB/s ETA 00:00
+[2025-05-26T02:24:16.612+0000] {logging_mixin.py:190} INFO - [download]  57.1% of  446.96KiB at    1.55MiB/s ETA 00:00
+[2025-05-26T02:24:16.784+0000] {logging_mixin.py:190} INFO - [download] 100.0% of  446.96KiB at    1.31MiB/s ETA 00:00
+[2025-05-26T02:24:16.785+0000] {logging_mixin.py:190} INFO - [download] 100% of  446.96KiB in 00:00:00 at 1001.32KiB/s
+[2025-05-26T02:24:16.787+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1344756899966182"
+[2025-05-26T02:24:16.883+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1344756899966182.mp3
+[2025-05-26T02:24:17.505+0000] {logging_mixin.py:190} INFO - Deleting original file data/1344756899966182 (pass -k to keep)
+[2025-05-26T02:24:17.509+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1344756899966182
+[2025-05-26T02:24:17.521+0000] {logging_mixin.py:190} INFO - Downloaded video 1344756899966182 to data/1344756899966182.mp3
+[2025-05-26T02:24:18.146+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:24:18.147+0000] {logging_mixin.py:190} INFO - Downloading video from 2732860283586657...
+[2025-05-26T02:24:18.178+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/2732860283586657/
+[2025-05-26T02:24:18.179+0000] {logging_mixin.py:190} INFO - [facebook] 2732860283586657: Downloading webpage
+[2025-05-26T02:24:19.998+0000] {logging_mixin.py:190} INFO - [info] 2732860283586657: Downloading 1 format(s): 647898335076803a
+[2025-05-26T02:24:20.125+0000] {logging_mixin.py:190} INFO - [download] Destination: data/2732860283586657
+[2025-05-26T02:24:20.126+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   84.01MiB at  755.73KiB/s ETA 01:54
+[2025-05-26T02:24:20.156+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   84.01MiB at   95.81KiB/s ETA 14:58
+[2025-05-26T02:24:20.156+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   84.01MiB at  218.54KiB/s ETA 06:33
+[2025-05-26T02:24:20.157+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   84.01MiB at  461.55KiB/s ETA 03:06
+[2025-05-26T02:24:20.168+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   84.01MiB at  706.64KiB/s ETA 02:01
+[2025-05-26T02:24:20.233+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   84.01MiB at  580.34KiB/s ETA 02:28
+[2025-05-26T02:24:20.259+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   84.01MiB at  943.65KiB/s ETA 01:31
+[2025-05-26T02:24:20.318+0000] {logging_mixin.py:190} INFO - [download]   0.3% of   84.01MiB at    1.29MiB/s ETA 01:05
+[2025-05-26T02:24:20.462+0000] {logging_mixin.py:190} INFO - [download]   0.6% of   84.01MiB at    1.48MiB/s ETA 00:56
+[2025-05-26T02:24:20.628+0000] {logging_mixin.py:190} INFO - [download]   1.2% of   84.01MiB at    1.98MiB/s ETA 00:41
+[2025-05-26T02:24:21.145+0000] {logging_mixin.py:190} INFO - [download]   2.4% of   84.01MiB at    1.96MiB/s ETA 00:41
+[2025-05-26T02:24:21.589+0000] {logging_mixin.py:190} INFO - [download]   4.7% of   84.01MiB at    2.69MiB/s ETA 00:29
+[2025-05-26T02:24:22.072+0000] {logging_mixin.py:190} INFO - [download]   9.3% of   84.01MiB at    4.00MiB/s ETA 00:19
+[2025-05-26T02:24:22.457+0000] {logging_mixin.py:190} INFO - [download]  14.0% of   84.01MiB at    5.06MiB/s ETA 00:14
+[2025-05-26T02:24:20.373+0000] {logging_mixin.py:190} INFO - [download]  18.8% of   84.01MiB at   63.66MiB/s ETA 00:01
+[2025-05-26T02:24:20.767+0000] {logging_mixin.py:190} INFO - [download]  23.6% of   84.01MiB at   30.83MiB/s ETA 00:02
+[2025-05-26T02:24:21.253+0000] {logging_mixin.py:190} INFO - [download]  28.3% of   84.01MiB at   21.09MiB/s ETA 00:02
+[2025-05-26T02:24:21.652+0000] {logging_mixin.py:190} INFO - [download]  33.1% of   84.01MiB at   18.20MiB/s ETA 00:03
+[2025-05-26T02:24:22.051+0000] {logging_mixin.py:190} INFO - [download]  37.9% of   84.01MiB at   16.50MiB/s ETA 00:03
+[2025-05-26T02:24:22.453+0000] {logging_mixin.py:190} INFO - [download]  42.6% of   84.01MiB at   15.38MiB/s ETA 00:03
+[2025-05-26T02:24:22.850+0000] {logging_mixin.py:190} INFO - [download]  47.4% of   84.01MiB at   14.60MiB/s ETA 00:03
+[2025-05-26T02:24:23.254+0000] {logging_mixin.py:190} INFO - [download]  52.1% of   84.01MiB at   14.00MiB/s ETA 00:02
+[2025-05-26T02:24:23.658+0000] {logging_mixin.py:190} INFO - [download]  56.9% of   84.01MiB at   13.53MiB/s ETA 00:02
+[2025-05-26T02:24:24.055+0000] {logging_mixin.py:190} INFO - [download]  61.7% of   84.01MiB at   13.18MiB/s ETA 00:02
+[2025-05-26T02:24:24.453+0000] {logging_mixin.py:190} INFO - [download]  66.4% of   84.01MiB at   12.89MiB/s ETA 00:02
+[2025-05-26T02:24:24.851+0000] {logging_mixin.py:190} INFO - [download]  71.2% of   84.01MiB at   12.65MiB/s ETA 00:01
+[2025-05-26T02:24:25.253+0000] {logging_mixin.py:190} INFO - [download]  75.9% of   84.01MiB at   12.44MiB/s ETA 00:01
+[2025-05-26T02:24:25.651+0000] {logging_mixin.py:190} INFO - [download]  80.7% of   84.01MiB at   12.27MiB/s ETA 00:01
+[2025-05-26T02:24:26.053+0000] {logging_mixin.py:190} INFO - [download]  85.5% of   84.01MiB at   12.11MiB/s ETA 00:01
+[2025-05-26T02:24:26.477+0000] {logging_mixin.py:190} INFO - [download]  90.2% of   84.01MiB at   11.93MiB/s ETA 00:00
+[2025-05-26T02:24:27.070+0000] {logging_mixin.py:190} INFO - [download]  95.0% of   84.01MiB at   11.49MiB/s ETA 00:00
+[2025-05-26T02:24:27.679+0000] {logging_mixin.py:190} INFO - [download]  99.8% of   84.01MiB at   11.09MiB/s ETA 00:00
+[2025-05-26T02:24:27.702+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   84.01MiB at   11.09MiB/s ETA 00:00
+[2025-05-26T02:24:27.703+0000] {logging_mixin.py:190} INFO - [download] 100% of   84.01MiB in 00:00:07 at 10.91MiB/s  
+[2025-05-26T02:24:27.705+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/2732860283586657"
+[2025-05-26T02:24:28.493+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/2732860283586657.mp3
+[2025-05-26T02:25:51.786+0000] {logging_mixin.py:190} INFO - Deleting original file data/2732860283586657 (pass -k to keep)
+[2025-05-26T02:25:51.798+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 2732860283586657
+[2025-05-26T02:25:51.805+0000] {logging_mixin.py:190} INFO - Downloaded video 2732860283586657 to data/2732860283586657.mp3
+[2025-05-26T02:25:51.948+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:25:51.948+0000] {logging_mixin.py:190} INFO - Downloading video from 30126178906973462...
+[2025-05-26T02:25:51.979+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/30126178906973462/
+[2025-05-26T02:25:51.979+0000] {logging_mixin.py:190} INFO - [facebook] 30126178906973462: Downloading webpage
+[2025-05-26T02:25:51.052+0000] {logging_mixin.py:190} INFO - [info] 30126178906973462: Downloading 1 format(s): 1204173478021095a
+[2025-05-26T02:25:51.108+0000] {logging_mixin.py:190} INFO - [download] Destination: data/30126178906973462
+[2025-05-26T02:25:51.109+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    1.74MiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:25:51.109+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    1.74MiB at    2.03MiB/s ETA 00:00  
+[2025-05-26T02:25:51.110+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    1.74MiB at    3.70MiB/s ETA 00:00
+[2025-05-26T02:25:51.111+0000] {logging_mixin.py:190} INFO - [download]   0.8% of    1.74MiB at    4.46MiB/s ETA 00:00
+[2025-05-26T02:25:51.114+0000] {logging_mixin.py:190} INFO - [download]   1.7% of    1.74MiB at    5.13MiB/s ETA 00:00
+[2025-05-26T02:25:51.118+0000] {logging_mixin.py:190} INFO - [download]   3.5% of    1.74MiB at    5.76MiB/s ETA 00:00
+[2025-05-26T02:25:51.125+0000] {logging_mixin.py:190} INFO - [download]   7.1% of    1.74MiB at    7.02MiB/s ETA 00:00
+[2025-05-26T02:25:51.141+0000] {logging_mixin.py:190} INFO - [download]  14.3% of    1.74MiB at    7.49MiB/s ETA 00:00
+[2025-05-26T02:25:51.430+0000] {logging_mixin.py:190} INFO - [download]  28.8% of    1.74MiB at    1.55MiB/s ETA 00:00
+[2025-05-26T02:25:51.480+0000] {logging_mixin.py:190} INFO - [download]  57.6% of    1.74MiB at    2.69MiB/s ETA 00:00
+[2025-05-26T02:25:51.553+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    1.74MiB at    3.89MiB/s ETA 00:00
+[2025-05-26T02:25:51.554+0000] {logging_mixin.py:190} INFO - [download] 100% of    1.74MiB in 00:00:00 at 3.49MiB/s   
+[2025-05-26T02:25:51.557+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/30126178906973462"
+[2025-05-26T02:25:51.650+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/30126178906973462.mp3
+[2025-05-26T02:25:54.012+0000] {logging_mixin.py:190} INFO - Deleting original file data/30126178906973462 (pass -k to keep)
+[2025-05-26T02:25:54.016+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 30126178906973462
+[2025-05-26T02:25:54.198+0000] {logging_mixin.py:190} INFO - Downloaded video 30126178906973462 to data/30126178906973462.mp3
+[2025-05-26T02:25:54.333+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:25:54.334+0000] {logging_mixin.py:190} INFO - Downloading video from 485046757967943...
+[2025-05-26T02:25:54.367+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/485046757967943/
+[2025-05-26T02:25:54.368+0000] {logging_mixin.py:190} INFO - [facebook] 485046757967943: Downloading webpage
+[2025-05-26T02:25:56.513+0000] {logging_mixin.py:190} INFO - [info] 485046757967943: Downloading 1 format(s): 683272597996653a
+[2025-05-26T02:25:56.581+0000] {logging_mixin.py:190} INFO - [download] Destination: data/485046757967943
+[2025-05-26T02:25:56.581+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    8.79MiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:25:56.582+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    8.79MiB at    1.94MiB/s ETA 00:04  
+[2025-05-26T02:25:56.582+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    8.79MiB at    3.52MiB/s ETA 00:02
+[2025-05-26T02:25:56.583+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    8.79MiB at    6.05MiB/s ETA 00:01
+[2025-05-26T02:25:56.585+0000] {logging_mixin.py:190} INFO - [download]   0.3% of    8.79MiB at    6.93MiB/s ETA 00:01
+[2025-05-26T02:25:56.590+0000] {logging_mixin.py:190} INFO - [download]   0.7% of    8.79MiB at    6.73MiB/s ETA 00:01
+[2025-05-26T02:25:56.599+0000] {logging_mixin.py:190} INFO - [download]   1.4% of    8.79MiB at    6.55MiB/s ETA 00:01
+[2025-05-26T02:25:56.771+0000] {logging_mixin.py:190} INFO - [download]   2.8% of    8.79MiB at    1.31MiB/s ETA 00:06
+[2025-05-26T02:25:56.987+0000] {logging_mixin.py:190} INFO - [download]   5.7% of    8.79MiB at    1.23MiB/s ETA 00:06
+[2025-05-26T02:25:57.048+0000] {logging_mixin.py:190} INFO - [download]  11.4% of    8.79MiB at    2.14MiB/s ETA 00:03
+[2025-05-26T02:25:57.179+0000] {logging_mixin.py:190} INFO - [download]  22.7% of    8.79MiB at    3.34MiB/s ETA 00:02
+[2025-05-26T02:25:57.394+0000] {logging_mixin.py:190} INFO - [download]  45.5% of    8.79MiB at    4.92MiB/s ETA 00:00
+[2025-05-26T02:25:57.790+0000] {logging_mixin.py:190} INFO - [download]  91.0% of    8.79MiB at    6.61MiB/s ETA 00:00
+[2025-05-26T02:25:57.867+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    8.79MiB at    6.83MiB/s ETA 00:00
+[2025-05-26T02:25:57.868+0000] {logging_mixin.py:190} INFO - [download] 100% of    8.79MiB in 00:00:01 at 6.50MiB/s   
+[2025-05-26T02:25:57.871+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/485046757967943"
+[2025-05-26T02:25:57.999+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/485046757967943.mp3
+[2025-05-26T02:26:10.642+0000] {logging_mixin.py:190} INFO - Deleting original file data/485046757967943 (pass -k to keep)
+[2025-05-26T02:26:10.646+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 485046757967943
+[2025-05-26T02:26:10.651+0000] {logging_mixin.py:190} INFO - Downloaded video 485046757967943 to data/485046757967943.mp3
+[2025-05-26T02:26:10.773+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:26:10.774+0000] {logging_mixin.py:190} INFO - Downloading video from 2256312101491148...
+[2025-05-26T02:26:10.804+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/2256312101491148/
+[2025-05-26T02:26:10.804+0000] {logging_mixin.py:190} INFO - [facebook] 2256312101491148: Downloading webpage
+[2025-05-26T02:26:12.763+0000] {logging_mixin.py:190} INFO - [info] 2256312101491148: Downloading 1 format(s): 1347979983095782a
+[2025-05-26T02:26:12.797+0000] {logging_mixin.py:190} INFO - [download] Destination: data/2256312101491148
+[2025-05-26T02:26:12.797+0000] {logging_mixin.py:190} INFO - [download]   1.0% of   96.38KiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:26:12.801+0000] {logging_mixin.py:190} INFO - [download]   3.1% of   96.38KiB at  674.04KiB/s ETA 00:00  
+[2025-05-26T02:26:12.801+0000] {logging_mixin.py:190} INFO - [download]   7.3% of   96.38KiB at    1.35MiB/s ETA 00:00
+[2025-05-26T02:26:12.802+0000] {logging_mixin.py:190} INFO - [download]  15.6% of   96.38KiB at    2.58MiB/s ETA 00:00
+[2025-05-26T02:26:12.803+0000] {logging_mixin.py:190} INFO - [download]  32.2% of   96.38KiB at    4.95MiB/s ETA 00:00
+[2025-05-26T02:26:12.806+0000] {logging_mixin.py:190} INFO - [download]  65.4% of   96.38KiB at    6.53MiB/s ETA 00:00
+[2025-05-26T02:26:12.809+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   96.38KiB at    7.48MiB/s ETA 00:00
+[2025-05-26T02:26:12.810+0000] {logging_mixin.py:190} INFO - [download] 100% of   96.38KiB in 00:00:00 at 2.21MiB/s   
+[2025-05-26T02:26:12.811+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/2256312101491148"
+[2025-05-26T02:26:12.916+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/2256312101491148.mp3
+[2025-05-26T02:26:13.075+0000] {logging_mixin.py:190} INFO - Deleting original file data/2256312101491148 (pass -k to keep)
+[2025-05-26T02:26:13.078+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 2256312101491148
+[2025-05-26T02:26:13.083+0000] {logging_mixin.py:190} INFO - Downloaded video 2256312101491148 to data/2256312101491148.mp3
+[2025-05-26T02:26:13.206+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:26:13.207+0000] {logging_mixin.py:190} INFO - Downloading video from 1422517772495604...
+[2025-05-26T02:26:13.236+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/1422517772495604/
+[2025-05-26T02:26:13.236+0000] {logging_mixin.py:190} INFO - [facebook] 1422517772495604: Downloading webpage
+[2025-05-26T02:26:14.685+0000] {logging_mixin.py:190} INFO - [facebook] 1422517772495604: Downloading webpage
+[2025-05-26T02:26:14.920+0000] {logging_mixin.py:190} WARNING - ERROR: [facebook] 1422517772495604: Cannot parse data; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+[2025-05-26T02:26:14.922+0000] {logging_mixin.py:190} INFO - 
+Error downloading video using yt-dlp: ERROR: [facebook] 1422517772495604: Cannot parse data; please report this issue on  https://github.com/yt-dlp/yt-dlp/issues?q= , filling out the appropriate issue template. Confirm you are on the latest version using  yt-dlp -U
+[2025-05-26T02:26:17.222+0000] {logging_mixin.py:190} INFO - Downloaded video 1422517772495604 to data/1422517772495604.mp3
+[2025-05-26T02:26:17.356+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:26:17.357+0000] {logging_mixin.py:190} INFO - Downloading video from 1165315660335703...
+[2025-05-26T02:26:17.389+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/1165315660335703/
+[2025-05-26T02:26:17.389+0000] {logging_mixin.py:190} INFO - [facebook] 1165315660335703: Downloading webpage
+[2025-05-26T02:26:18.636+0000] {logging_mixin.py:190} INFO - [info] 1165315660335703: Downloading 1 format(s): 1068145971222939a
+[2025-05-26T02:26:19.094+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1165315660335703
+[2025-05-26T02:26:19.094+0000] {logging_mixin.py:190} INFO - [download]   0.0% of    3.50MiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:26:19.095+0000] {logging_mixin.py:190} INFO - [download]   0.1% of    3.50MiB at  Unknown B/s ETA 00:01  
+[2025-05-26T02:26:19.095+0000] {logging_mixin.py:190} INFO - [download]   0.2% of    3.50MiB at    4.57MiB/s ETA 00:00
+[2025-05-26T02:26:19.097+0000] {logging_mixin.py:190} INFO - [download]   0.4% of    3.50MiB at    3.97MiB/s ETA 00:00
+[2025-05-26T02:26:19.099+0000] {logging_mixin.py:190} INFO - [download]   0.9% of    3.50MiB at    5.39MiB/s ETA 00:00
+[2025-05-26T02:26:19.102+0000] {logging_mixin.py:190} INFO - [download]   1.8% of    3.50MiB at    7.25MiB/s ETA 00:00
+[2025-05-26T02:26:19.108+0000] {logging_mixin.py:190} INFO - [download]   3.5% of    3.50MiB at    8.44MiB/s ETA 00:00
+[2025-05-26T02:26:19.121+0000] {logging_mixin.py:190} INFO - [download]   7.1% of    3.50MiB at    9.16MiB/s ETA 00:00
+[2025-05-26T02:26:19.145+0000] {logging_mixin.py:190} INFO - [download]  14.2% of    3.50MiB at    9.67MiB/s ETA 00:00
+[2025-05-26T02:26:19.198+0000] {logging_mixin.py:190} INFO - [download]  28.5% of    3.50MiB at    9.55MiB/s ETA 00:00
+[2025-05-26T02:26:19.298+0000] {logging_mixin.py:190} INFO - [download]  57.1% of    3.50MiB at    9.77MiB/s ETA 00:00
+[2025-05-26T02:26:19.450+0000] {logging_mixin.py:190} INFO - [download] 100.0% of    3.50MiB at    9.82MiB/s ETA 00:00
+[2025-05-26T02:26:19.451+0000] {logging_mixin.py:190} INFO - [download] 100% of    3.50MiB in 00:00:00 at 4.31MiB/s   
+[2025-05-26T02:26:19.453+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1165315660335703"
+[2025-05-26T02:26:19.563+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1165315660335703.mp3
+[2025-05-26T02:26:21.263+0000] {logging_mixin.py:190} INFO - Deleting original file data/1165315660335703 (pass -k to keep)
+[2025-05-26T02:26:21.266+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1165315660335703
+[2025-05-26T02:26:21.272+0000] {logging_mixin.py:190} INFO - Downloaded video 1165315660335703 to data/1165315660335703.mp3
+[2025-05-26T02:26:21.393+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:26:21.393+0000] {logging_mixin.py:190} INFO - Downloading video from 1192155672228336...
+[2025-05-26T02:26:21.422+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/1192155672228336/
+[2025-05-26T02:26:21.422+0000] {logging_mixin.py:190} INFO - [facebook] 1192155672228336: Downloading webpage
+[2025-05-26T02:26:23.126+0000] {logging_mixin.py:190} INFO - [info] 1192155672228336: Downloading 1 format(s): 10095024780542667a
+[2025-05-26T02:26:23.195+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1192155672228336
+[2025-05-26T02:26:23.196+0000] {logging_mixin.py:190} INFO - [download]   1.2% of   85.57KiB at  Unknown B/s ETA Unknown
+[2025-05-26T02:26:23.196+0000] {logging_mixin.py:190} INFO - [download]   3.5% of   85.57KiB at    1.96MiB/s ETA 00:00  
+[2025-05-26T02:26:23.197+0000] {logging_mixin.py:190} INFO - [download]   8.2% of   85.57KiB at    3.57MiB/s ETA 00:00
+[2025-05-26T02:26:23.198+0000] {logging_mixin.py:190} INFO - [download]  17.5% of   85.57KiB at    4.63MiB/s ETA 00:00
+[2025-05-26T02:26:23.202+0000] {logging_mixin.py:190} INFO - [download]  36.2% of   85.57KiB at    4.40MiB/s ETA 00:00
+[2025-05-26T02:26:23.205+0000] {logging_mixin.py:190} INFO - [download]  73.6% of   85.57KiB at    6.40MiB/s ETA 00:00
+[2025-05-26T02:26:23.413+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   85.57KiB at  392.16KiB/s ETA 00:00
+[2025-05-26T02:26:23.414+0000] {logging_mixin.py:190} INFO - [download] 100% of   85.57KiB in 00:00:00 at 301.29KiB/s 
+[2025-05-26T02:26:23.416+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1192155672228336"
+[2025-05-26T02:26:23.503+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1192155672228336.mp3
+[2025-05-26T02:26:23.642+0000] {logging_mixin.py:190} INFO - Deleting original file data/1192155672228336 (pass -k to keep)
+[2025-05-26T02:26:23.646+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1192155672228336
+[2025-05-26T02:26:23.660+0000] {logging_mixin.py:190} INFO - Downloaded video 1192155672228336 to data/1192155672228336.mp3
+[2025-05-26T02:26:23.786+0000] {logging_mixin.py:190} INFO - Internet connection detected. Proceeding...
+[2025-05-26T02:26:23.786+0000] {logging_mixin.py:190} INFO - Downloading video from 1037816891095499...
+[2025-05-26T02:26:23.815+0000] {logging_mixin.py:190} INFO - [facebook] Extracting URL: https://www.facebook.com/fcbarcelona/videos/1037816891095499/
+[2025-05-26T02:26:23.815+0000] {logging_mixin.py:190} INFO - [facebook] 1037816891095499: Downloading webpage
+[2025-05-26T02:26:25.716+0000] {logging_mixin.py:190} INFO - [info] 1037816891095499: Downloading 1 format(s): 685994841257616a
+[2025-05-26T02:26:25.771+0000] {logging_mixin.py:190} INFO - [download] Destination: data/1037816891095499
+[2025-05-26T02:26:25.772+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   88.57MiB at  711.74KiB/s ETA 02:08
+[2025-05-26T02:26:25.772+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   88.57MiB at    1.45MiB/s ETA 01:01
+[2025-05-26T02:26:25.772+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   88.57MiB at    2.75MiB/s ETA 00:32
+[2025-05-26T02:26:25.774+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   88.57MiB at    3.67MiB/s ETA 00:24
+[2025-05-26T02:26:25.776+0000] {logging_mixin.py:190} INFO - [download]   0.0% of   88.57MiB at    4.85MiB/s ETA 00:18
+[2025-05-26T02:26:25.779+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   88.57MiB at    6.89MiB/s ETA 00:12
+[2025-05-26T02:26:25.958+0000] {logging_mixin.py:190} INFO - [download]   0.1% of   88.57MiB at  677.55KiB/s ETA 02:13
+[2025-05-26T02:26:25.970+0000] {logging_mixin.py:190} INFO - [download]   0.3% of   88.57MiB at    1.24MiB/s ETA 01:11
+[2025-05-26T02:26:25.995+0000] {logging_mixin.py:190} INFO - [download]   0.6% of   88.57MiB at    2.22MiB/s ETA 00:39
+[2025-05-26T02:26:26.045+0000] {logging_mixin.py:190} INFO - [download]   1.1% of   88.57MiB at    3.64MiB/s ETA 00:24
+[2025-05-26T02:26:26.145+0000] {logging_mixin.py:190} INFO - [download]   2.3% of   88.57MiB at    5.34MiB/s ETA 00:16
+[2025-05-26T02:26:26.356+0000] {logging_mixin.py:190} INFO - [download]   4.5% of   88.57MiB at    6.82MiB/s ETA 00:12
+[2025-05-26T02:26:26.914+0000] {logging_mixin.py:190} INFO - [download]   9.0% of   88.57MiB at    7.00MiB/s ETA 00:11
+[2025-05-26T02:26:27.309+0000] {logging_mixin.py:190} INFO - [download]  13.5% of   88.57MiB at    7.80MiB/s ETA 00:09
+[2025-05-26T02:26:27.710+0000] {logging_mixin.py:190} INFO - [download]  18.1% of   88.57MiB at    8.25MiB/s ETA 00:08
+[2025-05-26T02:26:28.130+0000] {logging_mixin.py:190} INFO - [download]  22.6% of   88.57MiB at    8.47MiB/s ETA 00:08
+[2025-05-26T02:26:28.532+0000] {logging_mixin.py:190} INFO - [download]  27.1% of   88.57MiB at    8.69MiB/s ETA 00:07
+[2025-05-26T02:26:28.971+0000] {logging_mixin.py:190} INFO - [download]  31.6% of   88.57MiB at    8.75MiB/s ETA 00:06
+[2025-05-26T02:26:29.456+0000] {logging_mixin.py:190} INFO - [download]  36.1% of   88.57MiB at    8.68MiB/s ETA 00:06
+[2025-05-26T02:26:29.896+0000] {logging_mixin.py:190} INFO - [download]  40.6% of   88.57MiB at    8.73MiB/s ETA 00:06
+[2025-05-26T02:26:30.291+0000] {logging_mixin.py:190} INFO - [download]  45.2% of   88.57MiB at    8.85MiB/s ETA 00:05
+[2025-05-26T02:26:30.685+0000] {logging_mixin.py:190} INFO - [download]  49.7% of   88.57MiB at    8.95MiB/s ETA 00:04
+[2025-05-26T02:26:31.080+0000] {logging_mixin.py:190} INFO - [download]  54.2% of   88.57MiB at    9.04MiB/s ETA 00:04
+[2025-05-26T02:26:31.477+0000] {logging_mixin.py:190} INFO - [download]  58.7% of   88.57MiB at    9.11MiB/s ETA 00:04
+[2025-05-26T02:26:31.872+0000] {logging_mixin.py:190} INFO - [download]  63.2% of   88.57MiB at    9.18MiB/s ETA 00:03
+[2025-05-26T02:26:32.270+0000] {logging_mixin.py:190} INFO - [download]  67.7% of   88.57MiB at    9.23MiB/s ETA 00:03
+[2025-05-26T02:26:32.667+0000] {logging_mixin.py:190} INFO - [download]  72.3% of   88.57MiB at    9.28MiB/s ETA 00:02
+[2025-05-26T02:26:33.062+0000] {logging_mixin.py:190} INFO - [download]  76.8% of   88.57MiB at    9.33MiB/s ETA 00:02
+[2025-05-26T02:26:33.456+0000] {logging_mixin.py:190} INFO - [download]  81.3% of   88.57MiB at    9.37MiB/s ETA 00:01
+[2025-05-26T02:26:33.851+0000] {logging_mixin.py:190} INFO - [download]  85.8% of   88.57MiB at    9.40MiB/s ETA 00:01
+[2025-05-26T02:26:34.248+0000] {logging_mixin.py:190} INFO - [download]  90.3% of   88.57MiB at    9.44MiB/s ETA 00:00
+[2025-05-26T02:26:34.687+0000] {logging_mixin.py:190} INFO - [download]  94.8% of   88.57MiB at    9.42MiB/s ETA 00:00
+[2025-05-26T02:26:35.081+0000] {logging_mixin.py:190} INFO - [download]  99.4% of   88.57MiB at    9.45MiB/s ETA 00:00
+[2025-05-26T02:26:35.136+0000] {logging_mixin.py:190} INFO - [download] 100.0% of   88.57MiB at    9.46MiB/s ETA 00:00
+[2025-05-26T02:26:35.143+0000] {logging_mixin.py:190} INFO - [download] 100% of   88.57MiB in 00:00:09 at 9.40MiB/s   
+[2025-05-26T02:26:35.145+0000] {logging_mixin.py:190} INFO - [FixupM4a] Correcting container of "data/1037816891095499"
+[2025-05-26T02:26:35.750+0000] {logging_mixin.py:190} INFO - [ExtractAudio] Destination: data/1037816891095499.mp3
+[2025-05-26T02:27:58.577+0000] {logging_mixin.py:190} INFO - Deleting original file data/1037816891095499 (pass -k to keep)
+[2025-05-26T02:27:58.589+0000] {logging_mixin.py:190} INFO - 
+Downloaded successfully: 1037816891095499
+[2025-05-26T02:27:58.595+0000] {logging_mixin.py:190} INFO - Downloaded video 1037816891095499 to data/1037816891095499.mp3
+[2025-05-26T02:27:58.596+0000] {logging_mixin.py:190} INFO - Downloaded 52 new videos.
+[2025-05-26T02:27:58.596+0000] {python.py:240} INFO - Done. Returned value was: [{'video_id': '340109543496083', 'file_path': 'data/340109543496083.mp3'}, {'video_id': '1732547871011243', 'file_path': 'data/1732547871011243.mp3'}, {'video_id': '1859509068235762', 'file_path': 'data/1859509068235762.mp3'}, {'video_id': '24538181259116167', 'file_path': 'data/24538181259116167.mp3'}, {'video_id': '517985985440934', 'file_path': 'data/517985985440934.mp3'}, {'video_id': '2551774658431227', 'file_path': 'data/2551774658431227.mp3'}, {'video_id': '687439038759322', 'file_path': 'data/687439038759322.mp3'}, {'video_id': '1199728748139131', 'file_path': 'data/1199728748139131.mp3'}, {'video_id': '1029143837514002', 'file_path': 'data/1029143837514002.mp3'}, {'video_id': '1214537733485734', 'file_path': 'data/1214537733485734.mp3'}, {'video_id': '266768487828041', 'file_path': 'data/266768487828041.mp3'}, {'video_id': '1214325173492633', 'file_path': 'data/1214325173492633.mp3'}, {'video_id': '1487364068892348', 'file_path': 'data/1487364068892348.mp3'}, {'video_id': '1266379751712442', 'file_path': 'data/1266379751712442.mp3'}, {'video_id': '919111281863729', 'file_path': 'data/919111281863729.mp3'}, {'video_id': '702650360505070', 'file_path': 'data/702650360505070.mp3'}, {'video_id': '9824612047616098', 'file_path': 'data/9824612047616098.mp3'}, {'video_id': '1732495977377181', 'file_path': 'data/1732495977377181.mp3'}, {'video_id': '589511808317976', 'file_path': 'data/589511808317976.mp3'}, {'video_id': '630592586810466', 'file_path': 'data/630592586810466.mp3'}, {'video_id': '1260248339153879', 'file_path': 'data/1260248339153879.mp3'}, {'video_id': '856262310056272', 'file_path': 'data/856262310056272.mp3'}, {'video_id': '306433257087448', 'file_path': 'data/306433257087448.mp3'}, {'video_id': '1224752005897939', 'file_path': 'data/1224752005897939.mp3'}, {'video_id': '226290145273627', 'file_path': 'data/226290145273627.mp3'}, {'video_id': '694586596766526', 'file_path': 'data/694586596766526.mp3'}, {'video_id': '1238232701337577', 'file_path': 'data/1238232701337577.mp3'}, {'video_id': '4066501880266409', 'file_path': 'data/4066501880266409.mp3'}, {'video_id': '2619486498244685', 'file_path': 'data/2619486498244685.mp3'}, {'video_id': '3457651407585093', 'file_path': 'data/3457651407585093.mp3'}, {'video_id': '1440377574049342', 'file_path': 'data/1440377574049342.mp3'}, {'video_id': '746202302618121', 'file_path': 'data/746202302618121.mp3'}, {'video_id': '317186215915827', 'file_path': 'data/317186215915827.mp3'}, {'video_id': '993650515888831', 'file_path': 'data/993650515888831.mp3'}, {'video_id': '1118578480084308', 'file_path': 'data/1118578480084308.mp3'}, {'video_id': '1069509791711256', 'file_path': 'data/1069509791711256.mp3'}, {'video_id': '9824612047616098', 'file_path': 'data/9824612047616098.mp3'}, {'video_id': '876791899473020', 'file_path': 'data/876791899473020.mp3'}, {'video_id': '918053198608159', 'file_path': 'data/918053198608159.mp3'}, {'video_id': '1206445790641550', 'file_path': 'data/1206445790641550.mp3'}, {'video_id': '9395705697197313', 'file_path': 'data/9395705697197313.mp3'}, {'video_id': '726094326749462', 'file_path': 'data/726094326749462.mp3'}, {'video_id': '9824612047616098', 'file_path': 'data/9824612047616098.mp3'}, {'video_id': '1344756899966182', 'file_path': 'data/1344756899966182.mp3'}, {'video_id': '2732860283586657', 'file_path': 'data/2732860283586657.mp3'}, {'video_id': '30126178906973462', 'file_path': 'data/30126178906973462.mp3'}, {'video_id': '485046757967943', 'file_path': 'data/485046757967943.mp3'}, {'video_id': '2256312101491148', 'file_path': 'data/2256312101491148.mp3'}, {'video_id': '1422517772495604', 'file_path': 'data/1422517772495604.mp3'}, {'video_id': '1165315660335703', 'file_path': 'data/1165315660335703.mp3'}, {'video_id': '1192155672228336', 'file_path': 'data/1192155672228336.mp3'}, {'video_id': '1037816891095499', 'file_path': 'data/1037816891095499.mp3'}]
+[2025-05-26T02:27:58.615+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-26T02:27:58.615+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=facebook_videos_scraper_dag, task_id=batch_download_task, run_id=manual__2025-05-26T02:15:09.297662+00:00, execution_date=20250526T021509, start_date=20250526T021549, end_date=20250526T022758
+[2025-05-26T02:27:58.646+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-26T02:27:58.664+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-26T02:27:58.667+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

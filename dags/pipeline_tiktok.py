@@ -5,6 +5,7 @@ from tasks.batch_download import batch_download
 from tasks.get_transcript import audio_to_transcript
 from config import Config
 from airflow.operators.python import PythonOperator
+from datetime import datetime
 
 import sys
 sys.path.append('/opt/airflow/dags')
@@ -25,8 +26,8 @@ def run_tiktok_videos_scraper(**context):
 
 with DAG(
     dag_id="tiktok_videos_scraper_dag",
-    schedule_interval=None,  # Set your desired schedule
-    start_date=days_ago(1),
+    schedule="@daily",
+    start_date=datetime.now(),
     catchup=False,
 ) as dag:
 

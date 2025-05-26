@@ -5,7 +5,7 @@ from utils.instagram_profile import ProfileScraper
 import sys
 sys.path.append('/opt/airflow/dags')
 
-def instagram_videos_scraper(id = "baukrysie",INSTAGRAM_FILE_PATH="", download_directory="media", scrolls=10):
+def instagram_videos_scraper(id = "baukrysie",INSTAGRAM_FILE_PATH="", download_directory="media", downloads=10):
     """
     Scrape videos from an Instagram profile and download them.  
     Args:
@@ -14,5 +14,5 @@ def instagram_videos_scraper(id = "baukrysie",INSTAGRAM_FILE_PATH="", download_d
         download_directory (str): Directory to save the downloaded videos.
     """
     scraper = ProfileScraper(id)
-    return scraper.pipeline_videos(id, scrolls=scrolls)
+    return scraper.pipeline_videos(id, downloads=downloads)
     # batch_download_from_file(INSTAGRAM_FILE_PATH, download_directory, tiktok=False)

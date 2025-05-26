@@ -113,7 +113,7 @@ def track_dag_status_ui(dag_id, dag_run_id, user_id, get_info_by_user_id, show_u
     st.title("Theo dõi trạng thái DAG và Task")
     status_placeholder = st.empty()
     start_time = time.time()
-    timeout = 60
+    timeout = 90
 
     def get_status_list():
         get_links_log_file_path = f"/home/docon/projects/airflow-docker/logs/dag_id={dag_id}/run_id={dag_run_id}/task_id=get_links_task/attempt=1.log"
@@ -156,5 +156,5 @@ def track_dag_status_ui(dag_id, dag_run_id, user_id, get_info_by_user_id, show_u
         del st.session_state['dag_run_id']
         show_user_info_func(user_id)
 
-    if st.button("Close"):
-        st.rerun()
+    # if st.button("Close"):
+    #     st.rerun()

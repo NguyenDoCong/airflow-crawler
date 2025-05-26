@@ -1,0 +1,41 @@
+[2025-05-26T06:34:30.825+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-26T06:34:30.836+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.get_links_task manual__2025-05-26T06:34:29.459248+00:00 [queued]>
+[2025-05-26T06:34:30.842+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: instagram_videos_scraper_dag.get_links_task manual__2025-05-26T06:34:29.459248+00:00 [queued]>
+[2025-05-26T06:34:30.842+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-26T06:34:30.851+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-26 06:34:29.459248+00:00
+[2025-05-26T06:34:30.854+0000] {standard_task_runner.py:72} INFO - Started process 46535 to run task
+[2025-05-26T06:34:30.857+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'instagram_videos_scraper_dag', 'get_links_task', 'manual__2025-05-26T06:34:29.459248+00:00', '--job-id', '6754', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_instagram.py', '--cfg-path', '/tmp/tmp814haswm']
+[2025-05-26T06:34:30.858+0000] {standard_task_runner.py:105} INFO - Job 6754: Subtask get_links_task
+[2025-05-26T06:34:30.896+0000] {task_command.py:467} INFO - Running <TaskInstance: instagram_videos_scraper_dag.get_links_task manual__2025-05-26T06:34:29.459248+00:00 [running]> on host d69b9ee0d549
+[2025-05-26T06:34:30.956+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='instagram_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-26T06:34:29.459248+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-26T06:34:29.459248+00:00'
+[2025-05-26T06:34:30.957+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-26T06:34:52.674+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.113); currently, chromedriver 136.0.7103.113 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-26T06:34:55.886+0000] {logging_mixin.py:190} INFO - Step 1 of 2 - Loading profile page
+[2025-05-26T06:34:55.886+0000] {logging_mixin.py:190} INFO - Extracting videos...
+[2025-05-26T06:34:58.913+0000] {logging_mixin.py:190} INFO - Count: 1, Limit: 1
+[2025-05-26T06:34:58.926+0000] {logging_mixin.py:190} INFO - Found 45 video tags
+[2025-05-26T06:34:58.990+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/realmadrid/reel/DKFObzbIt7x/
+[2025-05-26T06:34:58.996+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/realmadrid/reel/DKDGQRoM2r5/
+[2025-05-26T06:34:59.001+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/realmadrid/reel/DKDB98qIRc8/
+[2025-05-26T06:34:59.006+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/realmadrid/reel/DKC2jaRo1Bt/
+[2025-05-26T06:34:59.024+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/realmadrid/reel/DKC1PR2MNvR/
+[2025-05-26T06:34:59.033+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/realmadrid/reel/DKC0TTMMKOj/
+[2025-05-26T06:34:59.038+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/realmadrid/reel/DKC0GsasQKV/
+[2025-05-26T06:34:59.045+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/realmadrid/reel/DKCzHj1MVfR/
+[2025-05-26T06:34:59.053+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/realmadrid/reel/DKCo343MOix/
+[2025-05-26T06:34:59.059+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/realmadrid/reel/DKCi_18sLU6/
+[2025-05-26T06:34:59.065+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/realmadrid/reel/DKCfLMPMw5C/
+[2025-05-26T06:34:59.070+0000] {logging_mixin.py:190} INFO - Extracted video URL: https://www.instagram.com/realmadrid/reel/DKCaU2msuVl/
+[2025-05-26T06:34:59.312+0000] {logging_mixin.py:190} INFO - Scrolled 1 iterations
+[2025-05-26T06:34:59.822+0000] {logging_mixin.py:190} INFO - Count: 2, Limit: 1
+[2025-05-26T06:34:59.823+0000] {logging_mixin.py:190} INFO - Scrolling stopped after 10 iterations
+[2025-05-26T06:34:59.823+0000] {logging_mixin.py:190} INFO - Extracted 12 video URLs
+[2025-05-26T06:34:59.823+0000] {logging_mixin.py:190} INFO - Step 2 of 2 - Downloading and saving videos
+[2025-05-26T06:34:59.824+0000] {logging_mixin.py:190} INFO - Don't close the app! Saving scraped data to database, it can take a while!
+[2025-05-26T06:34:59.836+0000] {logging_mixin.py:190} INFO - New videos: 12
+[2025-05-26T06:34:59.975+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'realmadrid', 'new_links': ('https://www.instagram.com/realmadrid/reel/DKC1PR2MNvR/', 'https://www.instagram.com/realmadrid/reel/DKDB98qIRc8/', 'https://www.instagram.com/realmadrid/reel/DKCaU2msuVl/', 'https://www.instagram.com/realmadrid/reel/DKCzHj1MVfR/', 'https://www.instagram.com/realmadrid/reel/DKC0TTMMKOj/', 'https://www.instagram.com/realmadrid/reel/DKC0GsasQKV/', 'https://www.instagram.com/realmadrid/reel/DKCfLMPMw5C/', 'https://www.instagram.com/realmadrid/reel/DKCo343MOix/', 'https://www.instagram.com/realmadrid/reel/DKCi_18sLU6/', 'https://www.instagram.com/realmadrid/reel/DKC2jaRo1Bt/', 'https://www.instagram.com/realmadrid/reel/DKFObzbIt7x/', 'https://www.instagram.com/realmadrid/reel/DKDGQRoM2r5/')}
+[2025-05-26T06:34:59.993+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-26T06:34:59.993+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=instagram_videos_scraper_dag, task_id=get_links_task, run_id=manual__2025-05-26T06:34:29.459248+00:00, execution_date=20250526T063429, start_date=20250526T063430, end_date=20250526T063459
+[2025-05-26T06:35:01.075+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-26T06:35:01.089+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-05-26T06:35:01.091+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

@@ -1,0 +1,136 @@
+[2025-05-26T02:15:10.842+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-26T02:15:10.852+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.get_links_task manual__2025-05-26T02:15:09.297662+00:00 [queued]>
+[2025-05-26T02:15:10.857+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: facebook_videos_scraper_dag.get_links_task manual__2025-05-26T02:15:09.297662+00:00 [queued]>
+[2025-05-26T02:15:10.857+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-26T02:15:10.866+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-26 02:15:09.297662+00:00
+[2025-05-26T02:15:10.869+0000] {standard_task_runner.py:72} INFO - Started process 75 to run task
+[2025-05-26T02:15:10.871+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'facebook_videos_scraper_dag', 'get_links_task', 'manual__2025-05-26T02:15:09.297662+00:00', '--job-id', '6715', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_fb.py', '--cfg-path', '/tmp/tmpgc7nnpbm']
+[2025-05-26T02:15:10.874+0000] {standard_task_runner.py:105} INFO - Job 6715: Subtask get_links_task
+[2025-05-26T02:15:10.928+0000] {task_command.py:467} INFO - Running <TaskInstance: facebook_videos_scraper_dag.get_links_task manual__2025-05-26T02:15:09.297662+00:00 [running]> on host 9e147d34972d
+[2025-05-26T02:15:10.990+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='facebook_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-26T02:15:09.297662+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-26T02:15:09.297662+00:00'
+[2025-05-26T02:15:10.991+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-26T02:15:32.631+0000] {selenium_manager.py:133} WARNING - The chromedriver version (136.0.7103.59) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (136.0.7103.113); currently, chromedriver 136.0.7103.113 is recommended for chrome 136.*, so it is advised to delete the driver in PATH and retry
+[2025-05-26T02:15:35.952+0000] {logging_mixin.py:190} INFO - Step 1 of 3 - Load cookies
+[2025-05-26T02:15:40.345+0000] {logging_mixin.py:190} INFO - Step 2 of 3 - Scrolling page
+[2025-05-26T02:15:40.345+0000] {logging_mixin.py:190} INFO - Scrolling 1 iterations...
+[2025-05-26T02:15:46.560+0000] {logging_mixin.py:190} INFO - Scrolling stopped after 2 iterations
+[2025-05-26T02:15:46.560+0000] {logging_mixin.py:190} INFO - Scrolled 2 iterations
+[2025-05-26T02:15:46.561+0000] {logging_mixin.py:190} INFO - Step 3 of 3 - Extract videos urls
+[2025-05-26T02:15:46.584+0000] {logging_mixin.py:190} INFO - Found 159 a tags
+[2025-05-26T02:15:46.984+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/100044160982875/videos/9824612047616098
+[2025-05-26T02:15:47.006+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/9824612047616098/?comment_id=682840124376590&__tn__=R]
+[2025-05-26T02:15:47.013+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/1266379751712442/
+[2025-05-26T02:15:47.028+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/1422517772495604/
+[2025-05-26T02:15:47.066+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/1238232701337577/
+[2025-05-26T02:15:47.091+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/1487364068892348/
+[2025-05-26T02:15:47.103+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/2732860283586657/
+[2025-05-26T02:15:47.117+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/1199728748139131/
+[2025-05-26T02:15:47.138+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/746202302618121/
+[2025-05-26T02:15:47.161+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/1029143837514002/
+[2025-05-26T02:15:47.181+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/306433257087448/
+[2025-05-26T02:15:47.213+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/266768487828041/
+[2025-05-26T02:15:47.235+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/919111281863729/
+[2025-05-26T02:15:47.247+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/876791899473020/
+[2025-05-26T02:15:47.276+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/687439038759322/
+[2025-05-26T02:15:47.312+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/702650360505070/
+[2025-05-26T02:15:47.325+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/918053198608159/
+[2025-05-26T02:15:47.336+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/317186215915827/
+[2025-05-26T02:15:47.347+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/226290145273627/
+[2025-05-26T02:15:47.361+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/3457651407585093/
+[2025-05-26T02:15:47.375+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/589511808317976/
+[2025-05-26T02:15:47.405+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/517985985440934/
+[2025-05-26T02:15:47.424+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/2551774658431227/
+[2025-05-26T02:15:47.449+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/1165315660335703/
+[2025-05-26T02:15:47.462+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/340109543496083/
+[2025-05-26T02:15:47.547+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/9824612047616098/
+[2025-05-26T02:15:47.561+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/1214537733485734/
+[2025-05-26T02:15:47.574+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/694586596766526/
+[2025-05-26T02:15:47.591+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/FCBfemeni/videos/9395705697197313/
+[2025-05-26T02:15:47.606+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/630592586810466/
+[2025-05-26T02:15:47.618+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/24538181259116167/
+[2025-05-26T02:15:47.632+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/1344756899966182/
+[2025-05-26T02:15:47.647+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/2256312101491148/
+[2025-05-26T02:15:47.663+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/1732495977377181/
+[2025-05-26T02:15:47.677+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/1192155672228336/
+[2025-05-26T02:15:47.694+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/993650515888831/
+[2025-05-26T02:15:47.710+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/1206445790641550/
+[2025-05-26T02:15:47.723+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/1260248339153879/
+[2025-05-26T02:15:47.739+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/1440377574049342/
+[2025-05-26T02:15:47.762+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/1732547871011243/
+[2025-05-26T02:15:47.775+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/1118578480084308/
+[2025-05-26T02:15:47.788+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/4066501880266409/
+[2025-05-26T02:15:47.802+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/1224752005897939/
+[2025-05-26T02:15:47.816+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/30126178906973462/
+[2025-05-26T02:15:47.828+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/485046757967943/
+[2025-05-26T02:15:47.841+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/856262310056272/
+[2025-05-26T02:15:47.851+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/1214325173492633/
+[2025-05-26T02:15:47.863+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/1069509791711256/
+[2025-05-26T02:15:47.877+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/2619486498244685/
+[2025-05-26T02:15:47.888+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/1037816891095499/
+[2025-05-26T02:15:47.901+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/726094326749462/
+[2025-05-26T02:15:47.914+0000] {logging_mixin.py:190} INFO - Found href: https://www.facebook.com/fcbarcelona/videos/1859509068235762/
+[2025-05-26T02:15:47.924+0000] {logging_mixin.py:190} INFO - Found 52 href elements
+[2025-05-26T02:15:47.925+0000] {logging_mixin.py:190} INFO -  Scraped data:
+[2025-05-26T02:15:47.925+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/100044160982875/videos/9824612047616098
+[2025-05-26T02:15:47.926+0000] {logging_mixin.py:190} INFO -  - 
+https://www.facebook.com/fcbarcelona/videos/9824612047616098/?comment_id=6828401
+24376590&__tn__=R]
+[2025-05-26T02:15:47.926+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/1266379751712442/
+[2025-05-26T02:15:47.926+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/1422517772495604/
+[2025-05-26T02:15:47.926+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/1238232701337577/
+[2025-05-26T02:15:47.927+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/1487364068892348/
+[2025-05-26T02:15:47.927+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/2732860283586657/
+[2025-05-26T02:15:47.927+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/1199728748139131/
+[2025-05-26T02:15:47.927+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/746202302618121/
+[2025-05-26T02:15:47.928+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/1029143837514002/
+[2025-05-26T02:15:47.928+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/306433257087448/
+[2025-05-26T02:15:47.929+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/266768487828041/
+[2025-05-26T02:15:47.929+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/919111281863729/
+[2025-05-26T02:15:47.929+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/876791899473020/
+[2025-05-26T02:15:47.930+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/687439038759322/
+[2025-05-26T02:15:47.930+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/702650360505070/
+[2025-05-26T02:15:47.930+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/918053198608159/
+[2025-05-26T02:15:47.931+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/317186215915827/
+[2025-05-26T02:15:47.931+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/226290145273627/
+[2025-05-26T02:15:47.931+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/3457651407585093/
+[2025-05-26T02:15:47.932+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/589511808317976/
+[2025-05-26T02:15:47.932+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/517985985440934/
+[2025-05-26T02:15:47.932+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/2551774658431227/
+[2025-05-26T02:15:47.933+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/1165315660335703/
+[2025-05-26T02:15:47.933+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/340109543496083/
+[2025-05-26T02:15:47.933+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/9824612047616098/
+[2025-05-26T02:15:47.934+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/1214537733485734/
+[2025-05-26T02:15:47.934+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/694586596766526/
+[2025-05-26T02:15:47.934+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/FCBfemeni/videos/9395705697197313/
+[2025-05-26T02:15:47.935+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/630592586810466/
+[2025-05-26T02:15:47.935+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/24538181259116167/
+[2025-05-26T02:15:47.935+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/1344756899966182/
+[2025-05-26T02:15:47.936+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/2256312101491148/
+[2025-05-26T02:15:47.936+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/1732495977377181/
+[2025-05-26T02:15:47.936+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/1192155672228336/
+[2025-05-26T02:15:47.937+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/993650515888831/
+[2025-05-26T02:15:47.937+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/1206445790641550/
+[2025-05-26T02:15:47.937+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/1260248339153879/
+[2025-05-26T02:15:47.937+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/1440377574049342/
+[2025-05-26T02:15:47.938+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/1732547871011243/
+[2025-05-26T02:15:47.938+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/1118578480084308/
+[2025-05-26T02:15:47.938+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/4066501880266409/
+[2025-05-26T02:15:47.938+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/1224752005897939/
+[2025-05-26T02:15:47.939+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/30126178906973462/
+[2025-05-26T02:15:47.939+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/485046757967943/
+[2025-05-26T02:15:47.939+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/856262310056272/
+[2025-05-26T02:15:47.939+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/1214325173492633/
+[2025-05-26T02:15:47.939+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/1069509791711256/
+[2025-05-26T02:15:47.940+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/2619486498244685/
+[2025-05-26T02:15:47.940+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/1037816891095499/
+[2025-05-26T02:15:47.940+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/726094326749462/
+[2025-05-26T02:15:47.940+0000] {logging_mixin.py:190} INFO -  - https://www.facebook.com/fcbarcelona/videos/1859509068235762/
+[2025-05-26T02:15:47.941+0000] {logging_mixin.py:190} INFO - Don't close the app! Saving scraped data to database, it can take a while!
+[2025-05-26T02:15:47.964+0000] {logging_mixin.py:190} INFO - Remaining new videos: 52
+[2025-05-26T02:15:47.964+0000] {logging_mixin.py:190} INFO - New videos: 52
+[2025-05-26T02:15:48.165+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'fcbarcelona', 'new_links': ('https://www.facebook.com/fcbarcelona/videos/340109543496083/', 'https://www.facebook.com/fcbarcelona/videos/1732547871011243/', 'https://www.facebook.com/fcbarcelona/videos/1859509068235762/', 'https://www.facebook.com/fcbarcelona/videos/24538181259116167/', 'https://www.facebook.com/fcbarcelona/videos/517985985440934/', 'https://www.facebook.com/fcbarcelona/videos/2551774658431227/', 'https://www.facebook.com/fcbarcelona/videos/687439038759322/', 'https://www.facebook.com/fcbarcelona/videos/1199728748139131/', 'https://www.facebook.com/fcbarcelona/videos/1029143837514002/', 'https://www.facebook.com/fcbarcelona/videos/1214537733485734/', 'https://www.facebook.com/fcbarcelona/videos/266768487828041/', 'https://www.facebook.com/fcbarcelona/videos/1214325173492633/', 'https://www.facebook.com/fcbarcelona/videos/1487364068892348/', 'https://www.facebook.com/fcbarcelona/videos/1266379751712442/', 'https://www.facebook.com/fcbarcelona/videos/919111281863729/', 'https://www.facebook.com/fcbarcelona/videos/702650360505070/', 'https://www.facebook.com/fcbarcelona/videos/9824612047616098/', 'https://www.facebook.com/fcbarcelona/videos/1732495977377181/', 'https://www.facebook.com/fcbarcelona/videos/589511808317976/', 'https://www.facebook.com/fcbarcelona/videos/630592586810466/', 'https://www.facebook.com/fcbarcelona/videos/1260248339153879/', 'https://www.facebook.com/fcbarcelona/videos/856262310056272/', 'https://www.facebook.com/fcbarcelona/videos/306433257087448/', 'https://www.facebook.com/fcbarcelona/videos/1224752005897939/', 'https://www.facebook.com/fcbarcelona/videos/226290145273627/', 'https://www.facebook.com/fcbarcelona/videos/694586596766526/', 'https://www.facebook.com/fcbarcelona/videos/1238232701337577/', 'https://www.facebook.com/fcbarcelona/videos/4066501880266409/', 'https://www.facebook.com/fcbarcelona/videos/2619486498244685/', 'https://www.facebook.com/fcbarcelona/videos/3457651407585093/', 'https://www.facebook.com/fcbarcelona/videos/1440377574049342/', 'https://www.facebook.com/fcbarcelona/videos/746202302618121/', 'https://www.facebook.com/fcbarcelona/videos/317186215915827/', 'https://www.facebook.com/fcbarcelona/videos/993650515888831/', 'https://www.facebook.com/fcbarcelona/videos/1118578480084308/', 'https://www.facebook.com/fcbarcelona/videos/1069509791711256/', 'https://www.facebook.com/100044160982875/videos/9824612047616098', 'https://www.facebook.com/fcbarcelona/videos/876791899473020/', 'https://www.facebook.com/fcbarcelona/videos/918053198608159/', 'https://www.facebook.com/fcbarcelona/videos/1206445790641550/', 'https://www.facebook.com/FCBfemeni/videos/9395705697197313/', 'https://www.facebook.com/fcbarcelona/videos/726094326749462/', 'https://www.facebook.com/fcbarcelona/videos/9824612047616098/?comment_id=682840124376590&__tn__=R]', 'https://www.facebook.com/fcbarcelona/videos/1344756899966182/', 'https://www.facebook.com/fcbarcelona/videos/2732860283586657/', 'https://www.facebook.com/fcbarcelona/videos/30126178906973462/', 'https://www.facebook.com/fcbarcelona/videos/485046757967943/', 'https://www.facebook.com/fcbarcelona/videos/2256312101491148/', 'https://www.facebook.com/fcbarcelona/videos/1422517772495604/', 'https://www.facebook.com/fcbarcelona/videos/1165315660335703/', 'https://www.facebook.com/fcbarcelona/videos/1192155672228336/', 'https://www.facebook.com/fcbarcelona/videos/1037816891095499/')}
+[2025-05-26T02:15:48.192+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-26T02:15:48.193+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=facebook_videos_scraper_dag, task_id=get_links_task, run_id=manual__2025-05-26T02:15:09.297662+00:00, execution_date=20250526T021509, start_date=20250526T021510, end_date=20250526T021548
+[2025-05-26T02:15:48.213+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-26T02:15:48.237+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-26T02:15:48.239+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

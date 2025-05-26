@@ -1,0 +1,53 @@
+[2025-05-26T06:32:31.710+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-05-26T06:32:31.721+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-26T06:32:30.948477+00:00 [queued]>
+[2025-05-26T06:32:31.727+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-26T06:32:30.948477+00:00 [queued]>
+[2025-05-26T06:32:31.727+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2025-05-26T06:32:31.736+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): get_links_task> on 2025-05-26 06:32:30.948477+00:00
+[2025-05-26T06:32:31.738+0000] {standard_task_runner.py:72} INFO - Started process 285 to run task
+[2025-05-26T06:32:31.741+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'tiktok_videos_scraper_dag', 'get_links_task', 'manual__2025-05-26T06:32:30.948477+00:00', '--job-id', '6751', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_tiktok.py', '--cfg-path', '/tmp/tmpukdatlxc']
+[2025-05-26T06:32:31.743+0000] {standard_task_runner.py:105} INFO - Job 6751: Subtask get_links_task
+[2025-05-26T06:32:31.780+0000] {task_command.py:467} INFO - Running <TaskInstance: tiktok_videos_scraper_dag.get_links_task manual__2025-05-26T06:32:30.948477+00:00 [running]> on host d69b9ee0d549
+[2025-05-26T06:32:31.846+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tiktok_videos_scraper_dag' AIRFLOW_CTX_TASK_ID='get_links_task' AIRFLOW_CTX_EXECUTION_DATE='2025-05-26T06:32:30.948477+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-05-26T06:32:30.948477+00:00'
+[2025-05-26T06:32:31.847+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-05-26T06:32:41.251+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508498948508765462
+[2025-05-26T06:32:41.251+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508475996224589058
+[2025-05-26T06:32:41.251+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508449088547966230
+[2025-05-26T06:32:41.251+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508421629660171542
+[2025-05-26T06:32:41.251+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508406306143800598
+[2025-05-26T06:32:41.252+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508365633969458454
+[2025-05-26T06:32:41.252+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508331176520682774
+[2025-05-26T06:32:41.252+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508326655123868950
+[2025-05-26T06:32:41.252+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508102375413058838
+[2025-05-26T06:32:41.252+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508094277843701014
+[2025-05-26T06:32:41.252+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508065852688846102
+[2025-05-26T06:32:41.252+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508064343523691798
+[2025-05-26T06:32:41.252+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508061025456147734
+[2025-05-26T06:32:41.252+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508058905826561302
+[2025-05-26T06:32:41.253+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508055867493862678
+[2025-05-26T06:32:41.253+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508053573616307478
+[2025-05-26T06:32:41.253+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508050145313950978
+[2025-05-26T06:32:41.253+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508048620961434903
+[2025-05-26T06:32:41.253+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508042879667817750
+[2025-05-26T06:32:41.253+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508033627041680662
+[2025-05-26T06:32:41.253+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508031203748908310
+[2025-05-26T06:32:41.253+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508023867454115094
+[2025-05-26T06:32:41.253+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508019715172764950
+[2025-05-26T06:32:41.253+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508011739611548950
+[2025-05-26T06:32:41.254+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7508000889299275030
+[2025-05-26T06:32:41.254+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7507993159390104854
+[2025-05-26T06:32:41.254+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7507990926984219926
+[2025-05-26T06:32:41.254+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7507980968360250646
+[2025-05-26T06:32:41.254+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7507950915991653654
+[2025-05-26T06:32:41.254+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7507931398934760726
+[2025-05-26T06:32:41.254+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7507906675215486230
+[2025-05-26T06:32:41.254+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7507687583195958550
+[2025-05-26T06:32:41.254+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7507651348511329558
+[2025-05-26T06:32:41.254+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7507597632911445270
+[2025-05-26T06:32:41.254+0000] {logging_mixin.py:190} INFO - https://www.tiktok.com/@realmadrid/video/7507564907651435798
+[2025-05-26T06:32:41.270+0000] {logging_mixin.py:190} INFO - New videos: 1
+[2025-05-26T06:32:41.405+0000] {python.py:240} INFO - Done. Returned value was: {'id': 'realmadrid', 'new_links': ('https://www.tiktok.com/@realmadrid/video/7508498948508765462',)}
+[2025-05-26T06:32:41.422+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-05-26T06:32:41.423+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=tiktok_videos_scraper_dag, task_id=get_links_task, run_id=manual__2025-05-26T06:32:30.948477+00:00, execution_date=20250526T063230, start_date=20250526T063231, end_date=20250526T063241
+[2025-05-26T06:32:41.461+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2025-05-26T06:32:41.479+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-05-26T06:32:41.481+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

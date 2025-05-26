@@ -6,22 +6,23 @@ from tasks.batch_download import batch_download
 from config import Config
 from airflow.operators.python import PythonOperator
 import math
+from datetime import datetime
 
 # Define the DAG
        
 def run_instagram_videos_scraper(**context):
     conf = context["dag_run"].conf or {}
     id = conf.get("id", "cristiano")
-    scrolls = math.ceil(conf.get("count", 20)/20)
+    downloads = math.ceil(conf.get("count", 20)/20)
     return instagram_videos_scraper(
         id=id,
-        scrolls=scrolls,
+        downloads=downloads,
     )
 
 with DAG(
     dag_id="instagram_videos_scraper_dag",
-    schedule_interval=None,  # Set your desired schedule
-    start_date=days_ago(1),
+    schedule="@daily",
+    start_date=datetime.now(),
     catchup=False,
 ) as dag:
 

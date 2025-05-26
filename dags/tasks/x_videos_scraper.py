@@ -26,9 +26,13 @@ def x_videos_scraper(id = "elonmusk",scrolls = 5):
         page.wait_for_timeout(5000)  # chờ page load
 
         hrefs = []
+
+        results = get_info_by_user_id(platform="x", user_id=id)
+
         # Cuộn xuống để tải thêm tweets
-        for i in range(scrolls):
-            print(f"Scrolling down... {i}")
+        while len(hrefs) < scrolls+len(results):
+        # for i in range(scrolls):
+            # print(f"Scrolling down... {i}")
             old_links = set(hrefs)
                 
             # Cuộn bằng JS
@@ -47,11 +51,13 @@ def x_videos_scraper(id = "elonmusk",scrolls = 5):
             if set(hrefs) == old_links:
                 break
                     
-        results = get_info_by_user_id(platform="x", user_id=id)
         for result in results:
             if result.url in hrefs:
                 hrefs.remove(result.url)
         print(f"Remaining new videos: {len(hrefs)}")
+
+        hrefs = hrefs[:scrolls]  # Giới hạn số lượng video mới lấy về
+        print(f"Total new videos to process: {len(hrefs)}")
 
         new_links = set(hrefs)
 

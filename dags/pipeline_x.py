@@ -7,6 +7,7 @@ from tasks.batch_download import batch_download
 from config import Config
 from airflow.operators.python import PythonOperator
 import math
+from datetime import datetime
 
 import sys
 sys.path.append('/opt/airflow/dags')
@@ -48,8 +49,8 @@ def login_x(**context):
 
 with DAG(
     dag_id="x_videos_scraper_dag",
-    schedule_interval=None,  # Set your desired schedule
-    start_date=days_ago(1),
+    schedule="@daily",
+    start_date=datetime.now(),
     catchup=False,
 ) as dag:
     
