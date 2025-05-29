@@ -54,7 +54,7 @@ def x_videos_scraper(id = "elonmusk",downloads = 5):
         for result in results:
             if result.url in hrefs:
                 hrefs.remove(result.url)
-        print(f"Remaining new videos: {len(hrefs)}")
+        # print(f"Remaining new videos: {len(hrefs)}")
 
         hrefs = hrefs[:downloads]  # Giới hạn số lượng video mới lấy về
         print(f"Total new videos to process: {len(hrefs)}")

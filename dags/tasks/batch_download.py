@@ -18,7 +18,18 @@ def batch_download(**context):
 
     platform = context.get("platform", "tiktok")
     ti = context["ti"]
-    id, urls = ti.xcom_pull(task_ids="get_links_task").values()
+    xcom_data = ti.xcom_pull(task_ids="get_links_task")
+
+    if not xcom_data:
+        print("No data retrieved from XCom for task 'get_links_task'.")
+        return []
+
+    try:
+        id, urls = xcom_data.values()
+    except AttributeError:
+        print("XCom data is not in the expected format.")
+        return []
+
     if not urls:
         print("No URLs to download.")
         return []

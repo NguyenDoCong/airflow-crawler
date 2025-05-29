@@ -2,29 +2,29 @@
  
 services:
 
-    streamlit-app:
-        container_name: streamlit-app
-        # image: streamlit-app:latest
-        build:
-            context: ./streamlit
-            dockerfile: Dockerfile
-        ports:
-            - "8501:8501"
-        depends_on:
-            - airflow-webserver
-        volumes:
-            - ./logs:/home/docon/projects/airflow-docker/logs   # Mount logs vào đúng đường dẫn
-        environment:
-            - USER_DATABASE=postgres
-            - PASSWORD_DATABASE=postgres
-            - HOST_DATABASE=postgres
-            - PORT_DATABASE=5432
-            - NAME_DATABASE=postgres
-            - AIRFLOW_API_URL=http://airflow-webserver:8080  # Nếu app cần gọi API Airflow
-        networks:
-            - network
-        command: >
-            sh -c "streamlit run Home.py"
+    # streamlit-app:
+    #     container_name: streamlit-app
+    #     # image: streamlit-app:latest
+    #     build:
+    #         context: ./streamlit
+    #         dockerfile: Dockerfile
+    #     ports:
+    #         - "8501:8501"
+    #     depends_on:
+    #         - airflow-webserver
+    #     volumes:
+    #         - ./logs:/home/docon/projects/airflow-docker/logs   # Mount logs vào đúng đường dẫn
+    #     environment:
+    #         - USER_DATABASE=postgres
+    #         - PASSWORD_DATABASE=postgres
+    #         - HOST_DATABASE=postgres
+    #         - PORT_DATABASE=5432
+    #         - NAME_DATABASE=postgres
+    #         - AIRFLOW_API_URL=http://airflow-webserver:8080  # Nếu app cần gọi API Airflow
+    #     networks:
+    #         - network
+    #     command: >
+    #         sh -c "streamlit run Home.py"
 
     postgres:
         container_name: postgres

@@ -55,6 +55,12 @@ def stop_dag(dag_id, dag_run_id):
     except Exception as e:
         return False, f"Lỗi khi gửi request dừng DAG: {e}"
     
+def retry_task(dag_id, dag_run_id, task_id):
+    url = f"http://airflow-webserver:8080/api/v1/dags/{dag_id}/dagRuns/{dag_run_id}/taskInstances/{task_id}/clear"
+    # response = requests.post(url, auth=HTTPBasicAuth('airflow', 'airflow'), timeout=10)
+    # return response.status_code == 200
+    return None
+    
 #main method
 if __name__ == "__main__":
     send_request()

@@ -1,6 +1,6 @@
 import streamlit as st
 from database_utils import get_distinct_user_ids_from_db, get_info_by_user_id, delete_user_by_id
-from send_request import send_request, stop_dag
+from send_request import send_request, retry_task
 import pandas as pd
 import time
 from platform_utils import (
@@ -8,7 +8,8 @@ from platform_utils import (
     delete_user_dialog,
     display_users,
     get_task_status_from_log,
-    track_dag_status_ui,  # Thêm dòng này
+    track_dag_status_ui,  
+    # final_result
 )
 
 @st.dialog("Xóa người dùng TikTok", width="large")
@@ -47,6 +48,8 @@ def add_tiktok_user():
         st.warning("Chưa có DAG nào được chạy. Vui lòng gửi yêu cầu trước.")
         st.stop()
 
+    # to_display = final_result(get_task_status_from_log, dag_id, dag_run_id)        
+
     # Sử dụng hàm tiện ích mới
     track_dag_status_ui(
         dag_id,
@@ -54,8 +57,8 @@ def add_tiktok_user():
         user_id,
         get_info_by_user_id,
         lambda uid: show_user_info(uid, "tiktok", get_info_by_user_id),
-        stop_dag,
-        get_task_status_from_log
+        get_task_status_from_log,        
+        lambda dag_id, dag_run_id, task_id: retry_task(dag_id, dag_run_id, task_id=task_id)
     )
 
 st.title('Danh sách người dùng TikTok')

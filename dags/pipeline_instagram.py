@@ -29,7 +29,7 @@ with DAG(
     default_args={
         "depends_on_past": False,
         "retries": 5,
-        "retry_delay": timedelta(minutes=5),
+        "retry_delay": timedelta(minutes=1),
         'on_success_callback': lambda context: logging.info("DAG runs successfully"),
         'on_retry_callback': log_retry,
         'on_failure_callback': lambda context: logging.error("DAG failed"),

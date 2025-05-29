@@ -15,7 +15,7 @@ def split_audio_ffmpeg(audio_path, chunk_length=30):
     """
     output_dir = os.path.dirname(audio_path)
     base_name = os.path.splitext(os.path.basename(audio_path))[0]
-    output_pattern = os.path.join(output_dir, f"{base_name}_chunk_%03d.wav")
+    output_pattern = os.path.join(output_dir, f"{base_name}_chunk_%03d.mp3")
     cmd = [
         "ffmpeg",
         "-i", audio_path,
@@ -29,7 +29,7 @@ def split_audio_ffmpeg(audio_path, chunk_length=30):
     chunk_files = sorted([
         os.path.join(output_dir, f)
         for f in os.listdir(output_dir)
-        if f.startswith(f"{base_name}_chunk_") and f.endswith(".wav")
+        if f.startswith(f"{base_name}_chunk_") and f.endswith(".mp3")
     ])
     return chunk_files
 
@@ -74,7 +74,7 @@ def audio_to_transcript(**context):
                 # logging.info(f"Detected language '{info.language}' with probability {info.language_probability}")
 
                 # Only split and transcribe chunks
-                chunk_files = split_audio_ffmpeg(audio_path, chunk_length=30)
+                chunk_files = split_audio_ffmpeg(audio_path, chunk_length=900)
                 transcription = ""
                 for chunk_file in chunk_files:
                     segments, info = model.transcribe(chunk_file, beam_size=5)
@@ -86,6 +86,13 @@ def audio_to_transcript(**context):
                                     TaskStatus.SUCCESS.value,
                                     transcript=transcription.strip(),
                                     platform=platform)
+                # Xóa các file chunk sau khi xử lý
+                for chunk_file in chunk_files:
+                    if os.path.exists(chunk_file):
+                        os.remove(chunk_file)
+                # Xóa file audio gốc
+                if os.path.exists(audio_path):
+                    os.remove(audio_path)
             except Exception as e:
                 logging.info(f"Video has no sound {id}: {str(e)}")
                 update_video_status(id,

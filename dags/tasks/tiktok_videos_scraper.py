@@ -17,6 +17,7 @@ from app.core.database_utils import get_info_by_user_id
 def tiktok_videos_scraper(id = "therock",count = 10, ms_tokens=None, DOWNLOAD_DIRECTORY="data"):
     from TikTokApi import TikTokApi
     import asyncio
+    import logging
     import os
     # from batch_download import batch_download
     # import json
@@ -33,6 +34,8 @@ def tiktok_videos_scraper(id = "therock",count = 10, ms_tokens=None, DOWNLOAD_DI
             try:
                 await api.create_sessions(ms_tokens=ms_tokens, 
                                         num_sessions=1, sleep_after=3, browser=os.getenv("TIKTOK_BROWSER", "chromium"))
+                # print("xxxxxxxxxxxxxxxxx", api)
+                logging.warning(f"xxxxxxxxx: {api}")
                 user = api.user(f"{id}")
                 async for video in user.videos(count=count):
                     print(f"https://www.tiktok.com/@{id}/video/"+video.as_dict['id'])
@@ -53,7 +56,16 @@ def tiktok_videos_scraper(id = "therock",count = 10, ms_tokens=None, DOWNLOAD_DI
                 print(f"New videos: {len(new_links)}")
                 return {'id': id, 'new_links': new_links}
             except Exception as e:
-                print(f"Error in TikTok API: {e}")
+                logging.error(f"Error in TikTok API: {e}")
                 raise  # Thay vì return [], raise exception để Airflow nhận biết lỗi
+
+    async def main():
+        try:
+            # Giới hạn thời gian là 1 giây
+            result = await asyncio.wait_for(user_template(), timeout=9)
+            logging.info("Kết quả:", result)
+        except asyncio.TimeoutError:
+            logging.error("Hết thời gian chờ (timeout)!")
+            raise asyncio.TimeoutError
             
-    return asyncio.run(user_template())
+    return asyncio.run(main())

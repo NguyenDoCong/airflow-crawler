@@ -1,12 +1,13 @@
 import streamlit as st
 from database_utils import get_distinct_user_ids_from_db, get_info_by_user_id, delete_user_by_id
-from send_request import send_request, stop_dag
+from send_request import send_request, retry_task
 from platform_utils import (
     show_user_info,
     delete_user_dialog,
     display_users,
     get_task_status_from_log,
     track_dag_status_ui,
+    # final_result
 )
 
 @st.dialog("Xóa người dùng Instagram", width="large")
@@ -17,7 +18,7 @@ def display_instagram_users():
     display_users(
         "instagram",
         get_distinct_user_ids_from_db,
-        lambda user_id: show_user_info(user_id, "instagram", get_info_by_user_id),
+        lambda user_id: show_user_info(user_id, "instagram", get_info_by_user_id, to_display=1),
         delete_user,
         link_format="[https://www.instagram.com/{0}](https://www.instagram.com/{0})"
     )
@@ -45,14 +46,16 @@ def add_instagram_user():
         st.warning("Chưa có DAG nào được chạy. Vui lòng gửi yêu cầu trước.")
         st.stop()
 
+    # to_display = final_result(get_task_status_from_log, dag_id, dag_run_id)        
+
     track_dag_status_ui(
         dag_id,
         dag_run_id,
         user_id,
         get_info_by_user_id,
         lambda uid: show_user_info(uid, "instagram", get_info_by_user_id),
-        stop_dag,
-        get_task_status_from_log
+        get_task_status_from_log,        
+        lambda dag_id, dag_run_id, task_id: retry_task(dag_id, dag_run_id, task_id=task_id)
     )
 
 st.title('Danh sách người dùng Instagram')

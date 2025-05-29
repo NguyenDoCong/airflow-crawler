@@ -35,7 +35,7 @@ with DAG(
     default_args={
         "depends_on_past": False,
         "retries": 5,
-        "retry_delay": timedelta(minutes=5),
+        "retry_delay": timedelta(minutes=1),
         # 'execution_timeout': timedelta(seconds=90),
         'on_success_callback': lambda context: logging.info("DAG runs successfully"),
         'on_retry_callback': log_retry,
